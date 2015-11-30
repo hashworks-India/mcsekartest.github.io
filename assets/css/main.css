@@ -1,0 +1,147 @@
+/* fonts */
+	@font-face {
+		font-family:'gotham-rounded-bold';
+		src: url(../font/gotham-rounded-bold.otf);
+	}
+	@font-face {
+		font-family:'gotham-rounded-book';
+		src: url(../font/gotham-rounded-book.otf);
+	}
+	@font-face {
+		font-family:'gotham-rounded-light';
+		src: url(../font/gotham-rounded-light.otf);
+	}
+	@font-face {
+		font-family:'gotham-rounded-book-italic';
+		src: url(../font/gotham-rounded-book-italic.otf);
+	}
+	@font-face {
+		font-family:'gotham-rounded-light-italic';
+		src: url(../font/gotham-rounded-light-italic.otf);
+	}
+/* end of fonts */
+
+/* general css */
+	.gotham-rounded-bold {
+		font-family: "gotham-rounded-bold";
+	}
+	.gotham-rounded-bok {
+		font-family: "gotham-rounded-book"; 
+	}
+	.gotham-rounded-light {
+		font-family: "gotham-rounded-light"; 
+	}
+	.gotham-book-italic {
+		font-family: "gotham-rounded-book-italic"; 
+	}
+	.gotham-light-italic {
+		font-family: "gotham-rounded-light-italic"; 
+	}
+
+	.font-12 {
+		font-size: 12px;
+	}
+	.font-14 {
+		font-size: 14px;
+	}
+	.font-18 {
+		font-size: 18px;
+	}
+	.font-20 {
+		font-size: 20px;
+	}
+	.font-24 {
+		font-size: 24px;
+	}
+	.font-30 {
+		font-size: 30px;
+	}  
+	.font-40 {
+		font-size: 40px;
+	}
+	.font-34 {
+		font-size: 34px;
+	}
+	.log-color-blue {
+		color: #4eacdd;
+	}
+	.log-color-pink {
+
+	}
+	
+	.clr-white {
+		color: #fff;
+	}
+	.cntr-fluid-padding {
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+	.div-border-left {
+		border-left: 5px solid  #4eacdd;
+		position: relative;
+	}
+	.div-border-left:before {
+		content: "";
+		position: absolute;
+		width: 5px;
+		height: 8px;
+		background-color: #fff;
+		top:0;
+		left: -5px;
+	}
+	.log-clr-backgrnd {
+		background-color: #4eacdd;
+	}
+	.active-color {
+		color: #c9443d;
+	}
+	.custom-btn {
+		padding:15px 55px;
+		color: #fff;
+		font-size: 14px;
+		font-family: "gotham-rounded-bold";
+		background-color: #ee2b7b;
+		text-transform: uppercase;
+		border: none;
+		box-shadow: -3px 3px 3px grey;
+	}
+/* end of general css */
+
+/* engage page */
+
+	.div-margin-left {
+		margin-left: 100px;
+		margin-right: 100px;
+	}
+	.para{
+		color: #7e7e7e;
+		margin-left: 35px;
+	}
+	.client-backgrnd {
+		background-color: #f4f4f4;
+	}
+	.carousel-control.left {
+    	background-image:none;
+    }
+    .carousel-control.right {
+    	background-image:none;
+    }
+    .angle-clr {
+    	color:#ccc1c1;
+    }
+    .carousel-border {
+    	border-top: 3px solid #dcdcdc;
+    	border-bottom:  3px solid #dcdcdc;
+    	width: 80%;
+    	margin-left: 10%;
+    	margin-right: 10%;
+	}
+	.carousel-width {
+		width: 3%;
+		text-shadow:none;
+	}
+	.h-approch {
+		padding-left: 100px;
+	}
+  
+

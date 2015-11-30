@@ -1,0 +1,41 @@
+.contact-div{
+
+	height: 45px;
+    padding-top: 10px;
+    padding-bottom: 15px;	
+}
+.contact{
+
+	padding: 15px 20px 15px 20px;
+    background-color: #0AB4C5;
+    font-family: 'gotham-rounded-book';
+    font-size: 18px;
+    color: rgb(90,114,127);
+    	
+}
+
+.search{
+
+	background-color: #0AB4C5;
+}
+
+.footer{
+
+	    height: 120px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.footer-copyrt
+{
+    font-family: 'gotham-rounded-light';
+    font-size: 14px;
+	padding-left: 100px;
+	padding-top:20px;
+	padding-bottom :20px;
+}
+
+.social-icons{
+
+margin-right: 35px;
+
+}

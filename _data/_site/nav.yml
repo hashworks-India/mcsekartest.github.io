@@ -1,0 +1,8 @@
+main:
+    - { url: '/', text: 'IT Services' }
+    - { url: '/', text: 'Job Board' }
+    - { url: '/', text: 'UpSkilling' }
+    - { url: '/', text: 'Company' }
+    - { url: '/', text: 'Case Studies' }
+    - { url: '/', text: 'Blog' }
+    - { url: '/', text: 'News' }
