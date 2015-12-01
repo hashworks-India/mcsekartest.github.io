@@ -95,6 +95,88 @@
 							</div>
 
 							<div class="col-lg-5">
+                                   
+                  <div id="consulting-testimonial-first" class="carousel-cust carousel slide testimonial" data-ride="carousel" data-interval="false">
+  <!-- Indicators -->
+  <ol class="carousel-indicators testimonial-ol">
+
+
+  {% for testimony in site.data.testimonial.consulting%}
+                      {% if forloop.first %}
+ <li data-to="{{forloop.index0}}" class="active"></li>
+{% else %}
+   <li data-to="{{forloop.index0}}"></li>
+{% endif %}
+                     {% endfor %}
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+   
+          {% for testimony in site.data.testimonial.consulting%}
+                      {% if forloop.first %}
+  <div class="item active">
+       <div >
+       {{ testimony.Testimony}}
+      </div>
+    </div>
+{% else %}
+   <div class="item">
+       <div >
+       {{ testimony.Testimony}}
+      </div>
+    </div>
+{% endif %}
+                        
+    
+       
+   
+                        
+                    {% endfor %}
+   
+  </div>
+
+  
+</div>
+         <div class="arrow-down"></div>
+<div id="consulting-testimonial-second" class="carousel carousel-cust slide" data-ride="carousel" data-interval="false">
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+     
+     {% for testimony in site.data.testimonial.consulting%}
+                      {% if forloop.first %}
+ <div class="item active">
+         <div class="name-align">
+       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.Company-name}}</span>
+        <i class="fa fa-user"></i></span>
+     
+    </div>
+    </div>
+{% else %}
+   <div class="item">
+         <div class="name-align">
+       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.Company-name}}</span>
+        <i class="fa fa-user"></i></span>
+     
+    </div>
+    </div>
+{% endif %}
+                        
+                         
+                 {% endfor %}
+
+
+
+
+
+
+    
+    
+  </div>
+
+  
+</div>
 							</div>
 
 						</div>
@@ -104,6 +186,9 @@
 						<div class="row row-top-mar">
 
 							<div class="col-lg-5">
+
+
+
 							</div>
 
 							<div class="col-lg-7">

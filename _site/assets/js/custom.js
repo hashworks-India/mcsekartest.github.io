@@ -8,5 +8,9 @@ $(document).ready(function(){
         $(target).toggleClass('hidden show');
 
 });
+
+    $('#consulting-testimonial-first .carousel-indicators li').on('click', function() {
+  $('.carousel-cust ').carousel(parseInt(this.getAttribute('data-to')));
+});
 });
 
