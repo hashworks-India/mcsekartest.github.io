@@ -1,5 +1,5 @@
 main-left:
-    - { url: '/', text: 'IT Services' }
+    - { url: '/IT-Services', text: 'IT Services' }
     - { url: '/', text: 'Job Board' }
     - { url: '/', text: 'UpSkilling' }
 main-right:
