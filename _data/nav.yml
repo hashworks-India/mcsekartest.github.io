@@ -1,9 +1,9 @@
 main-left:
-    - { url: '/', text: 'Portfolio' }
-    - { url: '/IT-Services', text: 'Engage Us' }
-    - { url: '/', text: 'Company' }
+ - { url: '/', text: 'Portfolio' }
+ - { url: '/IT-Services', text: 'Engage Us' }
+ - { url: '/', text: 'Company' }
 main-right:
-     - { url: '/', text: 'Case Studies' }
-    - { url: '/', text: 'Blog' }
-     - { url: '/', text: 'Job Board' }
-    - { url: '/', text: 'News' }
+ - { url: '/', text: 'Case Studies' }
+ - { url: '/', text: 'Blog' }
+ - { url: '/', text: 'Job Board' }
+ - { url: '/', text: 'News' }
