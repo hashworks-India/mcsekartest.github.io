@@ -1,41 +1,50 @@
-.contact-div{
+/*contact*/
+    .contact{
 
-	height: 45px;
-    padding-top: 10px;
-    padding-bottom: 15px;	
-}
-.contact{
+    	padding: 15px 20px 15px 20px;
+        background-color: #0ab4c5;
+        font-family: 'gotham-rounded-book';
+        font-size: 18px;
+        color: #545454;
+        	
+    }
+/*End of contact*/
 
-	padding: 15px 20px 15px 20px;
-    background-color: #0AB4C5;
-    font-family: 'gotham-rounded-book';
-    font-size: 18px;
-    color: rgb(90,114,127);
-    	
-}
+/*header-search*/
+    #credits input {
+        -webkit-box-shadow:0 0 3px rgba(0, 0, 0, 0.2) inset;
+        -moz-box-shadow:0 0 3px rgba(0, 0, 0, 0.2) inset;
+        -o-box-shadow:0 0 3px rgba(0, 0, 0, 0.2) inset;
+        -ms-box-shadow:0 0 3px rgba(0, 0, 0, 0.2) inset;
+        box-shadow:0 0 3px rgba(0, 0, 0, 0.2) inset;
+        background: transparent;
+    }
 
-.search{
+    #credits .search{
+        color: #fff;
+        font-size: 20px;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    	background-color: #79c2e2;
+        border: none;
+    }
+/*End of header-search*/
 
-	background-color: #0AB4C5;
-}
+/*footer*/
+    .footer{
+        height: 120px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .footer-copyrt
+    {
+        font-family: 'gotham-rounded-light';
+        font-size: 14px;
+    	padding-left: 100px;
+    	padding-top:20px;
+    	padding-bottom :20px;
+    }
 
-.footer{
-
-	    height: 120px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-.footer-copyrt
-{
-    font-family: 'gotham-rounded-light';
-    font-size: 14px;
-	padding-left: 100px;
-	padding-top:20px;
-	padding-bottom :20px;
-}
-
-.social-icons{
-
-margin-right: 35px;
-
-}
+    .social-icons{
+        margin-right: 35px;
+    }
+/*footer*/

@@ -1,6 +1,6 @@
 main-left:
- - { url: '/', text: 'Portfolio' }
- - { url: '/IT-Services', text: 'Engage Us' }
+ - { url: '/IT-Services', text: 'Portfolio' }
+ - { url: '/', text: 'Engage Us' }
  - { url: '/', text: 'Company' }
 main-right:
  - { url: '/', text: 'Case Studies' }
