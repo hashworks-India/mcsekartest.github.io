@@ -1,9 +1,9 @@
 main-left:
-    - { url: '/IT-Services', text: 'IT Services' }
-    - { url: '/', text: 'Job Board' }
-    - { url: '/', text: 'UpSkilling' }
-main-right:
+    - { url: '/', text: 'Portfolio' }
+    - { url: '/IT-Services', text: 'Engage Us' }
     - { url: '/', text: 'Company' }
-    - { url: '/', text: 'Case Studies' }
+main-right:
+     - { url: '/', text: 'Case Studies' }
     - { url: '/', text: 'Blog' }
+     - { url: '/', text: 'Job Board' }
     - { url: '/', text: 'News' }
