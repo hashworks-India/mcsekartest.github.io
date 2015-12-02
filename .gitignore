@@ -16,7 +16,7 @@ Icon
 .Trashes
 
 # Directories potentially created on remote AFP share
-.AppleDB
+
 .AppleDesktop
 Network Trash Folder
 Temporary Items
@@ -28,5 +28,5 @@ Temporary Items
 ### Jekyll ###
 _site
 .jekyll-metadata
-_site/IT-Services/index.html
-_site/
+
+
