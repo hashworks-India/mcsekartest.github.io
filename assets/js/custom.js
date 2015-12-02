@@ -9,7 +9,16 @@ $(document).ready(function(){
 
 });
 
-    $('#consulting-testimonial-first .carousel-indicators li').on('click', function() {
+    $('#osb-testimonial-first .carousel-indicators li').on('click', function() {
+  $('.carousel-cust ').carousel(parseInt(this.getAttribute('data-to')));
+});
+     $('#ms-testimonial-first .carousel-indicators li').on('click', function() {
+  $('.carousel-cust ').carousel(parseInt(this.getAttribute('data-to')));
+});
+      $('#ad-testimonial-first .carousel-indicators li').on('click', function() {
+  $('.carousel-cust ').carousel(parseInt(this.getAttribute('data-to')));
+});
+       $('#etl-testimonial-first .carousel-indicators li').on('click', function() {
   $('.carousel-cust ').carousel(parseInt(this.getAttribute('data-to')));
 });
 });
