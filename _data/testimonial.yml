@@ -1,7 +1,0 @@
-consulting:
-    - { Testimony: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non ipsa, cum, quis odit eum laboriosam doloremque distinctio itaque eos dolore.',name: 'Markus Jefferson',role: 'CEO',Company-name: 'Company Name' }
-    - { Testimony: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non ipsa, cum, quis odit eum laboriosam doloremque distinctio itaque eos dolore1',name: 'Markus Jefferson1',role: 'CEO',Company-name: 'Company Name' }
-    - { Testimony: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non ipsa, cum, quis odit eum laboriosam doloremque distinctio itaque eos dolore2',name: 'Markus Jefferson2',role: 'CEO',Company-name: 'Company Name' }
-    - { Testimony: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non ipsa, cum, quis odit eum laboriosam doloremque distinctio itaque eos dolore3',name: 'Markus Jefferson3',role: 'CEO',Company-name: 'Company Name' }
-    - { Testimony: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non ipsa, cum, quis odit eum laboriosam doloremque distinctio itaque eos dolore4',name: 'Markus Jefferson4',role: 'CEO',Company-name: 'Company Name' }
-    - { Testimony: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non ipsa, cum, quis odit eum laboriosam doloremque distinctio itaque eos dolore4',name: 'Markus Jefferson4',role: 'CEO',Company-name: 'Company Name' }
