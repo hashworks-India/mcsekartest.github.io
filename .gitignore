@@ -27,5 +27,5 @@ Temporary Items
 .sass-cache
 
 # _site
-_site/
+_site
 .jekyll-metadata
