@@ -79,171 +79,319 @@
 
 	        <div id="platform" class="tab-pane fade in active">
 	           <!-- categories -->
+<div class="container-fluid  div-margin-left">
 
-				<div class="container-fluid  div-margin-left">
-
+			<!-- hw-engage-cont -->
+				<div class="hw-engage-cont">
 					<!-- row one-->
-						<div class="row">
+						<div class="row ">
 
 							<div class="col-lg-7">
 								<h2 class="gotham-rounded-bok font-40 h2-color">OSB</h2>
-								<div class="div-border-left ">
-									<p class="font-22 gotham-rounded-light para">Expand your IT from business function towards customer centric innovation to win, serve and retain customers. Explore multiple dimensions to application connectivity,tap new horizons and inter-connectedness. Business of applications is the new future.
+								<div class="div-border-left">
+									<p class="font-22 gotham-rounded-light para">{{ site.data.EngageUs.engageus.consulting}}
 									</p>
 								</div>
-								<button class="custom-btn">VIEW CASESTUDY</button>
+								<button class="custom-btn">know more</button>
 							</div>
 
 							<div class="col-lg-5">
-                                   
-                  <div id="consulting-testimonial-first" class="carousel-cust carousel slide testimonial" data-ride="carousel" data-interval="false">
-  <!-- Indicators -->
-  <ol class="carousel-indicators testimonial-ol">
+									<div id="consulting-testimonial-first" class="carousel-cust carousel slide testimonial" data-ride="carousel" data-interval="false">
+  								<ol class="carousel-indicators testimonial-ol">
+									{% for testimony in site.data.testimonial.consulting%}
+		                      			{% if forloop.first %}
+		 									<li data-to="{{forloop.index0}}" class="active"></li>
+										{% else %}
+		   									<li data-to="{{forloop.index0}}"></li>
+										{% endif %}
+	                     			{% endfor %}
+ 								 </ol>
 
+							  <!-- Wrapper for slides -->
+							  <div class="carousel-inner">
+							   {% for testimony in site.data.testimonial.consulting%}
+							       {% if forloop.first %}
+							  	<div class="item active">
+							      <div >
+							       {{ testimony.Testimony}}
+							      </div>
+							    </div>
+								{% else %}
+							   <div class="item">
+							      	<div >
+							       		{{ testimony.Testimony}}
+							      	</div>
+							    </div>
+								{% endif %}
+							    {% endfor %}
+							   </div>
+								</div>
+							    <div class="arrow-down"></div>
+								<div id="consulting-testimonial-second" class="carousel carousel-cust slide" data-ride="carousel" data-interval="false">
 
-  {% for testimony in site.data.testimonial.consulting%}
-                      {% if forloop.first %}
- <li data-to="{{forloop.index0}}" class="active"></li>
-{% else %}
-   <li data-to="{{forloop.index0}}"></li>
-{% endif %}
-                     {% endfor %}
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-   
-          {% for testimony in site.data.testimonial.consulting%}
-                      {% if forloop.first %}
-  <div class="item active">
-       <div >
-       {{ testimony.Testimony}}
-      </div>
-    </div>
-{% else %}
-   <div class="item">
-       <div >
-       {{ testimony.Testimony}}
-      </div>
-    </div>
-{% endif %}
-                        
-    
-       
-   
-                        
-                    {% endfor %}
-   
-  </div>
-
-  
-</div>
-         <div class="arrow-down"></div>
-<div id="consulting-testimonial-second" class="carousel carousel-cust slide" data-ride="carousel" data-interval="false">
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-     
-     {% for testimony in site.data.testimonial.consulting%}
-                      {% if forloop.first %}
- <div class="item active">
-         <div class="name-align">
-       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.Company-name}}</span>
-        <i class="fa fa-user"></i></span>
-     
-    </div>
-    </div>
-{% else %}
-   <div class="item">
-         <div class="name-align">
-       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.Company-name}}</span>
-        <i class="fa fa-user"></i></span>
-     
-    </div>
-    </div>
-{% endif %}
-                        
-                         
-                 {% endfor %}
-
-
-
-
-
-
-    
-    
-  </div>
-
-  
-</div>
+							  <!-- Wrapper for slides -->
+							  <div class="carousel-inner">
+							    {% for testimony in site.data.testimonial.consulting%}
+							        {% if forloop.first %}
+							 <div class="item active">
+							         <div class="name-align">
+							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.Company-name}}</span>
+							        <i class="fa fa-user"></i></span>
+							  </div>
+							    </div>
+							{% else %}
+							   <div class="item">
+							         <div class="name-align">
+							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.Company-name}}</span>
+							        <i class="fa fa-user"></i></span>
+							     </div>
+							    </div>
+							{% endif %}
+							{% endfor %}
+						 </div><!-- end of carousel inner-->
+						</div><!-- end of crousel-->
 							</div>
 
 						</div>
 					<!--end of row1-->
+				</div>
+			<!-- End of hw-engage-cont -->
 
+			<!-- hw-engage-cont -->
+				<div class="hw-engage-cont">
 					<!-- row 2 -->
-						<div class="row row-top-mar">
+						<div class="row">
 
 							<div class="col-lg-5">
+									<div id="consulting-testimonial-first" class="carousel-cust carousel slide testimonial" data-ride="carousel" data-interval="false">
+  								<ol class="carousel-indicators testimonial-ol">
+									{% for testimony in site.data.testimonial.consulting%}
+		                      			{% if forloop.first %}
+		 									<li data-to="{{forloop.index0}}" class="active"></li>
+										{% else %}
+		   									<li data-to="{{forloop.index0}}"></li>
+										{% endif %}
+	                     			{% endfor %}
+ 								 </ol>
 
+							  <!-- Wrapper for slides -->
+							  <div class="carousel-inner">
+							   {% for testimony in site.data.testimonial.consulting%}
+							       {% if forloop.first %}
+							  	<div class="item active">
+							      <div >
+							       {{ testimony.Testimony}}
+							      </div>
+							    </div>
+								{% else %}
+							   <div class="item">
+							      	<div >
+							       		{{ testimony.Testimony}}
+							      	</div>
+							    </div>
+								{% endif %}
+							    {% endfor %}
+							   </div>
+								</div>
+							    <div class="arrow-down"></div>
+								<div id="consulting-testimonial-second" class="carousel carousel-cust slide" data-ride="carousel" data-interval="false">
 
-
+							  <!-- Wrapper for slides -->
+							  <div class="carousel-inner">
+							    {% for testimony in site.data.testimonial.consulting%}
+							        {% if forloop.first %}
+							 <div class="item active">
+							         <div class="name-align">
+							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.Company-name}}</span>
+							        <i class="fa fa-user"></i></span>
+							  </div>
+							    </div>
+							{% else %}
+							   <div class="item">
+							         <div class="name-align">
+							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.Company-name}}</span>
+							        <i class="fa fa-user"></i></span>
+							     </div>
+							    </div>
+							{% endif %}
+							{% endfor %}
+						 </div><!-- end of carousel inner-->
+						</div><!-- end of crousel-->
 							</div>
 
 							<div class="col-lg-7">
 								<h2 class="gotham-rounded-bok font-40 h2-color">Micro Services</h2>
 								<div class="div-border-left">
-									<p class="font-22 gotham-rounded-light para">Expand your IT from business function towards customer centric innovation to win, serve and retain customers. Explore multiple dimensions to application connectivity,tap new horizons and inter-connectedness. Business of applications is the new future.
+									<p class="font-22 gotham-rounded-light para">{{ site.data.EngageUs.engageus.managed_services}}
 									</p>
 								</div>
-								<button class="custom-btn">VIEW CASESTUDY</button>
+								<button class="custom-btn">know more</button>
 							</div>
 
 						</div>
 					<!-- end of row2 -->
+				</div>
+			<!-- End of hw-engage-cont -->
 
+
+			<!-- hw-engage-cont -->
+				<div class="hw-engage-cont">
 					<!-- row3-->
-						<div class="row row-top-mar">
+						<div class="row">
 
 							<div class="col-lg-7">
 								<h2 class="gotham-rounded-bok font-40 h2-color">ETL</h2>
 								<div class="div-border-left">
-									<p class="font-22 gotham-rounded-light para">Expand your IT from business function towards customer centric innovation to win, serve and retain customers. Explore multiple dimensions to application connectivity,tap new horizons and inter-connectedness. Business of applications is the new future.
+									<p class="font-22 gotham-rounded-light para">{{ site.data.EngageUs.engageus.talent_acquistion}}
 									</p>
 								</div>
-								<button class="custom-btn">VIEW CASESTUDY</button>
+								<button class="custom-btn">know more</button>
 							</div>
 
 							<div class="col-lg-5">
-							</div>
+								<div id="consulting-testimonial-first" class="carousel-cust carousel slide testimonial" data-ride="carousel" data-interval="false">
+  								<ol class="carousel-indicators testimonial-ol">
+									{% for testimony in site.data.testimonial.consulting%}
+		                      			{% if forloop.first %}
+		 									<li data-to="{{forloop.index0}}" class="active"></li>
+										{% else %}
+		   									<li data-to="{{forloop.index0}}"></li>
+										{% endif %}
+	                     			{% endfor %}
+ 								 </ol>
+
+							  <!-- Wrapper for slides -->
+							  <div class="carousel-inner">
+							   {% for testimony in site.data.testimonial.consulting%}
+							       {% if forloop.first %}
+							  	<div class="item active">
+							      <div >
+							       {{ testimony.Testimony}}
+							      </div>
+							    </div>
+								{% else %}
+							   <div class="item">
+							      	<div >
+							       		{{ testimony.Testimony}}
+							      	</div>
+							    </div>
+								{% endif %}
+							    {% endfor %}
+							   </div>
+								</div>
+							    <div class="arrow-down"></div>
+								<div id="consulting-testimonial-second" class="carousel carousel-cust slide" data-ride="carousel" data-interval="false">
+
+							  <!-- Wrapper for slides -->
+							  <div class="carousel-inner">
+							    {% for testimony in site.data.testimonial.consulting%}
+							        {% if forloop.first %}
+							 <div class="item active">
+							         <div class="name-align">
+							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.Company-name}}</span>
+							        <i class="fa fa-user"></i></span>
+							  </div>
+							    </div>
+							{% else %}
+							   <div class="item">
+							         <div class="name-align">
+							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.Company-name}}</span>
+							        <i class="fa fa-user"></i></span>
+							     </div>
+							    </div>
+							{% endif %}
+							{% endfor %}
+						 </div><!-- end of carousel inner-->
+						</div><!-- end of crousel-->
+						</div><!--end of col-->
+					
 
 						</div>
 					<!--end of row3-->
+				</div>
+			<!-- hw-engage-cont -->
 
+			<!-- hw-engage-cont -->
+				<div class="hw-engage-cont">
 					<!-- row 4 -->
-						<div class="row row-top-mar">
+						<div class="row">
 
 							<div class="col-lg-5">
+								<div id="consulting-testimonial-first" class="carousel-cust carousel slide testimonial" data-ride="carousel" data-interval="false">
+  								<ol class="carousel-indicators testimonial-ol">
+									{% for testimony in site.data.testimonial.consulting%}
+		                      			{% if forloop.first %}
+		 									<li data-to="{{forloop.index0}}" class="active"></li>
+										{% else %}
+		   									<li data-to="{{forloop.index0}}"></li>
+										{% endif %}
+	                     			{% endfor %}
+ 								 </ol>
+
+							  <!-- Wrapper for slides -->
+							  <div class="carousel-inner">
+							   {% for testimony in site.data.testimonial.consulting%}
+							       {% if forloop.first %}
+							  	<div class="item active">
+							      <div >
+							       {{ testimony.Testimony}}
+							      </div>
+							    </div>
+								{% else %}
+							   <div class="item">
+							      	<div >
+							       		{{ testimony.Testimony}}
+							      	</div>
+							    </div>
+								{% endif %}
+							    {% endfor %}
+							   </div>
+								</div>
+							    <div class="arrow-down"></div>
+								<div id="consulting-testimonial-second" class="carousel carousel-cust slide" data-ride="carousel" data-interval="false">
+
+							  <!-- Wrapper for slides -->
+							  <div class="carousel-inner">
+							    {% for testimony in site.data.testimonial.consulting%}
+							        {% if forloop.first %}
+							 <div class="item active">
+							         <div class="name-align">
+							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.Company-name}}</span>
+							        <i class="fa fa-user"></i></span>
+							  </div>
+							    </div>
+							{% else %}
+							   <div class="item">
+							         <div class="name-align">
+							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.Company-name}}</span>
+							        <i class="fa fa-user"></i></span>
+							     </div>
+							    </div>
+							{% endif %}
+							{% endfor %}
+						 </div><!-- end of carousel inner-->
+						</div><!-- end of crousel-->
 							</div>
 
 							<div class="col-lg-7">
 								<h2 class="gotham-rounded-bok font-40 h2-color">Application Development</h2>
 								<div class="div-border-left">
-									<p class="font-22 gotham-rounded-light para">Expand your IT from business function towards customer centric innovation to win, serve and retain customers. Explore multiple dimensions to application connectivity,tap new horizons and inter-connectedness. Business of applications is the new future.
+									<p class="font-22 gotham-rounded-light para">{{ site.data.EngageUs.engageus.upskilling}}
 									</p>
 								</div>
-								<button class="custom-btn">VIEW CASESTUDY</button>
+								<button class="custom-btn">know more</button>
 							</div>
 
 						</div>
 					<!-- end of row4 -->
-
 				</div>
-				<!-- end of container-->
+		<!-- End of hw-engage-cont -->
 
-			<!-- end of tab1 -->
-	   		 </div>
+		</div>
+		<!-- end of container-->
+
+		</div>
+	   	<!-- end of tab1 -->
 
 	   		<!-- tab2-->
 	        <div id="engineering" class="tab-pane fade">
@@ -488,6 +636,8 @@
 
 	</div>
 	<!-- end of tabs-->
+
+	
 
 	
 
