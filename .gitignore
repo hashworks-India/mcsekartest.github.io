@@ -26,7 +26,7 @@ Temporary Items
 ### Sass ###
 .sass-cache
 ### Jekyll ###
-_site/
+_site
 .jekyll-metadata
 _site/IT-Services/index.html
 _site/
