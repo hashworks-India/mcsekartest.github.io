@@ -44,22 +44,29 @@
 
 	<div class="container-fluid cs-cntr-mar">
 
-		<div class="row">
+            {% for project in site.case-study %}
+    {% assign mod = forloop.index0 | modulo: 2 %}
+    {% if mod == 0 %}
+        <!-- even -->
+     
+                 <div class="row">
 			<div class="col-lg-8 col-rite">
 				<div class="banner">
 					<img src="/assets/img/case-study/banner1.jpg">
 					<div class="cs-arrow-left cs-arrow"></div>
 				</div>
 			</div>
-			<div class="col-lg-4">
+
+              <div class="col-lg-4">
 				<div>
-					<h6 class="text-center gotham-rounded-bok font-18"> VINTAGE OLIVE </h6>
-					<p class="font-14  gotham-rounded-light cs-para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.</p>
+					<h6 class="text-center gotham-rounded-bok font-18"> {{ project.name }} </h6>
+					<p class="font-14  gotham-rounded-light cs-para">{{ project.description }}</p>
 					<div class="hr-display">
 						<button class="custom-btn" data-toggle="modal" data-target="#myModal"> LEARN MORE</button>
 					</div>
 				</div>
 			</div>
+
 			<!--pop up-->
 			 
 			 <div class="modal fade" id="myModal" role="dialog">
@@ -69,10 +76,10 @@
 			      	<div class="modal-content">
 				        <div class="modal-header">
 				          <button type="button" class="close" data-dismiss="modal">&times;</button>
-				          <h4 class="modal-title">The new realities of IT</h4>
+				          <h4 class="modal-title">{{ project.name }}</h4>
 				        </div>
 				        <div class="modal-body">
-				          <p>Some text in the modal.</p>
+				          <p>{{project.content}}</p>
 				        </div>
 			     	 </div>
 			      
@@ -82,47 +89,69 @@
 			<!--end of pop up-->
 		</div>
 
-		<div class="row">
-			<div class="col-lg-4">
+    {% else %}
+        <!-- odd -->
+      
+                 <div class="row">
+                 	 <div class="col-lg-4">
 				<div>
-					<h6 class="text-center gotham-rounded-bok font-18"> LA BARIOSA </h6>
-					<p class="font-14  gotham-rounded-light cs-para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.</p>
+					<h6 class="text-center gotham-rounded-bok font-18"> {{ project.name }} </h6>
+					<p class="font-14  gotham-rounded-light cs-para">{{ project.description }}</p>
 					<div class="hr-display">
-						<button class="custom-btn"> LEARN MORE</button>
+						<button class="custom-btn" data-toggle="modal" data-target="#myModal"> LEARN MORE</button>
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-8 col-8-left">
+			<div class="col-lg-8 col-rite">
 				<div class="banner">
-						<img src="/assets/img/case-study/banner2.jpg">
-					<div class="cs-arrow-right cs-arrow"></div>
-					
-				</div>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-lg-4 col-rite">
-				<div class="banner">
-						<img src="/assets/img/case-study/banner3.jpg">
+					<img src="/assets/img/case-study/banner1.jpg">
 					<div class="cs-arrow-left cs-arrow"></div>
 				</div>
 			</div>
-			<div class="col-lg-4">
-				<div>
-					<h6 class="text-center gotham-rounded-bok font-18"> VINTAGE OLIVE </h6>
-					<p class="font-14  gotham-rounded-light cs-para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.</p>
-					<div class="hr-display">
-						<button class="custom-btn"> LEARN MORE</button>
-					</div>
-				</div>	
-			</div>
-			<div class="col-lg-4">
-				<div class="banner">
-					<img src="/assets/img/case-study/banner4.jpg">
-				</div>
-			</div>
+
+             
+
+			<!--pop up-->
+			 
+			 <div class="modal fade" id="myModal" role="dialog">
+			    <div class="modal-dialog modal-lg">
+			    
+			      <!-- Modal content-->
+			      	<div class="modal-content">
+				        <div class="modal-header">
+				          <button type="button" class="close" data-dismiss="modal">&times;</button>
+				          <h4 class="modal-title">{{ project.name }}</h4>
+				        </div>
+				        <div class="modal-body">
+				          <p>{{project.content}}</p>
+				        </div>
+			     	 </div>
+			      
+			    </div>
+			  </div>
+  
+			<!--end of pop up-->
 		</div>
+
+    {% endif %}
+{% endfor %}
+
+
+
+
+            {% for project in site.case-study %}
+
+        
+
+               
+                 
+           {% endfor %}
+
+
+
+
+
+		
 
 	</div> 
 
