@@ -1,0 +1,12 @@
+---
+layout: site
+---
+
+<div class="home">
+  <h2>list of case study</h2>
+  <ul>
+    {% for project in site.case-study %}
+      <li>list-{{ project.name }}</li>
+      {{project.content}}
+    {% endfor %}
+  </ul>

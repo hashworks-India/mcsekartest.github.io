@@ -5,6 +5,9 @@ permalink: pretty
 
 port: 8000
 
+collections:
+ - case-study
+
 
 
 
