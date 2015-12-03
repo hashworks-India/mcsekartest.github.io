@@ -45,12 +45,12 @@
 	<div class="container-fluid cs-cntr-mar">
 
             {% for project in site.case-study %}
-    {% assign mod = forloop.index0 | modulo: 2 %}
-    {% if mod == 0 %}
+    {% assign mod = forloop.index | modulo: 3 %}
+    {% if mod == 1 %}
         <!-- even -->
      
                  <div class="row">
-			<div class="col-lg-8 col-rite">
+			<div class="col-lg-8 col-rite equal-height-col">
 
 				<div class="banner">
 					<img src="/assets/img/case-study/banner1.jpg">
@@ -59,7 +59,7 @@
 			</div>
 
 
-              <div class="col-lg-4">
+              <div class="col-lg-4 equal-height-col">
 				<div>
 					<h6 class="text-center gotham-rounded-bok font-18"> {{ project.name }} </h6>
 					<p class="font-14  gotham-rounded-light cs-para">{{ project.description }}</p>
@@ -92,11 +92,14 @@
 			<!--end of pop up-->
 		</div>
 
-    {% else %}
-        <!-- odd -->
-      
+
+		{% elsif mod == 2 %}
+        <!-- even -->
+     
                  <div class="row">
-                 	 <div class="col-lg-4">
+			
+
+              <div class="col-lg-4 equal-height-col">
 				<div>
 					<h6 class="text-center gotham-rounded-bok font-18"> {{ project.name }} </h6>
 					<p class="font-14  gotham-rounded-light cs-para">{{ project.description }}</p>
@@ -106,8 +109,7 @@
 					</div>
 				</div>
 			</div>
-
-			<div class="col-lg-8 col-rite">
+			<div class="col-lg-8 col-8-left equal-height-col">
 
 				<div class="banner">
 					<img src="/assets/img/case-study/banner1.jpg">
@@ -115,6 +117,62 @@
 				</div>
 			</div>
 
+
+			<!--pop up-->
+			 
+			 <div class="modal fade" id="myModal" role="dialog">
+			    <div class="modal-dialog modal-lg">
+			    
+			      <!-- Modal content-->
+			      	<div class="modal-content">
+				        <div class="modal-header">
+				          <button type="button" class="close" data-dismiss="modal">&times;</button>
+				          <h4 class="modal-title">{{ project.name }}</h4>
+				        </div>
+				        <div class="modal-body">
+				          <p>{{project.content}}</p>
+				        </div>
+			     	 </div>
+			      
+			    </div>
+			  </div>
+  
+			<!--end of pop up-->
+		</div>
+
+
+    {% else %}
+        <!-- odd -->
+
+
+	<div class="row">
+			<div class="col-lg-4 equal-height-col col-rite">
+				<div class="banner">
+						<img src="/assets/img/case-study/banner3.jpg">
+					<div class="cs-arrow-left cs-arrow"></div>
+				</div>
+			</div>
+			<div class="col-lg-4 equal-height-col">
+				<div>
+					<div class="text-center">
+						<img src="/assets/img/case-study/eye.jpg" alt="eye">
+					</div>
+					<h6 class="text-center gotham-rounded-bok font-18"> {{ project.name }} </h6>
+					<p class="font-14  gotham-rounded-light cs-para">{{ project.description }}</p>
+					<div class="hr-display">
+						<button class="custom-btn"> LEARN MORE</button>
+					</div>
+				</div>	
+			</div>
+			<div class="col-lg-4 equal-height-col">
+				<div class="banner">
+					<img src="/assets/img/case-study/banner4.jpg">
+				</div>
+			</div>
+		
+
+      
+               
 
              
 
@@ -138,8 +196,8 @@
 			  </div>
   
 			<!--end of pop up-->
-
-		</div>
+</div>
+		
 
     {% endif %}
 {% endfor %}
