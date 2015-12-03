@@ -111,6 +111,12 @@
 	.text-uppercase {
 		text-transform: uppercase;
 	}
+	
+	.equal-height-col {
+		display: table-cell;
+		float: none;
+		vertical-align: middle;
+	}
 
 	.col-20 {
 		width: 20%;
