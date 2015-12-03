@@ -248,7 +248,6 @@
 		margin-top: 18px;
 	}
 	.h-approch {
-		padding-left: 100px;
 		padding-top: 20px;
 		padding-bottom: 20px;
 	}
@@ -298,6 +297,7 @@
 		margin: 0 auto;
 		margin-bottom: 38px;
 	}
+
 
 	/*working with*/
 		.hw-tools-list {
@@ -433,4 +433,50 @@
 .col-testimoni {
 	margin-top: 95px;
 }
+
+/*  case study */
+.banner img {
+	width: 100%;
+}
+.cs-cntr-mar {
+	margin: 40px 50px;
+}
+.cs-arrow {
+	width: 0; 
+	height: 0; 
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	position: absolute;
+	top: 50%;
+}
+.cs-arrow-right {
+	border-left: 10px solid #fff;
+}
+.cs-arrow-left {
+	border-right: 10px solid #fff;
+	right: 0;
+}
+.cs-para {
+	color: #999c9d;
+	line-height: 25px;
+	margin: 0px 45px;
+}
+.col-8-left {
+	padding-left: 0px
+}
+.col-rite {
+	padding-right: 0px;
+}
+/* case-study pop up */
+.modal-header {
+	border: none;
+}
+.modal-content {
+	background-color: #fbfbfb;
+	border-radius: 0px;
+}
+.modal-lg {
+	width: 1386px;
+}
+	
 
