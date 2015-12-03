@@ -83,12 +83,13 @@ border-radius: 5px;
 }
 
 
-#consulting-testimonial-first .carousel-indicators li {
+
+  .testimonial .carousel-indicators li {
      background-color: rgb(199,199,199);
      width: 12px;
     height: 12px;
 }
- #consulting-testimonial-first .carousel-indicators .active {
+ .testimonial .carousel-indicators .active {
    background-color: #69B4DB;
    width: 12px;
     height: 12px;
@@ -97,9 +98,7 @@ border-radius: 5px;
 
 .carosel-pos
 {
-
-margin-top: 80px;
-
+    margin-top: 80px;
 }
 
 .arrow-down {
@@ -110,11 +109,23 @@ margin-top: 80px;
     border-top: 37px solid #69B4DB;
     position: absolute;
 }
+.arrow-down-left {
+       left: 70px;
+    width: 0px;
+    height: 0;
+    border-left: 32px solid transparent;
+    border-top: 37px solid #69B4DB;
+    position: absolute;
+}
 .name-align
 {
        margin-top: 30px;
         margin-left: 200px;
 
+}
+.name-align2 {
+    margin-top: 30px;
+    margin-left: 90px;
 }
 
 
