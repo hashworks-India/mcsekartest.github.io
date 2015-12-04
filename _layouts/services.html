@@ -3,7 +3,7 @@
 <main>
 
    
-	<h1 class="text-center gotham-rounded-bok heading hw-main-heading"> Consulting</h1>
+	<h1 class="text-center gotham-rounded-bok heading hw-carousel-heading"> Consulting</h1>
 
    		<div class="carousel-padding">
 		   	<div class="line"></div>
@@ -120,13 +120,13 @@
 							   {% for testimony in site.data.Consulting.Platform_Integration.osb.testimonial%}
 							       {% if forloop.first %}
 							  	<div class="item active">
-							      <div >
+							      <div class="hw-para">
 							       {{ testimony.testimony}}
 							      </div>
 							    </div>
 								{% else %}
 							   <div class="item">
-							      	<div >
+							      	<div class="hw-para">
 							       		{{ testimony.testimony}}
 							      	</div>
 							    </div>
@@ -142,15 +142,15 @@
 							    {% for testimony in site.data.Consulting.Platform_Integration.osb.testimonial%}
 							        {% if forloop.first %}
 							 <div class="item active">
-							         <div class="name-align">
-							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
+							         <div class="name-align hr-display">
+							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
 							        <img src="/assets/img/consulting/user-pic.png">
 							  </div>
 							    </div>
 							{% else %}
 							   <div class="item">
-							         <div class="name-align">
-							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
+							         <div class="name-align hr-display">
+							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
 							        <img src="/assets/img/consulting/user-pic.png">
 							     </div>
 							    </div>
@@ -189,13 +189,13 @@
 							   {% for testimony in site.data.Consulting.Platform_Integration.microservices.testimonial%}
 							       {% if forloop.first %}
 							  	<div class="item active">
-							      <div >
+							      <div class="hw-para">
 							       {{ testimony.testimony}}
 							      </div>
 							    </div>
 								{% else %}
 							   <div class="item">
-							      	<div >
+							      	<div class="hw-para">
 							       		{{ testimony.testimony}}
 							      	</div>
 							    </div>
@@ -211,16 +211,16 @@
 							    {% for testimony in site.data.Consulting.Platform_Integration.microservices.testimonial%}
 							        {% if forloop.first %}
 							 <div class="item active">
-							         <div class="name-align2">
+							         <div class="name-align hr-display">
 							         	<img src="/assets/img/consulting/user-pic.png">
-							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}
+							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}
 							        </span>
 							  </div>
 							    </div>
 							{% else %}
 							   <div class="item">
-							         <div class="name-align">
-							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
+							         <div class="name-align hr-display">
+							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
 							        <img src="/assets/img/consulting/user-pic.png">
 							     </div>
 							    </div>
@@ -282,13 +282,13 @@
 							   {% for testimony in site.data.Consulting.Platform_Integration.etl.testimonial%}
 							       {% if forloop.first %}
 							  	<div class="item active">
-							      <div >
+							      <div class="hw-para">
 							       {{ testimony.testimony}}
 							      </div>
 							    </div>
 								{% else %}
 							   <div class="item">
-							      	<div >
+							      	<div class="hw-para">
 							       		{{ testimony.testimony}}
 							      	</div>
 							    </div>
@@ -304,15 +304,15 @@
 							    {% for testimony in site.data.Consulting.Platform_Integration.etl.testimonial%}
 							        {% if forloop.first %}
 							 <div class="item active">
-							         <div class="name-align">
-							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
+							         <div class="name-align hr-display">
+							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
 							        <img src="/assets/img/consulting/user-pic.png">
 							  </div>
 							    </div>
 							{% else %}
 							   <div class="item">
-							         <div class="name-align">
-							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
+							         <div class="name-align hr-display">
+							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
 							        <img src="/assets/img/consulting/user-pic.png">
 							     </div>
 							    </div>
@@ -355,13 +355,13 @@
 							   {% for testimony in site.data.Consulting.Platform_Integration.application_development.testimonial%}
 							       {% if forloop.first %}
 							  	<div class="item active">
-							      <div >
+							      <div class="hw-para">
 							       {{ testimony.testimony}}
 							      </div>
 							    </div>
 								{% else %}
 							   <div class="item">
-							      	<div >
+							      	<div class="hw-para">
 							       		{{ testimony.testimony}}
 							      	</div>
 							    </div>
@@ -377,15 +377,15 @@
 							    {% for testimony in site.data.Consulting.Platform_Integration.application_development.testimonial%}
 							        {% if forloop.first %}
 							 <div class="item active">
-							         <div class="name-align2"><img src="/assets/img/consulting/user-pic.png">
-							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}
+							         <div class="name-align hr-display"><img src="/assets/img/consulting/user-pic.png">
+							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}
 							        </span>
 							  </div>
 							    </div>
 							{% else %}
 							   <div class="item">
-							         <div class="name-align">
-							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
+							         <div class="name-align hr-display">
+							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
 							        <img src="/assets/img/consulting/user-pic.png">
 							     </div>
 							    </div>
@@ -457,13 +457,13 @@
 							   {% for testimony in site.data.Consulting.Engineering_Practices.devops.testimonial%}
 							       {% if forloop.first %}
 							  	<div class="item active">
-							      <div >
+							      <div class="hw-para">
 							       {{ testimony.testimony}}
 							      </div>
 							    </div>
 								{% else %}
 							   <div class="item">
-							      	<div >
+							      	<div class="hw-para">
 							       		{{ testimony.testimony}}
 							      	</div>
 							    </div>
@@ -479,15 +479,15 @@
 							    {% for testimony in site.data.Consulting.Engineering_Practices.devops.testimonial%}
 							        {% if forloop.first %}
 							 <div class="item active">
-							         <div class="name-align">
-							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}
+							         <div class="name-align hr-display">
+							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}
 							       </span><img src="/assets/img/consulting/user-pic.png">
 							  </div>
 							    </div>
 							{% else %}
 							   <div class="item">
-							         <div class="name-align">
-							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
+							         <div class="name-align hr-display">
+							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
 							        <img src="/assets/img/consulting/user-pic.png">
 							     </div>
 							    </div>
@@ -526,13 +526,13 @@
 							   {% for testimony in site.data.Consulting.Engineering_Practices.performance_engineering.testimonial%}
 							       {% if forloop.first %}
 							  	<div class="item active">
-							      <div >
+							      <div class="hw-para">
 							       {{ testimony.testimony}}
 							      </div>
 							    </div>
 								{% else %}
 							   <div class="item">
-							      	<div >
+							      	<div class="hw-para">
 							       		{{ testimony.testimony}}
 							      	</div>
 							    </div>
@@ -548,16 +548,16 @@
 							    {% for testimony in site.data.Consulting.Engineering_Practices.performance_engineering.testimonial%}
 							        {% if forloop.first %}
 							 <div class="item active">
-							         <div class="name-align2">
+							         <div class="name-align hr-display">
 							         	<img src="/assets/img/consulting/user-pic.png">
-							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}
+							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}
 							        </span>
 							  </div>
 							    </div>
 							{% else %}
 							   <div class="item">
-							         <div class="name-align">
-							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
+							         <div class="name-align hr-display">
+							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
 							        <img src="/assets/img/consulting/user-pic.png">
 							     </div>
 							    </div>
@@ -619,13 +619,13 @@
 							   {% for testimony in site.data.Consulting.Engineering_Practices.test_automation.testimonial%}
 							       {% if forloop.first %}
 							  	<div class="item active">
-							      <div >
+							      <div class="hw-para">
 							       {{ testimony.testimony}}
 							      </div>
 							    </div>
 								{% else %}
 							   <div class="item">
-							      	<div >
+							      	<div class="hw-para">
 							       		{{ testimony.testimony}}
 							      	</div>
 							    </div>
@@ -641,15 +641,15 @@
 							    {% for testimony in site.data.Consulting.Engineering_Practices.test_automation.testimonial%}
 							        {% if forloop.first %}
 							 <div class="item active">
-							         <div class="name-align">
-							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
+							         <div class="name-align hr-display">
+							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
 							        <img src="/assets/img/consulting/user-pic.png">
 							  </div>
 							    </div>
 							{% else %}
 							   <div class="item">
-							         <div class="name-align">
-							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
+							         <div class="name-align hr-display">
+							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
 							        <img src="/assets/img/consulting/user-pic.png">
 							     </div>
 							    </div>
@@ -692,13 +692,13 @@
 							   {% for testimony in site.data.Consulting.Engineering_Practices.agile_testing.testimonial%}
 							       {% if forloop.first %}
 							  	<div class="item active">
-							      <div >
+							      <div class="hw-para">
 							       {{ testimony.testimony}}
 							      </div>
 							    </div>
 								{% else %}
 							   <div class="item">
-							      	<div >
+							      	<div class="hw-para">
 							       		{{ testimony.testimony}}
 							      	</div>
 							    </div>
@@ -714,15 +714,15 @@
 							    {% for testimony in site.data.Consulting.Engineering_Practices.agile_testing.testimonial%}
 							        {% if forloop.first %}
 							 <div class="item active">
-							         <div class="name-align2"><img src="/assets/img/consulting/user-pic.png">
-							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}
+							         <div class="name-align hr-display"><img src="/assets/img/consulting/user-pic.png">
+							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}
 							        </span>
 							  </div>
 							    </div>
 							{% else %}
 							   <div class="item">
-							         <div class="name-align">
-							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
+							         <div class="name-align hr-display">
+							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
 							        <img src="/assets/img/consulting/user-pic.png">
 							     </div>
 							    </div>
@@ -790,13 +790,13 @@
 							   {% for testimony in site.data.Consulting.Mobility_Bigdata.enterprise_mobility.testimonial%}
 							       {% if forloop.first %}
 							  	<div class="item active">
-							      <div >
+							      <div class="hw-para">
 							       {{ testimony.testimony}}
 							      </div>
 							    </div>
 								{% else %}
 							   <div class="item">
-							      	<div >
+							      	<div class="hw-para">
 							       		{{ testimony.testimony}}
 							      	</div>
 							    </div>
@@ -812,15 +812,15 @@
 							    {% for testimony in site.data.Consulting.Mobility_Bigdata.enterprise_mobility.testimonial%}
 							        {% if forloop.first %}
 							 <div class="item active">
-							         <div class="name-align">
-							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
+							         <div class="name-align hr-display">
+							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
 							        <img src="/assets/img/consulting/user-pic.png">
 							  </div>
 							    </div>
 							{% else %}
 							   <div class="item">
-							         <div class="name-align">
-							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
+							         <div class="name-align hr-display">
+							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
 							        <img src="/assets/img/consulting/user-pic.png">
 							     </div>
 							    </div>
@@ -859,13 +859,13 @@
 							   {% for testimony in site.data.Consulting.Mobility_Bigdata.operational_analytics.testimonial%}
 							       {% if forloop.first %}
 							  	<div class="item active">
-							      <div >
+							      <div class="hw-para">
 							       {{ testimony.testimony}}
 							      </div>
 							    </div>
 								{% else %}
 							   <div class="item">
-							      	<div >
+							      	<div class="hw-para">
 							       		{{ testimony.testimony}}
 							      	</div>
 							    </div>
@@ -881,16 +881,16 @@
 							    {% for testimony in site.data.Consulting.Mobility_Bigdata.operational_analytics.testimonial%}
 							        {% if forloop.first %}
 							 <div class="item active">
-							         <div class="name-align2">
+							         <div class="name-align hr-display">
 							         	<img src="/assets/img/consulting/user-pic.png">
-							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}
+							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}
 							        </span>
 							  </div>
 							    </div>
 							{% else %}
 							   <div class="item">
-							         <div class="name-align">
-							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
+							         <div class="name-align hr-display">
+							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
 							        <img src="/assets/img/consulting/user-pic.png">
 							     </div>
 							    </div>
@@ -952,13 +952,13 @@
 							   {% for testimony in site.data.Consulting.Mobility_Bigdata.predictive_analysis.testimonial%}
 							       {% if forloop.first %}
 							  	<div class="item active">
-							      <div >
+							      <div class="hw-para">
 							       {{ testimony.testimony}}
 							      </div>
 							    </div>
 								{% else %}
 							   <div class="item">
-							      	<div >
+							      	<div class="hw-para">
 							       		{{ testimony.testimony}}
 							      	</div>
 							    </div>
@@ -974,15 +974,15 @@
 							    {% for testimony in site.data.Consulting.Mobility_Bigdata.predictive_analysis.testimonial%}
 							        {% if forloop.first %}
 							 <div class="item active">
-							         <div class="name-align">
-							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
+							         <div class="name-align hr-display">
+							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
 							        <img src="/assets/img/consulting/user-pic.png">
 							  </div>
 							    </div>
 							{% else %}
 							   <div class="item">
-							         <div class="name-align">
-							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
+							         <div class="name-align hr-display">
+							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
 							        <img src="/assets/img/consulting/user-pic.png">
 							     </div>
 							    </div>
@@ -1025,13 +1025,13 @@
 							   {% for testimony in site.data.Consulting.Mobility_Bigdata.consumer_apps.testimonial%}
 							       {% if forloop.first %}
 							  	<div class="item active">
-							      <div >
+							      <div class="hw-para">
 							       {{ testimony.testimony}}
 							      </div>
 							    </div>
 								{% else %}
 							   <div class="item">
-							      	<div >
+							      	<div class="hw-para">
 							       		{{ testimony.testimony}}
 							      	</div>
 							    </div>
@@ -1047,15 +1047,15 @@
 							    {% for testimony in site.data.Consulting.Mobility_Bigdata.consumer_apps.testimonial%}
 							        {% if forloop.first %}
 							 <div class="item active">
-							         <div class="name-align2"><img src="/assets/img/consulting/user-pic.png">
-							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}
+							         <div class="name-align hr-display"><img src="/assets/img/consulting/user-pic.png">
+							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}
 							        </span>
 							  </div>
 							    </div>
 							{% else %}
 							   <div class="item">
-							         <div class="name-align">
-							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
+							         <div class="name-align hr-display">
+							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
 							        <img src="/assets/img/consulting/user-pic.png">
 							     </div>
 							    </div>
