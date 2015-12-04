@@ -17,7 +17,7 @@
 <body >  
  <div class="container-fluid "> 
     <div class="row">
-  <a class="contact hr-display col-md-offset-5  gotham-rounded-bok font-18">Contact Us +0123456789</a>
+  <a class="contact hr-display clr-white gotham-rounded-bok hw-contact-no">Contact Us +0123456789</a>
 </div>
 
 
@@ -40,7 +40,7 @@
       <ul class="nav navbar-nav">
       
                     {% for item in site.data.nav.main-left %}
-                        <li class="gotham-rounded-light font-20">
+                        <li class="gotham-rounded-light header-links">
                             <a href="{{ item.url }}">{{ item.text }}</a>
                         </li>
                     {% endfor %}
@@ -50,7 +50,7 @@
      
       <ul class="nav navbar-nav navbar-right">
          {% for item in site.data.nav.main-right %}
-                        <li class="gotham-rounded-light font-20">
+                        <li class="gotham-rounded-light header-links">
                             <a href="{{ item.url }}">{{ item.text }}</a>
                         </li>
                     {% endfor %}

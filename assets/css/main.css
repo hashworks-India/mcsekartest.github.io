@@ -1,3 +1,7 @@
+html {
+	font-size: 16px;
+}
+
 /* fonts */
 	@font-face {
 		font-family:'gotham-rounded-bold';
@@ -29,6 +33,11 @@
 
 	ul li {
 		list-style-type: none;
+	}
+
+	body {
+		font: 1rem/1.4 "gotham-rounded-bold";
+		color: #7c7c7c;
 	}
 
 	a:focus,
@@ -71,33 +80,32 @@
 		font-family: "gotham-rounded-light-italic"; 
 	}
 
-	.font-12 {
-		font-size: 12px;
+	.hw-main-heading {
+		font-size: 1.88rem;  /*30px*/
 	}
-	.font-14 {
-		font-size: 14px;
+
+	.hw-tab-heading,
+	.hw-socialshare {
+		font-size: 1.25rem;  /*20px*/
 	}
-	.font-18 {
-		font-size: 18px;
+
+	.hw-heading {
+		font-size: 1.5rem;  /*24px*/
 	}
-	.font-20 {
-		font-size: 20px;
+
+	.hw-para,
+	.header-links {
+		font-size: 1.13rem;  /*18px*/
 	}
-	.font-22 {
-		font-size: 22px;
+
+	.hw-copyright {
+		font-size: 1rem;  /*16px*/
 	}
-	.font-24 {
-		font-size: 24px;
+
+	.hw-contact-no {
+		font-size: 0.875rem;  /*14px*/
 	}
-	.font-30 {
-		font-size: 30px;
-	}  
-	.font-40 {
-		font-size: 40px;
-	}
-	.font-34 {
-		font-size: 34px;
-	}
+
 	.h2-color {
 		color: #545454;
 	}
@@ -116,6 +124,7 @@
 		display: table-cell;
 		float: none;
 		vertical-align: middle;
+		padding: 0;
 	}
 
 	.col-20 {
@@ -167,9 +176,29 @@
 		font-family: "gotham-rounded-bold";
 		background-color: #ee2b7b;
 		text-transform: uppercase;
-		border: none;
-		box-shadow: -3px 3px 3px grey;
+		border: 1px solid #ee2b7b;
+		-webkit-transition: all .5s ease 0s;
+		-moz-transition: all .5s ease 0s;
+		-ms-transition: all .5s ease 0s;
+		-o-transition: all .5s ease 0s;
+		transition: all .5s ease 0s;
+		
 	}
+
+	.custom-btn a {
+		color: #fff;
+	}
+
+	.custom-btn:hover a {
+		color: #ee2b7b;
+	}
+
+	.custom-btn:hover {
+		background-color: transparent;
+		border: 1px solid #ee2b7b;
+		color: #ee2b7b;
+	}
+
 	.hr-display {
 		display: table;
 		margin: 0 auto;
@@ -198,15 +227,19 @@
 
 /* engage page */
 	.navbar-header .navbar-brand {
-		padding-top: 10px;
+		padding-top: 5px;
 	}
 
 	.navbar-brand svg {
-		height: 30px;
+		height: 40px;
 	}
 
 	.hw-engage-cont {
-		margin: 20px 0 55px;
+		margin: 30px 0 60px;
+	}
+
+	.hw-engage-cont .row > div {
+		padding: 0 30px;
 	}
 
 	.hw-engage-cont .img-outer {
@@ -216,10 +249,6 @@
 	.div-margin-left {
 		margin-left: 100px;
 		margin-right: 100px;
-	}
-
-	.div-margin-left > .hw-engage-cont:last-child {
-		margin: 20px 0 20px;
 	}
 
 	.para{
@@ -254,8 +283,8 @@
 		margin-top: 18px;
 	}
 	.h-approch {
-		padding-top: 20px;
-		padding-bottom: 20px;
+		padding: 20px 0;
+		text-align: center;
 	}
 	.clients-img {
 		padding-top: 23px;
@@ -300,8 +329,7 @@
 	}
 	.li-tab-mar {
 		display: table;
-		margin: 0 auto;
-		margin-bottom: 38px;
+		margin: 0 auto 20px;
 	}
 
 
@@ -346,7 +374,7 @@
 
 		.hw-tools-details ul>li:last-child {
 			font-family: "gotham-rounded-light";
-			font-size: 12px;
+			font-size: 0.75rem;
 			color: #7e7e7e;
 		}
 	/*End of working with*/
@@ -374,14 +402,14 @@
 
 		.hw-works h3 {
 			font-family: "gotham-rounded-bold";
-			font-size: 16px;
+			font-size: 1rem;
 			color: #394b50;
 			line-height: 18.7px;
 		}
 
 		.hw-works p {
 			font-family: "gotham-rounded-light";
-			font-size: 10px;
+			font-size: 0.625rem;
 			line-height: 18.17px;
 		}
 
@@ -415,29 +443,38 @@
 	width: 10%;
 	background-color: #0ab4c5;
 	left: 50%;
-	margin-left: -10px;
 	position: absolute;
-
+	bottom: 0;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	
 }
 .heading {
-	font-size: 60px;
 	color: #474e5d;
 }
 .line-padding {
-	padding-top: 100px;
+	padding-top: 50px;
 }
 .carousel-padding {
-	padding-top: 20px;
-	padding-bottom: 100px;
+	position: relative;
+	padding: 20px 0 60px;
 }
-.carousel-indicatr-pos {
+/*.carousel-indicatr-pos {
 	top:33px;
-}
+}*/
 .heading-caro-padd {
 	padding:0 100px;
 }
+
+#ui .col-testimoni {
+	margin-top: 16px;
+}
+
 .col-testimoni {
-	margin-top: 95px;
+	margin-top: 50px;
 }
 
 /*  case study */
