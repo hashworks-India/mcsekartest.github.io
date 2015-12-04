@@ -7,6 +7,9 @@ collections:
 
 port: 8000
 
+collections:
+ - case_study
+
 
 
 
