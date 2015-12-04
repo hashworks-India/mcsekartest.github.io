@@ -14,21 +14,19 @@
 			    	 {% for cont in site.data.Consulting.carousel.carousel_content%}
 							       {% if forloop.first %}
 							  	<div class="item active">
-							      <p class=" gotham-rounded-bok font-30">
+							      <p class=" gotham-rounded-bok ">
 							       {{ cont.content}}
 							      </p>
 							    </div>
 								{% else %}
 							   <div class="item">
-							       <p class=" gotham-rounded-bok font-30">
+							       <p class=" gotham-rounded-bok ">
 							       		 {{ cont.content}}
 							      	</p>
 							    </div>
 								{% endif %}
 							    {% endfor %}
-
-			    
-			    </div>
+				</div>
 
 			</div>
 
@@ -56,28 +54,28 @@
 		        <li class="active c-flex"><a class="hr-display"  data-toggle="tab" href="#platform" >
 		        	<ul class="tab-img">
 		        		<li  class="li-tab-mar"><img src="/assets/img/it-service/platform_integration.jpg"></li>
-		        		<li class="gotham-rounded-light font-24"><p class="text-center">Platform</p> <p class="text-center">Integration</p></li>
+		        		<li class="gotham-rounded-light "><p class="text-center">Platform</p> <p class="text-center">Integration</p></li>
 					</ul></a>
 				</li>
 		        
 		        <li class="c-flex"><a  class="hr-display" data-toggle="tab" href="#engineering" >
 		        	<ul class="tab-img">
 		        		<li class="li-tab-mar"><img src="/assets/img/it-service/engineering_practices.jpg"></li>
-		        		<li class="gotham-rounded-light font-24"><p>Engineering</p> <p class="text-center"> Practice</p></li>
+		        		<li class="gotham-rounded-light "><p>Engineering</p> <p class="text-center"> Practice</p></li>
 					</ul></a>
 		        </li>
 
 		        <li class="c-flex"><a  class="hr-display" data-toggle="tab" href="#mobility" >
 		        	<ul class="tab-img" >
 		        		<li class="li-tab-mar"><img src="/assets/img/it-service/mobility-bigdata.jpg"></li>
-		        		<li class="gotham-rounded-light font-24"><p>Mobility/</p> <p class="text-center"> Big Data</p></li>
+		        		<li class="gotham-rounded-light "><p>Mobility/</p> <p class="text-center"> Big Data</p></li>
 					</ul></a>
 		        </li>
 
 		        <li class="c-flex"><a  class="hr-display" data-toggle="tab" href="#ui">
 		        	<ul class="tab-img" >
 		        		<li class="li-tab-mar"><img src="/assets/img/it-service/ui-ux.jpg"></li>
-		        		<li class="gotham-rounded-light font-24"><p class="text-center">UI/UX</p><br></li>
+		        		<li class="gotham-rounded-light "><p class="text-center">UI/UX</p><br></li>
 					</ul></a>
 		        </li>
 		    </ul>
@@ -97,9 +95,9 @@
 						<div class="row ">
 
 							<div class="col-lg-7">
-								<h2 class="gotham-rounded-bok font-40 h2-color">{{ site.data.Consulting.Platform_Integration.osb.title}}</h2>
+								<h2 class="gotham-rounded-bok  h2-color">{{ site.data.Consulting.Platform_Integration.osb.title}}</h2>
 								<div class="div-border-left">
-									<p class="font-22 gotham-rounded-light para">{{ site.data.Consulting.Platform_Integration.osb.content}}
+									<p class=" gotham-rounded-light para ">{{ site.data.Consulting.Platform_Integration.osb.content}}
 									</p>
 								</div>
 								<button class="custom-btn"><a href="/case_study/index.html">case study</a></button>
@@ -107,7 +105,7 @@
 
 							<div class="col-lg-5 col-testimoni testimonial-carousel">
 								<!-- Testimonial carousel -->
-									<div id="osb-testimonial-first" class="carousel-osb carousel slide testimonial" data-ride="carousel" data-interval="false">
+								<div id="osb-testimonial-first" class="carousel-osb carousel slide testimonial" data-ride="carousel" data-interval="false">
   								<ol class="carousel-indicators testimonial-ol">
 									{% for testimony in site.data.Consulting.Platform_Integration.osb.testimonial%}
 		                      			{% if forloop.first %}
@@ -146,15 +144,15 @@
 							        {% if forloop.first %}
 							 <div class="item active">
 							         <div class="name-align">
-							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}
-							        <i class="fa fa-user"></i></span>
+							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}
+							      </span> <img src="/assets/img/it-service/user-pic.png">
 							  </div>
 							    </div>
 							{% else %}
 							   <div class="item">
 							         <div class="name-align">
 							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
-							        <i class="fa fa-user"></i>
+							        <img src="/assets/img/it-service/user-pic.png">
 							     </div>
 							    </div>
 							{% endif %}
@@ -215,8 +213,8 @@
 							        {% if forloop.first %}
 							 <div class="item active">
 							         <div class="name-align2">
-							         	<i class="fa fa-user"></i>
-							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}
+							         	 <img src="/assets/img/it-service/user-pic.png">
+							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}
 							        </span>
 							  </div>
 							    </div>
@@ -224,7 +222,7 @@
 							   <div class="item">
 							         <div class="name-align">
 							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
-							        <i class="fa fa-user"></i>
+							        <img src="/assets/img/it-service/user-pic.png">
 							     </div>
 							    </div>
 							{% endif %}
@@ -238,9 +236,9 @@
 							<!-- end of testimony-carousel-div -->
 
 							<div class="col-lg-7">
-								<h2 class="gotham-rounded-bok font-40 h2-color">{{ site.data.Consulting.Platform_Integration.microservices.title}}</h2>
+								<h2 class="gotham-rounded-bok h2-color">{{ site.data.Consulting.Platform_Integration.microservices.title}}</h2>
 								<div class="div-border-left">
-									<p class="font-22 gotham-rounded-light para">{{ site.data.Consulting.Platform_Integration.microservices.content}}
+									<p class=" gotham-rounded-light para">{{ site.data.Consulting.Platform_Integration.microservices.content}}
 									</p>
 								</div>
 								<button class="custom-btn">VIEW CASESTUDY</button>
@@ -258,9 +256,9 @@
 						<div class="row">
 
 							<div class="col-lg-7">
-								<h2 class="gotham-rounded-bok font-40 h2-color">{{ site.data.Consulting.Platform_Integration.etl.title}}</h2>
+								<h2 class="gotham-rounded-bok  h2-color">{{ site.data.Consulting.Platform_Integration.etl.title}}</h2>
 								<div class="div-border-left">
-									<p class="font-22 gotham-rounded-light para">{{ site.data.Consulting.Platform_Integration.etl.content}}
+									<p class=" gotham-rounded-light para">{{ site.data.Consulting.Platform_Integration.etl.content}}
 									</p>
 								</div>
 								<button class="custom-btn">VIEW CASESTUDY</button>
@@ -308,15 +306,15 @@
 							        {% if forloop.first %}
 							 <div class="item active">
 							         <div class="name-align">
-							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}
-							        <i class="fa fa-user"></i></span>
+							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}
+							       <img src="/assets/img/it-service/user-pic.png">
 							  </div>
 							    </div>
 							{% else %}
 							   <div class="item">
 							         <div class="name-align">
 							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
-							        <i class="fa fa-user"></i>
+							       <img src="/assets/img/it-service/user-pic.png">
 							     </div>
 							    </div>
 							{% endif %}
@@ -380,8 +378,8 @@
 							    {% for testimony in site.data.Consulting.Platform_Integration.application_development.testimonial%}
 							        {% if forloop.first %}
 							 <div class="item active">
-							         <div class="name-align2"><i class="fa fa-user"></i>
-							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}
+							         <div class="name-align2"> <img src="/assets/img/it-service/user-pic.png">
+							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}
 							        </span>
 							  </div>
 							    </div>
@@ -389,7 +387,7 @@
 							   <div class="item">
 							         <div class="name-align">
 							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
-							        <i class="fa fa-user"></i>
+							       <img src="/assets/img/it-service/user-pic.png">
 							     </div>
 							    </div>
 							{% endif %}
@@ -403,9 +401,9 @@
 							<!-- end of testimony-carousel-div -->
                                
 							<div class="col-lg-7">
-								<h2 class="gotham-rounded-bok font-40 h2-color">{{ site.data.Consulting.Platform_Integration.application_development.title}}</h2>
+								<h2 class="gotham-rounded-bok  h2-color">{{ site.data.Consulting.Platform_Integration.application_development.title}}</h2>
 								<div class="div-border-left">
-									<p class="font-22 gotham-rounded-light para">{{ site.data.Consulting.Platform_Integration.application_development.content}}
+									<p class=" gotham-rounded-light para">{{ site.data.Consulting.Platform_Integration.application_development.content}}
 									</p>
 								</div>
 								<button class="custom-btn">VIEW CASESTUDY</button>
@@ -434,9 +432,9 @@
 						<div class="row ">
 
 							<div class="col-lg-7">
-								<h2 class="gotham-rounded-bok font-40 h2-color">{{ site.data.Consulting.Engineering_Practices.devops.title}}</h2>
+								<h2 class="gotham-rounded-bok  h2-color">{{ site.data.Consulting.Engineering_Practices.devops.title}}</h2>
 								<div class="div-border-left">
-									<p class="font-22 gotham-rounded-light para">{{ site.data.Consulting.Engineering_Practices.devops.content}}
+									<p class=" gotham-rounded-light para">{{ site.data.Consulting.Engineering_Practices.devops.content}}
 									</p>
 								</div>
 								<button class="custom-btn">VIEW CASESTUDY</button>
@@ -483,15 +481,15 @@
 							        {% if forloop.first %}
 							 <div class="item active">
 							         <div class="name-align">
-							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}
-							        <i class="fa fa-user"></i></span>
+							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}
+							        <img src="/assets/img/it-service/user-pic.png"></span>
 							  </div>
 							    </div>
 							{% else %}
 							   <div class="item">
 							         <div class="name-align">
-							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
-							        <i class="fa fa-user"></i>
+							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
+							        <img src="/assets/img/it-service/user-pic.png"></i>
 							     </div>
 							    </div>
 							{% endif %}
@@ -552,16 +550,16 @@
 							        {% if forloop.first %}
 							 <div class="item active">
 							         <div class="name-align2">
-							         	<i class="fa fa-user"></i>
-							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}
+							         	 <img src="/assets/img/it-service/user-pic.png">
+							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}
 							        </span>
 							  </div>
 							    </div>
 							{% else %}
 							   <div class="item">
 							         <div class="name-align">
-							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
-							        <i class="fa fa-user"></i>
+							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
+							        <img src="/assets/img/it-service/user-pic.png">
 							     </div>
 							    </div>
 							{% endif %}
@@ -575,9 +573,9 @@
 							<!-- end of testimony-carousel-div -->
 
 							<div class="col-lg-7">
-								<h2 class="gotham-rounded-bok font-40 h2-color">{{ site.data.Consulting.Engineering_Practices.performance_engineering.title}}</h2>
+								<h2 class="gotham-rounded-bok  h2-color">{{ site.data.Consulting.Engineering_Practices.performance_engineering.title}}</h2>
 								<div class="div-border-left">
-									<p class="font-22 gotham-rounded-light para">{{ site.data.Consulting.Engineering_Practices.performance_engineering.content}}
+									<p class=" gotham-rounded-light para">{{ site.data.Consulting.Engineering_Practices.performance_engineering.content}}
 									</p>
 								</div>
 								<button class="custom-btn">VIEW CASESTUDY</button>
@@ -595,9 +593,9 @@
 						<div class="row">
 
 							<div class="col-lg-7">
-								<h2 class="gotham-rounded-bok font-40 h2-color">{{ site.data.Consulting.Engineering_Practices.test_automation.title}}</h2>
+								<h2 class="gotham-rounded-bok  h2-color">{{ site.data.Consulting.Engineering_Practices.test_automation.title}}</h2>
 								<div class="div-border-left">
-									<p class="font-22 gotham-rounded-light para">{{ site.data.Consulting.Engineering_Practices.test_automation.content}}
+									<p class=" gotham-rounded-light para">{{ site.data.Consulting.Engineering_Practices.test_automation.content}}
 									</p>
 								</div>
 								<button class="custom-btn">VIEW CASESTUDY</button>
@@ -645,15 +643,15 @@
 							        {% if forloop.first %}
 							 <div class="item active">
 							         <div class="name-align">
-							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}
-							        <i class="fa fa-user"></i></span>
+							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}
+							       <img src="/assets/img/it-service/user-pic.png"></span>
 							  </div>
 							    </div>
 							{% else %}
 							   <div class="item">
 							         <div class="name-align">
-							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
-							        <i class="fa fa-user"></i>
+							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
+							       <img src="/assets/img/it-service/user-pic.png">
 							     </div>
 							    </div>
 							{% endif %}
@@ -717,16 +715,16 @@
 							    {% for testimony in site.data.Consulting.Engineering_Practices.agile_testing.testimonial%}
 							        {% if forloop.first %}
 							 <div class="item active">
-							         <div class="name-align2"><i class="fa fa-user"></i>
-							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}
+							         <div class="name-align2"> <img src="/assets/img/it-service/user-pic.png">
+							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}
 							        </span>
 							  </div>
 							    </div>
 							{% else %}
 							   <div class="item">
 							         <div class="name-align">
-							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
-							        <i class="fa fa-user"></i>
+							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
+							       <img src="/assets/img/it-service/user-pic.png">
 							     </div>
 							    </div>
 							{% endif %}
@@ -740,9 +738,9 @@
 							<!-- end of testimony-carousel-div -->
                                
 							<div class="col-lg-7">
-								<h2 class="gotham-rounded-bok font-40 h2-color">{{ site.data.Consulting.Engineering_Practices.agile_testing.title}}</h2>
+								<h2 class="gotham-rounded-bok h2-color">{{ site.data.Consulting.Engineering_Practices.agile_testing.title}}</h2>
 								<div class="div-border-left">
-									<p class="font-22 gotham-rounded-light para">{{ site.data.Consulting.Engineering_Practices.agile_testing.content}}
+									<p class=" gotham-rounded-light para">{{ site.data.Consulting.Engineering_Practices.agile_testing.content}}
 									</p>
 								</div>
 								<button class="custom-btn">VIEW CASESTUDY</button>
@@ -767,9 +765,9 @@
 						<div class="row ">
 
 							<div class="col-lg-7">
-								<h2 class="gotham-rounded-bok font-40 h2-color">{{ site.data.Consulting.Mobility_Bigdata.enterprise_mobility.title}}</h2>
+								<h2 class="gotham-rounded-bok  h2-color">{{ site.data.Consulting.Mobility_Bigdata.enterprise_mobility.title}}</h2>
 								<div class="div-border-left">
-									<p class="font-22 gotham-rounded-light para">{{ site.data.Consulting.Mobility_Bigdata.enterprise_mobility.content}}
+									<p class=" gotham-rounded-light para">{{ site.data.Consulting.Mobility_Bigdata.enterprise_mobility.content}}
 									</p>
 								</div>
 								<button class="custom-btn">VIEW CASESTUDY</button>
@@ -816,15 +814,15 @@
 							        {% if forloop.first %}
 							 <div class="item active">
 							         <div class="name-align">
-							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}
-							        <i class="fa fa-user"></i></span>
+							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}
+							       <img src="/assets/img/it-service/user-pic.png"></span>
 							  </div>
 							    </div>
 							{% else %}
 							   <div class="item">
 							         <div class="name-align">
-							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
-							        <i class="fa fa-user"></i>
+							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
+							        <img src="/assets/img/it-service/user-pic.png">
 							     </div>
 							    </div>
 							{% endif %}
@@ -885,16 +883,16 @@
 							        {% if forloop.first %}
 							 <div class="item active">
 							         <div class="name-align2">
-							         	<i class="fa fa-user"></i>
-							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}
+							         	 <img src="/assets/img/it-service/user-pic.png">
+							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}
 							        </span>
 							  </div>
 							    </div>
 							{% else %}
 							   <div class="item">
 							         <div class="name-align">
-							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
-							        <i class="fa fa-user"></i>
+							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
+							       <img src="/assets/img/it-service/user-pic.png">
 							     </div>
 							    </div>
 							{% endif %}
@@ -908,9 +906,9 @@
 							<!-- end of testimony-carousel-div -->
 
 							<div class="col-lg-7">
-								<h2 class="gotham-rounded-bok font-40 h2-color">{{ site.data.Consulting.Mobility_Bigdata.operational_analytics.title}}</h2>
+								<h2 class="gotham-rounded-bok  h2-color">{{ site.data.Consulting.Mobility_Bigdata.operational_analytics.title}}</h2>
 								<div class="div-border-left">
-									<p class="font-22 gotham-rounded-light para">{{ site.data.Consulting.Mobility_Bigdata.operational_analytics.content}}
+									<p class=" gotham-rounded-light para">{{ site.data.Consulting.Mobility_Bigdata.operational_analytics.content}}
 									</p>
 								</div>
 								<button class="custom-btn">VIEW CASESTUDY</button>
@@ -928,9 +926,9 @@
 						<div class="row">
 
 							<div class="col-lg-7">
-								<h2 class="gotham-rounded-bok font-40 h2-color">{{ site.data.Consulting.Mobility_Bigdata.predictive_analysis.title}}</h2>
+								<h2 class="gotham-rounded-bok  h2-color">{{ site.data.Consulting.Mobility_Bigdata.predictive_analysis.title}}</h2>
 								<div class="div-border-left">
-									<p class="font-22 gotham-rounded-light para">{{ site.data.Consulting.Mobility_Bigdata.predictive_analysis.content}}
+									<p class=" gotham-rounded-light para">{{ site.data.Consulting.Mobility_Bigdata.predictive_analysis.content}}
 									</p>
 								</div>
 								<button class="custom-btn">VIEW CASESTUDY</button>
@@ -978,15 +976,15 @@
 							        {% if forloop.first %}
 							 <div class="item active">
 							         <div class="name-align">
-							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}
-							        <i class="fa fa-user"></i></span>
+							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}
+							        <img src="/assets/img/it-service/user-pic.png"></span>
 							  </div>
 							    </div>
 							{% else %}
 							   <div class="item">
 							         <div class="name-align">
-							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
-							        <i class="fa fa-user"></i>
+							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
+							       <img src="/assets/img/it-service/user-pic.png">
 							     </div>
 							    </div>
 							{% endif %}
@@ -1050,16 +1048,16 @@
 							    {% for testimony in site.data.Consulting.Mobility_Bigdata.consumer_apps.testimonial%}
 							        {% if forloop.first %}
 							 <div class="item active">
-							         <div class="name-align2"><i class="fa fa-user"></i>
-							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}
+							         <div class="name-align2"> <img src="/assets/img/it-service/user-pic.png">
+							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}
 							        </span>
 							  </div>
 							    </div>
 							{% else %}
 							   <div class="item">
 							         <div class="name-align">
-							       	<span class="textvalignmiddle"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
-							        <i class="fa fa-user"></i>
+							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
+							        <img src="/assets/img/it-service/user-pic.png">
 							     </div>
 							    </div>
 							{% endif %}
@@ -1073,9 +1071,9 @@
 							<!-- end of testimony-carousel-div -->
                                
 							<div class="col-lg-7">
-								<h2 class="gotham-rounded-bok font-40 h2-color">{{ site.data.Consulting.Mobility_Bigdata.consumer_apps.title}}</h2>
+								<h2 class="gotham-rounded-bok  h2-color">{{ site.data.Consulting.Mobility_Bigdata.consumer_apps.title}}</h2>
 								<div class="div-border-left">
-									<p class="font-22 gotham-rounded-light para">{{ site.data.Consulting.Mobility_Bigdata.consumer_apps.content}}
+									<p class="gotham-rounded-light para">{{ site.data.Consulting.Mobility_Bigdata.consumer_apps.content}}
 									</p>
 								</div>
 								<button class="custom-btn">VIEW CASESTUDY</button>
@@ -1100,17 +1098,17 @@
 					<!-- row one-->
 						<div class="row ">
 
-							<div class="col-lg-7">
-								<h2 class="gotham-rounded-bok font-40 h2-color">{{ site.data.Consulting.UI_UX.visual_design.title}}</h2>
+							<div class="col-lg-7 ">
+								<h2 class="gotham-rounded-bok  h2-color">{{ site.data.Consulting.UI_UX.visual_design.title}}</h2>
 								<div class="div-border-left">
-									<p class="font-22 gotham-rounded-light para">{{ site.data.Consulting.UI_UX.visual_design.content}}
+									<p class="gotham-rounded-light para">{{ site.data.Consulting.UI_UX.visual_design.content}}
 									</p>
 								</div>
 								<button class="custom-btn">VIEW CASESTUDY</button>
 							</div>
 							
 							<!-- testimonial -->
-							<div class="col-lg-5 col-testimoni">
+							<div class="col-lg-5 col-testimoni ">
 								<!-- ui-ux-carousel -->
 									<div class="hw-ui-ux-carousel">
 
@@ -1234,9 +1232,9 @@
 							<!-- end of testimonial-div-->
 
 							<div class="col-lg-7">
-								<h2 class="gotham-rounded-bok font-40 h2-color">{{ site.data.Consulting.UI_UX.frondend_development.title}}</h2>
+								<h2 class="gotham-rounded-bok  h2-color">{{ site.data.Consulting.UI_UX.frondend_development.title}}</h2>
 								<div class="div-border-left">
-									<p class="font-22 gotham-rounded-light para">{{ site.data.Consulting.UI_UX.frondend_development.content}}
+									<p class=" gotham-rounded-light para">{{ site.data.Consulting.UI_UX.frondend_development.content}}
 									</p>
 								</div>
 								<button class="custom-btn">VIEW CASESTUDY</button>
@@ -1254,9 +1252,9 @@
 						<div class="row">
 
 							<div class="col-lg-7">
-								<h2 class="gotham-rounded-bok font-40 h2-color">{{ site.data.Consulting.UI_UX.data_visualisation.title}}</h2>
+								<h2 class="gotham-rounded-bok  h2-color">{{ site.data.Consulting.UI_UX.data_visualisation.title}}</h2>
 								<div class="div-border-left">
-									<p class="font-22 gotham-rounded-light para">{{ site.data.Consulting.UI_UX.data_visualisation.content}}
+									<p class=" gotham-rounded-light para">{{ site.data.Consulting.UI_UX.data_visualisation.content}}
 									</p>
 								</div>
 								<button class="custom-btn">VIEW CASESTUDY</button>
@@ -1389,9 +1387,9 @@
 							<!-- end of testimonial-div-->
                                
 							<div class="col-lg-7">
-								<h2 class="gotham-rounded-bok font-40 h2-color">{{ site.data.Consulting.UI_UX.reporting_dashboard.title}}</h2>
+								<h2 class="gotham-rounded-bok  h2-color">{{ site.data.Consulting.UI_UX.reporting_dashboard.title}}</h2>
 								<div class="div-border-left">
-									<p class="font-22 gotham-rounded-light para">{{ site.data.Consulting.UI_UX.reporting_dashboard.content}}
+									<p class=" gotham-rounded-light para">{{ site.data.Consulting.UI_UX.reporting_dashboard.content}}
 									</p>
 								</div>
 								<button class="custom-btn">VIEW CASESTUDY</button>
@@ -1408,9 +1406,9 @@
 						<div class="row">
 
 							<div class="col-lg-7">
-								<h2 class="gotham-rounded-bok font-40 h2-color">{{ site.data.Consulting.UI_UX.consumer_apps.title}}</h2>
+								<h2 class="gotham-rounded-bok  h2-color">{{ site.data.Consulting.UI_UX.consumer_apps.title}}</h2>
 								<div class="div-border-left">
-									<p class="font-22 gotham-rounded-light para">{{ site.data.Consulting.UI_UX.consumer_apps.content}}
+									<p class=" gotham-rounded-light para">{{ site.data.Consulting.UI_UX.consumer_apps.content}}
 									</p>
 								</div>
 								<button class="custom-btn">VIEW CASESTUDY</button>
@@ -1638,7 +1636,7 @@
 
 	<!-- How we works -->
 		<div class="client-backgrnd hw-works">
-			<h2 class="gotham-rounded-bok font-40 text-center h2-color">How We Work</h2>
+			<h2 class="gotham-rounded-bok  text-center h2-color">How We Work</h2>
 				
 			<!-- hw-works-row	 -->
 				<div class="hw-works-row container-fluid">
