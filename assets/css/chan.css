@@ -3,9 +3,6 @@
 
     	padding: 15px 20px 15px 20px;
         background-color: #0ab4c5;
-        font-family: 'gotham-rounded-book';
-        font-size: 18px;
-        color: #545454;
         	
     }
 /*End of contact*/
@@ -31,21 +28,38 @@
 
 /*footer*/
     .footer{
-        height: 120px;
-        padding-top: 30px;
-        padding-bottom: 30px;
+        height: 75px;
+        padding: 0 45px 0;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
     }
-    .footer-copyrt
-    {
-        font-family: 'gotham-rounded-light';
-        font-size: 14px;
-    	padding-left: 100px;
-    	padding-top:20px;
-    	padding-bottom :20px;
+
+    .footer > div {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        margin: auto;
+    }
+
+    .footer>div:last-child {
+        -webkit-justify-content: -webkite-flex-end;
+        -moz-justify-content: -moz-flex-end;
+        -o-justify-content: -o-flex-end;
+        -ms-justify-content: -ms-flex-end;
+        justify-content: flex-end;
     }
 
     .social-icons{
         margin-right: 35px;
+    }
+
+    .footer .social-icons:last-child {
+        margin-right: 0;
     }
 /*footer*/
 
