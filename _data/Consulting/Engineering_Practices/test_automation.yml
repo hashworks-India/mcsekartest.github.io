@@ -1,0 +1,9 @@
+title: 'Test Automation'
+content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem modi ipsum nemo temporibus ex obcaecati sapiente cumque maiores explicabo, non dignissimos eum nam nesciunt nulla alias deleniti quidem facilis voluptate provident nostrum asperiores. Ipsum harum illo aliquam, quia quas sunt, architecto alias vitae quisquam neque rerum recusandae qui.'
+testimonial:
+    - { testimony: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non ipsa, cum, quis odit eum laboriosam doloremque distinctio itaque eos dolore.',name: 'Markus Jefferson',role: 'CEO',company_name: 'Company Name' }
+    - { testimony: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non ipsa, cum, quis odit eum laboriosam doloremque distinctio itaque eos dolore1',name: 'Markus Jefferson1',role: 'CEO',company_name: 'Company Name' }
+    - { testimony: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non ipsa, cum, quis odit eum laboriosam doloremque distinctio itaque eos dolore2',name: 'Markus Jefferson2',role: 'CEO',company_name: 'Company Name' }
+    - { testimony: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non ipsa, cum, quis odit eum laboriosam doloremque distinctio itaque eos dolore3',name: 'Markus Jefferson3',role: 'CEO',company_name: 'Company Name' }
+    - { testimony: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non ipsa, cum, quis odit eum laboriosam doloremque distinctio itaque eos dolore4',name: 'Markus Jefferson4',role: 'CEO',company_name: 'Company Name' }
+    - { testimony: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non ipsa, cum, quis odit eum laboriosam doloremque distinctio itaque eos dolore4',name: 'Markus Jefferson4',role: 'CEO',company_name: 'Company Name' }

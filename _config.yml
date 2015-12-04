@@ -1,0 +1,16 @@
+# Build settings
+
+markdown: kramdown
+permalink: pretty
+collections:
+- images
+
+port: 8000
+
+collections:
+ - case_study
+
+
+
+
+
