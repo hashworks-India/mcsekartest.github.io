@@ -12,14 +12,21 @@
 			    <!-- Wrapper for slides -->
 			    <div class="carousel-inner" role="listbox">
 
-			      <div class="item active">
-			        <p class=" gotham-rounded-bok font-30">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.
-					</p>
-			      </div>
-
-			      <div class="item">
-			       <p class=" gotham-rounded-bok font-30">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.</p>
-			      </div>
+			      {% for cont in site.data.Case_Study.carousel.carousel_content%}
+							       {% if forloop.first %}
+							  	<div class="item active">
+							      <p class=" gotham-rounded-bok font-30">
+							       {{ cont.content}}
+							      </p>
+							    </div>
+								{% else %}
+							   <div class="item">
+							       <p class=" gotham-rounded-bok font-30">
+							       		 {{ cont.content}}
+							      	</p>
+							    </div>
+								{% endif %}
+							    {% endfor %}
 			    
 			    </div>
 
