@@ -2,7 +2,7 @@ main-left:
  - { url: '/', text: 'Portfolio' }
  - { url: '/engage_us', text: 'Engage Us' }
 main-right:
- - { url: '/case_study', text: 'Company' }
+ - { url: '/', text: 'Company' }
  - { url: '/', text: 'Blog' }
  - { url: '/', text: 'Job Board' }
  - { url: '/', text: 'News' }
