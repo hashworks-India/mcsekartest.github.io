@@ -1,5 +1,4 @@
 language: ruby
-install: gem install jekyll html-proofer jekyll-sitemap
 script: jekyll build
 branches:
   only:
