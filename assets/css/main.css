@@ -230,6 +230,31 @@ html {
 	}
 /* end of general css */
 
+/*homepage*/
+	#hw-homepage {
+		padding: 0 25px;
+	}
+
+
+	#hw-homepage .row > div:first-child {
+		-webkit-align-items: center;
+		-moz-align-items: center;
+		-o-align-items: center;
+		-ms-align-items: center;
+		align-items: center;
+		padding: 0 25px;
+	}
+
+	#hw-homepage .row > div:last-child {
+		-webkit-justify-content: -webkit-flex-end;
+    	-moz-justify-content: -moz-flex-end;
+    	-o-justify-content: -o-flex-end;
+    	-ms-justify-content: -ms-flex-end;
+    	justify-content: flex-end;
+	}
+
+/*End of homepage*/
+
 /* engage page */
 	.navbar-header .navbar-brand {
 		padding-top: 5px;

@@ -1,8 +1,6 @@
 language: ruby
-before_install:
-- travis_retry gem install github-pages
-- travis_retry gem install jekyll
-- travis_retry gem install html-proofer
+rvm:
+- 2.1
 script: jekyll build
 branches:
   only:
