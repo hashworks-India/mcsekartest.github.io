@@ -204,6 +204,24 @@ html {
 		color: #ee2b7b;
 	}
 
+	.heading-custom-btn {
+		background: #f9d602;
+		border: 1px solid #f9d602;
+		padding: 5px 20px;
+		color: #474e5d;
+	}
+
+	.heading-custom-btn:hover {
+		background-color: transparent;
+		border: 1px solid #f9d602;
+		color: #f9d602;
+	}
+
+
+	.heading-custom-btn:hover a {
+		color: #ee2b7b;
+	}
+
 	.hr-display {
 		display: table;
 		margin: 0 auto;
@@ -245,13 +263,6 @@ html {
 		padding: 0 25px;
 	}
 
-	#hw-homepage .row > div:last-child {
-		-webkit-justify-content: -webkit-flex-end;
-    	-moz-justify-content: -moz-flex-end;
-    	-o-justify-content: -o-flex-end;
-    	-ms-justify-content: -ms-flex-end;
-    	justify-content: flex-end;
-	}
 
 /*End of homepage*/
 
@@ -553,3 +564,111 @@ html {
 }
 	
 
+/*upskilling page*/
+
+	/*filter-list*/
+		.hw-upskilling-filter {
+			margin-top: 35px;
+			margin-bottom: 35px;
+		}
+
+		.hw-upskilling-filter li {
+			font-size: 1.13rem;
+			color: #6f6f6f;
+			float: left;
+			padding: 5px 10px;
+			margin: 15px;
+			border: 1px solid #474e5d;
+			cursor: pointer;
+		}
+
+		.hw-upskilling-filter li.active {
+			border-color: #c9443d;
+		}
+	/*End of filter-list*/
+
+	/*filter-details*/
+		.hw-upskilling-details .row > div {
+			margin: 15px 0;
+		}
+
+		.hw-upskilling-details h2 {
+			background: #0ab4c5;
+			margin: 0;
+    		padding: 25px;
+    		color: #fff;
+		}
+
+		.hw-upskill-cont {
+			background: #ededed;
+			padding: 5px 25px;
+			border-bottom: 5px solid #958c8c;
+		}
+
+		.upskill-cont-filter:hover {
+			cursor: pointer;
+		}
+
+		.upskill-cont-filter:hover .hw-upskill-cont {
+			border-color: #c9443d;
+		}
+
+		.hw-upskill-cont h3 {
+			color: #676767;
+		}
+
+		.hw-upskill-cont p {
+			font-size: 0.875rem;
+			padding: 5px 0 25px;
+		}
+
+		.hw-upskill-cont .hw-upskill-time li {
+			float: left;
+			border-right: 1px solid #212121;
+			font-size: 10px;
+			padding: 0 5px;
+		}
+
+		.hw-upskill-cont .hw-upskill-time li:first-child {
+			padding-left: 0;
+		}
+
+		.hw-upskill-cont .hw-upskill-time li:last-child {
+			border: none;
+		}
+
+
+		.hw-upskill-cont ul li {
+			border: none;
+			display: table-cell;
+			vertical-align: middle;
+			font-size: 10px;
+			float: none;
+		}
+
+		.hw-upskill-cont svg {
+			height: 15px;
+		}
+
+		
+
+	/*End of filter-details*/
+
+	/*hw-started*/
+		.hw-started {
+			margin: 35px 0;
+		}
+
+		.hw-started h2 {
+			margin: 0;
+		}
+
+		.hw-started .row > div:last-child {
+			-webkit-justify-content: flex-start;
+			-moz-justify-content: flex-start;
+			-o-justify-content: flex-start;
+			-ms-justify-content: flex-start;
+			justify-content: flex-start;
+		}
+	/*End of hw-started*/
+/*End of upskilling page*/

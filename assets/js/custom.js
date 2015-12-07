@@ -40,6 +40,31 @@ $(document).ready(function(){
 
       // End of it-services
 
+       // upskilling 
+
+      //filter
+        $('.hw-upskilling-filter li').click(function(){
+            $('.hw-upskilling-filter li').removeClass('active');
+            $(this).addClass('active');
+
+            var dataval = $(this).attr("data-value");
+
+            $('.upskill-cont-filter').each(function(){
+
+              if($(this).hasClass(dataval)) {
+                $(this).css({'display':'block'});
+              }
+              else {
+                $(this).css({'display':'none'});
+              }
+              
+            });
+
+        });
+
+
+      // End of upskilling
+
 
 
 
