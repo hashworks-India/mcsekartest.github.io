@@ -1,9 +1,16 @@
 {% include header.html %}
 
+
+
+
+
 <main>
 
-   
+       
 	<h1 class="text-center gotham-rounded-bok heading"> Casestudy</h1>
+
+
+	
 
    		<div class="carousel-padding">
 		<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
@@ -48,6 +55,51 @@
 	<div class="line">
 	</div>
 	<!--tabs-->
+	{% for project in site.etl_casestudy %}
+ <div class="row">
+			<div class="col-lg-8 col-rite equal-height-col">
+
+				<div class="banner">
+					<img src="/assets/img/case-study/banner1.jpg">
+					<div class="cs-arrow-left cs-arrow"></div>
+				</div>
+			</div>
+
+
+              <div class="col-lg-4 equal-height-col">
+				<div>
+					<h6 class="text-center gotham-rounded-bok font-18"> {{ project.name }} </h6>
+					<p class="font-14  gotham-rounded-light cs-para">{{ project.description }}</p>
+
+					<div class="hr-display">
+						<button class="custom-btn" data-toggle="modal" data-target="#myModal"> LEARN MORE</button>
+					</div>
+				</div>
+			</div>
+
+			<!--pop up-->
+			 
+			 <div class="modal fade" id="myModal" role="dialog">
+			    <div class="modal-dialog modal-lg">
+			    
+			      <!-- Modal content-->
+			      	<div class="modal-content">
+				        <div class="modal-header">
+				          <button type="button" class="close" data-dismiss="modal">&times;</button>
+				          <h4 class="modal-title">{{ project.name }}</h4>
+				        </div>
+				        <div class="modal-body">
+				          <p>{{project.content}}</p>
+				        </div>
+			     	 </div>
+			      
+			    </div>
+			  </div>
+  
+			<!--end of pop up-->
+		</div>
+
+	{%endfor%}
 
 	<div class="container-fluid cs-cntr-mar">
 
