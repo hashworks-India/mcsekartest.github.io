@@ -123,8 +123,12 @@
 	.view-color {
 		color:  #ee2b7b;
 	}
+	.fa-times {
+		cursor: pointer;
+	}
 	.view-mar{
 		margin-left: 10px;
+		cursor: pointer;
 	}
 	.pagination > li > a:active , .pagination > li > a:hover ,, .pagination > li > a:focus{
 		background-color: #ee2b7b;

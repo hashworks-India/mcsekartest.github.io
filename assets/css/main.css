@@ -39,7 +39,9 @@ html {
 		font: 1rem/1.4 "gotham-rounded-bold";
 		color: #7c7c7c;
 	}
-
+	a {
+		color: inherit;
+	}
 	a:focus,
 	a:hover,
 	.btn:focus, 
