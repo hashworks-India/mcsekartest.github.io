@@ -3,6 +3,6 @@ main-left:
  - { url: '/engage_us', text: 'Engage Us' }
 main-right:
  - { url: '/', text: 'Company' }
- - { url: '/', text: 'Blog' }
+ - { url: '/blog', text: 'Blog' }
  - { url: '/', text: 'Job Board' }
  - { url: '/', text: 'News' }
