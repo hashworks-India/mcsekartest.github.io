@@ -55,11 +55,13 @@
 <div class="row post-top hw-post-info">
 	
 <ul  class="hr-display">
-	<li>By Gopi</li>
-	<li>Dec 2,2015</li>
-	<li>3 Comments</li>
-	<li>In:DESIGN,ART</li>
-	<li>77</li>
+	<li> <i class="fa fa-user"> </i>{{page.author}}</li>
+	<li><i class="fa fa-clock-o"></i>{{ page.date | date: "%B %d, %Y"}}</li>
+	<li><i class="fa fa-comments-o"></i><a href="{{page.url}}#disqus_thread"></a></li>
+	<li><i class="fa fa-folder-open-o"></i>{% for tag in page.tags %}
+						 <span class='tag {{tag | downcase }}'>{{tag}}</span> 
+					{% endfor %}</li>
+	<li><i class="fa fa-heart-o"></i>77</li>
 </ul>
 
 
@@ -73,7 +75,7 @@
    	<div class="col-md-8">
    		
        <div class="post-title">
-           UT INTERN TOTTOR EU SAPIEN MATIS
+           {{page.title}}
 	</div>
     <div class="post-img">
 
@@ -81,8 +83,7 @@
      
    	</div>
 <div class="post-content">
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores eveniet, magnam itaque beatae sint consequatur impedit a inventore et, natus voluptatem qui, laborum dignissimos! Deleniti, veritatis labore esse sunt doloremque fugit, suscipit animi aperiam repellat expedita, provident vitae. 
-<p>Quos quae unde ipsum consequatur     excepturi sequi atque perspiciatis a, assumenda! Perferendis deleniti illum, molestias omnis doloribus voluptas possimus, neque eius accusantium vero molestiae, unde alias nobis recusandae dolor facere sint eligendi totam quos laudantium excepturi. Laudantium accusamus laboriosam voluptates ipsum omnis, commodi pariatur vero. Possimus eligendi a, quasi eum minus enim dolor fugit alias doloribus officiis modi numquam nemo voluptas laudantium?</p>
+{{content}}</p>
 
 </div>
 
@@ -101,11 +102,34 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores eveniet, magna
 </div>
 
 <!-- right-pane -->
-   	<div class="col-md-4"></div>
+   	<div class="col-md-4">
+
+<div class="hw-post-author">
+      
+   
+  <img src="/assets/img/blog/author.jpg" alt="author" class='img-circle hw-author-image'>
+ 
+  <div class="hw-author-name">Gopi Krishnan<br><span class="textvalignmiddle">Co founder</span></div>
+  <div class="hw-author-social">
+  	<span class="fa-stack  ">
+  <i class="fa fa-circle fa-stack-2x"></i>
+  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+</span>
+                  <span class="fa-stack ">
+  <i class="fa fa-circle fa-stack-2x"></i>
+  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+</span>
+                 <span class="fa-stack  ">
+  <i class="fa fa-circle fa-stack-2x"></i>
+  <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+</span>
+          <span class="fa-stack  ">
+  <i class="fa fa-circle fa-stack-2x"></i>
+  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+</span>
 
 
-
-
+  </div>
    
 	
 
@@ -117,7 +141,58 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores eveniet, magna
 
 
 </div>
+</div>
 <!-- end of right-pane -->
 
 </main>
-{% include footer.html %}
+
+  
+        <div class="container-fluid">
+            <div class="row footer">
+                <div class="col-md-9 hw-copyright">
+                    <p class="gotham-rounded-light">{{ site.data.global.footer_text }}</p>
+                </div>
+                <div class="col-md-3 ">
+                  <span class="fa-stack hw-socialshare social-icons">
+  <i class="fa fa-circle-thin fa-stack-2x"></i>
+  <i class="fa fa-facebook fa-stack-1x"></i>
+</span>
+                  <span class="fa-stack hw-socialshare social-icons">
+  <i class="fa fa-circle-thin fa-stack-2x"></i>
+  <i class="fa fa-twitter fa-stack-1x"></i>
+</span>
+                 <span class="fa-stack hw-socialshare social-icons">
+  <i class="fa fa-circle-thin fa-stack-2x"></i>
+  <i class="fa fa-envelope fa-stack-1x"></i>
+</span>
+                     
+                </div>
+            </div>
+        </div>
+ 
+</div>
+
+
+    <!-- JavaScript -->
+<script src="/assets/js/jquery-2.1.4.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/custom.js"></script>
+
+
+<script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = 'hashworks'; // required: replace example with your forum shortname
+      // var disqus_developer = 1; // Comment out when the site is live
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname+'.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+      }());
+    </script>
+
+
+    </body>
+</html>
