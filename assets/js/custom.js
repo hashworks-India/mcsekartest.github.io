@@ -119,6 +119,42 @@ $(document).ready(function(){
       // End of upskilling-casestudy collapse
 
 
+       /* job board*/
+      /* row1 */
+        $('.hw-job1').click(function () {
+           $('.view-act').addClass('view-color');
+          $('.view1').toggleClass('hide');
+        }); 
+
+        $('.view1-close').click(function() {
+          $('.view1').addClass('hide');
+           $('.view-act').removeClass('view-color');
+        }); 
+
+        /* row2*/
+
+         $('.hw-job2').click(function () {
+          $('.view2').toggleClass('hide');
+        }); 
+
+        $('.view2-close').click(function() {
+          $('.view2').toggleClass('hide');
+        }); 
+
+
+        $('.apply').click(function () {
+           $('.view1').addClass('hide');
+          $('.apply-div').addClass('show');
+           
+        });
+
+        $('.form-close').click(function() {
+          $('.apply-div').removeClass('show');
+           $('.view-act').removeClass('view-color');
+        }); 
+
+
+
 
 
 
