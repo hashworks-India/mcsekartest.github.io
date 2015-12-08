@@ -672,3 +672,67 @@ html {
 		}
 	/*End of hw-started*/
 /*End of upskilling page*/
+
+
+/*upskilling-devops*/
+	.upskilling-carousel button {
+		padding: 5px 20px;
+		margin: 35px;
+	}
+
+	.devops-cont {
+		margin: 35px 0;
+	}
+
+	.devops-cont h3 {
+		color: #545454;
+		margin: 15px 0;
+	}
+
+	.devops-cont p {
+		color: #7e7e7e;
+		line-height: 1.8;
+	}
+
+	.devops-cont ul li {
+		list-style-type: initial;
+		margin-left: 15px;
+		padding-left: 15px;
+		color: #0ab4c5;
+	}
+
+	/*accordian*/
+		#upskill-accordion {
+			margin: 55px 0;
+		}
+
+		#upskill-accordion .panel {
+			border: none;
+			box-shadow: none;
+		}
+
+		#upskill-accordion .panel-title {
+			color: #545454;
+		}
+
+		#upskill-accordion .panel-body ul li {
+			list-style-type: initial;
+			margin-left: 15px;
+			padding-left: 15px;
+			color: #0ab4c5;
+		}
+
+		#upskill-accordion .panel-body p {
+			color: #7e7e7e;
+			text-align: left;
+			font-size: 1.13rem;
+			line-height: 2;
+		}
+
+		#upskill-accordion .panel-heading {
+			border-bottom: 2px solid #545454;
+			background-color: #f4f4f4;
+		}
+
+	/*End of accordian*/
+/*End of upskilling-devops*/
