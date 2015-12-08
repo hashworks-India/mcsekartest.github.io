@@ -39,7 +39,9 @@ html {
 		font: 1rem/1.4 "gotham-rounded-bold";
 		color: #7c7c7c;
 	}
-
+	a {
+		color: inherit;
+	}
 	a:focus,
 	a:hover,
 	.btn:focus, 
@@ -702,6 +704,24 @@ html {
 	}
 
 	/*accordian*/
+		#upskill-accordion .arrow-rotate {
+			-webkit-transform: rotate(90deg);
+			-moz-transform: rotate(90deg);
+			-ms-transform: rotate(90deg);
+			-o-transform: rotate(90deg);
+			transform: rotate(90deg);
+			
+		}
+
+		#upskill-accordion .panel-title i {
+			-webkit-transition: all .5s ease 0s;
+			-moz-transition: all .5s ease 0s;
+			-ms-transition: all .5s ease 0s;
+			-o-transition: all .5s ease 0s;
+			transition: all .5s ease 0s;
+			
+		}
+
 		#upskill-accordion {
 			margin: 55px 0;
 		}
@@ -735,4 +755,84 @@ html {
 		}
 
 	/*End of accordian*/
+
+	/*Testimonial*/
+		#testimonial .hw-sprite {
+		  background: url(../img/testimonial/sprite.png) no-repeat left top;	
+		  display: inline-block;
+		}
+
+		#testimonial{
+			padding:50px 0;
+		}
+
+		#testimonial .carousel-inner {
+			padding: 0 50px;
+		}
+
+		#testimonial .hw-test-img .img-outer,
+		#testimonial .hw-test-img ul {
+			display: inline-block;
+			vertical-align: middle;
+			padding: 0 15px;
+		}
+
+		#testimonial .item { 
+		  	text-align: center;
+		}
+
+		#testimonial .carousel-control.right,
+		#testimonial .carousel-control.left {
+		    bottom: auto;
+		    color: #0ab4c5;
+		    display: inline-block;
+		    position: absolute;
+		    top: 50%;
+		    width: auto;
+		    z-index: 5;
+		}
+
+		#testimonial .sec-content {
+		  	text-align: center;
+		}
+		#testimonial .hw-test-quotes {
+			background-position: 0 -372px;
+			width: 67px;
+			height: 69px;
+			text-align: center;    
+		}
+		#testimonial .hw-test-txt {
+			color: #474e5d;
+			font-size: 1.3rem; 
+			font-family: "gotham-rounded-light";
+			text-align: center;
+			margin: 1.5em 20px;
+			line-height: 30px;
+			padding: 0 20px;
+			height: 11em;
+			display: table-cell;
+			vertical-align: middle;
+		}
+		#testimonial .usr-pic {
+			width: 125px;
+			height: 125px;
+			border-radius: 62.5px;
+			display: inline-block;
+		    
+		}
+		#testimonial .hw-usr-name {
+			font-size: 1.5rem; 
+			color: #474e5d;
+			line-height: 40px;
+			font-family: 'gotham-rounded-light';
+		}
+		#testimonial .hw-usr-des {
+			font-size: 1.3rem;
+			color: #7e7e7e;
+			line-height: 36px;
+			font-family: 'gotham-rounded-light';
+		}
+
+	/*End of Testimonial*/
+
 /*End of upskilling-devops*/

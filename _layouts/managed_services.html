@@ -1,0 +1,264 @@
+{% include header.html %}
+
+<main>
+
+   <h1 class="text-center gotham-rounded-bok heading hw-carousel-heading">Talent Acquistion</h1>
+
+   		<div class="carousel-padding">
+   			<div class="line"></div>
+		<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+
+	   		<div class="container heading-caro-padd">
+			    <!-- Wrapper for slides -->
+			    <div class="carousel-inner" role="listbox">
+			    	 {% for cont in site.data.Consulting.carousel.carousel_content%}
+							       {% if forloop.first %}
+							  	<div class="item active">
+							      <p class=" gotham-rounded-bok hw-para">
+							       {{ cont.content}}
+							      </p>
+							    </div>
+								{% else %}
+							   <div class="item">
+							       <p class=" gotham-rounded-bok hw-para">
+							       		 {{ cont.content}}
+							      	</p>
+							    </div>
+								{% endif %}
+							    {% endfor %}
+				</div>
+
+			</div>
+
+			<a class="left carousel-control carousel-indicatr-pos" href="#myCarousel" role="button" data-slide="prev">
+			 <img src="/assets/img/consulting/carousel-indi-1.jpg">
+			<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control carousel-indicatr-pos" href="#myCarousel" role="button" data-slide="next">
+			<img src="/assets/img/consulting/carousel-indi.jpg">
+			<span class="sr-only">Next</span>
+			</a>
+	 	</div>
+	 	</div>
+	<!-- end of carousel-->
+	
+
+	
+
+	<!--tabs-->
+
+
+	<div class="bs-example line-padding">
+			<div class="container-fluid  div-margin-left">
+
+		    <ul class="nav nav-tabs p-flex">
+		    	
+		        <li class="active c-flex"><a class="hr-display"  data-toggle="tab" href="#employer" >
+		        	<ul class="tab-img">
+		        		<li  class="li-tab-mar"><img src="/assets/img/managed-services/employer.png"></li>
+		        		<li class="gotham-rounded-light  "><p class="text-center hr-display">Employer</p></li>
+					</ul></a>
+				</li>
+		        
+		        <li class="c-flex"><a  class="hr-display" data-toggle="tab" href="#patner" >
+		        	<ul class="tab-img">
+		        		<li class="li-tab-mar"><img src="/assets/img/managed-services/patner.png"></li>
+		        		<li class="gotham-rounded-light"><p class="text-center hr-display">Partner</p></li>
+					</ul></a>
+		        </li>
+
+		        <li class="c-flex"><a  class="hr-display" data-toggle="tab" href="#job-seeker" >
+		        	<ul class="tab-img" >
+		        		<li class="li-tab-mar"><img src="/assets/img/managed-services/job-seeker.png"></li>
+		        		<li class="gotham-rounded-light "><p class="text-center hr-display">Job Seeker</p> </li>
+					</ul></a>
+		        </li>
+
+		        
+		    </ul>
+
+		</div> <!--end of contaier-fuild of tab heading-->
+
+
+	    <div class="tab-content">
+
+	        <div id="employer" class="tab-pane fade in active">
+	        	<div class="container-fluid  div-margin-left">
+					<div class="hw-engage-cont">
+			        	<h2 class="hw-heading gotham-rounded-bok h2-color">Employer</h2>
+			        	<p class="hw-para gotham-rounded-light">This course introduces attendees to the goals, objectives, benefits, practices of a DevOps environment with hands on working sessions. The course also addresses why DevOps is a mix of cultural, process  tools movement. This sessions talks about principles and mind-sets with practical hands-on use-cases that is pivoting the software delivery landscape.</p><br>
+			        	<p class="hw-para gotham-rounded-light">This course introduces attendees to the goals, objectives,                 benefits,practices of a DevOps environment with hands on working sessions. The course also addresses with hy DevOps is a mix of cultural, process  tools movement. This sessions talks about principles and mind-sets with practical hands-on use-cases that is pivoting the software delivery landscape.</p><br>
+			        	<p class="hw-para gotham-rounded-light">This course introduces attendees to the goals, objectives, benefits, practices of a DevOps environment with hands on working sessions. The course also addresses why DevOps is a mix of cultural, process tools movement. This sessions talks about principles and mind-sets with practical hands-on use-cases that is pivoting the software delivery landscape.</p>
+					</div>
+				</div>	
+
+			<!-- hw-started -->
+				<div class="hw-started log-clr-backgrnd container-fluid">
+					<div class="row p-flex">
+						<div class="col-lg-8 c-flex">
+							<h2 class="gotham-rounded-light hw-main-heading clr-white h-approch">WE CAN BE YOUR STAFFING PARTNER</h2>
+						</div>
+						<div class="col-lg-4 upskill-filter all c-flex clearfix">
+							<span><button class=" job-board-btn job-btn custom-btn heading-custom-btn">TALK TO US</button></span>
+							<span><a href='/job_list'><button class=" job-board-btn gotham-rounded-bold custom-btn heading-custom-btn">JOB BOARD</button></a></span>
+						</div>
+					</div>
+				</div>
+			<!-- End of hw-started -->
+
+	       	</div><!-- end of tab1-->
+
+	        <!-- tab2-->
+	        <div id="patner" class="tab-pane fade">
+	        	<div class="container-fluid  div-margin-left">
+					<div class="hw-engage-cont">
+			        	<h2 class="hw-heading gotham-rounded-bok h2-color">Partner</h2>
+			        	<p class="hw-para gotham-rounded-light">This course introduces attendees to the goals, objectives, benefits, practices of a DevOps environment with hands on working sessions. The course also addresses why DevOps is a mix of cultural, process  tools movement. This sessions talks about principles and mind-sets with practical hands-on use-cases that is pivoting the software delivery landscape.</p>
+			        	<ul class="job-board-ul">
+			        		<li><p class="hw-para gotham-rounded-light li-class">How DevOps thinking is pivoting organizations to deliver faster applications features to its customers.</p></li>
+			        		<li><p class="hw-para gotham-rounded-light li-class">How DevOps thinking is pivoting organizations to deliver faster applications features to its customers.</p></li>
+			        		<li><p class="hw-para gotham-rounded-light li-class">How DevOps thinking is pivoting organizations to deliver faster applications features to its customers.</p></li>
+			        		<li><p class="hw-para gotham-rounded-light li-class">How DevOps thinking is pivoting organizations to deliver faster applications features to its customers.</p></li>
+			        		<li><p class="hw-para gotham-rounded-light li-class">How DevOps thinking is pivoting organizations to deliver faster applications features to its customers.</p></li>
+			        		<li><p class="hw-para gotham-rounded-light li-class">How DevOps thinking is pivoting organizations to deliver faster applications features to its customers.</p></li>
+			        	</ul>
+					</div>
+				</div>	
+				<!-- <div class="hw-tools log-clr-backgrnd ms-fixed-div">
+					<span class=" gotham-rounded-light clr-white hw-main-heading div-margin-left ">BE OUR CHANNEL PARTNER</span>
+					<span><button class=" job-board-btn job-btn">TALK TO US</button></span>
+					<span><a href='/job_list'><button class=" job-board-btn gotham-rounded-bold">JOB BOARD</button></a></span>
+				</div> -->
+
+				<!-- hw-started -->
+				<div class="hw-started log-clr-backgrnd container-fluid">
+					<div class="row p-flex">
+						<div class="col-lg-8 c-flex">
+							<h2 class="gotham-rounded-light hw-main-heading clr-white h-approch">BE OUR CHANNEL PARTNER</h2>
+						</div>
+						<div class="col-lg-4 upskill-filter all c-flex clearfix">
+							<span><button class=" job-board-btn job-btn custom-btn heading-custom-btn">TALK TO US</button></span>
+							<span><a href='/job_list'><button class=" job-board-btn gotham-rounded-bold custom-btn heading-custom-btn">JOB BOARD</button></a></span>
+						</div>
+					</div>
+				</div>
+			<!-- End of hw-started -->	
+			</div><!-- end of tab2-->
+
+	        <!-- tab3-->
+	        <div id="job-seeker" class="tab-pane fade">
+	        	<div class="container-fluid  div-margin-left">
+					<div class="hw-engage-cont">
+			        	<h2 class="hw-heading gotham-rounded-bok h2-color">Job Seeker</h2>
+			        	<ul class="job-board-ul">
+							<li><p class="hw-para gotham-rounded-light li-class">Anyone interested in acquiring a high level knowledge about DevOps</p></li>
+			        		<li><p class="hw-para gotham-rounded-light li-class">Managed service providers</p></li>
+			        		<li><p class="hw-para gotham-rounded-light li-class">Software developers, test engineers, managers, consultants or anyone involved in application development</p></li>
+			        		<li><p class="hw-para gotham-rounded-light li-class">IT Operations teams, management, professionals and consultants.</p></li>
+			        		<li><p class="hw-para gotham-rounded-light li-class">How DevOps thinking is pivoting organizations to deliver faster applications features to its customers.</p></li>
+			        		<li><p class="hw-para gotham-rounded-light li-class">How DevOps thinking is pivoting organizations to deliver faster applications features to its customers.</p></li>
+			        		<li><p class="hw-para gotham-rounded-light li-class">How Cost of Ops has significantly go down with the level of abstraction of these solutions</p></li>
+			        	</ul>
+					</div>
+				</div>	
+				
+				<!-- hw-started -->
+				<div class="hw-started log-clr-backgrnd container-fluid">
+					<div class="row p-flex">
+						<div class="col-lg-8 c-flex">
+							<h2 class="gotham-rounded-light hw-main-heading clr-white h-approch">EXPLORE JOB OPPORTUNITIES</h2>
+						</div>
+						<div class="col-lg-4 upskill-filter all c-flex clearfix">
+							<span><button class=" job-board-btn job-btn custom-btn heading-custom-btn">POST RESUME</button></span>
+							<span><a href='/job_list'><button class=" job-board-btn gotham-rounded-bold custom-btn heading-custom-btn">JOB BOARD</button></a></span>
+						</div>
+					</div>
+				</div><!-- End of hw-started -->
+			</div><!-- end of tab3-->
+	    </div><!-- end of tab content-->
+
+	</div> <!-- end of the bs-example tab-->
+
+	
+
+	<div class="container-fluid ms-form-mar">
+		<div class="row">
+			<div class="col-lg-5 map-padding">
+				<img src="/assets/img/managed-services/map.png">
+			</div>
+			<div class="col-lg-7">
+				<div class="post-resume">
+					<div class="row ">
+							<div class="col-lg-6"> 
+								<div class="text-border">
+									<div class="input-group">
+			      						<div class="input-group-addon"><img src="/assets/img/managed-services/name-img.png"></div>
+										<input type="text" class="form-control placeholder-pro" placeholder="NAME">
+									</div>
+								</div>		
+							</div>
+						
+						<div class="col-lg-6"> 
+							<div class="text-border">
+								<div class="input-group">
+		      						<div class="input-group-addon"><img src="/assets/img/managed-services/email-img.png"></div>
+									<input type="text" class="form-control placeholder-pro" placeholder="EMAIL">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row ms-row-mar">
+						<div class="col-lg-6"> 
+							<div class="text-border">
+								<div class="input-group">
+		      						<div class="input-group-addon"><img src="/assets/img/managed-services/sub-img.png"></div>
+									<input type="text" class="form-control placeholder-pro" placeholder="SUBJECT">
+								</div>	
+							</div>	
+						</div>
+						<div class="col-lg-6"> 
+							<div class="text-border">
+								<div class="input-group">
+		      						<div class="input-group-addon"><img src="/assets/img/managed-services/phone-img.png"></div>
+									<input type="text" class="form-control placeholder-pro" placeholder="PHONE">
+								</div>
+							</div>	
+						</div>
+					</div>
+
+					<div class="row ms-row-mar">
+						<div class="col-lg-12">
+							<div class="text-border">
+							<div class="input-group">
+		      						<div class="input-group-addon"><img src="/assets/img/managed-services/sub-img.png"></div>
+		      						
+		      						<textarea placeholder= "MESSAGE/FEEDBACK/REQUEST" class="form-control placeholder-pro" rows="3"></textarea>
+		      					</div>	
+		      					
+							</div>
+						</div>
+					</div><!-- end of text-area row-->
+
+					<div class="attach-file">
+		      			<div class="col-lg-9">
+		      				<br><br>
+		      				<span class="attach-text"><span><img src="/assets/img/managed-services/attach.png"></span><span class="gotham-rounded-bok attach-span">Attach File</span></span>
+		      				<input type="file" id="file-upload">
+		      			</div>
+		      			<div class="col-lg-3 submit-background">
+		      				<br>
+		      				<div class="submit-resume hr-display">
+		      					<p class="hr-display"><img src="/assets/img/managed-services/submit.png"></p>
+		      					<p class="gotham-rounded-bok placeholder-pro">SUBMIT</p>
+
+		      				</div>
+		      			</div>
+		      		</div><!-- end of attach-file-->
+
+				</div><!-- end of postresume -->
+			</div><!--end of col-lg-8-->
+		</div>
+	</div>		
+	</main>	
+
+{% include footer.html %}   

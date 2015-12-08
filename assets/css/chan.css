@@ -150,7 +150,25 @@ border-radius: 5px;
 
 
 /*carousel*/
-
+/* drop down */
+    ul li ul.dropdown li a{
+        color: #fff;
+    }
+    ul li ul.dropdown{
+        background-color: #ee2b7b;
+        display: none;
+        position: absolute;
+        z-index: 999;
+        left: 20px;
+        padding:10px 30px;
+        width:215px;
+    }
+    ul li:hover ul.dropdown{
+        display: block; /* Display the dropdown */
+    }
+    ul li ul.dropdown li{
+        display: block;
+    }
 
 
 

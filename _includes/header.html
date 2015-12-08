@@ -39,11 +39,30 @@
     <div class="collapse navbar-collapse" id="Hashworks-Nav">
       <ul class="nav navbar-nav">
       
-                    {% for item in site.data.nav.main-left %}
+                    <!--{% for item in site.data.nav.main-left %}
                         <li class="gotham-rounded-light header-links">
                             <a href="{{ item.url }}">{{ item.text }}</a>
                         </li>
-                    {% endfor %}
+                    {% endfor %}-->
+
+                     <li class="gotham-rounded-light header-links">
+          <a href="#">Portfolio </a>
+          <ul class="dropdown">
+            <li class="gotham-rounded-light hw-contact-no"><a href="#">Platfrom Integration</a></li>
+            <li class="gotham-rounded-light hw-contact-no"><a href="#">Engineering Practice</a></li>
+            <li class="gotham-rounded-light hw-contact-no"><a href="#">Mobility/BigData</a></li>
+            <li class="gotham-rounded-light hw-contact-no"><a href="#">UI/UX</a></li>
+          </ul>
+        </li>
+          <li class="gotham-rounded-light header-links">
+            <a href="#">Engage Us </a>
+            <ul class="dropdown">
+                <li class="gotham-rounded-light hw-contact-no"><a href="#">Consulting</a></li>
+                <li class="gotham-rounded-light hw-contact-no"><a href="#">Managed Services</a></li>
+                <li class="gotham-rounded-light hw-contact-no"><a href="#">Talent Acquisition</a></li>
+                <li class="gotham-rounded-light hw-contact-no"><a href="#">Upskilling</a></li>
+            </ul>
+        </li>
              
         
       </ul>

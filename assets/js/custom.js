@@ -41,47 +41,50 @@ $(document).ready(function(){
       // End of it-services
 
 
+      //equal height js
 
-equalheight = function(container){
+        equalheight = function(container){
 
-var currentTallest = 0,
-     currentRowStart = 0,
-     rowDivs = new Array(),
-     $el,
-     topPosition = 0;
- $(container).each(function() {
+        var currentTallest = 0,
+             currentRowStart = 0,
+             rowDivs = new Array(),
+             $el,
+             topPosition = 0;
+         $(container).each(function() {
 
-   $el = $(this);
-   $($el).height('auto')
-   topPostion = $el.position().top;
+           $el = $(this);
+           $($el).height('auto')
+           topPostion = $el.position().top;
 
-   if (currentRowStart != topPostion) {
-     for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
-       rowDivs[currentDiv].height(currentTallest);
-     }
-     rowDivs.length = 0; // empty the array
-     currentRowStart = topPostion;
-     currentTallest = $el.height();
-     rowDivs.push($el);
-   } else {
-     rowDivs.push($el);
-     currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
-  }
-   for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
-     rowDivs[currentDiv].height(currentTallest);
-   }
- });
-}
+           if (currentRowStart != topPostion) {
+             for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+               rowDivs[currentDiv].height(currentTallest);
+             }
+             rowDivs.length = 0; // empty the array
+             currentRowStart = topPostion;
+             currentTallest = $el.height();
+             rowDivs.push($el);
+           } else {
+             rowDivs.push($el);
+             currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
+          }
+           for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+             rowDivs[currentDiv].height(currentTallest);
+           }
+         });
+        }
 
-$(window).load(function() {
-  equalheight('.blog-main .blog-content');
-});
+        $(window).load(function() {
+          equalheight('.blog-main .blog-content');
+        });
 
 
-$(window).resize(function(){
-  equalheight('.blog-main .blog-content');
-});
+        $(window).resize(function(){
+          equalheight('.blog-main .blog-content');
+        });
+      // End of equal height js
 
+       
        // upskilling 
 
       //filter
@@ -106,6 +109,50 @@ $(window).resize(function(){
 
 
       // End of upskilling
+
+      // upskilling-casestudy collapse
+
+        //arrow - toggle rotate
+        $('#upskill-accordion .accordion-toggle').click(function(){
+          $(this).next().toggleClass("arrow-rotate");
+        });
+      // End of upskilling-casestudy collapse
+
+
+       /* job board*/
+      /* row1 */
+        $('.hw-job1').click(function () {
+           $('.view-act').addClass('view-color');
+          $('.view1').toggleClass('hide');
+        }); 
+
+        $('.view1-close').click(function() {
+          $('.view1').addClass('hide');
+           $('.view-act').removeClass('view-color');
+        }); 
+
+        /* row2*/
+
+         $('.hw-job2').click(function () {
+          $('.view2').toggleClass('hide');
+        }); 
+
+        $('.view2-close').click(function() {
+          $('.view2').toggleClass('hide');
+        }); 
+
+
+        $('.apply').click(function () {
+           $('.view1').addClass('hide');
+          $('.apply-div').addClass('show');
+           
+        });
+
+        $('.form-close').click(function() {
+          $('.apply-div').removeClass('show');
+           $('.view-act').removeClass('view-color');
+        }); 
+
 
 
 
