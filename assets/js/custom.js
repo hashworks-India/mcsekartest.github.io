@@ -40,9 +40,7 @@ $(document).ready(function(){
 
       // End of it-services
 
-     /* Thanks to CSS Tricks for pointing out this bit of jQuery
-http://css-tricks.com/equal-height-blocks-in-rows/
-It's been modified into a function called at page load and then each time the page is resized. One large modification was to remove the set height before each new calculation. */
+
 
 equalheight = function(container){
 
@@ -83,6 +81,32 @@ $(window).load(function() {
 $(window).resize(function(){
   equalheight('.blog-main .blog-content');
 });
+
+       // upskilling 
+
+      //filter
+        $('.hw-upskilling-filter li').click(function(){
+            $('.hw-upskilling-filter li').removeClass('active');
+            $(this).addClass('active');
+
+            var dataval = $(this).attr("data-value");
+
+            $('.upskill-cont-filter').each(function(){
+
+              if($(this).hasClass(dataval)) {
+                $(this).css({'display':'block'});
+              }
+              else {
+                $(this).css({'display':'none'});
+              }
+              
+            });
+
+        });
+
+
+      // End of upskilling
+
 
 
 
