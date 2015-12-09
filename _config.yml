@@ -2,20 +2,13 @@
 
 markdown: kramdown
 permalink: pretty
-port: 8000
-
 collections:
  - casestudy
  - upskilling
-
-url: http://mcsekar.github.io/
-
 include: ["_pages"]
 layouts_dir:  _templates/_layouts
 includes_dir: _templates/_includes
-
 data_dir: _data
-
 sass:
     sass_dir: _templates/_sass
 
