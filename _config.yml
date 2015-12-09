@@ -8,7 +8,7 @@ collections:
  - casestudy
  - upskilling
 
-url: http://localhost:8000
+url: http://http://mcsekar.github.io/
 
 include: ["_pages"]
 layouts_dir:  _templates/_layouts
