@@ -1,0 +1,90 @@
+{% include header.html %}
+
+<main>
+	
+		<div class="company-carousel">
+		  	<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+			    <!-- Indicators -->
+			    <ol class="carousel-indicators">
+			      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			      <li data-target="#myCarousel" data-slide-to="1"></li>
+			      <li data-target="#myCarousel" data-slide-to="2"></li>
+			      <li data-target="#myCarousel" data-slide-to="2"></li>
+			    </ol>
+
+			    <!-- Wrapper for slides -->
+			    <div class="carousel-inner" role="listbox">
+			      <div class="item active">
+			       	  <img src="/assets/img/company/banner1.png">
+			        <div><p class="gotham-light-italic  hw-heading banner-text1 clr-white">Our culture focuses on achieving excellence</p></div>
+			      </div>
+
+			      <div class="item">
+			      	<img src="/assets/img/company/banner2.png">
+			        <h2 class="gotham-rounded-bok hw-heading  h2-color banner-text2">We’re like a  pro sports team,<br> we play to WIN!</h2>
+			      </div>
+			       
+
+			    </div>
+			</div>
+		</div>
+			
+	<div class="container">
+		<div>
+			<div class="hr-display "><h2 class="gotham-rounded-bok hw-heading  h2-color company-abt">{{site.data.company.title}}</h2></div>
+			<p class="hw-para gotham-rounded-light para">{{site.data.company.description}}</p>
+		</div>
+	</div>
+
+	<div class="drop-line">
+		<div class="hr-display"><p class="hw-contact-no gotham-rounded-light drop-text">DROP US A LINE</p></div>
+		<div class="hr-display"><img src="/assets/img/company/drop.png"> </div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 company-btm">
+				<div class="address hr-display ">
+					<div class="hr-display"><i class="fa fa-map-marker company-fa"></i></div>
+					<div  class=" gotham-rounded-bold company-para hr-display hw-contact-no ">ADDRESS</div>
+					<p  class="hr-display gotham-rounded-bok company-det">{{site.data.company.address}}</p>
+				</div>
+			</div>
+			<div class="col-lg-4 company-btm">
+				<div class="phone hr-display">
+					<div class="hr-display"><i class="fa fa-mobile company-fa"></i></div>
+					<div class=" gotham-rounded-bold company-para hr-display hw-contact-no">PHONE</div>
+					<p  class="hr-display gotham-rounded-bok company-det">{{site.data.company.phone}}</p>
+				</div>
+			</div>
+			<div class="col-lg-4 company-btm">
+				<div class="email hr-display">
+					<div class="hr-display"><i class="fa fa-paper-plane company-fa"></i></div>
+					<div  class=" gotham-rounded-bold company-para hr-display hw-contact-no">EMAIL</div>
+					<p  class="hr-display  gotham-rounded-bok company-det">{{site.data.company.email}}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</main>
+{% include footer.html %}
+
+
+<!-- <div class="row">
+<div class="col-lg-4">
+	<img src="/assets/img/company/map.png">
+	<div class="direction">
+		<h6>Hashworks</h6>
+		<p>1 Zoo Boulevard</p> 
+		<p>12400 SW 152 Street</p>
+		<p>Miami, FL 33177</p>
+		<p>8861162420</p>
+		<h6>Directions</h6>
+		<input type="text" placeholder="From">
+		<input type="text"  placeholder="To">
+		<button>Get Directions</button>
+	</div>
+</div>
+<div class="col-lg-8"></div>
+</div> -->

@@ -119,40 +119,22 @@ $(document).ready(function(){
       // End of upskilling-casestudy collapse
 
 
-       /* job board*/
-      /* row1 */
-        $('.hw-job1').click(function () {
-           $('.view-act').addClass('view-color');
-          $('.view1').toggleClass('hide');
-        }); 
+      // service details
+        $('.tab-box').click(function(){
+          var dtab = $(this).attr("data-tab");
 
-        $('.view1-close').click(function() {
-          $('.view1').addClass('hide');
-           $('.view-act').removeClass('view-color');
-        }); 
+          $('.tab-details .tab-cont').each(function(){
+              var dval = $(this).attr("data-value");
 
-        /* row2*/
-
-         $('.hw-job2').click(function () {
-          $('.view2').toggleClass('hide');
-        }); 
-
-        $('.view2-close').click(function() {
-          $('.view2').toggleClass('hide');
-        }); 
-
-
-        $('.apply').click(function () {
-           $('.view1').addClass('hide');
-          $('.apply-div').addClass('show');
-           
+              if(dtab == dval) {
+                $(this).addClass('active');
+              }
+              else {
+                  $(this).removeClass('active');
+              }
+          });
         });
-
-        $('.form-close').click(function() {
-          $('.apply-div').removeClass('show');
-           $('.view-act').removeClass('view-color');
-        }); 
-
+      // End of service detials
 
 
 

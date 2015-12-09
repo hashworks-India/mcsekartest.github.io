@@ -39,9 +39,11 @@ html {
 		font: 1rem/1.4 "gotham-rounded-bold";
 		color: #7c7c7c;
 	}
+
 	a {
-		color: inherit;
+		color: inherit; /**/
 	}
+
 	a:focus,
 	a:hover,
 	.btn:focus, 
@@ -177,13 +179,13 @@ html {
 		color: #c9443d;
 	}
 	.custom-btn {
-		padding:15px 55px;
+		padding: 8px 25px; /**/
 		color: #fff;
-		font-size: 14px;
+		font-size: 0.75rem; /*12px*/
 		font-family: "gotham-rounded-bold";
-		background-color: #ee2b7b;
+		background-color: #0ab4c5; /**/
 		text-transform: uppercase;
-		border: 1px solid #ee2b7b;
+		border: 1px solid #0ab4c5;/**/
 		-webkit-transition: all .5s ease 0s;
 		-moz-transition: all .5s ease 0s;
 		-ms-transition: all .5s ease 0s;
@@ -197,13 +199,13 @@ html {
 	}
 
 	.custom-btn:hover a {
-		color: #ee2b7b;
+		color: #0ab4c5;/**/
 	}
 
 	.custom-btn:hover {
 		background-color: transparent;
-		border: 1px solid #ee2b7b;
-		color: #ee2b7b;
+		border: 1px solid #0ab4c5;/**/
+		color: #0ab4c5;/**/
 	}
 
 	.heading-custom-btn {
@@ -459,7 +461,7 @@ html {
 		.hw-works .arrow-top:after,
 		.hw-works .arrow-bottom:after {
 			position: absolute;
-			content: url(../../assets/img/it-service/arrow.png);
+			content: url(../../assets/img/solutions/arrow.png); /**/
 			height: 20px;
 			width: 100px;
 			right: -35%;
@@ -836,3 +838,107 @@ html {
 	/*End of Testimonial*/
 
 /*End of upskilling-devops*/
+
+/*service delivery page*/
+	
+	.hw-service-details .col-width {
+		width: 473px;
+		float: left;
+	}
+
+	.hw-service-details .custom-col {
+		width: calc(100% - 473px);
+		float: left;
+	}
+
+	.hw-service-details {
+		margin-top: 50px;
+	}
+
+	.tab > li {
+		width: 128px;
+		margin-bottom: 12px;
+    	margin-right: 14px;
+    	float: left;
+	}
+
+	.tab > li:nth-child(3n) {
+		margin-right: 0;
+	}
+
+	.tab-box >a {
+		color: #fff;
+	    display: block;
+	    font-size: 0.75rem; /*12px*/
+	    height: 127px;
+	    padding: 19px 9px 0 8px;
+	    text-transform: capitalize;
+	    word-wrap: break-word;
+	}
+
+	.tab-box-bg {
+		background: #328779 none repeat scroll 0 0;
+	}
+
+	.tab-box-bg1 {
+		background: #419789 none repeat scroll 0 0;
+	}
+
+	.tab-box-bg2 {
+		background: #2f825c none repeat scroll 0 0;
+	}
+
+	.tab-box-bg3 {
+		background: #29684a none repeat scroll 0 0;
+	}
+
+	.tab-box-bg4 {
+		background: #4d9157 none repeat scroll 0 0;
+	}
+
+	.tab-box-bg5 {
+		background: #327694 none repeat scroll 0 0;
+	}
+
+	.tab-box-bg6 {
+		background: #276b8b none repeat scroll 0 0;
+	}
+
+	.tab-box-bg7 {
+		background: #328779 none repeat scroll 0 0;
+	}
+
+	.tab-box-bg8 {
+		background: #419789 none repeat scroll 0 0;
+	}
+
+	.tab-box-bg9 {
+		background: #2f825c none repeat scroll 0 0;
+	}
+
+	.tab-box-bg10 {
+		background: #29684a none repeat scroll 0 0;
+	}
+
+	.tab-box-bg11 {
+		background: #4d9157 none repeat scroll 0 0;
+	}
+
+	.tab-cont.active {
+		display: block;
+	}
+
+	.tab-cont {
+		display: none;
+	}
+
+	.tab-cont h3 {
+		margin: 0 0 25px;
+	}
+
+	.tab-cont p {
+		margin-top: 10px;
+	}
+
+	
+/*End of service-delivery page*/

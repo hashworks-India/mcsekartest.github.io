@@ -1,9 +1,7 @@
 /*contact*/
     .contact{
-
-    	padding: 15px 20px 15px 20px;
+        padding: 15px 20px 15px 20px;
         background-color: #0ab4c5;
-        	
     }
 
     .contact:hover {
@@ -118,9 +116,10 @@ border-radius: 5px;
 {
     margin-top: 80px;
 }
-
 .arrow-down {
-       left: 365px;
+    right: 33px;
+    left: auto;
+    bottom: -33px; 
     width: 0px;
     height: 0;
     border-right: 32px solid transparent;
@@ -128,7 +127,9 @@ border-radius: 5px;
     position: absolute;
 }
 .arrow-down-left {
-       left: 80px;
+    left: 33px; 
+    right: auto; 
+    bottom: -33px;
     width: 0px;
     height: 0;
     border-left: 32px solid transparent;
@@ -136,10 +137,16 @@ border-radius: 5px;
     position: absolute;
 }
 
-.name-align {
+.name-align-right {
     margin-top: 40px !important;
+    float:right;
+    margin-right: 87px;
 }
-
+.name-align-left {
+   margin-top: 40px !important;
+    float: left;
+    margin-left: 87px;
+}
 
 .textvalignmiddle {
     display: inline-block;
@@ -147,9 +154,8 @@ border-radius: 5px;
     margin: 0 10px;
     font-size: 0.875rem;
 }
-
-
 /*carousel*/
+
 /* drop down */
     ul li ul.dropdown li a{
         color: #fff;
@@ -162,6 +168,9 @@ border-radius: 5px;
         left: 20px;
         padding:10px 30px;
         width:215px;
+        border: 1px solid  #ee2b7b;
+        border-radius: 3px;
+        line-height: 1.7;
     }
     ul li:hover ul.dropdown{
         display: block; /* Display the dropdown */

@@ -1,0 +1,198 @@
+{% include header.html %}
+
+<main>
+
+<h1 class="text-center gotham-rounded-bok heading"> Blog</h1>
+
+
+	
+
+   		<div class="carousel-padding">
+		<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+
+	   		<div class="container heading-caro-padd">
+			    <!-- Wrapper for slides -->
+			    <div class="carousel-inner" role="listbox">
+
+			      {% for cont in site.data.Case_Study.carousel.carousel_content%}
+							       {% if forloop.first %}
+							  	<div class="item active">
+							      <p class=" gotham-rounded-bok font-30">
+							       {{ cont.content}}
+							      </p>
+							    </div>
+								{% else %}
+							   <div class="item">
+							       <p class=" gotham-rounded-bok font-30">
+							       		 {{ cont.content}}
+							      	</p>
+							    </div>
+								{% endif %}
+							    {% endfor %}
+			    
+			    </div>
+
+			</div>
+
+			<a class="left carousel-control carousel-indicatr-pos" href="#myCarousel" role="button" data-slide="prev">
+			 <img src="/assets/img/consulting/carousel-indi-1.jpg" >
+			<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control carousel-indicatr-pos" href="#myCarousel" role="button" data-slide="next">
+			<img src="/assets/img/consulting/carousel-indi.jpg">
+			<span class="sr-only">Next</span>
+			</a>
+	 	</div>
+	 	</div>
+	<!-- end of carousel-->
+	
+
+	<div class="line">
+	</div>
+	
+<div class="container">
+
+<div class="row post-top hw-post-info">
+	
+<ul  class="hr-display">
+	<li> <i class="fa fa-user"> </i>{{page.author}}</li>
+	<li><i class="fa fa-clock-o"></i>{{ page.date | date: "%B %d, %Y"}}</li>
+	<li><i class="fa fa-comments-o"></i><a href="{{page.url}}#disqus_thread"></a></li>
+	<li><i class="fa fa-folder-open-o"></i>{% for tag in page.tags %}
+						 <span class='tag {{tag | downcase }}'>{{tag}}</span> 
+					{% endfor %}</li>
+	<li><i class="fa fa-heart-o"></i>77</li>
+</ul>
+
+
+</div>
+
+
+   <div class="row">
+
+
+
+   	<div class="col-md-8">
+   		
+       <div class="post-title">
+           {{page.title}}
+	</div>
+    <div class="post-img">
+
+    	<img src="/assets/img/case-study/banner1.jpg">
+     
+   	</div>
+<div class="post-content">
+{{content}}</p>
+
+</div>
+
+
+<div class="comments">
+	
+
+   
+   {%include disqus.html%}
+
+
+
+</div>
+
+<!-- end og left-pane -->
+</div>
+
+<!-- right-pane -->
+   	<div class="col-md-4">
+
+<div class="hw-post-author">
+      
+   
+  <img src="/assets/img/blog/author.jpg" alt="author" class='img-circle hw-author-image'>
+ 
+  <div class="hw-author-name">Gopi Krishnan<br><span class="textvalignmiddle">Co founder</span></div>
+  <div class="hw-author-social">
+  	<span class="fa-stack  ">
+  <i class="fa fa-circle fa-stack-2x"></i>
+  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+</span>
+                  <span class="fa-stack ">
+  <i class="fa fa-circle fa-stack-2x"></i>
+  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+</span>
+                 <span class="fa-stack  ">
+  <i class="fa fa-circle fa-stack-2x"></i>
+  <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+</span>
+          <span class="fa-stack  ">
+  <i class="fa fa-circle fa-stack-2x"></i>
+  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+</span>
+
+
+  </div>
+   
+	
+
+
+
+
+
+
+
+
+</div>
+</div>
+<!-- end of right-pane -->
+
+</main>
+
+  
+        <div class="container-fluid">
+            <div class="row footer">
+                <div class="col-md-9 hw-copyright">
+                    <p class="gotham-rounded-light">{{ site.data.global.footer_text }}</p>
+                </div>
+                <div class="col-md-3 ">
+                  <span class="fa-stack hw-socialshare social-icons">
+  <i class="fa fa-circle-thin fa-stack-2x"></i>
+  <i class="fa fa-facebook fa-stack-1x"></i>
+</span>
+                  <span class="fa-stack hw-socialshare social-icons">
+  <i class="fa fa-circle-thin fa-stack-2x"></i>
+  <i class="fa fa-twitter fa-stack-1x"></i>
+</span>
+                 <span class="fa-stack hw-socialshare social-icons">
+  <i class="fa fa-circle-thin fa-stack-2x"></i>
+  <i class="fa fa-envelope fa-stack-1x"></i>
+</span>
+                     
+                </div>
+            </div>
+        </div>
+ 
+</div>
+
+
+    <!-- JavaScript -->
+<script src="/assets/js/jquery-2.1.4.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/custom.js"></script>
+
+
+<script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = 'hashworks'; // required: replace example with your forum shortname
+      // var disqus_developer = 1; // Comment out when the site is live
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname+'.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+      }());
+    </script>
+
+
+    </body>
+</html>
