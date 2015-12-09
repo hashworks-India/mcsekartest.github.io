@@ -4,5 +4,5 @@ main-left:
 main-right:
  - { url: '/', text: 'Company' }
  - { url: '/blog', text: 'Blog' }
- - { url: '/', text: 'Job Board' }
+ - { url: '/managed_services', text: 'Job Board' }
  - { url: '/', text: 'News' }

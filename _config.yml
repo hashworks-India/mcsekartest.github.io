@@ -9,7 +9,9 @@ port: 8000
 
 collections:
  - case_study
- - etl_casestudy
+
+url: http://localhost:8000
+
 
 
 
