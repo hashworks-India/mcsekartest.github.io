@@ -57,21 +57,21 @@
 					</ul></a>
 				</li>
 		        
-		        <li class="c-flex"><a  class="hr-display" data-toggle="tab" href="#engineering" >
+		        <li class="c-flex"><a  class="hr-display" data-toggle="tab" href="#offerings" >
 		        	<ul class="tab-img">
 		        		<li class="li-tab-mar"><img src="/assets/img/solutions/engineering_practices.jpg"></li>
 		        		<li class="gotham-rounded-light font-24"><p class="text-center">Our</p> <p class="text-center"> Offerings</p></li>
 					</ul></a>
 		        </li>
 
-		        <li class="c-flex"><a  class="hr-display" data-toggle="tab" href="#mobility" >
+		        <li class="c-flex"><a  class="hr-display" data-toggle="tab" href="#engageus" >
 		        	<ul class="tab-img" >
 		        		<li class="li-tab-mar"><img src="/assets/img/solutions/mobility-bigdata.jpg"></li>
 		        		<li class="gotham-rounded-light font-24"><p class="text-center">Engage</p> <p class="text-center"> Us</p></li>
 					</ul></a>
 		        </li>
 
-		        <li class="c-flex"><a  class="hr-display" data-toggle="tab" href="#ui">
+		        <li class="c-flex"><a  class="hr-display" data-toggle="tab" href="#deliver">
 		        	<ul class="tab-img" >
 		        		<li class="li-tab-mar"><img src="/assets/img/solutions/ui-ux.jpg"></li>
 		        		<li class="gotham-rounded-light font-24"><p class="text-center">How</p><p class="text-center">We Deliver</p></li>
@@ -85,93 +85,294 @@
 		<!-- tab-content -->
 		    <div class="tab-content">
 
-		        <div id="accelerate-business" class="tab-pane fade in active">
-		           <!-- categories -->
-			       <div class="div-margin-left">
+				<!-- tab -->
+			        <div id="accelerate-business" class="tab-pane fade in active">
+			           <!-- categories -->
+					       <div class="div-margin-left">
 
-						<!-- hw-engage-cont hw-service-details -->
-							<div class="hw-engage-cont hw-service-details">
-								<!-- row -->
-									<div class="row clearfix">
+								<!-- hw-engage-cont hw-service-details -->
+									<div class="hw-engage-cont hw-service-details">
+										<!-- row -->
+											<div class="row clearfix">
 
-										<!-- col-width -->
-											<div class="col-width">
+												<!-- col-width -->
+													<div class="col-width">
 
-												<ul class="tab clearfix">
-													<li class="tab-box tab-box-bg" data-tab="dba"><a href="javascript:void(0)" class="hw-para gotham-rounded-light">Digital Business Agenda</a></li>
-													<li class="tab-box tab-box-bg1"  data-tab="dba1"><a href="javascript:void(0)" class="hw-para gotham-rounded-light">Digital Business Agenda</a></li>
-													<li class="tab-box tab-box-bg2" data-tab="dba2"><a   class="hw-para gotham-rounded-light">Digital Business Agenda</a></li>
-													<li class="tab-box tab-box-bg3"><a href="javascript:void(0)" class="hw-para gotham-rounded-light">Digital Business Agenda</a></li>
-													<li class="tab-box tab-box-bg4"><a href="javascript:void(0)" class="hw-para gotham-rounded-light">Digital Business Agenda</a></li>
-													<li class="tab-box tab-box-bg5"><a href="javascript:void(0)" class="hw-para gotham-rounded-light">Digital Business Agenda</a></li>
-													<li class="tab-box tab-box-bg6"><a href="javascript:void(0)" class="hw-para gotham-rounded-light">Digital Business Agenda</a></li>
-													<li class="tab-box tab-box-bg7"><a href="javascript:void(0)" class="hw-para gotham-rounded-light">Digital Business Agenda</a></li>
-													<li class="tab-box tab-box-bg8"><a href="javascript:void(0)" class="hw-para gotham-rounded-light">Digital Business Agenda</a></li>
-													<li class="tab-box tab-box-bg9"><a href="javascript:void(0)" class="hw-para gotham-rounded-light">Digital Business Agenda</a></li>
-													<li class="tab-box tab-box-bg10"><a href="javascript:void(0)" class="hw-para gotham-rounded-light">Digital Business Agenda</a></li>
-													<li class="tab-box tab-box-bg11"><a href="javascript:void(0)" class="hw-para gotham-rounded-light">Digital Business Agenda</a></li>
-												</ul>
-												
-											</div>
-										<!-- End of col-width -->
+														<ul class="tab clearfix">
+															{% assign boxbg = "tab-box-bg" %}
+															{% for tablist in site.data.Service_Delivery.Accelerate_Business.accelerate %}
 
-										<!-- custom-col -->
-											<div class="custom-col">
-												
-												<!-- tab-details -->
-													<div class="tab-details">
+                                                             {% capture tab %} {{boxbg}}{{forloop.index0}} {% endcapture %}
 
-														<!-- tab-cont -->
-															<div class="tab-cont active" data-value="dba">
-																<h3 class="text-uppercase gotham-rounded-bold hw-heading">Service Details</h3>
-																<p class="hw-para gotham-rounded-light">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-																<p class="hw-para gotham-rounded-light"> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+
+																	
+															<li class="tab-box {{tab}}" data-tab="{{ tablist.title}}"><a href="javascript:void(0)" class="hw-para gotham-rounded-light">{{ tablist.title}}</a></li>
+
+															{% endfor %}
+															
+															
+														</ul>
+														
+													</div>
+												<!-- End of col-width -->
+
+												<!-- custom-col -->
+													<div class="custom-col">
+														
+														<!-- tab-details -->
+															<div class="tab-details">
+
+																<!-- tab-cont -->
+																	{% for tablist in site.data.Service_Delivery.Accelerate_Business.accelerate %}
+																		{% if forloop.first %}
+																			<div class="tab-cont active" data-value="{{ tablist.title}}">
+																				<h3 class="text-uppercase gotham-rounded-bold hw-heading">{{ tablist.title}}</h3>
+																				<p class="hw-para gotham-rounded-light">{{ tablist.content}}</p>
+																			</div>
+																		{% else %}
+																			<div class="tab-cont" data-value="{{ tablist.title}}">
+																				<h3 class="text-uppercase gotham-rounded-bold hw-heading">{{ tablist.title}}</h3>
+																				<p class="hw-para gotham-rounded-light">{{ tablist.content}}</p>
+																			</div>
+																		{% endif %}
+																	{% endfor %}
+																<!-- End of tab-cont -->
+
 															</div>
-														<!-- End of tab-cont -->
-
-														<!-- tab-cont -->
-															<div class="tab-cont" data-value="dba1">
-																<h3 class="text-uppercase gotham-rounded-bold hw-heading">Service Details 1</h3>
-																<p class="hw-para gotham-rounded-light">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-																<p class="hw-para gotham-rounded-light"> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
-															</div>
-														<!-- End of tab-cont -->
-
-
-														<!-- tab-cont -->
-															<div class="tab-cont" data-value="dba2">
-																<h3 class="text-uppercase gotham-rounded-bold hw-heading">Service Details 2</h3>
-																<p class="hw-para gotham-rounded-light">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-																<p class="hw-para gotham-rounded-light"> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
-															</div>
-														<!-- End of tab-cont -->
+														<!-- End of tab-details -->
 
 													</div>
-												<!-- End of tab-details -->
+												<!-- End of custom-col-->
+
 
 											</div>
-										<!-- End of custom-col-->
-
+										<!--End of row-->
 									</div>
-								<!--End of row-->
+								<!-- End of hw-engage-cont hw-service-details -->
+
+
 							</div>
-						<!-- End of hw-engage-cont hw-service-details -->
+						<!-- end of container-->
 
-
-					</div>
-					<!-- end of container-->
-
-					</div>
-	   		<!-- end of tab1 -->
+						</div>
+		   		<!-- end of tab1 -->
 
 
 
+		   		<!-- tab -->
+			        <div id="offerings" class="tab-pane fade in">
+			           <!-- categories -->
+					       <div class="div-margin-left">
+
+								<!-- hw-engage-cont hw-service-details -->
+									<div class="hw-engage-cont hw-service-details">
+										<!-- row -->
+											<div class="row clearfix">
+
+												<!-- col-width -->
+													<div class="col-width">
+
+														<ul class="tab clearfix">
+															{% assign boxbg = "tab-box-bg" %}
+															{% for tablist in site.data.Service_Delivery.Engage_Us.engageus %}
+
+                                                             {% capture tab %} {{boxbg}}{{forloop.index0}} {% endcapture %}
+																	
+															<li class="tab-box {{tab}}" data-tab="{{ tablist.title}}"><a href="javascript:void(0)" class="hw-para gotham-rounded-light">{{ tablist.title}}</a></li>
+
+															{% endfor %}
+															
+															
+														</ul>
+														
+													</div>
+												<!-- End of col-width -->
+
+												<!-- custom-col -->
+													<div class="custom-col">
+														
+														<!-- tab-details -->
+															<div class="tab-details">
+
+																<!-- tab-cont -->
+																	{% for tablist in site.data.Service_Delivery.Engage_Us.engageus %}
+																		{% if forloop.first %}
+																			<div class="tab-cont active" data-value="{{ tablist.title}}">
+																				<h3 class="text-uppercase gotham-rounded-bold hw-heading">{{ tablist.title}}</h3>
+																				<p class="hw-para gotham-rounded-light">{{ tablist.content}}</p>
+																			</div>
+																		{% else %}
+																			<div class="tab-cont" data-value="{{ tablist.title}}">
+																				<h3 class="text-uppercase gotham-rounded-bold hw-heading">{{ tablist.title}}</h3>
+																				<p class="hw-para gotham-rounded-light">{{ tablist.content}}</p>
+																			</div>
+																		{% endif %}
+																	{% endfor %}
+																<!-- End of tab-cont -->
+
+															</div>
+														<!-- End of tab-details -->
+
+													</div>
+												<!-- End of custom-col-->
 
 
+											</div>
+										<!--End of row-->
+									</div>
+								<!-- End of hw-engage-cont hw-service-details -->
 
+
+							</div>
+						<!-- end of container-->
+
+						</div>
+		   		<!-- end of tab1 -->
+
+
+		   		<!-- tab -->
+			        <div id="engageus" class="tab-pane fade in">
+			           <!-- categories -->
+					       <div class="div-margin-left">
+
+								<!-- hw-engage-cont hw-service-details -->
+									<div class="hw-engage-cont hw-service-details">
+										<!-- row -->
+											<div class="row clearfix">
+
+												<!-- col-width -->
+													<div class="col-width">
+
+														<ul class="tab clearfix">
+															{% assign boxbg = "tab-box-bg" %}
+															{% for tablist in site.data.Service_Delivery.Our_Offering.our_offering %}
+
+															{% capture tab %} {{boxbg}}{{forloop.index0}} {% endcapture %}
+																	
+															<li class="tab-box {{tab}}" data-tab="{{ tablist.title}}"><a href="javascript:void(0)" class="hw-para gotham-rounded-light">{{ tablist.title}}</a></li>
+
+															{% endfor %}
+															
+															
+														</ul>
+														
+													</div>
+												<!-- End of col-width -->
+
+												<!-- custom-col -->
+													<div class="custom-col">
+														
+														<!-- tab-details -->
+															<div class="tab-details">
+
+																<!-- tab-cont -->
+																	{% for tablist in site.data.Service_Delivery.Our_Offering.our_offering %}
+																		{% if forloop.first %}
+																			<div class="tab-cont active" data-value="{{ tablist.title}}">
+																				<h3 class="text-uppercase gotham-rounded-bold hw-heading">{{ tablist.title}}</h3>
+																				<p class="hw-para gotham-rounded-light">{{ tablist.content}}</p>
+																			</div>
+																		{% else %}
+																			<div class="tab-cont" data-value="{{ tablist.title}}">
+																				<h3 class="text-uppercase gotham-rounded-bold hw-heading">{{ tablist.title}}</h3>
+																				<p class="hw-para gotham-rounded-light">{{ tablist.content}}</p>
+																			</div>
+																		{% endif %}
+																	{% endfor %}
+																<!-- End of tab-cont -->
+
+															</div>
+														<!-- End of tab-details -->
+
+													</div>
+												<!-- End of custom-col-->
+
+
+											</div>
+										<!--End of row-->
+									</div>
+								<!-- End of hw-engage-cont hw-service-details -->
+
+
+							</div>
+						<!-- end of container-->
+
+						</div>
+		   		<!-- end of tab1 -->
+
+
+		   		<!-- tab -->
+			        <div id="deliver" class="tab-pane fade in">
+			           <!-- categories -->
+					       <div class="div-margin-left">
+
+								<!-- hw-engage-cont hw-service-details -->
+									<div class="hw-engage-cont hw-service-details">
+										<!-- row -->
+											<div class="row clearfix">
+
+												<!-- col-width -->
+													<div class="col-width">
+
+														<ul class="tab clearfix">
+															{% assign boxbg = "tab-box-bg" %}
+															{% for tablist in site.data.Service_Delivery.We_Deliver.we_deliver %}
+
+															{% capture tab %} {{boxbg}}{{forloop.index0}} {% endcapture %}
+																	
+															<li class="tab-box {{tab}}" data-tab="{{ tablist.title}}"><a href="javascript:void(0)" class="hw-para gotham-rounded-light">{{ tablist.title}}</a></li>
+
+															{% endfor %}
+															
+															
+														</ul>
+														
+													</div>
+												<!-- End of col-width -->
+
+												<!-- custom-col -->
+													<div class="custom-col">
+														
+														<!-- tab-details -->
+															<div class="tab-details">
+
+																<!-- tab-cont -->
+																	{% for tablist in site.data.Service_Delivery.We_Deliver.we_deliver %}
+																		{% if forloop.first %}
+																			<div class="tab-cont active" data-value="{{ tablist.title}}">
+																				<h3 class="text-uppercase gotham-rounded-bold hw-heading">{{ tablist.title}}</h3>
+																				<p class="hw-para gotham-rounded-light">{{ tablist.content}}</p>
+																			</div>
+																		{% else %}
+																			<div class="tab-cont" data-value="{{ tablist.title}}">
+																				<h3 class="text-uppercase gotham-rounded-bold hw-heading">{{ tablist.title}}</h3>
+																				<p class="hw-para gotham-rounded-light">{{ tablist.content}}</p>
+																			</div>
+																		{% endif %}
+																	{% endfor %}
+																<!-- End of tab-cont -->
+
+															</div>
+														<!-- End of tab-details -->
+
+													</div>
+												<!-- End of custom-col-->
+
+
+											</div>
+										<!--End of row-->
+									</div>
+								<!-- End of hw-engage-cont hw-service-details -->
+
+
+							</div>
+						<!-- end of container-->
+
+						</div>
+		   		<!-- end of tab1 -->
 
 	   		
-	</div>
+		</div>
 	<!-- end of tab-content -->
 
 
