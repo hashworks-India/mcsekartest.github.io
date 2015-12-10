@@ -19,7 +19,7 @@
 			    <!-- Wrapper for slides -->
 			    <div class="carousel-inner" role="listbox">
 
-			      {% for cont in site.data.Case_Study.carousel.carousel_content%}
+			      {% for cont in site.data.Carousel.carousel.carousel_content%}
 							       {% if forloop.first %}
 							  	<div class="item active">
 							      <p class=" gotham-rounded-bok font-30">
@@ -40,11 +40,11 @@
 			</div>
 
 			<a class="left carousel-control carousel-indicatr-pos" href="#myCarousel" role="button" data-slide="prev">
-			 <img src="/assets/img/consulting/carousel-indi-1.jpg">
+			 <img src="/assets/img/solutions/carousel-indi-1.jpg">
 			<span class="sr-only">Previous</span>
 			</a>
 			<a class="right carousel-control carousel-indicatr-pos" href="#myCarousel" role="button" data-slide="next">
-			<img src="/assets/img/consulting/carousel-indi.jpg">
+			<img src="/assets/img/solutions/carousel-indi.jpg">
 			<span class="sr-only">Next</span>
 			</a>
 	 	</div>
@@ -58,15 +58,38 @@
 
       <div class="container">
        
+       <ul class="tagcloud">
+			
+		<li>
+			<ul>
+				<li class="tagname">name</li>
+				<li class="tagvalue arrow-left"><span class="arrow-border"></span>23</li>
+			</ul>
+		</li>
 
-       <ul class="tag-box inline">hi12
-       	{% assign counter = 0 %}
-{% for category in site.casestudy %}
-  {% assign counter = counter | plus: 1 %}
-  {{category.category}}
-{% endfor %}
-</ul>
-{{ counter }}
+		
+		<li>
+			<ul>
+				<li class="tagname">name</li>
+				<li class="tagvalue arrow-left"><span class="arrow-border"></span>23</li>
+			</ul>
+		</li>
+
+		<li>
+			<ul>
+				<li class="tagname">name</li>
+				<li class="tagvalue arrow-left"><span class="arrow-border"></span>23</li>
+			</ul>
+		</li>
+
+		<li>
+			<ul>
+				<li class="tagname">name</li>
+				<li class="tagvalue arrow-left"><span class="arrow-border"></span>23</li>
+			</ul>
+		</li>
+	</ul>
+      
 </div>
 
 
@@ -74,24 +97,25 @@
 
 	
 
-	<div class="container-fluid cs-cntr-mar collapse in" id="etl">
+	<div class="container-fluid cs-cntr-mar collapse in" >
 
             {% for project in site.casestudy %}
+    
     {% assign mod = forloop.index | modulo: 3 %}
     {% if mod == 1 %}
         <!-- even -->
      
-                 <div class="row">
+                 <div class="row" class="filter" data-value="{{ project.category}}">
 			<div class="col-lg-8 col-rite equal-height-col">
 
 				<div class="banner">
-					<img src="/assets/img/case-study/banner1.jpg">
+					<img src="/assets/img/case_study/banner1.jpg">
 					<div class="cs-arrow-left cs-arrow"></div>
 				</div>
 			</div>
 
 
-              <div class="col-lg-4 equal-height-col">
+              <div class="col-lg-4 equal-height-col" >
 				<div>
 					<h6 class="text-center gotham-rounded-bok font-18"> {{ project.name }} </h6>
 					<p class="font-14  gotham-rounded-light cs-para">{{ project.description }}</p>
@@ -102,37 +126,17 @@
 				</div>
 			</div>
 
-			<!--pop up-->
-			 
-			 <div class="modal fade" id="myModal" role="dialog">
-			    <div class="modal-dialog modal-lg">
-			    
-			      <!-- Modal content-->
-			      	<div class="modal-content">
-				        <div class="modal-header">
-				          <button type="button" class="close" data-dismiss="modal">&times;</button>
-				          <h4 class="modal-title">{{ project.name }}</h4>
-				        </div>
-				        <div class="modal-body">
-				          <p>{{project.content}}</p>
-				        </div>
-			     	 </div>
-			      
-			    </div>
-			  </div>
-  
-			<!--end of pop up-->
 		</div>
 
 
 		{% elsif mod == 2 %}
         <!-- even -->
      
-                 <div class="row">
+                 <div class="row" class="filter" data-value="{{ project.category}}">
 			
 
               <div class="col-lg-4 equal-height-col">
-				<div>
+				<div >
 					<h6 class="text-center gotham-rounded-bok font-18"> {{ project.name }} </h6>
 					<p class="font-14  gotham-rounded-light cs-para">{{ project.description }}</p>
 
@@ -144,32 +148,13 @@
 			<div class="col-lg-8 col-8-left equal-height-col">
 
 				<div class="banner">
-					<img src="/assets/img/case-study/banner1.jpg">
+					<img src="/assets/img/case_study/banner1.jpg">
 					<div class="cs-arrow-left cs-arrow"></div>
 				</div>
 			</div>
 
 
-			<!--pop up-->
-			 
-			 <div class="modal fade" id="myModal" role="dialog">
-			    <div class="modal-dialog modal-lg">
-			    
-			      <!-- Modal content-->
-			      	<div class="modal-content">
-				        <div class="modal-header">
-				          <button type="button" class="close" data-dismiss="modal">&times;</button>
-				          <h4 class="modal-title">{{ project.name }}</h4>
-				        </div>
-				        <div class="modal-body">
-				          <p>{{project.content}}</p>
-				        </div>
-			     	 </div>
-			      
-			    </div>
-			  </div>
-  
-			<!--end of pop up-->
+			
 		</div>
 
 
@@ -177,17 +162,17 @@
         <!-- odd -->
 
 
-	<div class="row">
+	<div class="row" class="filter" data-value="{{ project.category}}">
 			<div class="col-lg-4 equal-height-col col-rite">
 				<div class="banner">
-						<img src="/assets/img/case-study/banner3.jpg">
+						<img src="/assets/img/case_study/banner3.jpg">
 					<div class="cs-arrow-left cs-arrow"></div>
 				</div>
 			</div>
 			<div class="col-lg-4 equal-height-col">
 				<div>
 					<div class="text-center">
-						<img src="/assets/img/case-study/eye.jpg" alt="eye">
+						<img src="/assets/img/case_study/eye.jpg" alt="eye">
 					</div>
 					<h6 class="text-center gotham-rounded-bok font-18"> {{ project.name }} </h6>
 					<p class="font-14  gotham-rounded-light cs-para">{{ project.description }}</p>
@@ -198,7 +183,7 @@
 			</div>
 			<div class="col-lg-4 equal-height-col">
 				<div class="banner">
-					<img src="/assets/img/case-study/banner4.jpg">
+					<img src="/assets/img/case_study/banner4.jpg">
 				</div>
 			</div>
 		
@@ -208,26 +193,7 @@
 
              
 
-			<!--pop up-->
-			 
-			 <div class="modal fade" id="myModal" role="dialog">
-			    <div class="modal-dialog modal-lg">
-			    
-			      <!-- Modal content-->
-			      	<div class="modal-content">
-				        <div class="modal-header">
-				          <button type="button" class="close" data-dismiss="modal">&times;</button>
-				          <h4 class="modal-title">{{ project.name }}</h4>
-				        </div>
-				        <div class="modal-body">
-				          <p>{{project.content}}</p>
-				        </div>
-			     	 </div>
-			      
-			    </div>
-			  </div>
-  
-			<!--end of pop up-->
+			
 </div>
 		
 

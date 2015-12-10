@@ -90,11 +90,7 @@
 	    			<div class="container">
 			        	<div class="devops-cont">
 			        		<h3 class="hw-tab-heading gotham-rounded-bok">Course Description</h3>
-			        		<p class="gotham-rounded-light hw-para">This course introduces attendees to the goals, objectives, benefits, practices of a 
-							DevOps environment with hands on working sessions. The course also addresses 
-							why DevOps is a mix of cultural, process & tools movement. This sessions talks 
-							about principles and mind-sets with practical hands-on use-cases that is pivoting 
-							the software delivery landscape.
+			        		<p class="gotham-rounded-light hw-para">{{page.course_description}}
 							</p>
 			        	</div>
 			        </div>
@@ -111,18 +107,18 @@
 					<!-- container -->
 						<div class="container">
 				        	<div class="devops-cont">
-				        		<h3 class="hw-tab-heading gotham-rounded-bok">Learning Obectives</h3>
-				        		<p class="gotham-rounded-light hw-para">This workshop will help the audience to gain insights into Lean application delivery practices with IT-engineering use-cases.</p>
-				        		<p class="gotham-rounded-light hw-para">How culturally Devops movement has brought big change in the way organizations delivery software today.</p>
-				        		<ul>
-				        			<li><p class="gotham-rounded-light hw-para">How DevOps thinking is pivoting organizations to deliver faster applications &  features to its customers.</p></li>
-				        			<li><p class="gotham-rounded-light hw-para"> How DevOps automation and Continuous Delivery solutions accelerate application build, test and release.</p></li>
-				        			<li><p class="gotham-rounded-light hw-para">How these practices help development organizations to validate their release candidates more quickly.</p></li>
-				        			<li><p class="gotham-rounded-light hw-para">How faster feedback loops help the developers to identify errors and turnaround fix faster.</p></li>
-				        			<li><p class="gotham-rounded-light hw-para">Working sessions on the delivery orchestration tools.</p></li>
-				        			<li><p class="gotham-rounded-light hw-para">How the Ops teams are able to have better predictability & stability in managing  organizations IT eco-system.</p></li>
-				        			<li class="gotham-rounded-light hw-para"><p>How Cost of Ops has significantly go down with the level of abstraction of these solutions.</p></li>
-				        		</ul>
+				        		<h3 class="hw-tab-heading gotham-rounded-bok">Learning Obectives1</h3>
+				        		
+{% for learn_obj in page.learning_objective %}
+	<p class="gotham-rounded-light hw-para">{{learn_obj.description}}</p>
+
+    <ul>
+    {% for points in learn_obj.points %}  
+    <li><p class="gotham-rounded-light hw-para">{{ points.pt }}</p></li>
+    {% endfor %}</ul>
+  {% endfor %}
+
+				        		
 				        	</div>
 				        </div>
 			        <!-- End of container -->
