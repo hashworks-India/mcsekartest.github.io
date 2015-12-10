@@ -170,6 +170,34 @@ $(document).ready(function(){
 
       // End of casestudy
 
+      /* job board*/
+
+     
+      $('.hw-job1').click(function() {
+          $(this).parent('tr').next().toggleClass('hide');
+        }); 
+
+        $('.view1-close').click(function() {
+          $('.view1').addClass('hide');
+           $('.view-act').removeClass('view-color');
+        }); 
+
+      
+        $('.apply').click(function () {
+           $('.view1').addClass('hide');
+          $('.apply-div').addClass('show');
+           
+        });
+
+        $('.form-close').click(function() {
+          $('.apply-div').removeClass('show');
+           $('.view-act').removeClass('view-color');
+        }); 
+
+    /* end of job board*/
+
+
+
 
 
 
