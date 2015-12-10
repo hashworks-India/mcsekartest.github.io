@@ -56,35 +56,44 @@
 	</div>
 	<!--tabs-->
 
-      <div class="container">
+      <div class="container hw-casestudy-filter">
+
+
+
        
        <ul class="tagcloud">
-			
-		<li>
+       	<li data-value="all">
 			<ul>
-				<li class="tagname">name</li>
+				<li class="tagname " >All</li>
+				<li class="tagvalue arrow-left"><span class="arrow-border"></span>23</li>
+			</ul>
+		</li>
+			
+		<li data-value="SOA">
+			<ul>
+				<li class="tagname" >{{page.category1}}</li>
 				<li class="tagvalue arrow-left"><span class="arrow-border"></span>23</li>
 			</ul>
 		</li>
 
 		
-		<li>
+		<li data-value="Micro Services">
 			<ul>
-				<li class="tagname">name</li>
+				<li class="tagname " >{{page.category2}}</li>
 				<li class="tagvalue arrow-left"><span class="arrow-border"></span>23</li>
 			</ul>
 		</li>
 
-		<li>
+		<li data-value="ETL">
 			<ul>
-				<li class="tagname">name</li>
+				<li class="tagname ">{{page.category3}}</li>
 				<li class="tagvalue arrow-left"><span class="arrow-border"></span>23</li>
 			</ul>
 		</li>
 
-		<li>
+		<li data-value="Application Development">
 			<ul>
-				<li class="tagname">name</li>
+				<li class="tagname" >{{page.category4}}</li>
 				<li class="tagvalue arrow-left"><span class="arrow-border"></span>23</li>
 			</ul>
 		</li>
@@ -93,19 +102,25 @@
 </div>
 
 
-
+ 
 
 	
 
-	<div class="container-fluid cs-cntr-mar collapse in" >
+	<div class="container-fluid cs-cntr-mar " >
+       
+		{% assign myArray = {{page.category1}}|{{page.category2}}|{{page.category3}}|{{page.category4}} | split: "|" %}
 
-            {% for project in site.casestudy %}
+
+		{% for item in myArray %}
+               {% assign casestudy = site.casestudy | where: "category", item %}
+            {% for project in casestudy %}
     
     {% assign mod = forloop.index | modulo: 3 %}
     {% if mod == 1 %}
         <!-- even -->
+       
      
-                 <div class="row" class="filter" data-value="{{ project.category}}">
+                 <div class="row casestudy-cont-filter {{ project.category}} all" >
 			<div class="col-lg-8 col-rite equal-height-col">
 
 				<div class="banner">
@@ -132,7 +147,7 @@
 		{% elsif mod == 2 %}
         <!-- even -->
      
-                 <div class="row" class="filter" data-value="{{ project.category}}">
+                 <div class="row casestudy-cont-filter {{ project.category}} all"  >
 			
 
               <div class="col-lg-4 equal-height-col">
@@ -149,7 +164,7 @@
 
 				<div class="banner">
 					<img src="/assets/img/case_study/banner1.jpg">
-					<div class="cs-arrow-left cs-arrow"></div>
+					<div class="cs-arrow-right cs-arrow"></div>
 				</div>
 			</div>
 
@@ -159,10 +174,10 @@
 
 
     {% else %}
-        <!-- odd -->
+        <!-- mod==0 -->
 
 
-	<div class="row" class="filter" data-value="{{ project.category}}">
+	<div class="row casestudy-cont-filter {{ project.category}} all"  >
 			<div class="col-lg-4 equal-height-col col-rite">
 				<div class="banner">
 						<img src="/assets/img/case_study/banner3.jpg">
@@ -198,6 +213,7 @@
 		
 
     {% endif %}
+{% endfor %}
 {% endfor %}
 
 

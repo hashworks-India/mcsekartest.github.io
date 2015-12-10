@@ -143,7 +143,32 @@ $(document).ready(function(){
         });
       // End of service detials
 
+ // casestudy
 
+      //filter
+        $('.hw-casestudy-filter li').click(function(){
+          
+            $('.hw-casestudy-filter li').removeClass('active');
+            $(this).addClass('active');
+
+            var dataval = $(this).attr("data-value");
+            console.log(dataval);
+
+            $('.casestudy-cont-filter').each(function(){
+
+              if($(this).hasClass(dataval)) {
+                $(this).css({'display':'block'});
+              }
+              else {
+                $(this).css({'display':'none'});
+              }
+              
+            });
+
+        });
+
+
+      // End of casestudy
 
 
 
