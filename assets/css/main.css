@@ -250,6 +250,14 @@ html {
     	justify-content: center;
     	margin: auto;
 	}
+
+	.filter-content {
+		display: none;
+	}
+
+	.filter-content.active {
+		display: block;
+	}
 /* end of general css */
 
 /*tagcloud*/
@@ -282,6 +290,7 @@ html {
 	    margin: 4px 0;
 	    padding: 5px 12px 6px 5px;
 	    transition: left 0.5s ease 0s;
+	    width: 35px;
 	}
 
 	.tagcloud > li:hover .tagvalue {
@@ -371,7 +380,6 @@ html {
 	/*End of tagactive*/
 
 /*End of tagcloud*/
-
 
 
 /*homepage*/
@@ -702,15 +710,10 @@ html {
 			font-size: 1.13rem;
 			color: #6f6f6f;
 			float: left;
-			padding: 5px 10px;
-			margin: 15px;
-			border: 1px solid #474e5d;
 			cursor: pointer;
 		}
 
-		.hw-upskilling-filter li.active {
-			border-color: #c9443d;
-		}
+		
 	/*End of filter-list*/
 
 	/*filter-details*/
