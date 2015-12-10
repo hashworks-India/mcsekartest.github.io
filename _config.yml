@@ -5,6 +5,7 @@ permalink: pretty
 collections:
  - casestudy
  - upskilling_cs
+ - jobboard
 
 include: ["_pages"]
 

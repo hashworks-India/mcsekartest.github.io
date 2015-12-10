@@ -12,47 +12,64 @@
 
   <table class="table">
     <thead>
-      <tr >
+      <tr>
         <th class="gotham-rounded-bold hw-para">Job Title</th>
         <th class="gotham-rounded-bold hw-para">Location</th>
         <th class="gotham-rounded-bold hw-para">Posted On</th>
         <th class="gotham-rounded-bold hw-para">Experience</th>
         <th class="gotham-rounded-bold hw-para">Type</th>
-       
       </tr>
     </thead>
+
     <tbody>
-      	<tr>
-	        <td class="gotham-rounded-bok  hw-contact-no">PL/SQL</td>
-	        <td class="gotham-rounded-bok  hw-contact-no log-color-blue">Bangalore</td>
-	        <td class="gotham-rounded-bok  hw-contact-no">Today</td>
-	        <td class="gotham-rounded-bok  hw-contact-no">3-5 yrs</td>
-	        <td class="gotham-rounded-bok  hw-contact-no">Full time</td>
-	        <td class="gotham-rounded-bok hw-job1  hw-contact-no " ><span><i class="fa fa-search"></i></span><span class="view-act view-mar">View</span></td>
-		    </tr>
+    
+      {%assign hw_jobs =site.jobboard | sort: 'date'| date: "%d-%m-%y" | reverse%}
 
+       {% for  job in hw_jobs limit:5 %}
+        	<tr>
+            <td class="gotham-rounded-bok  hw-contact-no"> {{job.job_title}} </td>
+            <td class="gotham-rounded-bok  hw-contact-no log-color-blue">{{job.location}}</td>
+  	        <td class="gotham-rounded-bok  hw-contact-no">{{job.date | date: '%B %d, %Y'}}</td>
+  	        <td class="gotham-rounded-bok  hw-contact-no">{{job.experience}}</td>
+  	        <td class="gotham-rounded-bok  hw-contact-no">{{job.type}}</td>
+            <td class="gotham-rounded-bok hw-contact-no hw-job1" ><span><i class="fa fa-search"></i></span><span class="view-act view-mar">View</span></td>
+          </tr>
 
-        <tr class=" hide view1">
+      <tr class=" hide view1">
+
         <td class= "job-coll" colspan="8">
-        <div class="view">
-      <span class="view1-close view-close"><i class="fa fa-times"></i></span>
-      <h5 class="gotham-rounded-bold">Job Description:</h5>
-      <li class="gotham-rounded-bok vw-coll-line-height">Require a blend of UX + Visual Design Expert with 3-5 years of experience</li>
-      <li class="gotham-rounded-bok vw-coll-line-height">User design for Enterprise Class products associated with BigData Visualization</li>
-      <li class="gotham-rounded-bok vw-coll-line-height">User experience design for consumer products</li>
-      <h5 class="gotham-rounded-bold ">Responsibilities of Visual Designer:</h5>
-        <li class="gotham-rounded-bok vw-coll-line-height">Require a blend of UX + Visual Design Expert with 3-5 years of experience</li>
-      <li class="gotham-rounded-bok vw-coll-line-height">User design for Enterprise Class products associated with BigData Visualization</li>
-      <li class="gotham-rounded-bok vw-coll-line-height">User experience design for consumer products</li>
-      <h5 class="gotham-rounded-bold">Skills:</h5>
-        <li class="gotham-rounded-bok vw-coll-line-height">Require a blend of UX + Visual Design Expert with 3-5 years of experience</li>
-      <li class="gotham-rounded-bok vw-coll-line-height">User design for Enterprise Class products associated with BigData Visualization</li>
-      <li class="gotham-rounded-bok vw-coll-line-height">User experience design for consumer products</li>
-      <button class="apply gotham-rounded-bold">Apply</button>
-    </div>  
-  </td>
-</tr>
 
+          <div class="view">
+
+            <span class="view1-close view-close"><i class="fa fa-times"></i></span>
+            <h5 class="gotham-rounded-bold">Job Description</h5>
+            {% for  job_descr in job.job_description %}
+              <li class="gotham-rounded-bok vw-coll-line-height">{{job_descr}}</li>
+            {% endfor %}
+
+            <h5 class="gotham-rounded-bold "> Responsibilities of Visual Designer</h5>
+            {% for  job_res in job.responsibilities %}
+              <li class="gotham-rounded-bok vw-coll-line-height">{{job_res}}</li>
+            {% endfor %}
+            
+
+            <h5 class="gotham-rounded-bold">Skills</h5>
+            {% for  job_skill in job.skills %}
+              <li class="gotham-rounded-bok vw-coll-line-height">{{job_skill}}</li>
+            {% endfor %}
+            
+            <button class="apply gotham-rounded-bold">Apply</button>
+
+          </div> <!-- end of view --> 
+
+        </td><!-- end of td-->
+
+      </tr><!-- end of tr -->
+
+  {% endfor %}
+
+
+      
 
 
 <tr>
@@ -65,7 +82,7 @@
               <div class="col-lg-6"> 
                 <div class="text-border">
                   <div class="input-group">
-                        <div class="input-group-addon"><img src="/assets/img/managed-services/name-img.png"></div>
+                        <div class="input-group-addon"><img src="/assets/img/talent_acquistion/name-img.png"></div>
                     <input type="text" class="form-control placeholder-pro" placeholder="NAME">
                   </div>
                 </div>    
@@ -74,7 +91,7 @@
             <div class="col-lg-6"> 
               <div class="text-border">
                 <div class="input-group">
-                      <div class="input-group-addon"><img src="/assets/img/managed-services/email-img.png"></div>
+                      <div class="input-group-addon"><img src="/assets/img/talent_acquistion/email-img.png"></div>
                   <input type="text" class="form-control placeholder-pro" placeholder="EMAIL">
                 </div>
               </div>
@@ -84,7 +101,7 @@
             <div class="col-lg-6"> 
               <div class="text-border">
                 <div class="input-group">
-                      <div class="input-group-addon"><img src="/assets/img/managed-services/sub-img.png"></div>
+                      <div class="input-group-addon"><img src="/assets/img/talent_acquistion/sub-img.png"></div>
                   <input type="text" class="form-control placeholder-pro" placeholder="SUBJECT">
                 </div>  
               </div>  
@@ -92,7 +109,7 @@
             <div class="col-lg-6"> 
               <div class="text-border">
                 <div class="input-group">
-                      <div class="input-group-addon"><img src="/assets/img/managed-services/phone-img.png"></div>
+                      <div class="input-group-addon"><img src="/assets/img/talent_acquistion/phone-img.png"></div>
                   <input type="text" class="form-control placeholder-pro" placeholder="PHONE">
                 </div>
               </div>  
@@ -115,141 +132,26 @@
           <div class="attach-file">
                 <div class="col-lg-9">
                   <br><br>
-                  <span class="attach-text"><span><img src="/assets/img/managed-services/attach.png"></span><span class="gotham-rounded-bok attach-span">Attach File</span></span>
+                  <span class="attach-text"><span><img src="/assets/img/talent_acquistion/attach.png"></span><span class="gotham-rounded-bok attach-span">Attach File</span></span>
                   <input type="file" id="file-upload">
                 </div>
                 <div class="col-lg-3 submit-background">
                   <br>
                   <div class="submit-resume hr-display">
-                    <p class="hr-display"><img src="/assets/img/managed-services/submit.png"></p>
+                    <p class="hr-display"><img src="/assets/img/talent_acquistion/submit.png"></p>
                     <p class="gotham-rounded-bok placeholder-pro">SUBMIT</p>
 
                   </div>
-                </div>
-              </div><!-- end of attach-file-->
+                </div> 
+               </div> <!-- end of attach-file-->
+          </div><!-- end of postresume -->
+      </div><!--end of col-lg-7 -->
+    </div> <!-- end of apply div--> 
+    </td> 
+   </tr><!-- end of apply row-->
 
-        </div><!-- end of postresume -->
-      </div><!--end of col-lg-7-->
-     
-   </div> <!-- end of apply div--> 
-   </td> 
-   </tr>
-
-	
-      
-      <tr>
-        <td class="gotham-rounded-bok hw-contact-no">PL/SQL</td>
-        <td class="gotham-rounded-bok hw-contact-no log-color-blue">Pune</td>
-        <td class="gotham-rounded-bok hw-contact-no">Today</td>
-        <td class="gotham-rounded-bok hw-contact-no">3-5 yrs</td>
-        <td class="gotham-rounded-bok hw-contact-no">Full time</td>
-        <td class="gotham-rounded-bok hw-job2 hw-contact-no"><span><i class="fa fa-search"></i></span><span class="view-mar">View</span></td>
-      </tr>
-       <tr class="view2 view hide">
-        <td class= "job-coll" colspan="8">
-        <div  class="view">
-      <span class="view2-close view-close"><i class="fa fa-times"></i></span>
-      <h5 class="gotham-rounded-bold">Job Description:</h5>
-      <li class="gotham-rounded-bok vw-coll-line-height">Require a blend of UX + Visual Design Expert with 3-5 years of experience</li>
-      <li class="gotham-rounded-bok vw-coll-line-height">User design for Enterprise Class products associated with BigData Visualization</li>
-      <li class="gotham-rounded-bok vw-coll-line-height">User experience design for consumer products</li>
-      <h5 class="gotham-rounded-bold ">Responsibilities of Visual Designer:</h5>
-        <li class="gotham-rounded-bok vw-coll-line-height">Require a blend of UX + Visual Design Expert with 3-5 years of experience</li>
-      <li class="gotham-rounded-bok vw-coll-line-height">User design for Enterprise Class products associated with BigData Visualization</li>
-      <li class="gotham-rounded-bok vw-coll-line-height">User experience design for consumer products</li>
-      <h5 class="gotham-rounded-bold">Skills:</h5>
-        <li class="gotham-rounded-bok vw-coll-line-height">Require a blend of UX + Visual Design Expert with 3-5 years of experience</li>
-      <li class="gotham-rounded-bok vw-coll-line-height">User design for Enterprise Class products associated with BigData Visualization</li>
-      <li class="gotham-rounded-bok vw-coll-line-height">User experience design for consumer products</li>
-      <button class="apply gotham-rounded-bold">Apply</button>
-    </div>  
-  </td>
-</tr>
-       <tr>
-        <td class="gotham-rounded-bok hw-contact-no">PL/SQL</td>
-        <td class="gotham-rounded-bok hw-contact-no log-color-blue">Hyderabad</td>
-        <td class="gotham-rounded-bok hw-contact-no">4 days ago</td>
-        <td class="gotham-rounded-bok hw-contact-no">6-7 yrs</td>
-        <td class="gotham-rounded-bok hw-contact-no">Full time</td>
-        <td class="gotham-rounded-bok hw-job3 hw-contact-no"><span><i class="fa fa-search"></i></span><span class="view-mar">View</span></td>
-      </tr>
-       <!--  <tr>
-        <td class= "job-coll" colspan="8">
-        <div  class="view3 view">
-      <span class="view3-close view-close"><i class="fa fa-times"></i></span>
-      <h5 class="gotham-rounded-bold">Job Description:</h5>
-      <li class="gotham-rounded-bok vw-coll-line-height">Require a blend of UX + Visual Design Expert with 3-5 years of experience</li>
-      <li class="gotham-rounded-bok vw-coll-line-height">User design for Enterprise Class products associated with BigData Visualization</li>
-      <li class="gotham-rounded-bok vw-coll-line-height">User experience design for consumer products</li>
-      <h5 class="gotham-rounded-bold ">Responsibilities of Visual Designer:</h5>
-        <li class="gotham-rounded-bok vw-coll-line-height">Require a blend of UX + Visual Design Expert with 3-5 years of experience</li>
-      <li class="gotham-rounded-bok vw-coll-line-height">User design for Enterprise Class products associated with BigData Visualization</li>
-      <li class="gotham-rounded-bok vw-coll-line-height">User experience design for consumer products</li>
-      <h5 class="gotham-rounded-bold">Skills:</h5>
-        <li class="gotham-rounded-bok vw-coll-line-height">Require a blend of UX + Visual Design Expert with 3-5 years of experience</li>
-      <li class="gotham-rounded-bok vw-coll-line-height">User design for Enterprise Class products associated with BigData Visualization</li>
-      <li class="gotham-rounded-bok vw-coll-line-height">User experience design for consumer products</li>
-      <button class="apply gotham-rounded-bold">Apply</button>
-    </div>  
-  </td>
-</tr> -->
-
-       <tr>
-        <td class="gotham-rounded-bok hw-contact-no">PL/SQL</td>
-        <td class="gotham-rounded-bok hw-contact-no log-color-blue">Bangalore</td>
-        <td class="gotham-rounded-bok hw-contact-no">2 days ago</td>
-        <td class="gotham-rounded-bok hw-contact-no">4-5 yrs</td>
-        <td class="gotham-rounded-bok hw-contact-no">Full time</td>
-        <td class="gotham-rounded-bok hw-job4 hw-contact-no"><span><i class="fa fa-search"></i></span><span class="view-mar">View</span></td>
-      </tr>
-      <!--  <tr>
-        <td class= "job-coll" colspan="8">
-        <div  class="view4 view">
-      <span class="view4-close view-close"><i class="fa fa-times"></i></span>
-      <h5 class="gotham-rounded-bold">Job Description:</h5>
-      <li class="gotham-rounded-bok vw-coll-line-height">Require a blend of UX + Visual Design Expert with 3-5 years of experience</li>
-      <li class="gotham-rounded-bok vw-coll-line-height">User design for Enterprise Class products associated with BigData Visualization</li>
-      <li class="gotham-rounded-bok vw-coll-line-height">User experience design for consumer products</li>
-      <h5 class="gotham-rounded-bold ">Responsibilities of Visual Designer:</h5>
-        <li class="gotham-rounded-bok vw-coll-line-height">Require a blend of UX + Visual Design Expert with 3-5 years of experience</li>
-      <li class="gotham-rounded-bok vw-coll-line-height">User design for Enterprise Class products associated with BigData Visualization</li>
-      <li class="gotham-rounded-bok vw-coll-line-height">User experience design for consumer products</li>
-      <h5 class="gotham-rounded-bold">Skills:</h5>
-        <li class="gotham-rounded-bok vw-coll-line-height">Require a blend of UX + Visual Design Expert with 3-5 years of experience</li>
-      <li class="gotham-rounded-bok vw-coll-line-height">User design for Enterprise Class products associated with BigData Visualization</li>
-      <li class="gotham-rounded-bok vw-coll-line-height">User experience design for consumer products</li>
-      <button class="apply gotham-rounded-bold">Apply</button>
-    </div>  
-  </td>
-</tr> -->
-       <tr>
-        <td class="gotham-rounded-bok hw-contact-no">PL/SQL</td>
-        <td class="gotham-rounded-bok hw-contact-no log-color-blue">Chennai</td>
-        <td class="gotham-rounded-bok hw-contact-no">4 days ago</td>
-        <td class="gotham-rounded-bok hw-contact-no">6-7 yrs</td>
-        <td class="gotham-rounded-bok hw-contact-no">Full time</td>
-        <td class="gotham-rounded-bok hw-job5 hw-contact-no"><span><i class="fa fa-search"></i></span><span class="view-mar">View</span></td>
-      </tr>
-      <!--  <tr>
-        <td class= "job-coll" colspan="8">
-        <div  class="view5 view">
-      <span class="view5-close view-close"><i class="fa fa-times"></i></span>
-      <h5 class="gotham-rounded-bold">Job Description:</h5>
-      <li class="gotham-rounded-bok vw-coll-line-height">Require a blend of UX + Visual Design Expert with 3-5 years of experience</li>
-      <li class="gotham-rounded-bok vw-coll-line-height">User design for Enterprise Class products associated with BigData Visualization</li>
-      <li class="gotham-rounded-bok vw-coll-line-height">User experience design for consumer products</li>
-      <h5 class="gotham-rounded-bold ">Responsibilities of Visual Designer:</h5>
-        <li class="gotham-rounded-bok vw-coll-line-height">Require a blend of UX + Visual Design Expert with 3-5 years of experience</li>
-      <li class="gotham-rounded-bok vw-coll-line-height">User design for Enterprise Class products associated with BigData Visualization</li>
-      <li class="gotham-rounded-bok vw-coll-line-height">User experience design for consumer products</li>
-      <h5 class="gotham-rounded-bold">Skills:</h5>
-        <li class="gotham-rounded-bok vw-coll-line-height">Require a blend of UX + Visual Design Expert with 3-5 years of experience</li>
-      <li class="gotham-rounded-bok vw-coll-line-height">User design for Enterprise Class products associated with BigData Visualization</li>
-      <li class="gotham-rounded-bok vw-coll-line-height">User experience design for consumer products</li>
-      <button class="apply gotham-rounded-bold">Apply</button>
-    </div>  
-  </td>
-</tr> -->
+   </div>
+ 
     </tbody>
 
   </table>
