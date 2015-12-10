@@ -48,13 +48,42 @@
 			<span class="sr-only">Next</span>
 			</a>
 	 	</div>
+	 	<div class="line">
+	</div>
 	 	</div>
 	<!-- end of carousel-->
 	
 
-	<div class="line">
-	</div>
+	
 	<!--tabs-->
+
+	<!-- filter options -->
+	<div class="container hw-upskilling-filter">
+		<div class="row">
+			<ul class="clearfix  hr-display tagcloud">
+
+					{% assign cat = site.categories | sort %}
+
+					{% for catsize in cat %}
+
+						<li class="gotham-rounded-bok text-uppercase filter blog-masonry-tab" data-tab="{{ catsize[0] }}">
+							<ul>
+								<li class="tagname">{{ catsize[0] | capitalize }}</li>
+								
+								<li class="tagvalue arrow-left"><span class="arrow-border"></span>{{ catsize[1].size }}</li>
+								
+							</ul>
+						</li>
+					{% endfor %}
+					
+
+			
+			</ul>
+			
+		</div>
+	</div>
+<!-- End of filter options -->
+
    
 	
 
@@ -77,79 +106,83 @@
               
 
           {% if mod == 1 %}
-              <div class="col-lg-4 blog-container ">
-              	   <div class="blog-image">
-              		<img src="{{site.baseurl}}/assets/img/case_study/banner1.jpg" >
-                  </div>
-            
-					
-					<div class="blog-context">
-					<div class="blog-title"><a href="{{ post.url }}">{{ post.title }}</a></div>
-					<div class="blog-description">{{post.description}}</div>
-					<div class="blog-footer">
-			      	
-                    <span class="textvalignmiddle">{{ post.date | date: "%B %d, %Y"}} </br>by {{post.author}}</span>
-                  
-                   	 <img src="/assets/img/blog/author.jpg" alt="author" class='img-circle '>
-                     <i class="fa fa-commenting-o"></i><a href="{{post.url}}#disqus_thread"></a>
-					</div>
-			      
+              <div class="col-lg-4 blog-container" data-value="{{post.category}}">
+				<!-- filter-content -->
+	              	<div>
+	              	   <div class="blog-image">
+	              		<img src="{{site.baseurl}}/assets/img/case_study/banner1.jpg" >
+	                  </div>
+	            
+						
+						<div class="blog-context">
+						<div class="blog-title"><a href="{{ post.url }}">{{ post.title }}</a></div>
+						<div class="blog-description">{{post.description}}</div>
+						<div class="blog-footer">
+				      	
+	                    <span class="textvalignmiddle">{{ post.date | date: "%B %d, %Y"}} </br>by {{post.author}}</span>
+	                  
+	                   	 <img src="/assets/img/blog/author.jpg" alt="author" class='img-circle '>
+	                     <i class="fa fa-commenting-o"></i><a href="{{post.url}}#disqus_thread"></a>
+						</div>
+				      
 
-			      </div>
+				      </div>
+				    </div>
+				<!-- End of filter-content -->
 
            
           </div>
           
         {% elsif mod == 2 %}
-               <div class="col-lg-4 blog-container ">
-              	<div class="blog-image">
-                <img src="/assets/img/blog/blog2.jpg" >
-                 </div>
-            
-					
-					<div class="blog-context">
-					<div class="blog-title"><a href="{{ post.url }}">{{ post.title }}</a></div>
-					<div class="blog-description">{{ post.description }}</div>
-					<div class="blog-footer">
-			      	
-                    <span class="textvalignmiddle">{{ post.date | date: "%B %d, %Y"}} </br>by {{ post.author }}</span>
-					
-                   	 <img src="/assets/img/blog/author.jpg" alt="author" class='img-circle '>
-                   	 <i class="fa fa-commenting-o"></i><a href="{{post.url}}#disqus_thread"></a>
-                   </div>
+               <div class="col-lg-4 blog-container" data-value="{{post.category}}">
+               	<!-- filter-content -->
+	               	<div>
+		              	<div class="blog-image">
+		                	<img src="/assets/img/blog/blog2.jpg" >
+		           		</div>
 
-			      </div>
+						<div class="blog-context">
+							<div class="blog-title"><a href="{{ post.url }}">{{ post.title }}</a></div>
+							<div class="blog-description">{{ post.description }}</div>
+							<div class="blog-footer">
+					      	
+			                    <span class="textvalignmiddle">{{ post.date | date: "%B %d, %Y"}} </br>by {{ post.author }}</span>
+								
+			                   	 <img src="/assets/img/blog/author.jpg" alt="author" class='img-circle '>
+			                   	 <i class="fa fa-commenting-o"></i><a href="{{post.url}}#disqus_thread"></a>
+		                   </div>
+
+				      	</div>
+				    </div>
+				<!-- End of filter-content -->
 
            
           </div>
 
           {% else %}
 
-          <div class="col-lg-4 blog-container">
+          <div class="col-lg-4 blog-container" data-value="{{post.category}}">
+          	<!-- filter-content -->
+	            <div >
          	
-         	         <div class="blog-image">
-					<img src="/assets/img/blog/blog4.jpg" class="blog-img-rt">
-				</div>
+         	        <div class="blog-image">
+						<img src="/assets/img/blog/blog4.jpg" class="blog-img-rt">
+					</div>
 					<div class="blog-context">
-					<div class="blog-title"><a href="{{ post.url }}">{{ post.title }}</a></div>
-					<div class="blog-description">{{ post.description }}</div>
-					<div class="blog-footer">
+						<div class="blog-title"><a href="{{ post.url }}">{{ post.title }}</a></div>
+						<div class="blog-description">{{ post.description }}</div>
+						<div class="blog-footer">
 			      	
-                    <span class="textvalignmiddle">{{ post.date | date: "%B %d, %Y"}} </br>by {{ post.author }}</span>
+                    		<span class="textvalignmiddle">{{ post.date | date: "%B %d, %Y"}} </br>by {{ post.author }}</span>
                   
-                   	 <img src="/assets/img/blog/author.jpg" alt="author" class='img-circle '>
-                   	 <i class="fa fa-commenting-o"></i><a href="{{post.url}}#disqus_thread"></a>
+                   	 		<img src="/assets/img/blog/author.jpg" alt="author" class='img-circle '>
+                   	 		<i class="fa fa-commenting-o"></i><a href="{{post.url}}#disqus_thread"></a>
                   
-			      
-
-		
-			
-         </div>
-
-       </div>
-		
-
-	</div> 
+			      		</div>
+					</div>
+				</div>
+			<!-- End of filter-content -->
+		</div> 
 
         {% endif %}
 
@@ -209,10 +242,11 @@
     <!-- JavaScript -->
 <script src="/assets/js/jquery-2.1.4.min.js"></script>
 <script src="/assets/js/bootstrap.min.js"></script>
-<script src="/assets/js/custom.js"></script>
+
 
 <script src="/assets/js/jquery.masonry.min.js"></script>
 <script src="/assets/js/jquery.imagesloaded.min.js"></script>
+<script src="/assets/js/custom.js"></script>
 <script type="text/javascript">
 		
 			$(function(){
@@ -221,9 +255,11 @@
   
     $container.imagesLoaded( function(){
       $container.masonry({
-        itemSelector : '.blog-container'
+        itemSelector : '.blog-container',
+        isAnimated: true
       });
     });
+
   
   });
 		</script>
