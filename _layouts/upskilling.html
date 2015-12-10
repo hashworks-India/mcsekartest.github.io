@@ -45,68 +45,26 @@
 	<div class="container hw-upskilling-filter">
 		<div class="row">
 			<ul class="clearfix  hr-display tagcloud">
+				
+				
+
+				
 				<li class="gotham-rounded-bok text-uppercase" data-value="all">
-					<ul>
-						<li class="tagname">ALL</li>
-						<li class="tagvalue arrow-left"><span class="arrow-border"></span>23</li>
-					</ul>
-				</li>
-				<li class="gotham-rounded-bok text-uppercase" data-value="devops">
-					<ul>
-						<li class="tagname">Devops</li>
-						<li class="tagvalue arrow-left"><span class="arrow-border"></span>23</li>
-					</ul>
-				</li>
-				<li class="gotham-rounded-bok text-uppercase" data-value="testing">
-					<ul>
-						<li class="tagname">Testing</li>
-						<li class="tagvalue arrow-left"><span class="arrow-border"></span>23</li>
-					</ul>
-				</li>
-				<li class="gotham-rounded-bok text-uppercase" data-value="middleware">
-					<ul>
-						<li class="tagname">Middleware</li>
-						<li class="tagvalue arrow-left"><span class="arrow-border"></span>23</li>
-					</ul>
-				</li>
-				<li class="gotham-rounded-bok text-uppercase" data-value="pref">
-					<ul>
-						<li class="tagname">perf engineering</li>
-						<li class="tagvalue arrow-left"><span class="arrow-border"></span>23</li>
-					</ul>
-				</li>
-			</ul>
-			<ul class="clearfix hr-display tagcloud">
-				<li class="gotham-rounded-bok text-uppercase" data-value="agile">
-					<ul>
-						<li class="tagname">agile</li>
-						<li class="tagvalue arrow-left"><span class="arrow-border"></span>23</li>
-					</ul>
-				</li>
-				<li class="gotham-rounded-bok text-uppercase" data-value="bigdata">
-					<ul>
-						<li class="tagname">big data</li>
-						<li class="tagvalue arrow-left"><span class="arrow-border"></span>23</li>
-					</ul>
-				</li>
-				<li class="gotham-rounded-bok text-uppercase" data-value="soa">
-					<ul>
-						<li class="tagname">soa</li>
-						<li class="tagvalue arrow-left"><span class="arrow-border"></span>23</li>
-					</ul>
-				</li>
-				<li class="gotham-rounded-bok text-uppercase" data-value="sdet">
-					<ul>
-						<li class="tagname">sdet</li>
-						<li class="tagvalue arrow-left"><span class="arrow-border"></span>23</li>
-					</ul>
-				</li>
-				<li class="gotham-rounded-bok text-uppercase" data-value="uiux">
-					<ul>
-						<li class="tagname">ui/ux</li>
-						<li class="tagvalue arrow-left"><span class="arrow-border"></span>23</li>
-					</ul>
-				</li>
+						<ul>
+							<li class="tagname">ALL</li>
+							<li class="tagvalue arrow-left"><span class="arrow-border"></span>{{ site.upskilling_cs.size }}</li>
+						</ul>
+					</li>
+				{% assign topic = site.upskilling_cs | group_by:"topic"  %}
+				{% for cont in topic %}
+					<li class="gotham-rounded-bok text-uppercase" data-value="{{ cont.name | downcase }}">
+						<ul>
+							<li class="tagname">{{ cont.name }}</li>
+							<li class="tagvalue arrow-left"><span class="arrow-border"></span>{{ cont.items.size }}</li>
+						</ul>
+					</li>
+				{% endfor %}
+				
 			</ul>
 		</div>
 	</div>
@@ -123,14 +81,16 @@
 					<div class="row">
 
 						<!-- col -->
-								<div class="col-lg-4 upskill-cont-filter all devops">
+							{% for cont in site.upskilling_cs %}
+
+
+								<div class="col-lg-4 upskill-cont-filter all {{ cont.topic | downcase }}">
 									<a href="/upskilling_casestudy/devops/index.html">
-									<h2 class="gotham-rounded-bok hw-heading heading text-center">DevOps</h2>
+									<h2 class="gotham-rounded-bok hw-heading heading text-center">{{ cont.topic }}</h2>
 									<!-- hw-upskill-cont -->
 										<div class="hw-upskill-cont">	
-											<h3 class="gotham-rounded-bold text-uppercase hw-tab-heading text-center">DevOps for begineers</h3>
-											<p class="gotham-rounded-light">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit c9443d auctor aliquet. 
-											This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit c9443d auctor aliquet. This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit c9443d auctor aliquet.</p>
+											<h3 class="gotham-rounded-bold text-uppercase hw-tab-heading text-center">{{ cont.title }}</h3>
+											<p class="gotham-rounded-light">{{ cont.desc }}</p>
 
 											<!-- row -->
 												<div class="row">
@@ -153,7 +113,7 @@
 																</g>
 																</svg>
 															</li>
-															<li class="gotham-rounded-bold">204</li>
+															<li class="gotham-rounded-bold">{{ cont.count }}</li>
 														</ul>
 													</div>
 												</div>
@@ -162,221 +122,11 @@
 									<!-- End of hw-upskill-cont -->
 									</a>
 								</div>
+							{% endfor %}
 						<!-- End of col -->
 
 
-						<!-- col -->
-							<div class="col-lg-4 upskill-cont-filter all devops">
-								<a href="/upskilling_casestudy/devops/index.html">
-									<h2 class="gotham-rounded-bok hw-heading heading text-center">DevOps</h2>
-									<!-- hw-upskill-cont -->
-										<div class="hw-upskill-cont all devops">	
-											<h3 class="gotham-rounded-bold text-uppercase hw-tab-heading text-center">DevOps for begineers</h3>
-											<p class="gotham-rounded-light">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit c9443d auctor aliquet. 
-											This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit c9443d auctor aliquet. This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit c9443d auctor aliquet.</p>
-
-											<!-- row -->
-												<div class="row">
-													<div class="col-lg-6">
-														<ul class="clearfix hw-upskill-time">
-															<li class="gotham-rounded-bold">OnCampus</li>
-															<li class="gotham-rounded-bold">Full-Time</li>
-														</ul>
-													</div>
-													<div class="col-lg-6">
-														<ul class="clearfix pull-right">
-															<li><svg version="1.1" id="Layer_1" x="0px" y="0px"
-															 width="28px" height="38px" viewBox="0 0 28 38" enable-background="new 0 0 28 38" xml:space="preserve">
-																<g>
-																	<path fill="none" stroke="#C9443C" stroke-miterlimit="10" d="M14.117,16.041c4.217,0,7.637-3.426,7.637-7.654
-																		s-3.42-7.654-7.637-7.654c-4.218,0-7.641,3.426-7.641,7.654S9.899,16.041,14.117,16.041L14.117,16.041z M17.356,16.563h-6.481
-																		c-5.391,0-9.779,4.399-9.779,9.802v7.945l0.022,0.121l0.545,0.171c5.144,1.613,9.616,2.152,13.295,2.152
-																		c7.189,0,11.355-2.055,11.61-2.187l0.512-0.258h0.054v-7.945C27.134,20.962,22.748,16.563,17.356,16.563L17.356,16.563z
-																		 M7.573,15.234"/>
-																</g>
-																</svg>
-															</li>
-															<li class="gotham-rounded-bold">204</li>
-														</ul>
-													</div>
-												</div>
-											<!-- End of row -->
-										</div>
-									<!-- End of hw-upskill-cont -->
-								</a>
-							</div>
-						<!-- End of col -->
-
-
-						<!-- col -->
-							<div class="col-lg-4 upskill-cont-filter all devops">
-								<a href="/upskilling_casestudy/devops/index.html">
-									<h2 class="gotham-rounded-bok hw-heading heading text-center">DevOps</h2>
-									<!-- hw-upskill-cont -->
-										<div class="hw-upskill-cont all devops">	
-											<h3 class="gotham-rounded-bold text-uppercase hw-tab-heading text-center">DevOps for begineers</h3>
-											<p class="gotham-rounded-light">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit c9443d auctor aliquet. 
-											This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit c9443d auctor aliquet. This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit c9443d auctor aliquet.</p>
-
-											<!-- row -->
-												<div class="row">
-													<div class="col-lg-6">
-														<ul class="clearfix hw-upskill-time">
-															<li class="gotham-rounded-bold">OnCampus</li>
-															<li class="gotham-rounded-bold">Full-Time</li>
-														</ul>
-													</div>
-													<div class="col-lg-6">
-														<ul class="clearfix pull-right">
-															<li><svg version="1.1" id="Layer_1" x="0px" y="0px"
-															 width="28px" height="38px" viewBox="0 0 28 38" enable-background="new 0 0 28 38" xml:space="preserve">
-																<g>
-																	<path fill="none" stroke="#C9443C" stroke-miterlimit="10" d="M14.117,16.041c4.217,0,7.637-3.426,7.637-7.654
-																		s-3.42-7.654-7.637-7.654c-4.218,0-7.641,3.426-7.641,7.654S9.899,16.041,14.117,16.041L14.117,16.041z M17.356,16.563h-6.481
-																		c-5.391,0-9.779,4.399-9.779,9.802v7.945l0.022,0.121l0.545,0.171c5.144,1.613,9.616,2.152,13.295,2.152
-																		c7.189,0,11.355-2.055,11.61-2.187l0.512-0.258h0.054v-7.945C27.134,20.962,22.748,16.563,17.356,16.563L17.356,16.563z
-																		 M7.573,15.234"/>
-																</g>
-																</svg>
-															</li>
-															<li class="gotham-rounded-bold">204</li>
-														</ul>
-													</div>
-												</div>
-											<!-- End of row -->
-										</div>
-									<!-- End of hw-upskill-cont -->
-								</a>
-							</div>
-						<!-- End of col -->
-
-
-						<!-- col -->
-							<div class="col-lg-4 upskill-cont-filter all uiux">
-								<a href="/upskilling_casestudy/devops/index.html">
-									<h2 class="gotham-rounded-bok hw-heading heading text-center">UI/UX</h2>
-									<!-- hw-upskill-cont -->
-										<div class="hw-upskill-cont all uiux">	
-											<h3 class="gotham-rounded-bold text-uppercase hw-tab-heading text-center">Ui/ux for begineers</h3>
-											<p class="gotham-rounded-light">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit c9443d auctor aliquet. 
-											This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit c9443d auctor aliquet. This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit c9443d auctor aliquet.</p>
-
-											<!-- row -->
-												<div class="row">
-													<div class="col-lg-6">
-														<ul class="clearfix hw-upskill-time">
-															<li class="gotham-rounded-bold">OnCampus</li>
-															<li class="gotham-rounded-bold">Full-Time</li>
-														</ul>
-													</div>
-													<div class="col-lg-6">
-														<ul class="clearfix pull-right">
-															<li><svg version="1.1" id="Layer_1" x="0px" y="0px"
-															 width="28px" height="38px" viewBox="0 0 28 38" enable-background="new 0 0 28 38" xml:space="preserve">
-																<g>
-																	<path fill="none" stroke="#C9443C" stroke-miterlimit="10" d="M14.117,16.041c4.217,0,7.637-3.426,7.637-7.654
-																		s-3.42-7.654-7.637-7.654c-4.218,0-7.641,3.426-7.641,7.654S9.899,16.041,14.117,16.041L14.117,16.041z M17.356,16.563h-6.481
-																		c-5.391,0-9.779,4.399-9.779,9.802v7.945l0.022,0.121l0.545,0.171c5.144,1.613,9.616,2.152,13.295,2.152
-																		c7.189,0,11.355-2.055,11.61-2.187l0.512-0.258h0.054v-7.945C27.134,20.962,22.748,16.563,17.356,16.563L17.356,16.563z
-																		 M7.573,15.234"/>
-																</g>
-																</svg>
-															</li>
-															<li class="gotham-rounded-bold">204</li>
-														</ul>
-													</div>
-												</div>
-											<!-- End of row -->
-										</div>
-									<!-- End of hw-upskill-cont -->
-								</a>
-							</div>
-						<!-- End of col -->
-
-
-						<!-- col -->
-							<div class="col-lg-4 upskill-cont-filter all testing">
-								<a href="/upskilling_casestudy/devops/index.html">
-									<h2 class="gotham-rounded-bok hw-heading heading text-center">Testing</h2>
-									<!-- hw-upskill-cont -->
-										<div class="hw-upskill-cont all testing">	
-											<h3 class="gotham-rounded-bold text-uppercase hw-tab-heading text-center">Testing for begineers</h3>
-											<p class="gotham-rounded-light">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit c9443d auctor aliquet. 
-											This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit c9443d auctor aliquet. This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit c9443d auctor aliquet.</p>
-
-											<!-- row -->
-												<div class="row">
-													<div class="col-lg-6">
-														<ul class="clearfix hw-upskill-time">
-															<li class="gotham-rounded-bold">OnCampus</li>
-															<li class="gotham-rounded-bold">Full-Time</li>
-														</ul>
-													</div>
-													<div class="col-lg-6">
-														<ul class="clearfix pull-right">
-															<li><svg version="1.1" id="Layer_1" x="0px" y="0px"
-															 width="28px" height="38px" viewBox="0 0 28 38" enable-background="new 0 0 28 38" xml:space="preserve">
-																<g>
-																	<path fill="none" stroke="#C9443C" stroke-miterlimit="10" d="M14.117,16.041c4.217,0,7.637-3.426,7.637-7.654
-																		s-3.42-7.654-7.637-7.654c-4.218,0-7.641,3.426-7.641,7.654S9.899,16.041,14.117,16.041L14.117,16.041z M17.356,16.563h-6.481
-																		c-5.391,0-9.779,4.399-9.779,9.802v7.945l0.022,0.121l0.545,0.171c5.144,1.613,9.616,2.152,13.295,2.152
-																		c7.189,0,11.355-2.055,11.61-2.187l0.512-0.258h0.054v-7.945C27.134,20.962,22.748,16.563,17.356,16.563L17.356,16.563z
-																		 M7.573,15.234"/>
-																</g>
-																</svg>
-															</li>
-															<li class="gotham-rounded-bold">204</li>
-														</ul>
-													</div>
-												</div>
-											<!-- End of row -->
-										</div>
-									<!-- End of hw-upskill-cont -->
-								</a>
-							</div>
-						<!-- End of col -->
-
-						<!-- col -->
-							<div class="col-lg-4 upskill-cont-filter all agile">
-								<a href="/upskilling_casestudy/devops/index.html">
-									<h2 class="gotham-rounded-bok hw-heading heading text-center">Agile</h2>
-									<!-- hw-upskill-cont -->
-										<div class="hw-upskill-cont all agile">	
-											<h3 class="gotham-rounded-bold text-uppercase hw-tab-heading text-center">Agile for begineers</h3>
-											<p class="gotham-rounded-light">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit c9443d auctor aliquet. 
-											This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit c9443d auctor aliquet. This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit c9443d auctor aliquet.</p>
-
-											<!-- row -->
-												<div class="row">
-													<div class="col-lg-6">
-														<ul class="clearfix hw-upskill-time">
-															<li class="gotham-rounded-bold">OnCampus</li>
-															<li class="gotham-rounded-bold">Full-Time</li>
-														</ul>
-													</div>
-													<div class="col-lg-6">
-														<ul class="clearfix pull-right">
-															<li><svg version="1.1" id="Layer_1" x="0px" y="0px"
-															 width="28px" height="38px" viewBox="0 0 28 38" enable-background="new 0 0 28 38" xml:space="preserve">
-																<g>
-																	<path fill="none" stroke="#C9443C" stroke-miterlimit="10" d="M14.117,16.041c4.217,0,7.637-3.426,7.637-7.654
-																		s-3.42-7.654-7.637-7.654c-4.218,0-7.641,3.426-7.641,7.654S9.899,16.041,14.117,16.041L14.117,16.041z M17.356,16.563h-6.481
-																		c-5.391,0-9.779,4.399-9.779,9.802v7.945l0.022,0.121l0.545,0.171c5.144,1.613,9.616,2.152,13.295,2.152
-																		c7.189,0,11.355-2.055,11.61-2.187l0.512-0.258h0.054v-7.945C27.134,20.962,22.748,16.563,17.356,16.563L17.356,16.563z
-																		 M7.573,15.234"/>
-																</g>
-																</svg>
-															</li>
-															<li class="gotham-rounded-bold">204</li>
-														</ul>
-													</div>
-												</div>
-											<!-- End of row -->
-										</div>
-									<!-- End of hw-upskill-cont -->
-								</a>
-							</div>
-						<!-- End of col -->
+						
 
 					</div>
 				<!-- End of row -->
