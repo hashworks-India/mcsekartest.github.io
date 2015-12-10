@@ -7,10 +7,11 @@ $(document).ready(function(){
         var target = $(this).attr('href');
         $(target).toggleClass('hidden show');
 
-    });
+});
+// js for carousel platform integeration
 
     
-    //tagcloud
+      //tagcloud
       $('.tagcloud > li').click(function(){
         $('.tagcloud > li').removeClass('tagactive');
         $(this).addClass('tagactive');
@@ -126,10 +127,10 @@ $(document).ready(function(){
 
 
       // service details
-        $('.tab-box').click(function(){
+        $('.filter').click(function(){
           var dtab = $(this).attr("data-tab");
 
-          $('.tab-details .tab-cont').each(function(){
+          $('.filter-content').each(function(){
               var dval = $(this).attr("data-value");
 
               if(dtab == dval) {
