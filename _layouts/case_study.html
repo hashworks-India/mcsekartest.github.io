@@ -74,6 +74,25 @@
 				<li class="tagname" >{{page.category1}}</li>
 				<li class="tagvalue arrow-left"><span class="arrow-border"></span>23</li>
 			</ul>
+			{{site.casestudy.size}}
+			{% assign groups = site.casestudy | group_by: "category"  %}
+			{%assign count=0 %}
+			
+			{% for group in groups %}
+       
+
+
+    {{group.name}} - {{group.items.size }}
+
+
+       
+
+    
+        
+   
+   
+{%endfor%}
+{{count}}
 		</li>
 
 		
