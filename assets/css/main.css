@@ -252,6 +252,128 @@ html {
 	}
 /* end of general css */
 
+/*tagcloud*/
+	.tagcloud > li {
+		margin: 15px 25px;
+		cursor: pointer;
+	}
+
+	.tagcloud li {
+		float: left;
+	}
+
+	.tagcloud ul li {
+		border: 1px solid #a3a3a3;
+		border-bottom-left-radius: 3px;
+		border-top-left-radius: 3px;
+		padding: 5px;
+		position: relative;
+	}
+
+	.tagcloud .tagvalue {
+		background: #71bedf none repeat scroll 0 0;
+	    border-color: #000 -moz-use-text-color;
+	    border-radius: 0;
+	    border-style: solid none;
+	    border-width: 1px medium;
+	    color: #fff;
+	    font-size: 12px;
+	    left: -20px;
+	    margin: 4px 0;
+	    padding: 5px 12px 6px 5px;
+	    transition: left 0.5s ease 0s;
+	}
+
+	.tagcloud > li:hover .tagvalue {
+		left: 0;
+	}
+
+
+	/*tagname*/
+		.tagcloud .tagname {
+			background: #f6f6f6 none repeat scroll 0 0;
+    		z-index: 1;
+    		padding: 5px 15px; 
+		}
+
+		.tagname:after {
+			background: #71bedf none repeat scroll 0 0;
+		    border-radius: 50%;
+		    content: "";
+		    height: 6px;
+		    position: absolute;
+		    right: -6px;
+		    top: 50%;
+		    -webkit-transform: translate(-50%, -50%) rotate(-90deg);
+		    -moz-transform: translate(-50%, -50%) rotate(-90deg);
+		    -o-transform: translate(-50%, -50%) rotate(-90deg);
+		    -ms-transform: translate(-50%, -50%) rotate(-90deg);
+		    transform: translate(-50%, -50%) rotate(-90deg);
+		    border-top-left-radius: 110px;
+		    border-top-right-radius: 110px;
+		    border: 1px solid #a3a3a3;
+		    border-bottom: 0;
+		    width: 8px;
+		    z-index: 1;
+		}
+	/*end of tagname*/
+
+	/*tagvalue*/
+		.arrow-left:after {
+			border-bottom: 14px solid transparent;
+		    border-right: 6px solid #fff;
+		    border-top: 13px solid transparent;
+		    content: "";
+		    height: 0;
+		    overflow: hidden;
+		    position: absolute;
+		    right: 0;
+		    top: 0;
+		    width: 0;
+		}
+
+		
+
+		.tagcloud .arrow-border:before,
+		.tagcloud .arrow-border:after {
+			background: #000 none repeat scroll 0 0;
+		    content: "";
+		    height: 15px;
+		    position: absolute;
+		    right: 10%;
+		    top: 13px;
+		    -webkit-transform: rotate(154deg);
+		    -moz-transform: rotate(154deg);
+		    -o-transform: rotate(154deg);
+			-ms-transform: rotate(154deg);
+		    transform: rotate(154deg);
+		    width: 1px;
+		}
+
+		.tagcloud .arrow-border:after {
+			bottom: 12px;
+		    height: 16px;
+		    right: 4px;
+		    top: auto;
+		    -webkit-transform: rotate(23deg);
+		    -moz-transform: rotate(23deg);
+		    -o-transform: rotate(23deg);
+		    -ms-transform: rotate(23deg);
+		    transform: rotate(23deg);
+		}
+
+	/*End of tagvalue*/
+
+	/*tagactive*/
+		.tagcloud .tagactive .tagvalue {
+			left: 0;
+		}
+	/*End of tagactive*/
+
+/*End of tagcloud*/
+
+
+
 /*homepage*/
 	#hw-homepage {
 		padding: 0 25px;

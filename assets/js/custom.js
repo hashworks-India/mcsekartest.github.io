@@ -7,8 +7,14 @@ $(document).ready(function(){
         var target = $(this).attr('href');
         $(target).toggleClass('hidden show');
 
-});
-// js for carousel platform integeration
+    });
+
+    
+    //tagcloud
+      $('.tagcloud > li').click(function(){
+        $('.tagcloud > li').removeClass('tagactive');
+        $(this).addClass('tagactive');
+      });
   
   
 
