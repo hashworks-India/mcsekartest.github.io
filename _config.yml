@@ -17,9 +17,29 @@ prose:
         field:
           label: "Description"
           element: "textarea"
-          value: "description"
+          placeholder: "Enter a Description"
       - name: "title"
         field:
           label: "Title"
           element: "text"
-          value: "A awesome Headline!"
+          value: "An awesome Headline!"
+      - name: "layout"
+        field:
+          label: "Layout"
+          element: "hidden"
+          value: "post"
+      - name: "category"
+        field:
+          label: "Category"
+          element: "text"
+          value: "All"
+      - name: "image"
+        field:
+          label: "Image Name"
+          element: "text"
+          value: "blog.jpg"
+      - name: "tag"
+        field:
+          label: "Tag"
+          element: "text"
+          value: "all"
