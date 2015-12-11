@@ -11,7 +11,7 @@ collections:
   jobboard:
 include: ["_pages"]
 prose:
-  media: 'assests/img/blog'
+  media: 'assets/img/blog'
   metadata:
     _posts:
       - name: "description"
