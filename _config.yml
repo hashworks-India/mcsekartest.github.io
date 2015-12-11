@@ -63,4 +63,24 @@ prose:
                value: 'Chandru'
              - name: 'Keerthana'
                value: 'Keerthana'
-        
+    _casestudy:
+       - name: "category"
+         field:
+          label: "Category"
+          element: "text"
+          value: "All"
+       - name: "name"
+         field:
+          label: "Title"
+          element: "text"
+          value: "Title"
+       - name: "layout"
+         field:
+          label: "Layout"
+          element: "hidden"
+          value: "case_study"
+       - name: "description"
+         field:
+          label: "Description"
+          element: "textarea"
+          placeholder: "Enter a Description"
