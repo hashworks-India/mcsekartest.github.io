@@ -11,6 +11,7 @@ collections:
   jobboard:
 include: ["_pages"]
 prose:
+  media: 'assests/img/blog'
   metadata:
     _posts:
       - name: "description"
@@ -43,3 +44,11 @@ prose:
           label: "Tag"
           element: "text"
           value: "all"
+      - name: "author"
+        field:
+          label: "Author name"
+          element: "select"
+          value: "true"
+          options:
+             - name: 'Gopi'
+               value: 'Gopi'
