@@ -288,7 +288,7 @@ html {
 	    font-size: 12px;
 	    left: -20px;
 	    margin: 4px 0;
-	    padding: 5px 12px 6px 5px;
+	    padding: 2px 12px 1px 5px;
 	    transition: left 0.5s ease 0s;
 	    width: 35px;
 	}
@@ -302,6 +302,7 @@ html {
 		.tagcloud .tagname {
 			background: #f6f6f6 none repeat scroll 0 0;
     		z-index: 1;
+    		font-size: 12px;
     		padding: 5px 15px; 
 		}
 
@@ -329,9 +330,9 @@ html {
 
 	/*tagvalue*/
 		.arrow-left:after {
-			border-bottom: 14px solid transparent;
-		    border-right: 6px solid #fff;
-		    border-top: 13px solid transparent;
+			border-bottom: 10px solid transparent;
+		    border-right: 7px solid #fff;
+		    border-top: 10px solid transparent;
 		    content: "";
 		    height: 0;
 		    overflow: hidden;
@@ -347,28 +348,28 @@ html {
 		.tagcloud .arrow-border:after {
 			background: #000 none repeat scroll 0 0;
 		    content: "";
-		    height: 15px;
+		    height: 13px;
 		    position: absolute;
-		    right: 10%;
-		    top: 13px;
-		    -webkit-transform: rotate(154deg);
-		    -moz-transform: rotate(154deg);
-		    -o-transform: rotate(154deg);
-			-ms-transform: rotate(154deg);
-		    transform: rotate(154deg);
+		    right: 11%;
+		    top: 8px;
+		    -webkit-transform: rotate(145deg);
+		    -moz-transform: rotate(145deg);
+		    -o-transform: rotate(145deg);
+			-ms-transform: rotate(145deg);
+		    transform: rotate(145deg);
 		    width: 1px;
 		}
 
 		.tagcloud .arrow-border:after {
-			bottom: 12px;
-		    height: 16px;
-		    right: 4px;
+			bottom: 9px;
+    		height: 13px;
+		    right: 3px;
 		    top: auto;
-		    -webkit-transform: rotate(23deg);
-		    -moz-transform: rotate(23deg);
-		    -o-transform: rotate(23deg);
-		    -ms-transform: rotate(23deg);
-		    transform: rotate(23deg);
+		    -webkit-transform: rotate(36deg);
+		    -moz-transform: rotate(36deg);
+		    -o-transform: rotate(36deg);
+		    -ms-transform: rotate(36deg);
+		    transform: rotate(36deg);
 		}
 
 	/*End of tagvalue*/

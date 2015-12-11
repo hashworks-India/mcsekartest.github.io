@@ -1,7 +1,7 @@
 ---
 layout: ups_devops
-topic: DevOps
-title: DevOps for begineers
+topic: Testing
+title: Testing for begineers
 desc: This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit c9443d auctor aliquet.                        This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit c9443d auctor aliquet. This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit c9443d auctor aliquet. This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit c9443d auctor aliquet. This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit c9443d auctor aliquet.
 program_details : OnCampus
 count: 208
