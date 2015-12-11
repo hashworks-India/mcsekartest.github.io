@@ -85,12 +85,13 @@
 	
 
 	<div class="container-fluid cs-cntr-mar " >
-        
-		{% assign myArray = "{{page.category1}}|{{page.category2}}|{{page.category3}}|{{page.category4}}" | split: "|" %}
+		{% capture attribute_name %}{{page.category1}}-{{page.category2}}-{{page.category3}}-{{page.category4}}{% endcapture %}
+       
+		{% assign myArray = attribute_name | split: "-" %}
 
 
 		{% for item in myArray %}
-		{{item}}
+	
                {% assign casestudy = site.casestudy | where: "category", item %}
             {% for project in casestudy %}
     
