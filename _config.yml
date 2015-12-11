@@ -39,11 +39,16 @@ prose:
           label: "Image Name"
           element: "text"
           value: "blog.jpg"
-      - name: "tag"
+      - name: "tags"
         field:
           label: "Tag"
           element: "text"
           value: "all"
+      - name: "published"
+        field:
+          label: "Published"
+          element: "checkbox"
+          value: "false"
       - name: "author"
         field:
           label: "Author name"
@@ -52,3 +57,10 @@ prose:
           options:
              - name: 'Gopi'
                value: 'Gopi'
+             - name: 'Palani'
+               value: 'Palani'
+             - name: 'Chandru'
+               value: 'Chandru'
+             - name: 'Keerthana'
+               value: 'Keerthana'
+        
