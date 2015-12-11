@@ -62,60 +62,19 @@
 
        
        <ul class="tagcloud">
-       	<li data-value="all">
+        {% assign groups = site.casestudy | group_by: "category"  %}
+        {% for group in groups %}
+        {%if group.name == page.category1 or group.name == page.category2 or group.name == page.category3 or group.name == page.category4%}
+<li data-value="{{group.name}}">
 			<ul>
-				<li class="tagname " >All</li>
-				<li class="tagvalue arrow-left"><span class="arrow-border"></span>23</li>
+				<li class="tagname " >{{group.name}}</li>
+				<li class="tagvalue arrow-left"><span class="arrow-border"></span>{{group.items.size }}</li>
 			</ul>
 		</li>
+         {%endif%}
 			
-		<li data-value="SOA">
-			<ul>
-				<li class="tagname" >{{page.category1}}</li>
-				<li class="tagvalue arrow-left"><span class="arrow-border"></span>23</li>
-			</ul>
-			{{site.casestudy.size}}
-			{% assign groups = site.casestudy | group_by: "category"  %}
-			{%assign count=0 %}
-			
-			{% for group in groups %}
-       
+			{%endfor%}   
 
-
-    {{group.name}} - {{group.items.size }}
-
-
-       
-
-    
-        
-   
-   
-{%endfor%}
-{{count}}
-		</li>
-
-		
-		<li data-value="Micro Services">
-			<ul>
-				<li class="tagname " >{{page.category2}}</li>
-				<li class="tagvalue arrow-left"><span class="arrow-border"></span>23</li>
-			</ul>
-		</li>
-
-		<li data-value="ETL">
-			<ul>
-				<li class="tagname ">{{page.category3}}</li>
-				<li class="tagvalue arrow-left"><span class="arrow-border"></span>23</li>
-			</ul>
-		</li>
-
-		<li data-value="Application Development">
-			<ul>
-				<li class="tagname" >{{page.category4}}</li>
-				<li class="tagvalue arrow-left"><span class="arrow-border"></span>23</li>
-			</ul>
-		</li>
 	</ul>
       
 </div>
