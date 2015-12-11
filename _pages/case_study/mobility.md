@@ -1,8 +1,8 @@
 ---
 layout: case_study
-category1: Devops
-category2: Performance Engineering
-category3: Test Automation
-category4: Agile Testing
+category1: Enterprise Mobility
+category2: Operational Analytics
+category3: Predictive Analysis
+category4: Consumer Apps
 permalink: "/case_study/mobility/"
 ---
