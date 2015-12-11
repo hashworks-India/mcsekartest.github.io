@@ -152,7 +152,17 @@ $(document).ready(function(){
             $(this).addClass('active');
 
             var dataval = $(this).attr("data-value");
-            console.log(dataval);
+           
+            case_study_filter(dataval);
+
+        });
+
+
+var case_study_filter = function(dataval)
+{
+
+
+
 
             $('.casestudy-cont-filter').each(function(){
 
@@ -164,9 +174,7 @@ $(document).ready(function(){
               }
               
             });
-
-        });
-
+}
 
       // End of casestudy
 
@@ -196,8 +204,22 @@ $(document).ready(function(){
 
     /* end of job board*/
 
+$(window).on('load', function() {
+  
+  var cururl = window.location;
+       var curid = cururl.hash.slice(1);
+       $('.hw-casestudy-filter li').each(function(){
+              var dval = $(this).attr("data-value");
 
-
+              if(curid == dval) {
+                $(this).addClass('active tagactive');
+              }
+              else {
+                  $(this).removeClass('active tagactive');
+              }
+          });
+       case_study_filter(curid);
+});
 
 
 
