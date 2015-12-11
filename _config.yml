@@ -7,12 +7,10 @@ collections:
   casestudy:
      output: true
      permalink: /casestudy/:path/
-  upskilling_courses:
+  upskilling_cs:
      output: true
-     permalink: /upskilling_courses/:path/
-  jobboard:   
-  
-
+     permalink: /upskilling_cs/:path/
+  jobboard:
 include: ["_pages"]
 
 
