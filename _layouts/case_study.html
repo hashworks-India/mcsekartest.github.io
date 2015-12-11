@@ -63,7 +63,9 @@
        
        <ul class="tagcloud">
         {% assign groups = site.casestudy | group_by: "category"  %}
+     
         {% for group in groups %}
+
         {%if group.name == page.category1 or group.name == page.category2 or group.name == page.category3 or group.name == page.category4%}
 <li data-value="{{group.name}}">
 			<ul>
