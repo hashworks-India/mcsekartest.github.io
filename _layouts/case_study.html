@@ -85,11 +85,12 @@
 	
 
 	<div class="container-fluid cs-cntr-mar " >
-       
-		{% assign myArray = {{page.category1}}|{{page.category2}}|{{page.category3}}|{{page.category4}} | split: "|" %}
+        
+		{% assign myArray = "{{page.category1}}|{{page.category2}}|{{page.category3}}|{{page.category4}}" | split: "|" %}
 
 
 		{% for item in myArray %}
+		{{item}}
                {% assign casestudy = site.casestudy | where: "category", item %}
             {% for project in casestudy %}
     
