@@ -12,6 +12,52 @@ collections:
      permalink: /upskilling_cs/:path/
   jobboard:
 include: ["_pages"]
+media: "assets/img/blog/"
+  metadata:
+    _posts:
+      - name: "published"
+        field:
+          label: "Published"
+          element: "checkbox"
+          value: "true"
+       - name: "author"
+        field:
+          label: "Author name"
+          element: "select"
+          value: "true"
+          options:
+             - name: 'Gopi'
+               value: 'Gopi'
+      - name: "layout"
+        field:
+          label: "Layout"
+          element: "hidden"
+          value: "post"
+      - name: "title"
+        field:
+          label: "Title"
+          element: "text"
+          value: "A awesome Headline!"
+      - name: "category"
+        field:
+          label: "Category"
+          element: "text"
+          value: "A awesome Headline!"
+       - name: "description"
+        field:
+          label: "Description"
+          element: "textarea"
+          value: "description"
+       - name: "image"
+        field:
+          label: "Image Name"
+          element: "text"
+          value: "image"
+       - name: "tags"
+        field:
+          label: "Tags"
+          element: "text"
+          value: "tags"
 
 
 
