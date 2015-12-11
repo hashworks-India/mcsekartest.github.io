@@ -9,9 +9,7 @@ collections:
      permalink: /casestudy/:path/
   upskilling_cs:
      output: true
-     permalink: /upskilling_courses/:path/
-  jobboard:
-
+     permalink: /upskilling_cs/:path/
   jobboard:
 
 include: ["_pages"]
