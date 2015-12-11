@@ -10,9 +10,7 @@ collections:
   upskilling_cs:
      output: true
      permalink: /upskilling_cs/:path/
-  jobboard:   
-  
-
+  jobboard:
 include: ["_pages"]
 
 
