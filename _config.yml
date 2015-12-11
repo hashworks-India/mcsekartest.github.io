@@ -7,9 +7,9 @@ collections:
   casestudy:
      output: true
      permalink: /casestudy/:path/
-  upskilling_courses:
+  upskilling_cs:
      output: true
-     permalink: /upskilling_courses/:path/
+     permalink: /upskilling_cs/:path/
   jobboard:   
   
 
