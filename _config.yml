@@ -3,14 +3,9 @@
 markdown: kramdown
 permalink: pretty
 collections:
-
-  casestudy:
-     output: true
-     permalink: /casestudy/:path/
-  upskilling_cs:
-     output: true
-     permalink: /upskilling_cs/:path/
-  jobboard:
+  - casestudy
+  - upskilling_cs
+  - jobboard
 include: ["_pages"]
 
 
