@@ -1,93 +1,44 @@
 {% include header.html %}
 
 <main>
-   <!-- engages carouel -->	
-	<div class="container-fluid">
 
-		
+	<!-- indicators -->
+		<ul class="scroll-indicators">
+			<li class="active" data-tab="1">
+				<a href="javascript:void(0)">
+					<span class="hw-dot"></span>
+					<span class="hw-label">label1</span>
+				</a>
+			</li>
+			<li data-tab="2">
+				<a href="javascript:void(0)">
+					<span class="hw-dot"></span>
+					<span class="hw-label">label2</span>
+				</a>
+			</li>
+			<li data-tab="3">
+				<a href="javascript:void(0)">
+					<span class="hw-dot"></span>
+					<span class="hw-label">label3</span>
+				</a>
+			</li>
+			<li data-tab="4">
+				<a href="javascript:void(0)">
+					<span class="hw-dot"></span>
+					<span class="hw-label">label4</span>
+				</a>
+			</li>
+		</ul>
+	<!-- End of indicators -->
 
-		    <div id="hw-homepage" class="carousel slide" data-ride="carousel">
-
-		        <!-- Carousel indicators -->
-
-		        <!-- <ol class="carousel-indicators">
-
-		            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-
-		            <li data-target="#myCarousel" data-slide-to="1"></li>
-
-		            <li data-target="#myCarousel" data-slide-to="2"></li>
-
-		        </ol>   --> 
-
-		        <!-- Wrapper for carousel items -->
-
-		        <div class="carousel-inner">
-
-		            <div class="item active">
-		            	<div class="row p-flex">
-		            		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 c-flex">
-		            			<h1 class="gotham-rounded-bok hw-main-heading">Digital products & services for high velocity, software driven business</h1>
-		            		</div>
-		            		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 c-flex">
-		            			<div class="img-outer">
-		            				<img src="/assets/img/digital_product-services.jpg" alt="digital_product-services">
-		            			</div>
-		            		</div>
-		            	</div>
-		            </div>
-
-		            <div class="item">
-		                <div class="row p-flex">
-		            		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 c-flex">
-		            			<h1 class="gotham-rounded-bok hw-main-heading">Digital products & services for high velocity, software driven business</h1>
-		            		</div>
-		            		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 c-flex">
-		            			<div class="img-outer">
-		            				<img src="/assets/img/digital_product-services.jpg" alt="digital_product-services">
-		            			</div>
-		            		</div>
-		            	</div>
-		            </div>
-
-		            <div class="item">
-						<div class="row p-flex">
-		            		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 c-flex">
-		            			<h1 class="gotham-rounded-bok hw-main-heading">Digital products & services for high velocity, software driven business</h1>
-		            		</div>
-		            		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 c-flex">
-		            			<div class="img-outer">
-		            				<img src="/assets/img/digital_product-services.jpg" alt="digital_product-services">
-		            			</div>
-		            		</div>
-		            	</div>
-		            </div>
-
-		        </div>
-
-		        <!-- Carousel controls -->
-
-		        <!-- <a class="carousel-control left" href="#myCarousel" data-slide="prev">
-
-		            <span class="glyphicon glyphicon-chevron-left"></span>
-
-		        </a>
-
-		        <a class="carousel-control right" href="#myCarousel" data-slide="next">
-
-		            <span class="glyphicon glyphicon-chevron-right"></span>
-
-		        </a> -->
-
-		    </div>
-
-
-
-
-
+	<div class="hw-scroll">
+		<section class="scroll-anim active" data-value="1">Scrolldown</section>
+		<section class="scroll-anim" data-value="2">Scrolldown1</section>
+		<section class="scroll-anim" data-value="3">Scrolldown2</section>
+		<section class="scroll-anim" data-value="4">End!!! - Try scrollup</section>
 	</div>
-	<!-- end of engages carousel-->
-
 </main>	
+
+
 
 {% include footer.html %}

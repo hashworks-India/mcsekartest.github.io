@@ -1,0 +1,96 @@
+/*scroll-indicators*/
+
+  /*bg-color*/
+    .scroll-anim {
+      height:100%;
+      background: transparent url("/assets/img/landingpage/banner-1.jpg") no-repeat scroll top center / cover ;
+      width: 100%;
+    }
+
+    .hw-scroll .scroll-anim:nth-child(2) {
+      background: transparent url("/assets/img/landingpage/banner-2.jpg") no-repeat scroll top center / cover;
+    }
+
+    .hw-scroll .scroll-anim:nth-child(3) {
+      background: transparent url("/assets/img/landingpage/banner-4.jpg") no-repeat scroll top center / cover;
+    }
+
+    .hw-scroll .scroll-anim:nth-child(4) {
+      background: transparent url("/assets/img/landingpage/banner-5.jpg") no-repeat scroll top center / cover;
+    }
+
+    .hw-scroll .scroll-anim:nth-child(5) {
+      background: transparent url("/assets/img/landingpage/banner-6.jpg") no-repeat scroll top center / cover;
+    }
+  /*End of bg-color*/
+
+  /*indicators*/
+    .scroll-indicators {
+      position: fixed;
+      top: 50%;
+      right: 50px;
+      text-align: right;
+      -webkit-transform: translate(-50%,-50%);
+      -moz-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+      -o-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
+    }
+
+    .scroll-indicators li a {
+      display: inline-block;
+    }
+
+    .scroll-indicators li a span {
+      display: inline-block;
+        float: right;
+        -webkit-transform: scale(0.6);
+        -moz-transform: scale(0.6);
+        -o-transform: scale(0.6);
+        -ms-transform: scale(0.6);
+        transform: scale(0.6);
+    }
+
+    .scroll-indicators li .hw-dot {
+      background-color: #d88683;
+        border-radius: 50%;
+        height: 12px;
+        position: relative;
+        top: 8px;
+        transform-origin: 50% 50% 0;
+        transition: transform 0.2s ease 0s, background-color 0.5s ease 0s;
+        width: 12px; 
+    }
+
+    .scroll-indicators li .hw-label {
+      color: white;
+        font-size: 0.875rem;
+        margin-right: 10px;
+        opacity: 0;
+        padding: 0.4em 0.5em;
+        position: relative;
+        transform-origin: 100% 50% 0;
+        transition: transform 0.2s ease 0s, opacity 0.2s ease 0s;
+    }
+
+    /*active and hover*/
+      .scroll-indicators li.active .hw-dot {
+        background-color: #fff;
+      }
+
+      .scroll-indicators li:hover span {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+      }
+
+      .scroll-indicators li:hover .hw-label {
+        opacity: 1;
+      }
+    /*End of active and hover*/
+
+  /*End of indicators*/
+
+/*End of scroll-indicators*/

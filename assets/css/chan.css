@@ -29,6 +29,16 @@
 /*End of header-search*/
 
 /*footer*/
+
+    /*homepage header*/
+        footer.hw-home-footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: none;
+        }
+    /*End of homepage header*/
+
     .footer{
         height: 75px;
         padding: 0 45px 0;

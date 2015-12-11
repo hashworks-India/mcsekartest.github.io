@@ -1,5 +1,9 @@
 
-    
+    {% if page.layout == "default" %}
+      <footer class="hw-home-footer">
+      {% else %}    
+      <footer>
+    {% endif %}
         <div class="container-fluid">
             <div class="row footer">
                 <div class="col-md-9 hw-copyright">
@@ -7,21 +11,22 @@
                 </div>
                 <div class="col-md-3 ">
                   <span class="fa-stack hw-socialshare social-icons">
-  <i class="fa fa-circle-thin fa-stack-2x"></i>
-  <i class="fa fa-facebook fa-stack-1x"></i>
-</span>
-                  <span class="fa-stack hw-socialshare social-icons">
-  <i class="fa fa-circle-thin fa-stack-2x"></i>
-  <i class="fa fa-twitter fa-stack-1x"></i>
-</span>
-                 <span class="fa-stack hw-socialshare social-icons">
-  <i class="fa fa-circle-thin fa-stack-2x"></i>
-  <i class="fa fa-envelope fa-stack-1x"></i>
-</span>
+                    <i class="fa fa-circle-thin fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x"></i>
+                  </span>
+                                    <span class="fa-stack hw-socialshare social-icons">
+                    <i class="fa fa-circle-thin fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x"></i>
+                  </span>
+                                   <span class="fa-stack hw-socialshare social-icons">
+                    <i class="fa fa-circle-thin fa-stack-2x"></i>
+                    <i class="fa fa-envelope fa-stack-1x"></i>
+                  </span>
                      
                 </div>
             </div>
         </div>
+      </footer>
  
 </div>
 
@@ -30,6 +35,7 @@
 <script src="/assets/js/jquery-2.1.4.min.js"></script>
 <script src="/assets/js/bootstrap.min.js"></script>
 <script src="/assets/js/custom.js"></script>
+<script src="/assets/js/homepage_scroll/mousewheel_scroll.js"></script>
 
 
 
