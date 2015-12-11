@@ -10,7 +10,24 @@
 			<span class="span-padding-rite"><button class="job-search">SEARCH FOR JOB</button></span>
 		</div>
 
-  <table class="table filter-content active job-table" data-value="page1">
+
+  {% assign job_table_size = site.jobboard.size | divided_by: 5 | plus: 1 %}
+ 
+  {% assign start = 0 %}
+  
+
+  {% for  i in (1..job_table_size)  %}
+  
+  
+{% capture my_variable %}page{{forloop.index}}{% endcapture %}
+{%if forloop.index == 1 %}
+{% assign cls="active" %}
+{% else %}
+{% assign cls="" %}
+
+{%endif%}
+
+  <table class="table filter-content {{cls}} job-table" data-value= "{{my_variable}}" >
     <thead>
       <tr>
         <th class="gotham-rounded-bold hw-para">Job Title</th>
@@ -21,9 +38,12 @@
       </tr>
     </thead>
 
+ 
+
     <tbody>
-      {%assign hw_jobs =site.jobboard | sort: 'date'| date: "%d-%m-%y" | reverse%}
-       {% for  job in hw_jobs limit:5 %}
+      {%assign hw_jobs = site.jobboard | sort: 'date'| date: "%d-%m-%y" | reverse%}
+       {% for  job in hw_jobs offset:start limit: 5 %}
+
         <tr>
             <td class="gotham-rounded-bok  hw-contact-no"> {{job.job_title}} </td>
             <td class="gotham-rounded-bok  hw-contact-no log-color-blue">{{job.location}}</td>
@@ -147,171 +167,25 @@
 </tbody>
 
   </table>
+  {% assign start =  start | plus : 5 %}
+  {%endfor%}
 
 
-    <table class="table filter-content  job-table" data-value="page2">
-    <thead>
-      <tr>
-        <th class="gotham-rounded-bold hw-para">Job Title</th>
-        <th class="gotham-rounded-bold hw-para">Location</th>
-        <th class="gotham-rounded-bold hw-para">Posted On</th>
-        <th class="gotham-rounded-bold hw-para">Experience</th>
-        <th class="gotham-rounded-bold hw-para">Type</th>
-      </tr>
-    </thead>
-
-    <tbody>
-
-    
-      {%assign hw_jobs =site.jobboard | sort: 'date'| date: "%d-%m-%y" | reverse%}
-       
-       {% for  job in hw_jobs limit:5 %}
-
-       
-          <tr>
-            <td class="gotham-rounded-bok  hw-contact-no"> {{job.job_title}} </td>
-            <td class="gotham-rounded-bok  hw-contact-no log-color-blue">{{job.location}}</td>
-            <td class="gotham-rounded-bok  hw-contact-no">{{job.date | date: '%B %d, %Y'}}</td>
-            <td class="gotham-rounded-bok  hw-contact-no">{{job.experience}}</td>
-           
-            <td class="gotham-rounded-bok hw-contact-no hw-job1" ><span><i class="fa fa-search"></i></span><span class="view-act view-mar">View</span></td>
-          </tr>
-
-
-
-      <tr class=" hide view1">
-
-        <td class= "job-coll" colspan="8">
-
-          <div class="view">
-
-            <span class="view1-close view-close"><i class="fa fa-times"></i></span>
-            <h5 class="gotham-rounded-bold">Job Description</h5>
-            {% for  job_descr in job.job_description %}
-              <li class="gotham-rounded-bok vw-coll-line-height">{{job_descr}}</li>
-            {% endfor %}
-
-            <h5 class="gotham-rounded-bold "> Responsibilities of Visual Designer</h5>
-            {% for  job_res in job.responsibilities %}
-              <li class="gotham-rounded-bok vw-coll-line-height">{{job_res}}</li>
-            {% endfor %}
-            
-
-            <h5 class="gotham-rounded-bold">Skills</h5>
-            {% for  job_skill in job.skills %}
-              <li class="gotham-rounded-bok vw-coll-line-height">{{job_skill}}</li>
-            {% endfor %}
-            
-            <button class="apply gotham-rounded-bold">Apply</button>
-
-          </div> <!-- end of view --> 
-
-        </td><!-- end of td-->
-
-      </tr><!-- end of tr -->
-    
-
-  {% endfor %}
-
-
-   
-
-
-      
-
-
-<tr>
-  <td class= "job-coll" colspan="8">
-  <div class="apply-div hide" >
-   <span class="form-close view-close"><i class="fa fa-times"></i></span>
-  <div class="col-lg-offset-2 col-lg-8">
-        <div class="post-resume">
-          <div class="row ">
-              <div class="col-lg-6"> 
-                <div class="text-border">
-                  <div class="input-group">
-                        <div class="input-group-addon"><img src="/assets/img/talent_acquistion/name-img.png"></div>
-                    <input type="text" class="form-control placeholder-pro" placeholder="NAME">
-                  </div>
-                </div>    
-              </div>
-            
-            <div class="col-lg-6"> 
-              <div class="text-border">
-                <div class="input-group">
-                      <div class="input-group-addon"><img src="/assets/img/talent_acquistion/email-img.png"></div>
-                  <input type="text" class="form-control placeholder-pro" placeholder="EMAIL">
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row ms-row-mar">
-            <div class="col-lg-6"> 
-              <div class="text-border">
-                <div class="input-group">
-                      <div class="input-group-addon"><img src="/assets/img/talent_acquistion/sub-img.png"></div>
-                  <input type="text" class="form-control placeholder-pro" placeholder="SUBJECT">
-                </div>  
-              </div>  
-            </div>
-            <div class="col-lg-6"> 
-              <div class="text-border">
-                <div class="input-group">
-                      <div class="input-group-addon"><img src="/assets/img/talent_acquistion/phone-img.png"></div>
-                  <input type="text" class="form-control placeholder-pro" placeholder="PHONE">
-                </div>
-              </div>  
-            </div>
-          </div>
-
-          <div class="row ms-row-mar">
-            <div class="col-lg-12">
-              <div class="text-border">
-              <div class="input-group">
-                      <div class="input-group-addon"><img src="/assets/img/managed-services/sub-img.png"></div>
-                      
-                      <textarea placeholder= "MESSAGE/FEEDBACK/REQUEST" class="form-control placeholder-pro" rows="3"></textarea>
-                    </div>  
-                    
-              </div>
-            </div>
-          </div><!-- end of text-area row-->
-
-          <div class="attach-file">
-                <div class="col-lg-9">
-                  <br><br>
-                  <span class="attach-text"><span><img src="/assets/img/talent_acquistion/attach.png"></span><span class="gotham-rounded-bok attach-span">Attach File</span></span>
-                  <input type="file" id="file-upload">
-                </div>
-                <div class="col-lg-3 submit-background">
-                  <br>
-                  <div class="submit-resume hr-display">
-                    <p class="hr-display"><img src="/assets/img/talent_acquistion/submit.png"></p>
-                    <p class="gotham-rounded-bok placeholder-pro">SUBMIT</p>
-
-                  </div>
-                </div> 
-               </div> <!-- end of attach-file-->
-          </div><!-- end of postresume -->
-      </div><!--end of col-lg-7 -->
-    </div> <!-- end of apply div--> 
-    </td> 
-   </tr><!-- end of apply row-->
-</tbody>
-
-  </table>
-
-
-
-	
-
-  	<div class="hr-display">
+  <div class="hr-display">
 	  	<ul class = "pagination">
-  		  <li><a href = "#"><i class="fa fa-angle-left"></i></a></li>
-  		  <li class="filter" data-tab="page1"><a href = "#">1</a></li>
-  		  <li class="filter" data-tab="page2"><a href = "#">2</a></li>
-  		  <li><a href = "#">3</a></li>
-  		  <li><a href = "#"><i class="fa fa-angle-right"></i></a></li>
+  		  <li><a href = "javascript:void(0)"><i class="fa fa-angle-left"></i></a></li>
+          {% for  i in (1..job_table_size)  %}
+          {% capture my_variable %}page{{forloop.index}}{% endcapture %}
+
+          {%if forloop.index == 1 %}
+          {% assign cls_page="active" %}
+          {% else %}
+          {% assign cls_page=" " %}
+          {%endif%}
+          <li class="filter {{cls_page}}" data-tab =  "{{my_variable}}" ><a href = "javascript:void(0)" >{{forloop.index}}</a></li>
+          {%endfor%}
+  		 
+  		  <li><a href = "javascript:void(0)"><i class="fa fa-angle-right"></i></a></li>
 		</ul>
 	</div>
 

@@ -130,6 +130,10 @@
 		margin-left: 10px;
 		cursor: pointer;
 	}
+	.pagination > .active > a , .pagination > .active > a:hover , .pagination > .active > a:focus{
+		background-color: #ee2b7b;
+		color: #fff
+	}
 	.pagination > li > a:active , .pagination > li > a:hover ,, .pagination > li > a:focus{
 		background-color: #ee2b7b;
 		color: #fff
