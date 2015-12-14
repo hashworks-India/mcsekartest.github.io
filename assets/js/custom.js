@@ -129,6 +129,8 @@ $(document).ready(function(){
       // service details
         $('.filter').click(function(){
           var dtab = $(this).attr("data-tab");
+          $('.filter').removeClass('active');
+          $(this).addClass('active');
 
           $('.filter-content').each(function(){
               var dval = $(this).attr("data-value");

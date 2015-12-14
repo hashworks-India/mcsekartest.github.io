@@ -130,29 +130,34 @@ padding: 10px 83px;
 
 .looking {
 	padding: 10px;
-	border: none;
+	border: 1px solid #ccc;
+	border-radius: 3px;
 }
 .blog-img {
 	border-radius: 4px;
 }
 
 
-/*.blog-tab .nav-tabs >li.active > a,
+.blog-tab .nav-tabs >li.active > a,
 .blog-tab .nav-tabs >li.active > a:focus,
 .blog-tab .nav-tabs >li.active > a:hover  {
-border-bottom: 0px;
+	color: #fff;
+	border: none;
 }
-.blog-tab .nav-tabs >li {
-	position: relative
-}
+
+.blog-tab .nav-tabs >li > a,
 .blog-tab .nav-tabs >li.active > a {
+	border: none;
+	margin: 0
+}
+
+.blog-tab .nav-tabs >li.active:before {
+	content: '';
+	background: #f00;
+	height: 3px;
+	width: 100%;
+	bottom: -18px;
+	left: 0;
 	position: absolute;
-	bottom: 15px;	
-	border-bottom: 2px solid #0ab4c5;
 }
-.blog-search .input-group {
-	padding: 20px 0px;
-}
-.blog-lookng {
-	padding: 0px 0px 20px;
-}*/
+
