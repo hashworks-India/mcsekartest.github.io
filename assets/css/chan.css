@@ -171,24 +171,31 @@ border-radius: 5px;
         color: #fff;
     }
     ul li ul.dropdown{
-        background-color: #ee2b7b;
         display: none;
         position: absolute;
         z-index: 999;
         left: 20px;
-        padding:10px 30px;
         width:215px;
-        border: 1px solid  #ee2b7b;
+        /*border: 1px solid  #ee2b7b;*/
         border-radius: 3px;
         line-height: 1.7;
+        background-color: #0ab4c5;
+        /*border: 1px solid #0ab4c5;*/
     }
     ul li:hover ul.dropdown{
         display: block; /* Display the dropdown */
     }
     ul li ul.dropdown li{
         display: block;
+        padding: 10px 15px;
     }
-
+    /* ul li ul.dropdown li:hover {
+        background-color: #fff;
+     }
+     ul li ul.dropdown li:hover a{
+        color: #0ab4c5;
+     }
+*/
 
 
 

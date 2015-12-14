@@ -1099,3 +1099,8 @@ html {
 
 	
 /*End of service-delivery page*/
+
+/*End of service-delivery page*/
+	.job-table.filter-content.active  {
+    	display: table;
+	}
