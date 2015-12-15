@@ -1,13 +1,10 @@
 $(document).ready(function(){
 
-
-
-    $('.toggle').click(function (event) {
+  $('.toggle').click(function (event) {
         event.preventDefault();
         var target = $(this).attr('href');
         $(target).toggleClass('hidden show');
-
-});
+    });
 // js for carousel platform integeration
 
 
@@ -197,20 +194,14 @@ $(document).ready(function(){
 
 var case_study_filter = function(dataval)
 {
-
-
-
-
-            $('.casestudy-cont-filter').each(function(){
-
-              if($(this).hasClass(dataval)) {
-                $(this).css({'display':'block'});
-              }
-              else {
-                $(this).css({'display':'none'});
-              }
-              
-            });
+$('.casestudy-cont-filter').each(function(){
+if($(this).hasClass(dataval)) {
+  $(this).css({'display':'block'});
+}
+else {
+  $(this).css({'display':'none'});
+}
+});
 }
 
       // End of casestudy
@@ -220,6 +211,7 @@ var case_study_filter = function(dataval)
      
       $('.hw-job1').click(function() {
           $(this).parent('tr').next().toggleClass('hide');
+           $('.view-act').addClass('view-color');
         }); 
 
         $('.view1-close').click(function() {
