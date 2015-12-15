@@ -1,26 +1,38 @@
 /*scroll-indicators*/
 
   /*bg-color*/
+  
     .scroll-anim {
       height:100%;
-      background: transparent url("/assets/img/landingpage/banner-1.jpg") no-repeat scroll top center / cover ;
+      background: transparent url("/assets/img/landingpage/banner-1.jpg") no-repeat scroll bottom center / cover ;
       width: 100%;
+      position: relative;
     }
 
     .hw-scroll .scroll-anim:nth-child(2) {
-      background: transparent url("/assets/img/landingpage/banner-2.jpg") no-repeat scroll top center / cover;
+      background: transparent url("/assets/img/landingpage/banner-2.jpg") no-repeat scroll bottom center / cover;
     }
 
     .hw-scroll .scroll-anim:nth-child(3) {
-      background: transparent url("/assets/img/landingpage/banner-4.jpg") no-repeat scroll top center / cover;
+      background: transparent url("/assets/img/landingpage/banner-4.jpg") no-repeat scroll bottom center / cover;
     }
 
     .hw-scroll .scroll-anim:nth-child(4) {
-      background: transparent url("/assets/img/landingpage/banner-5.jpg") no-repeat scroll top center / cover;
+      background: transparent url("/assets/img/landingpage/banner-5.jpg") no-repeat scroll bottom center / cover;
     }
 
     .hw-scroll .scroll-anim:nth-child(5) {
-      background: transparent url("/assets/img/landingpage/banner-6.jpg") no-repeat scroll top center / cover;
+      background: transparent url("/assets/img/landingpage/banner-6.jpg") no-repeat scroll bottom center / cover;
+    }
+
+    .hw-fixed-heading{
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .hw-fixed-heading .hw-approach {
+      padding: 0;
     }
   /*End of bg-color*/
 
@@ -35,6 +47,11 @@
       -ms-transform: translate(-50%,-50%);
       -o-transform: translate(-50%,-50%);
       transform: translate(-50%,-50%);
+      z-index: 10;
+    }
+
+    .scroll-indicators > li {
+      line-height: 0.5;
     }
 
     .scroll-indicators li a {
@@ -52,14 +69,16 @@
     }
 
     .scroll-indicators li .hw-dot {
-      background-color: #d88683;
         border-radius: 50%;
-        height: 12px;
+        height: 15px;
         position: relative;
-        top: 8px;
+        top: 4px;
         transform-origin: 50% 50% 0;
         transition: transform 0.2s ease 0s, background-color 0.5s ease 0s;
-        width: 12px; 
+        width: 15px;
+        border-radius: 100%;
+        background-color: transparent;
+        border: 1px solid #fff;
     }
 
     .scroll-indicators li .hw-label {
@@ -75,20 +94,96 @@
 
     /*active and hover*/
       .scroll-indicators li.active .hw-dot {
-        background-color: #fff;
+        background-color: #0AB4C5;
+        border-radius: 100%;
+        border: 1px solid #0AB4C5;
       }
 
       .scroll-indicators li:hover span {
-        -webkit-transform: scale(1);
-        -moz-transform: scale(1);
-        -ms-transform: scale(1);
-        -o-transform: scale(1);
-        transform: scale(1);
+        -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        -o-transform: scale(0.8);
+        transform: scale(0.8);
       }
 
       .scroll-indicators li:hover .hw-label {
         opacity: 1;
       }
+      .dive {
+        color: #eff205;
+        margin-top: 20px;
+      }
+      .hm-text {
+        position: absolute;
+      }
+      .hm-text1 {
+        top: 40%;
+        left: 18%;
+      }
+      .latest-think { 
+        color: #040404;
+        top: 25%;
+        left: 10%;
+      }
+      .hm-service {
+         top: 20%;
+         width: 100%;
+      }
+      .follow {
+        color: #040404;
+        top: 20%;
+        left:5%;
+      }
+      .appln {
+        background-color: #EE2B7B;
+        padding:35px 25px;
+        width: 250px;
+      }
+      .it-solution {
+        background-color: #0ab4c5;
+        padding:40px 25px;
+        width: 250px;
+      }
+      .application {
+        margin-top: 30px;
+      }
+      .appln-statergies {
+        background-color: #B9BECD;
+        position: absolute;
+        top: 48%;
+        padding: 40px 20px 10px;
+        left: 19%;
+        margin-top: -2px;
+        margin-left: -9px;
+      }
+      .appln-statergies ul li {
+        line-height: 1.7;
+      }
+      .it-solutions ul li {
+        line-height: 1.7;
+      }
+      .it-solutions {
+        background-color: #b9becd;
+        position: absolute;
+        top: 48%;
+        padding: 40px 20px 10px;
+        left: 19%;
+        margin-top: -2px;
+        margin-left: -9px;
+      }
+      .hm-arrow {
+        width: 0; 
+        height: 0; 
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        position: absolute;
+        border-right: 10px solid #B9BECD;
+        left: -10px;
+        top: 21%
+      }
+      
+
     /*End of active and hover*/
 
   /*End of indicators*/
