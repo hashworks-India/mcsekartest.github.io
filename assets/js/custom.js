@@ -11,7 +11,7 @@ $(document).ready(function(){
 // js for carousel platform integeration
 
 
-    //fixed header
+        //fixed header
     $(document).scroll(function(){
       var main = $(this).scrollTop();
       if(main >= 51) {
@@ -25,6 +25,18 @@ $(document).ready(function(){
         $("header nav").removeClass('hw-fixed-header');
         $("main").css("margin-top","0px");
       }
+
+
+      if(main >= 70) {
+        if(!$('header').hasClass('hw-home')) {
+          $(".navbar-default.hw-fixed-header").css("padding-bottom","0px")
+        }
+      }
+
+      else {
+          $(".navbar-default").css("padding-bottom","5px")
+      }
+
     });
 
     
