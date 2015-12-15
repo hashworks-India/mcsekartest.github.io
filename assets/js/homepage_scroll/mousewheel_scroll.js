@@ -98,5 +98,14 @@ $(document).ready(function(){
 
       });
     // End of onclick indicator scroll animation
+     $('.appln').click(function () {
+        $('.appln-statergies').toggleClass('hide');
+     });
+
+      $('.it-solution').click(function () {
+        $('.it-solutions').toggleClass('hide');
+     });
+
+
 
 });
