@@ -10,6 +10,29 @@ $(document).ready(function(){
 });
 // js for carousel platform integeration
 
+
+    //fixed header
+    $(document).scroll(function(){
+      var main = $(this).scrollTop();
+      if(main >= 51) {
+        if(!$('header').hasClass('hw-home')) {
+          $("header nav").addClass('hw-fixed-header');
+          $("main").css("margin-top","70px");
+        }
+        
+      }
+      else {
+        $("header nav").removeClass('hw-fixed-header');
+        $("main").css("margin-top","0px");
+      }
+    });
+
+    
+      //tagcloud
+      $('.tagcloud > li').click(function(){
+        $('.tagcloud > li').removeClass('tagactive');
+        $(this).addClass('tagactive');
+      });
     
       //tagcloud
       $('.tagcloud > li').click(function(){

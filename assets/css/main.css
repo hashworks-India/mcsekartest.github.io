@@ -408,6 +408,15 @@ html {
 			width: 100%;
 		}
 
+		header .navbar-default {
+			border: none;
+		    -webkit-transition: all .2s linear 0s;
+		    -moz-transition: all .2s linear 0s;
+		    -o-transition: all .2s linear 0s;
+		    -ms-transition: all .2s linear 0s;
+		    transition: all .2s linear 0s;
+		}
+
 		header.hw-home .navbar-default {
 			background: transparent none repeat scroll 0 0;
 		    border: medium none;
@@ -429,6 +438,15 @@ html {
 		padding: 0 25px;
 	}
 
+	nav.navbar-default.hw-fixed-header {
+		position: fixed;
+	    top: 0;
+	    width: 100%;
+	    z-index: 10;
+	    border: medium none;
+	    border-radius: 0;
+	    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	}
 
 /*End of homepage*/
 
