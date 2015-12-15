@@ -7,6 +7,9 @@
     .contact:hover {
         color: #fff;
     }
+    .navbar-default .navbar-nav > li > a {
+        color: #040404;
+    }
 /*End of contact*/
 
 /*header-search*/
@@ -176,11 +179,9 @@ border-radius: 5px;
         z-index: 999;
         left: 20px;
         width:215px;
-        /*border: 1px solid  #ee2b7b;*/
         border-radius: 3px;
         line-height: 1.7;
         background-color: #0ab4c5;
-        /*border: 1px solid #0ab4c5;*/
     }
     ul li:hover ul.dropdown{
         display: block; /* Display the dropdown */
@@ -189,13 +190,7 @@ border-radius: 5px;
         display: block;
         padding: 10px 15px;
     }
-    /* ul li ul.dropdown li:hover {
-        background-color: #fff;
-     }
-     ul li ul.dropdown li:hover a{
-        color: #0ab4c5;
-     }
-*/
+    
 
 
 
