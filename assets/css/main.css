@@ -406,11 +406,11 @@ html {
 			position: fixed;
 			top: 0;
 			width: 100%;
-			z-index: 5;
 		}
 
 		header .navbar-default {
 			border: none;
+			background: #fff;
 		    -webkit-transition: all .2s linear 0s;
 		    -moz-transition: all .2s linear 0s;
 		    -o-transition: all .2s linear 0s;
@@ -422,6 +422,16 @@ html {
 			background: transparent none repeat scroll 0 0;
 		    border: medium none;
 		    margin: 0;
+		}
+
+		.navbar-brand .logo {
+			background: url(/assets/img/logo.png);
+			background-size: cover;
+			height: 31px;
+			width: 140px;
+			-webkit-transition: all .5s ease 0s;
+			-o-transition: all .5s ease 0s;
+			transition: all .5s ease 0s;
 		}
 	/*End of homepage header*/
 
@@ -444,16 +454,32 @@ html {
 	    top: 0;
 	    width: 100%;
 	    z-index: 10;
+	    background: #EC297B;
+	    color: #fff;
 	    border: medium none;
 	    border-radius: 0;
 	    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	}
+
+	.hw-fixed-header .navbar-brand .logo {
+		background-position: 0 -31px;
+		-webkit-transition: all .5s ease 0s;
+		-o-transition: all .5s ease 0s;
+		transition: all .5s ease 0s;
+	}
+
+	.hw-fixed-header .navbar-nav > li > a,
+	.hw-fixed-header .navbar-nav > li > a:hover,
+	.hw-fixed-header .navbar-nav > li > a:active,
+	.hw-fixed-header .navbar-nav > li > a:focus {
+		color: #fff;
 	}
 
 /*End of homepage*/
 
 /* engage page */
 	.navbar-header .navbar-brand {
-		padding-top: 5px;
+		padding-top: 9px;
 	}
 
 	.navbar-brand svg {
