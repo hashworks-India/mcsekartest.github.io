@@ -2,7 +2,7 @@
 layout: case_study
 category1: SOA
 category2: ETL
-category3: Micro Services
-category4: Application Development
+category3: MicroServices
+category4: ApplicationDevelopment
 permalink: "/case_study/platform_integration/"
 ---

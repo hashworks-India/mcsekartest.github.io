@@ -8,11 +8,8 @@
 
        
 	<h1 class="text-center gotham-rounded-bok heading"> Casestudy</h1>
-
-
-	
-
-   		<div class="carousel-padding">
+		<div class="line"></div>
+		<div class="carousel-padding">
 		<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
 
 	   		<div class="container heading-caro-padd">
@@ -52,8 +49,7 @@
 	<!-- end of carousel-->
 	
 
-	<div class="line">
-	</div>
+	
 	<!--tabs-->
 
       <div class="container hw-casestudy-filter">
@@ -103,7 +99,7 @@
     
     {% assign mod = forloop.index | modulo: 3 %}
     {% if mod == 1 %}
-        <!-- even -->
+        
        
      
                  <div class="row casestudy-cont-filter {{ project.category}} all" >
@@ -131,7 +127,7 @@
 
 
 		{% elsif mod == 2 %}
-        <!-- even -->
+      
      
                  <div class="row casestudy-cont-filter {{ project.category}} all"  >
 			
@@ -159,7 +155,7 @@
 		</div>
 
 
-    {% else %}
+    {% else %} -->
         <!-- mod==0 -->
 
 
