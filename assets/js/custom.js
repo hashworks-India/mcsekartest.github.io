@@ -208,11 +208,10 @@ else {
 
       /* job board*/
 
-     
       $('.hw-job1').click(function() {
+         $(this).toggleClass('view-color');
           $(this).parent('tr').next().toggleClass('hide');
-           $('.view-act').addClass('view-color');
-        }); 
+      }); 
 
         $('.view1-close').click(function() {
           $('.view1').addClass('hide');
