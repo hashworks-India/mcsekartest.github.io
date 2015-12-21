@@ -1191,7 +1191,7 @@ background: #fff;
 
 
 
-/*@media only screen and (min-width: 1400px) {
+/*@media screen and (min-width: 1400px) {
     body {
         max-width: 1400px;
         display: table;
