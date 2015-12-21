@@ -54,6 +54,7 @@ html {
 	body {
 		font: 1rem/1.4 "gotham-rounded-bold";
 		color: #7c7c7c;
+		overflow: scroll;
 	}
 
 	a {
@@ -303,8 +304,8 @@ html {
 	    color: #fff;
 	    font-size: 12px;
 	    left: -20px;
-	    margin: 4px 0;
-	    padding: 2px 12px 1px 5px;
+	    /*margin: 4px 0;*/
+	    padding: 2px 12px 7px 5px;
 	    transition: left 0.5s ease 0s;
 	    width: 35px;
 	}
@@ -1153,3 +1154,13 @@ html {
 	.job-table.filter-content.active  {
     	display: table;
 	}
+
+
+
+/*@media only screen and (min-width: 1400px) {
+    body {
+        max-width: 1400px;
+        display: table;
+        margin: 0 auto;
+    }
+}*/
