@@ -116,13 +116,37 @@
       <div class="input-group-addon blog-srch-icon"><i class="fa fa-search"></i></div>
       <input type="text" class=" placeholder-pro looking gotham-rounded-light" placeholder="search">
     </div>
-    <!-- <div class="blog-lookng"><input type="text" class=" placeholder-pro keyword looking gotham-rounded-light" placeholder="Looking for"></div>
-    <button class="custom-btn">Search</button> -->
   </div>
 
-  <!-- <div class="categories">
+  <div class="categories">
     <p class="gotham-rounded-bok hw-contact-no">CATEGORIES</p>
-  </div> -->
+      <!-- filter options -->
+  <div class="hw-upskilling-filter" id="blog-tag" >
+    <div class="row">
+      <ul class="clearfix  hr-display tagcloud">
+
+          {% assign cat = site.categories | sort %}
+
+          {% for catsize in cat %}
+
+            <li class="gotham-rounded-bok text-uppercase filter blog-masonry-tab" data-tab="{{ catsize[0] }}">
+              <ul>
+                <li class="tagname">{{ catsize[0] | capitalize }}</li>
+                
+                <li class="tagvalue arrow-left"><span class="arrow-border"></span>{{ catsize[1].size }}</li>
+                
+              </ul>
+            </li>
+          {% endfor %}
+          
+
+      
+      </ul>
+      
+    </div>
+  </div>
+<!-- End of filter options -->
+  </div>
 
   <div class="bs-example blog-tab">
     <ul class="nav nav-tabs">

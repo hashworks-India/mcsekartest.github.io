@@ -318,8 +318,7 @@ html {
 	    color: #fff;
 	    font-size: 12px;
 	    left: -20px;
-	    /*margin: 4px 0;*/
-	    padding: 2px 12px 7px 5px;
+	    padding: 3px 12px 7px 5px;
 	    transition: left 0.5s ease 0s;
 	    width: 35px;
 	}
@@ -361,9 +360,9 @@ html {
 
 	/*tagvalue*/
 		.arrow-left:after {
-			border-bottom: 10px solid transparent;
-		    border-right: 7px solid #fff;
-		    border-top: 10px solid transparent;
+			border-bottom: 15px solid transparent;
+		    border-right: 9px solid #fff;
+		    border-top: 12px solid transparent;
 		    content: "";
 		    height: 0;
 		    overflow: hidden;
@@ -379,10 +378,10 @@ html {
 		.tagcloud .arrow-border:after {
 			background: #000 none repeat scroll 0 0;
 		    content: "";
-		    height: 13px;
+		    height: 18px;
 		    position: absolute;
-		    right: 11%;
-		    top: 8px;
+		    right: 14%;
+		    top: 11px;
 		    -webkit-transform: rotate(145deg);
 		    -moz-transform: rotate(145deg);
 		    -o-transform: rotate(145deg);
@@ -392,9 +391,9 @@ html {
 		}
 
 		.tagcloud .arrow-border:after {
-			bottom: 9px;
-    		height: 13px;
-		    right: 3px;
+			bottom: 13px;
+			height: 17px;
+		    right: 4px;
 		    top: auto;
 		    -webkit-transform: rotate(36deg);
 		    -moz-transform: rotate(36deg);
@@ -412,6 +411,72 @@ html {
 	/*End of tagactive*/
 
 /*End of tagcloud*/
+/* blog tag */
+
+#blog-tag .tagcloud .tagname {
+   background: #f6f6f6 none repeat scroll 0 0;
+   font-size: 10px;
+   padding: 4px 10px;
+   z-index: 1;
+}
+
+
+#blog-tag .tagcloud .tagvalue {
+padding: 3px 12px 2px 5px;
+}
+
+
+#blog-tag .arrow-left::after {
+   border-bottom: 12px solid transparent;
+   border-right: 7px solid #fff;
+   border-top: 11px solid transparent;
+   content: "";
+   height: 0;
+   overflow: hidden;
+   position: absolute;
+   right: 0;
+   top: 0;
+   width: 0;
+}
+#blog-tag .tagcloud>li {
+	margin:15px 15px;
+}
+
+
+#blog-tag .tagcloud .arrow-border::before, 
+#blog-tag .tagcloud .arrow-border::after {
+   background: #000 none repeat scroll 0 0;
+   content: "";
+   height: 13px;
+   position: absolute;
+   right: 11%;
+   top: 10px;
+   transform: rotate(145deg);
+   width: 1px;
+}
+
+
+#blog-tag .tagcloud .arrow-border::after {
+   bottom: 10px;
+   height: 14px;
+   right: 3px;
+   top: auto;
+   transform: rotate(36deg);
+}
+#blog-tag .tagcloud .arrow-border::before, 
+#blog-tag .tagcloud .arrow-border::after {
+   background: #000 none repeat scroll 0 0;
+   content: "";
+   height: 13px;
+   position: absolute;
+   right: 11%;
+   top: 10px;
+   transform: rotate(145deg);
+   width: 1px;
+}
+/* end of blog tag */
+
+
 
 
 /*homepage*/

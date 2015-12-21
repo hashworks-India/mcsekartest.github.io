@@ -207,17 +207,16 @@ else {
       // End of casestudy
 
       /* job board*/
-
       $('.hw-job1').click(function() {
+        $(this).addClass('view-color');
+         $(this).parent('tr').next().removeClass('hide');
+     });
 
-         $(this).addClass('view-color');
-          $(this).parent('tr').next().toggleClass('hide');
-      }); 
-
-        $('.view1-close').click(function() {
-          $('.view1').addClass('hide');
-        }); 
-
+       $('.view1-close').click(function() {
+         $(this).parents('tr').prev().find('.hw-job1').removeClass('view-color');
+          
+           $(this).parents('tr').addClass('hide');
+       }); 
       
         $('.apply').click(function () {
            $('.view1').addClass('hide');

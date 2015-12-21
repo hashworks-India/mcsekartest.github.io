@@ -47,7 +47,7 @@
 	<!--tabs-->
 
 	<!-- filter options -->
-	<div class="container hw-upskilling-filter">
+	<div class="container hw-upskilling-filter " >
 		<div class="row">
 			<ul class="clearfix  hr-display tagcloud">
 
@@ -79,35 +79,7 @@
 	<div class="container-fluid cs-cntr-mar" >
         <div class="row blog-main" id="blog-main">
        	{% for post in site.posts %}
-         {% assign mod = forloop.index | modulo: 3 %}
-			{% if mod == 1 %}
-              <div class="col-lg-4 blog-container" data-value="{{post.category}}">
-				<!-- filter-content -->
-	              	<div>
-	              	   <div class="blog-image">
-	              		<img src="{{site.baseurl}}/assets/img/blog/{{post.image}}" alt="blog">
-	                  </div>
-	            		<div class="blog-context">
-						<div class="blog-title"><a href="{{ post.url }}">{{ post.title }}</a></div>
-						<div class="blog-description">{{post.description}}</div>
-						<div class="blog-footer">
-				      	
-	                    <span class="textvalignmiddle">{{ post.date | date: "%B %d, %Y"}} </br>by {{post.author}}</span>
-	                  
-	                   	 <img src="/assets/img/blog/author.jpg" alt="author" class='img-circle '>
-	                     <i class="fa fa-commenting-o"></i><a href="{{post.url}}#disqus_thread"></a>
-						</div>
-				      
-
-				      </div>
-				    </div>
-				<!-- End of filter-content -->
-
-           
-          </div>
-          
-        {% elsif mod == 2 %}
-               <div class="col-lg-4 blog-container" data-value="{{post.category}}">
+                        <div class="col-lg-3 blog-container filter-content" data-value="{{post.category}}">
                	<!-- filter-content -->
 	               	<div>
 		              	<div class="blog-image">
@@ -128,63 +100,9 @@
 				      	</div>
 				    </div>
 				<!-- End of filter-content -->
-
-           
-          </div>
-
-          {% else %}
-
-          <div class="col-lg-4 blog-container" data-value="{{post.category}}">
-          	<!-- filter-content -->
-	            <div >
-         	
-         	        <div class="blog-image">
-						<img src="/assets/img/blog/blog4.jpg" class="blog-img-rt" alt="blog">
-					</div>
-					<div class="blog-context">
-						<div class="blog-title"><a href="{{ post.url }}">{{ post.title }}</a></div>
-						<div class="blog-description">{{ post.description }}</div>
-						<div class="blog-footer">
-			      	
-                    		<span class="textvalignmiddle">{{ post.date | date: "%B %d, %Y"}} </br>by {{ post.author }}</span>
-                  
-                   	 		<img src="/assets/img/blog/author.jpg" alt="author" class='img-circle '>
-                   	 		<i class="fa fa-commenting-o"></i><a href="{{post.url}}#disqus_thread"></a>
-                  
-			      		</div>
-					</div>
-				</div>
-			<!-- End of filter-content -->
-		</div> 
-
-        {% endif %}
-
-
-
-
-
-          {% endfor %}
-
-              
-
-       
-            
-             
-             
-				
-				
-
-           
-
-
-       
-         
-
-
-
-
-
-	</main>	
+			</div>
+{% endfor %}
+</main>	
 
   <div class="container-fluid">
             <div class="row footer">
@@ -193,17 +111,17 @@
                 </div>
                 <div class="col-md-3 ">
                   <span class="fa-stack hw-socialshare social-icons ">
-  <i class="fa fa-circle-thin fa-stack-2x"></i>
-  <i class="fa fa-facebook fa-stack-1x"></i>
-</span>
-                  <span class="fa-stack hw-socialshare social-icons">
-  <i class="fa fa-circle-thin fa-stack-2x"></i>
-  <i class="fa fa-twitter fa-stack-1x"></i>
-</span>
-                 <span class="fa-stack hw-socialshare ">
-  <i class="fa fa-circle-thin fa-stack-2x"></i>
-  <i class="fa fa-envelope fa-stack-1x"></i>
-</span>
+				  <i class="fa fa-circle-thin fa-stack-2x"></i>
+				  <i class="fa fa-facebook fa-stack-1x"></i>
+				</span>
+				                  <span class="fa-stack hw-socialshare social-icons">
+				  <i class="fa fa-circle-thin fa-stack-2x"></i>
+				  <i class="fa fa-twitter fa-stack-1x"></i>
+				</span>
+				                 <span class="fa-stack hw-socialshare ">
+				  <i class="fa fa-circle-thin fa-stack-2x"></i>
+				  <i class="fa fa-envelope fa-stack-1x"></i>
+				</span>
                      
                 </div>
             </div>
@@ -217,25 +135,10 @@
 <script src="/assets/js/bootstrap.min.js"></script>
 
 
-<script src="/assets/js/jquery.masonry.min.js"></script>
+<!-- <script src="/assets/js/jquery.masonry.min.js"></script> -->
 <script src="/assets/js/jquery.imagesloaded.min.js"></script>
 <script src="/assets/js/custom.js"></script>
-<script type="text/javascript">
-		
-			$(function(){
- 
-    var $container = $('#blog-main');
-  
-    $container.imagesLoaded( function(){
-      $container.masonry({
-        itemSelector : '.blog-container',
-        isAnimated: true
-      });
-    });
 
-  
-  });
-		</script>
 		<script type="text/javascript">
       /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
       var disqus_shortname = 'hashworks'; // required: replace example with your forum shortname
