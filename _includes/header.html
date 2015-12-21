@@ -50,8 +50,9 @@
               <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="collapse navbar-collapse" id="Hashworks-Nav">
                 <ul class="nav navbar-nav">
+                  {% for item in site.data.nav.main-left %}
                 <li class="gotham-rounded-light header-links">
-                    <a href="/solutions/">Portfolio </a>
+                    <a href="{{ item.url }}">{{ item.text }}</a>
                     <ul class="dropdown">
                       <li class="gotham-rounded-light hw-contact-no"><a href="/solutions/">Platfrom Integration</a></li>
                       <li class="gotham-rounded-light hw-contact-no"><a href="/solutions/">Engineering Practice</a></li>
@@ -59,17 +60,18 @@
                       <li class="gotham-rounded-light hw-contact-no"><a href="/solutions/">UI/UX</a></li>
                     </ul>
                   </li>
-                    <li class="gotham-rounded-light header-links">
+                  {% endfor %}
+                   <!--  <li class="gotham-rounded-light header-links">
                       <a href="/engage_us">Engage Us </a>
                       <ul class="dropdown">
                           <li class="gotham-rounded-light hw-contact-no"><a href="/service_delivery">Service Delivery</a></li>
                           <li class="gotham-rounded-light hw-contact-no"><a href="/talent_acquisition">Talent Acquisition</a></li>
                           <li class="gotham-rounded-light hw-contact-no"><a href="/upskilling">Upskilling</a></li>
                       </ul>
-                  </li>
-                   <li class="gotham-rounded-light header-links">
+                  </li> -->
+                   <!-- <li class="gotham-rounded-light header-links">
                       <a href="/case_study">Case Study</a>
-                   </li>
+                   </li> -->
                 </ul>
                
                
