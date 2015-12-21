@@ -269,7 +269,14 @@ $(window).on('load', function() {
 
 
 
-/* end of header hover */     
+/* end of header hover */  
+
+  // talk to us
+  $('.talk-to-us').bind('click', function(event) {
+      var tabdetail = $(this).parents('.hw-started').offset().top;
+          $('html, body').animate({
+              scrollTop: tabdetail}, 1500, 'linear');
+  });   
 
 
 

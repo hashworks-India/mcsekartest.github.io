@@ -54,7 +54,6 @@ html {
 	body {
 		font: 1rem/1.4 "gotham-rounded-bold";
 		color: #7c7c7c;
-		overflow: scroll;
 	}
 
 	a {
@@ -697,7 +696,6 @@ background: #fff;
 			display: -ms-flex;
 			display: -o-flex;
 			display: flex;
-			margin-left: -15px;
 		}
 
 		.hw-tools-details>li {
