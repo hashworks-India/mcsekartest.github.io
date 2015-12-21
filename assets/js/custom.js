@@ -209,13 +209,13 @@ else {
       /* job board*/
 
       $('.hw-job1').click(function() {
-         $(this).toggleClass('view-color');
+
+         $(this).addClass('view-color');
           $(this).parent('tr').next().toggleClass('hide');
       }); 
 
         $('.view1-close').click(function() {
           $('.view1').addClass('hide');
-           $('.view-act').removeClass('view-color');
         }); 
 
       
@@ -248,6 +248,29 @@ $(window).on('load', function() {
           });
        case_study_filter(curid);
 });
+
+
+/* end of tag cloud*/
+
+/* header hover */
+        var initiall = $('.navbar-right > li > a:first-child').position().left;
+       $('.line-animation').css({left:initiall+'px'});
+
+ $('.navbar-right > li > a').mouseover(function(){
+
+       var w = $(this).width();    
+       var l = $(this).position().left;
+       l += 18;
+       $('.line-animation').css({width:w+'px', left:l+'px'});
+     });
+
+     $('.navbar-right > li > a').mouseout(function(){
+       $('.line-animation').css({width:'0px'});
+     });
+
+
+
+/* end of header hover */     
 
 
 

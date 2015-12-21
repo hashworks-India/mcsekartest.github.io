@@ -275,6 +275,20 @@ html {
 	.filter-content.active {
 		display: block;
 	}
+
+	.line-animation {
+		bottom: 5px;
+		display: block;
+		height: 2px;
+		position: absolute;
+		width: 0;
+		left: 0;
+		overflow: hidden;
+		transition: all 0.5s ease 0s;
+		-webkit-transition: all 0.5s ease 0s;
+		-moz-transition: all 0.5s ease 0s;
+		-o-transition: all 0.5s ease 0s;
+	}
 /* end of general css */
 
 /*tagcloud*/
@@ -402,82 +416,98 @@ html {
 
 /*homepage*/
 
-	/*homepage header*/
-		header.hw-home {
-			position: fixed;
-			top: 0;
-			width: 100%;
-			z-index: 5;
-		}
+/*homepage header*/
+header.hw-home {
+position: fixed;
+top: 0;
+width: 100%;
+z-index: 5;
+}
 
-		header .navbar-default {
-			border: none;
-			background: #fff;
-		    -webkit-transition: all .2s linear 0s;
-		    -moz-transition: all .2s linear 0s;
-		    -o-transition: all .2s linear 0s;
-		    -ms-transition: all .2s linear 0s;
-		    transition: all .2s linear 0s;
-		}
+header .navbar-default {
+border: none;
+background: #fff;
+   -webkit-transition: all .2s linear 0s;
+   -moz-transition: all .2s linear 0s;
+   -o-transition: all .2s linear 0s;
+   -ms-transition: all .2s linear 0s;
+   transition: all .2s linear 0s;
+}
 
-		header.hw-home .navbar-default {
-			background: transparent none repeat scroll 0 0;
-		    border: medium none;
-		    margin: 0;
-		}
+header.hw-home .navbar-default {
+background: transparent none repeat scroll 0 0;
+   border: medium none;
+   margin: 0;
+}
 
-		.navbar-brand .logo {
-			background: url(/assets/img/logo.png);
-			background-size: cover;
-			height: 31px;
-			width: 140px;
-			-webkit-transition: all .5s ease 0s;
-			-o-transition: all .5s ease 0s;
-			transition: all .5s ease 0s;
-		}
-	/*End of homepage header*/
+.navbar-brand .logo {
+background: url(/assets/img/logo.png);
+background-size: cover;
+height: 31px;
+width: 140px;
+-webkit-transition: all .5s ease 0s;
+-o-transition: all .5s ease 0s;
+transition: all .5s ease 0s;
+}
 
-	#hw-homepage {
-		padding: 0 25px;
-	}
+.navbar-right > li {
+position: static;
+}
+.navbar-collapse {
+position: relative;
+}
+.navbar-collapse .line-animation {
+ background: #ee2b7b;
+}
+
+/*End of homepage header*/
+
+#hw-homepage {
+padding: 0 25px;
+}
 
 
-	#hw-homepage .row > div:first-child {
-		-webkit-align-items: center;
-		-moz-align-items: center;
-		-o-align-items: center;
-		-ms-align-items: center;
-		align-items: center;
-		padding: 0 25px;
-	}
+#hw-homepage .row > div:first-child {
+-webkit-align-items: center;
+-moz-align-items: center;
+-o-align-items: center;
+-ms-align-items: center;
+align-items: center;
+padding: 0 25px;
+}
 
-	nav.navbar-default.hw-fixed-header {
-		position: fixed;
-	    top: 0;
-	    width: 100%;
-	    z-index: 10;
-	    background: #EC297B;
-	    color: #fff;
-	    border: medium none;
-	    border-radius: 0;
-	    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-	}
+nav.navbar-default.hw-fixed-header {
+position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 10;
+   background: #EC297B;
+   color: #fff;
+   border: medium none;
+   border-radius: 0;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
-	.hw-fixed-header .navbar-brand .logo {
-		background-position: 0 -31px;
-		-webkit-transition: all .5s ease 0s;
-		-o-transition: all .5s ease 0s;
-		transition: all .5s ease 0s;
-	}
+.hw-fixed-header .navbar-brand .logo {
+background-position: 0 -31px;
+-webkit-transition: all .5s ease 0s;
+-o-transition: all .5s ease 0s;
+transition: all .5s ease 0s;
+}
 
-	.hw-fixed-header .navbar-nav > li > a,
-	.hw-fixed-header .navbar-nav > li > a:hover,
-	.hw-fixed-header .navbar-nav > li > a:active,
-	.hw-fixed-header .navbar-nav > li > a:focus {
-		color: #fff;
-	}
+.hw-fixed-header .navbar-nav > li > a,
+.hw-fixed-header .navbar-nav > li > a:hover,
+.hw-fixed-header .navbar-nav > li > a:active,
+.hw-fixed-header .navbar-nav > li > a:focus {
+color: #fff;
+}
+
+.hw-fixed-header .navbar-collapse .line-animation {
+background: #fff;
+}
 
 /*End of homepage*/
+
 
 /* engage page */
 	.navbar-header .navbar-brand {
@@ -1153,6 +1183,10 @@ html {
 /*End of service-delivery page*/
 	.job-table.filter-content.active  {
     	display: table;
+	}
+	.home-approch {
+		padding:15px 0px;	
+		text-align: center;
 	}
 
 

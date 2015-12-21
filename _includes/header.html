@@ -72,17 +72,20 @@
                    </li>
                 </ul>
                
+               
                 <ul class="nav navbar-nav navbar-right">
-                   {% for item in site.data.nav.main-right %}
-                                  <li class="gotham-rounded-light header-links">
-                                      <a href="{{ item.url }}">{{ item.text }}</a>
-                                  </li>
-                              {% endfor %}
-                    <li><a  href="#credits" class="toggle btn "><i class="fa fa-search"></i></a></li>
-                    </ul>
+                  {% for item in site.data.nav.main-right %}
+                                 <li class="gotham-rounded-light header-links">
+                                     <a href="{{ item.url }}">{{ item.text }}</a>
+                                 </li>
+                             {% endfor %}
+                   <li><a  href="#credits" class="toggle btn "><i class="fa fa-search"></i></a></li>
+                   </ul>
+                   <span class="line-animation" style="overflow: hidden; width: 0px; left: 0;"></span>
+                 </li>
+               </ul>
 
-
-              </div><!-- /.navbar-collapse -->
+             </div><!-- /.navbar-collapse -->
               <div id="credits" class=" hidden col-md-2 col-md-offset-10">
           <div class="input-group">
               <input type="text" class="form-control gotham-rounded-light" placeholder="search..."/>
