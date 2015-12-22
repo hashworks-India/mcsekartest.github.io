@@ -22,14 +22,17 @@
   <header class="hw-home">
     {% else %}
     <header>
-  {% endif %}
+
     <!-- container-fluid -->
       <div class="container-fluid "> 
-        <div class="row">
-          <a class="contact hr-display clr-white gotham-rounded-bok hw-contact-no">Contact Us +0123456789</a>
-        </div>
-    </div>
-  <!-- End of container-fluid -->
+          <div class="row">
+            <a class="contact hr-display clr-white gotham-rounded-bok hw-contact-no">Contact Us +0123456789</a>
+          </div>
+      </div>
+    <!-- End of container-fluid -->
+  {% endif %}
+
+
 
   <!-- navigation-bar -->
           <nav class="navbar navbar-default">
@@ -50,9 +53,9 @@
               <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="collapse navbar-collapse" id="Hashworks-Nav">
                 <ul class="nav navbar-nav">
-                  {% for item in site.data.nav.main-left %}
+                 
                 <li class="gotham-rounded-light header-links">
-                    <a href="{{ item.url }}">{{ item.text }}</a>
+                   <a href="/">Portfolio</a>
                     <ul class="dropdown">
                       <li class="gotham-rounded-light hw-contact-no"><a href="/solutions/">Platfrom Integration</a></li>
                       <li class="gotham-rounded-light hw-contact-no"><a href="/solutions/">Engineering Practice</a></li>
@@ -60,18 +63,18 @@
                       <li class="gotham-rounded-light hw-contact-no"><a href="/solutions/">UI/UX</a></li>
                     </ul>
                   </li>
-                  {% endfor %}
-                   <!--  <li class="gotham-rounded-light header-links">
+                 
+                    <li class="gotham-rounded-light header-links">
                       <a href="/engage_us">Engage Us </a>
                       <ul class="dropdown">
                           <li class="gotham-rounded-light hw-contact-no"><a href="/service_delivery">Service Delivery</a></li>
                           <li class="gotham-rounded-light hw-contact-no"><a href="/talent_acquisition">Talent Acquisition</a></li>
                           <li class="gotham-rounded-light hw-contact-no"><a href="/upskilling">Upskilling</a></li>
                       </ul>
-                  </li> -->
-                   <!-- <li class="gotham-rounded-light header-links">
+                  </li>
+                   <li class="gotham-rounded-light header-links">
                       <a href="/case_study">Case Study</a>
-                   </li> -->
+                   </li>
                 </ul>
                
                

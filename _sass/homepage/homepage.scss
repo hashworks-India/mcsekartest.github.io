@@ -25,14 +25,17 @@
       background: transparent url("/assets/img/landingpage/banner-6.jpg") no-repeat scroll bottom center / cover;
     }
     .hw-fixed-heading{
-      position: absolute;
+      position: fixed;
       bottom: 0;
       width: 100%;
 	    z-index: 5;
     }
 
-    .hw-fixed-heading .hw-approach {
+    /*.hw-fixed-heading .hw-approach {
       padding: 0;
+    }*/
+    .hw-fixed-heading .h-approch {
+      padding: 5px 0px 10px;
     }
   /*End of bg-color*/
 
@@ -122,8 +125,11 @@
         position: absolute;
       }
       .hm-text1 {
-        top: 40%;
-        left: 18%;
+        top: 50%;
+        left: 50%;
+        width: 1000px;
+        margin: 0 auto;
+        transform: translate(-50%,-50%);
       }
       .latest-think { 
         color: #040404;

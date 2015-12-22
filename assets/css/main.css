@@ -450,28 +450,26 @@ padding: 3px 12px 2px 5px;
    position: absolute;
    right: 11%;
    top: 10px;
-   transform: rotate(145deg);
+    -webkit-transform: rotate(145deg);
+    -moz-transform: rotate(145deg);
+	-o-transform: rotate(145deg);
+	-ms-transform: rotate(145deg);
+	transform: rotate(145deg);
    width: 1px;
 }
-
-
 #blog-tag .tagcloud .arrow-border::after {
    bottom: 10px;
    height: 14px;
    right: 3px;
    top: auto;
-   transform: rotate(36deg);
+    -webkit-transform: rotate(36deg);
+	-moz-transform: rotate(36deg);
+	-o-transform: rotate(36deg);
+	-ms-transform: rotate(36deg);
+    transform: rotate(36deg);
 }
-#blog-tag .tagcloud .arrow-border::before, 
-#blog-tag .tagcloud .arrow-border::after {
-   background: #000 none repeat scroll 0 0;
-   content: "";
-   height: 13px;
-   position: absolute;
-   right: 11%;
-   top: 10px;
-   transform: rotate(145deg);
-   width: 1px;
+.categories .hw-upskilling-filter {
+	margin: 10px 0px;
 }
 /* end of blog tag */
 
