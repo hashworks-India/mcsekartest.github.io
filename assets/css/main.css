@@ -241,6 +241,14 @@ html {
 	.heading-custom-btn:hover a {
 		color: #ee2b7b;
 	}
+	.hw-fixed-heading .heading-custom-btn:hover {
+		background-color: transparent;
+		border: 1px solid #fff;
+		color: #fff;
+	}
+	.hw-fixed-heading .heading-custom-btn:hover a {
+		color: #fff;
+	}
 
 	.hr-display {
 		display: table;
