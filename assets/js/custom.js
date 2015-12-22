@@ -255,7 +255,7 @@ $(window).on('load', function() {
         var initiall = $('.navbar-right > li > a:first-child').position().left;
        $('.line-animation').css({left:initiall+'px'});
 
- $('.navbar-right > li > a').mouseover(function(){
+      $('.navbar-right > li > a').mouseover(function(){
 
        var w = $(this).width();    
        var l = $(this).position().left;
@@ -267,6 +267,19 @@ $(window).on('load', function() {
        $('.line-animation').css({width:'0px'});
      });
 
+     //left 
+     $('.navbar-left > li > a').mouseover(function(){
+
+       var w_left = $(this).width();    
+       var l_left = $(this).position().left;
+       l_left += 18;
+       $('.line-animation1').css({width:w_left+'px', left:l_left+'px'});
+     });
+
+     $('.navbar-left > li > a').mouseout(function(){
+       $('.line-animation1').css({width:'0px'});
+     });
+
 
 
 /* end of header hover */  
@@ -276,7 +289,8 @@ $(window).on('load', function() {
     var tabdetail = $(this).parents('.hw-started').offset().top;
           $('html, body').animate({
               scrollTop: tabdetail}, 1500, 'linear');
-  });   
+  }); 
+
 
 
 

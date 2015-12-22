@@ -183,7 +183,7 @@ border-radius: 5px;
         background-color: rgba(12, 200, 219, 0.8);
         border-radius: 1px;
         display: none;
-        left: 20px;
+        /*left: 20px;*/
         line-height: 1;
         margin: 2px 0;
         min-width: 175px;
@@ -192,8 +192,8 @@ border-radius: 5px;
         z-index: 9;
     }
     ul li:hover ul.dropdown{
-        display: block; /* Display the dropdown */
-    }
+        display: block; /* Display the dropdown */ 
+      }
     ul li ul.dropdown li{
         text-align: left;
         display: block;

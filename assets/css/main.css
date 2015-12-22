@@ -275,7 +275,8 @@ html {
 		display: block;
 	}
 
-	.line-animation {
+	.line-animation,
+	.line-animation1 {
 		bottom: 5px;
 		display: block;
 		height: 2px;
@@ -512,13 +513,14 @@ width: 140px;
 transition: all .5s ease 0s;
 }
 
-.navbar-right > li {
+.navbar-nav > li {
 position: static;
 }
 .navbar-collapse {
 position: relative;
 }
-.navbar-collapse .line-animation {
+.navbar-collapse .line-animation,
+.navbar-collapse .line-animation1 {
  background: #ee2b7b;
 }
 
@@ -564,7 +566,8 @@ transition: all .5s ease 0s;
 color: #fff;
 }
 
-.hw-fixed-header .navbar-collapse .line-animation {
+.hw-fixed-header .navbar-collapse .line-animation,
+.hw-fixed-header .navbar-collapse .line-animation1 {
 background: #fff;
 }
 
