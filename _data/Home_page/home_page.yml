@@ -1,5 +1,5 @@
 banner1:
-   - {title: 'Digital products & services for high velocity, software driven business'}
+   - {title: 'products & services for high velocity, software driven business'}
 banner2:
    - { title: 'Digital products & services ',
    	   content: 'Lorem ipsum dolor sit amet,accusamus placeat accusantium eaque odit minima atque.!',
@@ -20,5 +20,3 @@ banner5:
    	   content: ' Were active in the same channels you use most frequently.Follow us and stay informed.',
        link: 'Get Connected'
    	}
-
-
