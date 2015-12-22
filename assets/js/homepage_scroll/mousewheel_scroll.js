@@ -99,6 +99,24 @@ $(document).ready(function(){
       });
     // End of onclick indicator scroll animation
 
+    $('.scroll-indicators > li').click(function(){
+        $('.scroll-indicators > li').each(function(x){
+            x++;
+            if(x % 2 == 0 && x == 2) {
+                $('.scroll-indicators > li').removeClass('change-clr');
+                $(this).addClass('change-clr');
+            }
+           
+
+            // if(x % 2 == 0 && x == 4) {
+            //     alert();
+            //     $(this).addClass('change-clr');
+            // }
+            
+
+        });
+    });
+
 
     $('.appln').click(function () {
         $('.appln-statergies').toggleClass('hide');

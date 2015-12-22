@@ -291,6 +291,8 @@ $(window).on('load', function() {
               scrollTop: tabdetail}, 1500, 'linear');
   }); 
 
+  
+
 
 
 

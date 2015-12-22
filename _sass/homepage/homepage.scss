@@ -57,6 +57,16 @@
       line-height: 0.5;
     }
 
+   /*.scroll-indicators > li.active.change-clr .hw-dot {
+      background-color: #000;
+      border-radius: 100%;
+      border: 1px solid #000;
+    }
+
+    .scroll-indicators > li:nth-child(2n).active .hw-label {
+      color: #000;
+    }*/
+
     .scroll-indicators li a {
       display: inline-block;
     }
@@ -86,7 +96,7 @@
 
     .scroll-indicators li .hw-label {
       color: white;
-        font-size: 0.875rem;
+        font-size: 1.13rem;
         margin-right: 10px;
         opacity: 0;
         padding: 0.4em 0.5em;
