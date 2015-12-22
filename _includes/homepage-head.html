@@ -5,8 +5,66 @@
 				<h2 class="gotham-rounded-light hw-main-heading clr-white h-approch">We love to be your technology partners</h2>
 			</div>
 			<div class="col-lg-4 upskill-filter all c-flex clearfix">
-				<span><button class=" job-board-btn job-btn custom-btn heading-custom-btn" data-toggle="collapse" data-target="#demo1">TALK TO US</button></span>
+				<span><button class=" job-board-btn job-btn custom-btn heading-custom-btn" data-toggle="modal" data-target="#start-project">TALK TO US</button></span>
 			</div>
 		</div>
     </div>
 <!-- end of fixed tab-->
+
+<!-- Work-together popup -->
+		<div id="start-project" class="modal fade">
+	        <div class="modal-dialog contact-modal">
+	            <div class="modal-content">
+	            	<img class="close-pop" data-dismiss="modal" src="/assets/svg/close-pop.svg" alt="close">
+	                <div class="container form-container">
+	                	<h1 class="gotham-rounded-bold">Let's work together</h1>
+	                	<hr>
+	                	<h1 class="gotham-rounded-bold">Start your project</h1>
+			            <form id="contact_form" role="form">
+			                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+			                    <div class="form-group">
+			                        <input type="text" class="form-control" id="name" name="name" placeholder="Name *">
+			                        <label aria-hidden="true" tabindex="-1" data-alt="Your Name" empty-alt="Please enter your Name" class="form-message"></label>
+			                    </div>
+			                </div>
+			                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+			                    <div class="form-group">
+			                        <input type="text" class="form-control" id="number" name="number" placeholder="Contact No.">
+			                        <label aria-hidden="true" tabindex="-1" data-alt="Your Phone Number" empty-alt="Please enter your Phone Number" class="form-message"></label>
+			                    </div>
+			                </div>
+			                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+							    <div class="form-group dropdown">
+			                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject*" data-toggle="dropdown" readonly>
+			                        <label aria-hidden="true" tabindex="-1" data-alt="Select SUbject" empty-alt="Please select your subect" class="form-message"></label>
+			                        <i class="fa fa-chevron-down subject-down-arrow pull-right"></i>
+			                        <ul class="dropdown-menu subject-menu" role="menu">
+							            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">UI development</a></li>
+							            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Web app development</a></li>
+							            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mobile app development</a></li>
+							        </ul>
+			                    </div>
+			                </div>
+			                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+			                    <div class="form-group">
+			                        <input type="email" class="form-control" id="email" name="email" placeholder="Email *">
+			                        <label aria-hidden="true" tabindex="-1" data-alt="Your Email" empty-alt="Please enter your Email" invalid-alt="Invalid Email" class="form-message"></label>
+			                    </div>
+			                </div>
+			                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			                    <div class="form-group">
+			                        <input type="text" class="form-control" id="msg" name="msg" placeholder="Message *">
+			                        <label aria-hidden="true" tabindex="-1" data-alt="Your Message" empty-alt="Please enter your Message"  class="form-message"></label>
+			                    </div>
+			                </div>
+			                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			                    <button type="submit" class="btn btn-default form-btn work-form-submit-btn">Send</button>
+			                    <button type="button" class="btn btn-default form-btn work-form-reset-btn">Reset</button>
+			                    <button type="button" class="btn btn-default form-btn" data-dismiss="modal">cancel</button>
+			                </div>
+			            </form>
+			        </div>
+	            </div>
+	        </div>
+	    </div>
+    <!-- End of work-together popup -->

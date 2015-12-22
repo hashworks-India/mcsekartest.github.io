@@ -205,3 +205,260 @@
   /*End of indicators*/
 
 /*End of scroll-indicators*/
+
+/*hashworks - join us form*/
+
+    /*----------------------------------------------------------------------
+    Contact us
+    -----------------------------------------------------------------------*/
+
+
+        #start-project .close-pop {
+          height: 3%;
+          position: absolute;
+          right: 10%;
+          top: 5%;
+          cursor: pointer;
+        }
+
+        /*form css*/
+        .contact-container {
+          width: 100%;
+        }
+        #start-project,
+        #start-project {
+          z-index: 2011
+        }
+        .contact-modal {
+          width: 100%;
+          border-radius: 0;
+          height: 100%;
+          margin: 0;
+        }
+        .contact-modal > div {
+          height: 100%;
+          border-radius: 0;
+          background: #333;
+        }
+        /*form css*/
+        #form-cont {
+                margin-top: 30px;
+            }
+            .form-group {
+                margin-bottom: 20px;
+            }
+            .form-control {
+                background: none;
+                border: none;
+                box-shadow: none;
+                color: #ddedf2;
+                font-size: 16px;
+                border-bottom: 1px solid rgba(255,255,255,0.2);
+                border-radius: 0;
+                padding: 20px 0;
+                height: 60px;
+                transition: all .5s ease-in-out 0s;
+                 font-family: 'gotham-rounded-light';
+            }
+            .form-control:active, .form-control:focus {
+                box-shadow: none;
+                border-color: #ddedf2;
+            }
+            .form-control + [data-alt]::before {
+                content: attr(data-alt);
+                display: block;
+            }
+            .form-control.is-empty + [empty-alt]::before {
+                content: attr(empty-alt);
+                display: block;
+            }
+            .form-control.is-invalid + [invalid-alt]::before {
+                content: attr(invalid-alt);
+                display: block;
+            }
+            .form-control + [data-alt], .form-control.is-empty + [data-alt], .form-control.is-invalid + [data-alt] {
+                color: #ddedf2;
+                font: 15px gotham-rounded-bold;
+                position: absolute;
+                text-transform: uppercase;
+                top: 5px;
+                opacity: 0;
+                -webkit-opacity: 0;
+                -moz-opacity: 0;
+                -o-opacity: 0;
+                transition: top 0.7s ease 0s, opacity 0.7s ease 0s, color 0.2s ease 0s;
+                -webkit-transition: top 0.7s ease 0s, opacity 0.7s ease 0s, color 0.2s ease 0s;
+                -moz-transition: top 0.7s ease 0s, opacity 0.7s ease 0s, color 0.2s ease 0s;
+                -o-transition: top 0.7s ease 0s, opacity 0.7s ease 0s, color 0.2s ease 0s;
+            }
+            .form-control.is-empty + [data-alt], .form-control.is-invalid + [data-alt]  {
+                color: #EE2B7B;
+            }
+            .form-control:focus + [data-alt], .form-control.is-empty + [data-alt], .form-control.is-invalid + [data-alt]  {
+                opacity: 0.6;
+                -webkit-opacity: 0.6;
+                -moz-opacity: 0.6;
+                -o-opacity: 0.6;
+                top: -1px;
+            }
+            .form-control::-moz-placeholder {
+                font: 16px/17px gotham-book-italic;
+            }
+            .form-btn, .form-btn:focus, .form-btn:active {
+                background: transparent;
+            border: 1px solid #c6c6c6;
+            color: #c6c6c6;
+                font: 14px/14px gotham-rounded-bold;
+                text-transform: uppercase;
+                padding: 10px 25px;
+                text-shadow: none;
+                border-radius: 4px;
+                transition: all 1s ease 0s;
+                -webkit-transition: all 1s ease 0s;
+                -moz-transition:  all 1s ease 0s;
+                -o-transition:  all 1s ease 0s;
+            }
+            .form-btn.btn:hover {  /*Changed - 3rd Apr*/
+                border: 1px solid #ee2b7b;
+                color: #fff;
+                background: #ee2b7b;
+            }
+            .is-empty, .is-invalid {
+                border-color: #EE2B7B;
+            }
+        /*form css end*/
+
+        /*work-together popup*/
+            .form-container > h1 {
+              color: #fff;
+              padding: 0 16px 0;
+              font-size: 30px;
+              text-transform: uppercase;
+            }
+            .form-container > hr {
+              width: 18%;
+              margin: 0px 19px 0;
+              border: 1.5px solid #EE2B7B;
+            }
+            #subject {
+              cursor: pointer;
+              background: transparent;
+            }
+            input:read-only {
+              background: transparent !important;
+            }
+            .subject-down-arrow {
+                margin: -40px 10px 0 0px;
+                font-size: 20px;
+                position: absolute;
+                right: 0;
+                color: #4F585D;
+            }
+            .subject-menu {
+                width: 100%;
+                background: #fff;
+                box-shadow: none;
+                border: none;
+                border-radius: 0;
+                padding: 2px 5px;
+            }
+            .subject-menu > li > a {
+                font-size: 16px;
+                font-family: 'gotham-rounded-light';
+                color: #777;
+            }
+            .subject-menu > li > a:hover {
+              background: #3A4750;
+            }
+        /*end of work together pop up*/
+        /*join us pop up*/
+        .file-upload-div {
+          position: relative;
+        }
+        .file-back {
+          position: absolute;
+          top: 0;
+        }
+        .attach-back {
+          height: 50%;
+          position: absolute;
+          z-index: 1;
+          right: 12px;
+          top: 20px;
+        }
+        #file-upload {
+          opacity: 0;
+          z-index: 2;
+          position: relative;
+        }
+        /*end of join us pop up*/
+        @media screen and (max-width: 768px) {
+          #start-project {
+            margin-top: -27px;
+            padding: 130px 0 115px;
+          }
+          #start-project .container-fluid {
+              margin-top: -30px;
+          }  
+          .testimonial-padding {
+            padding: 175px 0 115px !important;
+          }
+          #start-project .hw-section-header-cont {
+            padding: 0px 0 0; /**/
+          }
+          #start-project .contact-col {
+            padding: 0 15px;
+            width: 100%;
+          }
+           #start-project .contact-div {
+            padding-bottom: 0px; /**/
+          }
+            #start-project .contact-col {
+                padding: 0 15px;
+                width: 100%;
+            }
+            #start-project .contact-div:hover {
+              background: transparent;
+            }
+            #start-project .contact-div:hover span, #start-project .contact-div:hover h1 {
+              color: #000;
+            }
+            .form-container > h1:first-child, #start-project h1:first-child , .form-container > h1, #start-project h1 {
+              font-size: 20px;
+            }
+            .contact-modal, #start-project .modal-content {
+              height: 116%;
+            }
+            #start-project .contact-div a {
+              color: #fff;
+              border: none;
+              padding: 10px;
+            }
+            #start-project .contact-div:hover a {
+              border: none;
+            }
+            #start-project .contact-margin {
+              margin-bottom: 55px;
+            }
+        }
+        @media screen and (max-width: 500px) {
+            #start-project .work-together hr,  #start-project .join-us hr {
+              margin-top: 15px;
+            }
+            #start-project .work-together h1,  #start-project .join-us h1 {
+                font-size: 14px;
+            }
+          .btn-index {
+              font-size: 16px;
+            }
+        }
+        @media screen and (max-width: 390px) {
+          #start-project .form-btn,  #start-project  .form-btn:focus, #start-project  .form-btn:active  {
+              padding: 10px 8px;
+          }
+        }
+    /*----------------------------------------------------------------------
+    Contact us
+    -----------------------------------------------------------------------*/
+
+/*End of hashworks - join us form*/
