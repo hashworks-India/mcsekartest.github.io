@@ -1,7 +1,7 @@
 banner1:
    - {title: 'products & services for high velocity, software driven business'}
 banner2:
-   - { title: 'Digital products & services ',
+   - { title: ' Latest Thinking',
    	   content: 'Lorem ipsum dolor sit amet,accusamus placeat accusantium eaque odit minima atque.!',
        link: 'dive deeper'
    	}
