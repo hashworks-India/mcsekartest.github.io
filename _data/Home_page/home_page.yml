@@ -5,7 +5,7 @@ banner1:
 banner2:
    - { title: 'We are the thinkers...',
    	   content: 'Technology is the value driver for today's business
-       Our thinkers innovate everyday...',
+       Our thinkers innovate everyday!',
        link: 'dive deeper'
    	}
 banner3:
