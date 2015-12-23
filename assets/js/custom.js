@@ -7,6 +7,15 @@ $(document).ready(function(){
     });
 // js for carousel platform integeration
 
+    //homepage header mouse event 
+      $('.hw-home').mouseover(function(){
+          $("header nav").addClass('hw-fixed-header');
+      });
+
+      $('.hw-home').mouseout(function(){
+          $("header nav").removeClass('hw-fixed-header');
+      });
+
 
         //fixed header
     $(document).scroll(function(){
