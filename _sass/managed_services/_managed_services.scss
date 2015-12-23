@@ -51,25 +51,18 @@ input {
 
 	.placeholder-pro::-moz-placeholder { 
 	    font: 14px;
-		font-family: "gotham-rounded-light";
+		font-family:"gotham-rounded-light";
 	    color: #6c717d;
 	}	
 
 	.placeholder-pro::-webkit-input-placeholder {
 		font: 14px;
-		font-family: "gotham-rounded-light";
+		font-family:"gotham-rounded-light";
 		color: #6c717d;
 	}
-
-	.placeholder-pro:-moz-placeholder {
-		font: 14px;
-		font-family: "gotham-rounded-light";
-		color: #6c717d;
-	}
-
 	.placeholder-pro::-ms-input-placeholder {
 		font: 14px;
-		font-family: "gotham-rounded-light";
+		font-family:"gotham-rounded-light";
 		color: #6c717d;
 	}
 
@@ -106,7 +99,7 @@ input {
 		background-color: #fff; 
 	    border: none;
 	    border-radius: 0px; 
-	    padding: 14px 14px;
+	    padding: 21px;
 	    vertical-align: top;
 	}
 	textarea {
