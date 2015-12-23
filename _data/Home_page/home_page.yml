@@ -3,8 +3,9 @@ banner1:
      Delivering velocity & Agility for software driven business'
 }
 banner2:
-   - { title: ' Latest Thinking',
-   	   content: 'Lorem ipsum dolor sit amet,accusamus placeat accusantium eaque odit minima atque.!',
+   - { title: 'We are the thinkers...',
+   	   content: 'Technology is the value driver for today's business
+       Our thinkers innovate everyday...',
        link: 'dive deeper'
    	}
 banner3:
