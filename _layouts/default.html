@@ -63,13 +63,28 @@
 		</section><!-- end of section-->
 
 		<section class="scroll-anim" data-value="3">
-			<div>
-				<div class="hm-text latest-think">
-					<h1 class="gotham-rounded-bok hw-carousel-heading">{{site.data.Home_page.home_page.banner3[0].title}} </h1>
-					<p class="hw-para gotham-rounded-light">{{site.data.Home_page.home_page.banner3[0].content}}</p>
-					<p class="dive "><a href="" class="text-uppercase  gotham-rounded-bold">{{site.data.Home_page.home_page.banner3[0].link}}</a></p>
+			<div class="cust-hap">
+				<div class="container">
+					<div class="row blog-main">
+						<div class="col-md-6 col-xs-12 blog-content">
+							<div id="port-bol-banner">
+					            <div id="shell">
+					              <img class="hidden-xs" src="/assets/img/bol/bol_right.png" data-xrange="150" data-yrange="0" data-invert="true" id="plax-sphere-1"/>
+					              <img class="mobile-view" src="/assets/img/bol/bol_center.png" data-xrange="0" data-yrange="0" id="plax-sphere-2"/>
+					              <img class="hidden-xs" src="/assets/img/bol/bol_left.png" data-xrange="150" data-yrange="0" data-invert="false" id="plax-sphere-3"/>
+					            </div>
+					        </div>
+						</div>
+						<div class="col-md-6 col-xs-12">
+							<div class="hm-text latest-think">
+								<h1 class="gotham-rounded-bok hw-carousel-heading">{{site.data.Home_page.home_page.banner3[0].title}} </h1>
+								<p class="hw-para gotham-rounded-light">{{site.data.Home_page.home_page.banner3[0].content}}</p>
+								<p class="dive "><a href="" class="text-uppercase  gotham-rounded-bold">{{site.data.Home_page.home_page.banner3[0].link}}</a></p>
+							</div>
+							
+						</div>
+					</div>
 				</div>
-				
 			</div>
 		</section><!-- end of section3-->
 
@@ -177,3 +192,9 @@
 
 
 {% include footer.html %}
+<script type="text/javascript">
+          $(document).ready(function () {
+            $('#shell img').plaxify()
+            $.plax.enable()
+          })
+        </script>  

@@ -7,6 +7,22 @@ $(document).ready(function(){
     });
 // js for carousel platform integeration
 
+  
+  //homepage dropdown
+   $(".dropdown-link .dropdown").css({display: "none"});
+        $(".dropdown-link").mouseover(function(){
+            $(this).find(".dropdown").css({visibility: "visible",display: "none"}).show(268);;
+
+      });
+
+         $(".dropdown-link").mouseleave(function(){
+            $(this).find(".dropdown").css({visibility: "hidden"});
+        });
+
+         $(".dropdown").mouseover(function(){
+            $('.dropdown-link').css({visibility: "visible !important"});
+         });
+
     //homepage header mouse event 
       $('.hw-home').mouseover(function(){
           $("header nav").addClass('hw-fixed-header');
