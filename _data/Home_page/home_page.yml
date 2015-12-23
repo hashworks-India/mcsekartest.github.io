@@ -18,8 +18,4 @@ banner4:
    	   content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.Assumenda nisi tempore hic, ullam corporis adipisci ratione id illum!',
        link: 'dive deeper',
    	}
-banner5:
-   - { title: 'Follow Us',
-   	   content: ' Were active in the same channels you use most frequently.Follow us and stay informed.',
-       link: 'Get Connected'
-   	}
+
