@@ -193,16 +193,16 @@
         width: 250px;
       }
       .application {
+        position: relative;
         margin-top: 30px;
       }
       .appln-statergies {
         background-color: #B9BECD;
         position: absolute;
-        top: 48%;
+        top: 0;
         padding: 40px 20px 10px;
-        left: 21%;
-        margin-top: -2px;
-        margin-left: -12px;
+        left: 250px;
+        height: 100%;
       }
       .appln-statergies ul li {
         line-height: 1.7;
@@ -216,11 +216,10 @@
       .it-solutions {
         background-color: #b9becd;
         position: absolute;
-        top: 48%;
+        top: 0;
         padding: 40px 20px 10px;
-        left: 21%;
-        margin-top: -2px;
-        margin-left: -12px;
+        left: 250px;
+        height: 100%;
       }
       .hm-arrow {
         width: 0; 

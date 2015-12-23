@@ -114,12 +114,14 @@ $(document).ready(function(){
    });
 
 
-    $('.appln').click(function () {
-        $('.appln-statergies').toggleClass('hide');
+    $('.appln').mouseenter(function () {
+        $('.appln-statergies').removeClass('hide');
+        $('.it-solutions').addClass('hide');
     });
 
-    $('.it-solution').click(function () {
-        $('.it-solutions').toggleClass('hide');
+    $('.it-solution').mouseenter(function () {
+        $('.it-solutions').removeClass('hide');
+        $('.appln-statergies').addClass('hide');
     });
 
 
