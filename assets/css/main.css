@@ -516,7 +516,7 @@ background: transparent none repeat scroll 0 0;
 .logo {
 	float: left;
 	position: relative;
-	padding-top: 10px;
+	padding: 10px 15px 0;
 	z-index: 10;
 }
 
@@ -556,6 +556,10 @@ padding: 0 25px;
 -ms-align-items: center;
 align-items: center;
 padding: 0 25px;
+}
+
+.hw-fixed-header #Hashworks-Nav {
+   background: #EC297B;
 }
 
 nav.navbar-default.hw-fixed-header {

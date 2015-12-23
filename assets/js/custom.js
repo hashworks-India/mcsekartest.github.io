@@ -10,7 +10,7 @@ $(document).ready(function(){
   
   //homepage dropdown
    $(".dropdown-link .dropdown").css({display: "none"});
-        $(".dropdown-link").mouseover(function(){
+        $(".dropdown-link").mouseenter(function(){
             $(this).find(".dropdown").css({visibility: "visible",display: "none"}).show(268);;
 
       });
@@ -19,7 +19,7 @@ $(document).ready(function(){
             $(this).find(".dropdown").css({visibility: "hidden"});
         });
 
-         $(".dropdown").mouseover(function(){
+         $(".dropdown").mouseenter(function(){
             $('.dropdown-link').css({visibility: "visible !important"});
          });
 
