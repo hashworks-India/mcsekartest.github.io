@@ -29,6 +29,13 @@
     	background-color: #79c2e2;
         border: none;
     }
+    #credits .form-control {
+        height: 45px;
+        padding: 12px;
+    }
+    #credits .input-group-addon {
+        padding: 12px 15px 0px;
+    }
 /*End of header-search*/
 
 /*footer*/
