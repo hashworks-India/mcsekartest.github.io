@@ -20,49 +20,75 @@
 	                	<h1 class="gotham-rounded-bold">Let's work together</h1>
 	                	<hr>
 	                	<h1 class="gotham-rounded-bold">Start your project</h1>
-			            <form id="contact_form" role="form">
-			                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-			                    <div class="form-group">
-			                        <input type="text" class="form-control" id="name" name="name" placeholder="Name *">
-			                        <label aria-hidden="true" tabindex="-1" data-alt="Your Name" empty-alt="Please enter your Name" class="form-message"></label>
-			                    </div>
-			                </div>
-			                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-			                    <div class="form-group">
-			                        <input type="text" class="form-control" id="number" name="number" placeholder="Contact No.">
-			                        <label aria-hidden="true" tabindex="-1" data-alt="Your Phone Number" empty-alt="Please enter your Phone Number" class="form-message"></label>
-			                    </div>
-			                </div>
-			                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-							    <div class="form-group dropdown">
-			                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject*" data-toggle="dropdown" readonly>
-			                        <label aria-hidden="true" tabindex="-1" data-alt="Select SUbject" empty-alt="Please select your subect" class="form-message"></label>
-			                        <i class="fa fa-chevron-down subject-down-arrow pull-right"></i>
-			                        <ul class="dropdown-menu subject-menu" role="menu">
-							            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">UI development</a></li>
-							            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Web app development</a></li>
-							            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mobile app development</a></li>
-							        </ul>
-			                    </div>
-			                </div>
-			                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-			                    <div class="form-group">
-			                        <input type="email" class="form-control" id="email" name="email" placeholder="Email *">
-			                        <label aria-hidden="true" tabindex="-1" data-alt="Your Email" empty-alt="Please enter your Email" invalid-alt="Invalid Email" class="form-message"></label>
-			                    </div>
-			                </div>
-			                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-			                    <div class="form-group">
-			                        <input type="text" class="form-control" id="msg" name="msg" placeholder="Message *">
-			                        <label aria-hidden="true" tabindex="-1" data-alt="Your Message" empty-alt="Please enter your Message"  class="form-message"></label>
-			                    </div>
-			                </div>
-			                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-			                    <button type="submit" class="btn btn-default form-btn work-form-submit-btn">Send</button>
-			                    <button type="button" class="btn btn-default form-btn work-form-reset-btn">Reset</button>
-			                    <button type="button" class="btn btn-default form-btn" data-dismiss="modal">cancel</button>
-			                </div>
-			            </form>
+			           		<div class="post-resume">
+							<div class="row ">
+									<div class="col-lg-6"> 
+										<div class="text-border">
+											<div class="input-group">
+					      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/name-img.png"></div>
+												<input type="text" class="form-control placeholder-pro" placeholder="NAME">
+											</div>
+										</div>		
+									</div>
+								
+								<div class="col-lg-6"> 
+									<div class="text-border">
+										<div class="input-group">
+				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/email-img.png"></div>
+											<input type="text" class="form-control placeholder-pro" placeholder="EMAIL">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row ms-row-mar">
+								<div class="col-lg-6"> 
+									<div class="text-border">
+										<div class="input-group">
+				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png"></div>
+											<input type="text" class="form-control placeholder-pro" placeholder="SUBJECT">
+										</div>	
+									</div>	
+								</div>
+								<div class="col-lg-6"> 
+									<div class="text-border">
+										<div class="input-group">
+				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/phone-img.png"></div>
+											<input type="text" class="form-control placeholder-pro" placeholder="PHONE">
+										</div>
+									</div>	
+								</div>
+							</div>
+
+							<div class="row ms-row-mar">
+								<div class="col-lg-12">
+									<div class="text-border">
+									<div class="input-group">
+				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png"></div>
+				      						
+				      						<textarea placeholder= "MESSAGE/FEEDBACK/REQUEST" class="form-control placeholder-pro" rows="3"></textarea>
+				      					</div>	
+				      					
+									</div>
+								</div>
+							</div><!-- end of text-area row-->
+
+							<div class="attach-file">
+				      			<div class="col-lg-9">
+				      				<br><br>
+				      				<span class="attach-text"><span><img src="/assets/img/talent_acquisition/attach.png"></span><span class="gotham-rounded-bok attach-span">Attach File</span></span>
+				      				<input type="file" id="file-upload">
+				      			</div>
+				      			<div class="col-lg-3 submit-background">
+				      				<br>
+				      				<div class="submit-resume hr-display">
+				      					<p class="hr-display"><img src="/assets/img/talent_acquisition/submit.png"></p>
+				      					<p class="gotham-rounded-bok placeholder-pro">SUBMIT</p>
+
+				      				</div>
+				      			</div>
+				      		</div><!-- end of attach-file-->
+
+						</div><!-- end of postresume -->
 			        </div>
 	            </div>
 	        </div>

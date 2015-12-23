@@ -40,26 +40,36 @@
 	color: #7c7c7c;
 	line-height: 1.8;
 }
+input {
+	color: #000 !important;
+	font: 14px !important;
+	font-family: "gotham-rounded-light !important"; 
+}
 
 /*Placeholder*/
+	
 
 	.placeholder-pro::-moz-placeholder { 
-	   font: 14px gotham-rounded-book; 
-	   color: #6c717d;
+	    font: 14px;
+		font-family: "gotham-rounded-light";
+	    color: #6c717d;
 	}	
 
 	.placeholder-pro::-webkit-input-placeholder {
-		font: 14px gotham-rounded-book;
+		font: 14px;
+		font-family: "gotham-rounded-light";
 		color: #6c717d;
 	}
 
 	.placeholder-pro:-moz-placeholder {
-		font: 14px gotham-rounded-book;
+		font: 14px;
+		font-family: "gotham-rounded-light";
 		color: #6c717d;
 	}
 
 	.placeholder-pro::-ms-input-placeholder {
-		font: 14px gotham-rounded-book;
+		font: 14px;
+		font-family: "gotham-rounded-light";
 		color: #6c717d;
 	}
 
