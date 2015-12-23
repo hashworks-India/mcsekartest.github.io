@@ -57,15 +57,24 @@
       line-height: 0.5;
     }
 
-   /*.scroll-indicators > li.active.change-clr .hw-dot {
+   .scroll-indicators > li.change-clr .hw-dot {
       background-color: #000;
       border-radius: 100%;
       border: 1px solid #000;
     }
 
-    .scroll-indicators > li:nth-child(2n).active .hw-label {
+    .scroll-indicators > li.change-clr .hw-label {
       color: #000;
-    }*/
+    }
+     .scroll-indicators > li.other-li .hw-dot {
+      border-radius: 100%;
+      border: 1px solid #000;
+    }
+
+    .scroll-indicators > li.other-li .hw-label {
+      color: #000;
+    }
+  
 
     .scroll-indicators li a {
       display: inline-block;
