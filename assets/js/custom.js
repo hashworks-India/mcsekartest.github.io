@@ -256,22 +256,33 @@ else {
 
     /* end of job board*/
 
+
+/* current casestudy*/
 $(window).on('load', function() {
   
   var cururl = window.location;
        var curid = cururl.hash.slice(1);
-       $('.hw-casestudy-filter li').each(function(){
-              var dval = $(this).attr("data-value");
+       // $('.hw-casestudy-filter li').each(function(){
+       //        var dval = $(this).attr("data-value");
 
-              if(curid == dval) {
-                $(this).addClass('active tagactive');
-              }
-              else {
-                  $(this).removeClass('active tagactive');
-              }
-          });
+       //        if(curid == dval) {
+       //          $('.hw-casestudy-filter li').removeClass('active tagactive');
+       //          $(this).addClass('active tagactive');
+       //        }
+
+              
+       //        $('.tab-content > .tab-pane').each(function(){
+       //            var contdval = $(this).attr("data-value");
+       //          if(curid == contdval) {
+       //            $('.tab-content > .tab-pane').removeClass('active in');
+       //            $(this).addClass('active in');
+       //          }
+
+       //        });
+       //    });
        case_study_filter(curid);
 });
+/* end of  case study */
 
 
 /* end of tag cloud*/

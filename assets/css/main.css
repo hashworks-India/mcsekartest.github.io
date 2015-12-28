@@ -1182,8 +1182,8 @@ background: #fff;
 		width: 128px;
 		margin-bottom: 12px;
     	margin-right: 14px;
-    	float: left;
-	}
+    	border-radius: 3px;
+    }
 
 	.tab > li:nth-child(3n) {
 		margin-right: 0;
