@@ -13,8 +13,7 @@ banner3:
    	   content: 'We handcraft solutions you love',
    	}
 banner4:
-   - { title: 'Service Delivery',
+   - { title: 'Our thinking',
    	   content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.Assumenda nisi tempore hic, ullam corporis adipisci ratione id illum!',
        link: 'dive deeper',
    	}
-
