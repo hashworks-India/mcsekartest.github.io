@@ -38,7 +38,7 @@
 
 	
 	<!--tabs-->
-	<div class="bs-example line-padding">
+	<div class="bs-example line-padding ">
 			<div class="container-fluid  div-margin-left">
 
 		    <ul class="nav nav-tabs p-flex">
@@ -91,18 +91,18 @@
 					       <div class="div-margin-left">
 
 								<!-- hw-engage-cont hw-service-details -->
-									<div class="hw-engage-cont hw-service-details">
+									<div class="hw-engage-cont hw-service-details ">
 										<!-- row -->
 											<div class="row clearfix">
 
 												<!-- col-width -->
 													<div class="col-lg-2">
 
-														<ul class="tab clearfix">
+														<ul class="tab clearfix hr-display service-li">
 															{% assign boxbg = "tab-box-bg" %}
-															{% for tablist in site.data.Service_Delivery.Accelerate_Business.accelerate %}
+															{% for tablist in site.data.Service_Delivery.Business.titles %}
 
-                                                             <!-- {% capture tab %} {{boxbg}}{{forloop.index0}} {% endcapture %} -->
+                                                             {% capture tab %} {{boxbg}}{{forloop.index0}} {% endcapture %}
 															<li class="tab-box filter {{tab}}" data-tab="{{ tablist.title}}"><a href="javascript:void(0)" class="hw-para gotham-rounded-light">{{ tablist.title}}</a></li>
 
 															{% endfor %}
@@ -112,67 +112,81 @@
 												<!-- End of col-width -->
 
 												<!-- custom-10 -->
-													<div class="col-lg-10">
+													<div class="col-lg-10 service-tab">
+
+															<div class="row">
+																<div class="col-lg-6">
+																	<h2 class="gotham-rounded-bok hw-heading  h2-color">{{site.data.Service_Delivery.Business.culture.part1[0].title}}</h2>
+																	<div>
+																		<p class="hw-para gotham-rounded-light">{{site.data.Service_Delivery.Business.culture.part1[0].content}}
+																		</p>
+																	</div>
+																</div>
+
+																<div class="col-lg-6">
+																	<div class="img-right img-outer">
+																		<img src="/assets/img/homepage/it-services.jpg"  alt="it-service">
+																	</div>
+																</div>
+															</div>
+
+
 														<div class="row">
-														<!-- tab-details -->
-														<div class="col-lg-6">
-															<div class="tab-details">
 
-																<!-- tab-cont -->
-																	{% for tablist in site.data.Service_Delivery.Business.accelerate %}
-																		{% if forloop.first %}
-																			<div class="tab-cont filter-content active" data-value="{{ tablist.title}}">
-																				<h3 class="text-uppercase gotham-rounded-bold hw-heading">{{ tablist.title}}</h3>
-																				<p class="hw-para gotham-rounded-light">{{ tablist.content}}</p>
-																			</div>
-																		{% else %}
-																			<div class="tab-cont filter-content" data-value="{{ tablist.title}}">
-																				<h3 class="text-uppercase gotham-rounded-bold hw-heading">{{ tablist.title}}</h3>
-																				<p class="hw-para gotham-rounded-light">{{ tablist.content}}</p>
-																			</div>
-																		{% endif %}
-																	{% endfor %}
-																<!-- End of tab-cont -->
-
+															<div class="col-lg-5">
+																<div class="img-outer">
+																	<img src="/assets/img/homepage/job-board.jpg"  alt="it-service">
+																</div>
 															</div>
-														<!-- End of tab-details -->
 
-													</div>
-												<!-- End of custom-col-->
-
-												<!-- custom-col -->
-													<div class="col-lg-6">
-														
-														<!-- tab-details -->
-															<div class="tab-details">
-
-																<!-- tab-cont -->
-																	{% for tablist in site.data.Service_Delivery.Business.accelerate %}
-																		{% if forloop.first %}
-																			<div class="tab-cont filter-content active" data-value="{{ tablist.title}}">
-																				<h3 class="text-uppercase gotham-rounded-bold hw-heading">{{ tablist.title}}</h3>
-																				<p class="hw-para gotham-rounded-light">{{ tablist.content}}</p>
-																			</div>
-																		{% else %}
-																			<div class="tab-cont filter-content" data-value="{{ tablist.title}}">
-																				<h3 class="text-uppercase gotham-rounded-bold hw-heading">{{ tablist.title}}</h3>
-																				<p class="hw-para gotham-rounded-light">{{ tablist.content}}</p>
-																			</div>
-																		{% endif %}
-																	{% endfor %}
-																<!-- End of tab-cont -->
-
+															<div class="col-lg-7">
+																<h2 class="gotham-rounded-bok hw-heading  h2-color">{{site.data.Service_Delivery.Business.culture.part2[0].title}}</h2>
+																<div>
+																	<p class="hw-para gotham-rounded-light">{{site.data.Service_Delivery.Business.culture.part2[0].content}}
+																	</p>
+																</div>
+																
 															</div>
-														<!-- End of tab-details -->
 
+														</div>
+														<div class="row">
+																<div class="col-lg-6">
+																	<h2 class="gotham-rounded-bok hw-heading  h2-color">{{site.data.Engage_Us.engageus.part1[0].title}}</h2>
+																	<div>
+																		<p class="hw-para gotham-rounded-light">{{site.data.Engage_Us.engageus.part1[0].content}}
+																		</p>
+																	</div>
+																</div>
+
+																<div class="col-lg-6">
+																	<div class="img-right img-outer">
+																		<img src="/assets/img/homepage/it-services.jpg"  alt="it-service">
+																	</div>
+																</div>
+															</div>
+
+
+														<div class="row">
+
+															<div class="col-lg-5">
+																<div class="img-outer">
+																	<img src="/assets/img/homepage/job-board.jpg"  alt="it-service">
+																</div>
+															</div>
+
+															<div class="col-lg-7">
+																<h2 class="gotham-rounded-bok hw-heading  h2-color">{{site.data.Engage_Us.engageus.part2[0].title}}</h2>
+																<div>
+																	<p class="hw-para gotham-rounded-light">{{site.data.Engage_Us.engageus.part2[0].content}}
+																	</p>
+																</div>
+																
+															</div>
+
+														</div>
 													</div>
-												<!-- End of custom-col-->
+
 												</div>
-														
-
-											</div>
-										<!--End of row-->
-									</div>
 								<!-- End of hw-engage-cont hw-service-details -->
 
 							</div>

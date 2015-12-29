@@ -1291,7 +1291,13 @@ background: #fff;
 		margin:16px 0px;
 	}
 	.service-img-mar {
-		margin-top:80px;
+		margin-top:50px;
+	}
+	.service-fixed {
+		position: fixed;
+		top:55px;
+		margin: 0 32px;
+		z-index: 10;
 	}
 
 

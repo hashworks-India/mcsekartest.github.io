@@ -7,6 +7,14 @@ $(document).ready(function(){
     });
 // js for carousel platform integeration
 
+/* smoth scroll*/
+
+  $('.nav-tabs > li a').click(function(){
+        var navtab = $(this).parents('.nav-tabs').offset().top - 50;
+          $('html, body').animate({
+            scrollTop: navtab}, 1500, 'linear');
+    });
+
   
   //homepage dropdown
    $(".dropdown-link .dropdown").css({display: "none"});
@@ -36,6 +44,7 @@ $(document).ready(function(){
         //fixed header
     $(document).scroll(function(){
       var main = $(this).scrollTop();
+
       if(main >= 51) {
         if(!$('header').hasClass('hw-home')) {
           $("header nav").addClass('hw-fixed-header');
@@ -186,11 +195,13 @@ $(document).ready(function(){
       // service details
         $('.filter').click(function(){
           var dtab = $(this).attr("data-tab");
+          alert(dtab);
           $('.filter').removeClass('active');
           $(this).addClass('active');
 
           $('.filter-content').each(function(){
               var dval = $(this).attr("data-value");
+              alert(dval);
 
               if(dtab == dval) {
                 $(this).addClass('active');
@@ -256,33 +267,53 @@ else {
 
     /* end of job board*/
 
-
-/* current casestudy*/
 $(window).on('load', function() {
-  
-  var cururl = window.location;
-       var curid = cururl.hash.slice(1);
-       // $('.hw-casestudy-filter li').each(function(){
-       //        var dval = $(this).attr("data-value");
+      
+          var cururl = window.location;
+           var curid = cururl.hash.slice(1);
+           $('.hw-casestudy-filter li').each(function(){
+                  var dval = $(this).attr("data-value");
 
-       //        if(curid == dval) {
-       //          $('.hw-casestudy-filter li').removeClass('active tagactive');
-       //          $(this).addClass('active tagactive');
-       //        }
+                  if(curid == dval) {
+                    $(this).addClass('active tagactive');
+                  }
+                  else {
+                      $(this).removeClass('active tagactive');
+                  }
+            });
+           
+           tabchange(curid);
+           case_study_filter(curid);
+    });
 
-              
-       //        $('.tab-content > .tab-pane').each(function(){
-       //            var contdval = $(this).attr("data-value");
-       //          if(curid == contdval) {
-       //            $('.tab-content > .tab-pane').removeClass('active in');
-       //            $(this).addClass('active in');
-       //          }
+    //url change event
+    $(window).on('hashchange', function(e){
+        var cururl = window.location;
+        var curid = cururl.hash.slice(1);
+        tabchange(curid);
+    });
 
-       //        });
-       //    });
-       case_study_filter(curid);
-});
-/* end of  case study */
+    //onclick header menu, add active class to the respective tab and tab-content
+    var tabchange = function(curid){
+        if($('.nav-tabs').hasClass('hw-tablink')) {
+
+                $('.hw-tablink li').each(function(){
+                  var dtabval = $(this).attr('data-value');
+                  if(curid == dtabval) {
+                    $('.hw-tablink li').removeClass('active');
+                        $(this).addClass('active');
+                    }
+                });
+
+                $('.hw-tabcont-link > div').each(function(){
+                  var tabcont = $(this).attr('data-value');
+                  if(curid == tabcont) {
+                    $('.hw-tabcont-link > div').removeClass('active in');
+                        $(this).addClass('active in');
+                    }
+                });
+            }
+    }
 
 
 /* end of tag cloud*/
