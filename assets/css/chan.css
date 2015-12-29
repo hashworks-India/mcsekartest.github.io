@@ -83,6 +83,10 @@
     .footer .social-icons:last-child {
         margin-right: 0;
     }
+
+    .hm-shows-love .social-icons{
+        margin-right: 10px;
+    }
 /*footer*/
 
 

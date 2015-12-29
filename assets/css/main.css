@@ -162,6 +162,9 @@ html {
 	.clr-white {
 		color: #fff;
 	}
+	.clr-black {
+		color: #555;
+	}
 	.cntr-fluid-padding {
 		padding-right: 0px;
 		padding-left: 0px;
@@ -1273,6 +1276,22 @@ background: #fff;
 	.home-approch {
 		padding:15px 0px;	
 		text-align: center;
+	}
+	.partner-row {
+		margin-top: 60px;
+	}
+	.service-col-padding {
+		padding: 0px 30px;
+	}
+	.partner-content {
+		text-align: justify;
+		margin:10px 0px;
+	}
+	.partner-title {
+		margin:16px 0px;
+	}
+	.service-img-mar {
+		margin-top:80px;
 	}
 
 

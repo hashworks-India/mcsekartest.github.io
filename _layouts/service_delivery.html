@@ -30,14 +30,7 @@
 				    </div>
 				</div>
 
-			<!-- <a class="left carousel-control carousel-indicatr-pos" href="#myCarousel" role="button" data-slide="prev">
-			 <img src="/assets/img/solutions/carousel-indi-1.jpg">
-			<span class="sr-only">Previous</span>
-			</a>
-			<a class="right carousel-control carousel-indicatr-pos" href="#myCarousel" role="button" data-slide="next">
-			<img src="/assets/img/solutions/carousel-indi.jpg">
-			<span class="sr-only">Next</span>
-			</a> -->
+			
 	 	</div>
 	 	</div>
 	<!-- end of carousel-->
@@ -109,15 +102,10 @@
 															{% assign boxbg = "tab-box-bg" %}
 															{% for tablist in site.data.Service_Delivery.Accelerate_Business.accelerate %}
 
-                                                             {% capture tab %} {{boxbg}}{{forloop.index0}} {% endcapture %}
-
-
-																	
+                                                             <!-- {% capture tab %} {{boxbg}}{{forloop.index0}} {% endcapture %} -->
 															<li class="tab-box filter {{tab}}" data-tab="{{ tablist.title}}"><a href="javascript:void(0)" class="hw-para gotham-rounded-light">{{ tablist.title}}</a></li>
 
 															{% endfor %}
-															
-															
 														</ul>
 														
 													</div>
@@ -131,7 +119,7 @@
 															<div class="tab-details">
 
 																<!-- tab-cont -->
-																	{% for tablist in site.data.Service_Delivery.Accelerate_Business.accelerate %}
+																	{% for tablist in site.data.Service_Delivery.Business.accelerate %}
 																		{% if forloop.first %}
 																			<div class="tab-cont filter-content active" data-value="{{ tablist.title}}">
 																				<h3 class="text-uppercase gotham-rounded-bold hw-heading">{{ tablist.title}}</h3>
@@ -159,7 +147,7 @@
 															<div class="tab-details">
 
 																<!-- tab-cont -->
-																	{% for tablist in site.data.Service_Delivery.Accelerate_Business.accelerate %}
+																	{% for tablist in site.data.Service_Delivery.Business.accelerate %}
 																		{% if forloop.first %}
 																			<div class="tab-cont filter-content active" data-value="{{ tablist.title}}">
 																				<h3 class="text-uppercase gotham-rounded-bold hw-heading">{{ tablist.title}}</h3>
@@ -203,59 +191,75 @@
 
 								<!-- hw-engage-cont hw-service-details -->
 									<div class="hw-engage-cont hw-service-details">
+										
 										<!-- row -->
-											<div class="row clearfix">
+												<div class="row clearfix">
 
-												<!-- col-width -->
-													<div class="col-width">
-
-														<ul class="tab clearfix">
-															{% assign boxbg = "tab-box-bg" %}
-															{% for tablist in site.data.Service_Delivery.Engage_Us.engageus %}
-
-                                                             {% capture tab %} {{boxbg}}{{forloop.index0}} {% endcapture %}
-																	
-															<li class="tab-box filter {{tab}}" data-tab="{{ tablist.title}}"><a href="javascript:void(0)" class="hw-para gotham-rounded-light">{{ tablist.title}}</a></li>
-
-															{% endfor %}
-															
-															
-														</ul>
-														
+													{% for tablist in site.data.Service_Delivery.we_partner.we_partner  %}
+													{% if forloop.first %}
+													<div class="col-lg-4 service-col-padding ">
+														<div class="partner-icon hr-display">
+															<img src="{{ tablist.imagesrc }}">
+														</div>
+														<div class="partner-title">
+															<p class="gotham-rounded-bold hw-heading text-center clr-black">{{ tablist.title}}</p>
+														</div>
+														<div class="partner-content">
+															<p class="gotham-rounded-bok hw-copyright ">{{ tablist.content}}</p>
+														</div>									
 													</div>
-												<!-- End of col-width -->
-
-												<!-- custom-col -->
-													<div class="custom-col">
-														
-														<!-- tab-details -->
-															<div class="tab-details">
-
-																<!-- tab-cont -->
-																	{% for tablist in site.data.Service_Delivery.Engage_Us.engageus %}
-																		{% if forloop.first %}
-																			<div class="tab-cont filter-content active" data-value="{{ tablist.title}}">
-																				<h3 class="text-uppercase gotham-rounded-bold hw-heading">{{ tablist.title}}</h3>
-																				<p class="hw-para gotham-rounded-light">{{ tablist.content}}</p>
-																			</div>
-																		{% else %}
-																			<div class="tab-cont filter-content" data-value="{{ tablist.title}}">
-																				<h3 class="text-uppercase gotham-rounded-bold hw-heading">{{ tablist.title}}</h3>
-																				<p class="hw-para gotham-rounded-light">{{ tablist.content}}</p>
-																			</div>
-																		{% endif %}
-																	{% endfor %}
-																<!-- End of tab-cont -->
-
-															</div>
-														<!-- End of tab-details -->
-
+													{% else %}
+													<div class="col-lg-4 service-col-padding ">
+														<div class="partner-icon hr-display">
+															<img src="{{ tablist.imagesrc }}">
+														</div>
+														<div class="partner-title">
+															<p class="gotham-rounded-bold hw-heading text-center clr-black">{{ tablist.title}}</p>
+														</div>
+														<div class="partner-content">
+															<p class="gotham-rounded-bok hw-copyright ">{{ tablist.content}}</p>
+														</div>									
 													</div>
-												<!-- End of custom-col-->
+													{% endif %}
+													{% endfor %}
 
+													
+												</div><!--End of row-->
+										
+												<!-- row -->
+												<div class="row clearfix partner-row">
 
-											</div>
-										<!--End of row-->
+													{% for tablist in site.data.Service_Delivery.we_partner.we_partner1 %}
+													{% if forloop.first %}
+													<div class="col-lg-4 service-col-padding ">
+														<div class="partner-icon hr-display">
+															<img src="{{ tablist.imagesrc }}">
+														</div>
+														<div class="partner-title">
+															<p class="gotham-rounded-bold hw-heading text-center clr-black">{{ tablist.title}}</p>
+														</div>
+														<div class="partner-content">
+															<p class="gotham-rounded-bok hw-copyright ">{{ tablist.content}}</p>
+														</div>									
+													</div>
+													{% else %}
+													<div class="col-lg-4 service-col-padding ">
+														<div class="partner-icon hr-display">
+															<img src="{{ tablist.imagesrc }}">
+														</div>
+														<div class="partner-title">
+															<p class="gotham-rounded-bold hw-heading text-center clr-black">{{ tablist.title}}</p>
+														</div>
+														<div class="partner-content">
+															<p class="gotham-rounded-bok hw-copyright ">{{ tablist.content}}</p>
+														</div>									
+													</div>
+													{% endif %}
+													{% endfor %}
+
+													
+												</div><!--End of row-->
+																				
 									</div>
 								<!-- End of hw-engage-cont hw-service-details -->
 
@@ -276,64 +280,16 @@
 									<div class="hw-engage-cont hw-service-details">
 										<!-- row -->
 											<div class="row clearfix">
-
-												<!-- col-width -->
-													<div class="col-width">
-
-														<ul class="tab clearfix">
-															{% assign boxbg = "tab-box-bg" %}
-															{% for tablist in site.data.Service_Delivery.Our_Offering.our_offering %}
-
-															{% capture tab %} {{boxbg}}{{forloop.index0}} {% endcapture %}
-																	
-															<li class="tab-box filter {{tab}}" data-tab="{{ tablist.title}}"><a href="javascript:void(0)" class="hw-para gotham-rounded-light">{{ tablist.title}}</a></li>
-
-															{% endfor %}
-															
-															
-														</ul>
-														
-													</div>
-												<!-- End of col-width -->
-
-												<!-- custom-col -->
-													<div class="custom-col">
-														
-														<!-- tab-details -->
-															<div class="tab-details">
-
-																<!-- tab-cont -->
-																	{% for tablist in site.data.Service_Delivery.Our_Offering.our_offering %}
-																		{% if forloop.first %}
-																			<div class="tab-cont filter-content active" data-value="{{ tablist.title}}">
-																				<h3 class="text-uppercase gotham-rounded-bold hw-heading">{{ tablist.title}}</h3>
-																				<p class="hw-para gotham-rounded-light">{{ tablist.content}}</p>
-																			</div>
-																		{% else %}
-																			<div class="tab-cont filter-content" data-value="{{ tablist.title}}">
-																				<h3 class="text-uppercase gotham-rounded-bold hw-heading">{{ tablist.title}}</h3>
-																				<p class="hw-para gotham-rounded-light">{{ tablist.content}}</p>
-																			</div>
-																		{% endif %}
-																	{% endfor %}
-																<!-- End of tab-cont -->
-
-															</div>
-														<!-- End of tab-details -->
-
-													</div>
-												<!-- End of custom-col-->
-
-
+												<div>
+													<p class="gotham-rounded-bold hw-heading text-center clr-black">{{site.data.Service_Delivery.Engage_Us.engageus.title }}</p>
+													<p class="gotham-rounded-bok hw-heading text-center">{{ site.data.Service_Delivery.Engage_Us.engageus.content }}</p>
+												</div>
+												<div class="hr-display service-img-mar">
+												<img src="/assets/img/service-del/engagement.jpg">
+												</div>
 											</div>
-										<!--End of row-->
 									</div>
-								<!-- End of hw-engage-cont hw-service-details -->
-
-
 							</div>
-						<!-- end of container-->
-
 						</div>
 		   		<!-- end of tab1 -->
 
@@ -347,55 +303,13 @@
 									<div class="hw-engage-cont hw-service-details">
 										<!-- row -->
 											<div class="row clearfix">
-
-												<!-- col-width -->
-													<div class="col-width">
-
-														<ul class="tab clearfix">
-															{% assign boxbg = "tab-box-bg" %}
-															{% for tablist in site.data.Service_Delivery.We_Deliver.we_deliver %}
-
-															{% capture tab %} {{boxbg}}{{forloop.index0}} {% endcapture %}
-																	
-															<li class="tab-box filter {{tab}}" data-tab="{{ tablist.title}}"><a href="javascript:void(0)" class="hw-para gotham-rounded-light">{{ tablist.title}}</a></li>
-
-															{% endfor %}
-															
-															
-														</ul>
-														
-													</div>
-												<!-- End of col-width -->
-
-												<!-- custom-col -->
-													<div class="custom-col">
-														
-														<!-- tab-details -->
-															<div class="tab-details">
-
-																<!-- tab-cont -->
-																	{% for tablist in site.data.Service_Delivery.We_Deliver.we_deliver %}
-																		{% if forloop.first %}
-																			<div class="tab-cont filter-content active" data-value="{{ tablist.title}}">
-																				<h3 class="text-uppercase gotham-rounded-bold hw-heading">{{ tablist.title}}</h3>
-																				<p class="hw-para gotham-rounded-light">{{ tablist.content}}</p>
-																			</div>
-																		{% else %}
-																			<div class="tab-cont filter-content" data-value="{{ tablist.title}}">
-																				<h3 class="text-uppercase gotham-rounded-bold hw-heading">{{ tablist.title}}</h3>
-																				<p class="hw-para gotham-rounded-light">{{ tablist.content}}</p>
-																			</div>
-																		{% endif %}
-																	{% endfor %}
-																<!-- End of tab-cont -->
-
-															</div>
-														<!-- End of tab-details -->
-
-													</div>
-												<!-- End of custom-col-->
-
-
+												<div>
+													<p class="gotham-rounded-bold hw-heading text-center clr-black">{{site.data.Service_Delivery.Delivery_model.delivery_model.title }}</p>
+													<p class="gotham-rounded-bok hw-heading text-center">{{ site.data.Service_Delivery.Delivery_model.delivery_model.content }}</p>
+												</div>
+												<div class="hr-display service-img-mar">
+												<img src="/assets/img/service-del/deliver.jpg">
+												</div>
 											</div>
 										<!--End of row-->
 									</div>

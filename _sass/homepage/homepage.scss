@@ -181,7 +181,7 @@
      }
      .hm-contact {
       position: absolute;
-      right: 15%;
+      right: 19%;
       top: 5%;
       color: #000;
       }
@@ -201,7 +201,7 @@
           float: right;
       }
       .last-icon {
-        margin-right: 10px;
+        margin-right: 20px;
       }
       .it-solution {
         background-color: #0ab4c5;
@@ -244,7 +244,7 @@
         border-bottom: 10px solid transparent;
         position: absolute;
         border-right: 10px solid #B9BECD;
-        left: -10px;
+        left: -9px;
         top: 21%
       }
       .hm_it{
@@ -252,6 +252,13 @@
       }
       .form-container .post-resume {
           margin-top:30px;
+      }
+      .col-padding {
+        padding: 10px;
+        text-align: center;
+      }
+      .hm-talk-btn {
+        padding-left: 60px;
       }
       
 
@@ -271,7 +278,7 @@
         #start-project .close-pop {
           height: 3%;
           position: absolute;
-          right: 10%;
+          right: 14%;
           top: 5%;
           cursor: pointer;
         }
