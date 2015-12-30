@@ -150,6 +150,11 @@
         margin: 0 auto;
         transform: translate(-50%,-50%);
       }
+
+      .app-banner .latest-think {
+        color: #fff;
+      }
+      
       .latest-think { 
         color: #040404;
         top: 25%;
@@ -272,6 +277,32 @@
   /*End of indicators*/
 
 /*End of scroll-indicators*/
+
+/* Product Landing Transparent Triangle */
+    .app-banner {
+      overflow: hidden;
+    }
+
+    .app-banner .triangle {
+        height: 0;
+        position: absolute;
+        width: 0;
+    }
+
+    .app-banner .triangle.top {
+        border-right: 1625.2px solid transparent;
+        border-top: 826px solid rgba(20, 24, 31, 0.92);
+        left: 0;
+        top: 0;
+    }
+
+    .app-banner .triangle.bottom {
+        border-bottom: 510px solid rgba(230, 43, 117, 0.9);
+        border-left: 1010.8px solid transparent;
+        bottom: 0px;
+        right: 0px;
+    }
+/* End of Product Landing Transparent Trianle*/
 
 /*hashworks - join us form*/
 
