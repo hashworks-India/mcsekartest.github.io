@@ -1307,5 +1307,7 @@ background: #fff;
         max-width: 1400px;
         display: table;
         margin: 0 auto;
+        height:100%;
+        width:100%;
     }
 }*/
