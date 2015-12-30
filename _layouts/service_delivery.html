@@ -93,27 +93,37 @@
 								<!-- hw-engage-cont hw-service-details -->
 									<div class="hw-engage-cont hw-service-details ">
 										<!-- row -->
-											<div class="row clearfix">
-
-												<!-- col-width -->
-													<div class="col-lg-2">
-
-														<ul class="tab clearfix hr-display service-li">
-															{% assign boxbg = "tab-box-bg" %}
-															{% for tablist in site.data.Service_Delivery.Business.titles %}
-
-                                                             {% capture tab %} {{boxbg}}{{forloop.index0}} {% endcapture %}
-															<li class="tab-box filter {{tab}}" data-tab="{{ tablist.title}}"><a href="javascript:void(0)" class="hw-para gotham-rounded-light">{{ tablist.title}}</a></li>
-
-															{% endfor %}
-														</ul>
-														
+											<div class="row">
+												
+													<div class="col-lg-3">
+														<div class="hr-display service-tabs-left">
+															<div class="service-line">
+															</div>
+																<div class="service-icons service-icon1 filter" data-tab="culture">
+																	<div class="service-tab-text service1"><p class="hw-copyright clr-black gotham-rounded-bok ">Culture</p>
+																	</div>
+																</div>
+																<div class="service-icons service-icon2 filter" data-tab="we_resolve">
+																	<div class="service-tab-text service2"><p class="hw-copyright clr-black gotham-rounded-bok ">We Resolve</p>
+																	</div>
+																</div>
+																<div class="service-icons service-icon3 filter" data-tab="we_parctice">
+																	<div class="service-tab-text service3"><p class="hw-copyright clr-black gotham-rounded-bok ">We Practice</p>
+																	</div>
+																</div>
+																<div class="service-icons service-icon4 filter" data-tab="we_accelarat">
+																	<div class="service-tab-text service4"><p class="hw-copyright clr-black gotham-rounded-bok ">We Accelarate</p>
+																	</div>
+																</div>
+															
+														</div>
 													</div>
-												<!-- End of col-width -->
+												
 
 												<!-- custom-10 -->
-													<div class="col-lg-10 service-tab">
+													<div class="col-lg-9 service-tab">
 
+														<div class="culture_tab filter-content active" data-value="culture">
 															<div class="row">
 																<div class="col-lg-6">
 																	<h2 class="gotham-rounded-bok hw-heading  h2-color">{{site.data.Service_Delivery.Business.culture.part1[0].title}}</h2>
@@ -133,13 +143,13 @@
 
 														<div class="row">
 
-															<div class="col-lg-5">
+															<div class="col-lg-6">
 																<div class="img-outer">
 																	<img src="/assets/img/homepage/job-board.jpg"  alt="it-service">
 																</div>
 															</div>
 
-															<div class="col-lg-7">
+															<div class="col-lg-6">
 																<h2 class="gotham-rounded-bok hw-heading  h2-color">{{site.data.Service_Delivery.Business.culture.part2[0].title}}</h2>
 																<div>
 																	<p class="hw-para gotham-rounded-light">{{site.data.Service_Delivery.Business.culture.part2[0].content}}
@@ -149,11 +159,14 @@
 															</div>
 
 														</div>
-														<div class="row">
+													</div><!--end of culture-->
+
+													<div class="resolve_tab filter-content" data-value="we_resolve">
+															<div class="row">
 																<div class="col-lg-6">
-																	<h2 class="gotham-rounded-bok hw-heading  h2-color">{{site.data.Engage_Us.engageus.part1[0].title}}</h2>
+																	<h2 class="gotham-rounded-bok hw-heading  h2-color">{{site.data.Service_Delivery.Business.we_resolve.part1[0].title}}</h2>
 																	<div>
-																		<p class="hw-para gotham-rounded-light">{{site.data.Engage_Us.engageus.part1[0].content}}
+																		<p class="hw-para gotham-rounded-light">{{site.data.Service_Delivery.Business.we_resolve.part1[0].content}}
 																		</p>
 																	</div>
 																</div>
@@ -168,22 +181,105 @@
 
 														<div class="row">
 
-															<div class="col-lg-5">
+															<div class="col-lg-6">
 																<div class="img-outer">
 																	<img src="/assets/img/homepage/job-board.jpg"  alt="it-service">
 																</div>
 															</div>
 
-															<div class="col-lg-7">
-																<h2 class="gotham-rounded-bok hw-heading  h2-color">{{site.data.Engage_Us.engageus.part2[0].title}}</h2>
+															<div class="col-lg-6">
+																<h2 class="gotham-rounded-bok hw-heading  h2-color">{{site.data.Service_Delivery.Business.we_resolve.part2[0].title}}</h2>
 																<div>
-																	<p class="hw-para gotham-rounded-light">{{site.data.Engage_Us.engageus.part2[0].content}}
+																	<p class="hw-para gotham-rounded-light">{{site.data.Service_Delivery.Business.we_resolve.part2[0].content}}
 																	</p>
 																</div>
 																
 															</div>
 
 														</div>
+													</div><!--end of we resolve-->
+
+													<div class="resolve_tab filter-content" data-value="we_parctice">
+															<div class="row">
+																<div class="col-lg-6">
+																	<h2 class="gotham-rounded-bok hw-heading  h2-color">{{site.data.Service_Delivery.Business.we_practice.part1[0].title}}</h2>
+																	<div>
+																		<p class="hw-para gotham-rounded-light">{{site.data.Service_Delivery.Business.we_practice.part1[0].content}}
+																		</p>
+																	</div>
+																</div>
+
+																<div class="col-lg-6">
+																	<div class="img-right img-outer">
+																		<img src="/assets/img/homepage/it-services.jpg"  alt="it-service">
+																	</div>
+																</div>
+															</div>
+
+															
+														<div class="row">
+
+															<div class="col-lg-6">
+																<div class="img-outer">
+																	<img src="/assets/img/homepage/job-board.jpg"  alt="it-service">
+																</div>
+															</div>
+
+															<div class="col-lg-6">
+																<h2 class="gotham-rounded-bok hw-heading  h2-color">{{site.data.Service_Delivery.Business.we_practice.part2[0].title}}</h2>
+																<div>
+																	<p class="hw-para gotham-rounded-light">{{site.data.Service_Delivery.Business.we_practice.part2[0].content}}
+																	</p>
+																</div>
+																
+															</div>
+
+														</div>
+													</div><!--end of we pratice-->
+
+													<div class="resolve_tab filter-content" data-value="we_accelarat">
+															<div class="row">
+																<div class="col-lg-6">
+																	<h2 class="gotham-rounded-bok hw-heading  h2-color">{{site.data.Service_Delivery.Business.we_accelarate.part1[0].title}}</h2>
+																	<div>
+																		<p class="hw-para gotham-rounded-light">{{site.data.Service_Delivery.Business.we_accelarate.part1[0].content}}
+																		</p>
+																	</div>
+																</div>
+
+																<div class="col-lg-6">
+																	<div class="img-right img-outer">
+																		<img src="/assets/img/homepage/it-services.jpg"  alt="it-service">
+																	</div>
+																</div>
+															</div>
+
+															
+														<div class="row">
+
+															<div class="col-lg-6">
+																<div class="img-outer">
+																	<img src="/assets/img/homepage/job-board.jpg"  alt="it-service">
+																</div>
+															</div>
+
+															<div class="col-lg-6">
+																<h2 class="gotham-rounded-bok hw-heading  h2-color">{{site.data.Service_Delivery.Business.we_accelarate.part2[0].title}}</h2>
+																<div>
+																	<p class="hw-para gotham-rounded-light">{{site.data.Service_Delivery.Business.we_accelarate.part2[0].content}}
+																	</p>
+																</div>
+																
+															</div>
+
+														</div>
+													</div><!--end of we accelarate-->
+														
+														
+														
+
+
+												
 													</div>
 
 												</div>

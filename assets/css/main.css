@@ -163,7 +163,7 @@ html {
 		color: #fff;
 	}
 	.clr-black {
-		color: #555;
+		color: #000;
 	}
 	.cntr-fluid-padding {
 		padding-right: 0px;
@@ -1299,15 +1299,74 @@ background: #fff;
 		margin: 0 32px;
 		z-index: 10;
 	}
+	.service-line {
+		width: 5px;
+		color: #555;
+		background-color: #0ab4c5;
+		height: 500px;
+		border: 1px solid #0ab4c5;
+		position: relative;
+	}
+	.service-icons {
+		border: 1px solid #EE2B7B;
+		width: 65px;
+		border-radius: 100%;
+		height: 60px;
+		position: absolute;
+		left: 64%;
+		background-color: #EE2B7B;
+		box-shadow: -1px 0px 4px 2px #fff;
+	}
+	.service-icon1 {
+		top: 8%;
+	}
+	.service-icon2 {
+		top: 33%;
+	}
+	.service-icon3 {
+		top: 60%;
+	}
+	.service-icon4 {
+		top: 85%;
+	}
+	.service-tab-text {
+		position: absolute;
+		top: 33%;
+	}
+	.service-tabs-left {
+		margin-top: 25px;
+		margin-right: 55px;
+	}
+	.service1 {
+		left: -100%;
+	}
+	.service2 {
+		left: -155%;
+	}
+	.service3 {
+		left: -155%;
+	}
+	.service4 {
+		left: -185%;
+	}
 
 
 
-/*@media screen and (min-width: 1400px) {
+/*@media screen and (min-width: 1500px) {
     body {
-        max-width: 1400px;
+        max-width: 1500px;
         display: table;
         margin: 0 auto;
-        height:100%;
-        width:100%;
+        height: 100%;
+        width: 100%;
+    }
+
+    header .navbar-default,
+    .hw-fixed-heading {
+    	max-width: 1500px;
+    }
+
+    .logo {
+    	padding-left: 15px;
     }
 }*/

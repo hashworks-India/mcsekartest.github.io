@@ -195,13 +195,13 @@ $(document).ready(function(){
       // service details
         $('.filter').click(function(){
           var dtab = $(this).attr("data-tab");
-          alert(dtab);
+          
           $('.filter').removeClass('active');
           $(this).addClass('active');
 
           $('.filter-content').each(function(){
               var dval = $(this).attr("data-value");
-              alert(dval);
+              
 
               if(dtab == dval) {
                 $(this).addClass('active');
