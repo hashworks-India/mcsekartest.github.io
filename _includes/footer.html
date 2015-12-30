@@ -46,8 +46,7 @@
 {% if page.url == "/service_delivery/" %}
   <script>
     $(document).ready(function(){
-      alert();
-      $(document).scroll(function(){
+     $(document).scroll(function(){
         var main = $(this).scrollTop();
         var divsize = $('.service-tab').offset().top - 50;
         var servht = divsize + $('.service-tab').height();
