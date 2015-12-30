@@ -267,7 +267,7 @@ else {
 
     /* end of job board*/
 
-$(window).on('load', function() {
+    $(window).on('load', function() {
       
           var cururl = window.location;
            var curid = cururl.hash.slice(1);
@@ -314,6 +314,17 @@ $(window).on('load', function() {
                 });
             }
     }
+
+    $('.nav-tabs > li a').click(function(){
+        var navtab = $(this).parents('.nav-tabs').offset().top - 50;
+          $('html, body').animate({
+            scrollTop: navtab}, 1500, 'linear');
+    });
+
+    $(".nav-tabs a").click(function(){
+        $(this).tab('show');
+    });
+
 
 
 /* end of tag cloud*/
