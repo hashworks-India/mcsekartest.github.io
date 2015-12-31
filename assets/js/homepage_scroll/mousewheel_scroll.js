@@ -136,6 +136,23 @@ $(document).ready(function(){
         $('.appln-statergies').addClass('hide');
     });
 
+    $(window).resize(function(){
+        triangleborder();
+    });
+
+    triangleborder();
+
+    function triangleborder() {
+        var height = window.innerHeight;
+        height = height < 700 ? 700 : height;
+        height = height > 958 ? 958 : height;
+        
+        $('.app-banner').height(height);
+        
+        $('.app-banner .triangle.top').css({'border-top-width': (height*2), 'border-right-width': (window.innerWidth*2)});
+        $('.app-banner .triangle.bottom').css({'border-bottom-width': (height*0.8), 'border-left-width': (window.innerWidth*0.8)});
+    }
+
 
 
 });
