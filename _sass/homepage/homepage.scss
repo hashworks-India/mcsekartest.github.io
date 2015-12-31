@@ -73,8 +73,12 @@
       position: relative;
     }
 
+    .blog-img1 {
+       background: transparent url("/assets/img/landingpage/banner-4.jpg") no-repeat scroll bottom center;
+    }
+
     .hw-scroll .scroll-anim:nth-child(2) {
-      background: transparent url("/assets/img/landingpage/banner-2.jpg") no-repeat scroll bottom center / cover;
+     
     }
 
     .hw-scroll .scroll-anim:nth-child(3) {
@@ -251,7 +255,7 @@
      }
      .hm-contact {
       position: absolute;
-      right: 19%;
+      right: 14%;
       top: 5%;
       color: #000;
       }
@@ -354,8 +358,14 @@
     }
 
     .app-banner .triangle.top {
-        border-right: 1625.2px solid transparent;
-        border-top: 826px solid rgba(20, 24, 31, 0.92);
+        border-right:  1625.2px solid transparent;
+        border-top: 826px solid rgba(20, 24, 31, 0.88);
+        left: 0;
+        top: 0;
+    }
+    .blog-transparent {
+      
+        border-top: 826px solid rgba(20, 24, 31, 0.78);
         left: 0;
         top: 0;
     }
@@ -378,7 +388,7 @@
         #start-project .close-pop {
           height: 3%;
           position: absolute;
-          right: 14%;
+          right: 10%;
           top: 5%;
           cursor: pointer;
         }
