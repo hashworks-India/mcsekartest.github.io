@@ -1313,7 +1313,7 @@ background: #fff;
 		border-radius: 100%;
 		height: 60px;
 		position: absolute;
-		left: 64%;
+		left: 50%;
 		background-color: #EE2B7B;
 		box-shadow: -1px 0px 4px 2px #fff;
 	}
@@ -1331,11 +1331,11 @@ background: #fff;
 	}
 	.service-tab-text {
 		position: absolute;
-		top: 33%;
+		top: 30%;
 	}
 	.service-tabs-left {
 		margin-top: 25px;
-		margin-right: 55px;
+		margin-right: 100px;
 	}
 	.service1 {
 		left: -100%;
@@ -1344,15 +1344,15 @@ background: #fff;
 		left: -155%;
 	}
 	.service3 {
-		left: -155%;
+		left: -165%;
 	}
 	.service4 {
-		left: -185%;
+		left: -198%;
 	}
 
 
 
-/*@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1500px) {
     body {
         max-width: 1500px;
         display: table;
@@ -1369,4 +1369,4 @@ background: #fff;
     .logo {
     	padding-left: 15px;
     }
-}*/
+}
