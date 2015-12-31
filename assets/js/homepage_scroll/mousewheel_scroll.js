@@ -99,6 +99,18 @@ $(document).ready(function(){
       });
     // End of onclick indicator scroll animation
 
+    //homepage mousescroll animation
+  $('#headerscroll').click(function(){
+      var scrollsec = $(this).parents('.scroll-anim');
+      $('body, html').animate({scrollTop: scrollsec.next().offset().top}, 'slow');
+      scrollsec.removeClass('active');
+      scrollsec.next().addClass('active');
+      $('.scroll-indicators > li').removeClass('active');
+      $('.scroll-indicators > li:eq(1)').addClass('active');
+  });
+
+
+
    $('.scroll-indicators li').click(function () {
         var value = $(this).attr('data-tab');
     if( value == 2)

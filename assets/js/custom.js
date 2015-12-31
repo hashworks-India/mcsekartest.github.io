@@ -7,14 +7,14 @@ $(document).ready(function(){
     });
 // js for carousel platform integeration
 
-/* smoth scroll*/
+  /* smooth scroll*/
 
   $('.nav-tabs > li a').click(function(){
         var navtab = $(this).parents('.nav-tabs').offset().top - 50;
           $('html, body').animate({
             scrollTop: navtab}, 1500, 'linear');
     });
-
+  // End of smooth scroll
   
   //homepage dropdown
    $(".dropdown-link .dropdown").css({display: "none"});
