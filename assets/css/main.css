@@ -1369,4 +1369,10 @@ background: #fff;
     .logo {
     	padding-left: 15px;
     }
+    .scroll-indicators {
+      right: 200px;
+	}
+	.service-icons {
+     left: 54%;
+   }
 }
