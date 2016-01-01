@@ -50,7 +50,7 @@
         var main = $(this).scrollTop();
         var divsize = $('.service-tab').offset().top - 50;
         var servht = divsize + $('.service-tab').height();
-        var ht = servht - 450;
+        var ht = servht - 350;
 
         if(main >= divsize) {
             $('.service-li').addClass('service-fixed');
@@ -60,7 +60,6 @@
           }
 
           if(main >= ht){
-
             $('.service-li').removeClass('service-fixed');
           } 
       });

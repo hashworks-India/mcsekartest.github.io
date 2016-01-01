@@ -61,7 +61,7 @@
         {% for group in groups %}
 
         {%if group.name == page.category1 or group.name == page.category2 or group.name == page.category3 or group.name == page.category4%}
-<li data-value="{{group.name}}">
+		<li data-value="{{group.name}}">
 			<ul>
 				<li class="tagname " >{{group.name}}</li>
 				<li class="tagvalue arrow-left"><span class="arrow-border"></span>{{group.items.size }}</li>
@@ -88,15 +88,15 @@
 
 		{% for item in myArray %}
 	
-               {% assign casestudy = site.casestudy | where: "category", item %}
+            {% assign casestudy = site.casestudy | where: "category", item %}
             {% for project in casestudy %}
     
-    {% assign mod = forloop.index | modulo: 3 %}
-    {% if mod == 1 %}
+    		{% assign mod = forloop.index | modulo: 3 %}
+    		{% if mod == 1 %}
         
        
      
-                 <div class="row casestudy-cont-filter {{ project.category}} all" >
+         <div class="row casestudy-cont-filter {{ project.category}} all" >
 			<div class="col-lg-8 col-rite equal-height-col">
 
 				<div class="banner">

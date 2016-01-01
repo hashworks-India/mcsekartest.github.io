@@ -75,6 +75,15 @@
 
     .blog-img1 {
        background: transparent url("/assets/img/landingpage/banner-4.jpg") no-repeat scroll bottom center;
+       height: 100vh;
+    }
+    .blog-img2 {
+       background: transparent url("/assets/img/landingpage/banner1.jpg") no-repeat scroll bottom center;
+       height: 50vh;
+    }
+    .blog-img3 {
+       background: transparent url("/assets/img/landingpage/banner-4.jpg") no-repeat scroll bottom center;
+       height: 50vh;
     }
 
     .hw-scroll .scroll-anim:nth-child(2) {
@@ -320,6 +329,9 @@
         border-right: 10px solid #B9BECD;
         left: -9px;
         top: 21%
+      }
+      .padding-zero {
+        padding: 0px;
       }
       .hm_it{
         top:70%;
