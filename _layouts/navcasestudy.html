@@ -1,45 +1,342 @@
 {% include header.html %}
 <main>
-<h1 class="text-center gotham-rounded-bok heading"> Casestudy</h1>
-		<div class="line"></div>
-		<div class="carousel-padding">
-		<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>blog</title>
+	<link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-	   		<div class="container heading-caro-padd">
-			    <!-- Wrapper for slides -->
-			    <div class="carousel-inner" role="listbox">
+	<section class="banner">
+		<div class="casestudy-img">
+			<div class="container-fluid">
+				<div class="row">
 
-			      {% for cont in site.data.Carousel.carousel.carousel_content%}
-							       {% if forloop.first %}
-							  	<div class="item active">
-							      <p class=" gotham-rounded-bok font-30">
-							       {{ cont.content}}
-							      </p>
-							    </div>
-								{% else %}
-							   <div class="item">
-							       <p class=" gotham-rounded-bok font-30">
-							       		 {{ cont.content}}
-							      	</p>
-							    </div>
-								{% endif %}
-							    {% endfor %}
-			    
-			    </div>
+					<div class="columns-12">
 
+						<div class="banner-outer">
+
+							<div class="banner-inner">
+
+								<h1 class="clr-white">Case Study</h1>
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
 			</div>
 
-			<!-- <a class="left carousel-control carousel-indicatr-pos" href="#myCarousel" role="button" data-slide="prev">
-			 <img src="/assets/img/solutions/carousel-indi-1.jpg">
-			<span class="sr-only">Previous</span>
-			</a>
-			<a class="right carousel-control carousel-indicatr-pos" href="#myCarousel" role="button" data-slide="next">
-			<img src="/assets/img/solutions/carousel-indi.jpg">
-			<span class="sr-only">Next</span>
-			</a> -->
-	 	</div>
-	 	</div>
-	<!-- end of carousel-->
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="gotham-rounded-bok hw-para">Tackling each project with passion and determination, in the world of web design, we’ve been working hard to turn heads. Here’s a few of our projects that not only command the user’s attention, but have driven a minimum of a 40% increase in organic search traffic. - See more at: http://forgeandsmith.com/case-studies/#sthash.dkVD1OLE.dpuf</p>
+				</div>
+			</div>
+		</div>
+		<!--tabs-->
+	<div class="bs-example line-padding service-tab">
+			<div class="container">
+
+			    <ul class="nav  full-border" id="case-study-active">
+			    	
+			        <li class="col-lg-4 li-border"><a class="hr-display"  data-toggle="tab" href="#accelerate-business" >
+			        	<p class="text-center">Business Value</p> </a>
+					</li>
+			        
+			        <li class="col-lg-4 li-border"><a  class="hr-display" data-toggle="tab" href="#offerings" >
+			     	 <p class="text-center">We partner</p> 
+	                          
+						</a>
+			        </li>
+
+			        <li class="col-lg-4"><a  class="hr-display" data-toggle="tab" href="#engageus" >
+			        <p class="text-center">Engagment Model</p> 
+	                         
+						</a>
+			        </li>
+
+			    </ul>
+
+			</div> <!--end of contaier-fuild of tab heading-->
+
+<!-- tab-content -->
+		    <div class="tab-content">
+				<div id="accelerate-business" class="tab-pane fade ">
+					<div class="container cs-li-margin">
+					<div class="row">
+						<div class="col-lg-3">
+							<ul>
+								<li class="text-center">
+									<a href="#" data-filter="industries" data-key="education">
+									Education</a></li>
+								<li class="text-center">
+									<a href="#" data-filter="industries" data-key="education">
+									Education</a></li>
+								<li class="text-center">
+									<a href="#" data-filter="industries" data-key="education">
+									Education</a></li>
+								<li class="text-center">
+									<a href="#" data-filter="industries" data-key="education">
+									Education</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-3">
+							<ul>
+								<li class="text-center">
+									<a href="#" data-filter="industries" data-key="education">
+									Education</a></li>
+								<li class="text-center">
+									<a href="#" data-filter="industries" data-key="education">
+									Education</a></li>
+								<li class="text-center">
+									<a href="#" data-filter="industries" data-key="education">
+									Education</a></li>
+								<li class="text-center">
+									<a href="#" data-filter="industries" data-key="education">
+									Education</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-3">
+							<ul>
+								<li class="text-center">
+									<a href="#" data-filter="industries" data-key="education">
+									Education</a></li>
+								<li class="text-center">
+									<a href="#" data-filter="industries" data-key="education">
+									Education</a></li>
+								<li class="text-center">
+									<a href="#" data-filter="industries" data-key="education">
+									Education</a></li>
+								<li class="text-center">
+									<a href="#" data-filter="industries" data-key="education">
+									Education</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-3">
+							<ul>
+								<li class="text-center">
+									<a href="#" data-filter="industries" data-key="education">
+									Education</a></li>
+								<li class="text-center">
+									<a href="#" data-filter="industries" data-key="education">
+									Education</a></li>
+								<li class="text-center">
+									<a href="#" data-filter="industries" data-key="education">
+									Education</a></li>
+								<li class="text-center">
+									<a href="#" data-filter="industries" data-key="education">
+									Education</a></li>
+							</ul>
+						</div>
+					</div>
+					
+					
+
+ 				</div>
+				</div><!-- end of tab1-->
+				<div id="offerings" class="tab-pane fade in ">
+
+
+					<ul>
+												<li class="text-center">
+							<a href="#" data-filter="industries" data-key="education">
+								
+								Education							</a>
+						</li>
+												<li class="text-center">
+							<a href="#" data-filter="industries" data-key="event">
+								
+								Event							</a>
+						</li>
+												<li class="text-center">
+							<a href="#" data-filter="industries" data-key="industrial">
+								
+								Industrial							</a>
+						</li>
+												
+												<li class="text-center">
+							<a href="#" data-filter="industries" data-key="non-profit">
+								
+								Non Profit							</a>
+						</li>
+												<li class="text-center">
+							<a href="#" data-filter="industries" data-key="retail">
+								
+								Retail							</a>
+						</li>
+												<li class="text-center">
+							<a href="#" data-filter="industries" data-key="sales-marketing">
+								
+								Sales &amp; Marketing							</a>
+						</li>
+												
+												
+											</ul>
+				</div><!-- end of tab2-->
+					<div id="engageus" class="tab-pane fade in ">
+
+
+					<ul>
+												<li class="text-center">
+							<a href="#" data-filter="industries" data-key="education">
+								
+								Education							</a>
+						</li>
+												<li class="text-center">
+							<a href="#" data-filter="industries" data-key="event">
+								
+								Event							</a>
+						</li>
+												<li class="text-center">
+							<a href="#" data-filter="industries" data-key="industrial">
+								
+								Industrial							</a>
+						</li>
+												
+												<li class="text-center">
+							<a href="#" data-filter="industries" data-key="non-profit">
+								
+								Non Profit							</a>
+						</li>
+												<li class="text-center">
+							<a href="#" data-filter="industries" data-key="retail">
+								
+								Retail							</a>
+						</li>
+												<li class="text-center">
+							<a href="#" data-filter="industries" data-key="sales-marketing">
+								
+								Sales &amp; Marketing							</a>
+						</li>
+												
+												
+											</ul>
+				</div><!-- end of tab3-->
+			    
+			</div>
+		</div><!-- end of the tab-->
+
+	</section>
+	
+	<div class="casestudy-ul">
+	<ul class="blog-grid clearfix">
+		<li class="hw-filter-li Social">
+			<div class="image-wrapper">
+				<img width="" height="" alt="" src="http://forgeandsmith.com/wp-content/uploads/2015/12/Top-Tweets-Thumb.jpg">
+				<div class="blog-post-meta">
+					<h2>content</h2>
+					<a href="http://forgeandsmith.com/top-tweets-of-2015-and-what-we-learned-from-them/" class="button">View Article</a>
+					<p>content</p>
+				</div>
+			</div>
+		</li>
+
+		<li class="hw-filter-li Content">
+			<div class="image-wrapper">
+				<img width="" height="" alt="" src="http://forgeandsmith.com/wp-content/uploads/2015/12/Top-Tweets-Thumb.jpg">
+				<div class="blog-post-meta">
+					<h2>content</h2>
+					<a href="http://forgeandsmith.com/top-tweets-of-2015-and-what-we-learned-from-them/" class="button">View Article</a>
+					<p>content</p>
+				</div>
+			</div>
+		</li>
+
+		<li class="hw-filter-li Categories">
+			<div class="image-wrapper">
+				<img width="" height="" alt="" src="http://forgeandsmith.com/wp-content/uploads/2015/12/Top-Tweets-Thumb.jpg">
+				<div class="blog-post-meta">
+					<h2>content</h2>
+					<a href="http://forgeandsmith.com/top-tweets-of-2015-and-what-we-learned-from-them/" class="button">View Article</a>
+					<p>content</p>
+				</div>
+			</div>
+		</li>
+
+
+		<li class="hw-filter-li Strategy">
+			<div class="image-wrapper">
+				<img width="" height="" alt="" src="http://forgeandsmith.com/wp-content/uploads/2015/12/Top-Tweets-Thumb.jpg">
+				<div class="blog-post-meta">
+					<h2>content</h2>
+					<a href="http://forgeandsmith.com/top-tweets-of-2015-and-what-we-learned-from-them/" class="button">View Article</a>
+					<p>content</p>
+				</div>
+			</div>
+		</li>
+
+		<li class="hw-filter-li UX">
+			<div class="image-wrapper">
+				<img width="" height="" alt="" src="http://forgeandsmith.com/wp-content/uploads/2015/12/Top-Tweets-Thumb.jpg">
+				<div class="blog-post-meta">
+					<h2>content</h2>
+					<a href="http://forgeandsmith.com/top-tweets-of-2015-and-what-we-learned-from-them/" class="button">View Article</a>
+					<p>content</p>
+				</div>
+			</div>
+		</li>
+
+		<li class="hw-filter-li Design">
+			<div class="image-wrapper">
+				<img width="" height="" alt="" src="http://forgeandsmith.com/wp-content/uploads/2015/12/Top-Tweets-Thumb.jpg">
+				<div class="blog-post-meta">
+					<h2>content</h2>
+					<a href="http://forgeandsmith.com/top-tweets-of-2015-and-what-we-learned-from-them/" class="button">View Article</a>
+					<p>content</p>
+				</div>
+			</div>
+		</li>
+
+		<li class="hw-filter-li UX">
+			<div class="image-wrapper">
+				<img width="" height="" alt="" src="http://forgeandsmith.com/wp-content/uploads/2015/12/Top-Tweets-Thumb.jpg">
+				<div class="blog-post-meta">
+					<h2>content</h2>
+					<a href="http://forgeandsmith.com/top-tweets-of-2015-and-what-we-learned-from-them/" class="button">View Article</a>
+					<p>content</p>
+				</div>
+			</div>
+		</li>
+
+		<li class="hw-filter-li Social">
+			<div class="image-wrapper">
+				<img width="" height="" alt="" src="http://forgeandsmith.com/wp-content/uploads/2015/12/Top-Tweets-Thumb.jpg">
+				<div class="blog-post-meta">
+					<h2>content</h2>
+					<a href="http://forgeandsmith.com/top-tweets-of-2015-and-what-we-learned-from-them/" class="button">View Article</a>
+					<p>content</p>
+				</div>
+			</div>
+		</li>
+
+	</ul>
+</div>
+
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script>
+		$(document).ready(function(){
+
+			//filter only for category
+			$("#cat > option").click(function() {
+				//option value attribute 
+				var val = $(this).attr('value');
+				//option value is present in .hw-filter-li.(option value) then that li will show
+			    $(".hw-filter-li." + val).show();
+			    //option value is not present in .hw-filter-li.(option value) then that li will hide
+			    $(".blog-grid > .hw-filter-li:not(." + val + ")").hide();
+			});
+
+		});
+	</script>
+</body>
+</html>
 
 
 	
