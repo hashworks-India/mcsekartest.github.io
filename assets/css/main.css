@@ -1375,10 +1375,11 @@ background: #fff;
 	.service-img-mar {
 		margin-top:50px;
 	}
-	.service-fixed {
+	.service-tab .service-fixed {
 		position: fixed;
 		top:55px;
-		margin: 0 32px;
+		margin-left: -46px;
+    	width: 25%;
 		z-index: 10;
 	}
 	.service-icons {

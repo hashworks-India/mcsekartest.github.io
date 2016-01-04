@@ -48,9 +48,8 @@
     $(document).ready(function(){
      $(document).scroll(function(){
         var main = $(this).scrollTop();
-        var divsize = $('.service-tab').offset().top - 50;
-        var servht = divsize + $('.service-tab').height();
-        var ht = servht - 350;
+        var divsize = $('.service-tab').offset().top + 215;
+        var servht = $('.hw-tools').offset().top - 550;
 
         if(main >= divsize) {
             $('.service-li').addClass('service-fixed');
@@ -59,7 +58,7 @@
             $('.service-li').removeClass('service-fixed');
           }
 
-          if(main >= ht){
+          if(main >= servht){
             $('.service-li').removeClass('service-fixed');
           } 
       });
