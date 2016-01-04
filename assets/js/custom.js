@@ -1,27 +1,27 @@
 $(document).ready(function(){
 
-  $('.toggle').click(function (event) {
+    $('.toggle').click(function (event) {
         event.preventDefault();
         var target = $(this).attr('href');
         $(target).toggleClass('hidden show');
     });
-// js for carousel platform integeration
 
-  /* smooth scroll*/
 
-  $('.nav-tabs > li a').click(function(){
+    /* smooth scroll*/
+
+    $('.nav-tabs > li a').click(function(){
         var navtab = $(this).parents('.nav-tabs').offset().top - 50;
           $('html, body').animate({
             scrollTop: navtab}, 1500, 'linear');
     });
   // End of smooth scroll
   
-  //homepage dropdown
-   $(".dropdown-link .dropdown").css({display: "none"});
+    //homepage dropdown
+      $(".dropdown-link .dropdown").css({display: "none"});
         $(".dropdown-link").mouseenter(function(){
             $(this).find(".dropdown").css({visibility: "visible",display: "none"}).show(268);;
 
-      });
+        });
 
          $(".dropdown-link").mouseleave(function(){
             $(this).find(".dropdown").css({visibility: "hidden"});
@@ -32,56 +32,56 @@ $(document).ready(function(){
          });
 
     //homepage header mouse event 
-      $('.hw-home').mouseover(function(){
-          $("header nav").addClass('hw-fixed-header');
-      });
+        $('.hw-home').mouseover(function(){
+            $("header nav").addClass('hw-fixed-header');
+        });
 
-      $('.hw-home').mouseout(function(){
-          $("header nav").removeClass('hw-fixed-header');
-      });
+        $('.hw-home').mouseout(function(){
+            $("header nav").removeClass('hw-fixed-header');
+        });
 
 
         //fixed header
-    $(document).scroll(function(){
-      var main = $(this).scrollTop();
+        $(document).scroll(function(){
+          var main = $(this).scrollTop();
 
-      if(main >= 51) {
-        if(!$('header').hasClass('hw-home')) {
-          $("header nav").addClass('hw-fixed-header');
-          $("main").css("margin-top","70px");
-        }
-        
-      }
-      else {
-        $("header nav").removeClass('hw-fixed-header');
-        $("main").css("margin-top","0px");
-      }
+          if(main >= 51) {
+            if(!$('header').hasClass('hw-home')) {
+              $("header nav").addClass('hw-fixed-header');
+              $("main").css("margin-top","70px");
+            }
+            
+          }
+          else {
+            $("header nav").removeClass('hw-fixed-header');
+            $("main").css("margin-top","0px");
+          }
 
 
-      if(main >= 70) {
-        if(!$('header').hasClass('hw-home')) {
-          $(".navbar-default.hw-fixed-header").css("padding-bottom","0px")
-        }
-      }
+          if(main >= 70) {
+            if(!$('header').hasClass('hw-home')) {
+              $(".navbar-default.hw-fixed-header").css("padding-bottom","0px")
+            }
+          }
 
-      else {
-          $(".navbar-default").css("padding-bottom","5px")
-      }
+          else {
+              $(".navbar-default").css("padding-bottom","5px")
+          }
 
-    });
+        });
 
     
       //tagcloud
-      $('.tagcloud > li').click(function(){
-        $('.tagcloud > li').removeClass('tagactive');
-        $(this).addClass('tagactive');
-      });
+        $('.tagcloud > li').click(function(){
+          $('.tagcloud > li').removeClass('tagactive');
+          $(this).addClass('tagactive');
+        });
     
       //tagcloud
-      $('.tagcloud > li').click(function(){
-        $('.tagcloud > li').removeClass('tagactive');
-        $(this).addClass('tagactive');
-      });
+        $('.tagcloud > li').click(function(){
+          $('.tagcloud > li').removeClass('tagactive');
+          $(this).addClass('tagactive');
+        });
   
   
 
@@ -228,24 +228,23 @@ $(document).ready(function(){
         });
 
 
-var case_study_filter = function(dataval)
-{
-$('.casestudy-cont-filter').each(function(){
-if($(this).hasClass(dataval)) {
-  $(this).css({'display':'block'});
-}
-else {
-  $(this).css({'display':'none'});
-}
-});
-}
+      var case_study_filter = function(dataval) {
+        $('.casestudy-cont-filter').each(function(){
+        if($(this).hasClass(dataval)) {
+          $(this).css({'display':'block'});
+        }
+        else {
+          $(this).css({'display':'none'});
+        }
+        });
+      }
 
       // End of casestudy
 
       /* job board*/
       $('.hw-job1').click(function() {
         $(this).addClass('view-color');
-         $(this).parent('tr').next().removeClass('hide');
+        $(this).parent('tr').next().removeClass('hide');
      });
 
        $('.view1-close').click(function() {
@@ -269,21 +268,21 @@ else {
 
     $(window).on('load', function() {
       
-          var cururl = window.location;
-           var curid = cururl.hash.slice(1);
-           $('.hw-casestudy-filter li').each(function(){
-                  var dval = $(this).attr("data-value");
+        var cururl = window.location;
+         var curid = cururl.hash.slice(1);
+         $('.hw-casestudy-filter li').each(function(){
+                var dval = $(this).attr("data-value");
 
-                  if(curid == dval) {
-                    $(this).addClass('active tagactive');
-                  }
-                  else {
-                      $(this).removeClass('active tagactive');
-                  }
-            });
-           
-           tabchange(curid);
-           case_study_filter(curid);
+                if(curid == dval) {
+                  $(this).addClass('active tagactive');
+                }
+                else {
+                    $(this).removeClass('active tagactive');
+                }
+          });
+         
+         tabchange(curid);
+         case_study_filter(curid);
     });
 
     //url change event
@@ -295,24 +294,24 @@ else {
 
     //onclick header menu, add active class to the respective tab and tab-content
     var tabchange = function(curid){
-        if($('.nav-tabs').hasClass('hw-tablink')) {
+      if($('.nav-tabs').hasClass('hw-tablink')) {
 
-                $('.hw-tablink li').each(function(){
-                  var dtabval = $(this).attr('data-value');
-                  if(curid == dtabval) {
-                    $('.hw-tablink li').removeClass('active');
-                        $(this).addClass('active');
-                    }
-                });
+              $('.hw-tablink li').each(function(){
+                var dtabval = $(this).attr('data-value');
+                if(curid == dtabval) {
+                  $('.hw-tablink li').removeClass('active');
+                      $(this).addClass('active');
+                  }
+              });
 
-                $('.hw-tabcont-link > div').each(function(){
-                  var tabcont = $(this).attr('data-value');
-                  if(curid == tabcont) {
-                    $('.hw-tabcont-link > div').removeClass('active in');
-                        $(this).addClass('active in');
-                    }
-                });
-            }
+              $('.hw-tabcont-link > div').each(function(){
+                var tabcont = $(this).attr('data-value');
+                if(curid == tabcont) {
+                  $('.hw-tabcont-link > div').removeClass('active in');
+                      $(this).addClass('active in');
+                  }
+              });
+          }
     }
 
     $('.nav-tabs > li a').click(function(){
@@ -331,44 +330,74 @@ else {
 
 /* header hover */
         var initiall = $('.navbar-right > li > a:first-child').position().left;
-       $('.line-animation').css({left:initiall+'px'});
+         $('.line-animation').css({left:initiall+'px'});
 
-      $('.navbar-right > li > a').mouseover(function(){
+        $('.navbar-right > li > a').mouseover(function(){
 
-       var w = $(this).width();    
-       var l = $(this).position().left;
-       l += 18;
-       $('.line-animation').css({width:w+'px', left:l+'px'});
-     });
+         var w = $(this).width();    
+         var l = $(this).position().left;
+         l += 18;
+         $('.line-animation').css({width:w+'px', left:l+'px'});
+       });
 
-     $('.navbar-right > li > a').mouseout(function(){
-       $('.line-animation').css({width:'0px'});
-     });
+       $('.navbar-right > li > a').mouseout(function(){
+         $('.line-animation').css({width:'0px'});
+       });
 
      //left 
-     $('.navbar-left > li > a').mouseover(function(){
+       $('.navbar-left > li > a').mouseover(function(){
 
-       var w_left = $(this).width();    
-       var l_left = $(this).position().left;
-       l_left += 18;
-       $('.line-animation1').css({width:w_left+'px', left:l_left+'px'});
-     });
+         var w_left = $(this).width();    
+         var l_left = $(this).position().left;
+         l_left += 18;
+         $('.line-animation1').css({width:w_left+'px', left:l_left+'px'});
+       });
 
-     $('.navbar-left > li > a').mouseout(function(){
-       $('.line-animation1').css({width:'0px'});
-     });
+       $('.navbar-left > li > a').mouseout(function(){
+         $('.line-animation1').css({width:'0px'});
+       });
 
 
 
-/* end of header hover */  
+    /* end of header hover */  
 
-  // talk to us
-  $('.talk-to-us').bind('click', function(event) {
-    var tabdetail = $(this).parents('.hw-started').offset().top;
-          $('html, body').animate({
-              scrollTop: tabdetail}, 1500, 'linear');
-  }); 
+    // talk to us
+      $('.talk-to-us').bind('click', function(event) {
+        var tabdetail = $(this).parents('.hw-started').offset().top;
+              $('html, body').animate({
+                  scrollTop: tabdetail}, 1500, 'linear');
+      }); 
 
+
+      //solution custom tab carousel
+        $('#left_scroll i').css({'cursor':'default','color':'#ccc'});
+        
+        //when user clicks the right arrow for sliding right        
+        $('#right_scroll i').click(function(){
+        
+            //get the width of the items ( i like making the jquery part dynamic, so if you change the width in the css you won't have o change it here too ) '
+            var item_width = $('#carousel_ul > li').width() + 20;
+            
+            //make the sliding effect using jquery's anumate function '
+            $('#carousel_ul').animate({'left' : '-'+item_width+'px'},500);
+            $(this).css({'cursor':'default','color':'#ccc'});
+            $('#left_scroll i').css({'cursor':'pointer','color':'#040404'});
+            
+
+        });
+        
+        //when user clicks the left arrow for sliding left
+        $('#left_scroll i').click(function(){
+            
+            var item_width = $('#carousel_ul > li').width();
+            
+            $('#carousel_ul').animate({'left' : '0px'},500);
+           
+            $(this).css({'cursor':'default','color':'#ccc'});
+            $('#right_scroll i').css({'cursor':'pointer','color':'#040404'});
+            
+        });
+    // End of solution custom tab carousel
   
 
 });

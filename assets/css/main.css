@@ -677,9 +677,95 @@ background: #fff;
 	
 /* end of engages page */
 
-/* it services */
+/* solutions */
 
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+	/*solutions page carousel*/
+		#carousel_inner {
+			float:left; /* important for inline positioning */
+			width: 97%;/*important (this width = width of list item(including margin) * items shown  */
+			overflow: hidden;  /* important (hide the items outside the div) */
+			/* non-important styling bellow */
+		}
+
+		#carousel_ul {
+			position:relative;
+			list-style-type: none; /* removing the default styling for unordered list items */
+			padding: 0px;
+			width: 1400px; /* important */
+		}
+
+		#carousel_ul li{
+			display: inline-block;                            
+			width:256px;  
+			margin: 0 10px;
+		}
+
+		#carousel_ul li img {
+			margin-bottom: 15px;
+		}
+
+		#left_scroll, #right_scroll{
+			float:left; 
+			height:171px; 
+			width:15px; 
+			position: relative;
+		}
+
+		#left_scroll i, #right_scroll i{
+			/*styling*/
+			cursor: pointer;
+			cursor: hand;
+		}
+
+		#carousel_ul .hr-display {
+			display: table;
+			margin: 0 auto;
+		}
+
+		#carousel_ul > li >a {
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		#carousel_ul .tab-img > li:first-child {
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+		}
+
+		#carousel_ul .tab-img > li:first-child {
+			-webkit-justify-content: center;
+			-moz-justify-content: center;
+			-ms-justify-content: center;
+			-o-justify-content: center;
+			justify-content: center;
+			-webkit-align-items: center;
+			-moz-align-items: center;
+			-o-align-items: center;
+			-ms-align-items: center;
+			align-items: center;
+		}
+
+		#carousel_ul .tab-img > li:last-child {
+			text-align: center;
+		}
+
+		.arrow > i {
+			position: absolute;
+			top: 50%;
+			-webkit-transform: translate(-50%,-50%);
+			-ms-transform: translate(-50%,-50%);
+			-o-transform: translate(-50%,-50%);
+			transform: translate(-50%,-50%);
+			left: 50%;
+			font-size: 30px;
+			color: #040404;
+		}
+	/*End of solutions page carousel*/
+
+	.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
 		border-bottom: 3px solid #ff0000;
 		color:#5f5f5f;
 		border-top: none;
@@ -716,7 +802,8 @@ background: #fff;
 			margin: 0 50px;
 		}
 
-		.hw-tools-details ul {
+		.hw-tools-details ul,
+		.hw-tools-details ul>li {
 			display: -webkit-flex;
 			display: -moz-flex;
 			display: -ms-flex;
@@ -732,11 +819,6 @@ background: #fff;
 		.hw-tools-details ul>li {
 			float: left;
 			padding: 0 5px;
-			display: -webkit-flex;
-			display: -moz-flex;
-			display: -ms-flex;
-			display: -o-flex;
-			display: flex;
 			-webkit-align-items: center;
 			-moz-align-items: center;
 			-o-align-items: center;
