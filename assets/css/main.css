@@ -1464,10 +1464,13 @@ background: #fff;
 	}
 	.casestudy-ul,
 	.nav-cs-margin {
-		margin-top: 50px;
+		margin-top: 70px;
 	}
 	.cs-li-margin {
 		margin-top: 40px;
+	}
+	.para-padding {
+		padding: 0px 80px;
 	}
 .blog-grid a {
   -webkit-transition: all .5s ease 0s;
