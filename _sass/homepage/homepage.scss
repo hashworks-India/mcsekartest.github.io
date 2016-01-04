@@ -382,14 +382,20 @@
         top: 0;
     }
     .blog-transparent {
-        border-top: 826px solid rgba(20, 24, 31, 0.78);
-        left: 0;
-        top: 0;
+      background:rgba(0,0,0,0.2) none repeat scroll 0 0;
+      height: 100%;
+      position:absolute;
+      width:100%;
+      left: 0;
+      top: 0;
     }
     .blog-transparent1 {
-        border-top: 327px solid rgba(20, 24, 31, 0.78);
-        left: 0;
-        top: 0;
+      background:rgba(0,0,0,0.2) none repeat scroll 0 0;
+      height: 100%;
+      position:absolute;
+      width:100%;
+      left: 0;
+      top: 0;
     }
 
     .app-banner .triangle.bottom {
