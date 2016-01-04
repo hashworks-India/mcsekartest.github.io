@@ -83,6 +83,7 @@
        background: transparent url("/assets/img/landingpage/banner-2.jpg") no-repeat scroll bottom center;
        height: 50vh;
        position: relative;
+       border-bottom: 1px solid #fff;
     }
     .blog-img3 {
        background: transparent url("/assets/img/landingpage/banner-4.jpg") no-repeat scroll bottom center;
@@ -381,8 +382,12 @@
         top: 0;
     }
     .blog-transparent {
-      
         border-top: 826px solid rgba(20, 24, 31, 0.78);
+        left: 0;
+        top: 0;
+    }
+    .blog-transparent1 {
+        border-top: 327px solid rgba(20, 24, 31, 0.78);
         left: 0;
         top: 0;
     }
