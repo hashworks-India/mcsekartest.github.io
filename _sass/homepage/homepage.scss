@@ -74,7 +74,7 @@
     }
 
     .blog-img1 {
-       background: transparent url("/assets/img/landingpage/banner-4.jpg") no-repeat scroll bottom center;
+       background: transparent url("/assets/img/landingpage/banner-4.jpg") no-repeat scroll bottom center /cover ;
        height: 100vh;
        position: relative;
        border-right: 1px solid #fff;
@@ -382,22 +382,14 @@
         top: 0;
     }
     .blog-transparent {
-      background:rgba(0,0,0,0.2) none repeat scroll 0 0;
+      background:rgba(0,0,0,0.4) none repeat scroll 0 0;
       height: 100%;
       position:absolute;
       width:100%;
       left: 0;
       top: 0;
     }
-    .blog-transparent1 {
-      background:rgba(0,0,0,0.2) none repeat scroll 0 0;
-      height: 100%;
-      position:absolute;
-      width:100%;
-      left: 0;
-      top: 0;
-    }
-
+    
     .app-banner .triangle.bottom {
         border-bottom: 510px solid rgba(230, 43, 117, 0.9);
         border-left: 1010.8px solid transparent;
