@@ -1824,12 +1824,12 @@ background: #fff;
     padding-left: 15px;
     padding-right: 15px;
 }
-ul li {
+/*ul li {
     font-size: 1.125rem;
     line-height: 2.25rem;
     padding-bottom: 15px;
 }
-
+*/
 /* end of row banner */
 
 @media screen and (max-width: 868px) {
