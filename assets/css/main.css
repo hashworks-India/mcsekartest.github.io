@@ -1465,7 +1465,8 @@ background: #fff;
 	.casestudy-ul >ul >li {
 		padding-bottom:0px;
 	}
-	.casestudy-ul {
+	.casestudy-ul,
+	.nav-cs-margin {
 		margin-top: 50px;
 	}
 	.cs-li-margin {
@@ -1494,13 +1495,17 @@ background: #fff;
     background-position: 50% 0.0181803%;
     height: 100vh;
     width: 100%;
+    background-size: cover;
+    position: relative;
   }
 .banner-inner {
     position: absolute;
     top: 50%;
     left: 50%;
     color: #fff;
+    transform: translate(-50%,-50%);
   }
+
 /* end of casestudy */
 
 
