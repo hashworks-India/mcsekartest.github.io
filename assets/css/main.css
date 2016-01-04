@@ -1381,44 +1381,51 @@ background: #fff;
 		margin: 0 32px;
 		z-index: 10;
 	}
-	.service-line {
-		width: 5px;
-		color: #555;
-		background-color: #0ab4c5;
-		height: 500px;
-		border: 1px solid #0ab4c5;
-		position: relative;
-	}
 	.service-icons {
-		border: 1px solid #EE2B7B;
-		width: 65px;
-		border-radius: 100%;
-		height: 60px;
-		position: absolute;
-		left: 50%;
-		background-color: #EE2B7B;
-		box-shadow: -1px 0px 4px 2px #fff;
+		 background-color: #ee2b7b;
+	    border: 1px solid #ee2b7b;
+	    border-radius: 100%;
+	    box-shadow: -1px 0 4px 2px #fff;
+	    height: 60px;
+	    left: 50%;
+	    margin-left: -32px;
+	    position: absolute;
+	    width: 65px;
 	}
 	.service-icon1 {
 		top: 8%;
 	}
 	.service-icon2 {
-		top: 33%;
+		top: 32%;
 	}
 	.service-icon3 {
-		top: 60%;
+		top: 57%;
 	}
 	.service-icon4 {
-		top: 85%;
+		top: 80%;
 	}
 	.service-tab-text {
 		position: absolute;
 		top: 30%;
 	}
 	.service-tabs-left {
-		margin-top: 25px;
-		margin-right: 100px;
+		height: 500px;
 	}
+
+	.service-tabs-left::before {
+	    background: #0ab4c5;
+	    content: "";
+	    height: 100%;
+	    left: 50%;
+	    position: absolute;
+	    -webkit-transform: translateX(-50%);
+	    -moz-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	    -o-transform: translateX(-50%);
+	    transform: translateX(-50%);
+	    width: 5px;
+	}
+
 	.service1 {
 		left: -100%;
 	}
@@ -1454,8 +1461,5 @@ background: #fff;
     .scroll-indicators {
       right: 200px;
 	}
-	.service-icons {
-     left: 54%;
-   }
    
 }
