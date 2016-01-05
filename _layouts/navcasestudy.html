@@ -23,17 +23,17 @@
 
 			    <ul class="nav  full-border" id="case-study-active">
 			    	
-			        <li class="col-lg-4 li-border"><a class="hr-display"  data-toggle="tab" href="#accelerate-business" >
+			        <li class="col-lg-4 li-border"><a class="hr-display"  data-toggle="tab" data-toggle="collapse" href="#accelerate-business" >
 			        	<p class="text-center gotham-rounded-bold clr-black">Business Value</p> </a>
 					</li>
 			        
-			        <li class="col-lg-4 li-border"><a  class="hr-display" data-toggle="tab" href="#offerings" >
+			        <li class="col-lg-4 li-border"><a  class="hr-display" data-toggle="tab" data-toggle="collapse" href="#offerings" >
 			     	 <p class="text-center gotham-rounded-bold clr-black">We partner</p> 
 	                          
 						</a>
 			        </li>
 
-			        <li class="col-lg-4"><a  class="hr-display" data-toggle="tab" href="#engageus" >
+			        <li class="col-lg-4"><a  class="hr-display" data-toggle="tab"  href="#engageus" >
 			        <p class="text-center gotham-rounded-bold clr-black">Engagment Model</p> 
 	                         
 						</a>
@@ -231,9 +231,9 @@
 			<div class="image-wrapper">
 				<img width="" height="" alt="" src="http://forgeandsmith.com/wp-content/uploads/2015/12/Top-Tweets-Thumb.jpg">
 				<div class="blog-post-meta">
-					<h2>{{navcasestudy.title}}</h2>
-					<a href="{{page.url}}" class="button">View Article</a>
-					<p>{{navcasestudy.tag}}</p>
+					<h2  class=" gotham-rounded-bok hw-copyright">{{navcasestudy.title}}</h2>
+					<a href="{{navcasestudy.url}}" class="button">View Article</a>
+					<p class=" gotham-rounded-bok hw-copyright">{{navcasestudy.tag}}</p>
 				</div>
 			</div>
 		</li>
@@ -275,21 +275,21 @@
 	</ul>
 </div>
 
-	<script src="js/jquery-1.11.2.min.js"></script>
+	
 	<script>
-		$(document).ready(function(){
+		// $(document).ready(function(){
 
-			//filter only for category
-			$("#cat > option").click(function() {
-				//option value attribute 
-				var val = $(this).attr('value');
-				//option value is present in .hw-filter-li.(option value) then that li will show
-			    $(".hw-filter-li." + val).show();
-			    //option value is not present in .hw-filter-li.(option value) then that li will hide
-			    $(".blog-grid > .hw-filter-li:not(." + val + ")").hide();
-			});
+		// 	//filter only for category
+		// 	$("#cat > option").click(function() {
+		// 		//option value attribute 
+		// 		var val = $(this).attr('value');
+		// 		//option value is present in .hw-filter-li.(option value) then that li will show
+		// 	    $(".hw-filter-li." + val).show();
+		// 	    //option value is not present in .hw-filter-li.(option value) then that li will hide
+		// 	    $(".blog-grid > .hw-filter-li:not(." + val + ")").hide();
+		// 	});
 
-		});
+		// });
 	</script>
 
 

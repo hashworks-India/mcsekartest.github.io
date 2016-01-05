@@ -2,6 +2,7 @@
 title: VINTAGE OLIVE0
 layout: navcasestudy_detail
 category: portfolio
+permalink: "/casestudy/VINTAGE OLIVE0/"
 tag: devops
 problem_statement:  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
 objectives: 

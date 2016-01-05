@@ -398,6 +398,18 @@ $(document).ready(function(){
             
         });
     // End of solution custom tab carousel
+
+     // $('#case-study-active > li').click(function(e){
+     //   if($(this).hasClass('active'))
+     //   {
+     //      $(this).removeClass('active');
+     //   }
+     //   else
+     //   {
+     //     $('#case-study-active > li').removeClass('active');
+     //     $(this).addClass('active');
+     //   }
+     //  });
   
 
 });

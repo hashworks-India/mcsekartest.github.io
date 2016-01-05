@@ -1,7 +1,8 @@
 ---
 title: VINTAGE OLIVE0
 layout: navcasestudy_detail
-category: trending
+category: .trending
+permalink: "/navcasestudy_details"
 tag: devops
 problem_statement:  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
 objectives: 
