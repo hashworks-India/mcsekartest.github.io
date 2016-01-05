@@ -1493,9 +1493,9 @@ background: #fff;
     background-image: url("http://forgeandsmith.com/wp-content/uploads/2014/06/casestudies.jpg");;
     background-repeat: no-repeat;
     background-position: 50% 0.0181803%;
-    height: 100vh;
+    height: 500px;
     width: 100%;
-    background-size: cover;
+    background-size: 180% auto;
     position: relative;
   }
 .banner-inner {

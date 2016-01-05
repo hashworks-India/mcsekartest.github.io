@@ -10,8 +10,6 @@
 			</div>
 		</div>
 
-		
-
 		<div class="container nav-cs-margin">
 			<div class="row">
 				<div class="col-lg-12">
@@ -227,95 +225,53 @@
 	
 	<div class="casestudy-ul">
 	<ul class="blog-grid clearfix">
-		<li class="hw-filter-li Social">
+		{% for navcasestudy in site.casestudy  %}
+     	
+		<li class="hw-filter-li {{navcasestudy.tag}}">
 			<div class="image-wrapper">
 				<img width="" height="" alt="" src="http://forgeandsmith.com/wp-content/uploads/2015/12/Top-Tweets-Thumb.jpg">
 				<div class="blog-post-meta">
-					<h2>content</h2>
-					<a href="/navcasestudy-details" class="button">View Article</a>
-					<p>content</p>
+					<h2>{{navcasestudy.title}}</h2>
+					<a href="{{page.url}}" class="button">View Article</a>
+					<p>{{navcasestudy.tag}}</p>
 				</div>
 			</div>
 		</li>
-
-		<li class="hw-filter-li Content">
+		
+		{% endfor %}
+ 
+		<!-- {% assign navcasestudys = site.casestudy | group_by: "category"  %}
+     	{% for navcasestudy in navcasestudys %}
+        {%if navcasestudy.category == trending %}
+		<li class="hw-filter-li {{navcasestudy.tag}}">
 			<div class="image-wrapper">
 				<img width="" height="" alt="" src="http://forgeandsmith.com/wp-content/uploads/2015/12/Top-Tweets-Thumb.jpg">
 				<div class="blog-post-meta">
-					<h2>content</h2>
-					<a href="http://forgeandsmith.com/top-tweets-of-2015-and-what-we-learned-from-them/" class="button">View Article</a>
-					<p>content</p>
+					<h2>{{navcasestudy.title}}</h2>
+					<a href="{{navcasestudy.url}}" class="button">View Article</a>
+					<p>{{navcasestudy.tag}}</p>
 				</div>
 			</div>
 		</li>
+		{% endif %}
+		{% endfor %}
 
-		<li class="hw-filter-li Categories">
+
+		{% assign groups = site.casestudy | group_by: "category"  %}
+     	{% for navcasestudy in groups %}
+        {%if navcasestudy.category == value_drivers %}
+		<li class="hw-filter-li {{navcasestudy.tag}}">
 			<div class="image-wrapper">
 				<img width="" height="" alt="" src="http://forgeandsmith.com/wp-content/uploads/2015/12/Top-Tweets-Thumb.jpg">
 				<div class="blog-post-meta">
-					<h2>content</h2>
-					<a href="http://forgeandsmith.com/top-tweets-of-2015-and-what-we-learned-from-them/" class="button">View Article</a>
-					<p>content</p>
+					<h2>{{navcasestudy.title}}</h2>
+					<a href="{{navcasestudy.url}}" class="button">View Article</a>
+					<p>{{navcasestudy.tag}}</p>
 				</div>
 			</div>
 		</li>
-
-
-		<li class="hw-filter-li Strategy">
-			<div class="image-wrapper">
-				<img width="" height="" alt="" src="http://forgeandsmith.com/wp-content/uploads/2015/12/Top-Tweets-Thumb.jpg">
-				<div class="blog-post-meta">
-					<h2>content</h2>
-					<a href="http://forgeandsmith.com/top-tweets-of-2015-and-what-we-learned-from-them/" class="button">View Article</a>
-					<p>content</p>
-				</div>
-			</div>
-		</li>
-
-		<li class="hw-filter-li UX">
-			<div class="image-wrapper">
-				<img width="" height="" alt="" src="http://forgeandsmith.com/wp-content/uploads/2015/12/Top-Tweets-Thumb.jpg">
-				<div class="blog-post-meta">
-					<h2>content</h2>
-					<a href="http://forgeandsmith.com/top-tweets-of-2015-and-what-we-learned-from-them/" class="button">View Article</a>
-					<p>content</p>
-				</div>
-			</div>
-		</li>
-
-		<li class="hw-filter-li Design">
-			<div class="image-wrapper">
-				<img width="" height="" alt="" src="http://forgeandsmith.com/wp-content/uploads/2015/12/Top-Tweets-Thumb.jpg">
-				<div class="blog-post-meta">
-					<h2>content</h2>
-					<a href="http://forgeandsmith.com/top-tweets-of-2015-and-what-we-learned-from-them/" class="button">View Article</a>
-					<p>content</p>
-				</div>
-			</div>
-		</li>
-
-		<li class="hw-filter-li UX">
-			<div class="image-wrapper">
-				<img width="" height="" alt="" src="http://forgeandsmith.com/wp-content/uploads/2015/12/Top-Tweets-Thumb.jpg">
-				<div class="blog-post-meta">
-					<h2>content</h2>
-					<a href="http://forgeandsmith.com/top-tweets-of-2015-and-what-we-learned-from-them/" class="button">View Article</a>
-					<p>content</p>
-				</div>
-			</div>
-		</li>
-
-		<li class="hw-filter-li Social">
-			<div class="image-wrapper">
-				<img width="" height="" alt="" src="http://forgeandsmith.com/wp-content/uploads/2015/12/Top-Tweets-Thumb.jpg">
-				<div class="blog-post-meta">
-					<h2>content</h2>
-					<a href="http://forgeandsmith.com/top-tweets-of-2015-and-what-we-learned-from-them/" class="button">View Article</a>
-					<p>content</p>
-				</div>
-			</div>
-		</li>
-
+		{% endif %}
+		{% endfor %}  -->		
 	</ul>
 </div>
 
