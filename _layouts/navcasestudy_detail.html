@@ -1,15 +1,5 @@
 {% include header.html %}
 <main>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>blog</title>
-	<link rel="stylesheet" href="css/bootstrap/bootstrap.css">
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
 	<section class="banner">
 		<div class="casestudy-img">
 			<div class="container-fluid">
@@ -33,68 +23,68 @@
 
 		</div>
 
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="hr-display"><h1 class="gotham-rounded-bold hw-para">About the Company</h1></div>
-					<p class="gotham-rounded-bok hw-copyright cs-detail">SchoolCreative Institute of the Arts prepares students for rewarding careers in the creative sector. Students are able to hone their talent and business IQ with comprehensive programs in acting, digital photography, animation, screenwriting, video game programming and design. Located in Vancouver, B.C., the school provides its students with the opportunity to learn and network in a city that caters to the arts. Whatever the area of interest, students are taught by working professionals within the field. - See more at: http://forgeandsmith.com/our-case-studies/schoolcreative/#sthash.yrW9GDqA.dpuf</p>
+		<!-- about -->
+			<div class="container">
+				<div class="columns-8 column-center">
+					<h1 class="text-uppercase hw-heading">About The Company</h1>
+					<p class="hw-para gotham-rounded-bok">The Deeley Motorcycle Exhibition Museum houses the largest private collection of motorcycles in all of Canada. Their Vancouver facilities function as both a gallery and a unique conference centre for local businesses. Their modern space is sure to  appeal to anyone with a penchant for speed, power or the sheer elegance of beautifully designed machinery.  </p>
 				</div>
 			</div>
-		</div>
-
-		<hr>
+		<!-- End of about -->
 
 
-		<div class="container">
-			<div class="hr-display">
-			<div class="row">
-				<div class="col-lg-6">
-					<p class="gotham-rounded-bold hw-para">OBJECTIVES</p>
-					<ul class="objectives casestudy-ul-det">
-						
-						<li><p class="gotham-rounded-light  hw-copyright clr-black">Build a user experience and content strategy to drive membership</p></li>
-						<li><p class="gotham-rounded-light  hw-copyright clr-black">Build a user experience and content strategy to drive membership</p></li>
-						<li><p class="gotham-rounded-light  hw-copyright clr-black">Build a user experience and content strategy to drive membership</p></li>
-					</ul>
-				</div>
-				<div class="col-lg-6">
-					<p class="gotham-rounded-bold hw-para">REQUIREMENTS</p>
-					<ul class="requirements casestudy-ul-det">
-						
-						<li><p class="gotham-rounded-light  hw-copyright clr-black">Build a user experience</p></li>
-						<li><p class="gotham-rounded-light  hw-copyright clr-black">Build a user experience</p></li>
-						<li><p class="gotham-rounded-light  hw-copyright clr-black">Build a user experience</p></li>
-					</ul>
+		<!-- objectives -->
+			<div class="container">
+				<div class="columns-8 column-center">
+					<div class="row">
+						<div class="col-lg-6">
+							<h1 class="text-uppercase hw-heading">OBJECTIVES</h1>
+							<ul class="objectives casestudy-ul-det">
+								<li><p class="gotham-rounded-light hw-copyright clr-black">Build a user experience and content strategy to drive membership</p></li>
+								<li><p class="gotham-rounded-light hw-copyright clr-black">Build a user experience and content strategy to drive membership</p></li>
+								<li><p class="gotham-rounded-light hw-copyright clr-black">Build a user experience and content strategy to drive membership</p></li>
+							</ul>
+						</div>
+						<div class="col-lg-6">
+							<p class="gotham-rounded-bold hw-para">REQUIREMENTS</p>
+							<ul class="requirements casestudy-ul-det">
+								
+								<li><p class="gotham-rounded-light  hw-copyright clr-black">Build a user experience</p></li>
+								<li><p class="gotham-rounded-light  hw-copyright clr-black">Build a user experience</p></li>
+								<li><p class="gotham-rounded-light  hw-copyright clr-black">Build a user experience</p></li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
-	</div>
+		<!-- End of objectives -->
 
 	<div class="phase1">
 	</div>
 
 	</section>
-	<script src="js/jquery-1.11.2.min.js"></script>
-	<script>
-		$(document).ready(function(){
+	
+	
 
-			//filter only for category
-			$("#cat > option").click(function() {
-				//option value attribute 
-				var val = $(this).attr('value');
-				//option value is present in .hw-filter-li.(option value) then that li will show
-			    $(".hw-filter-li." + val).show();
-			    //option value is not present in .hw-filter-li.(option value) then that li will hide
-			    $(".blog-grid > .hw-filter-li:not(." + val + ")").hide();
-			});
-
-		});
-	</script>
-</body>
-</html>
 
 
 	
 	</main>	
 
 {% include footer.html %}
+
+<script>
+		// $(document).ready(function(){
+
+		// 	//filter only for category
+		// 	$("#cat > option").click(function() {
+		// 		//option value attribute 
+		// 		var val = $(this).attr('value');
+		// 		//option value is present in .hw-filter-li.(option value) then that li will show
+		// 	    $(".hw-filter-li." + val).show();
+		// 	    //option value is not present in .hw-filter-li.(option value) then that li will hide
+		// 	    $(".blog-grid > .hw-filter-li:not(." + val + ")").hide();
+		// 	});
+
+		// });
+	</script>
