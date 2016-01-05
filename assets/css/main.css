@@ -142,6 +142,10 @@ html {
 
 	}
 
+	.text-center {
+		text-align: center;
+	}
+
 	.text-uppercase {
 		text-transform: uppercase;
 	}
@@ -1789,48 +1793,64 @@ background: #fff;
   .columns-8 {
     width: 66.6667%;
   }
+
+  .column-center h1,
+  .column-center p {
+  	text-align: center;
+  	font-size: 1.25rem;
+  }
+
+  .column-center p {
+  	margin-top: 15px;
+  	line-height: 1.5;
+  	font-size: 1rem;
+  }
+
+  .column-center ul p {
+  	text-align: left;
+  	text-transform: lowercase;
+  }
+
   .column-center[class*="columns-"] {
-    float: none;
-    margin: 0 auto;
-}
-.control-holder {
-    margin-bottom: 20px;
-    text-align: left;
-}
-.control-holder > div {
-    border-bottom: 1px solid #37b5c4;
-    display: none;
-    margin: 0 -15px;
-}
-.case-studies-control-grid::after {
-    clear: both;
-    content: "";
-    display: table;
-}
-.case-studies-control-grid {
-    border: 1px solid #37b5c4;
-    margin-bottom: 50px;
-    margin-top: 20px;
-    overflow: inherit;
-}
-.block-grid-3 > li:nth-of-type(3n+1) {
-    clear: both;
-}
-.case-studies-control-grid li {
-    padding: 0;
-}
-.block-grid-3 > li {
-    width: 33.3333%;
-}
-[class*="block-grid-"] > li {
-    display: block;
-    float: left;
-    height: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-#case-study-active>li>a
-	{
+    margin: 40px auto;
+	}
+	.control-holder {
+	    margin-bottom: 20px;
+	    text-align: left;
+	}
+	.control-holder > div {
+	    border-bottom: 1px solid #37b5c4;
+	    display: none;
+	    margin: 0 -15px;
+	}
+	.case-studies-control-grid::after {
+	    clear: both;
+	    content: "";
+	    display: table;
+	}
+	.case-studies-control-grid {
+	    border: 1px solid #37b5c4;
+	    margin-bottom: 50px;
+	    margin-top: 20px;
+	    overflow: inherit;
+	}
+	.block-grid-3 > li:nth-of-type(3n+1) {
+	    clear: both;
+	}
+	.case-studies-control-grid li {
+	    padding: 0;
+	}
+	.block-grid-3 > li {
+	    width: 33.3333%;
+	}
+	[class*="block-grid-"] > li {
+	    display: block;
+	    float: left;
+	    height: auto;
+	    padding-left: 15px;
+	    padding-right: 15px;
+	}
+	#case-study-active>li>a{
 		margin: 0px;
 		border-radius: 0px;
 		padding: 15px 15px;
