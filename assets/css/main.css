@@ -1492,7 +1492,7 @@ background: #fff;
   overflow: hidden; /*without this li will create more height*/
   line-height: 2.25em;
 }
-/* case study */
+/* case study _detail */
 .casestudy-img {
     background-image: url("http://forgeandsmith.com/wp-content/uploads/2014/06/casestudies.jpg");;
     background-repeat: no-repeat;
@@ -1501,16 +1501,26 @@ background: #fff;
     width: 100%;
     background-size: 180% auto;
     position: relative;
-  }
+}
 .banner-inner {
     position: absolute;
     top: 50%;
     left: 50%;
     color: #fff;
     transform: translate(-50%,-50%);
-  }
-
-/* end of casestudy */
+}
+.section_casestudy  p,li
+	{
+	line-height: 2.25rem;
+}
+.objectives li,.requirements li{
+	list-style-type: initial;
+	color: #0AB4C5;
+}
+.requirements{
+	margin-top: 54px;
+}
+/* end of casestudy_detail  */
 
 
 /*filter grid*/
