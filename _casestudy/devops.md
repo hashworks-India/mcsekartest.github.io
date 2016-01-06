@@ -1,9 +1,9 @@
 ---
-title: casestudy3
-layout: navcasestudy
+title: Devops
+layout: navcasestudy_detail
 category: portfolio
-tag: devops1
-permalink: "/casestudy/casestudy3/"
+permalink: "/casestudy/devops/"
+tag: devops
 problem_statement:  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
 objectives: 
     - Require a blend of UX + Visual Design Expert with 3-5 years of experience
@@ -12,3 +12,4 @@ objectives:
 approach: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the .
 results: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the .
 ---
+

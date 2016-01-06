@@ -1,8 +1,8 @@
 ---
-title: VINTAGE OLIVE0
+title: ETL
 layout: navcasestudy_detail
 category: .trending
-permalink: "/navcasestudy_details"
+permalink: "/casestudy/ETL/"
 tag: devops
 problem_statement:  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
 objectives: 
