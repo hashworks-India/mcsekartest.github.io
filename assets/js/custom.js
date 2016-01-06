@@ -399,17 +399,22 @@ $(document).ready(function(){
         });
     // End of solution custom tab carousel
 
-     // $('#case-study-active > li').click(function(e){
-     //   if($(this).hasClass('active'))
-     //   {
-     //      $(this).removeClass('active');
-     //   }
-     //   else
-     //   {
-     //     $('#case-study-active > li').removeClass('active');
-     //     $(this).addClass('active');
-     //   }
-     //  });
+     
+     //casestudy toggle and collapse functionality
+     $('.case-studies-control-grid > li').click(function(e){
+        e.preventDefault();
+        var target=$(this).attr('data-tab');
+         if($(this).hasClass('active')) {
+              $(this).removeClass('active');
+              $('.case-studies-control-holder > div[data-tab="'+target+'"]').stop(1,1).slideUp();
+          }
+          else {
+              $(".case-studies-control-grid > li.active").removeClass('active');
+              $(this).addClass('active');
+              $('.case-studies-control-holder > div').stop(1,1).slideUp();
+              $('.case-studies-control-holder > div[data-tab="'+target+'"]').stop(1,1).slideDown();
+          }
+      });
   
 
 });

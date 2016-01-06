@@ -21,19 +21,19 @@
 	<div class="bs-example line-padding service-tab">
 			<div class="container">
 
-			    <ul class="nav  full-border" id="case-study-active">
+			    <ul class="nav full-border case-studies-control-grid" id="case-study-active">
 			    	
-			        <li class="col-lg-4 li-border"><a class="hr-display"  data-toggle="tab" data-toggle="collapse" href="#accelerate-business" >
+			        <li class="col-lg-4 li-border" data-tab="business"><a class="hr-display" href="#accelerate-business" >
 			        	<p class="text-center gotham-rounded-bold clr-black">Business Value</p> </a>
 					</li>
 			        
-			        <li class="col-lg-4 li-border"><a  class="hr-display" data-toggle="tab" data-toggle="collapse" href="#offerings" >
+			        <li class="col-lg-4 li-border" data-tab="partner" ><a  class="hr-display" href="#offerings" >
 			     	 <p class="text-center gotham-rounded-bold clr-black">We partner</p> 
 	                          
 						</a>
 			        </li>
 
-			        <li class="col-lg-4"><a  class="hr-display" data-toggle="tab"  href="#engageus" >
+			        <li class="col-lg-4" data-tab="eng-model"><a  class="hr-display" href="#engageus" >
 			        <p class="text-center gotham-rounded-bold clr-black">Engagment Model</p> 
 	                         
 						</a>
@@ -44,10 +44,10 @@
 			</div> <!--end of contaier-fuild of tab heading-->
 
 			<!-- tab-content -->
-		    <div class="tab-content">
+		    <div class="tab-content case-studies-control-holder" data-tab="business">
 		    	
 		    	<!-- tab1 -->
-					<div id="accelerate-business" class="tab-pane fade ">
+					<div id="accelerate-business" class="tab-pane fade in">
 						<div class="container">
 							<ul>
 								<li class="text-center block-grid">
@@ -103,7 +103,7 @@
 				<!-- end of tab1-->
 
 			<!-- tab2 -->
-				<div id="offerings" class="tab-pane fade in ">
+				<div id="offerings" class="tab-pane fade in " data-tab="partner">
 					<div class="container">
 						<ul>
 							<li class="text-center block-grid">
@@ -159,7 +159,7 @@
 
 
 			<!-- tab3 -->
-				<div id="engageus" class="tab-pane fade in ">
+				<div id="engageus" class="tab-pane fade in " data-tab="eng-model">
 					<div class="container">
 						<ul>
 							<li class="text-center block-grid">
