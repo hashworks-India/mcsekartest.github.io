@@ -10,9 +10,11 @@
 						<div class="banner-outer">
 
 							<div class="banner-inner">
-								
-								<h1 class="clr-white">{{page.devops.title}} </h1>
-								
+								{% for navcasestudy in site.casestudy.devops %}
+
+								<h1 class="clr-white">{{navcasestudy.title}} </h1>
+
+								{% endfor %}
 							</div>
 
 						</div>
