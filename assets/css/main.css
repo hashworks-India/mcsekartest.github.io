@@ -1059,9 +1059,9 @@ background: #fff;
 		.hw-upskill-cont svg {
 			height: 15px;
 		}
-
-		
-
+		.case-studies-control-holder .hw-upskilling-filter {
+			margin-top: 0px;
+		}
 	/*End of filter-details*/
 
 	/*hw-started*/

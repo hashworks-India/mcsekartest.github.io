@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: navblog_detail
 description: first
 category: test
 image: blog.jpg

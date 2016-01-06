@@ -64,10 +64,7 @@ $(document).ready(function(){
             }
           }
 
-          else {
-              $(".navbar-default").css("padding-bottom","5px")
-          }
-
+         
         });
 
     
@@ -168,7 +165,6 @@ $(document).ready(function(){
             var dataval = $(this).attr("data-value");
 
             $('.upskill-cont-filter').each(function(){
-
               if($(this).hasClass(dataval)) {
                 $(this).css({'display':'block'});
               }
@@ -201,8 +197,6 @@ $(document).ready(function(){
 
           $('.filter-content').each(function(){
               var dval = $(this).attr("data-value");
-              
-
               if(dtab == dval) {
                 $(this).addClass('active');
               }
