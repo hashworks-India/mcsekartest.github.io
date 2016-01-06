@@ -11,7 +11,7 @@
 
 							<div class="banner-inner">
 
-								<h1 class="clr-white">Case Study</h1>
+								<h1 class="clr-white">{{ site.data.Solutions.Platform_Integration.soa.title}} </h1>
 							</div>
 
 						</div>
@@ -27,7 +27,7 @@
 			<div class="container">
 				<div class="columns-8 column-center">
 					<h1 class="text-uppercase hw-heading">Problem Statement</h1>
-					<p class="hw-para gotham-rounded-bok">The Deeley Motorcycle Exhibition Museum houses the largest private collection of motorcycles in all of Canada. Their Vancouver facilities function as both a gallery and a unique conference centre for local businesses. Their modern space is sure to  appeal to anyone with a penchant for speed, power or the sheer elegance of beautifully designed machinery.  </p>
+					<p class="hw-para gotham-rounded-bok">{{ site.casestudy.devops }} </p>
 				</div>
 			</div>
 		<!-- End of Problem Statement -->
@@ -35,24 +35,21 @@
 
 		<!-- objectives -->
 			<div class="container">
-				<!-- <div class=" "> -->
 					<div class="row">
 						<div class="row col-lg-8 col-lg-offset-3 col-md-8">
 								<div class="col-lg-6  col-md-6">
 									<h1 class="text-uppercase hw-heading">OBJECTIVES</h1>
 									<ul class="objectives casestudy-ul-det" type="square">
-										<li><p class="gotham-rounded-light hw-copyright clr-black">Build a user experience and content strategy to drive membership</p></li>
-										<li><p class="gotham-rounded-light hw-copyright clr-black">Build a user experience and content strategy to drive membership</p></li>
-										<li><p class="gotham-rounded-light hw-copyright clr-black">Build a user experience and content strategy to drive membership</p></li>
+
+										{% for objective in site.casestudy.objectives %}
+										<li><p class="gotham-rounded-light hw-copyright clr-black">{{objective}}</p></li>
+										{% endfor %}
 									</ul>
 								</div>
 								<div class="col-lg-6 col-md-6">
 
 									<ul class="requirements casestudy-ul-det" type="circle">
 										
-										<li><p class="gotham-rounded-light  hw-copyright clr-black">Build a user experience</p></li>
-										<li><p class="gotham-rounded-light  hw-copyright clr-black">Build a user experience</p></li>
-										<li><p class="gotham-rounded-light  hw-copyright clr-black">Build a user experience</p></li>
 									</ul> 
 								</div>
 						</div>
@@ -64,7 +61,7 @@
 			<div class="container">
 				<div class="columns-8 column-center">
 					<h1 class="text-uppercase hw-heading">Approach</h1>
-					<p class="hw-para gotham-rounded-bok">The Deeley Motorcycle Exhibition Museum houses the largest private collection of motorcycles in all of Canada. Their Vancouver facilities function as both a gallery and a unique conference centre for local businesses. Their modern space is sure to  appeal to anyone with a penchant for speed, power or the sheer elegance of beautifully designed machinery.  </p>
+					<p class="hw-para gotham-rounded-bok">{{ site.casestudy.devops.approach }}</p>
 				</div>
 			</div>
 		<!-- End of Approach -->
@@ -72,8 +69,8 @@
 		<!-- Research -->
 			<div class="container">
 				<div class="columns-8 column-center">
-					<h1 class="text-uppercase hw-heading">Research</h1>
-					<p class="hw-para gotham-rounded-bok">The Deeley Motorcycle Exhibition Museum houses the largest private collection of motorcycles in all of Canada. Their Vancouver facilities function as both a gallery and a unique conference centre for local businesses. Their modern space is sure to  appeal to anyone with a penchant for speed, power or the sheer elegance of beautifully designed machinery.  </p>
+					<h1 class="text-uppercase hw-heading">Result</h1>
+					<p class="hw-para gotham-rounded-bok"> {{ site.casestudy.devops.result }}</p>
 				</div>
 			</div>
 		<!-- End of Research -->

@@ -1,6 +1,6 @@
 ---
 title: soa
-layout: navcasestudy
+layout: navcasestudy_detail
 category: portfolio
 tag: devops1
 permalink: "/casestudy/soa/"
