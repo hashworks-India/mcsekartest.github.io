@@ -29,14 +29,7 @@
 
 			</div>
 
-			<!-- <a class="left carousel-control carousel-indicatr-pos" href="#myCarousel" role="button" data-slide="prev">
-			 <img src="/assets/img/solutions/carousel-indi-1.jpg">
-			<span class="sr-only">Previous</span>
-			</a>
-			<a class="right carousel-control carousel-indicatr-pos" href="#myCarousel" role="button" data-slide="next">
-			<img src="/assets/img/solutions/carousel-indi.jpg">
-			<span class="sr-only">Next</span>
-			</a> -->
+			
 	 	</div>
 	 	</div>
 	<!-- end of carousel-->
@@ -85,9 +78,10 @@
 	        	<div class="container-fluid  div-margin-left">
 					<div class="hw-engage-cont">
 			        	<h2 class="hw-heading gotham-rounded-bok h2-color">Employer</h2>
-			        	<p class="hw-para gotham-rounded-light">This course introduces attendees to the goals, objectives, benefits, practices of a DevOps environment with hands on working sessions. The course also addresses why DevOps is a mix of cultural, process  tools movement. This sessions talks about principles and mind-sets with practical hands-on use-cases that is pivoting the software delivery landscape.</p><br>
-			        	<p class="hw-para gotham-rounded-light">This course introduces attendees to the goals, objectives,                 benefits,practices of a DevOps environment with hands on working sessions. The course also addresses with hy DevOps is a mix of cultural, process  tools movement. This sessions talks about principles and mind-sets with practical hands-on use-cases that is pivoting the software delivery landscape.</p><br>
-			        	<p class="hw-para gotham-rounded-light">This course introduces attendees to the goals, objectives, benefits, practices of a DevOps environment with hands on working sessions. The course also addresses why DevOps is a mix of cultural, process tools movement. This sessions talks about principles and mind-sets with practical hands-on use-cases that is pivoting the software delivery landscape.</p>
+			        	{% for para in site.data.Talent_Acquisition.talent.Employer %}
+			        	<p class="hw-para gotham-rounded-light">{{ para.employee }}</p><br>
+			        	{% endfor %}
+			        	
 					</div>
 				</div>	
 
@@ -194,12 +188,10 @@
 			        	<h2 class="hw-heading gotham-rounded-bok h2-color">Partner</h2>
 			        	<p class="hw-para gotham-rounded-light">This course introduces attendees to the goals, objectives, benefits, practices of a DevOps environment with hands on working sessions. The course also addresses why DevOps is a mix of cultural, process  tools movement. This sessions talks about principles and mind-sets with practical hands-on use-cases that is pivoting the software delivery landscape.</p>
 			        	<ul class="job-board-ul">
-			        		<li><p class="hw-para gotham-rounded-light li-class">How DevOps thinking is pivoting organizations to deliver faster applications features to its customers.</p></li>
-			        		<li><p class="hw-para gotham-rounded-light li-class">How DevOps thinking is pivoting organizations to deliver faster applications features to its customers.</p></li>
-			        		<li><p class="hw-para gotham-rounded-light li-class">How DevOps thinking is pivoting organizations to deliver faster applications features to its customers.</p></li>
-			        		<li><p class="hw-para gotham-rounded-light li-class">How DevOps thinking is pivoting organizations to deliver faster applications features to its customers.</p></li>
-			        		<li><p class="hw-para gotham-rounded-light li-class">How DevOps thinking is pivoting organizations to deliver faster applications features to its customers.</p></li>
-			        		<li><p class="hw-para gotham-rounded-light li-class">How DevOps thinking is pivoting organizations to deliver faster applications features to its customers.</p></li>
+			        		{% for para in site.data.Talent_Acquisition.talent.Partner %}
+			        		<li><p class="hw-para gotham-rounded-light li-class">{{para.partner}}</p></li>
+			        		{% endfor %}
+			        		
 			        	</ul>
 					</div>
 				</div>	
@@ -309,13 +301,16 @@
 					<div class="hw-engage-cont">
 			        	<h2 class="hw-heading gotham-rounded-bok h2-color">Job Seeker</h2>
 			        	<ul class="job-board-ul">
-							<li><p class="hw-para gotham-rounded-light li-class">Anyone interested in acquiring a high level knowledge about DevOps</p></li>
-			        		<li><p class="hw-para gotham-rounded-light li-class">Managed service providers</p></li>
+			        		{% for para in site.data.Talent_Acquisition.talent.Job %}
+							<li><p class="hw-para gotham-rounded-light li-class">{{ para.job }}</p></li>
+							{% endfor %}
+
+			        		<!-- <li><p class="hw-para gotham-rounded-light li-class">Managed service providers</p></li>
 			        		<li><p class="hw-para gotham-rounded-light li-class">Software developers, test engineers, managers, consultants or anyone involved in application development</p></li>
 			        		<li><p class="hw-para gotham-rounded-light li-class">IT Operations teams, management, professionals and consultants.</p></li>
 			        		<li><p class="hw-para gotham-rounded-light li-class">How DevOps thinking is pivoting organizations to deliver faster applications features to its customers.</p></li>
 			        		<li><p class="hw-para gotham-rounded-light li-class">How DevOps thinking is pivoting organizations to deliver faster applications features to its customers.</p></li>
-			        		<li><p class="hw-para gotham-rounded-light li-class">How Cost of Ops has significantly go down with the level of abstraction of these solutions</p></li>
+			        		<li><p class="hw-para gotham-rounded-light li-class">How Cost of Ops has significantly go down with the level of abstraction of these solutions</p></li> -->
 			        	</ul>
 					</div>
 				</div>	

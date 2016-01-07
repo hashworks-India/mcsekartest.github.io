@@ -10,11 +10,11 @@
 						<div class="banner-outer">
 
 							<div class="banner-inner">
-								{% for navcasestudy in site.casestudy.devops %}
+								
 
-								<h1 class="clr-white">{{navcasestudy.title}} </h1>
+								<h1 class="clr-white">{{page.title}} </h1>
 
-								{% endfor %}
+								
 							</div>
 
 						</div>
@@ -30,7 +30,7 @@
 			<div class="container">
 				<div class="columns-8 column-center">
 					<h1 class="text-uppercase hw-heading">Problem Statement</h1>
-					<p class="hw-para gotham-rounded-bok">{{ page.devops }} </p>
+					<p class="hw-para gotham-rounded-bok">{{ page.problem_statement}} </p>
 				</div>
 			</div>
 		<!-- End of Problem Statement -->
@@ -44,7 +44,7 @@
 									<h1 class="text-uppercase hw-heading">OBJECTIVES</h1>
 									<ul class="objectives casestudy-ul-det" type="square">
 
-										{% for objective in site.casestudy.objectives %}
+										{% for objective in page.objectives %}
 										<li><p class="gotham-rounded-light hw-copyright clr-black">{{objective}}</p></li>
 										{% endfor %}
 									</ul>
@@ -64,7 +64,7 @@
 			<div class="container">
 				<div class="columns-8 column-center">
 					<h1 class="text-uppercase hw-heading">Approach</h1>
-					<p class="hw-para gotham-rounded-bok">{{ site.casestudy.devops.approach }}</p>
+					<p class="hw-para gotham-rounded-bok">{{ page.approach}} </p>
 				</div>
 			</div>
 		<!-- End of Approach -->
@@ -73,7 +73,7 @@
 			<div class="container">
 				<div class="columns-8 column-center">
 					<h1 class="text-uppercase hw-heading">Result</h1>
-					<p class="hw-para gotham-rounded-bok"> {{ site.casestudy.devops.result }}</p>
+					<p class="hw-para gotham-rounded-bok"> {{ page.results }}</p>
 				</div>
 			</div>
 		<!-- End of Research -->

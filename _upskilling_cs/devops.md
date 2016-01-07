@@ -1,8 +1,8 @@
 ---
 layout: ups_devops
-topic: DevOps
+topic: DevOps 
 title: DevOps for begineers
-permalink: "/upskilling_cs/devops 2/"
+permalink: "/upskilling_cs/devops/"
 desc: This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit c9443d auctor aliquet.                        This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit c9443d auctor aliquet. This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit c9443d auctor aliquet. This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit c9443d auctor aliquet. This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit c9443d auctor aliquet.
 program_details : OnCampus
 count: 208
