@@ -4,6 +4,7 @@
 
    
 	<h1 class="text-center gotham-rounded-bok heading hw-carousel-heading"> Solutions </h1>
+	<!-- carousel-->
 
    		<div class="carousel-padding"> 
 		   	<div class="line"></div>
@@ -29,10 +30,9 @@
 					    {% endfor %}
 				    </div>
 				</div>
+			</div>
+	 	</div>
 
-			
-	 	</div>
-	 	</div>
 	<!-- end of carousel-->
 	
 
@@ -60,30 +60,29 @@
 							</ul></a>
 				        </li>
 
-				        <li class="p-flex" data-value="mobility"><a  data-toggle="tab" href="#big_data" >
+				        <li class="p-flex" data-value="mobility"><a  data-toggle="tab" href="#tab_mobility" >
 				        	<ul class="tab-img" >
 				        		<li class="li-tab-mar"><img src="/assets/img/solutions/mobility-bigdata.jpg"></li>
 				        		<li class="gotham-rounded-light font-24"><p>Mobility/</p> <p class="text-center"> Big Data</p></li>
 							</ul></a>
 				        </li>
 
+				        <li class="p-flex" data-value="bigdata"><a  data-toggle="tab" href="#big_data" >
+				        	<ul class="tab-img" >
+				        		<li class="li-tab-mar"><img src="/assets/img/solutions/mobility-bigdata.jpg"></li>
+				        		<li class="gotham-rounded-light font-24"><p>Big Data</p> <p class="text-center"></p><br></li>
+							</ul></a>
+				        </li>
+
 				        <li class="p-flex" data-value="ui-ux"><a  data-toggle="tab" href="#ui" >
 				        	<ul class="tab-img" >
 				        		<li class="li-tab-mar"><img src="/assets/img/solutions/mobility-bigdata.jpg"></li>
-				        		<li class="gotham-rounded-light font-24"><p>UI/</p> <p class="text-center"> UX</p></li>
+				        		<li class="gotham-rounded-light font-24"><p>UI/UX</p> <p class="text-center"></p><br></li>
 							</ul></a>
 				        </li>
-
-				        <li class="p-flex" data-value=""><a  data-toggle="tab" href="#mobility" >
-				        	<ul class="tab-img" >
-				        		<li class="li-tab-mar"><img src="/assets/img/solutions/mobility-bigdata.jpg"></li>
-				        		<li class="gotham-rounded-light font-24"><p>New/</p> <p class="text-center"> Big </p></li>
-							</ul></a>
-				        </li>
-
 
 				        
-			        </ul>
+					</ul>
 			    </div>
 			  	<div id='right_scroll' class="arrow"><i class="fa fa-angle-right"></i></div>
 			</div>
@@ -95,7 +94,7 @@
 
 	        <div id="platform" class="tab-pane fade in active" data-value="Integration">
 	           <!-- categories -->
-       <div class="container-fluid  div-margin-left">
+       			<div class="container-fluid  div-margin-left">
 
 			<!-- hw-engage-cont -->
 				<div class="hw-engage-cont">
@@ -430,12 +429,9 @@
 		</div>
 	   	<!-- end of tab1 -->
 
-	   		<!-- tab2-->
+	   	<!-- tab2-->
 	        <div id="engineering" class="tab-pane fade" data-value="eng-practice">
 	            <div class="container-fluid  div-margin-left">
-
-			
-
 			<!-- hw-engage-cont -->
 				<div class="hw-engage-cont">
 					<!-- row one-->
@@ -575,13 +571,9 @@
 							{% endfor %}
 						 </div><!-- end of carousel inner-->
 						</div>
-
-
-
-							</div> 
+					</div> 
 							<!-- end of testimony-carousel-div -->
-
-							<div class="col-lg-7">
+						<div class="col-lg-7">
 								<h2 class="gotham-rounded-bok h2-color hw-heading">{{ site.data.Solutions.Engineering_Practices.performance_engineering.title}}</h2>
 								<div class="div-border-left">
 									<p class="gotham-rounded-light para hw-para">{{ site.data.Solutions.Engineering_Practices.performance_engineering.content}}
@@ -740,10 +732,7 @@
 							{% endfor %}
 						 </div><!-- end of carousel inner-->
 						</div>
-
-
-
-							</div> 
+						</div> 
 							<!-- end of testimony-carousel-div -->
                                
 							<div class="col-lg-7">
@@ -765,7 +754,7 @@
 				
 	        </div><!-- end of tab2-->
 
-	        <div id="big_data" class="tab-pane fade" data-value="mobility">
+	        <div id="tab_mobility" class="tab-pane fade" data-value="mobility">
 	           <div class="container-fluid  div-margin-left">
 
 				<!-- hw-engage-cont -->
@@ -908,10 +897,7 @@
 							{% endfor %}
 						 </div><!-- end of carousel inner-->
 						</div>
-
-
-
-							</div> 
+					</div> 
 							<!-- end of testimony-carousel-div -->
 
 							<div class="col-lg-7">
@@ -1000,14 +986,9 @@
 							{% endfor %}
 						 </div><!-- end of carousel inner-->
 						</div>
-
-
-
-							</div> 
+						</div> 
 							<!-- end of testimony-carousel-div -->
-					
-
-						</div>
+					</div>
 					<!--end of row3-->
 				</div>
 			<!-- hw-engage-cont -->
@@ -1073,6 +1054,336 @@
 							{% endfor %}
 						 </div><!-- end of carousel inner-->
 						</div>
+						</div> 
+							<!-- end of testimony-carousel-div -->
+                               
+							<div class="col-lg-7">
+								<h2 class="gotham-rounded-bok h2-color hw-heading">{{ site.data.Solutions.Mobility_Bigdata.consumer_apps.title}}</h2>
+								<div class="div-border-left">
+									<p class="gotham-rounded-light para hw-para">{{ site.data.Solutions.Mobility_Bigdata.consumer_apps.content}}
+									</p>
+								</div>
+								<a href="/case_study/mobility"><button class="custom-btn">View Casestudy</button></a>
+							</div>
+
+						</div>
+					<!-- end of row4 -->
+				</div>
+		<!-- End of hw-engage-cont -->
+
+		</div>
+		<!-- end of container-->
+	        </div>
+
+
+	        <div id="big_data" class="tab-pane fade" data-value="bigdata">
+	           <div class="container-fluid  div-margin-left">
+
+				<!-- hw-engage-cont -->
+				<div class="hw-engage-cont">
+					<!-- row one-->
+						<div class="row ">
+
+							<div class="col-lg-7">
+								<h2 class="gotham-rounded-bok h2-color hw-heading">{{ site.data.Solutions.Bigdata.enterprise_mobility.title}}</h2>
+								<div class="div-border-left">
+									<p class="gotham-rounded-light para hw-para">{{ site.data.Solutions.Bigdata.enterprise_mobility.content}}
+									</p>
+								</div>
+								<a href="/case_study/mobility"><button class="custom-btn">View Casestudy</button></a>
+							</div>
+
+							<div class="col-lg-5 col-testimoni testimonial-carousel">
+								<!-- Testimonial carousel -->
+									<div id="mb1-testimonial-first" class="carousel-mb1 carousel slide testimonial" data-ride="carousel" data-interval="false">
+  								<ol class="carousel-indicators testimonial-ol">
+									{% for testimony in site.data.Solutions.Bigdata.enterprise_mobility.testimonial%}
+		                      			{% if forloop.first %}
+		 									<li data-to="{{forloop.index0}}" class="active"></li>
+										{% else %}
+		   									<li data-to="{{forloop.index0}}"></li>
+										{% endif %}
+	                     			{% endfor %}
+ 								 </ol>
+
+							  <!-- Wrapper for slides -->
+							  <div class="carousel-inner">
+							   {% for testimony in site.data.Solutions.Bigdata.enterprise_mobility.testimonial%}
+							       {% if forloop.first %}
+							  	<div class="item active">
+							      <div class="hw-para">
+							       {{ testimony.testimony}}
+							      </div>
+							    </div>
+								{% else %}
+							   <div class="item">
+							      	<div class="hw-para">
+							       		{{ testimony.testimony}}
+							      	</div>
+							    </div>
+								{% endif %}
+							    {% endfor %}
+							   </div>
+							    <div class="arrow-down"></div>
+								</div>
+								<div id="mb1-testimonial-second" class="carousel carousel-mb1 slide" data-ride="carousel" data-interval="false">
+
+							  <!-- Wrapper for slides -->
+							  <div class="carousel-inner">
+							    {% for testimony in site.data.Solutions.Bigdata.enterprise_mobility.testimonial%}
+							        {% if forloop.first %}
+							 <div class="item active">
+							         <div class="name-align-right">
+							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
+							        <img src="/assets/img/solutions/user-pic.png">
+							  </div>
+							    </div>
+							{% else %}
+							   <div class="item">
+							         <div class="name-align-right">
+							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
+							        <img src="/assets/img/solutions/user-pic.png">
+							     </div>
+							    </div>
+							{% endif %}
+							{% endfor %}
+						 </div><!-- end of carousel inner-->
+						</div><!-- end of testimonial-carousel-->
+							</div><!-- end of testimonial-div-->
+
+						</div>
+					<!--end of row1-->
+				</div>
+			<!-- End of hw-engage-cont -->
+
+			<!-- hw-engage-cont -->
+				<div class="hw-engage-cont">
+					<!-- row 2 -->
+						<div class="row">
+
+							<div class="col-lg-5 col-testimoni testimonial-carousel">
+								
+                               <!-- Testimonial carousel -->
+									<div id="mb2-testimonial-first" class="carousel-mb2 carousel slide testimonial" data-ride="carousel" data-interval="false">
+  								<ol class="carousel-indicators testimonial-ol">
+									{% for testimony in site.data.Solutions.Bigdata.operational_analytics.testimonial%}
+		                      			{% if forloop.first %}
+		 									<li data-to="{{forloop.index0}}" class="active"></li>
+										{% else %}
+		   									<li data-to="{{forloop.index0}}"></li>
+										{% endif %}
+	                     			{% endfor %}
+ 								 </ol>
+
+							  <!-- Wrapper for slides -->
+							  <div class="carousel-inner">
+							   {% for testimony in site.data.Solutions.Bigdata.operational_analytics.testimonial%}
+							       {% if forloop.first %}
+							  	<div class="item active">
+							      <div class="hw-para">
+							       {{ testimony.testimony}}
+							      </div>
+							    </div>
+								{% else %}
+							   <div class="item">
+							      	<div class="hw-para">
+							       		{{ testimony.testimony}}
+							      	</div>
+							    </div>
+								{% endif %}
+							    {% endfor %}
+							   </div>
+							    <div class="arrow-down-left "></div>
+								</div>
+								<div id="mb2-testimonial-second" class="carousel carousel-mb2 slide" data-ride="carousel" data-interval="false">
+
+							  <!-- Wrapper for slides -->
+							  <div class="carousel-inner">
+							    {% for testimony in site.data.Solutions.Bigdata.operational_analytics.testimonial%}
+							        {% if forloop.first %}
+							 <div class="item active">
+							         <div class="name-align-left">
+							         	<img src="/assets/img/solutions/user-pic.png">
+							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}
+							        </span>
+							  </div>
+							    </div>
+							{% else %}
+							   <div class="item">
+							         <div class="name-align-left">
+							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
+							        <img src="/assets/img/solutions/user-pic.png">
+							     </div>
+							    </div>
+							{% endif %}
+							{% endfor %}
+						 </div><!-- end of carousel inner-->
+						</div>
+
+
+
+							</div> 
+							<!-- end of testimony-carousel-div -->
+
+							<div class="col-lg-7">
+								<h2 class="gotham-rounded-bok h2-color hw-heading">{{ site.data.Solutions.Bigdata.operational_analytics.title}}</h2>
+								<div class="div-border-left">
+									<p class="gotham-rounded-light para hw-para">{{ site.data.Solutions.Bigdata.operational_analytics.content}}
+									</p>
+								</div>
+								<a href="/case_study/mobility"><button class="custom-btn">View Casestudy</button></a>
+							</div>
+
+						</div>
+					<!-- end of row2 -->
+				</div>
+			<!-- End of hw-engage-cont -->
+
+
+			<!-- hw-engage-cont -->
+				<div class="hw-engage-cont">
+					<!-- row3-->
+						<div class="row">
+
+							<div class="col-lg-7">
+								<h2 class="gotham-rounded-bok h2-color hw-heading">{{ site.data.Solutions.Bigdata.predictive_analysis.title}}</h2>
+								<div class="div-border-left">
+									<p class="gotham-rounded-light para hw-para">{{ site.data.Solutions.Bigdata.predictive_analysis.content}}
+									</p>
+								</div>
+								<a href="/case_study/mobility"><button class="custom-btn">View Casestudy</button></a>
+							</div>
+
+							<div class="col-lg-5 col-testimoni testimonial-carousel">
+								
+                               <!-- Testimonial carousel -->
+									<div id="mb3-testimonial-first" class="carousel-mb3 carousel slide testimonial" data-ride="carousel" data-interval="false">
+  								<ol class="carousel-indicators testimonial-ol">
+									{% for testimony in site.data.Solutions.Bigdata.predictive_analysis.testimonial%}
+		                      			{% if forloop.first %}
+		 									<li data-to="{{forloop.index0}}" class="active"></li>
+										{% else %}
+		   									<li data-to="{{forloop.index0}}"></li>
+										{% endif %}
+	                     			{% endfor %}
+ 								 </ol>
+
+							  <!-- Wrapper for slides -->
+							  <div class="carousel-inner">
+							   {% for testimony in site.data.Solutions.Bigdata.predictive_analysis.testimonial%}
+							       {% if forloop.first %}
+							  	<div class="item active">
+							      <div class="hw-para">
+							       {{ testimony.testimony}}
+							      </div>
+							    </div>
+								{% else %}
+							   <div class="item">
+							      	<div class="hw-para">
+							       		{{ testimony.testimony}}
+							      	</div>
+							    </div>
+								{% endif %}
+							    {% endfor %}
+							   </div>
+							    <div class="arrow-down"></div>
+								</div>
+								<div id="mb3-testimonial-second" class="carousel carousel-mb3 slide" data-ride="carousel" data-interval="false">
+
+							  <!-- Wrapper for slides -->
+							  <div class="carousel-inner">
+							    {% for testimony in site.data.Solutions.Bigdata.predictive_analysis.testimonial%}
+							        {% if forloop.first %}
+							 <div class="item active">
+							         <div class="name-align-right">
+							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
+							        <img src="/assets/img/solutions/user-pic.png">
+							  </div>
+							    </div>
+							{% else %}
+							   <div class="item">
+							         <div class="name-align-right">
+							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
+							        <img src="/assets/img/solutions/user-pic.png">
+							     </div>
+							    </div>
+							{% endif %}
+							{% endfor %}
+						 </div><!-- end of carousel inner-->
+						</div>
+
+
+
+							</div> 
+							<!-- end of testimony-carousel-div -->
+					
+
+						</div>
+					<!--end of row3-->
+				</div>
+			<!-- hw-engage-cont -->
+
+			<!-- hw-engage-cont -->
+				<div class="hw-engage-cont">
+					<!-- row 4 -->
+						<div class="row">
+	<div class="col-lg-5 col-testimoni testimonial-carousel ">
+								
+                                                              <!-- Testimonial carousel -->
+									<div id="mb4-testimonial-first" class="carousel-mb4 carousel slide testimonial" data-ride="carousel" data-interval="false">
+  								<ol class="carousel-indicators testimonial-ol">
+									{% for testimony in site.data.Solutions.Bigdata.consumer_apps.testimonial%}
+		                      			{% if forloop.first %}
+		 									<li data-to="{{forloop.index0}}" class="active"></li>
+										{% else %}
+		   									<li data-to="{{forloop.index0}}"></li>
+										{% endif %}
+	                     			{% endfor %}
+ 								 </ol>
+
+							  <!-- Wrapper for slides -->
+							  <div class="carousel-inner">
+							   {% for testimony in site.data.Solutions.Bigdata.consumer_apps.testimonial%}
+							       {% if forloop.first %}
+							  	<div class="item active">
+							      <div class="hw-para">
+							       {{ testimony.testimony}}
+							      </div>
+							    </div>
+								{% else %}
+							   <div class="item">
+							      	<div class="hw-para">
+							       		{{ testimony.testimony}}
+							      	</div>
+							    </div>
+								{% endif %}
+							    {% endfor %}
+							   </div>
+							    <div class="arrow-down-left "></div>
+								</div>
+								<div id="mb4-testimonial-second" class="carousel carousel-mb4 slide" data-ride="carousel" data-interval="false">
+
+							  <!-- Wrapper for slides -->
+							  <div class="carousel-inner">
+							    {% for testimony in site.data.Solutions.Bigdata.consumer_apps.testimonial%}
+							        {% if forloop.first %}
+							 <div class="item active">
+							         <div class="name-align-left"><img src="/assets/img/solutions/user-pic.png">
+							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}
+							        </span>
+							  </div>
+							    </div>
+							{% else %}
+							   <div class="item">
+							         <div class="name-align-left">
+							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}},{{ testimony.company_name}}</span>
+							        <img src="/assets/img/solutions/user-pic.png">
+							     </div>
+							    </div>
+							{% endif %}
+							{% endfor %}
+						 </div><!-- end of carousel inner-->
+						</div>
 
 
 
@@ -1080,7 +1391,7 @@
 							<!-- end of testimony-carousel-div -->
                                
 							<div class="col-lg-7">
-								<h2 class="gotham-rounded-bok h2-color hw-heading">{{ site.data.Solutions.Mobility_Bigdata.consumer_apps.title}}</h2>
+								<h2 class="gotham-rounded-bok h2-color hw-heading">{{ site.data.Solutions.Bigdata.consumer_apps.title}}</h2>
 								<div class="div-border-left">
 									<p class="gotham-rounded-light para hw-para">{{ site.data.Solutions.Mobility_Bigdata.consumer_apps.content}}
 									</p>

@@ -34,25 +34,24 @@
 						<div class="hr-display">
 							<h3 class="text-uppercase hw-heading cs-li-margin">The New User Experience</h3>
 							<hr/>
-							<p class="hw-para gotham-rounded-bok">{{page.focus}}</p>
+							<p class="hw-para gotham-rounded-bok">{{page.The_New_Use_Experience}}</p>
 						
-							<img src="https://lh4.googleusercontent.com/_nVyxCNJEfHBgbzsCQSspwSDExBCfSnHx9Mddc8I6zvt184Qk30BMDEDPwNRF_FJQAeJpGDq7oJb_0cWvcPP24DGBcdRRAX-QGdWSyhp-593b4uHEPjsF0A36xhNPOpGehqTdjoA">
+							<img src="{{page.imgsrc1}}">
 						
-							<p class="hw-para gotham-rounded-bok">{{page.focus}}{{page.focus}}{{page.focus}}</p>
+							<p class="hw-para gotham-rounded-bok">{{page.para}}</p>
 							
-							<img src="http://forgeandsmith.com/wp-content/uploads/2015/12/Top-Tweets.jpg">
+							<img src="{{page.imgsrc}}">
 						
-							<p class="hw-para gotham-rounded-bok">{{page.focus}}{{page.focus}}{{page.focus}}{{page.focus}}</p>
-							<p class="hw-para gotham-rounded-bok">{{page.focus}}{{page.focus}}</p>
+							<p class="hw-para gotham-rounded-bok">{{page.para1}}</p>
+							<p class="hw-para gotham-rounded-bok">{{page.para2}}</p>
 						</div>
 
 						<div class="hr-display">
 							<h3 class="text-uppercase hw-heading cs-li-margin">Using the Universal Windows Platform</h3>
 							<hr/>
-							<p class="hw-para gotham-rounded-bok">{{page.focus}}</p>
-						
-							<p class="hw-para gotham-rounded-bok">{{page.focus}}{{page.focus}}{{page.focus}}{{page.focus}}</p>
-							<p class="hw-para gotham-rounded-bok">{{page.focus}}{{page.focus}}</p>
+							{% for para in page.universal %}
+							<p class="hw-para gotham-rounded-bok">{{page.para}}</p>
+							{% endfor %}
 						</div>
 
 						<div class="hr-display">
@@ -61,7 +60,7 @@
 							<p class="hw-para gotham-rounded-bok">{{page.focus}}{{page.focus}}{{page.focus}}{{page.focus}}</p>
 							<p class="hw-para gotham-rounded-bok">{{page.focus}}{{page.focus}}{{page.focus}}</p>
 						
-							<img src="https://lh3.googleusercontent.com/5gUCPPezduFncueKWKdYIblOCOXNAjH9hGBUzDZMETMYSnLUWY2jjI5zn0E3M1kRkVQUVIGthDdNTtOnuehouUjGDlGHD1U_k4XEvSpG3oQE1yq7EQZMAmYF9pAQH3q9Zl8esvn3">
+							<img src="{{page.imgsrc2}}">
 						
 							
 							<p class="hw-para gotham-rounded-bok">{{page.focus}}{{page.focus}}</p>
