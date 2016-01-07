@@ -107,12 +107,14 @@
 					</div>
 					<div class="col-lg-7">
 						<div class="post-resume">
+							<form class="form-signin" onSubmit="submitForm(event)" >  <!-- start of form -->
 							<div class="row ">
 									<div class="col-lg-6"> 
 										<div class="text-border">
 											<div class="input-group">
 					      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/name-img.png"></div>
-												<input type="text" class="form-control placeholder-pro" placeholder="NAME">
+					      						
+												<input type="text" class="form-control placeholder-pro mainLoginInput" id="name" placeholder="NAME" >
 											</div>
 										</div>		
 									</div>
@@ -121,7 +123,7 @@
 									<div class="text-border">
 										<div class="input-group">
 				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/email-img.png"></div>
-											<input type="text" class="form-control placeholder-pro" placeholder="EMAIL">
+											<input type="text" class="form-control placeholder-pro mainLoginInput" id="email" placeholder="EMAIL">
 										</div>
 									</div>
 								</div>
@@ -131,7 +133,18 @@
 									<div class="text-border">
 										<div class="input-group">
 				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png"></div>
-											<input type="text" class="form-control placeholder-pro" placeholder="SUBJECT">
+											<select class="form-control mainLoginInput gotham-rounded-light" id="subject">
+												<option value="Subject">Subject</option>
+												<option value="Marketing" class="level-0">Marketing</option>
+												<option value="Design" class="level-0">Design</option>
+												<option value="UX" class="level-0">UX</option>
+												<option value="WordPress" class="level-0">WordPress</option>
+												<option value="Strategy" class="level-0">Strategy</option>
+												<option value="Automations" class="level-0">Automations</option>
+												<option value="News" class="level-0">News</option>
+												<option value="Content" class="level-0">Content</option>
+												<option value="Social" class="level-0">Social Media</option>
+											</select>
 										</div>	
 									</div>	
 								</div>
@@ -139,7 +152,7 @@
 									<div class="text-border">
 										<div class="input-group">
 				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/phone-img.png"></div>
-											<input type="text" class="form-control placeholder-pro" placeholder="PHONE">
+											<input type="text" class="form-control placeholder-pro mainLoginInput" id="phone" placeholder="PHONE">
 										</div>
 									</div>	
 								</div>
@@ -151,7 +164,7 @@
 									<div class="input-group">
 				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png"></div>
 				      						
-				      						<textarea placeholder= "MESSAGE/FEEDBACK/REQUEST" class="form-control placeholder-pro" rows="3"></textarea>
+				      						<textarea placeholder= "MESSAGE/FEEDBACK/REQUEST" class="form-control placeholder-pro mainLoginInput"  id="message" rows="3"></textarea>
 				      					</div>	
 				      					
 									</div>
@@ -162,15 +175,20 @@
 				      			<div class="col-lg-9">
 				      				<br><br>
 				      				<span class="attach-text"><span><img src="/assets/img/talent_acquisition/attach.png"></span><span class="gotham-rounded-bok attach-span">Attach File</span></span>
-				      				<input type="file" id="file-upload">
+				      				<input type="text" id="file-detail" readonly="readonly"/>
+				      				<input type="file" class="gotham-book" id="file-upload">
 				      			</div>
 				      			<div class="col-lg-3 submit-background">
 				      				<br>
+				      				<button class="btn" type="submit" id="submit-btn">
 				      				<div class="submit-resume hr-display">
 				      					<p class="hr-display"><img src="/assets/img/talent_acquisition/submit.png"></p>
-				      					<p class="gotham-rounded-bok placeholder-pro">SUBMIT</p>
+				      					
+				      					<p class="gotham-rounded-bok submit-text placeholder-pro" >SUBMIT</p>
+				      					
 
 				      				</div>
+				      				</button>
 				      			</div>
 				      		</div><!-- end of attach-file-->
 

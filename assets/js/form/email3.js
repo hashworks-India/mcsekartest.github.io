@@ -134,7 +134,10 @@
                                 alert('Your message has been sent. Thank you!'); // show success message
                                 $("#name").val(''); // reset field after successful submission
                                 $("#email").val(''); // reset field after successful submission
+                                $("#subject").val('Subject'); // reset field after successful submission
+                                $("#phone").val(''); // reset field after successful submission
                                 $("#message").val(''); // reset field after successful submission
+                                $('#file-upload').val('');// reset field after successful submission
                             })
                             .fail(function(response) {
                                 alert('Error sending message.');
