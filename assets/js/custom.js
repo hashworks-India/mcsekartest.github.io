@@ -68,17 +68,17 @@ $(document).ready(function(){
         });
 
     
-      //tagcloud
-        $('.tagcloud > li').click(function(){
-          $('.tagcloud > li').removeClass('tagactive');
-          $(this).addClass('tagactive');
-        });
+      
+        // $('.tagcloud > li').click(function(){
+        //   $('.tagcloud > li').removeClass('tagactive');
+        //   $(this).addClass('tagactive');
+        // });
     
-      //tagcloud
-        $('.tagcloud > li').click(function(){
-          $('.tagcloud > li').removeClass('tagactive');
-          $(this).addClass('tagactive');
-        });
+     
+        // $('.tagcloud > li').click(function(){
+        //   $('.tagcloud > li').removeClass('tagactive');
+        //   $(this).addClass('tagactive');
+        // });
   
   
 
@@ -248,14 +248,17 @@ $(document).ready(function(){
        }); 
       
         $('.apply').click(function () {
+
            $('.view1').addClass('hide');
           $('.apply-div').addClass('show');
            
         });
 
         $('.form-close').click(function() {
+
           $('.apply-div').removeClass('show');
            $('.view-act').removeClass('view-color');
+           $('.hw-job1').removeClass('view-color');
         }); 
 
     /* end of job board*/
@@ -409,7 +412,37 @@ $(document).ready(function(){
               $('.case-studies-control-holder > div[data-tab="'+target+'"]').stop(1,1).slideDown();
           }
       });
-  
+      
+
+      //job board pagination 
+      $('.next_page').click(function(){
+        var next = $('.pag.active').removeClass('active').next('.pag');
+        var jobtab = $('.job-table.active').removeClass('active').next('.job-table');
+
+        if( next.length == '0' )  {
+          $('.prev_page').next('.pag').addClass('active');
+          $('.table-wrapper > .job-table:first-child').addClass('active');
+        }
+          next.addClass('active');
+          jobtab.addClass('active');
+
+
+
+      });
+
+      $('.prev_page').click(function(){
+        var prev = $('.pag.active').removeClass('active').prev('.pag');
+        var jobtabprev  = $('.job-table.active').removeClass('active').prev('.job-table');
+
+        if( prev.length == '0' )  {
+          $('.next_page').prev('.pag').addClass('active');
+          $('.table-wrapper > .job-table:last-child').addClass('active');
+        }
+          prev.addClass('active');
+          jobtabprev.addClass('active');
+
+
+      });
 
 });
 

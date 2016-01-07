@@ -10,7 +10,8 @@
 			<span class="span-padding-rite"><button class="job-search">SEARCH FOR JOB</button></span>
 		</div>
 
-
+    <!-- table-wrapper -->
+    <div class="table-wrapper">
   {% assign job_table_size = site.jobboard.size | divided_by: 5 | plus: 1 %}
  
   {% assign start = 0 %}
@@ -169,11 +170,12 @@
   </table>
   {% assign start =  start | plus : 5 %}
   {%endfor%}
-
+</div>
+<!-- End of table-wrapper -->
 
   <div class="hr-display">
 	  	<ul class = "pagination">
-  		  <li><a href = "javascript:void(0)"><i class="fa fa-angle-left"></i></a></li>
+  		  <li class="prev_page"><a href = "javascript:void(0)"><i class="fa fa-angle-left"></i></a></li>
           {% for  i in (1..job_table_size)  %}
           {% capture my_variable %}page{{forloop.index}}{% endcapture %}
 
@@ -182,10 +184,10 @@
           {% else %}
           {% assign cls_page=" " %}
           {%endif%}
-          <li class="filter {{cls_page}}" data-tab =  "{{my_variable}}" ><a href = "javascript:void(0)" >{{forloop.index}}</a></li>
+          <li class="filter {{cls_page}} pag" data-tab =  "{{my_variable}}" ><a href = "javascript:void(0)" >{{forloop.index}}</a></li>
           {%endfor%}
   		 
-  		  <li><a href = "javascript:void(0)"><i class="fa fa-angle-right"></i></a></li>
+  		  <li class="next_page"><a href = "javascript:void(0)"><i class="fa fa-angle-right"></i></a></li>
 		</ul>
 	</div>
 
