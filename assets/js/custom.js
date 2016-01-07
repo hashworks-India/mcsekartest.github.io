@@ -267,7 +267,7 @@ $(document).ready(function(){
       
         var cururl = window.location;
          var curid = cururl.hash.slice(1);
-         $('.hw-casestudy-filter li').each(function(){
+         $('.hw-casestudy-filter > li').each(function(){
                 var dval = $(this).attr("data-value");
 
                 if(curid == dval) {
@@ -293,12 +293,15 @@ $(document).ready(function(){
     var tabchange = function(curid){
       if($('.nav-tabs').hasClass('hw-tablink')) {
 
-              $('.hw-tablink li').each(function(){
+              $('.hw-tablink > li').each(function(){
                 var dtabval = $(this).attr('data-value');
-                if(curid == dtabval) {
-                  $('.hw-tablink li').removeClass('active');
+                if( dtabval !== '') {
+                  if(curid == dtabval) {
+                    $('.hw-tablink > li').removeClass('active');
                       $(this).addClass('active');
                   }
+                }
+                
               });
 
               $('.hw-tabcont-link > div').each(function(){
