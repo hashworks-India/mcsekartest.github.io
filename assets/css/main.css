@@ -1943,7 +1943,11 @@ background: #fff;
 }
 /* end of blog nav page */
 
-
+/* start of navblog detail page */
+.col-testimoni .hr-display img{
+	padding: 13px;
+}
+/* end of navblog detail page */
 
 @media screen and (min-width: 1500px) {
     body {
