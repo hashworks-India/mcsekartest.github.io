@@ -248,8 +248,9 @@ $(document).ready(function(){
        }); 
       
         $('.apply').click(function () {
-
-           $('.view1').addClass('hide');
+          var job_title = $(this).parents('.view1').prev().find("td").first().text(); // for setting the job-title value to form
+          $(".input_subject").val(job_title);
+          $('.view1').addClass('hide');
           $('.apply-div').addClass('show');
            
         });

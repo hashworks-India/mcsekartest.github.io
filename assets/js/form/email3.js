@@ -51,7 +51,7 @@
                     $('.input_file-detail2').val("Please upload your resume");
                     $('.input_file-detail3').val("Please upload your resume");
                 }
-                if (name == "" || email == "" || subject == "Subject" || contact == "" || message == "")
+                if (name == "" || email == "" || subject == "Subject" ||subject == "" || contact == "" || message == "")
                 {
                     flag=1;
                     if (name == "")
@@ -66,7 +66,7 @@
                             $(".input_email").attr("placeholder", "Please enter your Email ");
                             placeholdAnimate(".input_email");
                         }
-                    if (subject == "Subject")
+                    if (subject == "Subject"||subject == "")
                         {
                             $(".input_subject").parent().parent().css("border", "1px solid red");
                         }
