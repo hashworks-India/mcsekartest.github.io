@@ -59,9 +59,7 @@
 
                  // Info Window Content
                   var infoWindowContent = [
-                      ['<div class="container">'+
-                        '<div class="row">'+
-                          '<div class="col-lg-2 get-direction">'+
+                      ['<div class="get-direction">'+
                             '<div>'+
                               '<h4>HashWorks</h4>'+
                             '</div>'+
@@ -84,9 +82,7 @@
                                  '</p>'+
                               '</form>'+
                             '</div>'+
-                          '</div>'+
-                          '</div>'+
-                      '</div>']
+                          '</div>']
                   ];
 
 

@@ -1910,6 +1910,32 @@ background: #fff;
         width: 500px;
         height: 380px;
     }
+.get-direction{
+			background-color: #0AB4C5;
+			border-radius: 4px;
+			padding: 10px 20px 10px 20px;
+			margin-top: 20px;
+		}
+		.get-direction p,h4,h5{
+			color:#fff;
+		}
+		.get-direction form input{
+			/*background-color: #000;*/
+			color: #fff;
+			border: none;
+			border-radius: 2px;
+			margin-bottom: 5px;
+			padding: 2px;
+		}
+		.get-direction #get-direction_div2{
+			border-top: 2px solid #000;
+			padding-top: 11px;
+		}
+		.get-direction form #get-direction-btn{
+			color: #000;
+			background-color: #fcfcfc;
+		}
+
 
 @media screen and (max-width: 868px) {
   .blog-grid > li {
