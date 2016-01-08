@@ -1,5 +1,5 @@
       // calculate route between from and to address
-        function calculateRoute(from, to) {
+        function calculateRoute(from) {
           // Center initialized to Naples, Italy
           var myOptions = {
             zoom: 10,
@@ -12,7 +12,7 @@
           var directionsService = new google.maps.DirectionsService();
           var directionsRequest = {
             origin: from,
-            destination: to,
+            destination: '577, Sector 3, HSR Layout, Bengaluru, Karnataka 560102, India',
             travelMode: google.maps.DirectionsTravelMode.DRIVING,
             unitSystem: google.maps.UnitSystem.METRIC
           };
@@ -38,36 +38,79 @@
         var map;
           function initMap() {
             var locations = [
-      ['Bondi Beach', 12.9093324, 77.6403711]
-    ];
+                ['Hashworks', 12.9093324, 77.6403711]
+              ];
 
-    var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 10,
-      center: new google.maps.LatLng(12.9093324, 77.6403711),
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-    });
+              var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 10,
+                center: new google.maps.LatLng(12.9093324, 77.6403711),
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+              });
 
-    var infowindow = new google.maps.InfoWindow();
+              var infowindow = new google.maps.InfoWindow();
 
-    var marker, i;
+              var marker, i;
 
-    for (i = 0; i < locations.length; i++) {  
-      marker = new google.maps.Marker({
-        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-        map: map
-      });
+              for (i = 0; i < locations.length; i++) {  
+                marker = new google.maps.Marker({
+                  position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+                  map: map
+                });
 
-      google.maps.event.addListener(marker, 'click', (function(marker, i) {
-        return function() {
-          infowindow.setContent(locations[i][0]);
-          infowindow.open(map, marker);
-        }
-      })(marker, i));
-    }
+                 // Info Window Content
+                  var infoWindowContent = [
+                      ['<div class="container">'+
+                        '<div class="row">'+
+                          '<div class="col-lg-2 get-direction">'+
+                            '<div>'+
+                              '<h4>HashWorks</h4>'+
+                            '</div>'+
+                            '<div id="get-direction_div2">'+
+                              '<p >Hashworks IT Services Pvt Ltd'+
+                              'No. 1197, 3rd Floor, HSR Club Road, '+
+                              'Bangalore,India 560102</p>'+
+                              '<h5>Directions</h>'+
+                            '</div>'+
+                            '<div>'+
+                              '<form id="calculate-route" name="calculate-route" method="get" >'+
+                                 '<p>'+
+                                 '<input id="from" type="text" name="from" placeholder="From:"/>'+
+                                 '</p>'+
+                                 '<p>'+
+                                 '<input type="text" name="Email"  placeholder="To:"/>'+
+                                 '</p>'+
+                                 '<p>'+
+                                 '<input type="submit"  onsubmit="submit(e)" />'+
+                                 '</p>'+
+                              '</form>'+
+                            '</div>'+
+                          '</div>'+
+                          '</div>'+
+                      '</div>']
+                  ];
+
+
+                  google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                    return function() {
+                      infowindow.setContent(infoWindowContent[i][0]);
+                      infowindow.open(map, marker);
+                    }
+                  })(marker, i));
+              }
 
 
 
           }
+
+          //after clicking the submit button
+        function submit(e) {
+          e.preventDefault();
+          alert();
+            //map will load after clicking the submit button
+            calculateRoute($("#from").val());
+            alert($("#from").val());
+        }
+
 
 
       // End of initial load google map location
@@ -87,7 +130,7 @@
         }
 
         //get my position link
-        $("#from-link, #to-link").click(function(event) {
+        $("#from-link").click(function(event) {
           event.preventDefault();
           var addressId = this.id.substring(0, this.id.indexOf("-"));
 
@@ -113,56 +156,6 @@
         });
         //End of get my position link
 
-        //after clicking the submit button
-        $("#calculate-route").submit(function(event) {
-          event.preventDefault();
-          //map will load after clicking the submit button
-          calculateRoute($("#from").val(), $("#to").val());
-        });
-        //End of after clicking the submit button
-                    
-      // Info Window Content
-      var infoWindowContent = [
-          ['<div class="info_content">' +
-          '<div class="row">' +
-          '<div class="col-lg-6">'+
-            '<div class="map-img center-align">'+
-              '<img id="link" onclick="showmap()" src="../img/car-list/car1.png" alt="">'+
-            '</div>'+
-          '</div>'+
-          '<div class="col-lg-6 map-cont-border">'+
-            '<div class="map-desc">'+
-              '<h1>Maruti Swift</h1>'+
-              '<span class="star-rating"> <i class="fa fa-star fa-enable fa-lg"></i> <i class="fa fa-star fa-enable fa-lg"></i> <i class="fa fa-star fa-enable fa-lg"></i> <i class="fa fa-star fa-disable fa-lg"></i> <i class="fa fa-star fa-disable fa-lg"></i> </span><span class="comments"> <i class="vsvg v-comment-icon"></i> 05 </span>'+
-                '<div class="price">Rs. 2,500</div>'+
-            '</div>'+
-          '</div>'+
-            '</div>'+
-              '</div>'],
-          ['<div class="info_content">' +
-          '<div class="row">' +
-          '<div class="col-lg-6">'+
-            '<div class="map-img center-align">'+
-              '<img id="link" onclick="showmap()" src="../img/car-list/car1.png" alt="">'+
-            '</div>'+
-          '</div>'+
-          '<div class="col-lg-6 map-cont-border">'+
-            '<div class="map-desc">'+
-              '<h1>Maruti Swift</h1>'+
-              '<span class="star-rating"> <i class="fa fa-star fa-enable fa-lg"></i> <i class="fa fa-star fa-enable fa-lg"></i> <i class="fa fa-star fa-enable fa-lg"></i> <i class="fa fa-star fa-disable fa-lg"></i> <i class="fa fa-star fa-disable fa-lg"></i> </span><span class="comments"> <i class="vsvg v-comment-icon"></i> 05 </span>'+
-                '<div class="price">Rs. 2,500</div>'+
-            '</div>'+
-          '</div>'+
-            '</div>'+
-              '</div>']
-      ];
-          var infoWindow = new google.maps.InfoWindow(), marker, i;
-          // Allow each marker to have an info window    
-          google.maps.event.addListener(marker, 'mouseover', (function(marker, i) {
-              return function() {
-                  infoWindow.setContent(infoWindowContent[i][0]);
-                  infoWindow.open(map, marker);
-              }
-          })(marker, i));
-
+        
+       
       });
