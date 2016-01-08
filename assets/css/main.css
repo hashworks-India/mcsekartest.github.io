@@ -1906,6 +1906,12 @@ background: #fff;
   }
 /* end of row banner */
 
+ #map {
+        width: 500px;
+        height: 400px;
+        margin-top: 10px;
+      }
+
 @media screen and (max-width: 868px) {
   .blog-grid > li {
     width: 33.33%;
