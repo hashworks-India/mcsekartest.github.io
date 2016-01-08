@@ -410,7 +410,6 @@
     background: none;
     position: absolute;
     margin-top: -24px;
-    margin-left: 29px;
 }
 #subject,#message{
   color: #000;
@@ -435,11 +434,15 @@
     margin-top: -18px;
 }
 #file-detail{
+  background: transparent;
   position: absolute;
     margin-left: 125px;
     margin-top: -1px;
     width: inherit;
     border: none;
+}
+.attach-text,.input_file-upload,.input_file-upload2,.input_file-upload3{
+    cursor: pointer;
 }
 
 

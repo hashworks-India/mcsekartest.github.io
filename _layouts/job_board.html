@@ -2,13 +2,13 @@
 
 <main>
 
-	<div class="container">
-		<h2 class="gotham-rounded-bok h2-color hw-heading">Search for a job</h2>
-		<div class="job-list-btn">
-			<span class="span-padding-rite"><input type="text" class=" placeholder-pro keyword" placeholder="keyword eg.(job-title, Description"></span>
-			<span class="span-padding-rite"><input type="text" class=" placeholder-pro keyword" placeholder="location (country etc.)"></span>
-			<span class="span-padding-rite"><button class="job-search">SEARCH FOR JOB</button></span>
-		</div>
+  <div class="container">
+    <h2 class="gotham-rounded-bok h2-color hw-heading">Search for a job</h2>
+    <div class="job-list-btn">
+      <span class="span-padding-rite"><input type="text" class=" placeholder-pro keyword" placeholder="keyword eg.(job-title, Description"></span>
+      <span class="span-padding-rite"><input type="text" class=" placeholder-pro keyword" placeholder="location (country etc.)"></span>
+      <span class="span-padding-rite"><button class="job-search">SEARCH FOR JOB</button></span>
+    </div>
 
     <!-- table-wrapper -->
     <div class="table-wrapper">
@@ -48,9 +48,9 @@
         <tr>
             <td class="gotham-rounded-bok  hw-contact-no"> {{job.job_title}} </td>
             <td class="gotham-rounded-bok  hw-contact-no log-color-blue">{{job.location}}</td>
-  	        <td class="gotham-rounded-bok  hw-contact-no">{{job.date | date: '%B %d, %Y'}}</td>
-  	        <td class="gotham-rounded-bok  hw-contact-no">{{job.experience}}</td>
-  	        <td class="gotham-rounded-bok  hw-contact-no">{{job.type}}</td>
+            <td class="gotham-rounded-bok  hw-contact-no">{{job.date | date: '%B %d, %Y'}}</td>
+            <td class="gotham-rounded-bok  hw-contact-no">{{job.experience}}</td>
+            <td class="gotham-rounded-bok  hw-contact-no">{{job.type}}</td>
             <td class="gotham-rounded-bok hw-contact-no hw-job1" ><span><i class="fa fa-search"></i></span><span class="view-act view-mar">View</span></td>
           </tr>
 
@@ -94,72 +94,88 @@
    <span class="form-close view-close"><i class="fa fa-times"></i></span>
   <div class="col-lg-offset-2 col-lg-8">
         <div class="post-resume">
-          <div class="row ">
-              <div class="col-lg-6"> 
-                <div class="text-border">
-                  <div class="input-group">
-                        <div class="input-group-addon"><img src="/assets/img/talent_acquisition/name-img.png"></div>
-                    <input type="text" class="form-control placeholder-pro" placeholder="NAME">
+          <form class="form-signin" onSubmit="submitForm(event)" >  <!-- start of form -->
+              <div class="row ">
+                  <div class="col-lg-6"> 
+                    <div class="text-border">
+                      <div class="input-group">
+                            <div class="input-group-addon"><img src="/assets/img/talent_acquisition/name-img.png"></div>
+                            
+                        <input type="text" class="form-control placeholder-pro mainLoginInput input_name" id="name" placeholder="NAME" >
+                      </div>
+                    </div>    
                   </div>
-                </div>    
-              </div>
-            
-            <div class="col-lg-6"> 
-              <div class="text-border">
-                <div class="input-group">
-                      <div class="input-group-addon"><img src="/assets/img/talent_acquisition/email-img.png"></div>
-                  <input type="text" class="form-control placeholder-pro" placeholder="EMAIL">
+                
+                <div class="col-lg-6"> 
+                  <div class="text-border">
+                    <div class="input-group">
+                          <div class="input-group-addon"><img src="/assets/img/talent_acquisition/email-img.png"></div>
+                      <input type="text" class="form-control placeholder-pro mainLoginInput input_email" id="email" placeholder="EMAIL">
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="row ms-row-mar">
-            <div class="col-lg-6"> 
-              <div class="text-border">
-                <div class="input-group">
-                      <div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png"></div>
-                  <input type="text" class="form-control placeholder-pro" placeholder="SUBJECT">
-                </div>  
-              </div>  
-            </div>
-            <div class="col-lg-6"> 
-              <div class="text-border">
-                <div class="input-group">
-                      <div class="input-group-addon"><img src="/assets/img/talent_acquisition/phone-img.png"></div>
-                  <input type="text" class="form-control placeholder-pro" placeholder="PHONE">
-                </div>
-              </div>  
-            </div>
-          </div>
-
-          <div class="row ms-row-mar">
-            <div class="col-lg-12">
-              <div class="text-border">
-              <div class="input-group">
-                      <div class="input-group-addon"><img src="/assets/img/managed-services/sub-img.png"></div>
-                      
-                      <textarea placeholder= "MESSAGE/FEEDBACK/REQUEST" class="form-control placeholder-pro" rows="3"></textarea>
+              <div class="row ms-row-mar">
+                <div class="col-lg-6"> 
+                  <div class="text-border">
+                    <div class="input-group">
+                          <div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png"></div>
+                      <select class="form-control mainLoginInput gotham-rounded-light input_subject" id="subject">
+                        <option value="Subject">Subject</option>
+                        <option value="Marketing" class="level-0">Marketing</option>
+                        <option value="Design" class="level-0">Design</option>
+                        <option value="UX" class="level-0">UX</option>
+                        <option value="WordPress" class="level-0">WordPress</option>
+                        <option value="Strategy" class="level-0">Strategy</option>
+                        <option value="Automations" class="level-0">Automations</option>
+                        <option value="News" class="level-0">News</option>
+                        <option value="Content" class="level-0">Content</option>
+                        <option value="Social" class="level-0">Social Media</option>
+                      </select>
                     </div>  
-                    
-              </div>
-            </div>
-          </div><!-- end of text-area row-->
-
-          <div class="attach-file">
-                <div class="col-lg-9">
-                  <br><br>
-                  <span class="attach-text"><span><img src="/assets/img/talent_acquisition/attach.png"></span><span class="gotham-rounded-bok attach-span">Attach File</span></span>
-                  <input type="file" id="file-upload">
+                  </div>  
                 </div>
-                <div class="col-lg-3 submit-background">
-                  <br>
-                  <div class="submit-resume hr-display">
-                    <p class="hr-display"><img src="/assets/img/talent_acquisition/submit.png"></p>
-                    <p class="gotham-rounded-bok placeholder-pro">SUBMIT</p>
+                <div class="col-lg-6"> 
+                  <div class="text-border">
+                    <div class="input-group">
+                          <div class="input-group-addon"><img src="/assets/img/talent_acquisition/phone-img.png"></div>
+                      <input type="text" class="form-control placeholder-pro mainLoginInput input_phone" id="phone" placeholder="PHONE">
+                    </div>
+                  </div>  
+                </div>
+              </div>
 
+              <div class="row ms-row-mar">
+                <div class="col-lg-12">
+                  <div class="text-border">
+                  <div class="input-group">
+                          <div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png"></div>
+                          
+                          <textarea placeholder= "MESSAGE/FEEDBACK/REQUEST" class="form-control placeholder-pro mainLoginInput input_message"  id="message" rows="3"></textarea>
+                        </div>  
+                        
                   </div>
-                </div> 
-               </div> <!-- end of attach-file-->
+                </div>
+              </div><!-- end of text-area row-->
+
+              <div class="attach-file">
+                    <div class="col-lg-9">
+                      <br><br>
+                      <span class="attach-text"><span><img src="/assets/img/talent_acquisition/attach.png"></span><span class="gotham-rounded-bok attach-span">Attach File</span></span>
+                      <input type="text"  class="input_file-detail"  id="file-detail" readonly="readonly"/>
+                      <input type="file" class="gotham-book input_file-upload" id="file-upload">
+                    </div>
+                    <div class="col-lg-3 submit-background">
+                      <br>
+                      <button class="btn" type="submit" id="submit-btn">
+                      <div class="submit-resume hr-display">
+                        <p class="hr-display"><img src="/assets/img/talent_acquisition/submit.png"></p>
+                        <p class="gotham-rounded-bok submit-text placeholder-pro" >SUBMIT</p>
+                      </div>
+                      </button>
+                    </div>
+                  </div><!-- end of attach-file-->
+              </form> <!-- end of form -->
           </div><!-- end of postresume -->
       </div><!--end of col-lg-7 -->
     </div> <!-- end of apply div--> 
@@ -174,8 +190,8 @@
 <!-- End of table-wrapper -->
 
   <div class="hr-display">
-	  	<ul class = "pagination">
-  		  <li class="prev_page"><a href = "javascript:void(0)"><i class="fa fa-angle-left"></i></a></li>
+      <ul class = "pagination">
+        <li class="prev_page"><a href = "javascript:void(0)"><i class="fa fa-angle-left"></i></a></li>
           {% for  i in (1..job_table_size)  %}
           {% capture my_variable %}page{{forloop.index}}{% endcapture %}
 
@@ -186,16 +202,16 @@
           {%endif%}
           <li class="filter {{cls_page}} pag" data-tab =  "{{my_variable}}" ><a href = "javascript:void(0)" >{{forloop.index}}</a></li>
           {%endfor%}
-  		 
-  		  <li class="next_page"><a href = "javascript:void(0)"><i class="fa fa-angle-right"></i></a></li>
-		</ul>
-	</div>
+       
+        <li class="next_page"><a href = "javascript:void(0)"><i class="fa fa-angle-right"></i></a></li>
+    </ul>
+  </div>
 
 </div>
-	
+  
 
 
-</main>	
+</main> 
 
 {% include footer.html %} 
 
