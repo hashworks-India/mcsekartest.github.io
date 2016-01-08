@@ -54,11 +54,15 @@
 
 
       // End of initial load google map location
+
       
 
       $(document).ready(function() {
 
-        initMap();
+        $('.talk-to-us').click(function(){
+         initMap();
+       });
+      
 
         // If the browser supports the Geolocation API
         if (typeof navigator.geolocation == "undefined") {
