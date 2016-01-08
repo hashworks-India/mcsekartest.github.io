@@ -1908,9 +1908,8 @@ background: #fff;
 
  #map {
         width: 500px;
-        height: 400px;
-        margin-top: 10px;
-      }
+        height: 380px;
+    }
 
 @media screen and (max-width: 868px) {
   .blog-grid > li {
