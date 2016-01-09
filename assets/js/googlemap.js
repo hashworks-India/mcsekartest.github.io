@@ -59,32 +59,28 @@
 
                  // Info Window Content
                   var infoWindowContent = [
-                      ['<div class="get-direction">'+
-                            '<div>'+
+                      ['<div>'+
                               '<h4>HashWorks</h4>'+
                             '</div>'+
                             '<div id="get-direction_div2">'+
-                              '<p >Hashworks IT Services Pvt Ltd'+
+                              '<p  >Hashworks IT Services Pvt Ltd'+
                               'No. 1197, 3rd Floor, HSR Club Road, '+
                               'Bangalore,India 560102</p>'+
                               '<h5>Directions</h>'+
                             '</div>'+
                             '<div>'+
-                              '<form id="calculate-route" name="calculate-route" method="get" >'+
                                  '<p>'+
                                  '<input id="from" type="text" name="from" placeholder="From:"/>'+
                                  '</p>'+
                                  '<p>'+
-                                 '<input type="text" name="Email"  placeholder="To:"/>'+
+                                 '<input type="text" name="Email" value="577, Sector 3, HSR Layout, Bengaluru, Karnataka 560102, India" placeholder="To:"/>'+
                                  '</p>'+
                                  '<p>'+
-                                 '<input type="submit"  onsubmit="submit(e)" />'+
+                                 '<input type="button" id="get-direction-btn" onclick="submit(event)" value="Get Direction"/>'+
                                  '</p>'+
-                              '</form>'+
-                            '</div>'+
-                          '</div>']
+                            '</div>'
+                          ]
                   ];
-
 
                   google.maps.event.addListener(marker, 'click', (function(marker, i) {
                     return function() {
@@ -94,17 +90,11 @@
                   })(marker, i));
               }
 
-
-
           }
 
           //after clicking the submit button
         function submit(e) {
-          e.preventDefault();
-          alert();
-            //map will load after clicking the submit button
             calculateRoute($("#from").val());
-            alert($("#from").val());
         }
 
 
