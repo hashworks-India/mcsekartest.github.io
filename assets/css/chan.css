@@ -177,7 +177,7 @@
     .dropdown:hover {
         visibility: visible !important;
     }
-    ul li ul.dropdown li a{
+    ul li ul.dropdown li {
         color: #fff;
         -webkit-transition: color .5s ease 0s;
         -moz-transition: color .5s ease 0s;
@@ -203,19 +203,20 @@
         
     }
    
-    ul li ul.dropdown li{
+    ul li ul.dropdown a{
         text-align: left;
         display: block;
-        padding: 10px 15px;
+        padding: 5px 15px;
         line-height: 1.8;
         border-bottom: 1px solid #fff;
+        cursor: pointer;
     }
 
-    ul li ul.dropdown li:last-child {
+    ul li ul.dropdown a:last-child {
         border: none;
     }
 
-    ul li ul.dropdown li:hover {
+    ul li ul.dropdown a:hover {
         visibility: visible;
         background-color: rgba(12, 200, 219, 0.8);
     }
