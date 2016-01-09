@@ -69,18 +69,6 @@ $(document).ready(function(){
 
     
       
-        // $('.tagcloud > li').click(function(){
-        //   $('.tagcloud > li').removeClass('tagactive');
-        //   $(this).addClass('tagactive');
-        // });
-    
-     
-        // $('.tagcloud > li').click(function(){
-        //   $('.tagcloud > li').removeClass('tagactive');
-        //   $(this).addClass('tagactive');
-        // });
-  
-  
 
 
       // it-services
@@ -386,19 +374,25 @@ $(document).ready(function(){
             
 
         });
+
+        $('.last-dropdown').click(function(){
+             var item_width = $('#carousel_ul > li').width() + 20;
+            //make the sliding effect using jquery's anumate function '
+            $('#carousel_ul').animate({'left' : '-'+item_width+'px'},500);
+            $(this).css({'cursor':'default','color':'#ccc'});
+            $('#left_scroll i').css({'cursor':'pointer','color':'#040404'});
+        });
         
         //when user clicks the left arrow for sliding left
         $('#left_scroll i').click(function(){
-            
             var item_width = $('#carousel_ul > li').width();
-            
             $('#carousel_ul').animate({'left' : '0px'},500);
-           
             $(this).css({'cursor':'default','color':'#ccc'});
             $('#right_scroll i').css({'cursor':'pointer','color':'#040404'});
-            
-        });
+          });
     // End of solution custom tab carousel
+
+     
 
      
      //casestudy toggle and collapse functionality
