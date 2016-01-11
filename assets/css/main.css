@@ -1710,6 +1710,11 @@ html {
     text-align: left;
     line-height: 2.3;
   }
+   .img-submit ,.img-para { 
+   	display: table-cell;
+    margin: 0 10px;
+    vertical-align: baseline;
+}
 /* end of row banner */
 
  	#map {
