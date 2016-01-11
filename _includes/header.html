@@ -67,17 +67,25 @@
                       <a href="/navcasestudy">Case Study</a>
                    </li>
                  </ul>
-                 <span class="line-animation1" style="overflow: hidden; width: 0px; left: 0;"></span>
-
-               
-               
-               
+                 <span class="line-animation1" style="overflow: hidden; width: 0px; left: 0;"></span>                           
                 <ul class="nav navbar-nav navbar-right">
                   {% for item in site.data.nav.main-right %}
                     <li class="gotham-rounded-light header-links">
                       <a href="{{ item.url }}">{{ item.text }}</a>
                     </li>
                   {% endfor %}
+                  <!-- search bar-->
+                  <li>
+                    <div id="credits" class=" hidden ">
+                      <div class="input-group">
+                      <input type="text" class="form-control gotham-rounded-light header-search" placeholder="search..."/>
+                      <span class="input-group-addon search">
+                          <i class="fa fa-angle-right "></i>
+                      </span>
+                      </div>
+                   </div>
+                  </li>
+                  <!-- end  search bar-->
                   <li><a  href="#credits" class="toggle btn "><i class="fa fa-search"></i></a></li>
                 </ul>
                   <span class="line-animation" style="overflow: hidden; width: 0px; left: 0;"></span>
@@ -86,14 +94,14 @@
 
              </div><!-- /.navbar-collapse -->
 
-              <div id="credits" class=" hidden col-md-2 col-md-offset-10">
+            <!--   <div id="credits" class=" hidden col-md-2 col-md-offset-10">
                 <div class="input-group">
                 <input type="text" class="form-control gotham-rounded-light header-search" placeholder="search..."/>
                 <span class="input-group-addon search">
                     <i class="fa fa-angle-right "></i>
                 </span>
                 </div>
-              </div>
+              </div> -->
 
             </div><!-- /.container-fluid -->
           </nav>

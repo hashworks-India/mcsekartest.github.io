@@ -13,28 +13,41 @@
 /*End of contact*/
 
 /*header-search*/
+    #credits{
+    width: 200px;
+    margin-top: 11px;
+    }
+
+    #credits .input-group{
+    position: relative;
+    display: table;
+    border-collapse: separate;
+    background-color: #fff;
+    border-radius: 7px;
+    }
+
     #credits input {
-        -webkit-box-shadow:0 0 3px rgba(0, 0, 0, 0.2) inset;
-        -moz-box-shadow:0 0 3px rgba(0, 0, 0, 0.2) inset;
-        -o-box-shadow:0 0 3px rgba(0, 0, 0, 0.2) inset;
-        -ms-box-shadow:0 0 3px rgba(0, 0, 0, 0.2) inset;
-        box-shadow:0 0 3px rgba(0, 0, 0, 0.2) inset;
-        background: transparent;
+    box-shadow: none 
+    background: transparent;
     }
 
     #credits .search{
-        color: #fff;
-        font-size: 20px;
-        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
-    	background-color: #79c2e2;
-        border: none;
+    color: #ee2b7b;
+    font-size: 20px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    background: none;
+    border: none;
+    padding-top: -27px;
     }
     #credits .form-control {
-        height: 45px;
-        padding: 12px;
+    background-color: #fff;
+    border: none;
+    height: 12px;    height: 30px;
+    padding: 7px 4px 6px 6px;
+    border-radius: 7px;
     }
     #credits .input-group-addon {
-        padding: 12px 15px 0px;
+        padding: 4px 11px 0px;
     }
 /*End of header-search*/
 
