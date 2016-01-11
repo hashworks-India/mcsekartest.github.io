@@ -9,12 +9,13 @@ $(document).ready(function(){
 
     /* smooth scroll*/
 
-    $('.nav-tabs > li a').click(function(){
-        var navtab = $(this).parents('.nav-tabs').offset().top - 50;
-          $('html, body').animate({
-            scrollTop: navtab}, 1500, 'linear');
-    });
-  // End of smooth scroll
+      // $('.nav-tabs > li a').click(function(){
+      //     var navtab = $(this).parents('.nav-tabs').offset().top - 50;
+      //       $('html, body').animate({
+      //         scrollTop: navtab}, 1500, 'linear');
+      // });
+
+    /* End of smooth scroll*/
   
     //homepage dropdown
       $(".dropdown-link .dropdown").css({display: "none"});
@@ -63,21 +64,15 @@ $(document).ready(function(){
               $(".navbar-default.hw-fixed-header").css("padding-bottom","0px")
             }
           }
-
-         
         });
 
-    
-      
+    // it-services
 
-
-      // it-services
-
-        // testimonial-carousel
-          $('.testimonial-carousel .carousel-indicators li').click(function(){
-              $(this).parents('.testimonial-carousel').find('.carousel').carousel(parseInt(this.getAttribute('data-to')));
-          });
-        // End of testimonial-carousel
+    // testimonial-carousel
+      $('.testimonial-carousel .carousel-indicators li').click(function(){
+        $(this).parents('.testimonial-carousel').find('.carousel').carousel(parseInt(this.getAttribute('data-to')));
+      });
+    // End of testimonial-carousel
 
         // ui-ux tab
           $('.hw-ui-ux-carousel .carousel').carousel({
@@ -363,23 +358,17 @@ $(document).ready(function(){
         
         //when user clicks the right arrow for sliding right        
         $('#right_scroll i').click(function(){
-        
-            //get the width of the items ( i like making the jquery part dynamic, so if you change the width in the css you won't have o change it here too ) '
-            var item_width = $('#carousel_ul > li').width() + 20;
-            
-            //make the sliding effect using jquery's anumate function '
-            $('#carousel_ul').animate({'left' : '-'+item_width+'px'},500);
-            $(this).css({'cursor':'default','color':'#ccc'});
-            $('#left_scroll i').css({'cursor':'pointer','color':'#040404'});
-            
-
+          var item_width = $('#carousel_ul > li').width() + 20;
+          $('#carousel_ul').animate({'left' : '-'+item_width+'px'},500);
+          $(this).css({'cursor':'default','color':'#ccc'});
+          $('#left_scroll i').css({'cursor':'pointer','color':'#040404'});
         });
 
-        $('.last-dropdown').click(function(){
+        $('.last_dropdown').click(function(){
              var item_width = $('#carousel_ul > li').width() + 20;
             //make the sliding effect using jquery's anumate function '
             $('#carousel_ul').animate({'left' : '-'+item_width+'px'},500);
-            $(this).css({'cursor':'default','color':'#ccc'});
+            // $(this).css({'cursor':'default','color':'#ccc'});
             $('#left_scroll i').css({'cursor':'pointer','color':'#040404'});
         });
         
@@ -388,6 +377,13 @@ $(document).ready(function(){
             var item_width = $('#carousel_ul > li').width();
             $('#carousel_ul').animate({'left' : '0px'},500);
             $(this).css({'cursor':'default','color':'#ccc'});
+            $('#right_scroll i').css({'cursor':'pointer','color':'#040404'});
+          });
+
+         $('.first_dropdown').click(function(){
+            var item_width = $('#carousel_ul > li').width();
+            $('#carousel_ul').animate({'left' : '0px'},500);
+            // $(this).css({'cursor':'default','color':'#ccc'});
             $('#right_scroll i').css({'cursor':'pointer','color':'#040404'});
           });
     // End of solution custom tab carousel
@@ -412,7 +408,7 @@ $(document).ready(function(){
       });
       
 
-      //job board pagination 
+    /* job board pagination */
       $('.next_page').click(function(){
         var next = $('.pag.active').removeClass('active').next('.pag');
         var jobtab = $('.job-table.active').removeClass('active').next('.job-table');
@@ -423,9 +419,6 @@ $(document).ready(function(){
         }
           next.addClass('active');
           jobtab.addClass('active');
-
-
-
       });
 
       $('.prev_page').click(function(){
@@ -438,9 +431,9 @@ $(document).ready(function(){
         }
           prev.addClass('active');
           jobtabprev.addClass('active');
-
-
       });
+    /* end of job board */
+
 
 });
 

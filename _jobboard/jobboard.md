@@ -1,6 +1,6 @@
 ---
 
-job_title: PL/SQl
+job_title: Java
 location: Bangalore
 date: 10-12-2015
 experience: 3-4yrs

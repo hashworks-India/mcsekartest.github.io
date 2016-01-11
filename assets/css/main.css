@@ -345,7 +345,7 @@ html {
 	.logo > a {
 		background: url(/assets/img/logo.png);
 		background-size: cover;
-		height: 31px;
+		height: 30px;
 		width: 140px;
 		display: block;
 		-webkit-transition: all .5s ease 0s;
@@ -1650,7 +1650,6 @@ html {
 		padding: 15px 15px;
 		text-transform: uppercase;
 	}
-
 	#case-study-active > li.active:before {
 		-moz-border-bottom-colors: none;
 	    -moz-border-left-colors: none;
@@ -1671,12 +1670,35 @@ html {
 	    transform: translate(-50%, 0px);
 	    width: 0;
 	}
+	#case-study-active > li:hover:before {
+		-moz-border-bottom-colors: none;
+	    -moz-border-left-colors: none;
+	    -moz-border-right-colors: none;
+	    -moz-border-top-colors: none;
+	    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+	    border-color: #37b5c4 transparent transparent;
+	    border-image: none;
+	    border-style: solid;
+	    border-width: 10px;
+	    bottom: -20px;
+	    content: "";
+	    display: block;
+	    height: 0;
+	    left: 50%;
+	    position: absolute;
+	    top: auto;
+	    transform: translate(-50%, 0px);
+	    width: 0;
+	}
+	#case-study-active > li:hover {
+		background-color: #0ab4c5;
+	}
 	.service-tab .tab-pane ul {
   	display: inline-block;
     padding: 35px 0;
     width: 100%;
     border-bottom: 1px solid #37b5c4;
-  }
+  	}
 
   .block-grid {
   	font-family:'gotham-rounded-light';
@@ -1690,11 +1712,11 @@ html {
   }
 /* end of row banner */
 
- #map {
+ 	#map {
         width: 500px;
         height: 380px;
     }
-.gm-style-iw{
+	.gm-style-iw{
 		top: 0px;
 		position: absolute;
 		left: 24px;
@@ -1702,26 +1724,26 @@ html {
 		background-color: #0AB4C5;
 		border-radius: 4px;
 		padding: 2px 60px 0px 61px;
-}
-.gm-style-iw p,h4,h5{
+	}
+	.gm-style-iw p,h4,h5{
 		color:#fff;
-}
-.gm-style-iw input{
+	}
+	.gm-style-iw input{
 		color: #fff;
 		border: none;
 		border-radius: 2px;
 		margin-bottom: 5px;
 		padding: 2px;
-}
-.gm-style-iw #get-direction_div2{
+	}
+	.gm-style-iw #get-direction_div2{
 		border-top: 2px solid #000;
 		padding-top: 11px;
-}
-.gm-style-iw #get-direction-btn{
+	}
+	.gm-style-iw #get-direction-btn{
 		margin-left: 41px;
 		color: #000;
 		background-color: #fcfcfc;
-}
+	}
 
 @media screen and (max-width: 868px) {
   .blog-grid > li {
