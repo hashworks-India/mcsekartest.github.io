@@ -1,5 +1,4 @@
         var value;
-        var inputNo=1;
         var handleFileSelect = function(evt) {
         var files = evt.target.files;
         var file = files[0];
@@ -16,6 +15,7 @@
     };
 
     if (window.File && window.FileReader && window.FileList && window.Blob) {
+                document.querySelector(".input_file-upload").addEventListener('change', handleFileSelect, false);
     } else {
         alert('The File APIs are not fully supported in this browser.');
     }
@@ -32,24 +32,11 @@
                 var contact = $(".input_phone").val();
                 var message = $(".input_message").val();
                 var flag=0; 
-                if(inputNo==1)
-                {
-                    fileName = $('.input_file-upload').val();
-                }
-                else if(inputNo==2)
-                {
-                    fileName = $('.input_file-upload2').val();
-                }
-                else if(inputNo==3)
-                {
-                    fileName = $('.input_file-upload3').val();
-                }
-                var fileExtsn=fileName.substr( (fileName.lastIndexOf('.')));
+                fileName = $('.input_file-upload').val();
+                fileName = fileName.replace(/.*(\/|\\)/, '');
                 if(value == null) {
                     flag=1;
                     $('.input_file-detail').val("Please upload your resume");
-                    $('.input_file-detail2').val("Please upload your resume");
-                    $('.input_file-detail3').val("Please upload your resume");
                 }
                 if (name == "" || email == "" || subject == "Subject" ||subject == "" || contact == "" || message == "")
                 {
@@ -66,9 +53,11 @@
                             $(".input_email").attr("placeholder", "Please enter your Email ");
                             placeholdAnimate(".input_email");
                         }
-                    if (subject == "Subject"||subject == "")
+                    if (subject == "Subject" || subject == "")
                         {
                             $(".input_subject").parent().parent().css("border", "1px solid red");
+                            $(".input_subject").attr("placeholder", "Please enter your Email ");
+                            placeholdAnimate(".input_subject");
                         }
                     if (contact == "")
                         {
@@ -82,7 +71,6 @@
                             $(".input_message").attr("placeholder", "Please enter your message");
                             placeholdAnimate(".input_message");
                         }  
-                        return false; 
                 }
                 else
                 {   
@@ -110,7 +98,6 @@
                             $(".input_phone").attr("placeholder", "Please enter your conatct no correctly");
                             placeholdAnimate(".input_phone");
                         }
-                        return false;
                 }   
 
                 if(flag==0)
@@ -133,7 +120,7 @@
                                         "attachments": [
                                         {
                                             "type": "text/plain",
-                                            "name": "File"+fileExtsn,
+                                            "name": fileName,
                                             "content": value
                                         }],
                                         'to': [
@@ -161,44 +148,29 @@
     
     } //end of submitForm function
 
-    function onClickText(inputElement){
-    $(inputElement).parent().parent().css("border", "1px solid .input_0AB4C5");
+    function on_Click_Text(inputElement){
+    $(inputElement).parent().parent().css('border', '1px solid #0AB4C5');
     }   
-    $('.input_name').click(function(){
-        onClickText(this);
+    $(".input_name").click(function(){
+        on_Click_Text(this);
     });
-    $('.input_email').click(function(){
-        onClickText(this);
+    $(".input_email").click(function(){
+        on_Click_Text(this);
     });
-    $('.input_subject').click(function(){
-        onClickText(this);
+    $(".input_subject").click(function(){
+        on_Click_Text(this);
     });
-    $('.input_phone').click(function(){
-        onClickText(this);
+    $(".input_phone").click(function(){
+        on_Click_Text(this);
     });
-    $('.input_message').click(function(){
-        onClickText(this);
+    $(".input_message").click(function(){
+        on_Click_Text(this);
     });
 
     $('.input_file-upload').on('change',function(){
-        inputNo=1;
-        document.querySelector(".input_file-upload").addEventListener('change', handleFileSelect, false);
         var fileName = $('.input_file-upload').val();
+        fileName = fileName.replace(/.*(\/|\\)/, '');
         $('.input_file-detail').val(fileName);
-    });
-
-
-        $('.input_file-upload2').on('change',function(){
-        inputNo=2;
-        document.querySelector(".input_file-upload2").addEventListener('change', handleFileSelect, false);
-        var fileName = $('.input_file-upload2').val();
-        $('.input_file-detail2').val(fileName);
-    });
-            $('.input_file-upload3').on('change',function(){
-        inputNo=3;
-        document.querySelector(".input_file-upload3").addEventListener('change', handleFileSelect, false);
-        var fileName = $('.input_file-upload3').val();
-        $('.input_file-detail3').val(fileName);
     });
 
 /* for placeholder of textbox animation*/
