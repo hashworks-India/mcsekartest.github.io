@@ -217,7 +217,7 @@
 
     ul li ul.dropdown a:hover {
         visibility: visible;
-        background-color: rgba(12, 200, 219, 0.8);
+        background-color: rgba(12, 200, 219, 1);
     }
 
    /* ul li ul.dropdown a:hover {

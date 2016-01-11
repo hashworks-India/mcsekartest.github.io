@@ -63,18 +63,18 @@
           <div class="view">
 
             <span class="view1-close view-close"><i class="fa fa-times"></i></span>
-            <h5 class="gotham-rounded-bold">Job Description</h5>
+            <h5 class="gotham-rounded-bold clr-black">Job Description</h5>
             {% for  job_descr in job.job_description %}
               <li class="gotham-rounded-bok vw-coll-line-height">{{job_descr}}</li>
             {% endfor %}
 
-            <h5 class="gotham-rounded-bold "> Responsibilities of Visual Designer</h5>
+            <h5 class="gotham-rounded-bold clr-black"> Responsibilities of Visual Designer</h5>
             {% for  job_res in job.responsibilities %}
               <li class="gotham-rounded-bok vw-coll-line-height">{{job_res}}</li>
             {% endfor %}
             
 
-            <h5 class="gotham-rounded-bold">Skills</h5>
+            <h5 class="gotham-rounded-bold clr-black">Skills</h5>
             {% for  job_skill in job.skills %}
               <li class="gotham-rounded-bok vw-coll-line-height">{{job_skill}}</li>
             {% endfor %}
