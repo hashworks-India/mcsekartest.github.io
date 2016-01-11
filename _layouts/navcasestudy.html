@@ -1,14 +1,44 @@
 {% include header.html %}
 <main>
 
+	<h1 class="text-center gotham-rounded-bok heading hw-carousel-heading"> Case Study </h1>
+	<!-- carousel-->
+
+   		<div class="carousel-padding"> 
+		   	<div class="line"></div>
+			<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+
+		   		<div class="container heading-caro-padd">
+				    <!-- Wrapper for slides -->
+				    <div class="carousel-inner" role="listbox">
+				    	 {% for cont in site.data.Solutions.carousel.carousel_content%}
+					       {% if forloop.first %}
+					  	<div class="item active">
+					      <p class=" gotham-rounded-bok hw-para">
+					       {{ cont.content}}
+					      </p>
+					    </div>
+						{% else %}
+					   <div class="item">
+					       <p class=" gotham-rounded-bok hw-para">
+					       		 {{ cont.content}}
+					      	</p>
+					    </div>
+						{% endif %}
+					    {% endfor %}
+				    </div>
+				</div>
+			</div>
+	 	</div>
+
 
 
 	<section class="banner">
-		<div class="casestudy-img">
+		<!-- <div class="casestudy-img">
 			<div class="banner-inner">
 				<h1 class="clr-white">Case Study</h1>
 			</div>
-		</div>
+		</div> -->
 
 		<div class="container nav-cs-margin">
 			<div class="row">

@@ -1,12 +1,44 @@
 {% include header.html %}
 
 <main>
+
+	<h1 class="text-center gotham-rounded-bok heading hw-carousel-heading"> Engage Us </h1>
+	<!-- carousel-->
+
+   		<div class="carousel-padding"> 
+		   	<div class="line"></div>
+			<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+
+		   		<div class="container heading-caro-padd">
+				    <!-- Wrapper for slides -->
+				    <div class="carousel-inner" role="listbox">
+				    	 {% for cont in site.data.Solutions.carousel.carousel_content%}
+					       {% if forloop.first %}
+					  	<div class="item active">
+					      <p class=" gotham-rounded-bok hw-para">
+					       {{ cont.content}}
+					      </p>
+					    </div>
+						{% else %}
+					   <div class="item">
+					       <p class=" gotham-rounded-bok hw-para">
+					       		 {{ cont.content}}
+					      	</p>
+					    </div>
+						{% endif %}
+					    {% endfor %}
+				    </div>
+				</div>
+			</div>
+	 	</div>
+
+	<!-- end of carousel-->
   
 
 	<!-- fixed div-->
-		<div>
+		<!-- <div>
 			<p class="gotham-rounded-light hw-main-heading log-clr-backgrnd clr-white h-approch">Hashwoks approach to application development eco-system is..</p>
-		</div>
+		</div> -->
 	<!-- end of fixed tab-->
 
 	<!-- categories -->
@@ -89,30 +121,7 @@
 				</div>
 			<!-- hw-engage-cont -->
 
-			<!-- hw-engage-cont -->
-				<div class="hw-engage-cont">
-					<!-- row 4 -->
-						<div class="row">
-
-							<div class="col-lg-5">
-								<div class="img-outer">
-									<img src="/assets/img/homepage/upskilling.jpg"  alt="it-service">
-								</div>
-							</div>
-
-							<div class="col-lg-7">
-								<h2 class="gotham-rounded-bok hw-heading  h2-color">{{site.data.Engage_Us.engageus.part4[0].title}}</h2>
-								<div class="div-border-left">
-									<p class="hw-para gotham-rounded-light para">{{site.data.Engage_Us.engageus.part4[0].content}}
-									</p>
-								</div>
-								<a href="/upskilling/"><button class="custom-btn">know more</button></a>
-							</div>
-
-						</div>
-					<!-- end of row4 -->
-				</div>
-		<!-- End of hw-engage-cont -->
+			
 
 		</div>
 		<!-- end of container-->

@@ -579,7 +579,7 @@ html {
 	/*End of solutions page carousel*/
 
 	.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
-		border-bottom: 3px solid #ff0000;
+		border-bottom: 3px solid #ee2b7b;
 		color:#5f5f5f;
 		border-top: none;
 		border-right: none;
