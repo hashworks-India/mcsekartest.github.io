@@ -200,6 +200,9 @@
       input:-webkit-autofill {
         background-color: #fff;
       }
+     input:focus {
+        outline: -webkit-focus-ring-color auto 0px;
+      }
     /* end of history previous*/
 
     /*active and hover*/
