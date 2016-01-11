@@ -142,6 +142,90 @@
         });
         //End of get my position link
 
+          $("#demo").hide();
+
+    $('.talk-to-us').click(function(){
+
+      if ($("#demo").css("display") == "none") {
+         
+          $("#demo").show();
+          initMap();
+       }
+      else{
+          $("#demo").hide();
+    }
+    });
+
+
+     $(".hw-te-tab").click( function() {
+      $("#demo").hide();
+   });
+
+
+              // for searching the job title
+
+ $(".serch-the-job").click( function() {
+   var keyword_job = $(this).parent().prev().prev().children().val();
+   var location_job = $(this).parent().prev().children().val();
+   var job_title,job_location;
+   keyword_job = keyword_job.trim().toLowerCase();
+   location_job = location_job.trim().toLowerCase();
+
+
+if(keyword_job=="" && location_job=="")  //for empty search
+    {
+      $('.job-list-item').each(function(){
+        $(this).show();
+      });
+    }
+ else if(keyword_job=="")  // for only job location
+     {
+       $('.job-list-item').each(function(){
+         job_location = $(this).find("td:nth-child(2)").text();
+         job_location = job_location.trim().toLowerCase();
+         if(job_location.search(location_job)  > -1 )
+           {
+             $(this).show();
+           }
+           else{
+             $(this).hide();
+           } 
+       });      }
+ else if(location_job=="")   //for only job title
+  {
+     $('.job-list-item').each(function(){
+      job_title = $(this).children().first().text();
+      job_title = job_title.trim().toLowerCase();
+      if(job_title.search(keyword_job)  > -1 )
+        {
+          $(this).show();
+        }
+        else{
+          $(this).hide();
+        } 
+    });
+  }
+else      //for both job tiltle and location
+    {
+      $('.job-list-item').each(function(){
+        job_title = $(this).children().first().text();
+        job_title = job_title.trim().toLowerCase();
+
+         job_location = $(this).find("td:nth-child(2)").text();
+         job_location = job_location.trim().toLowerCase();
+
+          if(job_title.search(keyword_job) > -1 && job_location.search(location_job) > -1)
+            {
+              $(this).show();
+            }
+            else{
+              $(this).hide();
+            } 
+         });
+
+      }
+ });
+
         
        
       });

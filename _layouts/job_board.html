@@ -79,7 +79,7 @@
               <li class="gotham-rounded-bok vw-coll-line-height">{{job_skill}}</li>
             {% endfor %}
             
-            <button class="apply gotham-rounded-bold">Apply</button>
+            <button class="apply gotham-rounded-bold" data-toggle="modal" data-target="#start-project">Apply</button>
 
           </div> <!-- end of view --> 
 
@@ -88,13 +88,26 @@
       </tr><!-- end of tr -->
     {% endfor %}
 
-<tr>
-  <td class= "job-coll" colspan="8">
-  <div class="apply-div hide" >
-   <span class="form-close view-close"><i class="fa fa-times"></i></span>
-  <div class="col-lg-offset-2 col-lg-8">
-        <div class="post-resume">
-          <form class="form-signin" onSubmit="submitForm(event)" >  <!-- start of form -->
+
+</tbody>
+
+  </table>
+  {% assign start =  start | plus : 5 %}
+  {%endfor%}
+</div>
+<!-- End of table-wrapper -->
+
+<!-- Work-together popup -->
+    <div id="start-project" class="modal fade">
+          <div class="modal-dialog contact-modal">
+              <div class="modal-content">
+              <div class="container form-container">
+                    <span class="hm-contact"><i class="fa fa-mobile"></i><span class="hm-num gotham-rounded-light">+8861162420</span></span>
+          <img class="close-pop" data-dismiss="modal" src="/assets/svg/close-pop.svg" alt="close">
+                    <h1 class="gotham-rounded-bold">Let's work together</h1>
+                    <hr>
+                    <div class="post-resume">
+                <form class="form-signin" onSubmit="submitForm(event)" >  <!-- start of form -->
               <div class="row ">
                   <div class="col-lg-6"> 
                     <div class="text-border">
@@ -110,7 +123,7 @@
                   <div class="text-border">
                     <div class="input-group">
                           <div class="input-group-addon"><img src="/assets/img/talent_acquisition/email-img.png"></div>
-                      <input type="text" class="form-control placeholder-pro mainLoginInput input_email" id="email" placeholder="EMAIL">
+                      <input type="email" class="form-control placeholder-pro mainLoginInput input_email" id="email" placeholder="EMAIL">
                     </div>
                   </div>
                 </div>
@@ -119,11 +132,12 @@
                 <div class="col-lg-6"> 
                   <div class="text-border">
                     <div class="input-group">
-                          <div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png"></div>
+                    <div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png"></div>
                       <input type="text" class="form-control placeholder-pro mainLoginInput gotham-rounded-light input_subject" id="subject" placeholder="Subject">
-                    </div>  
+                    </div> 
                   </div>  
                 </div>
+                
                 <div class="col-lg-6"> 
                   <div class="text-border">
                     <div class="input-group">
@@ -139,9 +153,9 @@
                   <div class="text-border">
                   <div class="input-group">
                           <div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png"></div>
+                          
                           <textarea placeholder= "MESSAGE/FEEDBACK/REQUEST" class="form-control placeholder-pro mainLoginInput input_message"  id="message" rows="3"></textarea>
                         </div>  
-                        
                   </div>
                 </div>
               </div><!-- end of text-area row-->
@@ -163,19 +177,36 @@
                       </button>
                     </div>
                   </div><!-- end of attach-file-->
-              </form> <!-- end of form -->
-          </div><!-- end of postresume -->
-      </div><!--end of col-lg-7 -->
-    </div> <!-- end of apply div--> 
-    </td> 
-   </tr><!-- end of apply row-->
-</tbody>
-
-  </table>
-  {% assign start =  start | plus : 5 %}
-  {%endfor%}
-</div>
-<!-- End of table-wrapper -->
+            </form> <!-- end of form -->
+            </div><!-- end of postresume -->
+            <div class="show-as-love"><!-- hm social icon-->
+          <div class="row">
+            <div class=" col-lg-offset-7 col-lg-5">
+              <div class="hm-shows-love">
+                <h1 class="gotham-rounded-bold hm-show-text hw-heading show-text1">Show us your <i class="fa fa-heart hm-show-heart"></i> </h1>
+                <div class= "hm-icons hm-form-val">
+                  <span class="fa-stack hw-socialshare social-icons hm-socio">
+                            <i class="fa fa-circle-thin fa-stack-2x"></i>
+                            <i class="fa fa-facebook fa-stack-1x"></i>
+                            </span>
+                              <span class="fa-stack hw-socialshare social-icons">
+                            <i class="fa fa-circle-thin fa-stack-2x"></i>
+                            <i class="fa fa-twitter fa-stack-1x"></i>
+                            </span>
+                              <span class="fa-stack hw-socialshare last-icon">
+                            <i class="fa fa-circle-thin fa-stack-2x"></i>
+                            <i class="fa fa-linkedin fa-stack-1x"></i>
+                            </span>   
+                          </div>
+                        </div>
+                    </div>
+              </div><!--end of hm-socia-icn-->
+          </div>
+      </div>
+     </div>
+   </div>
+ </div>
+    <!-- End of work-together popup -->
 
   <div class="hr-display">
       <ul class = "pagination">
