@@ -398,6 +398,13 @@
 /* End of Product Landing Transparent Trianle*/
 
 /* form validation */
+.hr-display-form {
+    margin-right: 12px;
+    margin-left: 10%;
+    display: -webkit-box;
+}
+
+
   .form-control:focus {
     border:none;
     outline: 0;
@@ -405,9 +412,12 @@
     box-shadow: none;
 }
 #submit-btn {
+    height: 76px;
+    width: 100%;
     background: none;
     position: absolute;
-    margin-top: -24px;
+    margin-top: -26px;
+    left: 5px;
 }
 #subject,#message{
   color: #000;
@@ -421,26 +431,37 @@
   text-indent: -100%;
   opacity: 1;
 }
+.text-border .input-group .form-control:focus, .form-control {
+    border:none; 
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none; 
+}
 .submit-background {
-
     padding-bottom: 32px;
-    padding-top: 25px;
+    padding-top: 15px;
+    height: 75px;
+    background-color: #11cfc8;
+    color: #4c3b3e;
 
 }
 .submit-text {
     margin-right: -141px;
-    margin-top: -18px;
 }
 #file-detail{
   background: transparent;
   position: absolute;
-    margin-left: 125px;
-    margin-top: -1px;
-    width: inherit;
-    border: none;
+  margin-left: 125px;
+  margin-top: -80px;
+  width: inherit;
+  border: none;
 }
-.attach-text,.input_file-upload,.input_file-upload2,.input_file-upload3{
-    cursor: pointer;
+ .attach-text,#file-detail{
+  cursor: pointer;
+}
+ .attach-text {
+  position: absolute;
+  bottom: 61px;
 }
 
 
@@ -628,11 +649,15 @@
           right: 12px;
           top: 20px;
         }
-        #file-upload {
-          opacity: 0;
-          z-index: 2;
-          position: relative;
-        }
+  #file-upload {
+    cursor: pointer;
+    margin-left: -14px;
+    width: 105%;
+    height: 75px;
+    opacity: 0;
+    z-index: 2;
+    position: relative;
+}
         /*end of join us pop up*/
         @media screen and (max-width: 768px) {
           #start-project {
