@@ -1139,8 +1139,11 @@ html {
 /*End of service-delivery page*/
 
 /*End of service-delivery page*/
-		.service-tabs-bars{
-		margin-bottom: 91px;
+	.service-col-padding:hover {
+		border-bottom: 5px solid #EC297B;
+	}
+	.service-tabs-bars{
+		margin-bottom: 140px;
 	}
 		.service-iconss {
 		background-color: #0AB4C5;
@@ -1157,12 +1160,12 @@ html {
 	}
 		.service-icon22{
 	    position: absolute;
-		margin-left: 662px;
+		margin-left: 461px;
 		margin-top: -2px;
 	}
 	.service-icon33{
 	    position: absolute;
-		margin-left: 461px;
+		margin-left: 662px;
 		margin-top: -2px;
 	}
 	.service-icon44{
@@ -1179,10 +1182,6 @@ html {
 	    left: 28%;
 	    border-color: #E5E6E6;
 	    height: 4px;
-	}
-
-	.service-tab-textt {
-
 	}
 
 	.service11{
