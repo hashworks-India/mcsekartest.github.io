@@ -1139,6 +1139,9 @@ html {
 /*End of service-delivery page*/
 
 /*End of service-delivery page*/
+	.service-col-padding {
+		border-bottom: 5px solid transparent;
+	}
 	.service-col-padding:hover {
 		border-bottom: 5px solid #EC297B;
 	}
