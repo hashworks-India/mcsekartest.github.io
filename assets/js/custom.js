@@ -433,6 +433,22 @@ $(document).ready(function(){
           jobtabprev.addClass('active');
       });
     /* end of job board */
+    
+    /* for color of service color */
+          $('div.service-tabs-color1').css("background-color","#EC297B");
+          $('div.service-tabs-color1').css("border","3px solid rgb(241, 158, 193)");
+$('.service-iconss').click(function(){
+          $('div.service-tabs-color').css("background-color","#0AB4C5"); 
+          $('div.service-tabs-color').css("border","1px solid #0AB4C5"); 
+          $('div.service-tabs-color1').css("background-color","#0AB4C5");
+          $('div.service-tabs-color1').css("border","1px solid #0AB4C5");
+        if($('div.service-iconss.active'))
+        {
+          $('div.service-iconss.active').css("background-color","#EC297B");
+          $('div.service-iconss.active').css("border","3px solid rgb(241, 158, 193)");
+        }
+});
+    /*  end color of service color */
 
 
 });
