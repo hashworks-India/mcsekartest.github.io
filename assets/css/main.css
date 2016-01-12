@@ -1653,7 +1653,7 @@ html {
 	}
 	.case-studies-control-grid {
 	    border: 1px solid #37b5c4;
-	    margin-bottom: 50px;
+	   /* margin-bottom: 50px;*/
 	    margin-top: 20px;
 	    overflow: inherit;
 	}
