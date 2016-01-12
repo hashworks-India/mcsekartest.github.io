@@ -1150,6 +1150,73 @@ html {
 /*End of service-delivery page*/
 
 /*End of service-delivery page*/
+	.service-tabs-bars{
+		margin-bottom: 91px;
+	}
+		.service-iconss {
+		background-color: #0AB4C5;
+		border: 1px solid #0AB4C5;
+		border-radius: 100%;
+		height: 50px;
+		display: table-cell;
+		width: 50px;
+	}
+		.service-icon11{
+		position: absolute;
+	    margin-left: 263px;
+	    margin-top: -2px;
+	}
+		.service-icon22{
+	    position: absolute;
+		margin-left: 662px;
+		margin-top: -2px;
+	}
+	.service-icon33{
+	    position: absolute;
+		margin-left: 461px;
+		margin-top: -2px;
+	}
+	.service-icon44{
+	    position: absolute;
+	    margin-left: 860px;
+	    margin-top: -2px;
+	}
+
+
+	.hr-line {
+	    background: #DEE2E2;
+	    position: absolute;
+	    width: 44%;
+	    left: 28%;
+	    border-color: #E5E6E6;
+	    height: 4px;
+	}
+
+	.service-tab-textt {
+
+	}
+
+	.service11{
+	    margin-top: 12px;
+	    margin-left: -4px;
+
+	}
+	.service22{
+		margin-top: 12px;
+	    margin-left: -21px;
+
+	}
+	.service33{
+		margin-top: 12px;
+	    margin-left: -20px;
+
+	}
+	.service44{
+		margin-top: 12px;
+	    margin-left: -30px;
+
+	}
+
 	.job-table.filter-content.active  {
     	display: table;
 	}
@@ -1180,7 +1247,7 @@ html {
     	width: 25%;
 		z-index: 10;
 	}
-	.service-icons {
+/*	.service-icons {
 		 background-color: #ee2b7b;
 	    border: 1px solid #ee2b7b;
 	    border-radius: 100%;
@@ -1190,8 +1257,8 @@ html {
 	    margin-left: -32px;
 	    position: absolute;
 	    width: 65px;
-	}
-	.service-icon1 {
+	}*/
+/*	.service-icon1 {
 		top: 8%;
 	}
 	.service-icon2 {
@@ -1202,8 +1269,8 @@ html {
 	}
 	.service-icon4 {
 		top: 80%;
-	}
-	.service-tab-text {
+	}*/
+/*	.service-tab-text {
 		position: absolute;
 		top: 30%;
 	}
@@ -1223,8 +1290,8 @@ html {
 	    -o-transform: translateX(-50%);
 	    transform: translateX(-50%);
 	    width: 5px;
-	}
-
+	}*/
+/*
 	.service1 {
 		left: -100%;
 	}
@@ -1236,7 +1303,7 @@ html {
 	}
 	.service4 {
 		left: -198%;
-	}
+	}*/
 
 	/* new casestudy page*/
 
