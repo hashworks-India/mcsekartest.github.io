@@ -38,11 +38,11 @@
 			</div>
 		</div> -->
 	</section>
-
+	<div class="blog-margin">
 	<ul class="blog-grid clearfix blog-main">
 
 		<li class="intro-wrapper">
-			<h2 class="tagline gotham-rounded-bold">Opinions, Thoughts and Digital Stuff</h2>
+			<h2 class="tagline gotham-rounded-bold margin-zero">Opinions, Thoughts and Digital Stuff</h2>
 			<h3 class="subtitle gotham-rounded-bok ">Read Our Diary</h3>
 			<p class="gotham-rounded-light">Thinking about website development? So are we. Constantly. We take what we do pretty seriously, but we also have a lot of fun while we’re doing it. Come share our collective headspace; you’ll discover more about the team and how we work.</p>
 
@@ -91,7 +91,7 @@
 		<!-- We need to add the option value attr name in li for filter -->
 
 	{% for post in site.posts %}
-		<li class="hw-filter-li Social blog-content">
+		<li class="hw-filter-li Social blog-content ">
 			<div class="image-wrapper">
 				<img width="" height="" alt="" src="http://forgeandsmith.com/wp-content/uploads/2015/12/Top-Tweets-Thumb.jpg">
 				<div class="blog-post-meta">
@@ -102,9 +102,6 @@
 			<div class="blog-content-wrapper">
 				<h4><span class="month">Dec 22, 2015</span>  <span class="categories-list"><a rel="category tag" href="http://forgeandsmith.com/category/web-marketing/">{{ post.title}}</a>, </span></h4>
 				<h3><a href="http://forgeandsmith.com/top-tweets-of-2015-and-what-we-learned-from-them/" class="gotham-rounded-bok">Top Tweets of 2015 (and What We Learned From Them)</a></h3>
-				<!-- <p>
-				<a class="read-more" href="http://forgeandsmith.com/top-tweets-of-2015-and-what-we-learned-from-them/">Read More</a>
-				</p> -->
 				<p>
 				<img class="nav-bp-author" alt="" src="/assets/img/blog/author.jpg">
 				<a rel="category tag" class="categories-list" href="http://forgeandsmith.com/category/social-media/">{{ post.author}}</a>
@@ -117,6 +114,7 @@
 
 
 	</ul>
+	</div>
 
 	<script src="js/jquery-1.11.2.min.js"></script>
 	<script>
