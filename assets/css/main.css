@@ -1760,7 +1760,7 @@ html {
         width: 500px;
         height: 380px;
     }
-	.gm-style-iw{
+	#map .gm-style-iw{
 		top: 0px;
 		position: absolute;
 		left: 24px;
@@ -1769,21 +1769,21 @@ html {
 		border-radius: 4px;
 		padding: 2px 60px 0px 61px;
 	}
-	.gm-style-iw p,h4,h5{
+	#map .gm-style-iw p,h4,h5{
 		color:#fff;
 	}
-	.gm-style-iw input{
+	#map .gm-style-iw input{
 		color: #fff;
 		border: none;
 		border-radius: 2px;
 		margin-bottom: 5px;
 		padding: 2px;
 	}
-	.gm-style-iw #get-direction_div2{
+	#map .gm-style-iw #get-direction_div2{
 		border-top: 2px solid #000;
 		padding-top: 11px;
 	}
-	.gm-style-iw #get-direction-btn{
+	#map .gm-style-iw #get-direction-btn{
 		margin-left: 41px;
 		color: #000;
 		background-color: #fcfcfc;

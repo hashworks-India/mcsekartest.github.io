@@ -82,6 +82,10 @@
                           ]
                   ];
 
+                  google.maps.event.addListener(infowindow, 'domready', function(){
+                  $(".gm-style-iw").next("div").css("right","22px");
+                  $(".gm-style-iw").next("div").css("top","17px");
+                  });
                   google.maps.event.addListener(marker, 'click', (function(marker, i) {
                     return function() {
                       infowindow.setContent(infoWindowContent[i][0]);
