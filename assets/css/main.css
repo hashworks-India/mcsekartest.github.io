@@ -822,6 +822,9 @@ html {
 			font-size: 0.875rem;
 			padding: 5px 0 25px;
 		}
+		.upskilling-btm {
+			margin-bottom: 40px;
+		}
 
 		.hw-upskill-cont .hw-upskill-time li {
 			float: left;
@@ -1181,8 +1184,9 @@ html {
 	.hr-line {
 	    background: #DEE2E2;
 	    position: absolute;
-	    width: 44%;
-	    left: 28%;
+	    width: 591px;
+	    margin-left: 290px;
+	    /*left: 28%;*/
 	    border-color: #E5E6E6;
 	    height: 4px;
 	}

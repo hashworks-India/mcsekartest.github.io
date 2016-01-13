@@ -33,38 +33,10 @@
 	
 <!-- End of upskilling carousel -->
 
-<!-- filter options -->
-	<!-- <div class="container hw-upskilling-filter">
-		<div class="row">
-			<ul class="clearfix  hr-display tagcloud">
-				
-				
-
-				
-				<li class="gotham-rounded-bok text-uppercase" data-value="all">
-						<ul>
-							<li class="tagname">ALL</li>
-							<li class="tagvalue arrow-left"><span class="arrow-border"></span>{{ site.upskilling_cs.size }}</li>
-						</ul>
-					</li>
-				{% assign topic = site.upskilling_cs | group_by:"topic"  %}
-				{% for cont in topic %}
-					<li class="gotham-rounded-bok text-uppercase" data-value="{{ cont.name | downcase }}">
-						<ul>
-							<li class="tagname">{{ cont.name }}</li>
-							<li class="tagvalue arrow-left"><span class="arrow-border"></span>{{ cont.items.size }}</li>
-						</ul>
-					</li>
-				{% endfor %}
-				
-			</ul>
-		</div>
-	</div> -->
-<!-- End of filter options -->
 
 	<!--tabs-->
 	<div class="bs-example line-padding service-tab">
-			<div class="container">
+			<div class="container upskilling-btm">
 
 			    <ul class="nav full-border case-studies-control-grid" id="case-study-active">
 			    	
@@ -276,7 +248,7 @@
 							{% for cont in site.upskilling_cs %}
 
 
-								<div class="col-lg-4 upskill-cont-filter all {{ cont.topic | downcase }}">
+								<div class="col-lg-4 upskill-cont-filter  all {{ cont.topic | downcase }}">
 									<a href="{{cont.url}}">
 									<h2 class="gotham-rounded-bok hw-heading heading text-center">{{ cont.topic }}</h2>
 									<!-- hw-upskill-cont -->
