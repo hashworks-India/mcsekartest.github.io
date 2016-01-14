@@ -2,6 +2,7 @@
 
 <main>
 
+
 	<h1 class="text-center gotham-rounded-bok heading hw-carousel-heading"> Engage Us </h1>
 	<!-- carousel-->
 
@@ -12,7 +13,7 @@
 		   		<div class="container heading-caro-padd">
 				    <!-- Wrapper for slides -->
 				    <div class="carousel-inner" role="listbox">
-				    	 {% for cont in site.data.Solutions.carousel.carousel_content%}
+				    	 {% for cont in site.data.Portfolio.carousel.carousel_content%}
 					       {% if forloop.first %}
 					  	<div class="item active">
 					      <p class=" gotham-rounded-bok hw-para">
@@ -33,6 +34,7 @@
 	 	</div>
 
 	<!-- end of carousel-->
+
   
 
 	<!-- fixed div-->
@@ -56,7 +58,7 @@
 									<p class="hw-para gotham-rounded-light para">{{site.data.Engage_Us.engageus.part1[0].content}}
 									</p>
 								</div>
-								<a href='/Our_Thinking'><button class="custom-btn">know more</button></a>
+								<a href='/our_thinking'><button class="custom-btn">know more</button></a>
 							</div>
 
 							<div class="col-lg-5">
