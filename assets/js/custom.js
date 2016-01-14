@@ -9,12 +9,6 @@ $(document).ready(function(){
 
     /* smooth scroll*/
 
-      // $('.nav-tabs > li a').click(function(){
-      //     var navtab = $(this).parents('.nav-tabs').offset().top - 50;
-      //       $('html, body').animate({
-      //         scrollTop: navtab}, 1500, 'linear');
-      // });
-
     /* End of smooth scroll*/
   
     //homepage dropdown
@@ -169,7 +163,7 @@ $(document).ready(function(){
           $(this).next().toggleClass("arrow-rotate");
         });
       // End of upskilling-casestudy collapse
-      
+
       // service details
         $('.filter').click(function(){
           var dtab = $(this).attr("data-tab");
