@@ -4,6 +4,6 @@ main-left:
  - { url: '/case_study', text: 'Case Study' }
 main-right:
  - { url: '/company', text: 'Company' }
- - { url: '/nav_blog', text: 'Blog' }
+ - { url: '/blog', text: 'Blog' }
  - { url: '/job_board', text: 'Job Board' }
  - { url: '/', text: 'News' }
