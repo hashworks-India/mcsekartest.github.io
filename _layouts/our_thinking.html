@@ -1,0 +1,777 @@
+{% include header.html %}
+
+<main>
+
+   <h1 class="text-center gotham-rounded-bok heading hw-carousel-heading">Our Thinking</h1>
+
+   		<div class="carousel-padding">
+		   	<div class="line"></div>
+			<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+				<div class="container heading-caro-padd">
+				    <!-- Wrapper for slides -->
+				    <div class="carousel-inner" role="listbox">
+				    	 {% for cont in site.data.Portfolio.carousel.carousel_content%}
+					       {% if forloop.first %}
+					  	<div class="item active">
+					      <p class=" gotham-rounded-bok hw-para">
+					       {{ cont.content}}
+					      </p>
+					    </div>
+						{% else %}
+					   <div class="item">
+					       <p class=" gotham-rounded-bok hw-para">
+					       		 {{ cont.content}}
+					      	</p>
+					    </div>
+						{% endif %}
+					    {% endfor %}
+				    </div>
+				</div>
+			</div>
+	 	</div>
+	<!-- end of carousel-->
+	
+	<!--tabs-->
+	<div class="bs-example line-padding service-tab">
+			<div class="container-fluid  div-margin-left">
+
+		    <ul class="nav nav-tabs p-flex ">
+		    	
+		        <li class="active c-flex"><a class="hr-display"  data-toggle="tab" href="#accelerate-business" >
+		        	<ul class="tab-img">
+		        		<li  class="li-tab-mar"><img src="/assets/img/solutions/platform_integration.jpg"></li>
+		        		<li class="gotham-rounded-light font-24">
+                          <p class="text-center">Business Value</p> 
+                          </li>
+					</ul></a>
+				</li>
+		        
+		        <li class="c-flex"><a  class="hr-display" data-toggle="tab" href="#offerings" >
+		        	<ul class="tab-img">
+		        		<li class="li-tab-mar"><img src="/assets/img/solutions/engineering_practices.jpg"></li>
+		        		<li class="gotham-rounded-light font-24">
+                          <p class="text-center">We Partner To</p></li> 
+                          
+					</ul></a>
+		        </li>
+
+		        <li class="c-flex"><a  class="hr-display" data-toggle="tab" href="#engageus" >
+		        	<ul class="tab-img" >
+		        		<li class="li-tab-mar"><img src="/assets/img/solutions/mobility-bigdata.jpg"></li>
+		        		<li class="gotham-rounded-light font-24">
+                          <p class="text-center">Engagment Model</p></li>
+                          
+					</ul></a>
+		        </li>
+
+		        <li class="c-flex"><a  class="hr-display" data-toggle="tab" href="#deliver">
+		        	<ul class="tab-img" >
+		        		<li class="li-tab-mar"><img src="/assets/img/solutions/ui-ux.jpg"></li>
+		        		<li class="gotham-rounded-light font-24">
+                          <p class="text-center">Delivery Model</p></li>
+                          
+					</ul></a>
+		        </li>
+		    </ul>
+
+		</div> <!--end of contaier-fuild of tab heading-->
+
+<!-- tab-content -->
+		    <div class="tab-content">
+
+				<!-- tab -->
+			        <div id="accelerate-business" class="tab-pane fade in active">
+			           <!-- categories -->
+					       <div class="div-margin-left">
+
+								<!-- hw-engage-cont hw-service-details -->
+									<div class="hw-engage-cont hw-service-details service-tab">
+										<!-- row -->
+											<div class="row">
+												
+
+												<div class="service-tabs-bars">
+															<hr class="hr-line"/>
+
+															<div class="service-icon11">
+																<div class="service-iconss  filter service-tabs-color1" data-tab="culture">
+																</div>
+																<div class="service-tab-textt service11"><p class="hw-copyright clr-black gotham-rounded-bok ">Culture</p>
+																</div>
+															</div>
+
+															<div class="service-icon22">
+																<div class="service-iconss filter service-tabs-color" data-tab="we_resolve">
+																</div>
+																<div class="service-tab-textt service22 "><p class="hw-copyright clr-black gotham-rounded-bok ">We Resolve</p>
+																</div>
+															</div>
+
+															<div class="service-icon33">
+																<div class="service-iconss filter service-tabs-color" data-tab="we_parctice">
+																</div>
+																<div class="service-tab-textt service33"><p class="hw-copyright clr-black gotham-rounded-bok ">We Practice</p>
+																</div>
+															</div>
+
+															<div class="service-icon44">
+																<div class="service-iconss filter service-tabs-color" data-tab="we_accelarat">
+																</div>
+																<div class="service-tab-textt service44"><p class="hw-copyright clr-black gotham-rounded-bok ">We Accelarate</p>
+																</div>
+															</div>
+														</div> 
+												<!-- custom-10 -->
+													<div >
+
+														<div class="culture_tab filter-content active" data-value="culture">
+															<div class="row ">
+																
+																<div class="col-lg-4 service-col-padding ">
+														<div class="partner-icon hr-display">
+															<img src="{{ tablist.imagesrc }}">
+														</div>
+														<div class="partner-title">
+															<p class="gotham-rounded-bold hw-heading text-center clr-black">{{site.data.our_thinking.Business.culture.part1[0].title}}</p>
+														</div>
+														<div class="partner-content">
+															<p class="gotham-rounded-bok hw-copyright ">{{site.data.our_thinking.Business.culture.part1[0].content}}</p>
+														</div>									
+													</div>
+
+													<div class="col-lg-4 service-col-padding ">
+														<div class="partner-icon hr-display">
+															<img src="{{ tablist.imagesrc }}">
+														</div>
+														<div class="partner-title">
+															<p class="gotham-rounded-bold hw-heading text-center clr-black">{{site.data.our_thinking.Business.culture.part2[0].title}}</p>
+														</div>
+														<div class="partner-content">
+															<p class="gotham-rounded-bok hw-copyright ">{{site.data.our_thinking.Business.culture.part2[0].content}}</p>
+														</div>									
+													</div>
+
+													<div class="col-lg-4 service-col-padding ">
+														<div class="partner-icon hr-display">
+															<img src="{{ tablist.imagesrc }}">
+														</div>
+														<div class="partner-title">
+															<p class="gotham-rounded-bold hw-heading text-center clr-black">{{site.data.our_thinking.Business.culture.part1[0].title}}</p>
+														</div>
+														<div class="partner-content">
+															<p class="gotham-rounded-bok hw-copyright ">{{site.data.our_thinking.Business.culture.part1[0].content}}</p>
+														</div>									
+													</div>
+
+															</div><!--end of row-->
+															
+													</div><!--end of culture-->
+
+													<div class="resolve_tab filter-content" data-value="we_resolve">
+
+														<div class="row">
+																
+																<div class="col-lg-4 service-col-padding ">
+														<div class="partner-icon hr-display">
+															<img src="{{ tablist.imagesrc }}">
+														</div>
+														<div class="partner-title">
+															<p class="gotham-rounded-bold hw-heading text-center clr-black">{{site.data.our_thinking.Business.we_resolve.part1[0].title}}</p>
+														</div>
+														<div class="partner-content">
+															<p class="gotham-rounded-bok hw-copyright ">{{site.data.our_thinking.Business.we_resolve.part1[0].content}}</p>
+														</div>									
+													</div>
+
+													<div class="col-lg-4 service-col-padding ">
+														<div class="partner-icon hr-display">
+															<img src="{{ tablist.imagesrc }}">
+														</div>
+														<div class="partner-title">
+															<p class="gotham-rounded-bold hw-heading text-center clr-black">{{site.data.our_thinking.Business.we_resolve.part2[0].title}}</p>
+														</div>
+														<div class="partner-content">
+															<p class="gotham-rounded-bok hw-copyright ">{{site.data.our_thinking.Business.we_resolve.part2[0].content}}</p>
+														</div>									
+													</div>
+
+													<div class="col-lg-4 service-col-padding ">
+														<div class="partner-icon hr-display">
+															<img src="{{ tablist.imagesrc }}">
+														</div>
+														<div class="partner-title">
+															<p class="gotham-rounded-bold hw-heading text-center clr-black">{{site.data.our_thinking.Business.we_resolve.part3[0].title}}</p>
+														</div>
+														<div class="partner-content">
+															<p class="gotham-rounded-bok hw-copyright ">{{site.data.our_thinking.Business.we_resolve.part3[0].content}}</p>
+														</div>									
+													</div>
+
+															</div><!--end of row-->
+
+
+														<div class="row partner-row">
+																
+																<div class="col-lg-4 service-col-padding ">
+														<div class="partner-icon hr-display">
+															<img src="{{ tablist.imagesrc }}">
+														</div>
+														<div class="partner-title">
+															<p class="gotham-rounded-bold hw-heading text-center clr-black">{{site.data.our_thinking.Business.we_resolve.part4[0].title}}</p>
+														</div>
+														<div class="partner-content">
+															<p class="gotham-rounded-bok hw-copyright ">{{site.data.our_thinking.Business.we_resolve.part4[0].content}}</p>
+														</div>									
+													</div>
+
+													<div class="col-lg-4 service-col-padding ">
+														<div class="partner-icon hr-display">
+															<img src="{{ tablist.imagesrc }}">
+														</div>
+														<div class="partner-title">
+															<p class="gotham-rounded-bold hw-heading text-center clr-black">{{site.data.our_thinking.Business.we_resolve.part5[0].title}}</p>
+														</div>
+														<div class="partner-content">
+															<p class="gotham-rounded-bok hw-copyright ">{{site.data.our_thinking.Business.we_resolve.part5[0].content}}</p>
+														</div>									
+													</div>
+
+													<div class="col-lg-4 service-col-padding ">
+														<div class="partner-icon hr-display">
+															<img src="{{ tablist.imagesrc }}">
+														</div>
+														<div class="partner-title">
+															<p class="gotham-rounded-bold hw-heading text-center clr-black">{{site.data.our_thinking.Business.we_resolve.part6[0].title}}</p>
+														</div>
+														<div class="partner-content">
+															<p class="gotham-rounded-bok hw-copyright ">{{site.data.our_thinking.Business.we_resolve.part6[0].content}}</p>
+														</div>									
+													</div>
+												</div><!--end of row2-->
+											</div><!--end of we resolve-->
+
+													<div class="resolve_tab filter-content" data-value="we_parctice">
+															
+														<div class="row">
+																
+																<div class="col-lg-4 service-col-padding ">
+														<div class="partner-icon hr-display">
+															<img src="{{ tablist.imagesrc }}">
+														</div>
+														<div class="partner-title">
+															<p class="gotham-rounded-bold hw-heading text-center clr-black">{{site.data.our_thinking.Business.we_practice.part1[0].title}}</p>
+														</div>
+														<div class="partner-content">
+															<p class="gotham-rounded-bok hw-copyright ">{{site.data.our_thinking.Business.we_practice.part1[0].content}}</p>
+														</div>									
+													</div>
+
+													<div class="col-lg-4 service-col-padding ">
+														<div class="partner-icon hr-display">
+															<img src="{{ tablist.imagesrc }}">
+														</div>
+														<div class="partner-title">
+															<p class="gotham-rounded-bold hw-heading text-center clr-black">{{site.data.our_thinking.Business.we_practice.part2[0].title}}</p>
+														</div>
+														<div class="partner-content">
+															<p class="gotham-rounded-bok hw-copyright ">{{site.data.our_thinking.Business.we_practice.part2[0].content}}</p>
+														</div>									
+													</div>
+
+													<div class="col-lg-4 service-col-padding ">
+														<div class="partner-icon hr-display">
+															<img src="{{ tablist.imagesrc }}">
+														</div>
+														<div class="partner-title">
+															<p class="gotham-rounded-bold hw-heading text-center clr-black">{{site.data.our_thinking.Business.we_practice.part3[0].title}}</p>
+														</div>
+														<div class="partner-content">
+															<p class="gotham-rounded-bok hw-copyright ">{{site.data.our_thinking.Business.we_practice.part3[0].content}}</p>
+														</div>									
+													</div>
+
+															</div><!--end of row-->
+
+
+														<div class="row partner-row">
+																
+																<div class="col-lg-4 service-col-padding ">
+														<div class="partner-icon hr-display">
+															<img src="{{ tablist.imagesrc }}">
+														</div>
+														<div class="partner-title">
+															<p class="gotham-rounded-bold hw-heading text-center clr-black">{{site.data.our_thinking.Business.we_practice.part4[0].title}}</p>
+														</div>
+														<div class="partner-content">
+															<p class="gotham-rounded-bok hw-copyright ">{{site.data.our_thinking.Business.we_practice.part4[0].content}}</p>
+														</div>									
+													</div>
+
+													<div class="col-lg-4 service-col-padding ">
+														<div class="partner-icon hr-display">
+															<img src="{{ tablist.imagesrc }}">
+														</div>
+														<div class="partner-title">
+															<p class="gotham-rounded-bold hw-heading text-center clr-black">{{site.data.our_thinking.Business.we_practice.part5[0].title}}</p>
+														</div>
+														<div class="partner-content">
+															<p class="gotham-rounded-bok hw-copyright ">{{site.data.our_thinking.Business.we_practice.part5[0].content}}</p>
+														</div>									
+													</div>
+
+												</div><!--end of row2-->
+											</div><!--end of we pratice-->
+
+													<div class="resolve_tab filter-content" data-value="we_accelarat">
+
+
+														<div class="row">
+																
+																<div class="col-lg-4 service-col-padding ">
+														<div class="partner-icon hr-display">
+															<img src="{{ tablist.imagesrc }}">
+														</div>
+														<div class="partner-title">
+															<p class="gotham-rounded-bold hw-heading text-center clr-black">{{site.data.our_thinking.Business.we_accelarate.part1[0].title}}</p>
+														</div>
+														<div class="partner-content">
+															<p class="gotham-rounded-bok hw-copyright ">{{site.data.our_thinking.Business.we_accelarate.part1[0].content}}</p>
+														</div>									
+													</div>
+
+													<div class="col-lg-4 service-col-padding ">
+														<div class="partner-icon hr-display">
+															<img src="{{ tablist.imagesrc }}">
+														</div>
+														<div class="partner-title">
+															<p class="gotham-rounded-bold hw-heading text-center clr-black">{{site.data.our_thinking.Business.we_accelarate.part2[0].title}}</p>
+														</div>
+														<div class="partner-content">
+															<p class="gotham-rounded-bok hw-copyright ">{{site.data.our_thinking.Business.we_accelarate.part2[0].content}}</p>
+														</div>									
+													</div>
+
+													<div class="col-lg-4 service-col-padding ">
+														<div class="partner-icon hr-display">
+															<img src="{{ tablist.imagesrc }}">
+														</div>
+														<div class="partner-title">
+															<p class="gotham-rounded-bold hw-heading text-center clr-black">{{site.data.our_thinking.Business.we_accelarate.part3[0].title}}</p>
+														</div>
+														<div class="partner-content">
+															<p class="gotham-rounded-bok hw-copyright ">{{site.data.our_thinking.Business.we_accelarate.part3[0].content}}</p>
+														</div>									
+													</div>
+
+															</div><!--end of row-->
+
+
+														<div class="row partner-row">
+																
+																<div class="col-lg-4 service-col-padding ">
+														<div class="partner-icon hr-display">
+															<img src="{{ tablist.imagesrc }}">
+														</div>
+														<div class="partner-title">
+															<p class="gotham-rounded-bold hw-heading text-center clr-black">{{site.data.our_thinking.Business.we_accelarate.part4[0].title}}</p>
+														</div>
+														<div class="partner-content">
+															<p class="gotham-rounded-bok hw-copyright ">{{site.data.our_thinking.Business.we_accelarate.part4[0].content}}</p>
+														</div>									
+													</div>
+
+													<div class="col-lg-4 service-col-padding ">
+														<div class="partner-icon hr-display">
+															<img src="{{ tablist.imagesrc }}">
+														</div>
+														<div class="partner-title">
+															<p class="gotham-rounded-bold hw-heading text-center clr-black">{{site.data.our_thinking.Business.we_accelarate.part5[0].title}}</p>
+														</div>
+														<div class="partner-content">
+															<p class="gotham-rounded-bok hw-copyright ">{{site.data.our_thinking.Business.we_accelarate.part5[0].content}}</p>
+														</div>									
+													</div>
+												</div><!--end of row2-->
+												</div><!--end of we accelarate-->
+												</div>
+											</div>
+								<!-- End of hw-engage-cont hw-service-details -->
+										</div>
+									</div>
+						        <!-- end of container-->
+							</div>
+		   		        <!-- end of tab1 -->
+
+
+
+		   		<!-- tab -->
+			        <div id="offerings" class="tab-pane fade in">
+			           <!-- categories -->
+					       <div class="div-margin-left">
+
+								<!-- hw-engage-cont hw-service-details -->
+									<div class="hw-engage-cont hw-service-details">
+										
+										<!-- row -->
+												<div class="row clearfix">
+
+													{% for tablist in site.data.our_thinking.we_partner.we_partner  %}
+													{% if forloop.first %}
+													<div class="col-lg-4 service-col-padding ">
+														<div class="partner-icon hr-display">
+															<img src="{{ tablist.imagesrc }}">
+														</div>
+														<div class="partner-title">
+															<p class="gotham-rounded-bold hw-heading text-center clr-black">{{ tablist.title}}</p>
+														</div>
+														<div class="partner-content">
+															<p class="gotham-rounded-bok hw-copyright ">{{ tablist.content}}</p>
+														</div>									
+													</div>
+													{% else %}
+													<div class="col-lg-4 service-col-padding ">
+														<div class="partner-icon hr-display">
+															<img src="{{ tablist.imagesrc }}">
+														</div>
+														<div class="partner-title">
+															<p class="gotham-rounded-bold hw-heading text-center clr-black">{{ tablist.title}}</p>
+														</div>
+														<div class="partner-content">
+															<p class="gotham-rounded-bok hw-copyright ">{{ tablist.content}}</p>
+														</div>									
+													</div>
+													{% endif %}
+													{% endfor %}
+
+													
+												</div><!--End of row-->
+										
+												<!-- row -->
+												<div class="row clearfix partner-row">
+
+													{% for tablist in site.data.our_thinking.we_partner.we_partner1 %}
+													{% if forloop.first %}
+													<div class="col-lg-4 service-col-padding ">
+														<div class="partner-icon hr-display">
+															<img src="{{ tablist.imagesrc }}">
+														</div>
+														<div class="partner-title">
+															<p class="gotham-rounded-bold hw-heading text-center clr-black">{{ tablist.title}}</p>
+														</div>
+														<div class="partner-content">
+															<p class="gotham-rounded-bok hw-copyright ">{{ tablist.content}}</p>
+														</div>									
+													</div>
+													{% else %}
+													<div class="col-lg-4 service-col-padding ">
+														<div class="partner-icon hr-display">
+															<img src="{{ tablist.imagesrc }}">
+														</div>
+														<div class="partner-title">
+															<p class="gotham-rounded-bold hw-heading text-center clr-black">{{ tablist.title}}</p>
+														</div>
+														<div class="partner-content">
+															<p class="gotham-rounded-bok hw-copyright ">{{ tablist.content}}</p>
+														</div>									
+													</div>
+													{% endif %}
+													{% endfor %}
+
+													
+												</div><!--End of row-->
+																				
+									</div>
+								<!-- End of hw-engage-cont hw-service-details -->
+
+
+							</div>
+						<!-- end of container-->
+
+						</div>
+		   		<!-- end of tab1 -->
+
+
+		   		<!-- tab -->
+			        <div id="engageus" class="tab-pane fade in">
+			           <!-- categories -->
+					       <div class="div-margin-left">
+
+								<!-- hw-engage-cont hw-service-details -->
+									<div class="hw-engage-cont hw-service-details">
+										<!-- row -->
+											<div class="row clearfix">
+												<div>
+													<p class="gotham-rounded-bold hw-heading text-center clr-black">{{site.data.our_thinking.Engagement_model.engagement_model.title }}</p>
+													<p class="gotham-rounded-bok hw-heading text-center">{{ site.data.our_thinking.Engagement_model.engagement_model.content }}</p>
+												</div>
+												<div class="hr-display service-img-mar">
+												<img src="{{site.data.Our_Thinking.Engagement_model.engagement_model.imgsrc}}">
+												</div>
+											</div>
+									</div>
+							</div>
+						</div>
+		   		<!-- end of tab1 -->
+
+
+		   		<!-- tab -->
+			        <div id="deliver" class="tab-pane fade in">
+			           <!-- categories -->
+					       <div class="div-margin-left">
+
+								<!-- hw-engage-cont hw-service-details -->
+									<div class="hw-engage-cont hw-service-details">
+										<!-- row -->
+											<div class="row clearfix">
+												<div>
+													<p class="gotham-rounded-bold hw-heading text-center clr-black">{{site.data.our_thinking.Delivery_model.delivery_model.title }}</p>
+													<p class="gotham-rounded-bok hw-heading text-center">{{ site.data.our_thinking.Delivery_model.delivery_model.content }}</p>
+												</div>
+												<div class="hr-display service-img-mar">
+												<img src="site.data.Our_Thinking.Delivery_model.delivery_model.imgsrc">
+												</div>
+											</div>
+										<!--End of row-->
+									</div>
+								<!-- End of hw-engage-cont hw-service-details -->
+
+
+							</div>
+						<!-- end of container-->
+
+						</div>
+		   		<!-- end of tab1 -->
+
+	   		
+		</div>
+	<!-- end of tab-content -->
+
+
+	
+	<!-- Working with-->
+		<div class="hw-tools">
+			<p class="text-center gotham-rounded-light hw-main-heading log-clr-backgrnd clr-white h-approch">Tools and technologies we <i class="fa fa-heart"></i>  working with:</p>
+
+			<!-- tools list -->
+				<div class="hw-tools-list container">
+					<!-- row -->
+						<div class="row">
+
+							<!-- hw-tolls-details -->
+								<div class="col-lg-4">
+									<ul class="hw-tools-details">
+										<li>
+											<ul class="clearfix">
+												<li><img src="../assets/img/solutions/tools-technichs/java.jpg" alt="java"></li>
+												<li>Java</li>
+											</ul>
+										</li>
+										<li>
+											<ul class="clearfix">
+												<li><img src="../assets/img/solutions/tools-technichs/python.jpg" alt="python"></li>
+												<li>Python</li>
+											</ul>
+										</li>
+										<li>
+											<ul class="clearfix">
+												<li><img src="../assets/img/solutions/tools-technichs/mean.jpg" alt="mean"></li>
+												<li>MEAN stack</li>
+											</ul>
+										</li>
+										<li>
+											<ul class="clearfix">
+												<li><img src="../assets/img/solutions/tools-technichs/aws.jpg" alt="aws"></li>
+												<li>AWS</li>
+											</ul>
+										</li>
+										<li>
+											<ul class="clearfix">
+												<li><img src="../assets/img/solutions/tools-technichs/hadoop.jpg" alt="hadoop"></li>
+												<li>Apache Hadoop</li>
+											</ul>
+										</li>
+										<li>
+											<ul class="clearfix">
+												<li><img src="../assets/img/solutions/tools-technichs/d3.jpg" alt="d3"></li>
+												<li>D3 js</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							<!-- End of hw-tools-details -->
+
+							<!-- hw-tolls-details -->
+								<div class="col-lg-4">
+									<ul class="hw-tools-details">
+										<li>
+											<ul class="clearfix">
+												<li><img src="../assets/img/solutions/tools-technichs/html5.jpg" alt="html5"></li>
+												<li>HTML 5</li>
+											</ul>
+										</li>
+										<li>
+											<ul class="clearfix">
+												<li><img src="../assets/img/solutions/tools-technichs/css3.jpg" alt="css3"></li>
+												<li>CSS 3</li>
+											</ul>
+										</li>
+										<li>
+											<ul class="clearfix">
+												<li><img src="../assets/img/solutions/tools-technichs/sass.jpg" alt="sass"></li>
+												<li>Sass</li>
+											</ul>
+										</li>
+										<li>
+											<ul class="clearfix">
+												<li><img src="../assets/img/solutions/tools-technichs/less.jpg" alt="less"></li>
+												<li>Less</li>
+											</ul>
+										</li>
+										<li>
+											<ul class="clearfix">
+												<li><img src="../assets/img/solutions/tools-technichs/coffee-script.jpg" alt="coffee-script"></li>
+												<li>CoffeeScript</li>
+											</ul>
+										</li>
+										<li>
+											<ul class="clearfix">
+												<li><img src="../assets/img/solutions/tools-technichs/android.jpg" alt="android"></li>
+												<li>Android/ios</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							<!-- End of hw-tools-details -->
+
+							<!-- hw-tolls-details -->
+								<div class="col-lg-4">
+									<ul class="hw-tools-details">
+										<li>
+											<ul class="clearfix">
+												<li><img src="../assets/img/solutions/tools-technichs/oracle.jpg" alt="orace"></li>
+												<li>Oracel Suits</li>
+											</ul>
+										</li>
+										<li>
+											<ul class="clearfix">
+												<li><img src="../assets/img/solutions/tools-technichs/oracle-servicebus.jpg" alt="oracle-servicebus"></li>
+												<li>Oracle Service Bus</li>
+											</ul>
+										</li>
+										<li>
+											<ul class="clearfix">
+												<li><img src="../assets/img/solutions/tools-technichs/redis.jpg" alt="redis"></li>
+												<li>Redis</li>
+											</ul>
+										</li>
+										<li>
+											<ul class="clearfix">
+												<li><img src="../assets/img/solutions/tools-technichs/rabbit.jpg" alt="rabbit"></li>
+												<li>RabbitMQ</li>
+											</ul>
+										</li>
+										<li>
+											<ul class="clearfix">
+												<li><img src="../assets/img/solutions/tools-technichs/socket.jpg" alt="socket"></li>
+												<li>Socket.io</li>
+											</ul>
+										</li>
+										<li>
+											<ul class="clearfix">
+												<li><img src="../assets/img/solutions/tools-technichs/pubnub.jpg" alt="pubnub"></li>
+												<li>PubNub</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							<!-- End of hw-tools-details -->
+
+						</div>
+					<!-- End of row -->
+				</div>
+			<!-- End of tools list -->
+
+		</div>
+	<!-- End of Working with-->
+
+
+	<!-- How we works -->
+		<div class="client-backgrnd hw-works">
+			<h2 class="gotham-rounded-bok hw-heading text-center h2-color">How We Work</h2>
+				
+			<!-- hw-works-row	 -->
+				<div class="hw-works-row container-fluid">
+					<!-- row -->
+						<div class="row">
+
+							<div class="col-20">
+								<div class="hw-work-cont arrow-top">
+									<div class="img-outer">
+										<img src="/assets/img/solutions/book.png" alt="book">
+									</div>
+									<div class="hw-work-details">
+										<h3 class="text-uppercase">Learn</h2>
+										<p>Learn unique business problems by tapping the knowledge of the business climate & technology</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-20">
+								<div class="hw-work-cont arrow-bottom">
+									<div class="img-outer">
+										<img src="/assets/img/solutions/beaker.png" alt="beaker">
+									</div>
+									<div class="hw-work-details">
+										<h3 class="text-uppercase">Research</h2>
+										<p>Every customer engagement will undergo the process of learning their business & market trends with bench marking</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-20">
+								<div class="hw-work-cont arrow-top">
+									<div class="img-outer">
+										<img src="/assets/img/solutions/bubble.png" alt="bubble">
+									</div>
+									<div class="hw-work-details">
+										<h3 class="text-uppercase">Consult</h2>
+										<p>Our specialists & technologists will reaffirm your business needs with their industry experience in designing an optimal IT solution</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-20">
+								<div class="hw-work-cont arrow-bottom">
+									<div class="img-outer">
+										<img src="/assets/img/solutions/build.png" alt="build">
+									</div>
+									<div class="hw-work-details">
+										<h3 class="text-uppercase">Build</h2>
+										<p>The development & test cycles will be short and rapid. Validate our deliverable in a continuous pipeline. We can quickly integrate your custom, legacy or enterprise class solutions</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-20">
+								<div class="hw-work-cont">
+									<div class="img-outer">
+										<img src="/assets/img/solutions/van.png" alt="van">
+									</div>
+									<div class="hw-work-details">
+										<h3 class="text-uppercase">Deliver</h2>
+										<p>Our test driven development model on Agile will ensure on-time delivery of your projects with world class performance & stability. Our solutions are highly scalable & portable</p>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					<!-- End of row -->
+				</div>
+			<!-- End of hw-works-row -->
+			
+
+	
+
+</main>	
+
+{% include footer.html %}
