@@ -1,0 +1,8 @@
+part1:
+   - { title: 'Systems Thinking',
+       imagesrc: '/assets/img/homepage/it-services.jpg',
+       content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam aliquid repellat facere exercitationem voluptatem quibusdam reiciendis itaque, debitis consequatur tenetur dolorum a libero esse recusandae quis molestiae unde totam, accusamus placeat accusantium eaque odit minima atque? Nam expedita, pariatur laboriosam. Assumenda nisi tempore hic, ullam corporis adipisci ratione id illum!'}
+part2:
+   - { imagesrc: '/assets/img/homepage/job-board.jpg',
+   	   title: 'Flow Thinking',
+       content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam aliquid repellat facere exercitationem voluptatem quibusdam reiciendis itaque, debitis consequatur tenetur dolorum a libero esse recusandae quis molestiae unde totam, accusamus placeat accusantium eaque odit minima atque? Nam expedita, pariatur laboriosam. Assumenda nisi tempore hic, ullam corporis adipisci ratione id illum!'}

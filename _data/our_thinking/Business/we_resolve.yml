@@ -1,0 +1,24 @@
+part1:
+   - { title: 'Technical Debts',
+       imagesrc: '/assets/img/homepage/it-services.jpg',
+       content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam aliquid repellat facere exercitationem voluptatem quibusdam reiciendis itaque, debitis consequatur tenetur dolorum a libero esse recusandae quis molestiae unde totam, accusamus placeat accusantium eaque odit minima atque? Nam expedita, pariatur laboriosam. Assumenda nisi tempore hic, ullam corporis adipisci ratione id illum!'}
+part2:
+   - { imagesrc: '/assets/img/homepage/job-board.jpg',
+   	   title: 'Data Silces',
+       content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam aliquid repellat facere exercitationem voluptatem quibusdam reiciendis itaque, debitis consequatur tenetur dolorum a libero esse recusandae quis molestiae unde totam, accusamus placeat accusantium eaque odit minima atque? Nam expedita, pariatur laboriosam. Assumenda nisi tempore hic, ullam corporis adipisci ratione id illum!'}
+part3:
+   - { title: 'Data Gap',
+       imagesrc: '/assets/img/homepage/it-services.jpg',
+       content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam aliquid repellat facere exercitationem voluptatem quibusdam reiciendis itaque, debitis consequatur tenetur dolorum a libero esse recusandae quis molestiae unde totam, accusamus placeat accusantium eaque odit minima atque? Nam expedita, pariatur laboriosam. Assumenda nisi tempore hic, ullam corporis adipisci ratione id illum!'}
+part4:
+   - { imagesrc: '/assets/img/homepage/job-board.jpg',
+   	   title: 'Data Architecture',
+       content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam aliquid repellat facere exercitationem voluptatem quibusdam reiciendis itaque, debitis consequatur tenetur dolorum a libero esse recusandae quis molestiae unde totam, accusamus placeat accusantium eaque odit minima atque? Nam expedita, pariatur laboriosam. Assumenda nisi tempore hic, ullam corporis adipisci ratione id illum!'}
+part5:
+   - { title: 'Data Services',
+       imagesrc: '/assets/img/homepage/it-services.jpg',
+       content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam aliquid repellat facere exercitationem voluptatem quibusdam reiciendis itaque, debitis consequatur tenetur dolorum a libero esse recusandae quis molestiae unde totam, accusamus placeat accusantium eaque odit minima atque? Nam expedita, pariatur laboriosam. Assumenda nisi tempore hic, ullam corporis adipisci ratione id illum!'}
+part6:
+   - { imagesrc: '/assets/img/homepage/job-board.jpg',
+   	   title: 'User Experience',
+       content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam aliquid repellat facere exercitationem voluptatem quibusdam reiciendis itaque, debitis consequatur tenetur dolorum a libero esse recusandae quis molestiae unde totam, accusamus placeat accusantium eaque odit minima atque? Nam expedita, pariatur laboriosam. Assumenda nisi tempore hic, ullam corporis adipisci ratione id illum!'}
