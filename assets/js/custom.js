@@ -169,8 +169,7 @@ $(document).ready(function(){
           $(this).next().toggleClass("arrow-rotate");
         });
       // End of upskilling-casestudy collapse
-
-
+      
       // service details
         $('.filter').click(function(){
           var dtab = $(this).attr("data-tab");
