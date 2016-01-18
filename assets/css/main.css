@@ -1440,11 +1440,12 @@ html {
 	  transition: all 0.5s ease 0s;;
 	  
 	}
-		.blog-grid .image-wrapper .blog-post-meta2  {
-    margin-top: -75px;
+	.blog-grid .image-wrapper .blog-post-meta2  {
+      margin-top: -75px;
 	  position: absolute;
 	  text-align: center;
 	  top: 50%;
+	  width: 100%;
 	}
 	.blog-grid .image-wrapper .blog-post-meta2 .casestudy-title-after {
 	  opacity: 0;

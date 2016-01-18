@@ -287,6 +287,16 @@ $(document).ready(function(){
                   $('.hw-tabcont-link > div').removeClass('active in');
                       $(this).addClass('active in');
                   }
+
+                if(curid == "Mobility") {
+                       var item_width = $('#carousel_ul > li').width() + 20;
+                      //make the sliding effect using jquery's anumate function '
+                      $('#carousel_ul').animate({'left' : '-'+item_width+'px'},500);
+                      // $(this).css({'cursor':'default','color':'#ccc'});
+                      $('#right_scroll i').css({'cursor':'default','color':'#ccc'});
+                       $('#left_scroll i').css({'cursor':'pointer','color':'#040404'});
+                  }
+
               });
           }
     }
@@ -376,7 +386,7 @@ $(document).ready(function(){
          $('.first_dropdown').click(function(){
             var item_width = $('#carousel_ul > li').width();
             $('#carousel_ul').animate({'left' : '0px'},500);
-            // $(this).css({'cursor':'default','color':'#ccc'});
+            $('#left_scroll i').css({'cursor':'default','color':'#ccc'});
             $('#right_scroll i').css({'cursor':'pointer','color':'#040404'});
           });
     // End of solution custom tab carousel
