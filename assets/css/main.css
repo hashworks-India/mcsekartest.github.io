@@ -1440,7 +1440,114 @@ html {
 	  transition: all 0.5s ease 0s;;
 	  
 	}
+		.blog-grid .image-wrapper .blog-post-meta2  {
+    margin-top: -75px;
+	  position: absolute;
+	  text-align: center;
+	  top: 50%;
+	}
+	.blog-grid .image-wrapper .blog-post-meta2 .casestudy-title-after {
+	  opacity: 0;
+	  padding-top: 30px;
+	  -webkit-transform: translate(0px, -50%);
+	  -moz-transform: translate(0px, -50%);
+	  -ms-transform: translate(0px, -50%);
+	  -o-transform: translate(0px, -50%);
+	  transform: translate(0px, -50%);
+	  width: 100%;
+	  -webkit-transition: all 0.5s ease 0s;;
+	  -moz-transition: all 0.5s ease 0s;;
+	  -ms-transition: all 0.5s ease 0s;;
+	  -o-transition: all 0.5s ease 0s;;
+	  transition: all 0.5s ease 0s;;
+	  
+	}
 
+	 .blog-grid .image-wrapper .blog-post-meta2 .casestudy-description-init {
+	 opacity: 0;
+ 	 line-height: 1.25rem;
+	  -webkit-transform: translate(0px, -50%);
+	  -moz-transform: translate(0px, -50%);
+	  -ms-transform: translate(0px, -50%);
+	  -o-transform: translate(0px, -50%);
+	  transform: translate(0px, -50%);
+	  width: 100%;
+	  -webkit-transition: all 1s ease 0.2s;;
+	  -moz-transition: all 1s ease 0.2s;;
+	  -ms-transition: all 1s ease 0.2s;;
+	  -o-transition: all 1s ease 0.2s;;
+	  transition: all 1s ease 0.2s;;
+	  
+	}
+		.blog-grid .image-wrapper .blog-post-meta2 .casestudy-category-init {
+	  margin-top: 38px;
+      opacity: 0;
+	  -webkit-transform: translate(0px, -50%);
+	  -moz-transform: translate(0px, -50%);
+	  -ms-transform: translate(0px, -50%);
+	  -o-transform: translate(0px, -50%);
+	  transform: translate(0px, -50%);
+	  width: 100%;
+	  -webkit-transition: all 1s ease 0.3s;;
+	  -moz-transition: all 1s ease 0.3s;;
+	  -ms-transition: all 1s ease 0.3s;;
+	  -o-transition: all 1s ease 0.3s;;
+	  transition: all 1s ease 0.3s;;
+	  
+	}
+	.casestudy-ul .blog-grid .image-wrapper img{
+		  -moz-transition:-moz-transform 0.5s ease-in; 
+	-webkit-transition:-webkit-transform 0.5s ease-in; 
+	-o-transition:-o-transform 0.5s ease-in;
+	}
+
+	.casestudy-ul .blog-grid .image-wrapper:hover img{
+	-moz-transform:scale(1.3); 
+	-webkit-transform:scale(1.3);
+	-o-transform:scale(1.3);
+	}
+	h2.clr-white.gotham-rounded-bok.casestudy-title-init {
+	    margin-top: -39px;
+	    margin-left: 24px;
+	    position: absolute;
+	    font-size: 1rem;
+	}
+	.casestudy-ul .blog-grid .image-wrapper .casestudy-title-init{
+	  -webkit-transition: all 0.3s ease 0s;;
+	  -moz-transition: all 0.3s ease 0s;;
+	  -ms-transition: all 0.3s ease 0s;;
+	  -o-transition: all 0.3s ease 0s;;
+	  transition: all 0.3s ease 0s;;
+	}
+	.casestudy-ul .blog-grid .image-wrapper:hover .casestudy-title-init{
+	margin-top: -19px;
+    margin-left: 4px;
+	opacity: 0;
+	}
+	.casestudy-ul .blog-grid .image-wrapper .casestudy-tag-color{
+	color: #00ebff;
+	}
+	  .blog-grid li:hover .image-wrapper img,
+	  .blog-grid li:focus .image-wrapper img {
+	    opacity: 0.25;
+	  }
+
+	  .blog-grid li:hover .image-wrapper .blog-post-meta2 .casestudy-description-init{
+		font-size: 0.97rem;
+	    opacity: 1;
+	  }
+	  .blog-grid li:hover .image-wrapper .blog-post-meta2 .casestudy-category-init{
+		font-size: 0.95rem;
+	    opacity: 1;
+	  }
+	  	  .blog-grid li:hover .image-wrapper .blog-post-meta2 .casestudy-title-after{
+		font-size: 27px;
+	    opacity: 1;
+	  }
+	  .blog-grid li:hover .image-wrapper .blog-post-meta2 .casestudy-category-init{
+		margin-top: 0px;
+	    opacity: 1;
+	  }
 	.blog-grid .image-wrapper img {
 	  width: 100%
 	}

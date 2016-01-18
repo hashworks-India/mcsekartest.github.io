@@ -235,23 +235,24 @@
 </section>
 	
 	<div class="casestudy-ul">
-	<ul class="blog-grid clearfix">
-		{% for navcasestudy in site.casestudy  %}
-     	
-		<li class="hw-filter-li upskill-cont-filter {{ navcasestudy.category | downcase }}">
-			<div class="image-wrapper">
-				<img width="" height="" alt="" src="http://forgeandsmith.com/wp-content/uploads/2015/12/Top-Tweets-Thumb.jpg">
-				<div class="blog-post-meta">
-					<h2  class=" gotham-rounded-bok hw-copyright">{{navcasestudy.title}}</h2>
-					<a href="{{navcasestudy.url}}" class="button">View Article</a>
-					<p class=" gotham-rounded-bok hw-copyright">{{navcasestudy.tag}}</p>
+		<ul class="blog-grid clearfix">
+			{% for navcasestudy in site.casestudy  %}
+			<li class="hw-filter-li upskill-cont-filter {{ navcasestudy.category | downcase }}">
+				<a href="{{navcasestudy.url}}">
+				<div class="image-wrapper">
+					<img width="" height="" alt="" src="http://forgeandsmith.com/wp-content/uploads/2015/12/Top-Tweets-Thumb.jpg">
+					<div class="blog-post-meta2">
+						<h2  class=" clr-white gotham-rounded-bok casestudy-title-after">{{navcasestudy.title}}</h2>
+						<p class="  gotham-rounded-bok  casestudy-tag-color casestudy-description-init">Working On Things To Make Your Life More Awesome</p>
+						<p class=" clr-white gotham-rounded-bok casestudy-category-init">{{navcasestudy.category}}</p>
+					</div>
+					<h2  class=" clr-white gotham-rounded-bok casestudy-title-init">{{navcasestudy.title}}</h2>
 				</div>
-			</div>
-		</li>
-		
-		{% endfor %}
- 	</ul>
-</div>
+				</a>
+			</li>
+			{% endfor %}
+	 	</ul>
+	</div>
 
 	
 	<script>
