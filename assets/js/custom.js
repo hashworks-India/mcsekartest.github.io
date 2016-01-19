@@ -160,7 +160,7 @@ $(document).ready(function(){
 
         //arrow - toggle rotate
         $('#upskill-accordion .accordion-toggle').click(function(){
-          $(this).next().toggleClass("arrow-rotate");
+          $(this).children().children().children().next().children().children().toggleClass("arrow-rotate");
         });
       // End of upskilling-casestudy collapse
 
