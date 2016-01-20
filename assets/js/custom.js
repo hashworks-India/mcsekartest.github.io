@@ -462,5 +462,156 @@ $(document).ready(function(){
     /*  end color of service color */
 
 
+/* for searching the job and location */
+
+
+function jobPostSplitter(){
+  $('table.job-table').each(function() {
+    $('.job-table').next(".pager").remove();
+    var currentPage = 0;
+    var numPerPage = 5;
+    var $table = $(this);
+    $table.bind('repaginate', function() {
+        $table.find('tbody .shown-item').hide().slice(currentPage * numPerPage, (currentPage + 1) * numPerPage).show();
+    });
+    $table.trigger('repaginate');
+    var numRows = $table.find('tbody .shown-item').length;
+    var numPages = Math.ceil(numRows / numPerPage);
+    var $pager = $('<div class="pager"></div>');
+    if(numPages>1)
+    {
+    for (var page = 0; page < numPages; page++) {
+        $('<span class="page-number"></span>').text(page + 1).bind('click', {
+            newPage: page
+        }, function(event) {
+            currentPage = event.data['newPage'];
+            $table.trigger('repaginate');
+            $(this).addClass('active').siblings().removeClass('active');
+        }).appendTo($pager).addClass('clickable');
+    }
+     $pager.insertAfter($table).find('span.page-number:first').addClass('active');
+   }
+   if(numRows==0)
+   {
+    $pager = $('<div class="pager"><p>sorry, we dont have any job opening for this job title/location</p></div>');
+    $pager.insertAfter($table);
+   }
+});
+}
+
+
+
+
+function jobSearchFunction(){
+   var keyword_job = $(".serch-the-job").parent().prev().prev().children().val() + " ";
+   var location_job = $(".serch-the-job").parent().prev().children().val() + " ";
+
+   var job_title,job_location;
+   keyword_job = keyword_job.trim().toLowerCase();
+   location_job = location_job.trim().toLowerCase();
+
+if(keyword_job=="" && location_job=="")  //for empty search
+    {
+      $('.job-list-item').each(function(){
+        $(this).show();
+        $(this).addClass('shown-item');
+      });
+    }
+ else if(keyword_job=="")  // for only job location
+     {
+       $('.job-list-item').each(function(){
+         job_location = $(this).find("td:nth-child(2)").text();
+         job_location = job_location.trim().toLowerCase();
+         if(job_location.search(location_job)  > -1 )
+           {
+            $(this).show();
+            $(this).addClass('shown-item');
+           }
+           else{
+            $(this).hide();
+            $(this).removeClass('shown-item');
+           } 
+       });      }
+ else if(location_job=="")   //for only job title
+  {
+     $('.job-list-item').each(function(){
+      job_title = $(this).children().first().text();
+      job_title = job_title.trim().toLowerCase();
+      if(job_title.search(keyword_job)  > -1 )
+        {
+          $(this).show();
+          $(this).addClass('shown-item');
+
+        }
+        else{
+          $(this).hide();
+          $(this).removeClass('shown-item');
+        } 
+    });
+  }
+else      //for both job tiltle and location
+    {
+      $('.job-list-item').each(function(){
+        job_title = $(this).children().first().text();
+        job_title = job_title.trim().toLowerCase();
+
+         job_location = $(this).find("td:nth-child(2)").text();
+         job_location = job_location.trim().toLowerCase();
+
+          if(job_title.search(keyword_job) > -1 && job_location.search(location_job) > -1)
+            {
+              $(this).show();
+               $(this).addClass('shown-item');
+            }
+            else{
+              $(this).hide();
+              $(this).removeClass('shown-item');
+            } 
+         });
+      }
+      }
+
+
+
+jobSearchFunction();    
+jobPostSplitter();          
+  /*   upon clicking search button  */
+    $(".serch-the-job").click( function() {
+      jobSearchFunction();
+      jobPostSplitter();
+     });
+
+  /*   upon enter button  */
+
+    $('#job-title').keydown(function(e) {
+      if (e.keyCode == 13) {
+       jobSearchFunction();
+       jobPostSplitter()
+       }
+      });
+
+    $('#job-location').keydown(function(e) {
+      if (e.keyCode == 13) {
+       jobSearchFunction();
+       jobPostSplitter();
+       }
+      });
+
+/* end for searching the job and location */
+
+/* for google search engine */
+
+          (function() {
+            var cx = '012091172359027849241:ukd4iabk1_g';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                '//cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+          })();
+/* end for google search engine */
+
 });
 

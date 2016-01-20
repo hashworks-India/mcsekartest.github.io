@@ -41,7 +41,7 @@
 	line-height: 1.8;
 }
 input {
-	color: #000 !important;
+	color: gray !important;
 	font: 14px !important;
 	font-family: "gotham-rounded-light !important"; 
 }
@@ -228,7 +228,24 @@ input {
 	.apply-div {
 	 position: relative;
 	}
-	
-	
+/* for pagination column below post and div  */
+	span.page-number.clickable {
+    background-color: #9faab6;
+    padding: 12px 18px 13px 18px;
+    border-radius: 43px;
+    margin: 10px;
+    cursor: pointer;
+    color:#fff;
+}
+span.page-number.clickable.active {
+    background-color: #ee2b7b;
+}
+.table-wrapper .pager {
+    margin: 43px 0px;
+}
+.table-wrapper .pager p{
+    font-family:"gotham-rounded-light";
+    color:#0AB4C5;
+}
 
 

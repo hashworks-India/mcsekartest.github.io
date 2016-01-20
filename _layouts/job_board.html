@@ -5,32 +5,20 @@
   <div class="container">
     <h2 class="gotham-rounded-bok h2-color hw-heading">Search for a job</h2>
     <div class="job-list-btn">
-      <span class="span-padding-rite"><input type="text" class=" placeholder-pro keyword " placeholder="keyword eg.(job-title, Description"></span>
-      <span class="span-padding-rite"><input type="text" class=" placeholder-pro keyword " placeholder="location (country etc.)"></span>
+      <span class="span-padding-rite">
+        <input type="text" class=" placeholder-pro keyword " placeholder="keyword eg.(job-title)" id="job-title">
+      </span>
+      <span class="span-padding-rite">
+        <input type="text" class=" placeholder-pro keyword " placeholder="location eg.(city)" id="job-location">
+      </span>
       <span class="span-padding-rite"><button class="job-search serch-the-job">SEARCH FOR JOB</button></span>
     </div>
 
     <!-- table-wrapper -->
     <div class="table-wrapper">
-  {% assign job_table_size = site.jobboard.size | divided_by: 5 | plus: 1 %}
- 
-  {% assign start = 0 %}
-  
-
-  {% for  i in (1..job_table_size)  %}
-  
-  
-{% capture my_variable %}page{{forloop.index}}{% endcapture %}
-{%if forloop.index == 1 %}
-{% assign cls="active" %}
-{% else %}
-{% assign cls="" %}
-
-{%endif%}
-
-  <table class="table filter-content {{cls}} job-table" data-value= "{{my_variable}}" >
+  <table class="table   job-table" >
     <thead>
-      <tr >
+      <tr  data-value= "tr2">
         <th class="gotham-rounded-bold hw-para">Job Title</th>
         <th class="gotham-rounded-bold hw-para">Location</th>
         <th class="gotham-rounded-bold hw-para">Posted On</th>
@@ -42,10 +30,9 @@
  
 
     <tbody>
-      {%assign hw_jobs = site.jobboard | sort: 'date'| date: "%d-%m-%y" | reverse%}
-       {% for  job in hw_jobs offset:start limit: 5 %}
-
-        <tr class="job-list-item">
+       
+{% for job in  site.jobboard | sort: 'date'| date: "%d-%m-%y" | reverse %}
+        <tr class="job-list-item "  data-value= "tr2">
             <td class="gotham-rounded-bok  hw-contact-no "> {{job.job_title}} </td>
             <td class="gotham-rounded-bok  hw-contact-no log-color-blue">{{job.location}}</td>
             <td class="gotham-rounded-bok  hw-contact-no">{{job.date | date: '%B %d, %Y'}}</td>
@@ -89,15 +76,12 @@
     {% endfor %}
 
 
-</tbody>
+
+  </tbody>
 
   </table>
-  {% assign start =  start | plus : 5 %}
-  {%endfor%}
 </div>
-<!-- End of table-wrapper -->
 
-<!-- Work-together popup -->
     <div id="start-project" class="modal fade">
           <div class="modal-dialog contact-modal">
               <div class="modal-content">
@@ -210,21 +194,14 @@
     <!-- End of work-together popup -->
 
   <div class="hr-display">
-      <ul class = "pagination">
-        <li class="prev_page"><a href = "javascript:void(0)"><i class="fa fa-angle-left"></i></a></li>
-          {% for  i in (1..job_table_size)  %}
-          {% capture my_variable %}page{{forloop.index}}{% endcapture %}
+<!--       <ul class = "pagination">
+        <li class="prev_page"><a href = " "><i class="fa fa-angle-left"></i></a></li>
 
-          {%if forloop.index == 1 %}
-          {% assign cls_page="active" %}
-          {% else %}
-          {% assign cls_page=" " %}
-          {%endif%}
-          <li class="filter {{cls_page}} pag" data-tab =  "{{my_variable}}" ><a href = "javascript:void(0)" >{{forloop.index}}</a></li>
-          {%endfor%}
-       
-        <li class="next_page"><a href = "javascript:void(0)"><i class="fa fa-angle-right"></i></a></li>
-    </ul>
+          <li class="filter active pag " data-tab = "tr1" ><a href = "javascript:void(0)" >1</a></li>
+          <li class="filter pag" data-tab =  "tr2" ><a href = "javascript:void(0)" >2</a></li>
+      <li> <a href = "javascript:void(0)" >3</a></li>
+        <li class="next_page"><a href = " "><i class="fa fa-angle-right"></i></a></li>
+    </ul> -->
   </div>
 
 </div>
