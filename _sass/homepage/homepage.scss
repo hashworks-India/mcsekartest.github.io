@@ -155,6 +155,19 @@
      margin-top: 18px;
      margin-left: -50px;
     }
+    .banner3-text {
+      position: absolute;
+      top: 25%;
+      left: 13%;
+    }
+    .banner3-img {
+      position: absolute;
+      top: 12%;
+      left: 40%;
+       background: url("/assets/img/landingpage/hand.png") no-repeat scroll bottom center;
+       width:500px;
+       height: 500px;
+    }
   /*End of bg-color*/
 
   /*indicators*/
@@ -408,32 +421,7 @@
 
 /*End of scroll-indicators*/
 
-/* Product Landing Transparent Triangle */
-    .app-banner {
-      overflow: hidden;
-    }
 
-    .app-banner .triangle {
-        height: 0;
-        position: absolute;
-        width: 0;
-    }
-
-    .app-banner .triangle.top {
-        border-right:  1625.2px solid transparent;
-        border-top: 826px solid rgba(20, 24, 31, 0.88);
-        left: 0;
-        top: 0;
-    }
-   
-    
-    .app-banner .triangle.bottom {
-        border-bottom: 510px solid rgba(230, 43, 117, 0.9);
-        border-left: 1010.8px solid transparent;
-        bottom: 0px;
-        right: 0px;
-    }
-/* End of Product Landing Transparent Trianle*/
 
 /* form validation */
 .hr-display-form {
