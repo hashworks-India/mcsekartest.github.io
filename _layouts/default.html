@@ -57,32 +57,48 @@
 				<div class="container-fluid padding-zero">
 					<div class="row">
 
-						{% for post in site.posts | sort: 'date' limit:1 %}
-						<div class="col-lg-7 padding-zero">
+						
+						<div class="col-lg-6 padding-zero">
 							<div class="blog-img1 ">
-								<div class="blog-transparent"></div>
-								<div class="blog-text blog-post1">
-								  <h1 class="gotham-rounded-bold clr-white hw-heading">{{post.title}}</h1>
-								  <p class="hw-para gotham-rounded-light ">{{ post.description }}<span>of</span><span>{{ post.author }}</span></p>
-								  <p class="dive "><a href="" class="text-uppercase gotham-rounded-bold ">{{site.data.Home_page.home_page.banner4[0].link}}</a></p>
+								<div class="blog-think">
+									<img src="/assets/img/landingpage/Typo_4.png">
+								</div>
+								<div class="blog-text clr-black">
+									<p class=" gotham-rounded-light hw-copyright">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod laborum.</p>
+								</div>
+								<div class="blog-link">
+									<img src="/assets/img/landingpage/link.png">
 								</div>
 							</div>
 						</div>
-						{% endfor %}
-
-						<div class="col-lg-5 padding-zero">
 						
-							{% for post in site.posts | sort: 'date' offset:1 limit:2 %}	
-								<div class="blog-img2">
-									<div class="blog-transparent"></div>
-									<div class="blog-text blog-post1">
-								  		<h1 class="gotham-rounded-bold clr-white hw-heading">{{post.title}}</h1>
-								  		<p class="hw-para gotham-rounded-light ">{{ post.description }}<span>of</span><span>{{ post.author }}</span></p>
-								  		<p class="dive "><a href="" class="text-uppercase gotham-rounded-bold">{{site.data.Home_page.home_page.banner4[0].link}}</a></p>
+						<div class="col-lg-6 padding-zero">
+							<div class="row">
+								<div class="col-lg-6 padding-zero">
+									<div class="blog-backgrnd">
+										<div class="blog-text2">
+											<div class="hr-display think-mar"><img src="/assets/img/landingpage/think.png"></div>
+											<p class="gotham-rounded-bold clr-white header-links text-center">WE ARE THE THINKER</p>
+											<p class="hw-copyright gotham-rounded-light clr-white text-center blog-padding">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod laborum.</p>
+											<p  class="text-center"><a href="/our_thinking" class="text-uppercase gotham-rounded-light hw-copyright clr-white">technology updates</a></p>
+										</div>
 									</div>
 								</div>
-							{% endfor %}
-						
+								<div class="col-lg-6 padding-zero">
+									<div class="blog-backgrnd-blue">
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-6 padding-zero">
+									<div class="blog-backgrnd-blue">
+									</div>
+								</div>
+								<div class="col-lg-6 padding-zero">
+									<div class="blog-backgrnd">
+									</div>
+								</div>
+							</div>
 						</div>
 						<!-- end of col-lg-5-->
 						
