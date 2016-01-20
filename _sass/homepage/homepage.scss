@@ -33,7 +33,7 @@
         transition: all 0.5s ease 0s;
         width: 30px;
         z-index: 2;
-        bottom: 30px;
+        bottom: 80px;
         left: 50%;
         transform: translateX(-50%);
         z-index: 900;
@@ -116,6 +116,10 @@
     .blog-text2 {
       position: absolute;
       top: 23%;
+    }
+     .blog-text3 {
+      position: absolute;
+      top: 13%;
     }
     .blog-link {
       position: absolute;
