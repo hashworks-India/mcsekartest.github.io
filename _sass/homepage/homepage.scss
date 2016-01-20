@@ -110,33 +110,38 @@
     .blog-text {
       position: absolute;
       left: 37%;
-      bottom: 12%;
+      bottom: -17%;
       transform: translate(-50%,-50%);
     }
     .blog-text2 {
       position: absolute;
-      top: 23%;
+      top: 14%;
     }
      .blog-text3 {
       position: absolute;
-      top: 13%;
+      top: 10%;
     }
     .blog-link {
       position: absolute;
       right: 5%;
-      bottom: 12%;
+      bottom: -18%;
       transform: translate(-50%,-50%);
     }
+    .blog-color {
+    background: #EE2B7B;
+    }
+    .blog-color-blue {
+     background: #0AB4C5;
+    }
     .blog-backgrnd {
-      background: #EE2B7B;
       width: 100%;
-      height: 50vh;
+      height: 37vh;
       position: relative;
+      margin-top: 59px;
     }
     .blog-backgrnd-blue {
-      background: #0AB4C5;
       width: 100%;
-      height: 50vh;
+      height: 38vh;
       position: relative;
     }
     .blog-padding {
@@ -147,7 +152,7 @@
     }
     .blog-think img {
      width: 106%;
-     margin-top:15px;
+     margin-top: 18px;
      margin-left: -50px;
     }
   /*End of bg-color*/
