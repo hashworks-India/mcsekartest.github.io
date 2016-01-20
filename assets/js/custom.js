@@ -4,6 +4,7 @@ $(document).ready(function(){
         event.preventDefault();
         var target = $(this).attr('href');
         $(target).toggleClass('hidden show');
+
     });
 
 
@@ -14,19 +15,19 @@ $(document).ready(function(){
     //homepage dropdown
       $(".dropdown-link .dropdown").css({display: "none"});
         $(".dropdown-link").mouseenter(function(){
-            $(this).find(".dropdown").css({visibility: "visible",display: "none"}).show(268);;
-
+          $(this).find(".dropdown").css({visibility: "visible",display: "none"}).show(268);;
         });
 
-         $(".dropdown-link").mouseleave(function(){
+        $(".dropdown-link").mouseleave(function(){
             $(this).find(".dropdown").css({visibility: "hidden"});
         });
 
-         $(".dropdown").mouseenter(function(){
+        $(".dropdown").mouseenter(function(){
             $('.dropdown-link').css({visibility: "visible !important"});
-         });
+        });
 
     //homepage header mouse event 
+
         $('.hw-home').mouseover(function(){
             $("header nav").addClass('hw-fixed-header');
         });
@@ -35,8 +36,17 @@ $(document).ready(function(){
             $("header nav").removeClass('hw-fixed-header');
         });
 
+    //homepage hover mouse event
 
-        //fixed header
+        $('.navbar-default').mouseover(function(){
+            $("header nav").addClass('hw-hover-header');
+        });
+
+        $('.navbar-default').mouseout(function(){
+            $("header nav").removeClass('hw-hover-header');
+        });
+
+      //fixed header
         $(document).scroll(function(){
           var main = $(this).scrollTop();
 
@@ -52,8 +62,7 @@ $(document).ready(function(){
             $("main").css("margin-top","0px");
           }
 
-
-          if(main >= 70) {
+        if(main >= 70) {
             if(!$('header').hasClass('hw-home')) {
               $(".navbar-default.hw-fixed-header").css("padding-bottom","0px")
             }
@@ -318,7 +327,6 @@ $(document).ready(function(){
 /* header hover */
         var initiall = $('.navbar-right > li > a:first-child').position().left;
          $('.line-animation').css({left:initiall+'px'});
-
         $('.navbar-right > li > a').mouseover(function(){
 
          var w = $(this).width();    

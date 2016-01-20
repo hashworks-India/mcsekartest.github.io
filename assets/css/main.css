@@ -404,6 +404,41 @@ html {
 	.hw-fixed-header .navbar-collapse .line-animation1 {
 	background: #fff;
 	}
+	/* hover */
+	.hw-hover-header #Hashworks-Nav {
+	   background: #EC297B;
+	}
+
+	nav.navbar-default.hw-hover-header {
+	   top: 0;
+	   width: 100%;
+	   z-index: 10;
+	   color: #fff;
+	   border: medium none;
+	   border-radius: 0;
+	   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	}
+
+	.hw-hover-header .logo > a {
+		background-position: 0 -31px;
+		-webkit-transition: all .5s ease 0s;
+		-o-transition: all .5s ease 0s;
+		transition: all .5s ease 0s;
+	}
+
+	.hw-hover-header .navbar-nav > li > a,
+	.hw-hover-header .navbar-nav > li > a:hover,
+	.hw-hover-header .navbar-nav > li > a:active,
+	.hw-hover-header .navbar-nav > li > a:focus {
+	color: #fff;
+	}
+
+	.hw-hover-header .navbar-collapse .line-animation,
+	.hw-hover-header .navbar-collapse .line-animation1 {
+	background: #fff;
+	}
+	
+	
 
 	/*End of homepage*/
 
