@@ -165,6 +165,12 @@
       bottom: -18%;
       transform: translate(-50%,-50%);
     }
+    .padding-lft {
+     padding-left: 10px;
+    }
+    .padding-rite {
+     padding-right: 6px;
+    }
     .blog-color {
     background: #EE2B7B;
     }
@@ -237,7 +243,9 @@
     .scroll-indicators > li {
       line-height: 0.5;
     }
-
+    .row-pading {
+      padding-top: 15px;
+    }
    .scroll-indicators > li.change-clr .hw-dot {
       background-color: #000;
       border-radius: 100%;
@@ -334,7 +342,7 @@
         position: absolute;
       }
       .hm-text1 {
-        top: 44%;
+        top: 43%;
         left: 35%;
         width: 1000px;
         margin: 0 auto;
