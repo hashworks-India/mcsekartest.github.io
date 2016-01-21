@@ -420,29 +420,29 @@ $(document).ready(function(){
       
 
     /* job board pagination */
-      $('.next_page').click(function(){
-        var next = $('.pag.active').removeClass('active').next('.pag');
-        var jobtab = $('.job-table.active').removeClass('active').next('.job-table');
+      // $('.next_page').click(function(){
+      //   var next = $('.pag.active').removeClass('active').next('.pag');
+      //   var jobtab = $('.job-table.active').removeClass('active').next('.job-table');
 
-        if( next.length == '0' )  {
-          $('.prev_page').next('.pag').addClass('active');
-          $('.table-wrapper > .job-table:first-child').addClass('active');
-        }
-          next.addClass('active');
-          jobtab.addClass('active');
-      });
+      //   if( next.length == '0' )  {
+      //     $('.prev_page').next('.pag').addClass('active');
+      //     $('.table-wrapper > .job-table:first-child').addClass('active');
+      //   }
+      //     next.addClass('active');
+      //     jobtab.addClass('active');
+      // });
 
-      $('.prev_page').click(function(){
-        var prev = $('.pag.active').removeClass('active').prev('.pag');
-        var jobtabprev  = $('.job-table.active').removeClass('active').prev('.job-table');
+      // $('.prev_page').click(function(){
+      //   var prev = $('.pag.active').removeClass('active').prev('.pag');
+      //   var jobtabprev  = $('.job-table.active').removeClass('active').prev('.job-table');
 
-        if( prev.length == '0' )  {
-          $('.next_page').prev('.pag').addClass('active');
-          $('.table-wrapper > .job-table:last-child').addClass('active');
-        }
-          prev.addClass('active');
-          jobtabprev.addClass('active');
-      });
+      //   if( prev.length == '0' )  {
+      //     $('.next_page').prev('.pag').addClass('active');
+      //     $('.table-wrapper > .job-table:last-child').addClass('active');
+      //   }
+      //     prev.addClass('active');
+      //     jobtabprev.addClass('active');
+      // });
     /* end of job board */
     
     /* for color of service color */

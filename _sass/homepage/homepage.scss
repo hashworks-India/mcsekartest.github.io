@@ -68,20 +68,58 @@
   
     .scroll-anim {
       height:100%;
-      background: transparent url("/assets/img/landingpage/banner1.jpg") no-repeat scroll bottom center / cover ;
+      background: transparent url("/assets/img/landingpage/banner1.jpg") no-repeat scroll  center / cover ;
       width: 100%;
       position: relative;
     }
 
+    .scroll-anim #ban-text p , .scroll-anim #ban-text h1{
+        animation: fadein 8s;
+    -moz-animation: fadein 8s; /* Firefox */
+    -webkit-animation: fadein 8s; /* Safari and Chrome */
+    -o-animation: fadein 8s; /* Opera */
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
     .blog-img1 {
-       background: transparent url("/assets/img/landingpage/banner2..jpg") no-repeat scroll bottom center /cover ;
+      background: transparent url("/assets/img/landingpage/banner2..jpg") no-repeat scroll  center /cover ;
        height: 100vh;
        position: relative;
        
     }
-   
-   
-    .blog-img3 {
+   .blog-img3 {
        background: transparent url("/assets/img/landingpage/banner-4.jpg") no-repeat scroll bottom center;
        height: 50vh;
        position: relative;
@@ -296,7 +334,7 @@
         position: absolute;
       }
       .hm-text1 {
-        top: 46%;
+        top: 44%;
         left: 35%;
         width: 1000px;
         margin: 0 auto;
