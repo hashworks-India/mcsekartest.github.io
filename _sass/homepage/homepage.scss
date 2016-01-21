@@ -157,17 +157,29 @@
     }
     .banner3-text {
       position: absolute;
-      top: 25%;
-      left: 13%;
+      top: 35%;
+      left: 10%;
     }
     .banner3-img {
       position: absolute;
       top: 12%;
       left: 40%;
-       background: url("/assets/img/landingpage/hand.png") no-repeat scroll bottom center;
-       width:500px;
-       height: 500px;
+      background: url("/assets/img/landingpage/hand.png") no-repeat scroll bottom center;
+      width: 500px;
+      height: 500px;
+      padding-top: 113px;
+      padding-right: 38px;
+      padding-left: 292px;
     }
+    .carousel-inner>.item>a>img, 
+    .carousel-inner>.item>img{
+      height: 268px;
+      width: 166px;  
+    }
+    .cust-margin {
+      margin: 0px;
+    }
+
   /*End of bg-color*/
 
   /*indicators*/
@@ -493,7 +505,7 @@
 
 
 /* end of form validation */
-
+  
 
 
 /*hashworks - join us form*/

@@ -9,8 +9,9 @@ banner2:
        link: 'dive deeper'
    	}
 banner3:
-   - { title: 'Customer Happiness',
-   	   content: 'We handcraft solutions you love',
+   - { title: 'Check out the perfect mobile app',
+       title1: 'you ll fall in love with' ,
+   	   content: 'We handcraft solutions you love'
    	}
 banner4:
    - { title: 'Our thinking',

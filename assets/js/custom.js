@@ -9,7 +9,7 @@ $(document).ready(function(){
 
 
     /* smooth scroll*/
-
+      $('.carousel').carousel();
     /* End of smooth scroll*/
   
     //homepage dropdown
