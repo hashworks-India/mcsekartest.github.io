@@ -2,12 +2,7 @@ banner1:
    - {title: 'We # on DevOps. DataOps. DataScience + UI/UX',
       content: 'Delivering velocity & Agility for software driven business'
    }
-banner2:
-   - { title: 'We are the thinkers...',
-   	   content1: 'Technology is the value driver for todays business', 
-       content2: 'Our thinkers innovate everyday!',
-       link: 'dive deeper'
-   	}
+
 banner3:
    - { title: 'Check out the perfect mobile app',
        title1: 'you ll fall in love with' ,
