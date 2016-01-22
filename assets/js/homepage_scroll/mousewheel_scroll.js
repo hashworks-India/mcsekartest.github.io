@@ -113,6 +113,20 @@ $(document).ready(function(){
 
    $('.scroll-indicators li').click(function () {
         var value = $(this).attr('data-tab');
+    if( value == 1)
+    {
+        $(this).addClass('change-clr');
+        $('li').addClass('other-li');
+    }
+    else {
+        $('li').removeClass('change-clr');
+        $('li').removeClass('other-li');
+    }
+
+   });
+
+    $('.scroll-indicators li').click(function () {
+        var value = $(this).attr('data-tab');
     if( value == 2)
     {
         $(this).addClass('change-clr');
@@ -121,6 +135,20 @@ $(document).ready(function(){
     else {
         $('li').removeClass('change-clr');
         $('li').removeClass('other-li');
+    }
+
+   });
+
+     $('.scroll-indicators li').click(function () {
+        var value = $(this).attr('data-tab');
+    if( value == 3)
+    {
+        $(this).addClass('change-clr1');
+        $('li').addClass('other-li1');
+    }
+    else {
+        $('li').removeClass('change-clr1');
+        $('li').removeClass('other-li1');
     }
 
    });
@@ -136,22 +164,7 @@ $(document).ready(function(){
         $('.appln-statergies').addClass('hide');
     });
 
-    $(window).resize(function(){
-        triangleborder();
-    });
-
-    triangleborder();
-
-    function triangleborder() {
-        var height = window.innerHeight;
-        height = height < 700 ? 700 : height;
-        height = height > 958 ? 958 : height;
-
-        $('.app-banner').height(height);
-        
-        $('.app-banner .triangle.top').css({'border-top-width': (height*1.2+14), 'border-right-width': (window.innerWidth*1.2+14)});
-        $('.app-banner .triangle.bottom').css({'border-bottom-width': (height*0.8), 'border-left-width': (window.innerWidth*0.8)});
-    }
+   
 
 
 

@@ -67,9 +67,9 @@
   /*bg-color*/
   
     .scroll-anim {
-      height:100%;
-      background: transparent url("/assets/img/landingpage/banner1.jpg") no-repeat scroll  center / cover ;
-      width: 100%;
+     
+      background: url("/assets/img/landingpage/banner1.jpg") no-repeat scroll  center ;
+      background-size: 100%;
       position: relative;
     }
 
@@ -247,24 +247,40 @@
       padding-top: 15px;
     }
    .scroll-indicators > li.change-clr .hw-dot {
-      background-color: #000;
+      background-color: #ee2b7b;
       border-radius: 100%;
-      border: 1px solid #000;
+      border: 1px solid  #ee2b7b;
     }
 
     .scroll-indicators > li.change-clr .hw-label {
-      color: #000;
+      color:  #ee2b7b;
     }
      .scroll-indicators > li.other-li .hw-dot {
       border-radius: 100%;
-      border: 1px solid #000;
+      border: 1px solid  #ee2b7b;
     }
 
     .scroll-indicators > li.other-li .hw-label {
-      color: #000;
+      color:  #fff;
     }
-  
 
+    .scroll-indicators > li.change-clr1 .hw-dot {
+      background-color: #fff;
+      border-radius: 100%;
+      border: 1px solid  #fff;
+    }
+
+    .scroll-indicators > li.change-clr1 .hw-label {
+      color:  #fff;
+    }
+     .scroll-indicators > li.other-li1 .hw-dot {
+      border-radius: 100%;
+      border: 1px solid  #fff;
+    }
+
+    .scroll-indicators > li.other-li1 .hw-label {
+      color:  #fff;
+    }
     .scroll-indicators li a {
       display: inline-block;
     }
@@ -289,7 +305,7 @@
         width: 15px;
         border-radius: 100%;
         background-color: transparent;
-        border: 1px solid #fff;
+        border: 1px solid #ee2b7b;
     }
 
     .scroll-indicators li .hw-label {

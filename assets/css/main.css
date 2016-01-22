@@ -1967,12 +1967,12 @@ html {
 }
 /* end of navblog detail page */
 
-@media screen and (min-width: 1500px) {
+/*@media screen and (min-width: 1500px) {
     body {
         max-width: 1500px;
         display: table;
         margin: 0 auto;
-        height: 100%;
+        height: 100%;+
         width: 100%;
     }
 
@@ -1988,4 +1988,4 @@ html {
       right: 200px;
 	}
 
-}
+}*/
