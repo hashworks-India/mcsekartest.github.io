@@ -611,14 +611,14 @@ $("#div-main-part2").css("display", "none");
 $("#div2-right-div-part4").css("display", "block");        
         });
 
-        $("#div-main").mouseleave(function(){
+        $("#div-main-part1").mouseleave(function(){
 $("#div-main-part2").css("display", "block");
 $("#div2-right-div-part1").css("display", "none");
 $("#div2-right-div-part1").css("display", "none");  
 $("#div2-right-div-part2").css("display", "none");  
 $("#div2-right-div-part3").css("display", "none");  
 $("#div2-right-div-part4").css("display", "none");         
-        });
+        }); 
 /* end of blog landing page animation */        
 });
 

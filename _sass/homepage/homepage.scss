@@ -165,7 +165,7 @@
     margin-top: 62px;
     margin-left: -15px;
     height:488px;
-    width: 626px;
+    width: 529px;
   }
   
 #div2-right-div-part1 ,#div2-right-div-part2,#div2-right-div-part3,#div2-right-div-part4{
@@ -187,37 +187,40 @@
 }
 
 .right-div-part11 {
+  cursor: pointer;
   position: relative;
   background-color: #ffa614;
   margin-right: 10px;
-margin-bottom: 10px;
-height: 233px;
+  margin-bottom: 10px;
+  height: 233px;
 }
 .right-div-part22 {
   position: relative;
   background-color: #fa5600;
   margin-left: 10px;
-margin-bottom: 9px;
-height: 233px;
+  margin-bottom: 9px;
+  height: 233px;
+  cursor: pointer;
 }
 .right-div-part33 {
   position: relative;
   background-color: #2e2837;
   margin-right: 10px;
-margin-top: 10px;
-height: 233px;
+  margin-top: 10px;
+  height: 233px;
+  cursor: pointer;
 }
 .right-div-part44 {
   position: relative;
   background-color: #0fbb87;  
   margin-left: 10px;
-margin-top: 10px;
-height: 233px;
+  margin-top: 10px;
+  height: 233px;
 }
 
 #div2-right-div-part1 {
     height:488px;
-    width: 626px;
+    width: 529px;
       animation: fadein1 0.4s;
       -moz-animation: fadein1 0.4s; /* Firefox */
       -webkit-animation: fadein1 0.4s; /* Safari and Chrome */
@@ -230,12 +233,12 @@ height: 233px;
     }
     to {
         height:488px;
-    width: 626px;
+    width: 529px;
     }
 }
 #div2-right-div-part2 {
     height:488px;
-    width: 626px;
+    width: 529px;
     margin-left: 0px;
       animation: fadein2 0.4s;
       -moz-animation: fadein2 0.4s; /* Firefox */
@@ -250,13 +253,13 @@ height: 233px;
     }
     to {
         height:488px;
-    width: 626px;
+    width: 529px;
     margin-left: 0px;   
     }
 }
 #div2-right-div-part3 {
     height:488px;
-    width: 626px;
+    width: 529px;
     margin-top: 61px;
       animation: fadein3 0.4s;
       -moz-animation: fadein3 0.4s; /* Firefox */
@@ -271,13 +274,13 @@ height: 233px;
     }
     to {
         height:488px;
-    width: 626px;
+    width: 529px;
     margin-top: 61px;   
     }
 }
 #div2-right-div-part4 {
     height:488px;
-    width: 626px;
+    width: 529px;
     margin-left: 0px;
     margin-top: 61px;   
       animation: fadein4 0.4s;
@@ -294,11 +297,12 @@ height: 233px;
     }
     to {
         height:488px;
-    width: 626px;
+    width: 529px;
     margin-left: 0px;   
     margin-top: 61px;   
     }
 }
+
 
 #div-main-part2 img{
   position: absolute; 
@@ -319,8 +323,12 @@ height: 233px;
     margin-top: 155px;
     margin-left: 10px;
     position: absolute;
-
+    transition: all .2s ease-in-out;
 }
+
+#div-main-part2 p:hover { 
+    transform: scale(1.1); }
+
 .div-main-part2-part1{
   position: relative;
       margin-top: 62px;
