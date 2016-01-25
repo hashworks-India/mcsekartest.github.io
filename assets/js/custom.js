@@ -8,16 +8,16 @@ $(document).ready(function(){
 
     });
 
-    $('#bulb_img').mouseover(function(){
+    // $('#bulb_img').mouseover(function(){
       
-     if (this.src.match("Bulb_Without_Glow"))
-      {
-        this.src = '/assets/img/landingpage/Bulb_With_Glow_Effect_PNG.png';
-      }
-      else {
-        this.src = '/assets/img/landingpage/Bulb_Without_Glow.png';
-      }
-    });
+    //  if (this.src.match("Bulb_Without_Glow"))
+    //   {
+    //     this.src = '/assets/img/landingpage/Bulb_With_Glow_Effect_PNG.png';
+    //   }
+    //   else {
+    //     this.src = '/assets/img/landingpage/Bulb_Without_Glow.png';
+    //   }
+    // });
 
 
 

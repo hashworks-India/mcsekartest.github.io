@@ -623,6 +623,9 @@ html {
 	.nav-tabs {
 		border-bottom: 2px solid #e4e5e1;
 	}
+	.prot-img .nav-tabs {
+		height: 173px;
+	}
 	.tab-img li {
 		list-style-type: none;
 	}
