@@ -344,8 +344,31 @@
     transition: all .2s ease-in-out;
 }
 
-#div-main-part2 p:hover { 
+#right-div-part1 .animate-arroww .main-animate-arrow, #right-div-part2 .animate-arroww .main-animate-arrow,
+#right-div-part3 .animate-arroww .main-animate-arrow , #right-div-part4 .animate-arroww .main-animate-arrow{
+    position: absolute;
+    color: #fff;
+    width: 53px;
+    margin-top: 194px;
+    margin-left: 96px;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease 0.3s;
+    -moz-transition: all 0.5s ease 0.3s;
+    -ms-transition: all 0.5s ease 0.3s;
+    -o-transition: all 0.5s ease 0.3s;
+    transition: all 0.5s ease 0.3s;
+}
+
+#right-div-part1:hover .animate-arroww .main-animate-arrow,#right-div-part2:hover .animate-arroww .main-animate-arrow,
+#right-div-part3:hover .animate-arroww .main-animate-arrow,#right-div-part4:hover .animate-arroww .main-animate-arrow{
+  margin-left: 176px;
+  opacity: 1;
+}
+
+#right-div-part1:hover p, #right-div-part2:hover p,#right-div-part3:hover p,#right-div-part4:hover p{ 
     transform: scale(1.1); }
+
+
 
 .div-main-part2-part1{
   position: relative;
