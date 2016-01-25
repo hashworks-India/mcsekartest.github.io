@@ -496,7 +496,65 @@
       transform-origin: 100% 50% 0;
       transition: transform 0.2s ease 0s, opacity 0.2s ease 0s;
     }
+/*last landing page*/
+.last-banner .nav-tabs > li.active,.last-banner .nav-tabs > li.active > a, .last-banner .nav-tabs > li.active > a:hover, .last-banner .nav-tabs > li.active > a:focus {
+     background-color: transparent;
 
+}
+
+.last-banner .nav-tabs>li.active>a,.last-banner  .nav-tabs>li.active>a:focus,.last-banner  .nav-tabs>li.active>a:hover {
+    border-bottom: 4px solid #ee2b7b;
+}
+
+div#carousel_inner2 {
+    padding:  0px 0px 40px 17px;
+}
+ul#carousel_ul2 {
+}
+
+.last-banner .nav-tabs > li {
+  margin-right: 0px;
+}
+
+.last-banner .nav-tabs > li .tab-img p{
+    color:#fff;
+}
+
+.last-banner  .nav-tabs {
+    border-bottom: transparent;
+}
+
+.last-banner #last-banner-div2{
+  padding: 10px 30px 10px 30px;
+  background-color: #515557;
+    color: #fff;
+    height: 375px;
+    margin-left: -35px;
+}
+
+.last-banner .tab-pane p{
+     font-size: 15px; 
+}
+
+#carousel_inner2 #carousel_ul2 a{
+  padding: 10px 30px 5px 0px;
+}
+#last-banner-div1 img {
+  margin-left: 27px;
+    width: 63%;
+}
+.last-banner-div0{
+  margin-top: 76px;
+    padding: 0px 0px 13px 81px;
+}
+#last-banner-div2 .tab-content.hw-tabcont-link {
+    margin-top: -10px;
+}
+#last-banner-div2 .tab-pane  p {
+    font-size: 12px;
+}
+
+/*last landing page*/
     /* history  previous*/
       input:-webkit-autofill {
         background-color: #fff;
