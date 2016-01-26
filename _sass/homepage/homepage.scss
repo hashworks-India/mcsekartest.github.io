@@ -78,6 +78,7 @@
 
     .hw-scroll .scroll-anim:nth-child(3) {
       background: transparent url("/assets/img/landingpage/banner-4.jpg") no-repeat scroll bottom center / cover;
+      position: relative;
     }
 
     .hw-scroll .scroll-anim:nth-child(4) {
@@ -157,7 +158,7 @@
     }
     .banner3-img {
       position: absolute;
-      top: 12%;
+      bottom: 62px;
       left: 40%;
       background: url("/assets/img/landingpage/hand.png") no-repeat scroll bottom center;
       width: 500px;

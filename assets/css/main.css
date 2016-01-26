@@ -1202,16 +1202,19 @@ html {
 	    position: absolute;
 		margin-left: 380px;
 		margin-top: -2px;
+		cursor: pointer;
 	}
 	.service-icon33{
 	    position: absolute;
 		margin-left: 571px;
 		margin-top: -2px;
+		cursor: pointer;
 	}
 	.service-icon44{
 	    position: absolute;
 	    margin-left: 760px;
 	    margin-top: -2px;
+	    cursor: pointer;
 	}
 
 

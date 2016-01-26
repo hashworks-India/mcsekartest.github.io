@@ -8,19 +8,6 @@ $(document).ready(function(){
 
     });
 
-    // $('#bulb_img').mouseover(function(){
-      
-    //  if (this.src.match("Bulb_Without_Glow"))
-    //   {
-    //     this.src = '/assets/img/landingpage/Bulb_With_Glow_Effect_PNG.png';
-    //   }
-    //   else {
-    //     this.src = '/assets/img/landingpage/Bulb_Without_Glow.png';
-    //   }
-    // });
-
-
-
     /* smooth scroll*/
       $('.carousel').carousel();
     /* End of smooth scroll*/
@@ -327,7 +314,7 @@ $(document).ready(function(){
     $('.nav-tabs > li a').click(function(){
         var navtab = $(this).parents('.nav-tabs').offset().top - 50;
           $('html, body').animate({
-            scrollTop: navtab}, 1500, 'linear');
+            scrollTop: navtab}, 1000, 'linear');
     });
 
     $(".nav-tabs a").click(function(){
