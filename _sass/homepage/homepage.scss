@@ -496,15 +496,19 @@
       transition: transform 0.2s ease 0s, opacity 0.2s ease 0s;
     }
 /*last landing page*/
+
+
 .last-banner .nav-tabs > li.active,.last-banner .nav-tabs > li.active > a, .last-banner .nav-tabs > li.active > a:hover, .last-banner .nav-tabs > li.active > a:focus {
      background-color: transparent;
 
 }
 
-.last-banner .nav-tabs>li.active>a,.last-banner  .nav-tabs>li.active>a:focus,.last-banner  .nav-tabs>li.active>a:hover {
+.last-banner .nav-tabs>li.active>a ul.tab-img,.last-banner  .nav-tabs>li.active>a:focus ul.tab-img,.last-banner  .nav-tabs>li.active>a:hover ul.tab-img {
     border-bottom: 4px solid #ee2b7b;
 }
-
+.last-banner .nav-tabs>li.active>a,.last-banner  .nav-tabs>li.active>a:focus,.last-banner  .nav-tabs>li.active>a:hover {
+    border-bottom: none;
+}
 div#carousel_inner2 {
     padding:  0px 0px 40px 17px;
 }
@@ -552,6 +556,8 @@ ul#carousel_ul2 {
 #last-banner-div2 .tab-pane  p {
     font-size: 12px;
 }
+
+
 
 /*last landing page*/
     /* history  previous*/
