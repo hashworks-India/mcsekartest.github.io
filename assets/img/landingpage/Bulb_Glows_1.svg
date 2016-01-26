@@ -9,9 +9,9 @@
 	<stop  offset="0.1557" style="stop-color:#C28A1B;stop-opacity:0.8443"/>
 	<stop  offset="0.3239" style="stop-color:#886013;stop-opacity:0.6761"/>
 	<stop  offset="0.4866" style="stop-color:#573E0C;stop-opacity:0.5134"/>
-	<stop  offset="0.6395" style="stop-color:#312307;stop-opacity:0.3605"/>
-	<stop  offset="0.7804" style="stop-color:#161003;stop-opacity:0.2196"/>
-	<stop  offset="0.905" style="stop-color:#060401;stop-opacity:0.095"/>
+	<stop  offset="0.6344" style="stop-color:#312307;stop-opacity:0"/>
+	<stop  offset="0.7804" style="stop-color:#161003;stop-opacity:0"/>
+	<stop  offset="0.905" style="stop-color:#060401;stop-opacity:0"/>
 	<stop  offset="1" style="stop-color:#000000;stop-opacity:0"/>
 </radialGradient>
 <ellipse fill="url(#SVGID_1_)" cx="79.02" cy="408.79" rx="90.713" ry="83.5"/>
