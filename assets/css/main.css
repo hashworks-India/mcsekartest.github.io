@@ -546,7 +546,7 @@ html {
 
 		#left_scroll, #right_scroll{
 			float:left; 
-			height:171px; 
+			height:100px; 
 			width:15px; 
 			position: relative;
 		}
@@ -623,9 +623,9 @@ html {
 	.nav-tabs {
 		border-bottom: 2px solid #e4e5e1;
 	}
-	.prot-img .nav-tabs {
+	/*.prot-img .nav-tabs {
 		height: 173px;
-	}
+	}*/
 	.tab-img li {
 		list-style-type: none;
 	}
