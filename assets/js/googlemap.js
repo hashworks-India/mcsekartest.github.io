@@ -146,25 +146,27 @@
         });
         //End of get my position link
 
-          $("#demo").hide();
+          $("#form-map-div").hide();
 
     $('.talk-to-us').click(function(){
 
-      if ($("#demo").css("display") == "none") {
+      if ($("#form-map-div").css("display") == "none") {
          
-          $("#demo").show();
+          $("#form-map-div").show();
           initMap();
        }
       else{
-          $("#demo").hide();
+          $("#form-map-div").hide();
     }
     });
 
 
      $(".hw-te-tab").click( function() {
-      $("#demo").hide();
+      $("#form-map-div").hide();
       resetTheForm();
    });
-        
-       
+
+
+
+
       });
