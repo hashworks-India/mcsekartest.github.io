@@ -620,6 +620,15 @@ $("#div2-right-div-part2").css("display", "none");
 $("#div2-right-div-part3").css("display", "none");  
 $("#div2-right-div-part4").css("display", "none");         
         }); 
-/* end of blog landing page animation */        
+/* end of blog landing page animation */   
+
+/* for portfolio page dropdown item click*/
+     $(".dropdown-link .dropdown a").click( function() {
+      var navtab = $(".line-padding.prot-img").offset().top - 50;
+          $('html, body').animate({
+            scrollTop: navtab}, 500, 'linear');
+   });
+/* end for portfolio page dropdown item click*/     
+
 });
 
