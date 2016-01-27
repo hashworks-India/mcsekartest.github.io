@@ -547,7 +547,12 @@ html {
 		.img-right {
 			float: right;
 		}
-		
+		.img-center1 {
+			margin-right: 120px;
+		}
+		.img-center {
+			margin-left: 120px;
+		}
 	/* end of engages page */
 
 /* solutions */
