@@ -75,6 +75,11 @@
 .z-index-class{
   z-index: 1;
 }
+.blog-img1 {
+  position: absolute;
+  top: 50%;
+  margin-top: -310px;
+}
 
     .hw-scroll .scroll-anim:nth-child(3) {
       background: transparent url("/assets/img/landingpage/banner-4.jpg") no-repeat scroll bottom center / cover;
@@ -272,7 +277,7 @@
 
 }
 .blog-think {
-    margin-top: 50px;
+    margin-top: 30px;
 }
 #div2-right-div-part1 {
     height:488px;
@@ -553,8 +558,7 @@
 div#carousel_inner2 {
     padding:  0px 0px 40px 17px;
 }
-ul#carousel_ul2 {
-}
+
 
 .last-banner .nav-tabs > li {
   margin-right: 0px;
@@ -632,10 +636,7 @@ ul#carousel_ul2 {
       .scroll-indicators li:hover .hw-label {
         opacity: 1;
       }
-      .dive {
-        color: #eff205;
-        margin-top: 20px;
-      }
+    
       .hm-text {
         position: absolute;
       }
@@ -706,40 +707,7 @@ ul#carousel_ul2 {
       .last-icon {
         margin-right: 20px;
       }
-      .it-solution {
-        background-color: #0ab4c5;
-        padding:40px 25px;
-        width: 250px;
-      }
-      .application {
-        position: relative;
-        margin-top: 30px;
-      }
-      .appln-statergies {
-        background-color: #B9BECD;
-        position: absolute;
-        top: 0;
-        padding: 40px 20px 10px;
-        left: 250px;
-        height: 100%;
-      }
-      .appln-statergies ul li {
-        line-height: 1.7;
-      }
-      .it-solutions ul li {
-        line-height: 1.7;
-      }
-      .it-solutions ul li:first-child {
-         border-bottom: 1px solid #959595;
-       }
-      .it-solutions {
-        background-color: #b9becd;
-        position: absolute;
-        top: 0;
-        padding: 40px 20px 10px;
-        left: 250px;
-        height: 100%;
-      }
+     
       .hm-arrow {
         width: 0; 
         height: 0; 

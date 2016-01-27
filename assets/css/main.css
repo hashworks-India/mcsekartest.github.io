@@ -453,9 +453,12 @@ html {
 		}
 
 		.hw-engage-cont {
-			margin: 30px 0 60px;
+			margin: 30px 0px 60px;
 		}
-
+		.hw-margin-div {
+			margin-left: 100px;
+			margin-right: 100px;
+		}
 		.hw-engage-cont .img-outer {
 			margin-top: 28px;
 		}
