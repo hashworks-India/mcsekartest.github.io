@@ -501,13 +501,7 @@ html {
 			color: #7e7e7e;
 			margin-left: 35px;
 		}
-		.para-right{
-			color: #7e7e7e;
-			margin-right: 35px;
-		}
-		.floating-rite {
-			float: right;
-		}
+		
 		.client-backgrnd {
 			background-color: #f4f4f4;
 			padding-top: 10px;

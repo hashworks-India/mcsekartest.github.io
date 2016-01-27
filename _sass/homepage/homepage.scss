@@ -81,10 +81,33 @@
   margin-top: -310px;
 }
 
-    .hw-scroll .scroll-anim:nth-child(3) {
-      background: transparent url("/assets/img/landingpage/banner-4.jpg") no-repeat scroll bottom center / cover;
+  .hw-scroll .scroll-anim:nth-child(2) {
+      background: transparent url("/assets/img/landingpage/banner-4.jpg") repeat scroll bottom center / cover;
       position: relative;
-    }
+     
+      -moz-animation: parallax_bgtwo linear 100s infinite;
+      -webkit-animation: parallax_bgtwo linear 100s infinite;
+      -ms-animation: parallax_bgtwo linear 100s infinite;
+      animation: parallax_bgtwo linear 100s infinite;
+     
+}
+
+@-webkit-keyframes  parallax_bgtwo {   
+0% {
+    background-position: -2400px -2400px, -2000px -2000px, -1800px -1800px, -1600px -1600px, -1200px -1200px;
+}
+100% {
+    background-position: 0 100%, 0 100%, 0 100%, 0 100%, 0 100%;
+}
+}
+@keyframes  parallax_bgtwo{
+0% {
+    background-position: -2400px -2400px, -2000px -2000px, -1800px -1800px, -1600px -1600px, -1200px -1200px;
+}
+100% {
+    background-position: 0 100%, 0 100%, 0 100%, 0 100%, 0 100%;
+}
+}
 
     .hw-scroll .scroll-anim:nth-child(4) {
       background: transparent url("/assets/img/landingpage/banner-5.jpg") no-repeat scroll bottom center / cover;
