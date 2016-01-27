@@ -696,7 +696,11 @@ html {
 		.hw-works-row > .row {
 			padding: 0 30px;
 		}
-
+		.sub-width {
+			width: 112% !important;
+    		margin-left: -59px;
+    		padding-left: 52px;
+		}
 		.hw-works h3 {
 			font-family: "gotham-rounded-bold";
 			font-size: 1rem;
