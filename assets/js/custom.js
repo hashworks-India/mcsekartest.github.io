@@ -80,7 +80,7 @@ $(document).ready(function(){
 
         // ui-ux tab
           $('.hw-ui-ux-carousel .carousel').carousel({
-            interval: 50,
+            interval: 500,
               pause: true
           });
           $(window).load(function () {
