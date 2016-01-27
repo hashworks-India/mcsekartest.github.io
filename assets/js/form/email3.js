@@ -20,6 +20,27 @@
         alert('The File APIs are not fully supported in this browser.');
     }
 
+    function resetTheForm(){
+                $(".input_name").val('');
+                $(".input_email").val(''); 
+                $(".input_subject").val('');
+                $(".input_phone").val('');
+                $(".input_message").val('');
+                $(".sub-width").val('Subject');
+                $('.input_file-upload').val('');
+                $('.input_file-detail').val('');
+
+                $(".input_name").parent().parent().css('border', '1px solid #0AB4C5');
+                $(".input_email").parent().parent().css('border', '1px solid #0AB4C5');
+                $(".input_subject").parent().parent().css('border', '1px solid #0AB4C5');
+                $(".input_phone").parent().parent().css('border', '1px solid #0AB4C5');
+                $(".input_message").parent().parent().css('border', '1px solid #0AB4C5');
+    }
+
+
+    $(".close-pop").click(function(){
+        resetTheForm();
+    });
     function submitForm(e)
     {
                 e.preventDefault();
@@ -58,7 +79,7 @@
                     if (subject == "Subject" || subject == "")
                         {
                             $(".input_subject").parent().parent().css("border", "1px solid red");
-                            $(".input_subject").attr("placeholder", "Please enter your Email ");
+                            $(".input_subject").attr("placeholder", "Please enter your Subject ");
                             placeholdAnimate(".input_subject");
                         }
                     if (contact == "")
@@ -92,7 +113,7 @@
                             $(".input_phone").attr("placeholder", "Please enter your conatct no correctly");
                             placeholdAnimate(".input_phone");
                         }
-                    else if((contact.length)>10||(contact.length)<9)
+                    else if((contact.length)<5)
                         {
                             flag=1;
                             $(".input_phone").val('');

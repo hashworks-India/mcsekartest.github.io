@@ -163,6 +163,7 @@
 
      $(".hw-te-tab").click( function() {
       $("#demo").hide();
+      resetTheForm();
    });
         
        
