@@ -459,6 +459,12 @@ html {
 			margin-left: 100px;
 			margin-right: 100px;
 		}
+		.test-left {
+			margin-left: 55px;
+		}
+		.test-right {
+			margin-right: 55px;
+		}
 		.hw-engage-cont .img-outer {
 			margin-top: 28px;
 		}
