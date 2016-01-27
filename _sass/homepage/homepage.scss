@@ -211,16 +211,12 @@
   80% {  opacity: 0.6; }
   100% {  opacity: 0; }
 }
-
-
-
-
-    .div2-right-div{
-        padding: 40px;
-    margin-top: 62px;
-    margin-left: -15px;
-    height:488px;
-    width: 529px;
+.div2-right-div{
+  padding: 40px;
+  margin-top: 62px;
+  margin-left: -15px;
+  height:488px;
+  width: 529px;
   }
   
 #div2-right-div-part1 ,#div2-right-div-part2,#div2-right-div-part3,#div2-right-div-part4{
@@ -230,9 +226,6 @@
 #div2-right-div-part1 {
     background-color: #125684;
 }
-
-
-
 #div2-right-div-part2{
   background-color: #fa5600;
 }
@@ -250,6 +243,7 @@
   margin-right: 10px;
   margin-bottom: 10px;
   height: 233px;
+  
 }
 .right-div-part22 {
   position: relative;
@@ -258,6 +252,7 @@
   margin-bottom: 9px;
   height: 233px;
   cursor: pointer;
+  
 }
 .right-div-part33 {
   position: relative;
@@ -266,6 +261,7 @@
   margin-top: 10px;
   height: 233px;
   cursor: pointer;
+  
 }
 .right-div-part44 {
   position: relative;
@@ -273,6 +269,7 @@
   margin-left: 10px;
   margin-top: 10px;
   height: 233px;
+
 }
 .blog-think {
     margin-top: 50px;
@@ -284,6 +281,7 @@
       -moz-animation: fadein1 0.4s; /* Firefox */
       -webkit-animation: fadein1 0.4s; /* Safari and Chrome */
       -o-animation: fadein1 0.4s; /* Opera */
+      overflow: hidden;
 }
 @keyframes fadein1 {
     from {
@@ -303,6 +301,7 @@
       -moz-animation: fadein2 0.4s; /* Firefox */
       -webkit-animation: fadein2 0.4s; /* Safari and Chrome */
       -o-animation: fadein2 0.4s; /* Opera */
+      overflow: hidden;
 }
 @keyframes fadein2 {
     from {
@@ -324,6 +323,7 @@
       -moz-animation: fadein3 0.4s; /* Firefox */
       -webkit-animation: fadein3 0.4s; /* Safari and Chrome */
       -o-animation: fadein3 0.4s; /* Opera */
+      overflow: hidden;
 }
 @keyframes fadein3 {
     from {
@@ -346,6 +346,7 @@
       -moz-animation: fadein4 0.4s; /* Firefox */
       -webkit-animation: fadein4 0.4s; /* Safari and Chrome */
       -o-animation: fadein4 0.4s; /* Opera */
+      overflow: hidden;
 }
 @keyframes fadein4 {
     from {
