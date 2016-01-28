@@ -1,3 +1,896 @@
+/* animation for icon of banner 1*/
+
+
+.banner1-anim-icons {
+    opacity: 0;
+    height:76px;
+    width:76px;
+    position:absolute;
+}
+
+
+.svg-anim-icon1  { /* clock plus*/
+    top: 40vh;  
+    left: 40%;    
+   -webkit-animation: spin1 5s ease-out 1s infinite;  
+    -moz-animation: mozspin1 5s ease-out 1s infinite;  
+    -o-animation: ospin1 5s ease-out 1s infinite; 
+    -ms-animation: msspin1 5s ease-out 1s infinite;
+    animation: nospin1 5s ease-out 1s infinite;  
+}
+.svg-anim-icon2{  /* Data_Science*/
+    top: 40vh;  
+    left: 40%;
+     -webkit-animation: spin2 7s ease-out 2s  infinite;  
+    -moz-animation: mozspin2 7s ease-out 2s  infinite;  
+    -o-animation: ospin2 7s ease-out 2s  infinite; 
+    -ms-animation: msspin2 7s ease-out 2s  infinite;
+    animation: nospin2 7s ease-out 2s  infinite; 
+}
+.svg-anim-icon3 {   /* designer compasss*/
+    top: 40vh;
+    left: 40%;  
+   -webkit-animation: spin3 8s ease-out 1s infinite;  
+    -moz-animation: mozspin3 8s ease-out 1s infinite;  
+    -o-animation: ospin3 8s ease-out 1s infinite; 
+    -ms-animation: msspin3 8s ease-out 1s infinite;
+    animation: nospin3 8s ease-out 1s infinite;  
+}
+
+.svg-anim-icon4  {   /* Desktop*/
+    top: 49vh;
+    left: 40%;
+   -webkit-animation: spin4 6s ease-out 2s infinite;  
+    -moz-animation: mozspin4 6s ease-out 2s infinite;  
+    -o-animation: ospin4 6s ease-out 2s infinite; 
+    -ms-animation: msspin4 6s ease-out 2s infinite;
+    animation: nospin4 6s ease-out 2s infinite;  
+}
+.svg-anim-icon5{   /* glob*/
+    top: 46vh;
+    left: 40%;
+     -webkit-animation: spin5 7s ease-out 1s infinite;  
+    -moz-animation: mozspin5 7s ease-out 1s infinite;  
+    -o-animation: ospin5 7s ease-out 1s infinite; 
+    -ms-animation: msspin5 7s ease-out 1s infinite;
+    animation: nospin5 7s ease-out 1s infinite; 
+}
+.svg-anim-icon6 {    /* Graph */
+    top: 43vh;
+    left: 40%;
+   -webkit-animation: spin6 5s ease-out 1s infinite;  
+    -moz-animation: mozspin6 5s ease-out 1s infinite;  
+    -o-animation: ospin6 5s ease-out 1s infinite; 
+    -ms-animation: msspin6 5s ease-out 1s infinite;
+    animation: nospin6 5s ease-out 1s infinite;  
+}
+.svg-anim-icon7{    /*bulb*/
+    top: 49vh;
+    left: 40%;
+     -webkit-animation: spin7 9s ease-out 1s infinite;  
+    -moz-animation: mozspin7  9s ease-out 1s infinite;  
+    -o-animation: ospin7 9s ease-out 1s infinite; 
+    -ms-animation: msspin7 9s ease-out 1s infinite;
+    animation: nospin7 9s ease-out 1s infinite; 
+}
+
+
+
+
+@-webkit-keyframes spin1 {   
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%) translateY(0%) scale(0.6)  rotate(0deg) ;
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(-1100%) translateY(266%) scale(1.3)  rotate(-360deg) ;
+    }  
+}
+@-moz-keyframes mozspin1 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%) translateY(0%) scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(-1100%) translateY(266%) scale(1.3)  rotate(-360deg) ;
+    }  
+}    
+@-o-keyframes ospin1 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%) translateY(0%) scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(-1100%) translateY(266%) scale(1.3)  rotate(-360deg) ;
+    } 
+}   
+@keyframes nospin1 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%) translateY(0%) scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(-1100%) translateY(266%) scale(1.3)  rotate(-360deg) ;
+    } 
+}
+@keyframes msspin1 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%) translateY(0%) scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(-1100%) translateY(266%) scale(1.3)  rotate(-360deg) ;
+    }  
+}
+
+
+
+
+
+@-webkit-keyframes spin2 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%)  scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(-1100%)  scale(0.8)  rotate(-70deg) ;
+    }  
+}
+@-moz-keyframes mozspin2 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%)  scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(-1100%)  scale(0.8)  rotate(-70deg) ;
+    }  
+}    
+@-o-keyframes ospin2 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%)  scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(-1100%)  scale(0.8)  rotate(-70deg) ;
+    } 
+}   
+@keyframes nospin2 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%)  scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(-1100%)  scale(0.8)  rotate(-70deg) ;
+    } 
+}
+@keyframes msspin2 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%)  scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(-1100%)  scale(0.8)  rotate(-70deg) ;
+    }  
+}
+
+
+
+@-webkit-keyframes spin3 {   
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%) translateY(0%) scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(-1100%) translateY(-216%) scale(1.2)  rotate(20deg) ;
+    }  
+}
+@-moz-keyframes mozspin3 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%) translateY(0%) scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(-1100%) translateY(-216%) scale(1.2)  rotate(20deg) ;
+    }  
+}    
+@-o-keyframes ospin3 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%) translateY(0%) scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(-1100%) translateY(-216%) scale(1.2)  rotate(20deg) ;
+    } 
+}   
+@keyframes nospin3 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%) translateY(0%) scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(-1100%) translateY(-216%) scale(1.2)  rotate(20deg) ;
+    } 
+}
+@keyframes msspin3 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%) translateY(0%) scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(-1100%) translateY(-216%) scale(1.2)  rotate(20deg) ;
+    }  
+}
+
+
+
+@-webkit-keyframes spin4 {   
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%) translateY(0%) scale(0.6)  rotate(0deg) ;
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(-1100%) translateY(266%) scale(1)  rotate(60deg) ;
+    }  
+}
+@-moz-keyframes mozspin4 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%) translateY(0%) scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(-1100%) translateY(266%) scale(1)  rotate(60deg) ;
+    }  
+}    
+@-o-keyframes ospin4 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%) translateY(0%) scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(-1100%) translateY(266%) scale(1)  rotate(60deg) ;
+    } 
+}   
+@keyframes nospin4 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%) translateY(0%) scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(-1100%) translateY(266%) scale(1)  rotate(60deg) ;
+    } 
+}
+@keyframes msspin4 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%) translateY(0%) scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(-1100%) translateY(266%) scale(1)  rotate(60deg) ;
+    }  
+}
+
+
+@-webkit-keyframes spin5 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%)  scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(-1100%)  scale(1.2)  rotate(360deg) ;
+    }  
+}
+@-moz-keyframes mozspin5 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%)  scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(-1100%)  scale(1.2)  rotate(360deg) ;
+    }  
+}    
+@-o-keyframes ospin5 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%)  scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(-1100%)  scale(1.2)  rotate(360deg) ;
+    } 
+}   
+@keyframes nospin5 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%)  scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(-1100%)  scale(1.2)  rotate(360deg) ;
+    } 
+}
+@keyframes msspin5 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%)  scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(-1100%)  scale(1.2)  rotate(360deg) ;
+    }  
+}
+
+
+
+@-webkit-keyframes spin6 {   
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%) translateY(0%) scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(-1100%) translateY(-116%) scale(1)  rotate(-20deg) ;
+    }  
+}
+@-moz-keyframes mozspin6 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%) translateY(0%) scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(-1100%) translateY(-116%) scale(1)  rotate(-20deg) ;
+    }  
+}    
+@-o-keyframes ospin6 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%) translateY(0%) scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(-1100%) translateY(-116%) scale(1)  rotate(-20deg) ;
+    } 
+}   
+@keyframes nospin6 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%) translateY(0%) scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(-1100%) translateY(-116%) scale(1)  rotate(-20deg) ;
+    } 
+}
+@keyframes msspin6 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%) translateY(0%) scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(-1100%) translateY(-116%) scale(1)  rotate(-20deg) ;
+    }  
+}
+
+
+
+@-webkit-keyframes spin7 {   
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%) translateY(0%) scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(-1100%) translateY(-216%) scale(1)  rotate(-30deg) ;
+    }  
+}
+@-moz-keyframes mozspin7 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%) translateY(0%) scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(-1100%) translateY(-216%) scale(1)  rotate(-30deg) ;
+    }  
+}    
+@-o-keyframes ospin7 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%) translateY(0%) scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(-1100%) translateY(-216%) scale(1)  rotate(-30deg) ;
+    } 
+}   
+@keyframes nospin7 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%) translateY(0%) scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(-1100%) translateY(-216%) scale(1)  rotate(-30deg) ;
+    } 
+}
+@keyframes msspin7 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%) translateY(0%) scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(-1100%) translateY(-216%) scale(1)  rotate(-30deg) ;
+    }  
+}
+
+
+
+/****         for the right icons        ****/
+
+
+.svg-anim-icon11  { /* clock plus*/
+    top: 40vh;  
+    left: 60%;
+   -webkit-animation: spin55 6s ease-out 2s infinite;  
+    -moz-animation: mozspin55 6s ease-out 2s infinite;  
+    -o-animation: ospin55 6s ease-out 2s infinite; 
+    -ms-animation: msspin55 6s ease-out 2s infinite;
+    animation: nospin55 6s ease-out 2s infinite;  
+}
+.svg-anim-icon22{  /* Data_Science*/
+    top: 40vh;  
+    left: 60%;
+     -webkit-animation: spin22 7s ease-out 1s infinite;  
+    -moz-animation: mozspin22 7s ease-out 1s infinite;  
+    -o-animation: ospin22 7s ease-out 1s infinite; 
+    -ms-animation: msspin22 7s ease-out 1s infinite;
+    animation: nospin22 7s ease-out 1s infinite; 
+}
+.svg-anim-icon33 {   /* designer compasss*/
+    top: 40vh;  
+    left: 60%;
+   -webkit-animation: spin77 7s ease-out 2s infinite;  
+    -moz-animation: mozspin77 7s ease-out 2s infinite;  
+    -o-animation: ospin77 7s ease-out 2s infinite; 
+    -ms-animation: msspin77 7s ease-out 2s infinite;
+    animation: nospin77 7s ease-out 2s infinite;  
+}
+
+.svg-anim-icon44  {   /* Desktop*/
+    top: 49vh;
+    left: 60%;
+   -webkit-animation: spin44 5s ease-out 3s infinite;  
+    -moz-animation: mozspin44 5s ease-out 3s infinite;  
+    -o-animation: ospin44 5s ease-out 3s infinite; 
+    -ms-animation: msspin44 5s ease-out 3s infinite;
+    animation: nospin44 5s ease-out 3s infinite;  
+}
+.svg-anim-icon55{   /* glob*/
+    top: 46vh;
+    left: 60%;
+     -webkit-animation: spin11 5s ease-out 1s infinite;  
+    -moz-animation: mozspin11 5s ease-out 1s infinite;  
+    -o-animation: ospin11 5s ease-out 1s infinite; 
+    -ms-animation: msspin11 5s ease-out 1s infinite;
+    animation: nospin11 5s ease-out 1s infinite; 
+}
+.svg-anim-icon66 {    /* Graph */
+    top: 43vh;
+    left: 60%;
+   -webkit-animation: spin66 4s ease-out 2s infinite;  
+    -moz-animation: mozspin66 4s ease-out 2s infinite;  
+    -o-animation: ospin66 4s ease-out 2s infinite; 
+    -ms-animation: msspin66 4s ease-out 2s infinite;
+    animation: nospin66 4s ease-out 2s infinite;  
+}
+.svg-anim-icon77{    /*bulb*/
+    top: 49vh;
+    left: 60%;
+     -webkit-animation: spin33  6s ease-out 1s infinite;  
+    -moz-animation: mozspin33  6s ease-out 1s infinite;  
+    -o-animation: ospin33  6s ease-out 1s infinite; 
+    -ms-animation: msspin33  6s ease-out 1s infinite;
+    animation: nospin33  6s ease-out 1s infinite; 
+}
+
+
+
+
+@-webkit-keyframes spin11 {   
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%) translateY(0%) scale(0.6)  rotate(0deg) ;
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(1100%) translateY(266%) scale(1.3)  rotate(-360deg) ;
+    }  
+}
+@-moz-keyframes mozspin11 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%) translateY(0%) scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(1100%) translateY(266%) scale(1.3)  rotate(-360deg) ;
+    }  
+}    
+@-o-keyframes ospin11 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%) translateY(0%) scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(1100%) translateY(266%) scale(1.3)  rotate(-360deg) ;
+    } 
+}   
+@keyframes nospin11 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%) translateY(0%) scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(1100%) translateY(266%) scale(1.3)  rotate(-360deg) ;
+    } 
+}
+@keyframes msspin11 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%) translateY(0%) scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(1100%) translateY(266%) scale(1.3)  rotate(-360deg) ;
+    }  
+}
+
+
+
+
+
+@-webkit-keyframes spin22 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%)  scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(1100%)  scale(0.8)  rotate(-50deg) ;
+    }  
+}
+@-moz-keyframes mozspin22 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%)  scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(1100%)  scale(0.8)  rotate(-50deg) ;
+    }  
+}    
+@-o-keyframes ospin22 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%)  scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(1100%)  scale(0.8)  rotate(-50deg) ;
+    } 
+}   
+@keyframes nospin22 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%)  scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(1100%)  scale(0.8)  rotate(-50deg) ;
+    } 
+}
+@keyframes msspin22 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%)  scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(1100%)  scale(0.8)  rotate(-50deg) ;
+    }  
+}
+
+
+
+@-webkit-keyframes spin33 {   
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%) translateY(0%) scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(1100%) translateY(-216%) scale(1.2)  rotate(20deg) ;
+    }  
+}
+@-moz-keyframes mozspin33 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%) translateY(0%) scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(1100%) translateY(-216%) scale(1.2)  rotate(20deg) ;
+    }  
+}    
+@-o-keyframes ospin33 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%) translateY(0%) scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(1100%) translateY(-216%) scale(1.2)  rotate(20deg) ;
+    } 
+}   
+@keyframes nospin33 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%) translateY(0%) scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(1100%) translateY(-216%) scale(1.2)  rotate(20deg) ;
+    } 
+}
+@keyframes msspin33 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%) translateY(0%) scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(1100%) translateY(-216%) scale(1.2)  rotate(20deg) ;
+    }  
+}
+
+
+
+@-webkit-keyframes spin44 {   
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%) translateY(0%) scale(0.6)  rotate(0deg) ;
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(1100%) translateY(116%) scale(1)  rotate(60deg) ;
+    }  
+}
+@-moz-keyframes mozspin44 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%) translateY(0%) scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(1100%) translateY(116%) scale(1)  rotate(60deg) ;
+    }  
+}    
+@-o-keyframes ospin44 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%) translateY(0%) scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(1100%) translateY(116%) scale(1)  rotate(60deg) ;
+    } 
+}   
+@keyframes nospin44 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%) translateY(0%) scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(1100%) translateY(116%) scale(1)  rotate(60deg) ;
+    } 
+}
+@keyframes msspin44 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%) translateY(0%) scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(1100%) translateY(116%) scale(1)  rotate(60deg) ;
+    }  
+}
+
+
+@-webkit-keyframes spin55 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%)  scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(1100%)  scale(1.2)  rotate(300deg) ;
+    }  
+}
+@-moz-keyframes mozspin55 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%)  scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(1100%)  scale(1.2)  rotate(300deg) ;
+    }  
+}    
+@-o-keyframes ospin55 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%)  scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(1100%)  scale(1.2)  rotate(300deg) ;
+    } 
+}   
+@keyframes nospin55 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%)  scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(1100%)  scale(1.2)  rotate(300deg) ;
+    } 
+}
+@keyframes msspin55 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%)  scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(1100%)  scale(1.2)  rotate(300deg) ;
+    }  
+}
+
+
+
+@-webkit-keyframes spin66 {   
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%) translateY(0%) scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(1100%) translateY(-216%) scale(1)  rotate(-20deg) ;
+    }  
+}
+@-moz-keyframes mozspin66 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%) translateY(0%) scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(1100%) translateY(-216%) scale(1)  rotate(-20deg) ;
+    }  
+}    
+@-o-keyframes ospin66 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%) translateY(0%) scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(1100%) translateY(-216%) scale(1)  rotate(-20deg) ;
+    } 
+}   
+@keyframes nospin66 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%) translateY(0%) scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(1100%) translateY(-216%) scale(1)  rotate(-20deg) ;
+    } 
+}
+@keyframes msspin66 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%) translateY(0%) scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(1100%) translateY(-216%) scale(1)  rotate(-20deg) ;
+    }  
+}
+
+
+
+@-webkit-keyframes spin77 {   
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%) translateY(0%) scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(1100%) translateY(-216%) scale(1)  rotate(-30deg) ;
+    }  
+}
+@-moz-keyframes mozspin77 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%) translateY(0%) scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(1100%) translateY(-216%) scale(1)  rotate(-30deg) ;
+    }  
+}    
+@-o-keyframes ospin77 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%) translateY(0%) scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(1100%) translateY(-216%) scale(1)  rotate(-30deg) ;
+    } 
+}   
+@keyframes nospin77 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%) translateY(0%) scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(1100%) translateY(-216%) scale(1)  rotate(-30deg) ;
+    } 
+}
+@keyframes msspin77 {  
+    from {  
+        opacity: 0.3; 
+    transform: translateX(0%) translateY(0%) scale(0.6)  rotate(0deg) ;  
+}  
+to { 
+    opacity:1; 
+    transform:  translateX(1100%) translateY(-216%) scale(1)  rotate(-30deg) ;
+    }  
+}
+
+/* end animation for icon of banner 1*/
 
   /*bg-color*/
   
