@@ -461,7 +461,9 @@ html {
 	background: #fff;
 	}
 	
-	
+	.talent .li-tab-mar {
+		margin: 0 auto -15px;
+	}
 
 	/*End of homepage*/
 
