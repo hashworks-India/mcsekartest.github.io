@@ -1,14 +1,10 @@
 /* animation for icon of banner 1*/
-
-
 .banner1-anim-icons {
     opacity: 0;
     height:76px;
     width:76px;
     position:absolute;
 }
-
-
 .svg-anim-icon1  { /* clock plus*/
     top: 40vh;  
     left: 40%;    
@@ -167,11 +163,6 @@ to {
     transform:  translateX(-1100%) translateY(266%) scale(1.3)  rotate(-360deg) ;
     }  
 }
-
-
-
-
-
 @-webkit-keyframes spin2 {  
     from {  
         opacity: 0.3; 
@@ -647,11 +638,6 @@ to {
     -ms-animation: msspin44  7s ease-out 2s infinite;
     animation: nospin44  7s ease-out 2s infinite; 
 }
-
-
-
-
-
 @-webkit-keyframes spin11 {   
     from {  
         opacity: 0.3; 
@@ -1432,60 +1418,11 @@ transform: translateX(-600%)
     .res2 {
     margin-right: 10px;
     }
-#right-div-part1 .animate-arroww .main-animate-arrow, #right-div-part2 .animate-arroww .main-animate-arrow,
-#right-div-part3 .animate-arroww .main-animate-arrow , #right-div-part4 .animate-arroww .main-animate-arrow{
-    position: absolute;
-    color: #fff;
-    width: 53px;
-    margin-top: 194px;
-    margin-left: 96px;
-    opacity: 0;
-    -webkit-transition: all 0.5s ease 0.3s;
-    -moz-transition: all 0.5s ease 0.3s;
-    -ms-transition: all 0.5s ease 0.3s;
-    -o-transition: all 0.5s ease 0.3s;
-    transition: all 0.5s ease 0.3s;
-}
-
-#right-div-part1:hover .animate-arroww .main-animate-arrow,#right-div-part2:hover .animate-arroww .main-animate-arrow,
-#right-div-part3:hover .animate-arroww .main-animate-arrow,#right-div-part4:hover .animate-arroww .main-animate-arrow{
-  margin-left: 176px;
-  opacity: 1;
-}
-
-#right-div-part1:hover p, #right-div-part2:hover p,#right-div-part3:hover p,#right-div-part4:hover p{ 
-    transform: scale(1.1); }
 
 
 
-.div-main-part2-part1{
-  position: relative;
-      margin-top: 62px;
-}
 
-#div-main-part1  img{
-  width: 15%;
-    margin-bottom: 5px;
-        margin-right: 25px;
-}
-.blog-div-part{
-    margin-bottom: 38px;
-}
-#div-main-part1  .blog-link-anchor{
-    text-decoration: none;
-    color: #ff0;
-    margin-left: 15px;
-}
-#div-main-part1  .blog-link-anchor:hover{
-  color: gray;
-}
-#div-main-part1  .blog-link-anchor span{
-  opacity:0;
-  color: gray;
-}
-#div-main-part1  .blog-link-anchor:hover span{
-  opacity:1;
-}
+
 /*end  animation of blog landing page */
 
   /*End of bg-color*/
