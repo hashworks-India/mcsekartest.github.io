@@ -1201,50 +1201,213 @@ to {
     }
  
     .iphone {
-        background:url("/assets/img/landingpage/Iphone.svg") no-repeat;
+        
         width: 500px;
-        height: 450px;
+        height: 400px;
         position: absolute;
         bottom: 64px;
-        left: 50%;
-        margin-left: -165px;
+        right: 15%;
+    }
+    .idesktop {
+       width: 500px;
+        height: 356px;
+        position: absolute;
+        bottom: 64px;
+        right: 15%;
+    }
+    .ipad {
+        
+        width: 500px;
+        height: 400px;
+        position: absolute;
+        bottom: 64px;
+        right: 15%;
     }
     .clouds .icon.cloud-1 {
     width: 100px;
     bottom: 250px;
-    top: 12%;
-    margin-left: -200px;
-    -webkit-animation: cloud-1 20s linear infinite;
-    /* animation: cloud-1 20s linear infinite; */
+    top: 18%;
+    -moz-animation: clouds1 100s linear  infinite;
+      -webkit-animation: clouds1 100s linear  infinite;
+      -ms-animation: clouds1 100s linear infinite;
+      animation: clouds1 100s linear infinite;
+    
     }
+    @keyframes clouds1 {
+    from {
+        transform: translateX(-333%)
+    }
+    to {
+        transform: translateX(1142%)
+    }
+}
+@-moz-keyframes clouds1 { /* Firefox */
+     from {
+        transform: translateX(-333%)
+    }
+    to {
+        transform: translateX(1142%)
+    }
+}
+@-webkit-keyframes clouds1 { /* Safari and Chrome */
+    from {
+        transform: translateX(-333%)
+    }
+    to {
+        transform: translateX(1142%)
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        transform: translateX(-333%)
+    }
+    to {
+        transform: translateX(1142%)
+    }
+}
     .clouds .icon.cloud-2 {
         width: 100px;
         bottom: 250px;
-        margin-left: -300px;
         top: 30%;
-        -webkit-animation: cloud-1 20s linear infinite;
-        /* animation: cloud-1 20s linear infinite; */
+         -moz-animation: clouds1 80s linear  infinite;
+      -webkit-animation: clouds1 80s linear  infinite;
+      -ms-animation: clouds1 80s linear  infinite;
+      animation: clouds1 80s linear infinite;
+
     }
+    @keyframes clouds1 {
+    from {
+        transform: translateX(-468%)
+    }
+    to {
+        transform: translateX(1142%)
+    }
+}
+@-moz-keyframes clouds1 { /* Firefox */
+     from {
+        transform: translateX(-468%)
+    }
+    to {
+        transform: translateX(1142%)
+    }
+}
+@-webkit-keyframes clouds1 { /* Safari and Chrome */
+    from {
+        transform: translateX(-468%)
+    }
+    to {
+        transform: translateX(1142%)
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        transform: translateX(-468%)
+    }
+    to {
+        transform: translateX(1142%)
+    }
+}
     .clouds .icon.cloud-3{
         width: 120px;
         bottom: 220px;
-        margin-left: -404px;
         top: 15%;
-        /* -webkit-animation: cloud-1 24s linear infinite; */
-        /* animation: cloud-1 24s linear infinite; */
+        -moz-animation: clouds3 90s linear  infinite;
+        -webkit-animation: clouds3 90s linear  infinite;
+        -ms-animation: clouds3 90s linear infinite;
+        animation: clouds3 90s linear infinite;
+    }
+    @keyframes clouds3 {
+        0% { transform: translateX(300%)}
+        40%{transform: translateX(600%)}
+        80%{transform: translateX(900%)}
+        100%{transform: translateX(1142%)}
+    }
+    @-moz-keyframes clouds3 { /* Firefox */
+        0% { transform: translateX(300%)}
+        40%{transform: translateX(600%)}
+        80%{transform: translateX(900%)}
+        100%{transform: translateX(1142%)}
+    }
+    @-webkit-keyframes clouds3 { /* Safari and Chrome */
+        0% { transform: translateX(300%)}
+        40%{transform: translateX(600%)}
+        80%{transform: translateX(900%)}
+        100%{transform: translateX(1142%)}
+    }
+    @-o-keyframes clouds3 { /* Opera */
+        0% { transform: translateX(300%)}
+        40%{transform: translateX(600%)}
+        80%{transform: translateX(900%)}
+        100%{transform: translateX(1142%)}
     }
 
     .clouds .icon.cloud-4 {
         width: 110px;
         bottom: 260px;
-        margin-left: 20px;
-        top: 26%;
-        -webkit-animation: cloud-1 28s linear infinite;
-        animation: cloud-1 28s linear infinite;
+        top: 20%;
+        margin-left: 60px;
+         -moz-animation: clouds4 90s linear  infinite;
+      -webkit-animation: clouds4 90s linear  infinite;
+      -ms-animation: clouds4 90s linear infinite;
+      animation: clouds4 90s linear infinite;
+     
     }
+     @keyframes clouds4 {
+    0% {
+        
+        transform: translateX(600%)
+    }
+    40%{
+ transform: translateX(1142%)
+    }
+    80%{
+transform: translateX(-600%)
+    }
+    100% {
+         
+        transform: translateX(600%)
+    }
+}
+@-moz-keyframes clouds4 { /* Firefox */
+     0% {
+        
+        transform: translateX(600%)
+    }
+    40%{
+ transform: translateX(1142%)
+    }
+    80%{
+transform: translateX(-600%)
+    }
+    100% {
+         
+        transform: translateX(600%)
+    }
+}
+@-webkit-keyframes clouds4 { /* Safari and Chrome */
+     0% {
+        
+        transform: translateX(600%)
+    }
+    40%{
+ transform: translateX(1142%)
+    }
+    80%{
+transform: translateX(-600%)
+    }
+    100% {
+         
+        transform: translateX(600%)
+    }
+}
+@-o-keyframes clouds4 { /* Opera */
+    0% {transform: translateX(600%)}
+    40%{transform: translateX(1142%)}
+    80%{transform: translateX(-600%)}
+    100%{transform: translateX(600%)}
+}
     .clouds .icon {
     position: absolute;
-    left: 50%;
     fill: #1c2128;
     -webkit-mask-image: linear-gradient(to bottom,#fff 0,rgba(255,0,0,0) 90%);
     mask-image: linear-gradient(to bottom,#fff 0,rgba(255,0,0,0) 90%);
@@ -1255,17 +1418,20 @@ to {
       width: 100%;
 	    z-index: 5;
     }
-
-    
-   
-    
-    
-
-
-
-
-
-
+    .banner3-text {
+    left: 10%;
+    position: absolute;
+    top:50%;
+    } 
+    .responsive {
+    margin-top: 20px;
+    }
+    .res1 {
+    margin-right: 10px;
+    }
+    .res2 {
+    margin-right: 10px;
+    }
 #right-div-part1 .animate-arroww .main-animate-arrow, #right-div-part2 .animate-arroww .main-animate-arrow,
 #right-div-part3 .animate-arroww .main-animate-arrow , #right-div-part4 .animate-arroww .main-animate-arrow{
     position: absolute;

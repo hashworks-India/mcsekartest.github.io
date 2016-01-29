@@ -153,18 +153,25 @@ $(document).ready(function(){
 
    });
 
+    $('.idesktop').hide();
+    $('.ipad').hide();
+    $('.iphone').show();
 
-    $('.appln').mouseenter(function () {
-        $('.appln-statergies').removeClass('hide');
-        $('.it-solutions').addClass('hide');
+    $('.res1').click(function() {
+         $('.idesktop').hide();
+         $('.ipad').hide();
+         $('.iphone').show();
     });
-
-    $('.it-solution').mouseenter(function () {
-        $('.it-solutions').removeClass('hide');
-        $('.appln-statergies').addClass('hide');
+    $('.res2').click(function() {
+        $('.iphone').hide();
+        $('.ipad').hide();
+        $('.idesktop').show();
     });
-
-   
+    $('.res3').click(function() {
+        $('.idesktop').hide();
+        $('.iphone').hide();
+        $('.ipad').show();
+    });
 
 
 

@@ -2039,3 +2039,26 @@ html {
 	}
 
 }*/
+
+@media screen and (min-width: 1500px) {
+	
+	img#big-phone {
+    position: absolute;
+    margin-top: -175px;
+    width: 126%;
+    height: 162%;
+}
+img#big-desk {
+    position: absolute;
+    margin-top: -175px;
+    width: 142%;
+    height: 215%;
+    margin-left: -115px;
+}
+img#big-ipad {
+    position: absolute;
+    margin-top: -175px;
+    width: 126%;
+    height: 155%;
+}
+}
