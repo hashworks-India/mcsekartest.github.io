@@ -1,4 +1,136 @@
 
+/*start of blog banner*/
+.blog-banner .part2 {
+    position: absolute;
+    margin-top: 17%;
+    padding: 20px;
+}
+#blog1-div1-part1 .animate-arroww .main-animate-arrow, #blog2-div1-part2 .animate-arroww .main-animate-arrow,
+#blog1-div2-part1 .animate-arroww .main-animate-arrow , #blog2-div2-part2 .animate-arroww .main-animate-arrow,
+#blog1-div3-part1 .animate-arroww .main-animate-arrow, #blog2-div3-part2 .animate-arroww .main-animate-arrow,
+{
+    position: absolute;
+    color: #fff;
+    width: 53px;
+    margin-top: 15%;
+    margin-left: 40%;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease 0.3s;
+    -moz-transition: all 0.5s ease 0.3s;
+    -ms-transition: all 0.5s ease 0.3s;
+    -o-transition: all 0.5s ease 0.3s;
+    transition: all 0.5s ease 0.3s;
+}
+
+#blog1-div1-part1:hover .animate-arroww .main-animate-arrow, #blog2-div1-part2:hover .animate-arroww .main-animate-arrow,
+#blog1-div2-part1:hover .animate-arroww .main-animate-arrow , #blog2-div2-part2:hover .animate-arroww .main-animate-arrow,
+#blog1-div3-part1:hover .animate-arroww .main-animate-arrow, #blog2-div3-part2:hover .animate-arroww .main-animate-arrow,
+{
+  margin-left: 65%;
+  opacity: 1; 
+}
+.blog-banner .blog-category{
+        margin-top: 5%;
+}
+.blog-banner  .blog-img{ 
+    width: 25%;
+    margin-top: 20%;
+    margin-left: 38%;
+}
+#blog1-div1-part1 .blog-img,#blog1-div2-part1 .blog-img,#blog1-div3-part1 .blog-img{
+    width: 25%;
+    margin-top: 25%;
+    margin-left: 38%;
+}
+.blog-banner .half-height{
+    height: 100%;
+    width: 101.4%;
+}
+.container-fluid.blog-banner {
+    position: absolute;
+    width: 100%;
+    height: 86%;
+    bottom: 19%;
+}
+.blog-banner .blog1-div1{
+    height: 50vh;
+
+}   
+.blog-banner .blog2-div1{
+    height: 50vh;
+    /*margin-top: -1px;*/
+}   
+.blog-banner #blog1-div1-part1{
+    position: absolute;
+    top: 0%;
+    background: rgb(223, 23, 65); 
+    overflow: hidden;
+    margin-right: -7px;
+    margin-left: -15px;
+}
+.blog-banner #blog2-div1-part2{
+    background: rgb(238, 224, 159);
+    position: absolute;
+    bottom: 0%;
+    height: 100.081%;
+    overflow: hidden;
+    margin-right: -7px;
+    margin-left: -15px;
+}
+
+.blog-banner .blog1-div2{
+    height: 50vh;
+
+}   
+.blog-banner .blog2-div2{
+    height: 50vh;
+    /*margin-top: -1px;*/
+}   
+.blog-banner #blog1-div2-part1{
+    position: absolute;
+    top: 0%;
+    background: rgb(26, 193, 176);
+    overflow: hidden;
+    margin-right: -23px;
+    margin-left: -8px;
+}
+.blog-banner #blog2-div2-part2{
+    background: rgb(255, 88, 131);
+    position: absolute;
+    bottom: 0%;
+    height: 100.081%;
+    overflow: hidden;
+    margin-right: -23px;
+    margin-left: -8px;
+}
+
+.blog-banner .blog1-div3{
+    height: 50vh;
+
+}   
+.blog-banner .blog2-div3{
+    height: 50vh;
+    /*margin-top: -1px;*/
+}   
+.blog-banner #blog1-div3-part1{
+    position: absolute;
+    top: 0%;
+    background: rgb(149, 219, 175);
+    overflow: hidden;
+    margin-left: -2px;
+}
+.blog-banner #blog2-div3-part2{
+    background: rgb(50, 65, 88);
+    position: absolute;
+    bottom: 0%;
+    height: 100.081%;
+    overflow: hidden;
+    margin-left: -2px;
+}
+
+/*end of blog banner*/
+
+
 
 
 /* animation for icon of banner 1*/
