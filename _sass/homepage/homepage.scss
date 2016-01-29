@@ -837,11 +837,6 @@ to {
     transform:  translateX(1100%) translateY(266%) scale(1.3)  rotate(-360deg) ;
     }  
 }
-
-
-
-
-
 @-webkit-keyframes spin22 {  
     from {  
         opacity: 0.3; 
@@ -1266,12 +1261,7 @@ to {
         background-size: 13px 13px;
         margin: 0px 3px;
       }
-   
-
-   
- 
-
-@keyframes fadein {
+   @keyframes fadein {
     from {
         opacity:0;
     }
@@ -1304,14 +1294,8 @@ to {
     }
 }
 .hw-scroll .scroll-anim:nth-child(2) {
-           
-      background: transparent url("/assets/img/landingpage/banner-4.jpg") repeat scroll bottom center / cover;
-      position: relative;
-     /* -moz-animation: parallax_bgtwo linear 100s infinite;
-      -webkit-animation: parallax_bgtwo linear 100s infinite;
-      -ms-animation: parallax_bgtwo linear 100s infinite;
-      animation: parallax_bgtwo linear 100s infinite; */
-     
+    background: transparent url("/assets/img/landingpage/banner-4.jpg") repeat scroll bottom center / cover;
+    position: relative;
 }
 
 @-webkit-keyframes  parallax_bgtwo {   
