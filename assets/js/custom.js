@@ -630,5 +630,142 @@ $("#div2-right-div-part4").css("display", "none");
    });
 /* end for portfolio page dropdown item click*/     
 
+  var height_pixel = $("#blog1-div1-part1").css('height');
+  $("#blog1-div1-part1").click(function(){
+    if( $(this).css('height') === height_pixel )
+    {
+      $(this).animate({'height' : '200%'},322);
+        $(this).css(  "z-index", "1");
+        $(this).find(".main-animate-arrow").hide();   
+    }
+    else{
+      $(this).animate({'height' : '100%'},644);
+      $(this).css(  "z-index", "0");
+      $(this).find(".main-animate-arrow").show();   
+    }
+  });
+  $("#blog1-div1-part1").mouseleave(function(){
+      $(this).animate({'height' : '100%'},640); 
+      $(this).css(  "z-index", "0");  
+      $(this).find(".main-animate-arrow").show();       
+    }); 
+
+
+  $("#blog2-div1-part2").click(function(){
+
+    if( $(this).css('height') === height_pixel )
+    {
+      $(this).animate({'height' : '200%'},322);
+        $(this).css(  "z-index", "1");
+        $(this).find(".main-animate-arrow").hide();  
+        $(this).find(".blog-img").css("margin-top","25%");  
+    }
+    else{
+      $(this).animate({'height' : '100%'},644);
+      $(this).css(  "z-index", "0");
+      $(this).find(".main-animate-arrow").show(); 
+      $(this).find(".blog-img").css("margin-top","20%");   
+    }
+  });
+  $("#blog2-div1-part2").mouseleave(function(){
+      $(this).animate({'height' : '100%'},640);
+      $(this).css(  "z-index", "0");    
+      $(this).find(".main-animate-arrow").show();  
+      $(this).find(".blog-img").css("margin-top","20%");     
+        }); 
+
+  /*for second row*/
+  $("#blog1-div2-part1").click(function(){
+
+    if( $(this).css('height') === height_pixel )
+    {
+      $(this).animate({'height' : '200%'},322);
+        $(this).css(  "z-index", "1");
+        $(this).find(".main-animate-arrow").hide();   
+    }
+    else{
+      $(this).animate({'height' : '100%'},644);
+      $(this).css(  "z-index", "0");
+      $(this).find(".main-animate-arrow").show();   
+    }
+  });
+  $("#blog1-div2-part1").mouseleave(function(){
+      $(this).animate({'height' : '100%'},640); 
+      $(this).css(  "z-index", "0");  
+      $(this).find(".main-animate-arrow").show();       
+    }); 
+
+
+  $("#blog2-div2-part2").click(function(){
+
+    if( $(this).css('height') === height_pixel )
+    {
+      $(this).animate({'height' : '200%'},322);
+        $(this).css(  "z-index", "1");
+        $(this).find(".main-animate-arrow").hide(); 
+        $(this).find(".blog-img").css("margin-top","25%");   
+    }
+    else{
+      $(this).animate({'height' : '100%'},644);
+      $(this).css(  "z-index", "0");
+      $(this).find(".main-animate-arrow").show();   
+      $(this).find(".blog-img").css("margin-top","20%"); 
+    }
+  });
+  $("#blog2-div2-part2").mouseleave(function(){
+      $(this).animate({'height' : '100%'},640);
+      $(this).css(  "z-index", "0");
+      $(this).find(".main-animate-arrow").show();          
+      $(this).find(".blog-img").css("margin-top","20%"); 
+        }); 
+
+        /* for the 3d row*/
+  $("#blog1-div3-part1").click(function(){
+
+    if( $(this).css('height') === height_pixel )
+    {
+      $(this).animate({'height' : '200%'},322);
+        $(this).css(  "z-index", "1");
+        $(this).find(".main-animate-arrow").hide();   
+    }
+    else{
+      $(this).animate({'height' : '100%'},644);
+      $(this).css(  "z-index", "0");
+      $(this).find(".main-animate-arrow").show();   
+    }
+  });
+  $("#blog1-div3-part1").mouseleave(function(){
+      $(this).animate({'height' : '100%'},640); 
+      $(this).css(  "z-index", "0");   
+      $(this).find(".main-animate-arrow").show();   
+    }); 
+
+
+  $("#blog2-div3-part2").click(function(){
+
+    if( $(this).css('height') === height_pixel )
+    {
+      $(this).find(".main-animate-arrow").hide();
+      $(this).animate({'height' : '200%'},322);
+        $(this).css(  "z-index", "1");
+        $(this).find(".blog-img").css("margin-top","25%"); 
+    }
+    else{
+      $(this).find(".main-animate-arrow").show();
+      $(this).animate({'height' : '100%'},644);
+      $(this).css(  "z-index", "0");
+      $(this).find(".blog-img").css("margin-top","20%"); 
+    }
+  });
+  $("#blog2-div3-part2").mouseleave(function(){
+      $(this).animate({'height' : '100%'},640);
+      $(this).css(  "z-index", "0");   
+      $(this).find(".main-animate-arrow").show();
+      $(this).find(".blog-img").css("margin-top","20%"); 
+  });           
+
+
+
+
 });
 
