@@ -63,10 +63,11 @@
 .blog-banner #blog1-div1-part1{
     position: absolute;
     top: 0%;
-    background: rgb(223, 23, 65); 
+     background: rgb(149, 219, 175);
     overflow: hidden;
     margin-right: -7px;
     margin-left: -15px;
+    cursor: pointer;
 }
 .blog-banner #blog2-div1-part2{
     background: rgb(238, 224, 159);
@@ -76,6 +77,7 @@
     overflow: hidden;
     margin-right: -7px;
     margin-left: -15px;
+    cursor: pointer;
 }
 
 .blog-banner .blog1-div2{
@@ -93,6 +95,7 @@
     overflow: hidden;
     margin-right: -23px;
     margin-left: -8px;
+    cursor: pointer;
 }
 .blog-banner #blog2-div2-part2{
     background: rgb(255, 88, 131);
@@ -102,6 +105,7 @@
     overflow: hidden;
     margin-right: -23px;
     margin-left: -8px;
+    cursor: pointer;
 }
 
 .blog-banner .blog1-div3{
@@ -115,7 +119,8 @@
 .blog-banner #blog1-div3-part1{
     position: absolute;
     top: 0%;
-    background: rgb(149, 219, 175);
+     background: rgb(223, 23, 65); 
+   cursor: pointer;
     overflow: hidden;
     margin-left: -2px;
 }
@@ -126,6 +131,7 @@
     height: 100.081%;
     overflow: hidden;
     margin-left: -2px;
+    cursor: pointer;
 }
 
 /*end of blog banner*/
@@ -1323,7 +1329,7 @@ to {
     .clouds .icon.cloud-1 {
     width: 100px;
     bottom: 250px;
-    top: 18%;
+    top: 22%;
     -moz-animation: clouds1 100s linear  infinite;
       -webkit-animation: clouds1 100s linear  infinite;
       -ms-animation: clouds1 100s linear infinite;
@@ -1365,7 +1371,7 @@ to {
     .clouds .icon.cloud-2 {
         width: 100px;
         bottom: 250px;
-        top: 30%;
+        top: 20%;
          -moz-animation: clouds1 80s linear  infinite;
       -webkit-animation: clouds1 80s linear  infinite;
       -ms-animation: clouds1 80s linear  infinite;
@@ -1407,7 +1413,7 @@ to {
     .clouds .icon.cloud-3{
         width: 120px;
         bottom: 220px;
-        top: 15%;
+        top: 16%;
         -moz-animation: clouds3 90s linear  infinite;
         -webkit-animation: clouds3 90s linear  infinite;
         -ms-animation: clouds3 90s linear infinite;
@@ -1441,7 +1447,7 @@ to {
     .clouds .icon.cloud-4 {
         width: 110px;
         bottom: 260px;
-        top: 20%;
+        top: 13%;
         margin-left: 60px;
          -moz-animation: clouds4 90s linear  infinite;
       -webkit-animation: clouds4 90s linear  infinite;
@@ -1528,9 +1534,14 @@ transform: translateX(-600%)
     }
     .res1 {
     margin-right: 10px;
+    cursor: pointer;
     }
     .res2 {
     margin-right: 10px;
+    cursor: pointer;
+    }
+    .res3 {
+     cursor: pointer;
     }
     .iphone {
         width: 500px;

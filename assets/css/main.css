@@ -79,7 +79,9 @@ html {
 	.btn.active {
 		box-shadow: none;
 	}
-
+	.nav-tabs > li {
+		margin-bottom: -2px;
+	}
 	.form-control:focus {
 		border-color: #ccc;
 		box-shadow: none;
@@ -578,6 +580,7 @@ html {
 			display: inline-block;                            
 			width:256px;  
 			margin: 0 10px;
+			margin-bottom: -2px;
 		}
 
 		#carousel_ul li img {
@@ -1958,7 +1961,9 @@ img#big-ipad {
     margin-top: -14%;
     height: 108%;
 }
-
+.hr-line1 {
+	margin-left: -9px;
+}
 
 
 

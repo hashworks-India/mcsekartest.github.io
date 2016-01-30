@@ -1,7 +1,7 @@
 ---
 layout: navblog_detail
 description: first
-category: test
+category: Test
 image: blog.jpg
 permalink: "/post/2015-12-12-your-filename/"
 tags: all
