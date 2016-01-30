@@ -1319,29 +1319,7 @@ to {
       background: transparent url("/assets/img/landingpage/Wallpaper.svg") no-repeat scroll bottom center / cover;
     }
  
-    .iphone {
-        
-        width: 500px;
-        height: 364px;
-        position: absolute;
-        bottom: 64px;
-        right: 15%;
-    }
-    .idesktop {
-       width: 534px;
-    height: 435px;
-    position: absolute;
-    bottom: 59px;
-    right: 11%;
-    }
-    .ipad {
-        
-        width: 500px;
-        height: 367px;
-        position: absolute;
-        bottom: 64px;
-        right: 15%;
-    }
+
     .clouds .icon.cloud-1 {
     width: 100px;
     bottom: 250px;
@@ -1551,6 +1529,50 @@ transform: translateX(-600%)
     .res2 {
     margin-right: 10px;
     }
+    .iphone {
+        width: 500px;
+        height: 364px;
+        position: absolute;
+        bottom: 64px;
+        right: 15%;
+       
+    }
+    #big-phone {
+    position: absolute;
+    }
+    .idesktop {
+       width: 534px;
+    height: 435px;
+    position: absolute;
+    bottom: 59px;
+    right: 11%;
+
+    }
+    #big-desk{
+         position: absolute;
+    }
+    .ipad {
+        
+        width: 500px;
+        height: 367px;
+        position: absolute;
+        bottom: 64px;
+        right: 15%;
+    }
+     .carousel-inner>.item>a>img, 
+    .carousel-inner>.item>img{
+      height: 268px;
+      width: 166px;  
+    }
+
+
+
+
+
+
+
+
+
 #right-div-part1 .animate-arroww .main-animate-arrow, #right-div-part2 .animate-arroww .main-animate-arrow,
 #right-div-part3 .animate-arroww .main-animate-arrow , #right-div-part4 .animate-arroww .main-animate-arrow{
     position: absolute;
