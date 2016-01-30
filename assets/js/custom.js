@@ -764,7 +764,7 @@ $("#div2-right-div-part4").css("display", "none");
     if( $(this).css('height') === height_pixel )
     {
       $("#blog1-div3-part1").animate({'height' : '0%'},844);
-      $(this).css(  "z-index", "1");
+      $(this).css(  "z-index", "1"); 
       $(this).find(".blog-img").css("margin-top","25%"); 
       $(this).find(".main-animate-arrow").hide(); 
       $(this).animate({'height' : '200%'},844); 

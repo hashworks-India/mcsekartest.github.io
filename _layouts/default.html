@@ -186,73 +186,65 @@
 			<section class="scroll-anim " data-value="3">
 	
 		          <div class="container-fluid blog-banner">
+		          	{% assign my_variable = 0 %}
+		          	{% for post in site.posts | sort: 'date'  %}
+		          	{{my_variable}}
+
+		          	{% if my_variable == 0 %}
 		            <div class="row " >
 		              <div class="col-lg-4 blog1-div1" >
+		              	
 		                <div class="expand-the-div half-height" id="blog1-div1-part1">
 		                  <div  class="part1">
 		                    <img class="blog-img" src="/assets/img/landingpage/Sample_Outline_Icon.png">
 		                    <div class="animate-arroww">
 		                      <img class="main-animate-arrow" src="/assets/img/landingpage/Arrow.png" alt="">
 		                    </div>  
-		                        <p class="text-center gotham-rounded-bold clr-white header-links blog-category">WE ARE THE THINKER</p>
+		                        <p class="text-center gotham-rounded-bold clr-white header-links blog-category">{{post.category}}</p>
 		                  </div>
 		                  <div class="part2">
 		                    <p class="gotham-rounded-light clr-white">
-		                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		                      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		                      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		                      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		                      {{post.The_New_Use_Experience}}
 		                    </p>  
-		                    <a href="">Read more</a>    
+		                    <a href="{{post.permalink}}">Read more</a>      
 		                  </div>
 		                </div>    
 		                
 		              </div>
 		              <div class="col-lg-4 blog1-div2">
+		              	 {% elsif my_variable == 1 %}
 		                <div class=" half-height " id="blog1-div2-part1">
 		                  <div   class="part1" >
 		                    <img class="blog-img" src="/assets/img/landingpage/Sample_Outline_Icon.png">
 		                    <div class="animate-arroww">
 		                      <img class="main-animate-arrow" src="/assets/img/landingpage/Arrow.png" alt="">
 		                    </div>  
-		                        <p class="text-center gotham-rounded-bold clr-white header-links blog-category">mobility</p>
+		                        <p class="text-center gotham-rounded-bold clr-white header-links blog-category">{{post.category}}</p>
 		                  </div>
 		                  <div class="part2">
 		                    <p class="gotham-rounded-light clr-white">
-		                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		                      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		                      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		                      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		                      {{post.The_New_Use_Experience}}
 		                    </p>  
-		                    <a href="">Read more</a>    
+		                    <a href="{{post.permalink}}">Read more</a>    
 		                  </div>
 		                </div>    
 		                  
 		              </div>
 		              <div class="col-lg-4 blog1-div3" >
-
+		              	 {% elsif my_variable == 2 %}
 		                <div class=" half-height "  id="blog1-div3-part1">
 		                  <div   class="part1" >
 		                    <img class="blog-img" src="/assets/img/landingpage/Sample_Outline_Icon.png">
 		                    <div class="animate-arroww">
 		                      <img class="main-animate-arrow" src="/assets/img/landingpage/Arrow.png" alt="">
 		                    </div>  
-		                        <p class="text-center gotham-rounded-bold clr-white header-links blog-category">ui/ux</p>
+		                        <p class="text-center gotham-rounded-bold clr-white header-links blog-category">{{post.category}}</p>
 		                  </div>
 		                  <div class="part2">
 		                    <p class="gotham-rounded-light clr-white">
-		                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		                      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		                      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		                      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		                      {{post.The_New_Use_Experience}}
 		                    </p>  
-		                    <a href="">Read more</a>    
+		                    <a href="{{post.permalink}}">Read more</a>    
 		                  </div>
 		                </div>    
 		                
@@ -262,72 +254,59 @@
 		            </div>
 		              <div class="row " >
 		              <div class="col-lg-4 blog2-div1" >
+		              	{% elsif my_variable == 3 %}
 		                <div class=" half-height " class="expand-the-div" id="blog2-div1-part2">
 		                  <div   class="part1" >
 		                    <img class="blog-img" src="/assets/img/landingpage/Sample_Outline_Icon.png">
 		                    <div class="animate-arroww">
 		                      <img class="main-animate-arrow" src="/assets/img/landingpage/Arrow.png" alt="">
 		                    </div>  
-		                        <p class="text-center gotham-rounded-bold clr-white header-links blog-category">developer</p>
+		                        <p class="text-center gotham-rounded-bold clr-white header-links blog-category">{{post.category}}</p>
 		                  </div>
 		                  <div class="part2">
 		                    <p class="gotham-rounded-light clr-white">
-		                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		                      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		                      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		                      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		                      {{post.The_New_Use_Experience}}
 		                    </p>  
-		                    <a href="">Read more</a>    
+		                    <a href="{{post.permalink}}">Read more</a>    
 		                  </div>
 		                  
 		                </div>    
 		                
 		              </div>
 		              <div class="col-lg-4 blog2-div2">
+		              	{% elsif my_variable == 4 %}
 		                <div class=" half-height " id="blog2-div2-part2">
 		                  <div   class="part1" >
 		                    <img class="blog-img" src="/assets/img/landingpage/Sample_Outline_Icon.png">
 		                    <div class="animate-arroww">
 		                      <img class="main-animate-arrow" src="/assets/img/landingpage/Arrow.png" alt="">
 		                    </div>  
-		                        <p class="text-center gotham-rounded-bold clr-white header-links blog-category">devops</p>
+		                        <p class="text-center gotham-rounded-bold clr-white header-links blog-category">{{post.category}}</p>
 		                  </div>
 		                  <div class="part2">
 		                    <p class="gotham-rounded-light clr-white">
-		                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		                      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		                      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		                      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		                      {{post.The_New_Use_Experience}}
 		                    </p>  
-		                    <a href="">Read more</a>    
+		                    <a href="{{post.permalink}}">Read more</a>    
 		                  </div>
 		                </div>    
 		                
 		              </div>
 		              <div class="col-lg-4 blog2-div3">
-
+		              	{% elsif my_variable == 5 %}
 		                <div class=" half-height " id="blog2-div3-part2">
 		                  <div   class="part1" >
 		                    <img class="blog-img" src="/assets/img/landingpage/Sample_Outline_Icon.png">
 		                    <div class="animate-arroww">
 		                      <img class="main-animate-arrow" src="/assets/img/landingpage/Arrow.png" alt="">
 		                    </div>  
-		                        <p class="text-center gotham-rounded-bold clr-white header-links blog-category">architecture</p>
+		                        <p class="text-center gotham-rounded-bold clr-white header-links blog-category">{{post.category}}</p>
 		                  </div>
 		                  <div class="part2">
 		                    <p class="gotham-rounded-light clr-white">
-		                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		                      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		                      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		                      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		                      {{post.The_New_Use_Experience}}
 		                    </p>    
-		                    <a href="">Read more</a>  
+		                    <a href="{{post.permalink}}">Read more</a>   
 		                  </div>
 		                </div>    
 		                
@@ -335,7 +314,12 @@
 
 
 		            </div>
+		            {% endif %}
+
+		            {% assign assign my_variable = my_variable | plus:1  %}
+		            {% endfor %}
 		          </div>    
+
 
 
 
