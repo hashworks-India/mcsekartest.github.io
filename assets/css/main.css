@@ -1937,4 +1937,30 @@ img#big-ipad {
     position: absolute;
     top: 13%;
 }
+.iphone .carousel-banner4 {
+    width: 59%;
+    position: relative;
+    margin-left: 37%;
+    margin-top: -21.6%;
+    height: 108%;
+}
+.iphone .carousel-banner4 {
+    width: 59%;
+    position: relative;
+    margin-left: 37%;
+    margin-top: -21.6%;
+    height: 108%;
+}
+.idesktop .carousel-banner4 {
+    width: 48%;
+    position: relative;
+    margin-left: 29%;
+    margin-top: -14%;
+    height: 108%;
+}
+
+
+
+
+
 }

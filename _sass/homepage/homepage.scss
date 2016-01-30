@@ -1554,6 +1554,9 @@ transform: translateX(-600%)
     #big-desk{
          position: absolute;
     }
+    #big-ipad{
+         position: absolute;
+    }
     .ipad {
         
         width: 500px;
@@ -1562,12 +1565,67 @@ transform: translateX(-600%)
         bottom: 64px;
         right: 15%;
     }
-     .carousel-inner>.item>a>img, 
-    .carousel-inner>.item>img{
-      height: 268px;
-      width: 166px;  
+
+
+    .iphone .carousel-banner4 {
+        width: 48%;
+        position: relative;
+        margin-left: 29%;
+        margin-top: 10.4%;
+        height: 108%;
+    }
+    .iphone .carousel-banner4 .carousel-inner > .item > img {
+        margin-top: 9px;
+    }
+    .iphone .carousel-banner4 .carousel-inner{
+        width: 89%;
     }
 
+
+
+
+    .idesktop .carousel-banner4 {
+        width: 48%;
+        position: relative;
+        margin-left: 29%;
+        margin-top: 10.4%;
+        height: 108%;
+    }
+    .idesktop .carousel-banner4 .carousel-inner{
+        position: relative;
+        overflow: hidden;
+        width: 180%;
+        height: 60%;
+        margin-left: -52.6%;
+        }
+    .idesktop .carousel-banner4 .carousel-inner > .item > img {
+        margin-top: 9px;
+        height: 10%;
+        width: 90%;
+    }
+
+
+
+
+    .ipad .carousel-banner4 {
+        width: 48%;
+        position: relative;
+        margin-left: 29%;
+        margin-top: 10.4%;
+        height: 108%;
+    }
+    .ipad .carousel-banner4 .carousel-inner{
+        position: relative;
+        overflow: hidden;
+        width: 125%;
+        height: 86%;
+        margin-left: -18%;
+        margin-top: -4%;
+    }
+    .ipad .carousel-banner4 .carousel-inner > .item > img {
+        margin-top: -9px;
+        height: 10%; 
+    }
 
 
 
