@@ -157,21 +157,106 @@ $(document).ready(function(){
     $('.ipad').hide();
     $('.iphone').show();
 
+    $('.res1').mouseover(function(){
+        $('.res1').attr('src','/assets/img/landingpage/hover-mobile.svg');
+    });
+    $('.res1').mouseleave(function(){
+        if(!$(this).parent().hasClass("active"))
+        {
+        $('.res1').attr('src','/assets/img/landingpage/Responsive_Mobile_Icon.svg');
+        }
+    });
     $('.res1').click(function() {
+        if($(".res2").parent().hasClass("active"))
+        {
+            $(".res2").parent().removeClass("active");
+            $('.res2').attr('src','/assets/img/landingpage/Responsive_Desktop_Icon.svg');
+        }
+        if($(".res3").parent().hasClass("active"))
+        {
+            $(".res3").parent().removeClass("active");
+            $('.res3').attr('src','/assets/img/landingpage/Responsive_Tablet_Icon.svg');
+        }
+        $(this).parent().addClass("active");
          $('.idesktop').hide();
          $('.ipad').hide();
          $('.iphone').show();
+         $('.res1').attr('src','/assets/img/landingpage/hover-mobile.svg');
+    });
+
+     $('.res2').mouseover(function(){
+        $('.res2').attr('src','/assets/img/landingpage/hover-desk.svg');
+    });
+     $('.res2').mouseleave(function(){
+        if(!$(this).parent().hasClass("active"))
+        {
+        $('.res2').attr('src','/assets/img/landingpage/Responsive_Desktop_Icon.svg');
+        }
     });
     $('.res2').click(function() {
-        $('.iphone').hide();
-        $('.ipad').hide();
-        $('.idesktop').show();
+        if($(".res1").parent().hasClass("active"))
+        {
+            $(".res1").parent().removeClass("active");
+            $('.res1').attr('src','/assets/img/landingpage/Responsive_Mobile_Icon.svg');
+        }
+        if($(".res3").parent().hasClass("active"))
+        {
+            $(".res3").parent().removeClass("active");
+            $('.res3').attr('src','/assets/img/landingpage/Responsive_Tablet_Icon.svg');
+        }
+        $(this).parent().addClass("active");
+         $('.idesktop').show();
+         $('.ipad').hide();
+         $('.iphone').hide();
+         $('.res2').attr('src','/assets/img/landingpage/hover-desk.svg');
+    });
+
+
+     $('.res3').mouseover(function(){
+        $('.res3').attr('src','/assets/img/landingpage/hover-ipad.svg');
+    });
+     $('.res3').mouseleave(function(){
+        if(!$(this).parent().hasClass("active"))
+        {
+        $('.res3').attr('src','/assets/img/landingpage/Responsive_Tablet_Icon.svg');
+        }
     });
     $('.res3').click(function() {
-        $('.idesktop').hide();
-        $('.iphone').hide();
-        $('.ipad').show();
+        if($(".res1").parent().hasClass("active"))
+        {
+            $(".res1").parent().removeClass("active");
+            $('.res1').attr('src','/assets/img/landingpage/Responsive_Mobile_Icon.svg');
+        }
+        if($(".res2").parent().hasClass("active"))
+        {
+            $(".res2").parent().removeClass("active");
+            $('.res2').attr('src','/assets/img/landingpage/Responsive_Desktop_Icon.svg');
+        }
+        $(this).parent().addClass("active");
+         $('.idesktop').hide();
+         $('.ipad').show();
+         $('.iphone').hide();
+         $('.res3').attr('src','/assets/img/landingpage/hover-ipad.svg');
     });
+
+
+    // $('.res2').click(function() {
+    //     $('.iphone').hide();
+    //     $('.ipad').hide();
+    //     $('.idesktop').show();
+    //     $('.res2').attr('src','/assets/img/landingpage/hover-desk.svg');
+    // });
+    // $('.res3').click(function() {
+    //     $('.idesktop').hide();
+    //     $('.iphone').hide();
+    //     $('.ipad').show();
+    //     $('.res3').attr('src','/assets/img/landingpage/hover-ipad.svg');
+    // });
+
+    $('mobile-hover').click(function(){
+
+    });
+    
 
 
 

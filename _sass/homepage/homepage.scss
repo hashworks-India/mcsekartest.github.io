@@ -13,7 +13,7 @@
     color: #fff;
     width: 53px;
     margin-top: 15%;
-    margin-left: 40%;
+    margin-left: 20%;
     opacity: 0;
     -webkit-transition: all 0.5s ease 0.3s;
     -moz-transition: all 0.5s ease 0.3s;
@@ -26,7 +26,7 @@
 #blog1-div2-part1:hover .animate-arroww .main-animate-arrow , #blog2-div2-part2:hover .animate-arroww .main-animate-arrow,
 #blog1-div3-part1:hover .animate-arroww .main-animate-arrow, #blog2-div3-part2:hover .animate-arroww .main-animate-arrow,
 {
-  margin-left: 65%;
+  margin-left: 45%;
   opacity: 1; 
 }
 .blog-banner .blog-category{
@@ -1514,6 +1514,9 @@ transform: translateX(-600%)
       bottom: 0;
       width: 100%;
 	  z-index: 5;
+    }
+    img#res1:hover {
+    stroke: red;
     }
     .banner3-text {
         left: 10%;
