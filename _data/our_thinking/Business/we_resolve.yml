@@ -1,10 +1,10 @@
 part1:
-   - { title: 'Skill Gaps',
+   - { title: 'Technical Debts',
        imagesrc: '/assets/img/homepage/it-services.jpg',
        content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam aliquid repellat facere exercitationem voluptatem quibusdam reiciendis itaque, debitis consequatur tenetur dolorum a libero esse recusandae quis molestiae unde totam, accusamus placeat accusantium eaque odit minima atque? Nam expedita, pariatur laboriosam. Assumenda nisi tempore hic, ullam corporis adipisci ratione id illum!'}
 part2:
    - { imagesrc: '/assets/img/homepage/job-board.jpg',
-   	   title: 'Technical Debts',
+   	   title: 'Platform Incoherence',
        content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam aliquid repellat facere exercitationem voluptatem quibusdam reiciendis itaque, debitis consequatur tenetur dolorum a libero esse recusandae quis molestiae unde totam, accusamus placeat accusantium eaque odit minima atque? Nam expedita, pariatur laboriosam. Assumenda nisi tempore hic, ullam corporis adipisci ratione id illum!'}
 part3:
    - { title: 'Data Proliferation',
@@ -20,5 +20,5 @@ part5:
        content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam aliquid repellat facere exercitationem voluptatem quibusdam reiciendis itaque, debitis consequatur tenetur dolorum a libero esse recusandae quis molestiae unde totam, accusamus placeat accusantium eaque odit minima atque? Nam expedita, pariatur laboriosam. Assumenda nisi tempore hic, ullam corporis adipisci ratione id illum!'}
 part6:
    - { imagesrc: '/assets/img/homepage/job-board.jpg',
-   	   title: 'Platform Incoherence',
+   	   title: 'Skill Gaps',
        content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam aliquid repellat facere exercitationem voluptatem quibusdam reiciendis itaque, debitis consequatur tenetur dolorum a libero esse recusandae quis molestiae unde totam, accusamus placeat accusantium eaque odit minima atque? Nam expedita, pariatur laboriosam. Assumenda nisi tempore hic, ullam corporis adipisci ratione id illum!'}
