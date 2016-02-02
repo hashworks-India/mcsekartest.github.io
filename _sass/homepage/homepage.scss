@@ -1895,13 +1895,15 @@ div#carousel_inner2 {
         position: absolute;
       }
       .hm-text1 {
-        top: 115%;
+        top: 103%;
         left: 50%;
         width: 1000px;
         margin: 0 auto;
         transform: translate(-50%,-50%);
-        color: #ee2b7b;
       }
+     .hm-text1>h2{
+     color: #fff;
+     }
 
       .app-banner .latest-think {
         color: #fff;
