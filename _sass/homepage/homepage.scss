@@ -1244,7 +1244,7 @@ to {
         font-weight: 800;
         color: #fff;
         text-transform: uppercase;
-        margin: 40px 0 35px;
+        margin: 40px 0 60px;
         text-align: center;
     }
     .home-hr {
@@ -1302,6 +1302,7 @@ to {
 #banner-sky {
     background: transparent url("/assets/img/landingpage/banner-4.jpg") repeat scroll bottom center / cover;
     position: relative;
+    z-index: 1;
 }
 
 @-webkit-keyframes  parallax_bgtwo {   
@@ -1714,7 +1715,7 @@ transform: translateX(-600%)
       -ms-transform: translate(-50%,-50%);
       -o-transform: translate(-50%,-50%);
       transform: translate(-50%,-50%);
-      z-index: 1;
+      z-index: 10;
     }
 
     .scroll-indicators > li {
