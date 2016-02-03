@@ -5,7 +5,9 @@ part1:
 part2:
    - { imagesrc: '/assets/img/homepage/job-board.jpg',
    	   title: 'Platform Incoherence',
-       content: 'Market demand & fierce competition is pushing every large organizations for rapid adoption of API based application development to achieve greater IT agility. The more quickly business can create new products or feature changes in todays market, the better they can innovate, collaborate & improve customer experience. The new hallmark enterprise development is to build simpler, modular, amalgamated & intelligent systems capable of handling larger business tasks. APIs will be the secret sauce & the glue for rapid devleopment of these platforms. Platform based application ecosystem enable quick iteration of business process to respond to change swiftly. Rapid adoption of clould & mobility using this platform approach not only eliminate the technology & cost barrier but also create new business models & capabilities to innovate to deliver value.  Companies view platforms are the way to attack bigger opportunities & means to solve bigger problems.'}
+       content: 'Applications & Data sets underlie the core construct to handle any business task.
+       
+       '}
 part3:
    - { title: 'Data Proliferation',
        imagesrc: '/assets/img/homepage/it-services.jpg',
