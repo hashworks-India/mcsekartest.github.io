@@ -5,7 +5,7 @@ part1:
 part2:
    - { imagesrc: '/assets/img/homepage/job-board.jpg',
    	   title: 'Platform Incoherence',
-       content: 'Every large organization will have big, complex enterprise software systems and IT teams will keep customizing those systems providing enhancements, patches and more. Market demand & fierce competition is pushing large organizations for rapid adoption of Agile movement to achieve greater IT agility. There is a paradigm shift in the application development model towards building simpler, modular & custom apps.'}
+       content: 'Market demand & fierce competition is pushing every large organizations for rapid adoption of Agile development to achieve greater IT agility. The more quickly business can create new products or feature changes in todays market, the better they can innovate, collaborate & improve customer experience. The new hallmark enterprise development is to build simpler, modular, amalgamated & intelligent systems capable of handling larger business tasks. Platform based application ecosystem enable quick iteration of business process to respond to change swiftly. Rapid adoption of clould & mobility not only eliminate the technology & cost barrier but also create new business models & capabilities to innovate to deliver value. APIs will be the secret sauce & the glue for rapid devleopment of this platforms. Companies view platforms are the way to attack bigger opportunities & means to solve bigger problems.'}
 part3:
    - { title: 'Data Proliferation',
        imagesrc: '/assets/img/homepage/it-services.jpg',
