@@ -5,7 +5,7 @@ part1:
 part2:
    - { imagesrc: '/assets/img/homepage/job-board.jpg',
    	   title: 'Platform Incoherence',
-       content: 'Every large organization will have big, complex enterprise software systems and IT teams will keep customizing those systems providing enhancements, patches and more. Rapid adoption of Agile movement is pushing organizations for greater IT agility, there is a paradigm change in the application development model towards building simpler, modular & custom apps.'}
+       content: 'Every large organization will have big, complex enterprise software systems and IT teams will keep customizing those systems providing enhancements, patches and more. Market demand & fierce competition is pushing large organizations for rapid adoption of Agile movement to achieve greater IT agility. There is a paradigm shift in the application development model towards building simpler, modular & custom apps.'}
 part3:
    - { title: 'Data Proliferation',
        imagesrc: '/assets/img/homepage/it-services.jpg',
