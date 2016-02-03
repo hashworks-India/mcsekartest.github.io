@@ -11,7 +11,7 @@ part2:
 part3:
    - { title: 'Data Proliferation',
        imagesrc: '/assets/img/homepage/it-services.jpg',
-       content: 'Data is the life blood of every organization. Data eco-system in todays business is complex and littered with data silos. Making business sense out of unprecedented amount of available data is the biggest task every organization is facing today. Data from myriad data sources are adding valuable insights to the organizations apart from datas they already collect.  '}
+       content: 'Data is the life blood of every organization. Data eco-system in todays business is complex and littered with data silos. Making business sense out of unprecedented amount of available data is the biggest task every organization is facing today. Data from myriad data sources are adding valuable insights to the businesses apart from the data that they already collect.  '}
 part4:
    - { imagesrc: '/assets/img/homepage/job-board.jpg',
    	   title: 'Data Gaps',
