@@ -5,7 +5,7 @@ part1:
 part2:
    - { imagesrc: '/assets/img/homepage/job-board.jpg',
    	   title: 'Platform Incoherence',
-       content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam aliquid repellat facere exercitationem voluptatem quibusdam reiciendis itaque, debitis consequatur tenetur dolorum a libero esse recusandae quis molestiae unde totam, accusamus placeat accusantium eaque odit minima atque? Nam expedita, pariatur laboriosam. Assumenda nisi tempore hic, ullam corporis adipisci ratione id illum!'}
+       content: 'Every large organization will have big, complex enterprise software systems and IT teams will keep customizing those systems providing enhancements, patches and more. Rapid adoption of Agile movement is pushing organizations for greater IT agility, there is a paradigm change in the application development model towards building simpler, modular & custom apps.'}
 part3:
    - { title: 'Data Proliferation',
        imagesrc: '/assets/img/homepage/it-services.jpg',
