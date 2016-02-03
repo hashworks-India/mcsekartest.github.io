@@ -14,7 +14,7 @@ part3:
        content: 'Data is the life blood of every organization. Data eco-system in todays business is complex and littered with data silos. Making business sense out of unprecedented amount of available data is the biggest task every organization is facing today. New external data sources are adding valuable insights to the businesses apart from the data that they already collect. Challenges that confront this proliferation is ability to securely access, aggregate, analyse & share the data for competetive advantage. This mandate the need for end-to-end data management solution - Creation, Integration, Aggregation, Processing, Security, Velocity & so on. This means business executives should understand the need for end-to-end view of data by integration of data across enterprise and sharing them in a defined way in order to achive their business goals.'}
 part4:
    - { imagesrc: '/assets/img/homepage/job-board.jpg',
-   	   title: 'Data Gaps',
+   	   title: 'Cultural Gaps',
        content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam aliquid repellat facere exercitationem voluptatem quibusdam reiciendis itaque, debitis consequatur tenetur dolorum a libero esse recusandae quis molestiae unde totam, accusamus placeat accusantium eaque odit minima atque? Nam expedita, pariatur laboriosam. Assumenda nisi tempore hic, ullam corporis adipisci ratione id illum!'}
 part5:
    - { title: 'UI Clutter',
