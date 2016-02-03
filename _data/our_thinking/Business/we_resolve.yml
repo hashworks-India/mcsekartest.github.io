@@ -1,7 +1,7 @@
 part1:
    - { title: 'Technical Debts',
        imagesrc: '/assets/img/homepage/it-services.jpg',
-       content: 'An urgent business need can push a functionality into your IT system in two ways. First approach is a quick & messy one, companies at times tend to pick a quick root to address the market opportunity leaving further changes harder in the future. The other result in cleaner design.     '}
+       content: 'An urgent business need can push a functionality into your IT system in two ways. First approach is a quick & messy one, companies at times tend to pick a quick root to address the market opportunity leaving further changes harder in the future. The other result in cleaner design. Doing things quick & dirty way might add a short term business value but accrue with a technical debt.    '}
 part2:
    - { imagesrc: '/assets/img/homepage/job-board.jpg',
    	   title: 'Platform Incoherence',
