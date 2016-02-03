@@ -1,7 +1,7 @@
 part1:
    - { title: 'Technical Debts',
        imagesrc: '/assets/img/homepage/it-services.jpg',
-       content: 'A functionality may get into your IT system to fulfil an urgent business need in two ways. First approach is quick to do but messy & the other must be a cleaner design. Companies at times tend to pick a quick root to address the market opportunity leaving further changes harder in the future. The later will take a long time to put the feature in place.   '}
+       content: 'A functionality may get into your IT system to fulfil an urgent business need in two ways. First approach is quick & messy, companies at times tend to pick a quick root to address the market opportunity leaving further changes harder in the future. The other result in cleaner design    '}
 part2:
    - { imagesrc: '/assets/img/homepage/job-board.jpg',
    	   title: 'Platform Incoherence',
