@@ -5,7 +5,7 @@ part1:
 part2:
    - { imagesrc: '/assets/img/homepage/job-board.jpg',
    	   title: 'Platform Incoherence',
-       content: 'Applications & Data sets underlie the core construct to handle any business task.
+       content: 'Applications & Data sets underlie the core construct to handle any business task. It is imperative for systems to communicate with each other to share information across physcial and logical boundaries and solve interdependencies to fulfil business scenarios. The trend towards integration is increasing rapidly to support complex business eco-systems, processes & businesss opportunities. Platform adoption has grown out of intrinsic need.
        
        '}
 part3:
