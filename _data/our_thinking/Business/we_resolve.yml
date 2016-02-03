@@ -11,7 +11,7 @@ part2:
 part3:
    - { title: 'Data Proliferation',
        imagesrc: '/assets/img/homepage/it-services.jpg',
-       content: 'Data is the life blood of every organization. Data eco-system in todays business is complex and littered with data silos. Making business sense out of unprecedented amount of available data is the biggest task every organization is facing today. New external data sources are adding valuable insights to the businesses apart from the data that they already collect. Challenges that confront this proliferation is ability to securely access, aggregate, analyse & share the data for competetive advantage. This mandate the need for data technology with end-end data management solution - creation, Integration, Aggregation, Processing, security & so on. This means business leaders need to develop an end-to-end view of data in order to achive their business goals  '}
+       content: 'Data is the life blood of every organization. Data eco-system in todays business is complex and littered with data silos. Making business sense out of unprecedented amount of available data is the biggest task every organization is facing today. New external data sources are adding valuable insights to the businesses apart from the data that they already collect. Challenges that confront this proliferation is ability to securely access, aggregate, analyse & share the data for competetive advantage. This mandate the need for data technology with end-end data management solution - Creation, Integration, Aggregation, Processing, security & so on. This means business leaders need to develop an end-to-end view of data in order to achive their business goals  '}
 part4:
    - { imagesrc: '/assets/img/homepage/job-board.jpg',
    	   title: 'Data Gaps',
