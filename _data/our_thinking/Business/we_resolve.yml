@@ -19,7 +19,7 @@ part4:
 part5:
    - { title: 'Cultural Gaps',
        imagesrc: '/assets/img/homepage/it-services.jpg',
-       content: 'Most organizations settle at mediocrity after achieving early heights. Very few organizations leap forward to achieve excellence and endure. '}
+       content: 'Many organizations settle at mediocrity after achieving early heights. Very few organizations leap forward to achieve excellence and endure. '}
 part6:
    - { imagesrc: '/assets/img/homepage/job-board.jpg',
    	   title: 'Skill Shortage',
