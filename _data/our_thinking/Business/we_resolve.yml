@@ -15,11 +15,7 @@ part3:
 part4:
    - { imagesrc: '/assets/img/homepage/job-board.jpg',
    	   title: 'Design Clutter',
-       content: 'Many businesses are still learning how to translate & embed digital interactions with customers in their existing technology platform for top-line growth.Be it a product design, data engineering, platform architectue, experience design, or UXUI for internal IT systems, or data analytics or even agile transofrmation we help customer capture the value from their ideas & initiatives. With the dramatic increase of business opportunities & technology innovations companies are competing to push their products and service to the customers to be top-notch. Only differentiator that set the best from the rest is intuitiveness to design principles and creating meaninful experience with purpose and point of view.
-       
-       
-       
-       '}
+       content: 'Many businesses are still learning how to translate & embed digital interactions with customers in their existing technology platform for top-line growth.Be it a product design, data engineering, platform architectue, experience design, or UXUI for internal IT systems, or data analytics or even agile transofrmation we help customer capture the value from their ideas & initiatives. With the dramatic increase of business opportunities & technology innovations companies are competing to push their products and service to the customers to be top-notch. Only differentiator that set the best from the rest is intuitiveness to design principles and creating meaninful experience with purpose and point of view.'}
 part5:
    - { title: 'Cultural Gaps',
        imagesrc: '/assets/img/homepage/it-services.jpg',
