@@ -1,7 +1,7 @@
 part1:
    - { title: 'Fluid Architecture',
        imagesrc: '/assets/img/homepage/it-services.jpg',
-       content: 'To compete with speed & agility, companies can no longer afford to run multi-year program for system implementations. There is a paradigm shift in building software from monolith to a world of nimble, faster, modular, reusable & contextual application architectures sourced for internal & external use. Applications are not built to maintain for a specific purpose anymore, future of applications is modular & convene with modern integration techniques and a cloud-first, mobile-first approach. Fluid architecture enable the IT-systems to be continuous delivered & evlove with the business change.'}
+       content: 'To compete with speed & agility, companies can no longer afford to run multi-year program for system implementations. There is a paradigm shift in building software from monolith to a world of nimble, faster, modular, reusable & contextual application architectures sourced for internal & external use. Applications are not built to maintain for a specific purpose anymore, future of applications is modular & convene with modern integration techniques and a cloud-first, mobile-first approach. Fluid architecture enable the IT-systems to evlove simultaneously with the continuous business change.'}
 part2:
    - { imagesrc: '/assets/img/homepage/job-board.jpg',
    	   title: 'Design For Analytics',
