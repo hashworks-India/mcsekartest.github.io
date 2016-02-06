@@ -4,8 +4,8 @@ part1:
        content: 'To compete with speed & agility, companies can no longer afford to run multi-year program for system implementations. There is a paradigm shift in building software from monolith to a world of nimble, faster, modular, reusable & contextual application architectures sourced for internal & external use. Applications are not built to maintain for a specific purpose anymore, future of applications is modular & convene with modern integration techniques and a cloud-first, mobile-first approach. Fluid architecture enable the IT-systems to evlove & deliver simultaneously with the continuous business change & market demand.'}
 part2:
    - { imagesrc: '/assets/img/homepage/job-board.jpg',
-   	   title: 'Design For Analytics',
-       content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam aliquid repellat facere exercitationem voluptatem quibusdam reiciendis itaque, debitis consequatur tenetur dolorum a libero esse recusandae quis molestiae unde totam, accusamus placeat accusantium eaque odit minima atque? Nam expedita, pariatur laboriosam. Assumenda nisi tempore hic, ullam corporis adipisci ratione id illum!'}
+   	   title: 'Data Plumbing',
+       content: 'The problem is no longer about absence of data or gathering enough data,  enterprises are finding hardship to get the right data to draw trends, patterns, usage of data for new business opportunites & competetive advantage.    '}
 part3:
    - { title: 'Agile & DevOps',
        imagesrc: '/assets/img/homepage/it-services.jpg',
