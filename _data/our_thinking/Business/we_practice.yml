@@ -5,7 +5,7 @@ part1:
 part2:
    - { imagesrc: '/assets/img/homepage/job-board.jpg',
    	   title: 'Data Plumbing',
-       content: 'Businesses today are no longer posed with lack of enough data, they are challenged to analyse the right data to gain meaningful insights about their current & future trends. So the goal is to repurpose the data as a strategic input for determining business gaps and customer needs. Plumbing the data gaps '}
+       content: 'Businesses today are no longer posed with lack of enough data, they are challenged to analyse the right data to gain meaningful insights about their current & future trends. So the goal is to repurpose the data as a strategic input for determining business gaps and customer needs. Plumbing the data gaps requires fundamental shift in the design philosophy '}
 part3:
    - { title: 'Agile & DevOps',
        imagesrc: '/assets/img/homepage/it-services.jpg',
