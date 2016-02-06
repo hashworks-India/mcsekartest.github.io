@@ -5,7 +5,7 @@ part1:
 part2:
    - { imagesrc: '/assets/img/homepage/job-board.jpg',
    	   title: 'Data Plumbing',
-       content: 'The problem is no longer about absence of data or gathering enough data,  enterprises are finding hardship to get the right data to draw trends, patterns, usage of data for new business opportunites & competetive advantage.    '}
+       content: 'Business todays are no longer posed with lack of enough data, they are challenged to find the right data to have a strategic direction.	    '}
 part3:
    - { title: 'Agile & DevOps',
        imagesrc: '/assets/img/homepage/it-services.jpg',
