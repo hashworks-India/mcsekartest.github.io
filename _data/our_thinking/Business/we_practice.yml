@@ -17,7 +17,7 @@ part4:
 part5:
    - { title: 'OODA',
        imagesrc: '/assets/img/homepage/it-services.jpg',
-       content: 'OODA refers to Observe-Orient-Decide-Act decision cycle for war-combat operations by John Boyd. This principle is widely used in lean-startup principles of Build-Measure-Learn. According to John Boyd, all decisions are based on observations and unfolding of the change for a given problem in context. OODA loops are widely practiced in the software delivery process to respond to variablity & quality of a shippable product with a faster feedback loop.'}
+       content: 'OODA refers to Observe-Orient-Decide-Act decision cycle for war-combat operations by John Boyd. This principle is widely used in lean-startup principles of Build-Measure-Learn. According to John Boyd, all decisions are based on observations and unfolding of the change for a given problem in context. OODA loops are widely practiced in the software delivery process to respond to variablity & adoption of a shippable product with the ability to respond to change quickly.'}
 part6:       
    - { imagesrc: '/assets/img/homepage/job-board.jpg',
    	   title: 'Design Thinking',
