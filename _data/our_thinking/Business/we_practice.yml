@@ -9,7 +9,7 @@ part2:
 part3:
    - { title: 'Agile & DevOps',
        imagesrc: '/assets/img/homepage/it-services.jpg',
-       content: 'Software development is a discovery process, it is more adoptive in nature not prescriptive. It is all about shorter, time boxed & automated approach with a tangible piece of shippable work at the end of each iteration. Focus is not on writing perfect requirement document & clean code but more about writing contextual code for tangible user stories that delivery business value. Agile & DevOps underpin the productivity of software development process. Agile focus on project management & delivery practices while DevOps improves the velocity of delivery & test cycles, faster feedback cycles, service virtualization, automation, refactoring and orchestration of release pipeline.'}
+       content: 'Software development is a discovery process, it is more adoptive in nature and not prescriptive. It is all about shorter, time boxed & automated approach with a tangible piece of shippable work at the end of each iteration. Focus is not on writing perfect requirement document & a clean code but more about writing contextual code for tangible user stories that deliver business value. Agile & DevOps underpin the productivity of software development process. Agile focus on project management & delivery practices while DevOps improves the velocity of delivery & test cycles, faster feedback cycles, service virtualization, automation, refactoring and orchestration of release pipeline.'}
 part4:
    - { imagesrc: '/assets/img/homepage/job-board.jpg',
    	   title: 'Flow Thinking',
