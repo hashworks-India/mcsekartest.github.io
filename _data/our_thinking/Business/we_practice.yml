@@ -5,7 +5,7 @@ part1:
 part2:
    - { imagesrc: '/assets/img/homepage/job-board.jpg',
    	   title: 'Data Plumbing',
-       content: 'Business todays are no longer posed with lack of enough data, they are challenged to find the right data to have a meaningful insight about their current & future trends.	    '}
+       content: 'Business todays are no longer posed with lack of enough data, they are challenged to find the right data to gain meaningful insights about their current & future trends.	    '}
 part3:
    - { title: 'Agile & DevOps',
        imagesrc: '/assets/img/homepage/it-services.jpg',
