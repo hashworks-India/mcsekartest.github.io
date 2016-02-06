@@ -13,7 +13,7 @@ part3:
 part4:
    - { imagesrc: '/assets/img/homepage/job-board.jpg',
    	   title: 'Flow Thinking',
-       content: 'Flow-based product development approach is a rational view to software development process. It debunks the myth of current orthodoxy.'}
+       content: 'Flow-based product development approach by Don Reinersten is a rational view to software development process. It debunks the myth of current orthodoxy. The core paradigm of this model is to build, test & release software in small batch transfers, enable quick feedback cycles & limited work-in-process inventory.  '}
 part5:
    - { title: 'OODA',
        imagesrc: '/assets/img/homepage/it-services.jpg',
