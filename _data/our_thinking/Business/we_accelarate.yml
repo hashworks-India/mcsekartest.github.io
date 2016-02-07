@@ -7,7 +7,7 @@ part2:
    	   title: 'Digital Business',
        content: 'With technology being the driver in todays economy, IT is driving the transformation in every business. Organizations are taking a Binodal approach to run the business & also to enable transformation. With rapid proliferation of technology trends, companies have unprecedented opportunities to innovate, redesign their products & services and gain access to new markets. IT has become a new strategic asset for organizations to differentiate and compete. We can help you drive change with new tools, new skills & ability to fulfil your new digital future. '}
 part3:
-   - { title: 'Data Synthesis',
+   - { title: 'Software Intelligence',
        imagesrc: '/assets/img/homepage/it-services.jpg',
        content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam aliquid repellat facere exercitationem voluptatem quibusdam reiciendis itaque, debitis consequatur tenetur dolorum a libero esse recusandae quis molestiae unde totam, accusamus placeat accusantium eaque odit minima atque? Nam expedita, pariatur laboriosam. Assumenda nisi tempore hic, ullam corporis adipisci ratione id illum!'}
 part4:
