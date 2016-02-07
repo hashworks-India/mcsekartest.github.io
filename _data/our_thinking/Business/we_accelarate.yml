@@ -13,7 +13,7 @@ part3:
 part4:
    - { imagesrc: '/assets/img/homepage/job-board.jpg',
    	   title: 'UX Adoption',
-       content: 'Companies today adopt UX-first approach as part of their product development strategy. UX goes beyond mere functionality & usability. Companies see their products as interfaces between them and their customers delivering meaningful experience which itself manifest as a product.   '}
+       content: 'Companies today adopt UX-first approach as part of their product development strategy. UX goes beyond mere functionality & usability. Companies see their products as an interface between them and their customers delivering meaningful experience which itself manifest as a product.   '}
 part5:
    - { title: 'Workforce Collaboration',
        imagesrc: '/assets/img/homepage/it-services.jpg',
