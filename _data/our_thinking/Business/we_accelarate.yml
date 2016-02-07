@@ -17,7 +17,7 @@ part4:
 part5:
    - { title: 'Workforce Collaboration',
        imagesrc: '/assets/img/homepage/it-services.jpg',
-       content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam aliquid repellat facere exercitationem voluptatem quibusdam reiciendis itaque, debitis consequatur tenetur dolorum a libero esse recusandae quis molestiae unde totam, accusamus placeat accusantium eaque odit minima atque? Nam expedita, pariatur laboriosam. Assumenda nisi tempore hic, ullam corporis adipisci ratione id illum!'}
+       content: 'Technology empowers people to learn, adopt, evolve & change. Organizations must be built for change, which means how you repurpose the company for the market needs & customer behaviour. To achieve scale & to stay relevant companies should need to adopt to new skills, new trends, technology proliferation and whole new ways of working. Of all the needs, the focal-point for any change are the people and their readiness. People remain at the core of any business success. For companies to propel themselves forward, more than right technology they need right people to do the right things. Imagine a workforce that is change-ready and responsive that go beyond the boundaries of your organization.'}
 part6:
    - { title: 'Workforce Collaboration',
        imagesrc: '/assets/img/homepage/it-services.jpg',
