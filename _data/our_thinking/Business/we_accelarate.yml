@@ -9,7 +9,7 @@ part2:
 part3:
    - { title: 'Software Intelligence',
        imagesrc: '/assets/img/homepage/it-services.jpg',
-       content: 'Companies with a Data driven culture'}
+       content: 'Companies with a data driven culture are productive & consistently make right decisions. Ability to make decisions, learn, evolve & discover form the key tenets for software intelligence today.	'}
 part4:
    - { imagesrc: '/assets/img/homepage/job-board.jpg',
    	   title: 'UX Adoption',
