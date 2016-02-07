@@ -5,7 +5,7 @@ part1:
 part2:
    - { imagesrc: '/assets/img/homepage/job-board.jpg',
    	   title: 'Digital Business',
-       content: 'With technology being the driver in todays economy, IT is driving the transformation in every business. Organizations are taking a Binodal approach to run the business & also to enable transformation. With rapid proliferation of technology trends, companies have unprecedented opportunities to innovate, redesign their products & services and gain access to new markets.     '}
+       content: 'With technology being the driver in todays economy, IT is driving the transformation in every business. Organizations are taking a Binodal approach to run the business & also to enable transformation. With rapid proliferation of technology trends, companies have unprecedented opportunities to innovate, redesign their products & services and gain access to new markets. IT has become a new strategic asset for organizations to differentiate and compete. We can help you drive change with new tools, new skills & ability to fulfil your new digital future. '}
 part3:
    - { title: 'Data Synthesis',
        imagesrc: '/assets/img/homepage/it-services.jpg',
