@@ -1,7 +1,7 @@
 part1:
    - { title: 'Delivery Velocity',
        imagesrc: '/assets/img/homepage/it-services.jpg',
-       content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam aliquid repellat facere exercitationem voluptatem quibusdam reiciendis itaque, debitis consequatur tenetur dolorum a libero esse recusandae quis molestiae unde totam, accusamus placeat accusantium eaque odit minima atque? Nam expedita, pariatur laboriosam. Assumenda nisi tempore hic, ullam corporis adipisci ratione id illum!'}
+       content: 'Strong IT performance ensure companies to achieve long term sucess & gain real business value. Automation of deployment practices can eliminate the antipatterns and bring visibility to teams involved by aiding cross functional collaboration, enabling faster feedback so that problems are identified and resolved early. A repeated, reliable & more frequent code deployments with fewer failures will definitely add to the productivity goals of the companies and it also attribute to their profitability & market share. Investing in IT-initiatives can deliver real outcomes and give businesses a competitive advantage.'}
 part2:
    - { imagesrc: '/assets/img/homepage/job-board.jpg',
    	   title: 'Digital Business',
@@ -22,4 +22,3 @@ part6:
    - { title: 'Workforce Collaboration',
        imagesrc: '/assets/img/homepage/it-services.jpg',
        content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam aliquid repellat facere exercitationem voluptatem quibusdam reiciendis itaque, debitis consequatur tenetur dolorum a libero esse recusandae quis molestiae unde totam, accusamus placeat accusantium eaque odit minima atque? Nam expedita, pariatur laboriosam. Assumenda nisi tempore hic, ullam corporis adipisci ratione id illum!'}
-
