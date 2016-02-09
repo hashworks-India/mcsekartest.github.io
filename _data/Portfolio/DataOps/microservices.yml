@@ -1,5 +1,7 @@
 title: 'Microservices Architecture'
-content: 'MSA is an emerging architectural pattern for building distributed applications that support two speed architecture. '
+content: 'MSA is an emerging architectural pattern for building distributed applications that support Binodal architecture with different capability views. One that supports business change quickly & the other providing stable, secure & predictable IT service.
+
+One that enables quick changes & rapid iteration creating business impact with an agile & devops approach, while the other system that is transaction focused running reliable, efficient & secure.  '
 testimonial:
     - { testimony: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non ipsa, cum, quis odit eum laboriosam doloremque distinctio itaque eos dolore.',name: 'Markus Jefferson',role: 'CEO',company_name: 'Company Name' }
     - { testimony: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non ipsa, cum, quis odit eum laboriosam doloremque distinctio itaque eos dolore1',name: 'Markus Jefferson1',role: 'CEO',company_name: 'Company Name' }
