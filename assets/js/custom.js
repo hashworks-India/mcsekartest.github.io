@@ -871,6 +871,26 @@ $("#div2-right-div-part4").css("display", "none");
       $("#blog1-div3-part1").animate({'top' : '0%'},844);  
   });      
 
+/*our thinking */
+  $("#div-top-left").click(function(){
+    $("#buisness-tab").hide();
+    $("#main-top-left").show();
+
+    });
+   $("#div-top-right").click(function(){
+    $("#buisness-tab").hide();
+    $("#main-top-right").show();
+
+    });
+    $("#div-bottom-left").click(function(){
+    $("#buisness-tab").hide();
+    $("#main-bottom-left").show();
+
+    });
+
+
+
+
 
 
 });

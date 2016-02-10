@@ -1126,17 +1126,46 @@ html {
 /*End of upskilling-devops*/
 
 /* new ourthinking */
+	.main-content {
+	    overflow: hidden;
+	}
 	.thinking-height {
 		height: 300px;
 		cursor:pointer;
 	}
 	.thinking-height:hover {
-		background-color: #bbb;
+		background-color: #e8e8e8;
 	}
 	.content {
 		padding: 50px 0px 0px;
 	}
-	
+	#main-top-left,#main-top-right,#main-bottom-left{
+		display: none;
+	}
+	#main-top-left {
+		height:252vh;
+		width: 100%;
+		overflow: hidden;
+		/*margin-top: 61px;*/
+	    animation: fadein3 4s;
+	    -moz-animation: fadein3 4s; /* Firefox */
+	    -webkit-animation: fadein3 4s; /* Safari and Chrome */
+	    -o-animation: fadein3 4s; /* Opera */
+}
+@keyframes fadein3 {
+    from {
+		/*margin-top: 300px;*/
+        height:2vh;
+		/*width: 2%;*/
+		/*margin-left: -748px;*/
+    }
+    to {
+        height:252vh;
+        /*margin-left: 0px;*/
+		/*width: 100%;*/
+		/*margin-top: 61px;*/
+    }
+}
 /* end of new our thinking */
 
 	
