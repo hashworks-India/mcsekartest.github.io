@@ -424,15 +424,15 @@
 				<circle fill="#FFCD4D" cx="913.104" cy="60.622" r="12.581"/>
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 82.1294 76.7007)" fill="#405158" font-family="'GothamRounded-Bold'" font-size="9.8912">Data Engineering</text>
-		<text transform="matrix(1 0 0 1 172.1772 191.6836)" fill="#405158" font-family="'GothamRounded-Bold'" font-size="9.8912">DevOps</text>
-		<text transform="matrix(1 0 0 1 585.3867 95.8281)" fill="#405158" font-family="'GothamRounded-Bold'" font-size="9.8912">Infrastructure</text>
-		<text transform="matrix(1 0 0 1 768.4795 116.7329)"><tspan x="0" y="0" fill="#405158" font-family="'GothamRounded-Bold'" font-size="9.8912">Elastic</tspan><tspan x="0" y="11.87" fill="#405158" font-family="'GothamRounded-Bold'" font-size="9.8912">Workforce</tspan></text>
-		<text transform="matrix(1 0 0 1 254.1138 54.1113)" fill="#405158" font-family="'GothamRounded-Bold'" font-size="9.8912">Mobility</text>
-		<text transform="matrix(1 0 0 1 395.957 67.2617)" fill="#405158" font-family="'GothamRounded-Bold'" font-size="9.8912">UI/UX</text>
-		<text transform="matrix(1 0 0 1 902.4111 64.2266)" fill="#405158" font-family="'GothamRounded-Bold'" font-size="9.8912">Agile</text>
-		<text transform="matrix(1 0 0 1 318.1958 55.8774)"><tspan x="0" y="0" fill="#405158" font-family="'GothamRounded-Bold'" font-size="8.8151">Application</tspan><tspan x="0" y="10.578" fill="#405158" font-family="'GothamRounded-Bold'" font-size="8.8151">Development</tspan></text>
-		<text transform="matrix(1 0 0 1 49.104 203.4844)"><tspan x="0" y="0" fill="#405158" font-family="'GothamRounded-Bold'" font-size="9.8912">Data </tspan><tspan x="0" y="11.869" fill="#405158" font-family="'GothamRounded-Bold'" font-size="9.8912">Science</tspan></text>
+		<text transform="matrix(1 0 0 1 82.1294 76.7007)" fill="#405158" font-family="gotham-rounded-bold" font-size="9.8912">Data Engineering</text>
+		<text transform="matrix(1 0 0 1 172.1772 191.6836)" fill="#405158" font-family="gotham-rounded-bold" font-size="9.8912">DevOps</text>
+		<text transform="matrix(1 0 0 1 585.3867 95.8281)" fill="#405158" font-family="gotham-rounded-bold" font-size="9.8912">Infrastructure</text>
+		<text transform="matrix(1 0 0 1 768.4795 116.7329)"><tspan x="0" y="0" fill="#405158" font-family="gotham-rounded-bold" font-size="9.8912">Elastic</tspan><tspan x="0" y="11.87" fill="#405158" font-family="gotham-rounded-bold" font-size="9.8912">Workforce</tspan></text>
+		<text transform="matrix(1 0 0 1 254.1138 54.1113)" fill="#405158" font-family="gotham-rounded-bold" font-size="9.8912">Mobility</text>
+		<text transform="matrix(1 0 0 1 395.957 67.2617)" fill="#405158" font-family="gotham-rounded-bold" font-size="9.8912">UI/UX</text>
+		<text transform="matrix(1 0 0 1 902.4111 64.2266)" fill="#405158" font-family="gotham-rounded-bold" font-size="9.8912">Agile</text>
+		<text transform="matrix(1 0 0 1 318.1958 55.8774)"><tspan x="0" y="0" fill="#405158" font-family="gotham-rounded-bold" font-size="8.8151">Application</tspan><tspan x="0" y="10.578" fill="#405158" font-family="'gotham-rounded-bold'" font-size="8.8151">Development</tspan></text>
+		<text transform="matrix(1 0 0 1 49.104 203.4844)"><tspan x="0" y="0" fill="#405158" font-family="gotham-rounded-bold" font-size="9.8912">Data </tspan><tspan x="0" y="11.869" fill="#405158" font-family="gotham-rounded-bold" font-size="9.8912">Science</tspan></text>
 		<g>
 			<g>
 				<path fill="none" stroke="#676767" stroke-width="2.1859" stroke-miterlimit="10" d="M959.367,116.444L959.367,116.444
