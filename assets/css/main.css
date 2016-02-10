@@ -1139,7 +1139,7 @@ html {
 	.content {
 		padding: 50px 0px 0px;
 	}
-	#main-top-left,#main-top-right,#main-bottom-left{
+	#main-top-left,#main-top-right,#main-bottom-left,#main-bottom-right{
 		display: none;
 	}
 	#main-top-left {

@@ -887,6 +887,11 @@ $("#div2-right-div-part4").css("display", "none");
     $("#main-bottom-left").show();
 
     });
+     $("#div-bottom-right").click(function(){
+    $("#buisness-tab").hide();
+    $("#main-bottom-right").show();
+
+    });
 
 
 
