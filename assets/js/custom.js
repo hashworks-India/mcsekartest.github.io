@@ -872,27 +872,93 @@ $("#div2-right-div-part4").css("display", "none");
   });      
 
 /*our thinking */
+
+var which_one_clicked;
+
   $("#div-top-left").click(function(){
-    $("#buisness-tab").hide();
-    $("#main-top-left").show();
+      which_one_clicked=1;
+      $(this).removeClass("thinking-height");
+      $(this).animate({'width' : '100%','height' : '77.4vh'},844); 
+      $("#div-top-right").animate({'width' : '0%','height' : '0vh'},844); 
+      $("#div-bottom-right").animate({'width' : '0%','height' : '0vh'},844); 
+      $("#div-bottom-left").animate({'width' : '0%','height' : '0vh'},844);
+      $("#tools-using").css("margin-top","46%");
+      $(this).animate({'height' : '160vh'},4); 
+
 
     });
+
    $("#div-top-right").click(function(){
-    $("#buisness-tab").hide();
-    $("#main-top-right").show();
-
-    });
-    $("#div-bottom-left").click(function(){
-    $("#buisness-tab").hide();
-    $("#main-bottom-left").show();
-
-    });
-     $("#div-bottom-right").click(function(){
-    $("#buisness-tab").hide();
-    $("#main-bottom-right").show();
-
+      which_one_clicked=2;
+      $(this).removeClass("thinking-height");
+      $(this).animate({'width' : '100%','height' : '77.4vh'},844); 
+      $("#div-top-left").animate({'width' : '0%','height' : '0vh'},844); 
+      $("#div-bottom-right").animate({'width' : '0%','height' : '0vh'},844); 
+      $("#div-bottom-left").animate({'width' : '0%','height' : '0vh'},844);
+      $("#tools-using").css("margin-top","46%");
+      $(this).animate({'height' : '160vh'},4); 
     });
 
+     $("#div-bottom-left").click(function(){
+      which_one_clicked=3;
+      $(this).removeClass("thinking-height");
+      $(this).animate({'width' : '100%','height' : '77.4vh'},844); 
+      $("#div-bottom-right").animate({'width' : '0%','height' : '0vh'},844);
+      $("#div-top-right").animate({'width' : '0%','height' : '0vh'},844); 
+      $("#div-top-left").animate({'width' : '0%','height' : '0vh'},844);  
+      $("#tools-using").css("margin-top","35%");
+      $(this).animate({'height' : '160vh',"bottom":"-107%"},4); 
+    });
+
+   $("#div-bottom-right").click(function(){
+      which_one_clicked=4;
+      $(this).removeClass("thinking-height");
+      $(this).animate({'width' : '100%','height' : '77.4vh'},844);        
+      $("#div-bottom-left").animate({'width' : '0%','height' : '0vh'},844); 
+      $("#div-top-right").animate({'width' : '0%','height' : '0vh'},844); 
+      $("#div-top-left").animate({'width' : '0%','height' : '0vh'},844); 
+      
+      $(this).animate({'height' : '160vh',"bottom":"-107%"},0); 
+      $("#tools-using").css("margin-top","35%");
+
+    });
+
+
+
+
+   $("#collapse-button").click(function(){
+          var navtab = $(".bs-example").offset().top + 20;
+                  $('html, body').animate({
+            scrollTop: navtab}, 500, 'linear');
+        if(which_one_clicked == 4){
+          $("#div-bottom-right").addClass("thinking-height");
+          $("#tools-using").css("margin-top","0%");
+          $("#div-bottom-right").animate({'height' : '77.4vh'},0); 
+          $("#div-bottom-right").css("bottom","0");
+        }
+        else if(which_one_clicked == 3){
+          $("#div-bottom-left").addClass("thinking-height");
+          $("#tools-using").css("margin-top","0%");
+          $("#div-bottom-left").animate({'height' : '77.4vh'},0); 
+          $("#div-bottom-left").css("bottom","0");
+        }
+        else if(which_one_clicked == 2){
+          $("#div-top-right").addClass("thinking-height");
+          $("#tools-using").css("margin-top","0%");
+          $("#div-top-right").animate({'height' : '77.4vh'},0); 
+        }
+        else if(which_one_clicked == 1){
+          $("#div-top-left").addClass("thinking-height");
+          $("#tools-using").css("margin-top","0%");
+          $("#div-top-left").animate({'height' : '77.4vh'},0); 
+        }
+
+      $("#div-bottom-right").animate({'width' : '50%','height' : '38.7vh'},844);       
+      $("#div-bottom-left").animate({'width' : '50%','height' : '38.7vh'},844); 
+      $("#div-top-right").animate({'width' : '50%','height' : '38.7vh'},844); 
+      $("#div-top-left").animate({'width' : '50%','height' : '38.7vh'},844); 
+
+    });
 
 
 
