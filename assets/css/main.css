@@ -1125,99 +1125,24 @@ html {
 
 /*End of upskilling-devops*/
 
+/* new ourthinking */
+	.thinking-height {
+		height: 300px;
+		cursor:pointer;
+	}
+	.thinking-height:hover {
+		background-color: #bbb;
+	}
+	.content {
+		padding: 50px 0px 0px;
+	}
+	
+/* end of new our thinking */
 
 	
 /*End of service-delivery page*/
 
-	.service-tabs-bars{
-		margin-bottom: 165px;
-	}
-		.service-iconss {
-		
-		border: 2px solid #000;
-		border-radius: 100%;
-		height: 50px;
-		display: table-cell;
-		width: 50px;
-		
-	}
-		.service-icon22 .service-iconss {
-			padding: 1px 4px 4px;
-		}
-		.service-icon33 .service-iconss {
-			padding: 7px 8px 4px;
-		}
-		.service-icon44 .service-iconss {
-			padding: 4px 9px 4px;
-		}
-		
-		.service-icon22{
-		
-	    position: absolute;
-		margin-left: 380px;
-		margin-top: -2px;
-		cursor: pointer;
-		width: 50px;
-		height: 50px;
-	}
-	.service-icon33{
-		background: url("../assets/img/landingpage/Ourthinking_Sub_2.svg");
-	    position: absolute;
-		margin-left: 571px;
-		margin-top: -2px;
-		cursor: pointer;
-	}
-	.service-icon44{
-		background: url("../assets/img/landingpage/Ourthinking_Sub_3.svg");
-	    position: absolute;
-	    margin-left: 760px;
-	    margin-top: -2px;
-	    cursor: pointer;
-	}
-	.service22 p {
-    margin-left: 8px;
-    margin-right: -36px;
-}
-.clr-pink{
-	color: #ee2b7b;
-}
-
-	.hr-line {
-	        background: #000;
-    position: absolute;
-    width: 144px;
-    margin-left: 429px;
-    /* left: 28%; */
-    border-color: #000;
-    height: 1px;
-	}
-	.hr-line1 {
-	     background: #000;
-    position: absolute;
-    width: 140px;
-    margin-left: -4px;
-    left: 53%;
-    border-color: #000;
-    height: 1px;
-}
-
 	
-	.service22{
-		margin-top: 12px;
-	    margin-left: -21px;
-
-	}
-	.service33{
-		margin-top: 12px;
-	    margin-left: -20px;
-
-	}
-	.service44{
-		margin-top: 12px;
-	    margin-left: -30px;
-
-	}
-
 	.job-table.filter-content.active  {
     	display: table;
 	}
