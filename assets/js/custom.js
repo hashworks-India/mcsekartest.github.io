@@ -882,8 +882,10 @@ var which_one_clicked;
       $("#div-top-right").animate({'width' : '0%','height' : '0vh'},844); 
       $("#div-bottom-right").animate({'width' : '0%','height' : '0vh'},844); 
       $("#div-bottom-left").animate({'width' : '0%','height' : '0vh'},844);
-      $("#tools-using").css("margin-top","46%");
-      $(this).animate({'height' : '160vh'},4); 
+      $("#tools-using").css("margin-top","60%");
+      $(this).animate({'height' : '208vh'},4); 
+      $("#collapse-image-1").css("display","block");
+      $("#collapse-image-1").animate({"opacity":"1"},844);
 
 
     });
@@ -895,8 +897,10 @@ var which_one_clicked;
       $("#div-top-left").animate({'width' : '0%','height' : '0vh'},844); 
       $("#div-bottom-right").animate({'width' : '0%','height' : '0vh'},844); 
       $("#div-bottom-left").animate({'width' : '0%','height' : '0vh'},844);
-      $("#tools-using").css("margin-top","46%");
-      $(this).animate({'height' : '160vh'},4); 
+      $("#tools-using").css("margin-top","72%");
+      $(this).animate({'height' : '263vh'},4); 
+      $("#collapse-image-2").css("display","block");
+      $("#collapse-image-2").animate({"opacity":"1"},844);
     });
 
      $("#div-bottom-left").click(function(){
@@ -906,8 +910,10 @@ var which_one_clicked;
       $("#div-bottom-right").animate({'width' : '0%','height' : '0vh'},844);
       $("#div-top-right").animate({'width' : '0%','height' : '0vh'},844); 
       $("#div-top-left").animate({'width' : '0%','height' : '0vh'},844);  
-      $("#tools-using").css("margin-top","35%");
-      $(this).animate({'height' : '160vh',"bottom":"-107%"},4); 
+      $("#tools-using").css("margin-top","50%");
+      $(this).animate({'height' : '186vh',"bottom":"-140%"},4); 
+      $("#collapse-image-3").css("display","block");
+      $("#collapse-image-3").animate({"opacity":"1"},844);
     });
 
    $("#div-bottom-right").click(function(){
@@ -920,34 +926,48 @@ var which_one_clicked;
       
       $(this).animate({'height' : '160vh',"bottom":"-107%"},0); 
       $("#tools-using").css("margin-top","35%");
+      $("#collapse-image-4").css("display","block");
+      $("#collapse-image-4").animate({"opacity":"1"},844);
 
     });
 
 
 
 
-   $("#collapse-button").click(function(){
+   $(".collapse-button").click(function(){
           var navtab = $(".bs-example").offset().top + 20;
                   $('html, body').animate({
             scrollTop: navtab}, 500, 'linear');
         if(which_one_clicked == 4){
+          which_one_clicked = 0;
+          $("#collapse-image-4").css("display","none");
+          $("#collapse-image-4").animate({"opacity":"0"},844);
           $("#div-bottom-right").addClass("thinking-height");
           $("#tools-using").css("margin-top","0%");
           $("#div-bottom-right").animate({'height' : '77.4vh'},0); 
           $("#div-bottom-right").css("bottom","0");
         }
         else if(which_one_clicked == 3){
+          which_one_clicked = 0;
+          $("#collapse-image-3").css("display","none");
+          $("#collapse-image-3").animate({"opacity":"0"},844);
           $("#div-bottom-left").addClass("thinking-height");
           $("#tools-using").css("margin-top","0%");
           $("#div-bottom-left").animate({'height' : '77.4vh'},0); 
           $("#div-bottom-left").css("bottom","0");
         }
         else if(which_one_clicked == 2){
+          which_one_clicked = 0;
+          $("#collapse-image-2").css("display","none");
+          $("#collapse-image-2").animate({"opacity":"0"},844);
           $("#div-top-right").addClass("thinking-height");
           $("#tools-using").css("margin-top","0%");
           $("#div-top-right").animate({'height' : '77.4vh'},0); 
         }
         else if(which_one_clicked == 1){
+          which_one_clicked = 0;
+          $("#collapse-image-1").css("display","none");
+          $("#collapse-image-1").animate({"opacity":"0"},844);
           $("#div-top-left").addClass("thinking-height");
           $("#tools-using").css("margin-top","0%");
           $("#div-top-left").animate({'height' : '77.4vh'},0); 
