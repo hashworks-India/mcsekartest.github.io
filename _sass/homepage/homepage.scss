@@ -693,7 +693,7 @@ to {
 
 .svg-anim-icons11  { /* clock plus*/
     top: 46vh;  
-    left: 60%;
+    left: 25%;
    -webkit-animation: spin55 6s ease-out 3s infinite;  
     -moz-animation: mozspin55 6s ease-out 3s infinite;  
     -o-animation: ospin55 6s ease-out 3s infinite; 
@@ -702,7 +702,7 @@ to {
 }
 .svg-anim-icons22{  /* Data_Science*/
     top: 40vh;  
-    left: 60%;
+    left: 33%;
      -webkit-animation: spin22 7s ease-out 1s infinite;  
     -moz-animation: mozspin22 7s ease-out 1s infinite;  
     -o-animation: ospin22 7s ease-out 1s infinite; 
@@ -720,8 +720,8 @@ to {
 }
 
 .svg-anim-icons44  {   /* Desktop*/
-    top: 49vh;
-    left: 60%;
+    top: 33vh;
+    left: 10%;
    -webkit-animation: spin44 5s ease-out 3s infinite;  
     -moz-animation: mozspin44 5s ease-out 3s infinite;  
     -o-animation: ospin44 5s ease-out 3s infinite; 
@@ -730,7 +730,7 @@ to {
 }
 .svg-anim-icons55{   /* glob*/
     top: 48vh;
-    left: 60%;
+    left: 30%;
      -webkit-animation: spin11 5s ease-out 1s infinite;  
     -moz-animation: mozspin11 5s ease-out 1s infinite;  
     -o-animation: ospin11 5s ease-out 1s infinite; 
@@ -738,8 +738,8 @@ to {
     animation: nospin11 5s ease-out 1s infinite; 
 }
 .svg-anim-icons66 {    /* Graph */
-    top: 43vh;
-    left: 60%;
+    bottom: 10vh;
+    left: 20%;
    -webkit-animation: spin66 4s ease-out 2s infinite;  
     -moz-animation: mozspin66 4s ease-out 2s infinite;  
     -o-animation: ospin66 4s ease-out 2s infinite; 
@@ -748,7 +748,7 @@ to {
 }
 .svg-anim-icons77{    /*bulb*/
     top: 49vh;
-    left: 60%;
+    left: 10%;
      -webkit-animation: spin33  6s ease-out 1s infinite;  
     -moz-animation: mozspin33  6s ease-out 1s infinite;  
     -o-animation: ospin33  6s ease-out 1s infinite; 
@@ -845,7 +845,7 @@ to {
 }  
 to { 
     opacity:1; 
-    transform:  translateX(1100%) translateY(266%) scale(1.3)  rotate(-360deg) ;
+    transform:  translateX(1110%) translateY(266%) scale(1.3)  rotate(-360deg) ;
     }  
 }
 @-webkit-keyframes spin22 {  
@@ -855,7 +855,7 @@ to {
 }  
 to { 
     opacity:1; 
-    transform:  translateX(1100%)  scale(0.8)  rotate(-50deg) ;
+    transform:  translateX(10%)  scale(0.8)  rotate(-50deg) ;
     }  
 }
 @-moz-keyframes mozspin22 {  
@@ -865,7 +865,7 @@ to {
 }  
 to { 
     opacity:1; 
-    transform:  translateX(1100%)  scale(0.8)  rotate(-50deg) ;
+    transform:  translateX(10%)  scale(0.8)  rotate(-50deg) ;
     }  
 }    
 @-o-keyframes ospin22 {  
@@ -875,7 +875,7 @@ to {
 }  
 to { 
     opacity:1; 
-    transform:  translateX(1100%)  scale(0.8)  rotate(-50deg) ;
+    transform:  translateX(10%)  scale(0.8)  rotate(-50deg) ;
     } 
 }   
 @keyframes nospin22 {  
@@ -885,7 +885,7 @@ to {
 }  
 to { 
     opacity:1; 
-    transform:  translateX(1100%)  scale(0.8)  rotate(-50deg) ;
+    transform:  translateX(10%)  scale(0.8)  rotate(-50deg) ;
     } 
 }
 @keyframes msspin22 {  
@@ -895,7 +895,7 @@ to {
 }  
 to { 
     opacity:1; 
-    transform:  translateX(1100%)  scale(0.8)  rotate(-50deg) ;
+    transform:  translateX(10%)  scale(0.8)  rotate(-50deg) ;
     }  
 }
 
@@ -1219,8 +1219,8 @@ to {
 
 
 .svg-anim-icons133{
-    top: 49vh;
-    left: 60%;
+    top: 37vh;
+    left: 42%;
      -webkit-animation: spin-top  7s ease-out 2s infinite;  
     -moz-animation:mozspin-top  7s ease-out 2s infinite;  
     -o-animation: ospin-top  7s ease-out 2s infinite; 
@@ -1328,8 +1328,8 @@ to {
     animation: nospin-top 4s ease-out 6s infinite; 
 }
 .svg-anim-icons244{
-    top: 30vh;
-    left: 77%;
+    top: 10vh;
+    left: 68%;
      -webkit-animation: spin-top3  6s ease-out 4s infinite;  
     -moz-animation: mozspin-top3  6s ease-out 4s infinite;  
     -o-animation: ospin-top3  6s ease-out 4s infinite; 
