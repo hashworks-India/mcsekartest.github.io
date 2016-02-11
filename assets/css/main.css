@@ -1124,7 +1124,6 @@ html {
 	/*End of Testimonial*/
 
 /*End of upskilling-devops*/
-
 /* new ourthinking */
 #collapse-image-1{
 	display: none;
@@ -1132,6 +1131,21 @@ html {
     position: fixed;
     right: 10px;
     bottom: 2%;	
+}
+.title-background{
+	background: url("/assets/img/service-del/Text_Background_Shades.svg") no-repeat;
+}
+.title-background2{
+	background: url("/assets/img/service-del/Text_Background_Shades2.svg") no-repeat;
+}
+.title-background3{
+	background: url("/assets/img/service-del/Text_Background_Shades3.svg") no-repeat;
+}
+.hw-buiseness-padding-left {
+    padding-left: 50px;
+}
+.hw-buiseness-padding-right {
+    padding-right: 50px;
 }
 #collapse-image-2{
 	display: none;
@@ -1158,7 +1172,7 @@ html {
     top: 27%;	
 }
 .main-contentt h1.text-center.gotham-rounded-bok.heading.hw-main-heading {
-        margin-bottom: 13%;
+        margin-bottom: 18%;
 
 }
 .main-contentt{
@@ -1224,7 +1238,6 @@ html {
     left: 0;
     bottom: 0;
 }
-
 
 
 
