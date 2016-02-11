@@ -2101,6 +2101,47 @@ html {
 }
 /* end of home banner*/
 
+
+.triangle.top {
+    border-top-width: 374px;
+border-left-width: 1383px;
+}
+ .triangle.top {
+    border-top: 657px solid #f23051;
+border-left: 1370px solid transparent;
+top: 0;
+right: 0;
+    /*-webkit-transform: translate3d(-10px, 10px, 0);
+    -moz-transform: translate3d(-10px, 10px, 0);
+    -ms-transform: translate3d(-10px, 10px, 0);
+    -o-transform: translate3d(-10px, 10px, 0);
+    transform: translate3d(-10px, 10px, 0);*/
+}
+
+
+.triangle.bottom {
+    border-bottom-width: 375px;
+    border-right-width: 1367px;
+}
+
+
+.triangle.bottom {
+    border-bottom: 655px solid red;
+    border-right: 1366px solid transparent;
+    bottom: 0;
+    left: 0;
+   /* -webkit-transform: translate3d(10px, -10px, 0);
+    -moz-transform: translate3d(10px, -10px, 0);
+    -ms-transform: translate3d(10px, -10px, 0);
+    -o-transform: translate3d(10px, -10px, 0);
+    transform: translate3d(10px, -10px, 0);*/
+}
+.triangle{
+	position:absolute;
+	height: 0px;
+	width: 0px;
+}
+
 @media screen and (min-width: 1500px) {
 	
 	img#big-phone {

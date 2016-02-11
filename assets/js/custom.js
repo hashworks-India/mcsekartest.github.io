@@ -419,101 +419,11 @@ $(document).ready(function(){
           }
       });
       
+$(".slide").toggle();
+ $('#menu-button').click(function(){
+  $('.slide').toggle('slow');
 
-    
-    /* for color of service color */
-    //   $('#part1-img').attr('src','/assets/img/service-del/hover-1.svg');
-    //   $('.service-icon22').children('.service-iconss').css('border','2px solid #ee2b7b');
-    //   $(".service22").show();
-    //   $(".service33").hide();
-    //   $(".service44").hide();
-
-    //  $('.service-icon22').mouseover(function(){
-    //     $('#part1-img').attr('src','/assets/img/service-del/hover-1.svg');
-    //     $(".service22").show();
-    //     $(this).children('.service-iconss').css('border','2px solid #ee2b7b');
-    // });
-    //  $('.service-icon22').mouseleave(function(){
-    //     if(!$(this).children().hasClass("active"))
-    //     {
-    //     $('#part1-img').attr('src','/assets/img/service-del/Ourthinking_Sub_1.svg');
-    //     $(".service22").hide();
-    //     $(this).children('.service-iconss').css('border','2px solid #000000');
-    //     }
-    // });
-    // $('.service-icon22').click(function() {
-
-    //         $('#part1-img').attr('src','/assets/img/service-del/hover-1.svg');
-    //         $(this).children('.service-iconss').css('border','2px solid #ee2b7b');
-    //         $(".service22").show();
-
-    //         $('#part3-img').attr('src','/assets/img/service-del/Ourthinking_Sub_3.svg');
-    //         $('.service-icon33').children('.service-iconss').css('border','2px solid #000');
-    //         $(".service33").hide();
-
-    //         $('#part2-img').attr('src','/assets/img/service-del/Ourthinking_Sub_2.svg');
-    //         $('.service-icon44').children('.service-iconss').css('border','2px solid #000');
-    //         $(".service44").hide();
-    // });
-
-
-    //  $('.service-icon33').mouseover(function(){
-    //     $('#part2-img').attr('src','/assets/img/service-del/hover-2.svg');
-    //     $(this).children('.service-iconss').css('border','2px solid #ee2b7b');
-    //     $(".service33").show();
-
-    // });
-    //  $('.service-icon33').mouseleave(function(){
-    //     if(!$(this).children().hasClass("active"))
-    //     {
-    //     $('#part2-img').attr('src','/assets/img/service-del/Ourthinking_Sub_2.svg');
-    //     $(this).children('.service-iconss').css('border','2px solid #000000');
-    //     $(".service33").hide();
-    //     }
-    // });
-    // $('.service-icon33').click(function() {
-
-    //         $('#part1-img').attr('src','/assets/img/service-del/Ourthinking_Sub_1.svg');
-    //         $('.service-icon22').children('.service-iconss').css('border','2px solid #000000');
-    //         $(".service22").hide();
-
-    //         $('#part3-img').attr('src','/assets/img/service-del/Ourthinking_Sub_3.svg');
-    //         $('.service-icon44').children('.service-iconss').css('border','2px solid #000000');
-    //         $(".service44").hide();
-
-    //         $('#part2-img').attr('src','/assets/img/service-del/hover-2.svg');
-    //         $(this).children('.service-iconss').css('border','2px solid #ee2b7b');
-    //         $(".service33").show();
-    // });
-
-    // $('.service-icon44').mouseover(function(){
-    //     $('#part3-img').attr('src','/assets/img/service-del/hover-3.svg');
-    //     $(this).children('.service-iconss').css('border','2px solid #ee2b7b');
-    //     $(".service44").show();
-    // });
-    //  $('.service-icon44').mouseleave(function(){
-    //     if(!$(this).children().hasClass("active"))
-    //     {
-    //     $('#part3-img').attr('src','/assets/img/service-del/Ourthinking_Sub_3.svg');
-    //     $(this).children('.service-iconss').css('border','2px solid #000000');
-    //     $(".service44").hide();
-    //     }
-    // });
-    // $('.service-icon44').click(function() {
-
-    //         $('#part1-img').attr('src','/assets/img/service-del/Ourthinking_Sub_1.svg');
-    //         $('.service-icon33').children('.service-iconss').css('border','2px solid #000');
-    //         $(".service33").hide();
-
-
-    //         $('#part2-img').attr('src','/assets/img/service-del/Ourthinking_Sub_2.svg');
-    //         $('.service-icon22').children('.service-iconss').css('border','2px solid #000000');
-    //         $(".service22").hide();
-
-    //         $('#part3-img').attr('src','/assets/img/service-del/hover-3.svg');
-    //         $(this).children('.service-iconss').css('border','2px solid #ee2b7b');
-    //         $(".service44").show();
-    // });
+ });
 
 
 
