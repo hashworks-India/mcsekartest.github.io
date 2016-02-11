@@ -86,6 +86,10 @@ html {
 		border-color: #ccc;
 		box-shadow: none;
 	}
+	.menu-hamberger {
+		float: right;
+		margin: 20px;
+	}
 
 	.gotham-rounded-bold {
 		font-family: "gotham-rounded-bold";
