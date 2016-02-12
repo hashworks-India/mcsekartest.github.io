@@ -788,12 +788,15 @@ var which_one_clicked = 0;
   $("#div-top-left").click(function(){
     if(which_one_clicked == 0){
       which_one_clicked=1;
+      $("#tools-using").css("display","none");
+      $(".client-backgrnd").css("display","none");
+      $(".footer").css("display","none");
       $(this).removeClass("thinking-height");
       $(this).animate({'width' : '100%','height' : '77.4vh'},844); 
       $("#div-top-right").animate({'width' : '0%','height' : '0vh'},844); 
       $("#div-bottom-right").animate({'width' : '0%','height' : '0vh'},844); 
       $("#div-bottom-left").animate({'width' : '0%','height' : '0vh'},844);
-      $("#tools-using").css("margin-top","75%");
+      // $("#tools-using").css("margin-top","75%");
       $(this).animate({'height' : '240vh'},4); 
       $("#collapse-image-1").css("display","block");
       $("#collapse-image-1").animate({"opacity":"1"},844);
@@ -806,12 +809,15 @@ var which_one_clicked = 0;
    $("#div-top-right").click(function(){
     if(which_one_clicked == 0){
       which_one_clicked=2;
+      $("#tools-using").css("display","none");
+      $(".client-backgrnd").css("display","none");
+      $(".footer").css("display","none");
       $(this).removeClass("thinking-height");
       $(this).animate({'width' : '100%','height' : '77.4vh'},844); 
       $("#div-top-left").animate({'width' : '0%','height' : '0vh'},844); 
       $("#div-bottom-right").animate({'width' : '0%','height' : '0vh'},844); 
       $("#div-bottom-left").animate({'width' : '0%','height' : '0vh'},844);
-      $("#tools-using").css("margin-top","85%");
+      // $("#tools-using").css("margin-top","85%");
       $(this).animate({'height' : '260vh'},4); 
       $("#collapse-image-2").css("display","block");
       $("#collapse-image-2").animate({"opacity":"1"},844);
@@ -822,12 +828,15 @@ var which_one_clicked = 0;
      $("#div-bottom-left").click(function(){
       if(which_one_clicked == 0){
       which_one_clicked=3;
+      $("#tools-using").css("display","none");
+      $(".client-backgrnd").css("display","none");
+      $(".footer").css("display","none");
       $(this).removeClass("thinking-height");
       $(this).animate({'width' : '100%','height' : '77.4vh'},844); 
       $("#div-bottom-right").animate({'width' : '0%','height' : '0vh'},844);
       $("#div-top-right").animate({'width' : '0%','height' : '0vh'},844); 
       $("#div-top-left").animate({'width' : '0%','height' : '0vh'},844);  
-      $("#tools-using").css("margin-top","57%");
+      // $("#tools-using").css("margin-top","57%");
       $(this).animate({'height' : '210vh',"bottom":"-171%"},4); 
       $("#collapse-image-3").css("display","block");
       $("#collapse-image-3").animate({"opacity":"1"},844);
@@ -838,6 +847,9 @@ var which_one_clicked = 0;
    $("#div-bottom-right").click(function(){
     if(which_one_clicked == 0){
       which_one_clicked=4;
+      $("#tools-using").css("display","none");
+      $(".client-backgrnd").css("display","none");
+      $(".footer").css("display","none");
       $(this).removeClass("thinking-height");
       $(this).animate({'width' : '100%','height' : '77.4vh'},844);        
       $("#div-bottom-left").animate({'width' : '0%','height' : '0vh'},844); 
@@ -845,7 +857,7 @@ var which_one_clicked = 0;
       $("#div-top-left").animate({'width' : '0%','height' : '0vh'},844); 
       
       $(this).animate({'height' : '160vh',"bottom":"-107%"},0); 
-      $("#tools-using").css("margin-top","40%");
+      // $("#tools-using").css("margin-top","40%");
       $("#collapse-image-4").css("display","block");
       $("#collapse-image-4").animate({"opacity":"1"},844);
       $(".main-contentt h1.text-center.gotham-rounded-bok.heading.hw-main-heading").animate({"margin-bottom":"7%"},844);
@@ -855,7 +867,7 @@ var which_one_clicked = 0;
 
 
 
-   $(".collapse-button").click(function(){
+   $(".collapse-button,li.c-flex").click(function(){
           var navtab = $(".bs-example").offset().top + 20;
                   $('html, body').animate({
             scrollTop: navtab}, 500, 'linear');
@@ -864,7 +876,7 @@ var which_one_clicked = 0;
           $("#collapse-image-4").css("display","none");
           $("#collapse-image-4").animate({"opacity":"0"},844);
           $("#div-bottom-right").addClass("thinking-height");
-          $("#tools-using").css("margin-top","0%");
+          // $("#tools-using").css("margin-top","0%");
           $("#div-bottom-right").animate({'height' : '77.4vh'},0); 
           $("#div-bottom-right").css("bottom","0");
         }
@@ -873,7 +885,7 @@ var which_one_clicked = 0;
           $("#collapse-image-3").css("display","none");
           $("#collapse-image-3").animate({"opacity":"0"},844);
           $("#div-bottom-left").addClass("thinking-height");
-          $("#tools-using").css("margin-top","0%");
+          // $("#tools-using").css("margin-top","0%");
           $("#div-bottom-left").animate({'height' : '77.4vh'},0); 
           $("#div-bottom-left").css("bottom","0");
         }
@@ -882,7 +894,7 @@ var which_one_clicked = 0;
           $("#collapse-image-2").css("display","none");
           $("#collapse-image-2").animate({"opacity":"0"},844);
           $("#div-top-right").addClass("thinking-height");
-          $("#tools-using").css("margin-top","0%");
+          // $("#tools-using").css("margin-top","0%");
           $("#div-top-right").animate({'height' : '77.4vh'},0); 
         }
         else if(which_one_clicked == 1){
@@ -890,10 +902,12 @@ var which_one_clicked = 0;
           $("#collapse-image-1").css("display","none");
           $("#collapse-image-1").animate({"opacity":"0"},844);
           $("#div-top-left").addClass("thinking-height");
-          $("#tools-using").css("margin-top","0%");
+          // $("#tools-using").css("margin-top","0%");
           $("#div-top-left").animate({'height' : '77.4vh'},0); 
         }
-
+      $("#tools-using").css("display","block");
+      $(".client-backgrnd").css("display","block");
+      $(".footer").css("display","block");
       $(".main-contentt h1.text-center.gotham-rounded-bok.heading.hw-main-heading").animate({"margin-bottom":"19%"},844);
       $("#div-bottom-right").animate({'width' : '50%','height' : '38.7vh'},844);       
       $("#div-bottom-left").animate({'width' : '50%','height' : '38.7vh'},844); 
@@ -902,8 +916,4 @@ var which_one_clicked = 0;
 
     });
 
-
-
-
 });
-
