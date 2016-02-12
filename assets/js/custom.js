@@ -419,11 +419,6 @@ $(document).ready(function(){
           }
       });
       
-$(".slide").toggle();
- $('#menu-button').click(function(){
-  $('.slide').toggle('slow');
-
- });
 
 
 
