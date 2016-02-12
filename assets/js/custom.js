@@ -675,28 +675,28 @@ $("#div2-right-div-part4").css("display", "none");
         }); 
 
   /*for second row*/
-  $("#blog1-div2-part1").click(function(){
+  // $("#blog1-div2-part1").click(function(){
 
-    if( $(this).css('height') === height_pixel )
-    {
-      $("#blog2-div2-part2").animate({'height' : '0%'},844);
-      $(this).css(  "z-index", "1");
-      $(this).find(".main-animate-arrow").hide(); 
-      $(this).animate({'height' : '200%'},844); 
-           }
-    else{
-      $(this).animate({'height' : '100%'},844); 
-      $(this).css(  "z-index", "0");  
-      $(this).find(".main-animate-arrow").show(); 
-      $("#blog2-div2-part2").animate({'height' : '100%'},844);   
-    }
-  });
-  $("#blog1-div2-part1").mouseleave(function(){
-      $(this).animate({'height' : '100%'},844); 
-      $(this).css(  "z-index", "0");  
-      $(this).find(".main-animate-arrow").show(); 
-      $("#blog2-div2-part2").animate({'height' : '100%'},844);       
-    }); 
+  //   if( $(this).css('height') === height_pixel )
+  //   {
+  //     $("#blog2-div2-part2").animate({'height' : '0%'},844);
+  //     $(this).css(  "z-index", "1");
+  //     $(this).find(".main-animate-arrow").hide(); 
+  //     $(this).animate({'height' : '200%'},844); 
+  //          }
+  //   else{
+  //     $(this).animate({'height' : '100%'},844); 
+  //     $(this).css(  "z-index", "0");  
+  //     $(this).find(".main-animate-arrow").show(); 
+  //     $("#blog2-div2-part2").animate({'height' : '100%'},844);   
+  //   }
+  // });
+  // $("#blog1-div2-part1").mouseleave(function(){
+  //     $(this).animate({'height' : '100%'},844); 
+  //     $(this).css(  "z-index", "0");  
+  //     $(this).find(".main-animate-arrow").show(); 
+  //     $("#blog2-div2-part2").animate({'height' : '100%'},844);       
+  //   }); 
 
 
   $("#blog2-div2-part2").click(function(){
@@ -903,7 +903,7 @@ var which_one_clicked = 0;
       $("#tools-using").css("display","block");
       $(".client-backgrnd").css("display","block");
       $(".footer").css("display","block");
-      $(".main-contentt h1.text-center.gotham-rounded-bok.heading.hw-main-heading").animate({"margin-bottom":"19%"},844);
+      $(".main-contentt h1.text-center.gotham-rounded-bok.heading.hw-main-heading").animate({"margin-bottom":"25%"},844);
       $("#div-bottom-right").animate({'width' : '50%','height' : '38.7vh'},844);       
       $("#div-bottom-left").animate({'width' : '50%','height' : '38.7vh'},844); 
       $("#div-top-right").animate({'width' : '50%','height' : '38.7vh'},844); 
