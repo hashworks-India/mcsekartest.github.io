@@ -911,4 +911,63 @@ var which_one_clicked = 0;
 
     });
 
+
+/* menu header */
+$("#toggle1").hide();
+$("#toc").hide();
+var $slider = document.getElementById('slider');
+var $toggle = document.getElementById('toggle');
+var $toggle1 = document.getElementById('toggle1');
+$toggle.addEventListener('click', function() {
+
+    var isOpen = $slider.classList.contains('slide-in');
+
+    $slider.setAttribute('class', isOpen ? 'slide-out' : 'slide-in');
+    $("#toc").show();
+    $("#toggle").hide();
+    $("#toggle1").show();
+});
+$toggle1.addEventListener('click', function() {
+    var isOpen = $slider.classList.contains('slide-in');
+
+    $slider.setAttribute('class', isOpen ? 'slide-out' : 'slide-in');
+     $("#toc").hide();
+    $("#toggle").show();
+    $("#toggle1").hide();
+});
+$("#toc").hide();
+$("#toggle2").click(function(){
+    $("#toc").show();
+
+});
+
+//  $("#toggle1").hide();
+//     var $slider = document.getElementById('slider');
+// var $toggle = document.getElementById('toggle');
+// var $toggle1 = document.getElementById('toggle1');
+
+// $toggle.addEventListener('click', function() {
+//     var isOpen = $slider.classList.contains('slide-in');
+
+//     $slider.setAttribute('class', isOpen ? 'slide-out' : 'slide-in');
+//     $("#toc").show();
+//     $("#toggle").hide();
+//     $("#toggle1").show();
+    
+// });
+// $toggle1.addEventListener('click', function() {
+//     var isOpen = $slider.classList.contains('slide-in');
+
+//     $slider.setAttribute('class', isOpen ? 'slide-out' : 'slide-in');
+    
+//     $("#toggle").show();
+//     $("#toc").hide();
+//     $("#toggle1").hide();
+// });
+// $("#toc").hide();
+// $("#toggle2").click(function(){
+//     $("#toc").show();
+
+// });
+
 });

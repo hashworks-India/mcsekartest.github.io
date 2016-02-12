@@ -19,7 +19,7 @@
 {% endif %}
 
   {% if page.layout == "default" %}
-  <header class="hw-home">
+  <header class="">
     {% else %}
     <header>
   
@@ -27,15 +27,12 @@
 
 
     <!-- logo -->
-                <div class="logo">
+                <div class="logo" id="log-fixed" >
                   <a href="/"></a>
                 </div>
               <!-- End of logo -->
 
-              <div class="menu-hamberger" id="menu-button">
-                <img src="/assets/img/landingpage/menu.svg">
 
-              </div>
 
              <!--  <div class="triangle top slide"></div> -->
 <!-- <div class="triangle bottom slide"></div>
@@ -50,11 +47,7 @@
                       <a href="{{ item.url }}">{{ item.text }}</a>
                     </li>
                   {% endfor %}
-                  
-               
-                   
-                 
-                </ul>
+            </ul>
                   
              
 
