@@ -5,6 +5,50 @@
 	font-size: 12px;
 	border:none;
 }
+.latest-job {
+	padding-top:50px;
+}
+#super-job-img {
+	width: 100%;
+}
+.super-job {
+	position: relative;
+	margin-bottom: 10px;
+}
+#job-location-img {
+	width: 15px;
+	margin-right: 12px;
+}
+.job-location{
+	margin-top:10px;
+}
+#latest1 {
+	background-color: #3e6936;
+	/* margin-left: 20px;*/
+	left:4%
+}
+#latest2 {
+	background-color: #334158;
+	/* margin-left: 20px; */
+	left: 28%
+}
+#latest3{
+	background-color: #95dbaf;
+   /*	margin-left: 20px; */
+	left: 52%;
+}
+#latest4{
+	background-color: #f17937;
+	/* margin-left: 20px; */
+	right: 4%;
+}
+.common-position {
+	position: absolute;
+	bottom: 0px;
+	width: 20%;
+	height:50%;
+	z-index: 2;
+}
 .job-board-ul li {
 	list-style-type: initial;
 	color: #0AB4C5
