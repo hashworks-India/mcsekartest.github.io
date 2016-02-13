@@ -910,72 +910,27 @@ var which_one_clicked = 0;
       $("#div-top-left").animate({'width' : '50%','height' : '38.7vh'},844); 
 
     });
+  
+    $('#toc').hide();
+     $('#nav-icon1').click(function(){
 
-     // $("#toc").hide();
-     $('.menu-hide').hide();
-    // $("#button1").hide();
-  $("#toggle").click(function(){
-
-     // $("#button1").show();
-      $(".menu-hide").show();
-      $(".hide-scroll").hide();
-       // $("#button").hide();
- });
-  $("#button1").click(function(){
-    // $("#button1").hide();
-      $(".menu-hide").hide();
-      // $("#button").show();
-       $(".hide-scroll").show();
- });
-
-  $(".menu-hide").mouseleave(function(){
-        $(".menu-hide").hide();
-         $(".hide-scroll").show();
-    });
+    // alert($("#div1").css("display"));
+    if($("#toc").css("display")=="none")
+      {
+        $("#toc").show();
+        $(".hide-scroll").hide();
+    $(this).toggleClass('open');
+    }
+    else{
+      $("#toc").hide();
+      $(".hide-scroll").show();
+      $(this).toggleClass('open');
+    }
+  });
 
   /* menu two */
 
-  $('.menu-hide1').hide();
-    // $("#button1").hide();
-  $("#toggle1").click(function(){
-
-     // $("#button1").show();
-      $(".menu-hide1").show();
-      $(".hide-scroll").hide();
-       // $("#button").hide();
- });
-  $("#button2").click(function(){
-    // $("#button1").hide();
-      $(".menu-hide1").hide();
-      // $("#button").show();
-       $(".hide-scroll").show();
- });
-
-  $(".menu-hide1").mouseleave(function(){
-        $(".menu-hide1").hide();
-         $(".hide-scroll").show();
-    });
-
-  /* menu 3*/
-  $('.menu-hide3').hide();
-    // $("#button1").hide();
-  $("#toggle3").click(function(){
-
-     // $("#button1").show();
-      $(".menu-hide3").show();
-      $(".hide-scroll").hide();
-       // $("#button").hide();
- });
-  $("#button4").click(function(){
-    // $("#button1").hide();
-      $(".menu-hide3").hide();
-      // $("#button").show();
-       $(".hide-scroll").show();
- });
-
-  $(".menu-hide3").mouseleave(function(){
-        $(".menu-hide3").hide();
-         $(".hide-scroll").show();
-    });
+  
+  
 
 });
