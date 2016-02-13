@@ -68,14 +68,14 @@
 .blog-banner #blog1-div1-part1{
     position: absolute;
     top: 0%;
-     background: rgb(149, 219, 175);
+     background: #490a3d;
     overflow: hidden;
     margin-right: -7px;
     margin-left: -15px;
     cursor: pointer;
 }
 .blog-banner #blog2-div1-part2{
-    background: rgb(238, 224, 159);
+    background: #bd1550;
     position: absolute;
     bottom: 0%;
     height: 100.081%;
@@ -103,7 +103,7 @@
    
 }
 .blog-banner #blog2-div2-part2{
-    background: rgb(255, 88, 131);
+    background: #f8ca00;
     position: absolute;
     bottom: 0%;
     height: 100.081%;
@@ -126,13 +126,13 @@
 .blog-banner #blog1-div3-part1{
     position: absolute;
     top: 0%;
-     background: rgb(223, 23, 65); 
+     background: #8a9b0f; 
    cursor: pointer;
     overflow: hidden;
     margin-left: -2px;
 }
 .blog-banner #blog2-div3-part2{
-    background: rgb(50, 65, 88);
+    background: #324158;
     position: absolute;
     bottom: 0%;
     height: 100.081%;
@@ -1772,7 +1772,8 @@ to {
 }
 
     #product-banner {
-      background: transparent url("/assets/img/landingpage/Wallpaper.svg") no-repeat scroll bottom center / cover;
+      /*background: transparent url("/assets/img/landingpage/Wallpaper.svg") no-repeat scroll bottom center / cover;*/
+      background-color: #8a9b0f;
     }
  
 
