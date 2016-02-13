@@ -2082,6 +2082,287 @@ nav#toc ul {
 
 
 
+/* Start of end of our thinking banner*/ 
+.accordion {
+    font-family:Arial, Helvetica, sans-serif; 
+    font-size:14px;
+     width: 100%;
+     height: 100%;
+    background:#fff;
+}
+.accordion ul {
+    list-style:none;
+    padding:0;    
+}
+.accordion li {
+    margin:0;
+    padding:0;
+}
+.accordion [type=radio], .accordion [type=checkbox] {
+    display:none;
+}
+.accordion label {
+    display:block;
+    line-height:16px;
+    background:#ec008c;
+    color:white;
+    text-shadow:1px 1px 1px rgba(255,255,255,0.3);
+    font-weight:700;
+    cursor:pointer;
+    text-transform:uppercase;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+}
+
+.accordion #xx {
+    opacity: 0 !important;
+}
+
+.accordion label #xx {
+    display:block;
+    font-size:16px;
+    line-height:16px;
+    background:#ec008c;
+    opacity: 0;
+  /*  border:1px solid #542437;*/
+    color:white;
+    text-shadow:1px 1px 1px rgba(255,255,255,0.3);
+    font-weight:700;
+    cursor:pointer;
+    text-transform:uppercase;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+}
+#l1{
+    display:block;
+    background:#00aeef;
+    color:white;
+    text-shadow:1px 1px 1px rgba(255,255,255,0.3);
+    font-weight:700;
+    cursor:pointer;
+    text-transform:uppercase;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+}
+
+.accordion .content {
+    padding:0 10px;
+    overflow:hidden;
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+}
+.accordion p {
+    color:#333;
+    margin:0 0 10px;
+}
+.accordion h3 {
+    color:#542437;
+    padding:0;
+    margin:10px 0;
+}
+
+.horizontal {
+    overflow:hidden;
+}
+.horizontal ul li {
+    float:left;
+  margin: 0 0px 0 -8px;
+  position: relative;
+
+}
+
+.horizontal ul li label {
+	position: relative;
+	opacity: 0.9;
+    word-wrap: break-word;
+    letter-spacing: 35px;
+    line-height: 60PX;
+    text-align: center;
+    height: 95vh;
+    padding: 10px 0 14px 31px;
+    width: 87px;
+    float: right;
+}
+
+.horizontal ul li .content {
+    padding:0;
+    display:inline-block; /* Makes its work in FF */
+    visibility:hidden; /* Chrome bug cant show width < 1px for some reason so need to toggle visibility */
+    width:1vh;
+    border-left:0;
+}
+.horizontal [type=radio]:checked ~ label {
+    opacity: 1;   
+}
+.horizontal ul li label:hover {
+   opacity: 1;
+}
+#image2{
+    margin-left: -6px;
+    margin-top:-11px;
+     width:24px;
+    height:657px;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+    color: black;
+    background: none;
+}
+
+.horizontal [type="radio"]:checked ~ label ~ .content {
+    visibility: visible;
+    width: 84.2vw;
+    padding: 0 10px;
+    border-left: 0;
+}
+ .arrow_rotate{
+        position: absolute;
+    transform: rotate(90deg);
+    left: 28%;
+    bottom: 5%;
+ }
+.horizontal [type="radio"]:checked ~ label .arrow_rotate {
+        transform: rotate(180deg);
+    left: 7%;
+    bottom: 7%;
+}
+
+.bulb-anime{
+    animation: bulb-anim  5s linear 2s infinite;
+}
+#animate-icons-21{
+	position: absolute;
+    bottom: 6%; 
+    left: 13%;
+    width: 4%;
+    animation: rotate-anim   6s linear infinite; 
+}
+
+#animate-icons-22{
+	position: absolute;
+    bottom: 52%;
+    right: 8%;
+    width: 3.5%;
+    animation: rotate-anim   5s linear infinite; 
+}
+#animate-icons-23{
+	position: absolute;
+    bottom: 39%;
+    right: 36%;
+    width: 3%;
+    animation: rotate-anim   4s linear infinite; 
+}
+
+ #animate-icons-3{
+	position: absolute;
+	right: 29.7%;
+    bottom: 22.2%;
+    width: 3%;
+    opacity: 0;
+    animation: bulb-anim  5s linear 2s infinite; 
+
+}
+
+#animate-icons-4{
+	position: absolute;
+    right: 35.5%;
+    bottom: 22%;
+    width: 3.4%;
+        opacity: 0;
+    animation: bulb-anim  5s linear 2s infinite;
+}
+
+#animate-icons-5{
+	position: absolute;
+	    right: 24.2%;
+    bottom: 22%;
+    width: 3%;
+        opacity: 0;
+    animation: bulb-anim  5s linear 2s infinite;
+}
+@keyframes rotate-anim{
+	from{
+		transform:rotate(0deg);
+	}
+	to{
+		transform:rotate(360deg);
+	}
+}
+
+@keyframes bulb-anim{
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 1
+	}
+	100%{
+		opacity: 0;
+	}
+}
+
+ul#prtfolio-list-ul {
+    top: 0%;
+    position: absolute;
+    left: 1%;
+    height: 25%;
+}
+div#prtfolio-list-contents {
+    position: absolute;
+    top: 35%;
+    left: 8%;
+}
+ul#prtfolio-list-ul li{
+        padding-right: 15px;
+    font-size: 18px;
+    padding-left: 15px;
+    padding-top: 32%;
+    height: 100%;
+}
+ul#prtfolio-list-ul li:hover{
+	background-color: #ee2b7b;
+	color:#fff;
+}
+ul#prtfolio-list-ul li:hover a{
+	color:#fff;
+}
+ul#prtfolio-list-ul li:hover a:hover{
+	color:#fff;
+}
+
+ul#engage-list-ul {
+    top: 0%;
+    position: absolute;
+    left: 1%;
+    height: 25%;
+}
+div#engage-list-contents {
+    position: absolute;
+    top: 35%;
+    left: 8%;
+}
+ul#engage-list-ul li{
+        padding-right: 15px;
+    font-size: 18px;
+    padding-left: 15px;
+    padding-top: 34%;
+    height: 100%;
+}
+ul#engage-list-ul li:hover{
+	background-color: #ee2b7b;
+	color:#fff;
+}
+ul#engage-list-ul li:hover a{
+	color:#fff;
+}
+ul#engage-list-ul li:hover a:hover{
+	color:#fff;
+}
+
+
+
+/* end of our thinking banner*/
+
 
 
 
