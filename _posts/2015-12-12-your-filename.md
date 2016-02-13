@@ -1,11 +1,12 @@
 ---
 layout: navblog_detail
 description: first
-category: Test
+category: Data Science
 image: blog.jpg
 permalink: "/post/2015-12-12-your-filename/"
 tags: all
 published-date: Dec 25,2015
+blog_title: The New Experience
 The_New_Use_Experience: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
 
 imgsrc: http://forgeandsmith.com/wp-content/uploads/2015/12/Top-Tweets.jpg

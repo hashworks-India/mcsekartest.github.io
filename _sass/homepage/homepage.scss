@@ -2,7 +2,7 @@
 /*start of blog banner*/
 .blog-banner .part2 {
     position: absolute;
-    margin-top: 17%;
+    margin-top: 5%;
     padding: 20px;
 }
 #blog1-div1-part1 .animate-arroww .main-animate-arrow, #blog2-div1-part2 .animate-arroww .main-animate-arrow,
@@ -46,6 +46,11 @@
     height: 100%;
     width: 101.4%;
 }
+.blog-pencil {
+    margin-top: 11%;
+    margin-left: 22%;
+}
+
 .container-fluid.blog-banner {
     position: absolute;
     width: 100%;
@@ -107,7 +112,9 @@
     margin-left: -8px;
     cursor: pointer;
 }
-
+.blog-mar {
+    margin-top: 15px;
+}
 .blog-banner .blog1-div3{
     height: 50vh;
 
@@ -132,6 +139,11 @@
     overflow: hidden;
     margin-left: -2px;
     cursor: pointer;
+}
+.blog-a {
+    float: right;
+    color: #000;
+    margin-right:20px;
 }
 
 /*end of blog banner*/
@@ -768,11 +780,11 @@ to {
 .svg-anim-icons99{    /*desktop*/
     top: 1vh;
     left: 40%;
-     -webkit-animation: spin22  7s ease-out 1s infinite;  
-    -moz-animation: mozspin22  6s ease-out 2s infinite;  
-    -o-animation: ospin22  6s ease-out 2s infinite; 
-    -ms-animation: msspin22  6s ease-out 2s infinite;
-    animation: nospin22  6s ease-out 2s infinite;
+     -webkit-animation: spin22  8s ease-out 1s infinite;  
+    -moz-animation: mozspin22  8s ease-out 2s infinite;  
+    -o-animation: ospin22  8s ease-out 2s infinite; 
+    -ms-animation: msspin22  8s ease-out 2s infinite;
+    animation: nospin22  8s ease-out 2s infinite;
 }
 
 .svg-anim-icons100{    /*devops*/
@@ -851,51 +863,51 @@ to {
 @-webkit-keyframes spin22 {  
     from {  
         opacity: 0.3; 
-    transform: translateX(0%)  scale(0.6)  rotate(0deg) ;  
+    transform: translateX(0%)  scale(0)  rotate(0deg) ;  
 }  
 to { 
     opacity:1; 
-    transform:  translateX(10%)  scale(0.8)  rotate(-50deg) ;
+    transform:  translateX(10%)  scale(0.5)  rotate(-50deg) ;
     }  
 }
 @-moz-keyframes mozspin22 {  
     from {  
         opacity: 0.3; 
-    transform: translateX(0%)  scale(0.6)  rotate(0deg) ;  
+    transform: translateX(0%)  scale(0)  rotate(0deg) ;  
 }  
 to { 
     opacity:1; 
-    transform:  translateX(10%)  scale(0.8)  rotate(-50deg) ;
+    transform:  translateX(10%)  scale(0.5)  rotate(-50deg) ;
     }  
 }    
 @-o-keyframes ospin22 {  
     from {  
         opacity: 0.3; 
-    transform: translateX(0%)  scale(0.6)  rotate(0deg) ;  
+    transform: translateX(0%)  scale(0)  rotate(0deg) ;  
 }  
 to { 
     opacity:1; 
-    transform:  translateX(10%)  scale(0.8)  rotate(-50deg) ;
+    transform:  translateX(10%)  scale(0.5)  rotate(-50deg) ;
     } 
 }   
 @keyframes nospin22 {  
     from {  
         opacity: 0.3; 
-    transform: translateX(0%)  scale(0.6)  rotate(0deg) ;  
+    transform: translateX(0%)  scale(0)  rotate(0deg) ;  
 }  
 to { 
     opacity:1; 
-    transform:  translateX(10%)  scale(0.8)  rotate(-50deg) ;
+    transform:  translateX(10%)  scale(0.5)  rotate(-50deg) ;
     } 
 }
 @keyframes msspin22 {  
     from {  
         opacity: 0.3; 
-    transform: translateX(0%)  scale(0.6)  rotate(0deg) ;  
+    transform: translateX(0%)  scale(0)  rotate(0deg) ;  
 }  
 to { 
     opacity:1; 
-    transform:  translateX(10%)  scale(0.8)  rotate(-50deg) ;
+    transform:  translateX(10%)  scale(0.5)  rotate(-50deg) ;
     }  
 }
 

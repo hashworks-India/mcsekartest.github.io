@@ -88,8 +88,9 @@ html {
 	}
 	.menu-hamberger {
 		float: right;
-		margin: 20px;
-		/*position: relative !important;*/
+    	margin: 15px;
+    	cursor: pointer;
+    	/*margin-top: 30px;*/
 	}
 	#log-fixed {
 		position: fixed;
@@ -1955,77 +1956,32 @@ html {
 }*/
 
 /* menu for header */
-#slider {
-    /*position: absolute;*/
-    width: 100%;
-    height: 100%;
-    /*background: blue;*/
-    transform: translateX(-25%);
-    -webkit-transform: translateX(-25%);
-}
-
-.slide-in {
-    animation: slide-in 0.5s forwards;
-    -webkit-animation: slide-in 0.5s forwards;
-}
-
-.slide-out {
-    animation: slide-out 0.5s forwards;
-    -webkit-animation: slide-out 0.5s forwards;
-}
-    
-@keyframes slide-in {
-    100% { transform: translateX(0%); }
-}
-
-@-webkit-keyframes slide-in {
-    100% { -webkit-transform: translateX(0%); }
-}
-    
-@keyframes slide-out {
-    0% { transform: translateX(0%); }
-    100% { transform: translateX(-25%); }
-}
-
-@-webkit-keyframes slide-out {
-    0% { -webkit-transform: translateX(0%); }
-    100% { -webkit-transform: translateX(-25%); }
-}
-
-
-
-nav#toc {
+	nav#toc {
   background-color: #212328;
   height: 100%;
-  position: fixed;
+  position: absolute;
   right: -240px;
   top: 0;
-  
-  width: 343px;
-    z-index: 3;
-}
-#toggle{
-	width:50px;
-	height: 50px;
-}
-#toggle1{
-	width:50px;
-	height: 50px;
+width: 142px; 
 }
   nav#toc ul {
     list-style: none;
-    padding: 60px 40px 0; }
+    padding: 60px 40px 0; 
+}
     nav#toc ul li {
-      border-top: 1px solid #424650;
-      padding: 4px 0 5px; }
+      /*border-top: 1px solid #424650;*/
+      padding: 10px 0 5px;}
+
       nav#toc ul li a {
-        color: #80807e;
+        color: white;
         font: 300 15px/2em museo-sans, sans-serif;
         text-decoration: none; }
+
       nav#toc ul li a:hover, nav#toc ul li a.active {
         color: white; }
     nav#toc ul li:first-child {
       border-top: none; }
+
   nav#toc a#toc-actuator {
     background: #f8f8f8 url(images/pfd-sprites.png) no-repeat left top;
     cursor: pointer;
@@ -2037,23 +1993,23 @@ nav#toc {
     top: 60px;
     width: 34px;
     z-index: 5000; }
-
-
-
-  
-
-  nav#toc ul {
-    padding-top: 30px; }
+nav#toc ul {
+  padding-top: 75px;}
   nav#toc a#toc-actuator {
     left: -64px;
     top: 30px; }
 
+ 
 
 
 
 
 
 
+
+
+
+/* end of menu header */
 
 @media screen and (min-width: 1500px) {
 	
