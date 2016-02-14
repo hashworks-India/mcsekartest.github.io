@@ -1,5 +1,5 @@
 title: 'CI/CD Orchestration'
-content: 'CI/CD has become a mainstream technique for software development. '
+content: 'CI/CD has become a mainstream delivery model in software development. '
 testimonial:
     - { testimony: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non ipsa, cum, quis odit eum laboriosam doloremque distinctio itaque eos dolore.',name: 'Markus Jefferson',role: 'CEO',company_name: 'Company Name' }
     - { testimony: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non ipsa, cum, quis odit eum laboriosam doloremque distinctio itaque eos dolore1',name: 'Markus Jefferson1',role: 'CEO',company_name: 'Company Name' }
