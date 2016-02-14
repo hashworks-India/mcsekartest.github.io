@@ -1,5 +1,5 @@
 title: 'Test Automation'
-content: 'With the resurgence of agile practice, test automation has gained significant adoption in the application lifecycle & software delivery practice. Automation is seen as a invincible need for the success of DevOps today. '
+content: 'With the resurgence of agile practice, test automation has gained significant adoption across the application lifecycle. Automation is seen as an invincible need for the success of DevOps today. Test automation has evolved with Agile & XP practices. There are robust ways of delivering software today with Testing as the driver for building sofware.  '
 testimonial:
     - { testimony: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non ipsa, cum, quis odit eum laboriosam doloremque distinctio itaque eos dolore.',name: 'Markus Jefferson',role: 'CEO',company_name: 'Company Name' }
     - { testimony: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non ipsa, cum, quis odit eum laboriosam doloremque distinctio itaque eos dolore1',name: 'Markus Jefferson1',role: 'CEO',company_name: 'Company Name' }
