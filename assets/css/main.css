@@ -665,6 +665,7 @@ html {
 		border-top: none;
 		border-right: none;
 		border-left: none;
+		cursor: pointer;
 	}
 	.nav>li>a:focus, .nav>li>a:hover{
 		background-color: transparent;
@@ -2009,7 +2010,7 @@ nav#toc ul {
 	position: fixed;
     right: 0px;
     z-index: 10;
-  width: 34px;
+  width: 32px;
   height: 45px;
   top: 0;
 /*  position: relative;*/
@@ -2030,7 +2031,7 @@ nav#toc ul {
   position: fixed;
   height: 4px;
   width: 100%;
-  background: #d3531a;
+  background: #EE2B7B;
   border-radius: 9px;
   opacity: 1;
   left: 0;

@@ -926,6 +926,11 @@ var which_one_clicked = 0;
       $(".hide-scroll").show();
       $(this).toggleClass('open');
     }
+    $("#toc").mouseleave(function(){
+      $("#nav-icon1").toggleClass('open');
+      $("#toc").hide();
+       $(".hide-scroll").show();
+    });
   });
 
   /* menu two */
