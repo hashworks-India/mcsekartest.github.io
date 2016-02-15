@@ -2124,6 +2124,18 @@ i.fa.fa-chevron-down.down-arrow{
 	background-color: #EC6C20;
 	cursor: pointer;
 }
+#middle-div-part2 svg {
+	margin-bottom: -15px;
+    margin-top: 5px;
+}
+#middle-div-part3 svg {
+	margin-top: 4px;
+    margin-bottom: -1px;
+}
+#middle-div-part4 svg {
+	margin-top: 4px;
+    margin-bottom: -4px;
+}
 #middle-div-part2{
 	position: absolute;
 	left: 25%;
