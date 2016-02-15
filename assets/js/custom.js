@@ -926,12 +926,24 @@ var which_one_clicked = 0;
       $(".hide-scroll").show();
       $(this).toggleClass('open');
     }
+      });
+
     $("#toc").mouseleave(function(){
+       if($("#toc").css("width")=="142px")
+      {
       $("#nav-icon1").toggleClass('open');
       $("#toc").animate({'width':'0px'},700);
        $(".hide-scroll").show();
+     }
+     else {
+        $("#toc").animate({'width':'142px'},700);
+      $(".hide-scroll").show();
+      $(this).toggleClass('open');
+     }
+
     });
-  });
+
+
 
   /* menu two */
 
