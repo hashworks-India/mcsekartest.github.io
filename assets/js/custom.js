@@ -922,7 +922,7 @@ var which_one_clicked = 0;
     $(this).toggleClass('open');
     }
     else{
-      $("#toc").animate({'width':'0px'},700);
+      $("#toc").animate({'width':'0px'},500);
       $(".hide-scroll").show();
       $(this).toggleClass('open');
     }
@@ -932,14 +932,14 @@ var which_one_clicked = 0;
        if($("#toc").css("width")=="142px")
       {
       $("#nav-icon1").toggleClass('open');
-      $("#toc").animate({'width':'0px'},700);
+      $("#toc").animate({'width':'0px'},500);
        $(".hide-scroll").show();
      }
-     else {
-        $("#toc").animate({'width':'142px'},700);
-      $(".hide-scroll").show();
-      $(this).toggleClass('open');
-     }
+     // else {
+     //    $("#toc").animate({'width':'142px'},700);
+     //  $(".hide-scroll").show();
+     //  $('#nav-icon1').toggleClass('open');
+     // }
 
     });
 
