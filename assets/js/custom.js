@@ -911,24 +911,24 @@ var which_one_clicked = 0;
 
     });
   
-    $('#toc').hide();
+    // $('#toc').animate({'width':'0px'},850);
      $('#nav-icon1').click(function(){
 
     // alert($("#div1").css("display"));
-    if($("#toc").css("display")=="none")
+    if($("#toc").css("width")=="0px")
       {
-        $("#toc").show();
+        $("#toc").animate({'width':'142px'},700);
         $(".hide-scroll").hide();
     $(this).toggleClass('open');
     }
     else{
-      $("#toc").hide();
+      $("#toc").animate({'width':'0px'},700);
       $(".hide-scroll").show();
       $(this).toggleClass('open');
     }
     $("#toc").mouseleave(function(){
       $("#nav-icon1").toggleClass('open');
-      $("#toc").hide();
+      $("#toc").animate({'width':'0px'},700);
        $(".hide-scroll").show();
     });
   });
