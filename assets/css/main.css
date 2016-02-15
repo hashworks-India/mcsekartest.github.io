@@ -1,5 +1,3 @@
-
-
 html {
 	font-size: 16px;
 	}
@@ -1254,7 +1252,58 @@ html {
     bottom: 0;
 }
 
+#banner-two-bgi{
+	position: absolute;
+	background-color: #fff;
+}
+.bulb-anime{
+    animation: bulb-anim  5s linear 2s infinite;
+}
+@keyframes rotate-anim{
+	from{
+		transform:rotate(0deg);
+	}
+	to{
+		transform:rotate(360deg);
+	}
+}
 
+@keyframes bulb-anim{
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 1
+	}
+	100%{
+		opacity: 0;
+	}
+}
+#animate-icons-21{
+    position: absolute;
+    bottom: 19%;
+    left: 15%;
+    width: 4%;
+    z-index: 1;
+    animation: rotate-anim   6s linear infinite; 
+}
+
+#animate-icons-22{
+    position: absolute;
+    bottom: 28%;
+    right: 2%;
+    z-index: 1;
+    width: 3.5%;
+    animation: rotate-anim   5s linear infinite; 
+}
+#animate-icons-23{
+	position: absolute;
+    bottom: 21%;
+    right: 33%;
+    width: 3%;
+    z-index: 1;
+    animation: rotate-anim   4s linear infinite; 
+}
 
 /* end of new our thinking */
 
