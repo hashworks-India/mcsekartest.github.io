@@ -1077,7 +1077,8 @@ $('#middle-div-part3').mouseleave(function() {
     $(this).animate({"height":"120px"},244);
     $(this).find("i.fa.fa-chevron-down.down-arrow").hide();
   }
-});$('#middle-div-part4').mouseenter(function() {
+});
+$('#middle-div-part4').mouseenter(function() {
   if($('#We_accelerate').css("display")=="none"){
     $(this).animate({"height":"140px"},244);
     $(this).find("i.fa.fa-chevron-down.down-arrow").show();
@@ -1094,8 +1095,25 @@ $('#middle-div-part4').mouseleave(function() {
   }
 });
 
+/*we love to be tech partner*/
+    $("#hw-fixed-footer-part").animate({"opacity":"1"},644);
+    $("#hw-fixed-footer-part").delay(2000).animate({"opacity":"0"},644);
+ $('#hw-fixed-footer-part').mouseenter(function() {
+    $(this).animate({"opacity":"1"},644);
+});
+$('#hw-fixed-footer-part').mouseleave(function() {
+    $(this).animate({"opacity":"0"},644);
+}); 
+$("ul.scroll-indicators.hide-scroll").click(function(){
+    $("#hw-fixed-footer-part").animate({"opacity":"1"},644);
+    $("#hw-fixed-footer-part").delay(2000).animate({"opacity":"0"},644);
+});
+/*end we love to be tech partner*/
 
-  
-  
+
+
+
+
+
 
 });
