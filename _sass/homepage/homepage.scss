@@ -1917,10 +1917,13 @@ to {
   /*bg-color*/
   
     .scroll-anim {
-     height: 100vh;
-      background: #F6C72E; 
+     height: 100vh; 
       background-size: 100%;
       position: relative;
+    }
+
+    .we-on-banner {
+      background: #F6C72E;   
     }
 
     .scroll-anim #ban-text p , .scroll-anim #ban-text h1{

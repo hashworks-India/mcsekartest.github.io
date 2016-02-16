@@ -90,7 +90,7 @@ $(document).ready(function(){
               $(this).addClass('active');
               console.log($(this).offset().top);
               $('body, html').animate({
-                          scrollTop: $(this).offset().top
+                          scrollTop: $(this).position().top
                       }, 'slow');
             }
             else {
