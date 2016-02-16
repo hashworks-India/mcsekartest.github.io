@@ -1443,8 +1443,14 @@ html {
 		margin-top: 54px;
 	}
 	/* end of casestudy_detail  */
-
-
+/*portfolio page*/
+.carousel-etl-right-allign{
+    margin-left: 55px;
+}
+.carousel-etl-left-allign{
+	margin-right: 55px;
+}
+/*end portfolio page*/
 	/*filter grid*/
 	.blog-margin {
 		margin-top:40px;
