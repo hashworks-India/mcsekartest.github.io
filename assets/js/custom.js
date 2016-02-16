@@ -287,6 +287,10 @@ $(document).ready(function(){
                     $('.hw-tablink > li').removeClass('active');
                       $(this).addClass('active');
                   }
+                  else if( curid === 'portfolio' || curid === '') {
+                      $('.hw-tablink > li').removeClass('active');
+                      $('ul li[data-value="DataOps"]').addClass('active');
+                  }
                 }
                 
               });
@@ -324,6 +328,10 @@ $(document).ready(function(){
 
 
 /* end of tag cloud*/
+/*click for the portfolio in head*/
+$("#anchor-portfolio").click(function(){
+      tabchange('portfolio');
+    });
 
 /* header hover */
         var initiall = $('.navbar-right > li > a:first-child').position().left;
@@ -616,11 +624,11 @@ $("#div2-right-div-part4").css("display", "none");
 /* end of blog landing page animation */   
 
 /* for portfolio page dropdown item click*/
-     $(".dropdown-link .dropdown a").click( function() {
-      var navtab = $(".line-padding.prot-img").offset().top - 50;
-          $('html, body').animate({
-            scrollTop: navtab}, 500, 'linear');
-   });
+   //   $(".dropdown-link .dropdown a").click( function() {
+   //    var navtab = $(".line-padding.prot-img").offset().top - 50;
+   //        $('html, body').animate({
+   //          scrollTop: navtab}, 500, 'linear');
+   // });
 /* end for portfolio page dropdown item click*/     
 
   var height_pixel = $("#blog1-div1-part1").css('height');
