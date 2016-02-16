@@ -629,21 +629,24 @@ $("#div2-right-div-part4").css("display", "none");
     {
       $("#blog2-div1-part2").animate({'height' : '0%'},844);
       $(this).css(  "z-index", "1");
+      $(this).children().next(".part2").animate({'margin-top' : '7%'},444);
       $(this).find(".main-animate-arrow").hide(); 
-      $(this).animate({'height' : '200%'},844);  
+      $(this).animate({'height' : '100vh'},844);  
     }
     else{
-      $(this).animate({'height' : '100%'},844);
-      $(this).find(".main-animate-arrow").show();   
+      $(this).animate({'height' : '50vh'},844);
+      $(this).find(".main-animate-arrow").show();  
+      $(this).children().next(".part2").animate({'margin-top' : '27%'},444); 
       $(this).css(  "z-index", "0");
-      $("#blog2-div1-part2").animate({'height' : '100%'},844);
+      $("#blog2-div1-part2").animate({'height' : '50vh'},844);
     }
   });
   $("#blog1-div1-part1").mouseleave(function(){
-      $(this).animate({'height' : '100%'},844); 
+      $(this).animate({'height' : '50vh'},844); 
+      $(this).children().next(".part2").animate({'margin-top' : '27%'},444); 
       $(this).css(  "z-index", "0");  
       $(this).find(".main-animate-arrow").show(); 
-      $("#blog2-div1-part2").animate({'height' : '100%'},844);       
+      $("#blog2-div1-part2").animate({'height' : '50vh'},844);       
     }); 
 
 
@@ -654,13 +657,15 @@ $("#div2-right-div-part4").css("display", "none");
      
       $(this).css(  "z-index", "1");
       $(this).find(".blog-img").animate({'margin-top' : '25%'},444);
+      $(this).children().next(".part2").animate({'margin-top' : '7%'},444); 
       $(this).find(".main-animate-arrow").hide();
       $("#blog1-div1-part1").animate({'top' : '-100%'},844); 
-      $(this).animate({'height' : '200%'},844);  
+      $(this).animate({'height' : '100vh'},844);  
     }
     else{
       $(this).find(".blog-img").animate({'margin-top' : '20%'},444);  
-      $(this).animate({'height' : '100%'},844);
+      $(this).children().next(".part2").animate({'margin-top' : '27%'},444); 
+      $(this).animate({'height' : '50vh'},844);
       $(this).find(".main-animate-arrow").show();   
       $(this).css(  "z-index", "0");
       $("#blog1-div1-part1").animate({'top' : '0%'},844); 
@@ -668,7 +673,8 @@ $("#div2-right-div-part4").css("display", "none");
   });
   $("#blog2-div1-part2").mouseleave(function(){
       $(this).find(".blog-img").animate({'margin-top' : '20%'},444);
-      $(this).animate({'height' : '100%'},844); 
+      $(this).children().next(".part2").animate({'margin-top' : '27%'},444); 
+      $(this).animate({'height' : '50vh'},844); 
       $(this).css(  "z-index", "0");  
       $(this).find(".main-animate-arrow").show(); 
       $("#blog1-div1-part1").animate({'top' : '0%'},844);     
@@ -706,12 +712,14 @@ $("#div2-right-div-part4").css("display", "none");
       $("#blog1-div2-part1").animate({'top' : '-100%'},844); 
       $(this).css(  "z-index", "1");
       $(this).find(".blog-img").animate({'margin-top' : '25%'},444); 
+      $(this).children().next(".part2").animate({'margin-top' : '7%'},444); 
       $(this).find(".main-animate-arrow").hide(); 
-      $(this).animate({'height' : '200%'},844);   
+      $(this).animate({'height' : '100vh'},844);   
     }
     else{
       $(this).find(".blog-img").animate({'margin-top' : '20%'},444);  
-      $(this).animate({'height' : '100%'},844); 
+      $(this).children().next(".part2").animate({'margin-top' : '27%'},444); 
+      $(this).animate({'height' : '50vh'},844); 
       $(this).css(  "z-index", "0");  
       $(this).find(".main-animate-arrow").show(); 
       $("#blog1-div2-part1").animate({'top' : '0%'},844);  
@@ -719,7 +727,8 @@ $("#div2-right-div-part4").css("display", "none");
   });
   $("#blog2-div2-part2").mouseleave(function(){
       $(this).find(".blog-img").animate({'margin-top' : '20%'},444);
-      $(this).animate({'height' : '100%'},844); 
+      $(this).children().next(".part2").animate({'margin-top' : '27%'},444); 
+      $(this).animate({'height' : '50vh'},844); 
       $(this).css(  "z-index", "0");  
       $(this).find(".main-animate-arrow").show(); 
       $("#blog1-div2-part1").animate({'top' : '0%'},844); 
@@ -730,23 +739,26 @@ $("#div2-right-div-part4").css("display", "none");
 
     if( $(this).css('height') === height_pixel )
     {
-      $("#blog2-div3-part2").animate({'height' : '0%'},844);
+      $("#blog2-div3-part2").animate({'height' : '0vh'},844);
+      $(this).children().next(".part2").animate({'margin-top' : '7%'},444); 
       $(this).css(  "z-index", "1");
       $(this).find(".main-animate-arrow").hide(); 
-      $(this).animate({'height' : '200%'},844);    
+      $(this).animate({'height' : '100vh'},844);    
     }
     else{
-      $(this).animate({'height' : '100%'},844); 
+      $(this).animate({'height' : '50vh'},844); 
       $(this).css(  "z-index", "0");  
       $(this).find(".main-animate-arrow").show(); 
-      $("#blog2-div3-part2").animate({'height' : '100%'},844);    
+      $("#blog2-div3-part2").animate({'height' : '50vh'},844);
+      $(this).children().next(".part2").animate({'margin-top' : '27%'},444);     
     }
   });
   $("#blog1-div3-part1").mouseleave(function(){
-      $(this).animate({'height' : '100%'},844); 
+      $(this).animate({'height' : '50vh'},844); 
       $(this).css(  "z-index", "0");  
       $(this).find(".main-animate-arrow").show(); 
-      $("#blog2-div3-part2").animate({'height' : '100%'},844);   
+      $("#blog2-div3-part2").animate({'height' : '50vh'},844); 
+      $(this).children().next(".part2").animate({'margin-top' : '27%'},444);   
     }); 
 
 
@@ -757,12 +769,14 @@ $("#div2-right-div-part4").css("display", "none");
       $("#blog1-div3-part1").animate({'top' : '-100%'},844); 
       $(this).css(  "z-index", "1"); 
       $(this).find(".blog-img").animate({'margin-top' : '25%'},444);
+      $(this).children().next(".part2").animate({'margin-top' : '7%'},444); 
       $(this).find(".main-animate-arrow").hide(); 
-      $(this).animate({'height' : '200%'},844); 
+      $(this).animate({'height' : '100vh'},844); 
     }
     else{
       $(this).find(".blog-img").animate({'margin-top' : '20%'},444);
-      $(this).animate({'height' : '100%'},844); 
+      $(this).children().next(".part2").animate({'margin-top' : '27%'},444); 
+      $(this).animate({'height' : '50vh'},844); 
       $(this).css(  "z-index", "0");  
       $(this).find(".main-animate-arrow").show(); 
       $("#blog1-div3-part1").animate({'top' : '0%'},844); 
@@ -770,7 +784,8 @@ $("#div2-right-div-part4").css("display", "none");
   });
   $("#blog2-div3-part2").mouseleave(function(){
       $(this).find(".blog-img").animate({'margin-top' : '20%'},444);
-      $(this).animate({'height' : '100%'},844); 
+      $(this).children().next(".part2").animate({'margin-top' : '27%'},444); 
+      $(this).animate({'height' : '50vh'},844); 
       $(this).css(  "z-index", "0");  
       $(this).find(".main-animate-arrow").show(); 
       $("#blog1-div3-part1").animate({'top' : '0%'},844);  
