@@ -99,6 +99,23 @@ html {
     z-index: 5;
 	}
 
+	/*.hw-section-header:after {
+  position: relative;
+  content: "";
+  display: inline-block;
+  width: 0%;
+  height: 3px;
+  margin-top: 20px;
+  background: #EE307E;
+  transition: width 1.5s ease 0s;
+  -webkit-transition: width 1.5s ease 0s;
+  -o-transition: width 1.5s ease 0s;
+  -moz-transition: width 1.5s ease 0s;
+}
+.hw-section-header.anim:after {
+  width: 60%;
+}*/
+
 	.gotham-rounded-bold {
 		font-family: "gotham-rounded-bold";
 	}
