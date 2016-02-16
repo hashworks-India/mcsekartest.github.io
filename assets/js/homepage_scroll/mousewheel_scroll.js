@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 
     //Set each section's height equals to the window height
-    $('.scroll-anim').height($(window).height());
+    // $('.scroll-anim').height($(window).height());
     /*set the class 'active' to the first element 
      this will serve as our indicator*/
     $('.scroll-anim').first().addClass('active');
@@ -29,6 +29,7 @@ $(document).ready(function(){
                 to jump to the topmost or bottom when 
                 the user scrolled very fast.*/
                 var timer = setTimeout(function () {
+
                     /* animate the scrollTop by passing 
                     the elements offset top value */
                     $('body, html').animate({
@@ -81,11 +82,13 @@ $(document).ready(function(){
         var dval = $(this).data('tab');
 
         $('.scroll-anim').each(function(){
+            // alert( $('body, html').offset().top);
             var scrolldval = $(this).data('value');
 
             if(dval == scrolldval) {
               $(".scroll-anim").removeClass('active');
               $(this).addClass('active');
+              console.log($(this).offset().top);
               $('body, html').animate({
                           scrollTop: $(this).offset().top
                       }, 'slow');

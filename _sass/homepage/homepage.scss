@@ -1,4 +1,5 @@
 /*pencil liquid animation*/
+
 #pencil-liquid{
     animation: pencil-liquid-anim 6s linear infinite;
     -moz-animation: moz-pencil-liquid-anim 6s linear infinite;
@@ -1916,7 +1917,7 @@ to {
   /*bg-color*/
   
     .scroll-anim {
-     
+     height: 100vh;
       background: #F6C72E; 
       background-size: 100%;
       position: relative;
