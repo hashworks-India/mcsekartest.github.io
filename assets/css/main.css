@@ -94,28 +94,11 @@ html {
 	}
 	#log-fixed {
 		position: fixed;
-		    top: 0;
-   /* width: 100%;*/
-    z-index: 5;
+		top: 0;
+  		z-index: 5;
 	}
 
-	/*.hw-section-header:after {
-  position: relative;
-  content: "";
-  display: inline-block;
-  width: 0%;
-  height: 3px;
-  margin-top: 20px;
-  background: #EE307E;
-  transition: width 1.5s ease 0s;
-  -webkit-transition: width 1.5s ease 0s;
-  -o-transition: width 1.5s ease 0s;
-  -moz-transition: width 1.5s ease 0s;
-}
-.hw-section-header.anim:after {
-  width: 60%;
-}*/
-
+	
 	.gotham-rounded-bold {
 		font-family: "gotham-rounded-bold";
 	}
@@ -253,6 +236,27 @@ html {
 	.active-color {
 		color: #c9443d;
 	}
+	.explore-btn {
+		padding: 8px 25px; /**/
+		color: #fff;
+		font-size: 0.75rem; /*12px*/
+		font-family: "gotham-rounded-bold";
+		text-transform: uppercase;
+		border: 1px solid #535876;/**/
+		background-color: transparent;
+		color: #535876;
+		margin-top: 18px;
+		-webkit-transition: all .5s ease 0s;
+		-moz-transition: all .5s ease 0s;
+		-ms-transition: all .5s ease 0s;
+		-o-transition: all .5s ease 0s;
+		transition: all .5s ease 0s;
+	}
+	.explore-btn:hover {
+		background-color: #535876;
+		color: #fff;
+	}
+
 	.custom-btn {
 		padding: 8px 25px; /**/
 		color: #fff;
@@ -266,7 +270,6 @@ html {
 		-ms-transition: all .5s ease 0s;
 		-o-transition: all .5s ease 0s;
 		transition: all .5s ease 0s;
-		
 	}
 
 	.custom-btn a {
@@ -1180,6 +1183,9 @@ html {
     position: fixed;
     right: 10px;
     bottom: 2%;	
+}
+.upskilling-ani:hover {
+  padding-left: 30px;
 }
 .title-background{
 	background: url("/assets/img/service-del/Text_Background_Shades.svg") no-repeat;
@@ -2180,7 +2186,7 @@ nav#toc ul {
 /* Start of end of our thinking banner*/ 
 #top-div{
 	position: relative;
-	margin-top: 60px;
+	margin-top: 45px;
 }
 #middle-div{
 	position: relative;
