@@ -2032,50 +2032,32 @@ to {
       /*background: transparent url("/assets/img/landingpage/Wallpaper.svg") no-repeat scroll bottom center / cover;*/
      /* background-color: #8a9b0f; */
     }
- 
+    .product-svg {
+    position: absolute;
+    bottom: 10px;
+    }
+    .new-product-text {
+        position: absolute;
+        bottom: 55%;
+    }
+    .carousel-position {
+        position: absolute!important;
+            padding-left: 67px;
+    padding-right: 12px;
+    padding-top: 30px;
+    }
+    .product-carousel {
+           width: 350px;
+   
+    }
+    .svg-rotate {
+    transform: rotateY(-180deg);
+    }
+    .product-span {
+    padding-left: 15px;
+    }
 
-    .clouds .icon.cloud-1 {
-    width: 100px;
-    bottom: 250px;
-    top: 22%;
-    -moz-animation: clouds1 100s linear  infinite;
-      -webkit-animation: clouds1 100s linear  infinite;
-      -ms-animation: clouds1 100s linear infinite;
-      animation: clouds1 100s linear infinite;
     
-    }
-    @keyframes clouds1 {
-    from {
-        transform: translateX(-333%)
-    }
-    to {
-        transform: translateX(1142%)
-    }
-}
-@-moz-keyframes clouds1 { /* Firefox */
-     from {
-        transform: translateX(-333%)
-    }
-    to {
-        transform: translateX(1142%)
-    }
-}
-@-webkit-keyframes clouds1 { /* Safari and Chrome */
-    from {
-        transform: translateX(-333%)
-    }
-    to {
-        transform: translateX(1142%)
-    }
-}
-@-o-keyframes fadein { /* Opera */
-    from {
-        transform: translateX(-333%)
-    }
-    to {
-        transform: translateX(1142%)
-    }
-}
     .clouds .icon.cloud-2 {
         width: 100px;
         bottom: 250px;
