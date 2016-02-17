@@ -1,7 +1,7 @@
 ---
 title: Devops Test
 layout: navcasestudy_detail
-category: Education
+category: DevOps
 permalink: "/casestudy/devops/"
 tag: devops
 problem_statement:  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the

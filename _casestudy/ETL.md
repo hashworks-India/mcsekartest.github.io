@@ -1,7 +1,7 @@
 ---
 title: ETL
 layout: navcasestudy_detail
-category: education
+category: Mobility
 permalink: "/casestudy/ETL/"
 tag: devops
 problem_statement:  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the

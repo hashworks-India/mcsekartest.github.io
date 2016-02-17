@@ -1134,6 +1134,130 @@ $("ul.scroll-indicators.hide-scroll").click(function(){
 /*end we love to be tech partner*/
 
 
+/*for filtering in case study*/
+var no_of_total_case_study_item=0;
+$(".casestudy-category-init").each(function(){
+  no_of_total_case_study_item++;
+      });
+$("#case-studies-total-no").text(no_of_total_case_study_item);
+function case_study_filter_function(){
+    var no_of_matched_item=0;
+     if ($("#case-studies-dataops-checkbox").prop('checked')==true){
+      $(".casestudy-category-init").each(function(){
+        if($(this).text().toLowerCase().trim()=="dataops"){
+          $(".casestudy-ul ul ").find(".dataops").css({opacity: 0,display: 'block'}).animate({opacity:1},500);
+          no_of_matched_item++;
+        }
+
+      });
+      }
+      else
+      {
+        $(".casestudy-category-init").each(function(){
+        if($(this).text().toLowerCase().trim()=="dataops"){
+          $(".casestudy-ul ul ").find(".dataops").css("display","none");
+        }
+      });
+      }
+
+     if ($("#case-studies-devops-checkbox").prop('checked')==true){
+      $(".casestudy-category-init").each(function(){
+        if($(this).text().toLowerCase().trim()=="devops"){
+          $(".casestudy-ul ul ").find(".devops").css({opacity: 0,display: 'block'}).animate({opacity:1},500);
+          no_of_matched_item++;
+        }
+
+      });
+      }
+      else
+      {
+        $(".casestudy-category-init").each(function(){
+        if($(this).text().toLowerCase().trim()=="devops"){
+          $(".casestudy-ul ul ").find(".devops").css("display","none");
+        }
+      });
+      }
+
+      if ($("#case-studies-datascie-checkbox").prop('checked')==true){
+      $(".casestudy-category-init").each(function(){
+        if($(this).text().toLowerCase().trim()=="data science"){
+          $(".casestudy-ul ul ").find(".data").css({opacity: 0,display: 'block'}).animate({opacity:1},500);
+          no_of_matched_item++;
+        }
+
+      });
+      }
+      else
+      {
+        $(".casestudy-category-init").each(function(){
+        if($(this).text().toLowerCase().trim()=="data science"){
+          $(".casestudy-ul ul ").find(".data").css("display","none");
+        }
+      });
+      }
+
+      if ($("#case-studies-ui-ux-checkbox").prop('checked')==true){
+      $(".casestudy-category-init").each(function(){
+        if($(this).text().toLowerCase().trim()=="ui"){
+          $(".casestudy-ul ul ").find(".ui").css({opacity: 0,display: 'block'}).animate({opacity:1},500);
+          no_of_matched_item++;
+        }
+
+      });
+      }
+      else
+      {
+        $(".casestudy-category-init").each(function(){
+        if($(this).text().toLowerCase().trim()=="ui"){
+          $(".casestudy-ul ul ").find(".ui").css("display","none");
+        }
+      });
+      }
+      if ($("#case-studies-mobility-checkbox").prop('checked')==true){
+      $(".casestudy-category-init").each(function(){
+        if($(this).text().toLowerCase().trim()=="mobility"){
+          $(".casestudy-ul ul ").find(".mobility").css({opacity: 0,display: 'block'}).animate({opacity:1},500);
+          no_of_matched_item++;
+        }
+
+      });
+      }
+      else
+      {
+        $(".casestudy-category-init").each(function(){
+        if($(this).text().toLowerCase().trim()=="mobility"){
+          $(".casestudy-ul ul ").find(".mobility").css("display","none");
+        }
+      });
+      }
+      
+      if ($("#case-studies-client-checkbox").prop('checked')==true){
+      $(".casestudy-category-init").each(function(){
+        if($(this).text().toLowerCase().trim()=="client work"){
+          $(".casestudy-ul ul ").find(".client").css({opacity: 0,display: 'block'}).animate({opacity:1},500);
+          no_of_matched_item++;
+        }
+
+      });
+      }
+      else
+      {
+        $(".casestudy-category-init").each(function(){
+        if($(this).text().toLowerCase().trim()=="client work"){
+          $(".casestudy-ul ul ").find(".client").css("display","none");
+        }
+      });
+      }
+      $("#case-studies-total-no").text(no_of_matched_item+"/"+no_of_total_case_study_item);
+      if(no_of_matched_item==0)
+        $(".casestudy-ul ul ").append('<div class="gotham-rounded-light no_of_matched_item text-center" style="color:#ee2b7b"><p>sorry, no match found</p></div>');
+}
+
+  $("#case-studies-mobility-checkbox,#case-studies-client-checkbox,#case-studies-dataops-checkbox,#case-studies-devops-checkbox,#case-studies-datascie-checkbox,#case-studies-ui-ux-checkbox").click(function(){
+case_study_filter_function();
+});
+
+/*end filtering in case study*/ 
 
 
 

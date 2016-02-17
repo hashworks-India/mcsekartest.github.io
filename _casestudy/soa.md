@@ -1,7 +1,7 @@
 ---
 title: soa
 layout: navcasestudy_detail
-category: portfolio
+category: Client Work
 tag: devops1
 permalink: "/casestudy/soa/"
 problem_statement:  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the

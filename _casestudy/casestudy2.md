@@ -1,7 +1,7 @@
 ---
 title: casestudy2
 layout: navcasestudy_detail
-category: trending
+category: DataOps
 permalink: "/casestudy/casestudy2/"
 tag: events
 problem_statement:  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
