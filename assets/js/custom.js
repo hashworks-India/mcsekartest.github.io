@@ -1141,6 +1141,7 @@ $(".casestudy-category-init").each(function(){
       });
 $("#case-studies-total-no").text(no_of_total_case_study_item);
 function case_study_filter_function(){
+    $(".no_of_matched_case_item").remove();
     var no_of_matched_item=0;
      if ($("#case-studies-dataops-checkbox").prop('checked')==true){
       $(".casestudy-category-init").each(function(){
@@ -1250,7 +1251,7 @@ function case_study_filter_function(){
       }
       $("#case-studies-total-no").text(no_of_matched_item+"/"+no_of_total_case_study_item);
       if(no_of_matched_item==0)
-        $(".casestudy-ul ul ").append('<div class="gotham-rounded-light no_of_matched_item text-center" style="color:#ee2b7b"><p>sorry, no match found</p></div>');
+        $(".casestudy-ul ul ").append('<div class="gotham-rounded-light no_of_matched_case_item text-center" style="color:#ee2b7b"><p>sorry, no match found</p></div>');
 }
 
   $("#case-studies-mobility-checkbox,#case-studies-client-checkbox,#case-studies-dataops-checkbox,#case-studies-devops-checkbox,#case-studies-datascie-checkbox,#case-studies-ui-ux-checkbox").click(function(){
