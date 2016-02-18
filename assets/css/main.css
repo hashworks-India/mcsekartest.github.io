@@ -125,9 +125,15 @@ html {
 	.hw-carousel-heading {
 		font-size: 2.5rem;  /*40px*/
 	}
+	.hw-font-heading {
+		font-size: 2rem;
+	}
 
 	.hw-main-heading {
 		font-size: 1.88rem;  /*30px*/
+	}
+	.hw-font-heading1 {
+		font-size: 1.68rem; 
 	}
 
 	.hw-tab-heading,
@@ -136,7 +142,7 @@ html {
 	}
 
 	.hw-heading {
-		font-size: 1.5rem;  /*24px*/
+		font-size: 1.125rem;  /*24px*/ /* 18px */
 	}
 
 	.hw-para,
@@ -159,22 +165,31 @@ html {
 	.log-color-blue {
 		color: #0AB4C5;
 	}
-	
+	.hw-line-height {
+		line-height: 1.500em;
+	}
 	.text-center {
 		text-align: center;
+	}
+	.text-justify {
+		text-align: justify;
 	}
 
 	.text-uppercase {
 		text-transform: uppercase;
 	}
-	
+	.li-tab-mar {
+		margin-bottom: 12px !important;
+	}
 	.equal-height-col {
 		display: table-cell;
 		float: none;
 		vertical-align: middle;
 		padding: 0;
 	}
-
+	.product-left {
+		padding-left: 10px;
+	}
 	.col-20 {
 		width: 20%;
 		float: left;
@@ -554,7 +569,7 @@ html {
 		
 		.client-backgrnd {
 			background-color: #f4f4f4;
-			padding-top: 10px;
+			padding-top: 25px;
 			padding-bottom: 50px;
 			margin-top:15px;
 		}
@@ -780,7 +795,7 @@ html {
 		}
 
 		.hw-works-row {
-			margin-top: 120px;
+			margin-top: 105px;
 		}
 
 		.hw-works-row > .row {
@@ -851,7 +866,7 @@ html {
 	}
 	.carousel-padding {
 		position: relative;
-		padding: 20px 0 60px;
+		padding: 0px 60px 24px;
 	}
 
 	.heading-caro-padd {
@@ -1330,7 +1345,7 @@ div#case-studies-filter-controls label{
     left: 10px;
     top: 27%;	
 }
-.main-contentt h1.text-center.gotham-rounded-bok.heading.hw-main-heading {
+.main-contentt h1.text-center.gotham-rounded-light.heading.hw-font-heading {
         margin-bottom: 25%;
 
 }

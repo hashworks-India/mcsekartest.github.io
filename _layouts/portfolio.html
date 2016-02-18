@@ -3,7 +3,7 @@
 <main>
 
    
-	<h1 class="text-center gotham-rounded-bok heading hw-carousel-heading"> Portfolio </h1>
+	<h1 class="text-center gotham-rounded-bok heading hw-font-heading"> Portfolio </h1>
 	<!-- carousel-->
 
    		<div class="carousel-padding"> 
@@ -13,7 +13,7 @@
 		   		<div class="container heading-caro-padd">
 				    <!-- Wrapper for slides -->
 				    <div class="carousel-inner" role="listbox">
-				    	<h2 class="gotham-rounded-light hw-heading h2-color">{{site.data.Portfolio.carousel.content}}</h2> 
+				    	<h2 class="gotham-rounded-light hw-heading h2-color text-center hw-line-height">{{site.data.Portfolio.carousel.content}}</h2> 
 					  	
 				    </div>
 				</div>
@@ -184,7 +184,7 @@
 							<div class="col-lg-6">
 								<h2 class="gotham-rounded-light hw-heading h2-color">{{ site.data.Portfolio.DataOps.api_platform.title}}</h2>
 								<div class="div-border-left">
-									<p class="gotham-rounded-light hw-para para">{{ site.data.Portfolio.DataOps.api_platform.content}}
+									<p class="gotham-rounded-light hw-copyright para">{{ site.data.Portfolio.DataOps.api_platform.content}}
 									</p>
 								</div>
 							<a href="/casestudy/soa" data-parm="john"><button class="custom-btn">VIEW CASE STUDY</button></a>	
@@ -209,13 +209,13 @@
 							   {% for testimony in site.data.Portfolio.DataOps.api_platform.testimonial%}
 							       {% if forloop.first %}
 							  	<div class="item active">
-							      <div class="hw-para">
+							      <div class="hw-copyright">
 							       {{ testimony.testimony}}
 							      </div>
 							    </div>
 								{% else %}
 							   <div class="item">
-							      	<div class="hw-para">
+							      	<div class="hw-copyright">
 							       		{{ testimony.testimony}}
 							      	</div>
 							    </div>
@@ -279,13 +279,13 @@
 							   {% for testimony in site.data.Portfolio.DataOps.microservices.testimonial%}
 							       {% if forloop.first %}
 							  	<div class="item active">
-							      <div class="hw-para">
+							      <div class="hw-copyright">
 							       {{ testimony.testimony}}
 							      </div>
 							    </div>
 								{% else %}
 							   <div class="item">
-							      	<div class="hw-para">
+							      	<div class="hw-copyright">
 							       		{{ testimony.testimony}}
 							      	</div>
 							    </div>
@@ -327,7 +327,7 @@
 							<div class="col-lg-6">
 								<h2 class="gotham-rounded-light h2-color hw-heading">{{ site.data.Portfolio.DataOps.microservices.title}}</h2>
 								<div class="div-border-left">
-									<p class="gotham-rounded-light para hw-para">{{ site.data.Portfolio.DataOps.microservices.content}}
+									<p class="gotham-rounded-light para hw-copyright">{{ site.data.Portfolio.DataOps.microservices.content}}
 									</p>
 								</div>
 								<a href="/case_study/platform_integration#MicroServices"  ><button class="custom-btn">VIEW CASE STUDY</button></a>
@@ -348,7 +348,7 @@
 							<div class="col-lg-6">
 								<h2 class="gotham-rounded-light h2-color hw-heading">{{ site.data.Portfolio.DataOps.data_integration.title}}</h2>
 								<div class="div-border-left">
-									<p class="gotham-rounded-light para hw-para">{{ site.data.Portfolio.DataOps.data_integration.content}}
+									<p class="gotham-rounded-light para hw-copyright">{{ site.data.Portfolio.DataOps.data_integration.content}}
 									</p>
 								</div>
 								<a href="/casestudy/ETL"><button class="custom-btn">VIEW CASE STUDY</button></a>
@@ -373,13 +373,13 @@
 							   {% for testimony in site.data.Portfolio.DataOps.data_integration.testimonial%}
 							       {% if forloop.first %}
 							  	<div class="item active">
-							      <div class="hw-para">
+							      <div class="hw-copyright">
 							       {{ testimony.testimony}}
 							      </div>
 							    </div>
 								{% else %}
 							   <div class="item">
-							      	<div class="hw-para">
+							      	<div class="hw-copyright">
 							       		{{ testimony.testimony}}
 							      	</div>
 							    </div>
@@ -446,13 +446,13 @@
 							   {% for testimony in site.data.Portfolio.DataOps.data_virtualization.testimonial%}
 							       {% if forloop.first %}
 							  	<div class="item active">
-							      <div class="hw-para">
+							      <div class="hw-copyright">
 							       {{ testimony.testimony}}
 							      </div>
 							    </div>
 								{% else %}
 							   <div class="item">
-							      	<div class="hw-para">
+							      	<div class="hw-copyright">
 							       		{{ testimony.testimony}}
 							      	</div>
 							    </div>
@@ -493,7 +493,7 @@
 							<div class="col-lg-6">
 								<h2 class="gotham-rounded-light h2-color hw-heading">{{ site.data.Portfolio.DataOps.data_virtualization.title}}</h2>
 								<div class="div-border-left">
-									<p class="gotham-rounded-light para hw-para">{{ site.data.Portfolio.DataOps.data_virtualization.content}}
+									<p class="gotham-rounded-light para hw-copyright">{{ site.data.Portfolio.DataOps.data_virtualization.content}}
 									</p>
 								</div>
 								<a href="/case_study/platform_integration#ApplicationDevelopment"><button class="custom-btn">VIEW CASE STUDY</button></a>
@@ -521,7 +521,7 @@
 							<div class="col-lg-6">
 								<h2 class="gotham-rounded-light h2-color hw-heading">{{ site.data.Portfolio.DevOps.ci_orchestration.title}}</h2>
 								<div class="div-border-left">
-									<p class="gotham-rounded-light para hw-para">{{ site.data.Portfolio.DevOps.ci_orchestration.content}}
+									<p class="gotham-rounded-light para hw-copyright">{{ site.data.Portfolio.DevOps.ci_orchestration.content}}
 									</p>
 								</div>
 								<a href="/casestudy/devops"><button class="custom-btn">VIEW CASE STUDY</button></a>
@@ -544,13 +544,13 @@
 							   {% for testimony in site.data.Portfolio.DevOps.ci_orchestration.testimonial%}
 							       {% if forloop.first %}
 							  	<div class="item active">
-							      <div class="hw-para">
+							      <div class="hw-copyright">
 							       {{ testimony.testimony}}
 							      </div>
 							    </div>
 								{% else %}
 							   <div class="item">
-							      	<div class="hw-para">
+							      	<div class="hw-copyright">
 							       		{{ testimony.testimony}}
 							      	</div>
 							    </div>
@@ -613,13 +613,13 @@
 							   {% for testimony in site.data.Portfolio.DevOps.performance_engineering.testimonial%}
 							       {% if forloop.first %}
 							  	<div class="item active">
-							      <div class="hw-para">
+							      <div class="hw-copyright">
 							       {{ testimony.testimony}}
 							      </div>
 							    </div>
 								{% else %}
 							   <div class="item">
-							      	<div class="hw-para">
+							      	<div class="hw-copyright">
 							       		{{ testimony.testimony}}
 							      	</div>
 							    </div>
@@ -657,7 +657,7 @@
 						<div class="col-lg-6">
 								<h2 class="gotham-rounded-light h2-color hw-heading">{{ site.data.Portfolio.DevOps.performance_engineering.title}}</h2>
 								<div class="div-border-left">
-									<p class="gotham-rounded-light para hw-para">{{ site.data.Portfolio.DevOps.performance_engineering.content}}
+									<p class="gotham-rounded-light para hw-copyright">{{ site.data.Portfolio.DevOps.performance_engineering.content}}
 									</p>
 								</div>
 								<a href="/case_study/engineering_practices#PerformanceEngineering"><button class="custom-btn">VIEW CASE STUDY</button></a>
@@ -677,7 +677,7 @@
 							<div class="col-lg-6">
 								<h2 class="gotham-rounded-light h2-color hw-heading">{{ site.data.Portfolio.DevOps.test_automation.title}}</h2>
 								<div class="div-border-left">
-									<p class="gotham-rounded-light para hw-para">{{ site.data.Portfolio.DevOps.test_automation.content}}
+									<p class="gotham-rounded-light para hw-copyright">{{ site.data.Portfolio.DevOps.test_automation.content}}
 									</p>
 								</div>
 								<a href="/case_study/DevOps#TestAutomation"><button class="custom-btn">VIEW CASE STUDY</button></a>
@@ -702,13 +702,13 @@
 							   {% for testimony in site.data.Portfolio.DevOps.test_automation.testimonial%}
 							       {% if forloop.first %}
 							  	<div class="item active">
-							      <div class="hw-para">
+							      <div class="hw-copyright">
 							       {{ testimony.testimony}}
 							      </div>
 							    </div>
 								{% else %}
 							   <div class="item">
-							      	<div class="hw-para">
+							      	<div class="hw-copyright">
 							       		{{ testimony.testimony}}
 							      	</div>
 							    </div>
@@ -775,13 +775,13 @@
 							   {% for testimony in site.data.Portfolio.DevOps.agile_testing.testimonial%}
 							       {% if forloop.first %}
 							  	<div class="item active">
-							      <div class="hw-para">
+							      <div class="hw-copyright">
 							       {{ testimony.testimony}}
 							      </div>
 							    </div>
 								{% else %}
 							   <div class="item">
-							      	<div class="hw-para">
+							      	<div class="hw-copyright">
 							       		{{ testimony.testimony}}
 							      	</div>
 							    </div>
@@ -819,7 +819,7 @@
 							<div class="col-lg-6">
 								<h2 class="gotham-rounded-light h2-color hw-heading">{{ site.data.Portfolio.DevOps.agile_testing.title}}</h2>
 								<div class="div-border-left">
-									<p class="gotham-rounded-light para hw-para">{{ site.data.Portfolio.DevOps.agile_testing.content}}
+									<p class="gotham-rounded-light para hw-copyright">{{ site.data.Portfolio.DevOps.agile_testing.content}}
 									</p>
 								</div>
 								<a href="/case_study/engineering_practices#AgileTesting"><button class="custom-btn">VIEW CASE STUDY</button></a>
@@ -846,7 +846,7 @@
 							<div class="col-lg-6">
 								<h2 class="gotham-rounded-light h2-color hw-heading">{{ site.data.Portfolio.DataScience.operational_analytics.title}}</h2>
 								<div class="div-border-left">
-									<p class="gotham-rounded-light para hw-para">{{ site.data.Portfolio.DataScience.operational_analytics.content}}
+									<p class="gotham-rounded-light para hw-copyright">{{ site.data.Portfolio.DataScience.operational_analytics.content}}
 									</p>
 								</div>
 								<a href="/case_study/mobility"><button class="custom-btn">VIEW CASE STUDY</button></a>
@@ -870,13 +870,13 @@
 							   {% for testimony in site.data.Portfolio.DataScience.operational_analytics.testimonial%}
 							       {% if forloop.first %}
 							  	<div class="item active">
-							      <div class="hw-para">
+							      <div class="hw-copyright">
 							       {{ testimony.testimony}}
 							      </div>
 							    </div>
 								{% else %}
 							   <div class="item">
-							      	<div class="hw-para">
+							      	<div class="hw-copyright">
 							       		{{ testimony.testimony}}
 							      	</div>
 							    </div>
@@ -939,13 +939,13 @@
 							   {% for testimony in site.data.Portfolio.DataScience.predictive_analytics.testimonial%}
 							       {% if forloop.first %}
 							  	<div class="item active">
-							      <div class="hw-para">
+							      <div class="hw-copyright">
 							       {{ testimony.testimony}}
 							      </div>
 							    </div>
 								{% else %}
 							   <div class="item">
-							      	<div class="hw-para">
+							      	<div class="hw-copyright">
 							       		{{ testimony.testimony}}
 							      	</div>
 							    </div>
@@ -984,7 +984,7 @@
 							<div class="col-lg-6">
 								<h2 class="gotham-rounded-light h2-color hw-heading">{{ site.data.Portfolio.DataScience.predictive_analytics.title}}</h2>
 								<div class="div-border-left">
-									<p class="gotham-rounded-light para hw-para">{{ site.data.Portfolio.DataScience.predictive_analytics.content}}
+									<p class="gotham-rounded-light para hw-copyright">{{ site.data.Portfolio.DataScience.predictive_analytics.content}}
 									</p>
 								</div>
 								<a href="/case_study/mobility"><button class="custom-btn">VIEW CASE STUDY</button></a>
@@ -1004,7 +1004,7 @@
 							<div class="col-lg-6">
 								<h2 class="gotham-rounded-light h2-color hw-heading">{{ site.data.Portfolio.DataScience.data_visualization.title}}</h2>
 								<div class="div-border-left">
-									<p class="gotham-rounded-light para hw-para">{{ site.data.Portfolio.DataScience.data_visualization.content}}
+									<p class="gotham-rounded-light para hw-copyright">{{ site.data.Portfolio.DataScience.data_visualization.content}}
 									</p>
 								</div>
 								<a href="/case_study/mobility"><button class="custom-btn">VIEW CASE STUDY</button></a>
@@ -1029,13 +1029,13 @@
 							   {% for testimony in site.data.Portfolio.DataScience.data_visualization.testimonial%}
 							       {% if forloop.first %}
 							  	<div class="item active">
-							      <div class="hw-para">
+							      <div class="hw-copyright">
 							       {{ testimony.testimony}}
 							      </div>
 							    </div>
 								{% else %}
 							   <div class="item">
-							      	<div class="hw-para">
+							      	<div class="hw-copyright">
 							       		{{ testimony.testimony}}
 							      	</div>
 							    </div>
@@ -1094,7 +1094,7 @@
 							<div class="col-lg-6">
 								<h2 class="gotham-rounded-light h2-color hw-heading">{{ site.data.Portfolio.Mobility.enterprise_mobility.title}}</h2>
 								<div class="div-border-left">
-									<p class="gotham-rounded-light para hw-para">{{ site.data.Portfolio.Mobility.enterprise_mobility.content}}
+									<p class="gotham-rounded-light para hw-copyright">{{ site.data.Portfolio.Mobility.enterprise_mobility.content}}
 									</p>
 								</div>
 								<a href="/case_study/mobility"><button class="custom-btn">VIEW CASE STUDY</button></a>
@@ -1118,13 +1118,13 @@
 							   {% for testimony in site.data.Portfolio.Mobility.enterprise_mobility.testimonial%}
 							       {% if forloop.first %}
 							  	<div class="item active">
-							      <div class="hw-para">
+							      <div class="hw-copyright">
 							       {{ testimony.testimony}}
 							      </div>
 							    </div>
 								{% else %}
 							   <div class="item">
-							      	<div class="hw-para">
+							      	<div class="hw-copyright">
 							       		{{ testimony.testimony}}
 							      	</div>
 							    </div>
@@ -1187,13 +1187,13 @@
 							   {% for testimony in site.data.Portfolio.Mobility.byod.testimonial%}
 							       {% if forloop.first %}
 							  	<div class="item active">
-							      <div class="hw-para">
+							      <div class="hw-copyright">
 							       {{ testimony.testimony}}
 							      </div>
 							    </div>
 								{% else %}
 							   <div class="item">
-							      	<div class="hw-para">
+							      	<div class="hw-copyright">
 							       		{{ testimony.testimony}}
 							      	</div>
 							    </div>
@@ -1235,7 +1235,7 @@
 							<div class="col-lg-6">
 								<h2 class="gotham-rounded-light h2-color hw-heading">{{ site.data.Portfolio.Mobility.byod.title}}</h2>
 								<div class="div-border-left">
-									<p class="gotham-rounded-light para hw-para">{{ site.data.Portfolio.Mobility.byod.content}}
+									<p class="gotham-rounded-light para hw-copyright">{{ site.data.Portfolio.Mobility.byod.content}}
 									</p>
 								</div>
 								<a href="/case_study/mobility"><button class="custom-btn">VIEW CASE STUDY</button></a>
@@ -1255,7 +1255,7 @@
 							<div class="col-lg-6">
 								<h2 class="gotham-rounded-light h2-color hw-heading">{{ site.data.Portfolio.Mobility.mobility_testing.title}}</h2>
 								<div class="div-border-left">
-									<p class="gotham-rounded-light para hw-para">{{ site.data.Portfolio.Mobility.mobility_testing.content}}
+									<p class="gotham-rounded-light para hw-copyright">{{ site.data.Portfolio.Mobility.mobility_testing.content}}
 									</p>
 								</div>
 								<a href="/case_study/mobility"><button class="custom-btn">VIEW CASE STUDY</button></a>
@@ -1280,13 +1280,13 @@
 							   {% for testimony in site.data.Portfolio.Mobility.mobility_testing.testimonial%}
 							       {% if forloop.first %}
 							  	<div class="item active">
-							      <div class="hw-para">
+							      <div class="hw-copyright">
 							       {{ testimony.testimony}}
 							      </div>
 							    </div>
 								{% else %}
 							   <div class="item">
-							      	<div class="hw-para">
+							      	<div class="hw-copyright">
 							       		{{ testimony.testimony}}
 							      	</div>
 							    </div>
@@ -1353,13 +1353,13 @@
 							   {% for testimony in site.data.Portfolio.Mobility.consumer_apps.testimonial%}
 							       {% if forloop.first %}
 							  	<div class="item active">
-							      <div class="hw-para">
+							      <div class="hw-copyright">
 							       {{ testimony.testimony}}
 							      </div>
 							    </div>
 								{% else %}
 							   <div class="item">
-							      	<div class="hw-para">
+							      	<div class="hw-copyright">
 							       		{{ testimony.testimony}}
 							      	</div>
 							    </div>
@@ -1400,7 +1400,7 @@
 							<div class="col-lg-6">
 								<h2 class="gotham-rounded-light h2-color hw-heading">{{ site.data.Portfolio.Mobility.consumer_apps.title}}</h2>
 								<div class="div-border-left">
-									<p class="gotham-rounded-light para hw-para">{{ site.data.Portfolio.Mobility.consumer_apps.content}}
+									<p class="gotham-rounded-light para hw-copyright">{{ site.data.Portfolio.Mobility.consumer_apps.content}}
 									</p>
 								</div>
 								<a href="/case_study/mobility"><button class="custom-btn">VIEW CASE STUDY</button></a>
@@ -1426,7 +1426,7 @@
 							<div class="col-lg-6">
 								<h2 class="gotham-rounded-light h2-color hw-heading">{{ site.data.Portfolio.UI_UX.experience_design.title}}</h2>
 								<div class="div-border-left">
-									<p class="gotham-rounded-light para hw-para">{{ site.data.Portfolio.UI_UX.experience_design.content}}
+									<p class="gotham-rounded-light para hw-copyright">{{ site.data.Portfolio.UI_UX.experience_design.content}}
 									</p>
 								</div>
 								<a href="/case_study/ui_ux"><button class="custom-btn">VIEW CASE STUDY</button></a>
@@ -1558,7 +1558,7 @@
 							<div class="col-lg-6">
 								<h2 class="gotham-rounded-light h2-color hw-heading">{{ site.data.Portfolio.UI_UX.visual_design.title}}</h2>
 								<div class="div-border-left">
-									<p class="gotham-rounded-light para hw-para">{{ site.data.Portfolio.UI_UX.visual_design.content}}
+									<p class="gotham-rounded-light para hw-copyright">{{ site.data.Portfolio.UI_UX.visual_design.content}}
 									</p>
 								</div>
 								<a href="/case_study/ui_ux"><button class="custom-btn">VIEW CASE STUDY</button></a>
@@ -1578,7 +1578,7 @@
 							<div class="col-lg-6">
 								<h2 class="gotham-rounded-light h2-color hw-heading">{{ site.data.Portfolio.UI_UX.frontend_develop.title}}</h2>
 								<div class="div-border-left">
-									<p class="gotham-rounded-light para hw-para">{{ site.data.Portfolio.UI_UX.frontend_develop.content}}
+									<p class="gotham-rounded-light para hw-copyright">{{ site.data.Portfolio.UI_UX.frontend_develop.content}}
 									</p>
 								</div>
 								<a href="/case_study/ui_ux"><button class="custom-btn">VIEW CASE STUDY</button></a>
@@ -1711,7 +1711,7 @@
 							<div class="col-lg-6">
 								<h2 class="gotham-rounded-light h2-color hw-heading">{{ site.data.Portfolio.UI_UX.reporting_dashboard.title}}</h2>
 								<div class="div-border-left">
-									<p class="gotham-rounded-light para hw-para">{{ site.data.Portfolio.UI_UX.reporting_dashboard.content}}
+									<p class="gotham-rounded-light para hw-copyright">{{ site.data.Portfolio.UI_UX.reporting_dashboard.content}}
 									</p>
 								</div>
 								<a href="/case_study/ui_ux"><button class="custom-btn">VIEW CASE STUDY</button></a>

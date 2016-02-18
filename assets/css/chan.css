@@ -18,7 +18,10 @@
 /*header-search*/
     #credits{
     width: 200px;
-    margin-top: 11px;
+    margin-top: 0px;
+    padding-top: 11px;
+    overflow: hidden;
+    position: relative;
     }
 
     #credits .input-group{
