@@ -24,6 +24,10 @@ html {
 		font-family:'gotham-rounded-light-italic';
 		src: url(../font/gotham-rounded-light-italic.otf);
 	}
+	@font-face {
+		font-family:'LiberationMono-Regular';
+		src: url(../font/LiberationMono-Regular.otf);
+	}
 /* end of fonts */
 
 /* general css */
@@ -114,6 +118,9 @@ html {
 	.gotham-light-italic {
 		font-family: "gotham-rounded-light-italic"; 
 	}
+	.LiberationMono-Regular {
+		font-family: "LiberationMono-Regular"; 
+	}	
 
 	.hw-carousel-heading {
 		font-size: 2.5rem;  /*40px*/
@@ -236,7 +243,10 @@ html {
 	.active-color {
 		color: #c9443d;
 	}
-	
+	.hw-our-thinking-head-contents{
+	margin-top: 20px;
+    margin-bottom: 9px;
+	}
 	.explore-btn {
 		padding: 8px 25px; /**/
 		color: #fff;

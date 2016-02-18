@@ -618,7 +618,7 @@
         background-color: #fff;
         width: 100%;
         opacity: 0;
-        top: -14%; 
+        top: -7%; 
         text-indent: 14%; 
     }
     .product-desc-left-margin{
@@ -626,6 +626,18 @@
     }
     .product-carousel .item:hover  .product-desc{
         opacity: 1;
+    }
+    .product-desc h4{
+    color: #8dbd81;
+    }
+    .product-desc h4 span{
+    color: #a4925c;
+    }
+    .product-desc .product-skill{
+    color: #ee7db6;
+    }
+    .product-desc .product-skill span{
+    color: #ee7db6;
     }
     
    
