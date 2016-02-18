@@ -869,6 +869,54 @@ html {
 	/*  case study */
 
 	/*for the case study  filtering part*/
+#case-studies-filter-controls input[type='checkbox']{
+  display: none;
+}
+#case-studies-filter-controls input[type='checkbox']:checked+.case-studies-label-text, #case-studies-filter-controls input[type='radio']:checked+.case-studies-label-text {
+    cursor: default;
+}
+
+#case-studies-filter-controls input[type='checkbox']+.case-studies-label-text, #case-studies-filter-controls input[type='radio']+.case-studies-label-text {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 27px;
+}
+
+#case-studies-filter-controls input[type='checkbox']+.case-studies-label-text::before {
+	top: 6px;
+    width: 18px;
+    height: 16px;
+}
+#case-studies-filter-controls input[type='checkbox']+.case-studies-label-text::before, #case-studies-filter-controls input[type='radio']+.case-studies-label-text::before {
+    left: 0;
+    border: 1px solid #00a2c5;
+}
+
+
+#case-studies-filter-controls input[type='checkbox']:checked+.case-studies-label-text::after, #case-studies-filter-controls input[type='radio']:checked+.case-studies-label-text::after {
+    display: block;
+}
+#case-studies-filter-controls input[type='checkbox']+.case-studies-label-text::after {
+    top: 6px;
+    left: 2px;
+    height: 6px;
+    width: 22px;
+    border: solid #00a2c5;
+    border-width: 0 0 3px 3px;
+    box-shadow: inset 2px -2px 0 0 #fff, -1px 2px 0 0 #fff;
+    -webkit-transform: rotate(-45deg) translateZ(0);
+    transform: rotate(-45deg) translateZ(0);
+}
+#case-studies-filter-controls input[type='checkbox']+.case-studies-label-text:after, #case-studies-filter-controls input[type='radio']+.case-studies-label-text:after {
+    display: none;
+}
+#case-studies-filter-controls input[type='checkbox']+.case-studies-label-text::before, #case-studies-filter-controls input[type='checkbox']+.case-studies-label-text::after, #case-studies-filter-controls input[type='radio']+.case-studies-label-text::before, #case-studies-filter-controls input[type='radio']+.case-studies-label-text::after {
+    content: "";
+    position: absolute;
+}
+
+
 .case-study-topic-shown-anime{
 	transform: scale(1);
     display: block;
