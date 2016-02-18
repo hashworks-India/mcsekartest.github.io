@@ -1345,9 +1345,15 @@ div#case-studies-filter-controls label{
     left: 10px;
     top: 27%;	
 }
-.main-contentt h1.text-center.gotham-rounded-light.heading.hw-font-heading {
+.main-contentt h1.text-center.gotham-rounded-light.heading.hw-copyright {
         margin-bottom: 25%;
 
+}
+.arrow-hover:hover {
+	opacity: 0.5;
+}
+.arrow-hover1:hover {
+	opacity: 0.5;
 }
 .main-contentt{
 	margin-top: 2px;
