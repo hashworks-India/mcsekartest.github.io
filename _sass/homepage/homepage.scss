@@ -1977,7 +1977,28 @@ to {
 /* end animation for icon of banner 1*/
 
   /*bg-color*/
-  
+
+/* blue line animation*/
+
+  .hw-section-header:after {
+    position: relative;
+    content: "";
+    display: inline-block;
+    width: 0%;
+    height: 2px;
+    margin-top: 20px;
+    background: #EE307E;
+    transition: width 1.5s ease 0s;
+    -webkit-transition: width 1.5s ease 0s;
+    -o-transition: width 1.5s ease 0s;
+    -moz-transition: width 1.5s ease 0s;
+    }
+    .home-hr.anim {
+    width: 100%;
+    }
+
+/* blue line animation */
+
     .scroll-anim {
      height: 100vh; 
       background-size: 100%;
@@ -1999,7 +2020,7 @@ to {
       top: 50%;
       left: 40%;
       margin-top: -175px;
-      margin-left: -100px;
+      margin-left: -120px;
     }
     .banner1-text h1{
        font-size: 76px;
@@ -2011,16 +2032,23 @@ to {
         text-align: center;
     }
     .home-hr {
-        height: 3px;
-        border: 3px solid #40BFCB;
+        height: 4px;
+        border: none;
+        width: 0%;
         border-radius: 7px 7px 7px 7px;
         background-color: #40BFCB;
+        transition: width 1s ease 0s;
+        -webkit-transition: width 1s ease 0s;
+        -o-transition: width 1s ease 0s;
+        -moz-transition: width 1s ease 0s;
+
     }
     .banner1-text h2 {
          font-size: 22px;
           color: #384149;
           font-weight: 500;
           text-align: center;
+          margin-top: 43px;
     }
     .orange-bullet {
         display: inline-block;
@@ -2062,46 +2090,28 @@ to {
         opacity: 1;
     }
 }
-#banner-sky {
-  // background: transparent url("/assets/img/landingpage/Thinking_Banner.svg") repeat scroll top center / cover;
-    position: relative;
-    z-index: 1;
-}
 
-@-webkit-keyframes  parallax_bgtwo {   
-0% {
-    background-position: -2400px -2400px, -2000px -2000px, -1800px -1800px, -1600px -1600px, -1200px -1200px;
-}
-100% {
-    background-position: 0 100%, 0 100%, 0 100%, 0 100%, 0 100%;
-}
-}
-@keyframes  parallax_bgtwo{
-0% {
-    background-position: -2400px -2400px, -2000px -2000px, -1800px -1800px, -1600px -1600px, -1200px -1200px;
-}
-100% {
-    background-position: 0 100%, 0 100%, 0 100%, 0 100%, 0 100%;
-}
-}
 
-    #product-banner {
-      /*background: transparent url("/assets/img/landingpage/Wallpaper.svg") no-repeat scroll bottom center / cover;*/
-     /* background-color: #8a9b0f; */
-    }
+
     .product-svg {
     position: absolute;
     bottom: 10px;
+    left: 5%;
     }
     .new-product-text {
-        position: absolute;
-        bottom: 55%;
+        position: relative;
+        height: 100vh;
+    }
+    .product-text {
+      position: absolute;
+      top: 21%;
     }
     .carousel-position {
         position: absolute!important;
-            padding-left: 67px;
-    padding-right: 12px;
-    padding-top: 30px;
+        padding-left: 67px;
+        padding-right: 12px;
+        padding-top: 30px;
+        bottom: 35%;
     }
     .product-carousel {
            width: 350px;
@@ -2115,153 +2125,7 @@ to {
     }
 
     
-    .clouds .icon.cloud-2 {
-        width: 100px;
-        bottom: 250px;
-        top: 20%;
-         -moz-animation: clouds1 80s linear  infinite;
-      -webkit-animation: clouds1 80s linear  infinite;
-      -ms-animation: clouds1 80s linear  infinite;
-      animation: clouds1 80s linear infinite;
-
-    }
-    @keyframes clouds1 {
-    from {
-        transform: translateX(-468%)
-    }
-    to {
-        transform: translateX(1142%)
-    }
-}
-@-moz-keyframes clouds1 { /* Firefox */
-     from {
-        transform: translateX(-468%)
-    }
-    to {
-        transform: translateX(1142%)
-    }
-}
-@-webkit-keyframes clouds1 { /* Safari and Chrome */
-    from {
-        transform: translateX(-468%)
-    }
-    to {
-        transform: translateX(1142%)
-    }
-}
-@-o-keyframes fadein { /* Opera */
-    from {
-        transform: translateX(-468%)
-    }
-    to {
-        transform: translateX(1142%)
-    }
-}
-    .clouds .icon.cloud-3{
-        width: 120px;
-        bottom: 220px;
-        top: 16%;
-        -moz-animation: clouds3 90s linear  infinite;
-        -webkit-animation: clouds3 90s linear  infinite;
-        -ms-animation: clouds3 90s linear infinite;
-        animation: clouds3 90s linear infinite;
-    }
-    @keyframes clouds3 {
-        0% { transform: translateX(300%)}
-        40%{transform: translateX(600%)}
-        80%{transform: translateX(900%)}
-        100%{transform: translateX(1142%)}
-    }
-    @-moz-keyframes clouds3 { /* Firefox */
-        0% { transform: translateX(300%)}
-        40%{transform: translateX(600%)}
-        80%{transform: translateX(900%)}
-        100%{transform: translateX(1142%)}
-    }
-    @-webkit-keyframes clouds3 { /* Safari and Chrome */
-        0% { transform: translateX(300%)}
-        40%{transform: translateX(600%)}
-        80%{transform: translateX(900%)}
-        100%{transform: translateX(1142%)}
-    }
-    @-o-keyframes clouds3 { /* Opera */
-        0% { transform: translateX(300%)}
-        40%{transform: translateX(600%)}
-        80%{transform: translateX(900%)}
-        100%{transform: translateX(1142%)}
-    }
-
-    .clouds .icon.cloud-4 {
-        width: 110px;
-        bottom: 260px;
-        top: 13%;
-        margin-left: 60px;
-         -moz-animation: clouds4 90s linear  infinite;
-      -webkit-animation: clouds4 90s linear  infinite;
-      -ms-animation: clouds4 90s linear infinite;
-      animation: clouds4 90s linear infinite;
-     
-    }
-     @keyframes clouds4 {
-    0% {
-        
-        transform: translateX(600%)
-    }
-    40%{
- transform: translateX(1142%)
-    }
-    80%{
-transform: translateX(-600%)
-    }
-    100% {
-         
-        transform: translateX(600%)
-    }
-}
-@-moz-keyframes clouds4 { /* Firefox */
-     0% {
-        
-        transform: translateX(600%)
-    }
-    40%{
- transform: translateX(1142%)
-    }
-    80%{
-transform: translateX(-600%)
-    }
-    100% {
-         
-        transform: translateX(600%)
-    }
-}
-@-webkit-keyframes clouds4 { /* Safari and Chrome */
-     0% {
-        
-        transform: translateX(600%)
-    }
-    40%{
- transform: translateX(1142%)
-    }
-    80%{
-transform: translateX(-600%)
-    }
-    100% {
-         
-        transform: translateX(600%)
-    }
-}
-@-o-keyframes clouds4 { /* Opera */
-    0% {transform: translateX(600%)}
-    40%{transform: translateX(1142%)}
-    80%{transform: translateX(-600%)}
-    100%{transform: translateX(600%)}
-}
-    .clouds .icon {
-    position: absolute;
-    fill: #1c2128;
-    -webkit-mask-image: linear-gradient(to bottom,#fff 0,rgba(255,0,0,0) 90%);
-    mask-image: linear-gradient(to bottom,#fff 0,rgba(255,0,0,0) 90%);
-}
+   
     .hw-fixed-heading{
       position: fixed;
       bottom: 0;
