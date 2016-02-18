@@ -594,14 +594,14 @@
     }
     .product-text {
       position: absolute;
-      top: 21%;
+      top: 15%;
     }
     .carousel-position {
         position: absolute!important;
         padding-left: 67px;
         padding-right: 12px;
         padding-top: 30px;
-        bottom: 35%;
+        bottom: 45%;
     }
     .product-carousel {
            width: 350px;
@@ -613,7 +613,20 @@
     .product-span {
     padding-left: 15px;
     }
-
+    .product-desc{
+        position: absolute;
+        background-color: #fff;
+        width: 100%;
+        opacity: 0;
+        top: -14%; 
+        text-indent: 14%; 
+    }
+    .product-desc-left-margin{
+        left:11%; 
+    }
+    .product-carousel .item:hover  .product-desc{
+        opacity: 1;
+    }
     
    
     .hw-fixed-heading{
