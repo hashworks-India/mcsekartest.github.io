@@ -586,15 +586,18 @@
     .product-svg {
     position: absolute;
     bottom: 10%;
-    left: 5%;
+    left: -7%;
     }
     .new-product-text {
         position: relative;
         height: 100vh;
     }
+    .new-product-text .carousel-control {
+      opacity: 1;
+    }
     .product-text {
       position: absolute;
-      top: 15%;
+      top: 23%;
     }
     .carousel-position {
         position: absolute!important;
@@ -618,7 +621,8 @@
         background-color: #fff;
         width: 100%;
         opacity: 0;
-        top: -7%; 
+        top: 1%; 
+        height: 100%;
         text-indent: 14%; 
     }
     .product-desc-left-margin{
