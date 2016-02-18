@@ -268,9 +268,9 @@ html {
 		font-size: 0.75rem; /*12px*/
 		font-family: "gotham-rounded-bold";
 		text-transform: uppercase;
-		border: 1px solid #535876;/**/
+		border: 1px solid #ee2b7b;/**/
 		background-color: transparent;
-		color: #535876;
+		color: #ee2b7b;
 		margin-top: 18px;
 		-webkit-transition: all .5s ease 0s;
 		-moz-transition: all .5s ease 0s;
@@ -279,7 +279,7 @@ html {
 		transition: all .5s ease 0s;
 	}
 	.explore-btn:hover {
-		background-color: #535876;
+		background-color: #ee2b7b;
 		color: #fff;
 	}
 
