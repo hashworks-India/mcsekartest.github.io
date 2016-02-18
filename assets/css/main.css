@@ -2365,7 +2365,10 @@ img#big-ipad {
 .hr-line1 {
 	margin-left: -9px;
 }
-
+.product-text {
+    position: absolute;
+    top: 23%;
+}
 
 
 
