@@ -317,7 +317,7 @@ $(document).ready(function(){
     }
 
     $('.nav-tabs > li a').click(function(){
-        var navtab = $(this).parents('.nav-tabs').offset().top - 50;
+        var navtab = $(this).parents('.nav-tabs').offset().top - 95;
           $('html, body').animate({
             scrollTop: navtab}, 1000, 'linear');
     });
@@ -368,7 +368,7 @@ $("#anchor-portfolio").click(function(){
 
     // talk to us
       $('.talk-to-us').bind('click', function(event) {
-        var tabdetail = $(this).parents('.hw-started').offset().top;
+        var tabdetail = $(this).parents('.c-flex').offset().top;
               $('html, body').animate({
                   scrollTop: tabdetail}, 1500, 'linear');
       }); 
@@ -863,8 +863,8 @@ var which_one_clicked = 0;
 
 
 
-   $(".collapse-button,li.c-flex").click(function(){
-          var navtab = $(".bs-example").offset().top + 20;
+   $(".collapse-button").click(function(){
+          var navtab = $(".bs-example").offset().top + 0;
                   $('html, body').animate({
             scrollTop: navtab}, 500, 'linear');
         if(which_one_clicked == 4){
