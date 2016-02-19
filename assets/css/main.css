@@ -25,8 +25,8 @@ html {
 		src: url(../font/gotham-rounded-light-italic.otf);
 	}
 	@font-face {
-		font-family:'LiberationMono-Regular';
-		src: url(../font/LiberationMono-Regular.otf);
+		font-family:'sourcecode-light';
+		src: url(../font/SourceCodePro-Light.otf);
 	}
 	@font-face {
 		font-family:'proxima-regular';
@@ -122,8 +122,8 @@ html {
 	.gotham-light-italic {
 		font-family: "gotham-rounded-light-italic"; 
 	}
-	.LiberationMono-Regular {
-		font-family: "LiberationMono-Regular"; 
+	.sourcecode-light {
+		font-family: "sourcecode-light"; 
 	}	
 	.proxima-regular {
 		font-family: "proxima-regular"; 
