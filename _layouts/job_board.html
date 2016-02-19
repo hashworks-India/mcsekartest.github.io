@@ -4,38 +4,49 @@
 
   <div class="super-job">
     <img src="/assets/img/talent_acquisition/Super_Job_Banner.svg" id="super-job-img">
+                {% assign my_variable = 0 %}
+                {% for job in  site.jobboard | sort: 'date'| date: "%d-%m-%y" %}
+
+                {% if my_variable == 0 %}
     <div id="latest1" class="common-position" >
       <div class="hr-display latest-job">
-        <div class="job-date gotham-rounded-light clr-white">9 Jul</div>
-        <div class="job-board-title gotham-rounded-bold hw-heading  clr-white">Pl/SQL</div>
-        <div class="job-exp gotham-rounded-bold hw-heading  clr-white">2-5 yrs exp</div>
-        <div class="job-location gotham-rounded-light clr-white"><span><img src="/assets/img/talent_acquisition/location.png" id="job-location-img"></span>Bangalore</div>
+        <div class="job-date gotham-rounded-light clr-white">{{job.date | date: '%B %d, %Y'}}</div>
+        <div class="job-board-title gotham-rounded-bold hw-heading  clr-white">{{job.job_title}}</div>
+        <div class="job-exp gotham-rounded-bold hw-heading  clr-white">{{job.experience}} exp</div>
+        <div class="job-location gotham-rounded-light clr-white"><span><img src="/assets/img/talent_acquisition/location.png" id="job-location-img"></span>{{job.location}}</div>
       </div>
     </div>
+    {% elsif my_variable == 1 %}
     <div  id="latest2" class="common-position" >
       <div class="hr-display latest-job">
-        <div class="job-date gotham-rounded-light clr-white">9 Jul</div>
-        <div class="job-board-title gotham-rounded-bold hw-heading  clr-white">Pl/SQL</div>
-        <div class="job-exp gotham-rounded-bold hw-heading  clr-white">2-5 yrs exp</div>
-        <div class="job-location gotham-rounded-light clr-white"><span><img src="/assets/img/talent_acquisition/location.png" id="job-location-img"></span>Pune</div>
+        <div class="job-date gotham-rounded-light clr-white">{{job.date | date: '%B %d, %Y'}}</div>
+        <div class="job-board-title gotham-rounded-bold hw-heading  clr-white">{{job.job_title}}</div>
+        <div class="job-exp gotham-rounded-bold hw-heading  clr-white">{{job.experience}} exp</div>
+        <div class="job-location gotham-rounded-light clr-white"><span><img src="/assets/img/talent_acquisition/location.png" id="job-location-img"></span>{{job.location}}</div>
       </div>
     </div>
+    {% elsif my_variable == 2 %}
     <div id="latest3" class="common-position" >
       <div class="hr-display latest-job">
-        <div class="job-date gotham-rounded-light clr-white">6 Jul</div>
-        <div class="job-board-title gotham-rounded-bold hw-heading  clr-white">Pl/SQL</div>
-        <div class="job-exp gotham-rounded-bold hw-heading  clr-white">5-6 yrs exp</div>
-        <div class="job-location gotham-rounded-light clr-white"><span><img src="/assets/img/talent_acquisition/location.png" id="job-location-img"></span>Chennai</div>
+        <div class="job-date gotham-rounded-light clr-white">{{job.date | date: '%B %d, %Y'}}</div>
+        <div class="job-board-title gotham-rounded-bold hw-heading  clr-white">{{job.job_title}}</div>
+        <div class="job-exp gotham-rounded-bold hw-heading  clr-white">{{job.experience}} exp</div>
+        <div class="job-location gotham-rounded-light clr-white"><span><img src="/assets/img/talent_acquisition/location.png" id="job-location-img"></span>{{job.location}}</div>
       </div>
     </div>
+    {% elsif my_variable == 3 %}
     <div id="latest4" class="common-position">
       <div class="hr-display latest-job">
-        <div class="job-date gotham-rounded-light clr-white">1 Jul</div>
-        <div class="job-board-title gotham-rounded-bold hw-heading  clr-white">Pl/SQL</div>
-        <div class="job-exp gotham-rounded-bold hw-heading  clr-white">2-5 yrs exp</div>
-        <div class="job-location gotham-rounded-light clr-white"><span><img src="/assets/img/talent_acquisition/location.png" id="job-location-img"></span>Bangalore</div>
+        <div class="job-date gotham-rounded-light clr-white">{{job.date | date: '%B %d, %Y'}}</div>
+        <div class="job-board-title gotham-rounded-bold hw-heading  clr-white">{{job.job_title}}</div>
+        <div class="job-exp gotham-rounded-bold hw-heading  clr-white">{{job.experience}} exp</div>
+        <div class="job-location gotham-rounded-light clr-white"><span><img src="/assets/img/talent_acquisition/location.png" id="job-location-img"></span>{{job.location}}</div>
       </div>
     </div>
+                    {% endif %}
+
+                {% assign assign my_variable = my_variable | plus:1  %}
+                {% endfor %}
   </div>
 
   <div class="container">

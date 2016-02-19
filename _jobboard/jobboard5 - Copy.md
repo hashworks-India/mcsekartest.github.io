@@ -1,5 +1,5 @@
 ---
-job_title: PL/SQl
+job_title: Java
 location: Hyderabad
 date: 6-1-2016
 experience: 4-5yrs
