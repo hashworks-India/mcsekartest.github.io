@@ -1,7 +1,7 @@
 ---
 job_title: PL/SQl
 location: Bangalore
-date: 2-12-2015
+date: 2-1-2016
 experience: 3-4yrs
 type: Full Time
 
