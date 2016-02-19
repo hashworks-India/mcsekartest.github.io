@@ -1311,6 +1311,14 @@ div#case-studies-filter-controls label{
     right: 10px;
     bottom: 2%;	
 }
+.hw-our-thinking-height-auto{
+	height: auto !important;
+}
+.hw-our-thinking-bottom-auto{
+	height: auto !important;
+	bottom: 100% !important;
+	position: relative !important;
+}
 #hw-ribbon-our-thinking{
 position: relative;
 width: 100%;
@@ -2337,7 +2345,7 @@ nav#toc ul {
     text-align: justify;
 }
 .main-contentt h1.text-center.gotham-rounded-light.heading.hw-copyright {
-	margin-bottom: 29%;
+	margin-bottom: 35%;
 }
 i.fa.fa-chevron-down.down-arrow{
 	color:#fff;

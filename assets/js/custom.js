@@ -798,7 +798,9 @@ var which_one_clicked = 0;
       $("#div-top-right").animate({'width' : '0%','height' : '0vh'},844); 
       $("#div-bottom-right").animate({'width' : '0%','height' : '0vh'},844); 
       $("#div-bottom-left").animate({'width' : '0%','height' : '0vh'},844);
-      $(this).animate({'height' : '240vh'},4); 
+      $('body').stop().delay(500).queue(function(){
+      $("#div-top-left").addClass("hw-our-thinking-height-auto");
+    });
       $("#collapse-image-1").css("display","block");
       $("#collapse-image-1").animate({"opacity":"1"},844);
       $(".main-contentt h1.text-center.gotham-rounded-light.heading.hw-copyright").animate({"margin-bottom":"7%"},844);
@@ -814,7 +816,9 @@ var which_one_clicked = 0;
       $("#div-top-left").animate({'width' : '0%','height' : '0vh'},844); 
       $("#div-bottom-right").animate({'width' : '0%','height' : '0vh'},844); 
       $("#div-bottom-left").animate({'width' : '0%','height' : '0vh'},844);
-      $(this).animate({'height' : '260vh'},4); 
+      $('body').stop().delay(500).queue(function(){
+      $("#div-top-right").addClass("hw-our-thinking-height-auto");
+    });
       $("#collapse-image-2").css("display","block");
       $("#collapse-image-2").animate({"opacity":"1"},844);
       $(".main-contentt h1.text-center.gotham-rounded-light.heading.hw-copyright").animate({"margin-bottom":"7%"},844);
@@ -830,7 +834,10 @@ var which_one_clicked = 0;
       $("#div-bottom-right").animate({'width' : '0%','height' : '0vh'},844);
       $("#div-top-right").animate({'width' : '0%','height' : '0vh'},844); 
       $("#div-top-left").animate({'width' : '0%','height' : '0vh'},844);  
-      $(this).animate({'height' : '210vh',"bottom":"-171%"},4); 
+      // $(this).animate({'height' : '210vh',"bottom":"-171%"},4); 
+      $('body').stop().delay(1000).queue(function(){
+      $("#div-bottom-left").addClass("hw-our-thinking-bottom-auto");
+    });
       $("#collapse-image-3").css("display","block");
       $("#collapse-image-3").animate({"opacity":"1"},844);
       $(".main-contentt h1.text-center.gotham-rounded-light.heading.hw-copyright").animate({"margin-bottom":"7%"},944);
@@ -846,7 +853,10 @@ var which_one_clicked = 0;
       $("#div-bottom-left").animate({'width' : '0%','height' : '0vh'},844); 
       $("#div-top-right").animate({'width' : '0%','height' : '0vh'},844); 
       $("#div-top-left").animate({'width' : '0%','height' : '0vh'},844); 
-      $(this).animate({'height' : '160vh',"bottom":"-107%"},0); 
+      // $(this).animate({'height' : '160vh',"bottom":"-107%"},0); 
+      $('body').stop().delay(1000).queue(function(){
+      $("#div-bottom-right").addClass("hw-our-thinking-bottom-auto");
+    });
       $("#collapse-image-4").css("display","block");
       $("#collapse-image-4").animate({"opacity":"1"},844);
       $(".main-contentt h1.text-center.gotham-rounded-light.heading.hw-copyright").animate({"margin-bottom":"7%"},844);
@@ -854,6 +864,10 @@ var which_one_clicked = 0;
     });
 
    $(".collapse-button").click(function(){
+      $("#div-top-right").removeClass("hw-our-thinking-height-auto");
+      $("#div-top-left").removeClass("hw-our-thinking-height-auto");      
+      $("#div-bottom-left").removeClass("hw-our-thinking-bottom-auto");
+      $("#div-bottom-right").removeClass("hw-our-thinking-bottom-auto");
           var navtab = $(".bs-example").offset().top + 0;
                   $('html, body').animate({
             scrollTop: navtab}, 500, 'linear');
@@ -890,7 +904,7 @@ var which_one_clicked = 0;
         }
       
       $("#hw-ribbon-our-thinking-footer").css("display","block");
-      $(".main-contentt h1.text-center.gotham-rounded-light.heading.hw-copyright").animate({"margin-bottom":"29%"},844);
+      $(".main-contentt h1.text-center.gotham-rounded-light.heading.hw-copyright").animate({"margin-bottom":"35%"},844);
       $("#div-bottom-right").animate({'width' : '50%','height' : '38.7vh'},844);       
       $("#div-bottom-left").animate({'width' : '50%','height' : '38.7vh'},844); 
       $("#div-top-right").animate({'width' : '50%','height' : '38.7vh'},844); 
