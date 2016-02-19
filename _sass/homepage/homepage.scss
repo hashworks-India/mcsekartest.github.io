@@ -607,14 +607,17 @@
         bottom: 53%;
     }
     .product-carousel {
-           width: 350px;
+        width: 300px;
    
     }
+    .product-quote {
+        margin-top: -20px;
+    }
     .svg-rotate {
-    transform: rotateY(-180deg);
+        transform: rotateY(-180deg);
     }
     .product-span {
-    padding-left: 15px;
+        padding-left: 15px;
     }
     .product-desc{
         position: absolute;

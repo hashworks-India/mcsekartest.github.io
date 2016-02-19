@@ -28,6 +28,10 @@ html {
 		font-family:'LiberationMono-Regular';
 		src: url(../font/LiberationMono-Regular.otf);
 	}
+	@font-face {
+		font-family:'proxima-regular';
+		src: url(../font/ProximaNova-Regular.otf);
+	}
 /* end of fonts */
 
 /* general css */
@@ -120,6 +124,9 @@ html {
 	}
 	.LiberationMono-Regular {
 		font-family: "LiberationMono-Regular"; 
+	}	
+	.proxima-regular {
+		font-family: "proxima-regular"; 
 	}	
 
 	.hw-carousel-heading {
