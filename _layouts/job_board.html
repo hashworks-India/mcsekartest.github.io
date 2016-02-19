@@ -67,7 +67,7 @@
 
     <tbody>
        
-{% for job in  site.jobboard | sort: 'date'| date: "%d-%m-%y" | reverse %}
+{% for job in  site.jobboard | sort: 'date'| date: "%d-%m-%y" %}
         <tr class="job-list-item "  data-value= "tr2">
             <td class="gotham-rounded-bok  hw-contact-no "> {{job.job_title}} </td>
             <td class="gotham-rounded-bok  hw-contact-no log-color-blue">{{job.location}}</td>
@@ -229,17 +229,7 @@
  </div>
     <!-- End of work-together popup -->
 
-  <div class="hr-display">
-<!--       <ul class = "pagination">
-        <li class="prev_page"><a href = " "><i class="fa fa-angle-left"></i></a></li>
-
-          <li class="filter active pag " data-tab = "tr1" ><a href = "javascript:void(0)" >1</a></li>
-          <li class="filter pag" data-tab =  "tr2" ><a href = "javascript:void(0)" >2</a></li>
-      <li> <a href = "javascript:void(0)" >3</a></li>
-        <li class="next_page"><a href = " "><i class="fa fa-angle-right"></i></a></li>
-    </ul> -->
-  </div>
-
+ 
 </div>
   
 

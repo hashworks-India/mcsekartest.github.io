@@ -1,7 +1,7 @@
 ---
 job_title: PL/SQl
 location: Hyderabad
-date: 1-1-2015
+date: 6-1-2016
 experience: 4-5yrs
 type: Full Time
 
