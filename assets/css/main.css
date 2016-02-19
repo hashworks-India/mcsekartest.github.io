@@ -1310,6 +1310,13 @@ div#case-studies-filter-controls label{
     right: 10px;
     bottom: 2%;	
 }
+#hw-ribbon-our-thinking{
+position: relative;
+width: 100%;
+}
+.collapse-button{
+	cursor: pointer;
+}
 .upskilling-ani:hover {
   padding-left: 30px;
 }
