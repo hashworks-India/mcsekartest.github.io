@@ -165,6 +165,9 @@ html {
 		font-size: 0.875rem;  /*14px*/
 		cursor: default;
 	}
+	.hw-contact-no1 {
+		font-size: 0.7rem;
+	}
 
 	.h2-color {
 		color: #545454;
@@ -194,9 +197,7 @@ html {
 		vertical-align: middle;
 		padding: 0;
 	}
-	.product-left {
-		padding-left: 10px;
-	}
+	
 	.col-20 {
 		width: 20%;
 		float: left;
@@ -2334,6 +2335,9 @@ nav#toc ul {
     padding-left: 43px;
     padding-right: 53px;
     text-align: justify;
+}
+.main-contentt h1.text-center.gotham-rounded-light.heading.hw-copyright {
+	margin-bottom: 29%;
 }
 i.fa.fa-chevron-down.down-arrow{
 	color:#fff;

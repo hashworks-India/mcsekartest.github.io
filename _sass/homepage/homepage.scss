@@ -580,13 +580,10 @@
         opacity: 1;
     }
 }
-
-
-
     .product-svg {
-    position: absolute;
-    bottom: 10%;
-    left: -7%;
+        position: absolute;
+        bottom: 10%;
+        left: -7%;
     }
     .new-product-text {
         position: relative;
@@ -628,17 +625,17 @@
         height: 100%;
         
     }
-    /* .product-desc-left-margin{
-        left:11%; 
-    } */
+    
     .product-carousel .item:hover  .product-desc{
         opacity: 1;
     }
-    .product-desc h4{
+    .product-desc p{
     color: #8dbd81;
+    margin-top: 4px;
     }
-    .product-desc h4 span{
+    .product-desc p span{
     color: #a4925c;
+     margin-top: 4px;
     }
     .product-desc .product-skill{
     color: #ee7db6;
@@ -646,7 +643,9 @@
     .product-desc .product-skill span{
     color: #ee7db6;
     }
-    
+    .product-left {
+        padding-left: 7px;
+    }
    
     .hw-fixed-heading{
       position: fixed;
