@@ -4,65 +4,89 @@
 }
 #pencil-liquid1{
     animation: pencil-liquid1-anim 3s linear infinite;
-    -moz-animation: moz-pencil-liquid1-anim 2s linear infinite;
+    -moz-animation: moz-pencil-liquid1-anim 3s linear infinite;
 }
 @keyframes pencil-liquid1-anim{
     0%{
-        transform: translateX(0%) translateY(0%);
+        transform: translateX(0%) translateY(5%);
+    }
+    25%{
+        transform: translateX(-11%) translateY(91%);
     }
     50%{
-        transform: translateX(-11%) translateY(71%);
+        transform: translateX(-11%) translateY(91%);
+    }
+    75%{
+        transform: translateX(0%) translateY(5%);
     }
     100%{
-        transform: translateX(0%) translateY(0%);
+        transform: translateX(0%) translateY(5%);
     }
 }
 @-moz-keyframes moz-pencil-liquid1-anim {  
     0%{
         transform: translateX(0%) translateY(0%);
     }
+    25%{
+        transform: translateX(-1%) translateY(4%);
+    }
     50%{
-        transform: translateX(-2%) translateY(4%);
+        transform: translateX(-1%) translateY(4%);
+    }
+    75%{
+        transform: translateX(0%) translateY(0%);
     }
     100%{
         transform: translateX(0%) translateY(0%);
     }
 } 
 #pencil-liquid2{
-    animation: pencil-liquid2-anim 3s linear 1s infinite;
-    -moz-animation: moz-pencil-liquid2-anim 2s linear 1s infinite;
+    animation: pencil-liquid2-anim 3s linear infinite;
+    -moz-animation: moz-pencil-liquid2-anim 3s linear infinite;
 }
 @keyframes pencil-liquid2-anim{
     0%{
+        transform: translateX(11%) translateY(91%);
+    }
+    25%{
         transform: translateX(0%) translateY(0%);
     }
-    50%{
-        transform: translateX(11%) translateY(61%);
+    75%{
+        transform: translateX(0%) translateY(0%);
+    }
+    75%{
+        transform: translateX(11%) translateY(91%);
     }
     100%{
-        transform: translateX(0%) translateY(0%);
+        transform: translateX(11%) translateY(91%);
     }
 }
 @-moz-keyframes moz-pencil-liquid2-anim {  
     0%{
+        transform: translateX(1%) translateY(4%);
+    }
+    25%{
         transform: translateX(0%) translateY(0%);
     }
-    50%{
-        transform: translateX(1%) translateY(2%);
+    75%{
+        transform: translateX(0%) translateY(0%);
+    }
+    75%{
+        transform: translateX(1%) translateY(4%);
     }
     100%{
-        transform: translateX(0%) translateY(0%);
-    } 
+        transform: translateX(1%) translateY(4%);
+    }
 } 
 #pencil-bubble-1{
     opacity: 0;
-    animation: pencil-bubble-1-anim 3s ease-in 2s infinite;
+    animation: pencil-bubble-1-anim 4s ease-in 2s infinite;
     -moz-animation: moz-pencil-bubble-1-anim 3s ease-in 2s infinite;
 }
 @keyframes pencil-bubble-1-anim{
     0%{
         opacity: 1;
-        transform: translateX(0%) translateY(1850%);
+        transform: translateX(0%) translateY(1450%);
     }
     65%{
         opacity: 1;
@@ -74,7 +98,7 @@
     }    
     100%{
         opacity: 1;
-       transform: translateX(50%) translateY(1850%);
+       transform: translateX(50%) translateY(1450%);
     }
 }
 @-moz-keyframes moz-pencil-bubble-1-anim{
@@ -99,21 +123,21 @@
 
 #pencil-bubble-2{
     opacity: 0;
-    animation: pencil-bubble-2-anim 3s ease-in 5s infinite;
+    animation: pencil-bubble-2-anim 5s ease-in 5s infinite;
     -moz-animation: moz-pencil-bubble-2-anim 3s ease-in 5s infinite;
 }
 @keyframes pencil-bubble-2-anim{
     0%{
         opacity: 1;
-        transform: translateX(-50%) translateY(950%);
+        transform: translateX(0%) translateY(950%);
     }
     65%{
         opacity: 1;
-        transform: translateX(10%) translateY(-510%)
+        transform: translateX(10%) translateY(-490%)
     }
     75%{
         opacity: 1;
-        transform: translateX(10%) translateY(-490%)
+        transform: translateX(10%) translateY(-470%)
     }
     100%{
         opacity: 1;
@@ -127,11 +151,11 @@
     }
     65%{
         opacity: 1;
-        transform: translateX(1%) translateY(-15%)
+        transform: translateX(1%) translateY(-13%)
     }
     75%{
         opacity: 1;
-        transform: translateX(1%) translateY(-14%)
+        transform: translateX(1%) translateY(-12%)
     }
     100%{
         opacity: 1;
@@ -140,7 +164,7 @@
 }
 #pencil-bubble-3{
     opacity: 0;
-    animation: pencil-bubble-3-anim 4s ease-in 2s infinite;
+    animation: pencil-bubble-3-anim 5s ease-in 2s infinite;
     -moz-animation: moz-pencil-bubble-3-anim 4s ease-in 2s infinite;
 }
 @keyframes pencil-bubble-3-anim{
@@ -181,25 +205,25 @@
 }
 #pencil-bubble-4{
     opacity: 0;
-    animation: pencil-bubble-4-anim 3s ease-in 3s infinite;
+    animation: pencil-bubble-4-anim 4s ease-in 3s infinite;
     -moz-animation: moz-pencil-bubble-4-anim 3s ease-in 3s infinite;
 }
 @keyframes pencil-bubble-4-anim{
     0%{
         opacity: 1;
-        transform: translateX(0%) translateY(590%);
+        transform: translateX(-110%) translateY(590%);
     }
     65%{
         opacity: 1;
-        transform: translateX(90%) translateY(-580%);
+        transform: translateX(-130%) translateY(-580%);
     }
     75%{
         opacity: 1;
-        transform: translateX(90%) translateY(-550%);
+        transform: translateX(-130%) translateY(-550%);
     }
     100%{
         opacity: 1;
-        transform: translateX(90%) translateY(590%);
+        transform: translateX(-130%) translateY(590%);
     }
 }
 @-moz-keyframes moz-pencil-bubble-4-anim{
@@ -218,88 +242,6 @@
     100%{
         opacity: 1;
         transform: translateX(-2%) translateY(15%);
-    }
-}
-#pencil-bubble-5{
-    opacity: 0;
-    animation: pencil-bubble-5-anim 4s ease-in 2s infinite;
-    -moz-animation: moz-pencil-bubble-5-anim 3s ease-in 2s infinite;
-}
-@keyframes pencil-bubble-5-anim{
-    0%{
-        opacity: 1;
-        transform: translateX(0%) translateY(762%);
-    }
-    65%{
-        opacity: 1;
-        transform: translateX(-140%) translateY(-1030%);
-    }
-    75%{
-        opacity: 1;
-        transform: translateX(-140%) translateY(-1010%);
-    }
-    100%{
-        opacity: 1;
-        transform: translateX(-140%) translateY(762%);
-    }
-}
-@-moz-keyframes moz-pencil-bubble-5-anim{
-    0%{
-        opacity: 1;
-        transform: translateX(0%) translateY(10%);
-    }
-    65%{
-        opacity: 1;
-        transform: translateX(3%) translateY(-26%);
-    }
-    75%{
-        opacity: 1;
-        transform: translateX(3%) translateY(-24%);
-    }
-    100%{
-        opacity: 1;
-        transform: translateX(3%) translateY(10%);
-    }
-}
-#pencil-bubble-6{
-    opacity: 0;
-    animation: pencil-bubble-6-anim 3s ease-in 7s infinite;
-    -moz-animation: moz-pencil-bubble-6-anim 3s linear 7s infinite;
-}
-@keyframes pencil-bubble-6-anim{
-    0%{
-        opacity: 1;
-        transform: translateX(0%) translateY(1767%);
-    }
-    65%{
-        opacity: 1;
-        transform: translateX(60%) translateY(-280%);
-    }
-    75%{
-        opacity: 1;
-        transform: translateX(60%) translateY(-250%);
-    }
-    100%{
-        opacity: 1;
-        transform: translateX(60%) translateY(1767%);
-    }
-}
-@-moz-keyframes moz-pencil-bubble-6-anim{
-    0%{
-        opacity: 1;
-        transform: translateX(0%) translateY(40%);
-    }
-    65%{
-        opacity: 1;
-        transform: translateX(6%) translateY(0%);
-    }
-    75%{
-        opacity: 1;
-        transform: translateX(6%) translateY(2%);
-    }
-    100%{
-        opacity: 1;
-        transform: translateX(6%) translateY(40%);
     }
 }
 
