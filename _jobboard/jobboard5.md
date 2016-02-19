@@ -1,6 +1,6 @@
 ---
-job_title: PL/SQl
-location: Hyderabad
+job_title: Java
+location: Chennai
 date: 1-1-2015
 experience: 4-5yrs
 type: Full Time

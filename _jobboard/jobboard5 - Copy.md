@@ -1,6 +1,6 @@
 ---
 job_title: Java
-location: Hyderabad
+location: Chennai
 date: 6-1-2016
 experience: 4-5yrs
 type: Full Time
