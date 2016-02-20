@@ -222,6 +222,9 @@
         transition: background-color .5s ease 0s;
         
     }
+    .dropdown-width {
+        width: 200px !important;
+    }
    
     ul li ul.dropdown a{
         text-align: left;
