@@ -7,6 +7,11 @@ $(document).ready(function(){
      this will serve as our indicator*/
     $('.scroll-anim').first().addClass('active');
 
+
+$('body, html').delay(100).animate({
+        scrollTop: $('.we-on-banner').position().top
+        }, 'slow');
+
     /* handle the mousewheel event together with 
      DOMMouseScroll to work on cross browser */
     $(document).on('mousewheel DOMMouseScroll', function (e) {
