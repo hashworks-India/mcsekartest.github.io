@@ -366,7 +366,10 @@
     cursor: pointer;
 }
 .blog-mar {
+    text-align: justify;
+    margin: 18px 20px;
     margin-top: 15px;
+    font-weight: lighter;
 }
 .blog-banner .blog1-div3{
     height: 50vh;
@@ -383,6 +386,9 @@
    cursor: pointer;
     overflow: hidden;
     margin-left: -2px;
+}
+.blog-banner #blog1-div3-part1 .blog-a{
+    color: #fff;
 }
 .blog-banner #blog2-div3-part2{
     background: #1ac1b0;
@@ -447,20 +453,20 @@
         -webkit-animation: fadein 8s; /* Safari and Chrome */
         -o-animation: fadein 8s; /* Opera */
     }
-    .banner1-text {
-      position: absolute;
-      top: 50%;
-      left: 40%;
-      margin-top: -175px;
-      margin-left: -120px;
-    }
+.banner1-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -175px;
+    margin-left: -318px;
+}
     .banner1-text h1{
        font-size: 76px;
         line-height: 76px;
         font-weight: 800;
         color: #fff;
         text-transform: uppercase;
-        margin: 40px 0 60px;
+        margin: 40px 0 48px;
         text-align: center;
     }
     .home-hr {
@@ -545,6 +551,7 @@
         padding-right: 12px;
         padding-top: 30px;
         bottom: 48%;
+        margin-left: -20px;
     }
     .product-carousel {
         width: 300px;

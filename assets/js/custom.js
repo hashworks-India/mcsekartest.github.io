@@ -13,6 +13,10 @@ $(document).ready(function(){
       $("div#credits").css({width:"40px"}).animate({width: "200px"},300);
 
     });
+    $("header").mouseleave(function(){
+      $("div#credits").removeClass("show");
+      $("div#credits").addClass("hidden");
+    });
 
     /* end */
 

@@ -142,6 +142,9 @@ html {
 	.hw-font-heading1 {
 		font-size: 1.68rem; 
 	}
+	.hw-font-heading3 {
+		font-size: 1.75rem; 
+	}
 
 	.hw-tab-heading,
 	.hw-socialshare {
@@ -168,6 +171,9 @@ html {
 	.hw-contact-no1 {
 		font-size: 0.7rem;
 	}
+	.hw-contact-no2 {
+		font-size: 0.75rem;
+	}
 
 	.h2-color {
 		color: #545454;
@@ -183,6 +189,9 @@ html {
 	}
 	.text-justify {
 		text-align: justify;
+	}
+	.font-weight-lighter{
+		font-weight: lighter;
 	}
 
 	.text-uppercase {
@@ -268,7 +277,7 @@ html {
 	}
 	.hw-our-thinking-head-contents{
 	margin-top: 20px;
-    margin-bottom: 9px;
+    margin-bottom: 18px;
 	}
 	.explore-btn {
 		padding: 8px 25px; /**/
@@ -550,6 +559,31 @@ html {
 
 		.hw-engage-cont {
 			margin: 30px 0px 60px;
+		}
+		.hw-engage-cont h2{
+			margin-bottom: 24px;
+		}
+		.job-board-ul {
+		    margin-left: 20px;
+		    margin-top: 12px;
+		}
+		.keyword {
+		    background-color: #dcdfe4;
+		    padding: 14px 20px;
+		    width: 26%;
+		    border: none;
+		    text-indent: 8px;
+		}
+		.job-search {
+		    background-color: #ee2b7b;
+		    padding: 16px;
+		    border: none;
+		    color: #fff;
+		    font-size: 13px;
+		    font-family: "gotham-rounded-light";
+		}
+		.job-search:focus {
+			outline: none;
 		}
 		.hw-margin-div {
 			margin-left: 100px;
@@ -1106,7 +1140,7 @@ div#case-studies-filter-controls label{
 
 	/*hw-started*/
 		.hw-started {
-			margin: 35px 0;
+			    margin-top: 14px;
 		}
 
 		.hw-started h2 {
@@ -1835,7 +1869,7 @@ width: 100%;
 	    line-height: 1;
 	    outline: 0 none;
 	    overflow: visible;
-	    padding: 25px 95px 25px 60px;
+	    padding: 25px 95px 25px 95px;
 	    position: relative;
 	    text-decoration: none;
 	    text-transform: uppercase;
