@@ -8,7 +8,7 @@ $(document).ready(function(){
     $('.scroll-anim').first().addClass('active');
 
 
-$('body, html').delay(100).animate({
+$('body, html').delay(1000).animate({
         scrollTop: $('.we-on-banner').position().top
         }, 'slow');
 
