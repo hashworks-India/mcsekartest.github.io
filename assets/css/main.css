@@ -968,35 +968,35 @@ html {
 	/*  case study */
 
 	/*for the case study  filtering part*/
-#case-studies-filter-controls input[type='checkbox']{
+.bootcamp-filter-contents input[type='checkbox'],.case-studies-filter-contents input[type='checkbox']{
   display: none;
 }
-#case-studies-filter-controls input[type='checkbox']:checked+.case-studies-label-text, #case-studies-filter-controls input[type='radio']:checked+.case-studies-label-text {
+input[type='checkbox']:checked+.case-studies-label-text,  input[type='radio']:checked+.case-studies-label-text {
     cursor: default;
 }
 
-#case-studies-filter-controls input[type='checkbox']+.case-studies-label-text, #case-studies-filter-controls input[type='radio']+.case-studies-label-text {
+input[type='checkbox']+.case-studies-label-text,  input[type='radio']+.case-studies-label-text {
     display: inline-block;
     cursor: pointer;
     position: relative;
     padding-left: 27px;
 }
 
-#case-studies-filter-controls input[type='checkbox']+.case-studies-label-text::before {
+input[type='checkbox']+.case-studies-label-text::before {
 	top: 6px;
     width: 18px;
     height: 16px;
 }
-#case-studies-filter-controls input[type='checkbox']+.case-studies-label-text::before, #case-studies-filter-controls input[type='radio']+.case-studies-label-text::before {
+input[type='checkbox']+.case-studies-label-text::before,  input[type='radio']+.case-studies-label-text::before {
     left: 0;
     border: 1px solid #00a2c5;
 }
 
 
-#case-studies-filter-controls input[type='checkbox']:checked+.case-studies-label-text::after, #case-studies-filter-controls input[type='radio']:checked+.case-studies-label-text::after {
+input[type='checkbox']:checked+.case-studies-label-text::after, input[type='radio']:checked+.case-studies-label-text::after {
     display: block;
 }
-#case-studies-filter-controls input[type='checkbox']+.case-studies-label-text::after {
+input[type='checkbox']+.case-studies-label-text::after {
     top: 6px;
     left: 2px;
     height: 6px;
@@ -1007,10 +1007,10 @@ html {
     -webkit-transform: rotate(-45deg) translateZ(0);
     transform: rotate(-45deg) translateZ(0);
 }
-#case-studies-filter-controls input[type='checkbox']+.case-studies-label-text:after, #case-studies-filter-controls input[type='radio']+.case-studies-label-text:after {
+input[type='checkbox']+.case-studies-label-text:after,input[type='radio']+.case-studies-label-text:after {
     display: none;
 }
-#case-studies-filter-controls input[type='checkbox']+.case-studies-label-text::before, #case-studies-filter-controls input[type='checkbox']+.case-studies-label-text::after, #case-studies-filter-controls input[type='radio']+.case-studies-label-text::before, #case-studies-filter-controls input[type='radio']+.case-studies-label-text::after {
+input[type='checkbox']+.case-studies-label-text::before,input[type='checkbox']+.case-studies-label-text::after, #case-studies-filter-controls input[type='radio']+.case-studies-label-text::before, #case-studies-filter-controls input[type='radio']+.case-studies-label-text::after {
     content: "";
     position: absolute;
 }
@@ -1055,7 +1055,25 @@ div#case-studies-filter-controls label{
 .checkbox-border-right-padding{
     border-right: 1px solid black;
     margin: 0px;
-    padding: 0px 30px 0px 0px;
+    padding-right: 25px;
+}
+.bootcamp-filter-contents{
+	position: relative;
+}
+div#bootcamp-filter-total{
+        padding-top: 30px;
+}
+div#bootcamp-filter-controls {
+	    padding-top: 40px;
+	    margin-bottom: 40px;
+}
+p#bootcamp-filter-total-no {
+}
+div#bootcamp-filter-controls input{
+	zoom:1.2;
+}
+div#bootcamp-filter-controls label{
+    margin: 0px 20px 0px 20px;
 }
 /*end for the case study  filtering part*/
 
