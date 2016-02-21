@@ -1497,26 +1497,26 @@ width: 100%;
 }
 #animate-icons-21{
     position: absolute;
-    bottom: 19%;
-    left: 15%;
-    width: 4%;
+	bottom: 42%;
+    left: 17%;
+    width: 2.7%;
     z-index: 1;
     animation: rotate-anim   6s linear infinite; 
 }
 
 #animate-icons-22{
     position: absolute;
-    bottom: 28%;
-    right: 2%;
+    bottom: 47%;
+    right: 15%;
     z-index: 1;
-    width: 3.5%;
+    width: 2.9%;
     animation: rotate-anim   5s linear infinite; 
 }
 #animate-icons-23{
 	position: absolute;
-    bottom: 21%;
-    right: 33%;
-    width: 3%;
+    bottom: 40%;
+    right: 34%;
+    width: 2.5%;
     z-index: 1;
     animation: rotate-anim   4s linear infinite; 
 }
