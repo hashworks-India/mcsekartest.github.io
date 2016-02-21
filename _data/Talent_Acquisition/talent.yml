@@ -2,7 +2,8 @@ Employer :
     - { employee : 'Building an agile workforce in response to continuous technology disruption and fast changing business goals are the impediments for enterprises today.'}    
     - { employee : 'Decentralized and unbound digital business initatives run by organizations without a strong inhouse capability or a reliable vendor relationship with wide range of deep technical expertise will jeopardize the business success.' }
     - { employee : "Speed and agility trump every other barriers that businesses face to achieve growth in today's market." }
-    - { employee : 'Study from Gartner on adoption of Bi-Modal approach to Vendor managment(VM) to support the flexible needs of digital business intiatives says, "To meet the demands of digital business transformation, VM leaders must provide alternatives to conventional VM process. This means reducing cycle times and allowing exceptions to long standing practices that may have hindered creativity or stalled vendor delivery of innovation."' }
+    - { employee : 'Study from Gartner on adoption of Bi-Modal approach to Vendor managment(VM) to support the flexible needs of digital business intiatives says,' }
+    - { employee : ""To meet the demands of digital business transformation, VM leaders must provide alternatives to conventional VM process. This means reducing cycle times and allowing exceptions to long standing practices that may have hindered creativity or stalled vendor delivery of innovation."" }
      - { employee : 'Digital business demands greater dexterity in creating value from technology.' }
 Partner :
     - { partner : 'How DevOps thinking is pivoting organizations to deliver faster applications features to its customers.'}
