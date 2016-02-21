@@ -8,6 +8,8 @@ $(document).ready(function(){
 
     });
 
+     $('[data-toggle="tooltip"]').tooltip();   
+
     /* google search button animation*/
     $("a.toggle.btn").click(function(){
       $("div#credits").css({width:"40px"}).animate({width: "200px"},300);
