@@ -134,7 +134,9 @@ html {
 	.hw-font-heading {
 		font-size: 2rem;
 	}
-
+	.right {
+		margin-top: -17px;
+	}
 	.hw-main-heading {
 		font-size: 1.88rem;  /*30px*/
 	}
