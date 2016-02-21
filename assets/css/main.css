@@ -363,6 +363,12 @@ html {
 		display: -o-flex;
 		display: flex;
   	}
+  	.job-close {
+  		float: right;
+    	margin-top: -35px;
+    	color: #000;
+    	margin-right: -50px;
+  	}
 	.c-flex {
 		display: -webkit-flex;
 		display: -moz-flex;
