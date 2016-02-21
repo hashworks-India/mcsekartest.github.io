@@ -161,7 +161,7 @@
     });
 
 
-     $(".hw-te-tab").click( function() {
+     $(".hw-te-tab,.job-close").click( function() {
       $("#form-map-div").hide();
       resetTheForm();
    });
