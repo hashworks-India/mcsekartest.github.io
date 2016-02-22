@@ -89,7 +89,14 @@ $('body, html').delay(1000).animate({
         $('.scroll-anim').each(function(){
             // alert( $('body, html').offset().top);
             var scrolldval = $(this).data('value');
-
+            //for the product svg line animation
+            if(dval == 4)
+            {
+                $("#product-boundary-line").attr("class","product-boundary-line");
+            }
+            else{
+                 $("#product-boundary-line").attr("class","");
+            }
             if(dval == scrolldval) {
               $(".scroll-anim").removeClass('active');
               $(this).addClass('active');
