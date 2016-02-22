@@ -2575,15 +2575,41 @@ i.fa.fa-chevron-down.down-arrow{
 	-o-animation: colorAnim4 2s linear infinite;
 	animation: colorAnim4 2s linear infinite;
 }
+.product-boundary-line {
+	stroke-dasharray: 2000;
+	stroke-dashoffset: 0;
+    -webkit-animation: boundary_line 6s linear ;
+	-moz-animation: boundary_line 6s linear ;
+	-o-animation: boundary_line 6s linear ;
+	animation: boundary_line 6s linear ;
+}
+@-webkit-keyframes boundary_line {
+	0% { stroke-dashoffset: 2010;}
+
+    100% { stroke-dashoffset: 0;}
+}
+@-moz-keyframes boundary_line {
+	0% { stroke-dashoffset:2010 ;}
+
+    100% { stroke-dashoffset: 0;}
+}
+@-o-keyframes boundary_line {
+	0% { stroke-dashoffset: 2010;}
+    100% { stroke-dashoffset: 0;}
+}
+@keyframes boundary_line {
+	0% { stroke-dashoffset:2010 ;}
+    100% { stroke-dashoffset: 0;}
+}
 
 #meter {
     position: absolute;
     width: 2px;
-    height: 25px;
+    height: 3%;
     background: #000;
-    top: 247px;
-  /*bottom:401px;*/
-    left: 282px;
+    /*top: 247px;*/
+  bottom:46.1%;
+    left: 18.4%;
     z-index: 11;
     border-radius: 3px;
     -moz-border-radius: 3px;
