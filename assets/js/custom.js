@@ -1,4 +1,7 @@
 
+ //scrollup
+
+
 $(document).ready(function(){
 
     $('.toggle').click(function (event) {
@@ -6,6 +9,11 @@ $(document).ready(function(){
         var target = $(this).attr('href');
         $(target).toggleClass('hidden show');
 
+    });
+
+    $('.nav-scroll-up').click(function (e) {
+      
+    $('html, body').animate({scrollTop: '0px'},1.7e3 );
     });
 
      $('[data-toggle="tooltip"]').tooltip();   
@@ -94,7 +102,7 @@ $(document).ready(function(){
 
         // ui-ux tab
           $('.hw-ui-ux-carousel .carousel').carousel({
-            interval: 500,
+            interval: 300,
               pause: true
           });
           $(window).load(function () {
@@ -917,7 +925,7 @@ var which_one_clicked = 0;
     }
       });
 
-    $("#toc").mouseleave(function(){
+    $("section").click(function(){
        if($("#toc").css("width")=="142px")
       {
       $("#nav-icon1").toggleClass('open');

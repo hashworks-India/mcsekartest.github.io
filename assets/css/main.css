@@ -134,7 +134,7 @@ html {
 	.hw-font-heading {
 		font-size: 2rem;
 	}
-	.right {
+	.right-workforce {
 		margin-top: -17px;
 	}
 	.hw-main-heading {
@@ -329,6 +329,9 @@ html {
 		background-color: transparent;
 		border: 1px solid #0ab4c5;/**/
 		color: #0ab4c5;/**/
+	}
+	.custom-btn:focus {
+		outline: none;
 	}
 
 	.heading-custom-btn {
@@ -572,7 +575,7 @@ html {
 			margin-bottom: 24px;
 		}
 		.job-board-ul {
-		    margin-left: 20px;
+		    /*margin-left: 20px;*/
 		    margin-top: 12px;
 		}
 		.keyword {
@@ -589,7 +592,18 @@ html {
 		    color: #fff;
 		    font-size: 13px;
 		    font-family: "gotham-rounded-light";
+		    -webkit-transition: all .5s ease 0s;
+		-moz-transition: all .5s ease 0s;
+		-ms-transition: all .5s ease 0s;
+		-o-transition: all .5s ease 0s;
+		transition: all .5s ease 0s;
 		}
+		.job-search:hover {
+			background-color: #fff;
+			border: 1px solid #ee2b7b;
+		color: #ee2b7b;
+		}
+
 		.job-search:focus {
 			outline: none;
 		}
@@ -1381,6 +1395,23 @@ width: 100%;
 .upskilling-ani:hover {
   padding-left: 30px;
 }
+.nav-scroll-up {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+			-ms-transform: rotate(180deg);
+			-o-transform: rotate(180deg);
+			transform: rotate(180deg);
+			float: right;
+			cursor: pointer;
+}
+.employee-scroll {
+	    margin-left: -65px;
+    margin-bottom: -10px;
+}
+.employee-scroll1 {
+	    margin-left: -65px;
+    margin-bottom: -30px;
+}
 .title-background{
 	background: url("/assets/img/service-del/Text_Background_Shades.svg") no-repeat;
 }
@@ -1628,6 +1659,9 @@ width: 100%;
 	  -o-transition: all .5s ease 0s;
 	  transition: all .5s ease 0s;
 	}
+	span.page-number.clickable:hover {
+		background-color: #ee2b7b;
+	}
 
 	.blog-grid > li {
 	  width: 25%;
@@ -1637,6 +1671,9 @@ width: 100%;
 	  overflow: hidden; /*without this li will create more height*/
 	  line-height: 2.25em;
 	}	
+	#google-search-div i.fa.fa-angle-right.search-arrow:hover {
+    color: #ee2b7b;
+	}
 /* case study _detail */
 	.casestudy-img {
 	    background-image: url("http://forgeandsmith.com/wp-content/uploads/2014/06/casestudies.jpg");;
@@ -3033,10 +3070,20 @@ img#big-ipad {
     position: absolute;
     top: 23%;
 }
-#meter {
-	bottom:402px;
+.latest-job {
+	padding-top:27%;
 }
-
+.hw-works .arrow-top:after
+{
+	right: -27%;
+    top: -50px;
+}
+.hw-works .arrow-bottom:after {
+	top: 37px;
+    right: -67px;
+}
+	
+ 
 
 
 }

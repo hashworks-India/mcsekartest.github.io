@@ -53,13 +53,11 @@
 	height:50%;
 	z-index: 2;
 }
-.job-board-ul li {
+/*.job-board-ul li {
 	list-style-type: initial;
 	color: #0AB4C5
-}
-.job-board-ul {
-	margin-left: 20px;
-}
+} */
+
 .text-border {
 	border:1px solid #0AB4C5;
 }
@@ -215,6 +213,14 @@ input {
 		font-size: 12px;
 		border:none;
 	}
+	.apply:focus {
+		outline:none;
+	}
+	.apply:hover {
+	background-color: #fff;
+	border: 1px solid #ee2b7b;
+	color: #ee2b7b;
+	}
 	.view-close {
 		position: absolute;
 		right: 10px;
@@ -224,14 +230,7 @@ input {
 		padding: 10px 15px;
 		border: none;
 	}
-	.job-search {
-		background-color: #ee2b7b;
-		padding: 14px;
-		border: none;
-		color: #fff;
-		font-size: 10px;
-		font-family: "gotham-rounded-bold";
-	}
+
 	h5, .view1-close {
 		color: #33363f;
 	}
