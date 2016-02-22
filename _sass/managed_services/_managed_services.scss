@@ -69,6 +69,9 @@
 }
 .ms-form-mar {
 	margin-top: 50px;
+	 -webkit-transition: all .5s ease 0s;
+  -o-transition: all .5s ease 0s;
+  transition: all .5s ease 0s;
 }
 .ms-row-mar {
 	margin-top: 25px;
@@ -205,6 +208,10 @@ input {
 		padding-top: 20px;
 		padding-left: 25px;
 		padding-bottom: 20px;
+		-webkit-transition: all .9s ease 0s;
+  -o-transition: all .9s ease 0s;
+  -moz-transition: all .9s ease 0s;
+  transition: all .9s ease 0s;
 	}
 	.apply {
 		padding:10px 10px;
@@ -224,6 +231,10 @@ input {
 	.view-close {
 		position: absolute;
 		right: 10px;
+		-webkit-transition: all .9s ease 0s;
+  -o-transition: all .9s ease 0s;
+  -moz-transition: all .9s ease 0s;
+  transition: all .9s ease 0s;
 	}
 	.keyword {
 		background-color: #dcdfe4;
