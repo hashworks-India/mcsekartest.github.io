@@ -255,6 +255,23 @@ $(document).ready(function(){
            $(this).parents('tr').addClass('hide');
        }); 
       
+
+ // $('#start-project').prev().children().find("div").click(function() {
+ //  alert();
+ //         $(".view1").prev().find('.hw-job1').removeClass('view-color');
+          
+ //           $(".view1").addClass('hide');
+ //       }); 
+
+
+
+
+ $(document).on('click', '.pager', function(){
+         $(".view1").prev().find('.hw-job1').removeClass('view-color');
+           $(".view1").addClass('hide');
+});
+
+
         $('.apply').click(function () {
           var job_title = $(this).parents('.view1').prev().find("td").first().text(); // for setting the job-title value to form
           $(".input_subject").val(job_title);
