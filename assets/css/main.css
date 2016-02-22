@@ -290,6 +290,7 @@ html {
 		background-color: transparent;
 		color: #ee2b7b;
 		margin-top: 18px;
+		outline: none;
 		-webkit-transition: all .5s ease 0s;
 		-moz-transition: all .5s ease 0s;
 		-ms-transition: all .5s ease 0s;
