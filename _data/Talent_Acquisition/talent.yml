@@ -10,9 +10,11 @@ Partner :
     - { partner : 'We champion collaborative workforce, there is always a good demand for the skillful talent pool in the market. If you are sourcing partner with technology hiring as a core competency and looking for positioning your growth through partnerships please talk to us'}
    
 Job:
-    - { job : "In today's market trend, companies are increasingly scouting to hire professionals capable of adopting to the ever changing business goals & markets needs."}
-    - { job : 'How DevOps thinking is pivoting organizations to deliver faster applications features to its customers.'}
-    - { job : 'How DevOps thinking is pivoting organizations to deliver faster applications features to its customers.'}
-    - { job : 'How DevOps thinking is pivoting organizations to deliver faster applications features to its customers.'}
-    - { job : 'How DevOps thinking is pivoting organizations to deliver faster applications features to its customers.'}
-    - { job : 'How DevOps thinking is pivoting organizations to deliver faster applications features to its customers.'}
+    - { job :  "In today's job market, companies are increasingly scouting to hire professionals who are capable of adopting to technology needs, every changing business goals & market disruption."}
+    - { job : 'Skilled workforce are the strategic asset for every organization today. Leaders are refocusing their importance on collaborative
+workforce to achieve the business success & to gain competetive advantage in the market.'}
+    - { job : 'It is imperative for the talentpool to quickly adopt to changing work environment, new job functions, multi-task & continuous learning.'}
+    - { job : 'Unprecedented technology disruption and rapid market adoption to newer technologies has opened vast pool of market opportunities. To fulfil the demand the companies need skillful people to deliver the right products and services.'}
+    - { job : 'Learn new technologies & skill-sets through MOOCs (Massive Open Online Courses), Bootcamps & Online training mediums. The connected world has given unlimited opportunities for new generation workforce to learn, to create value and to contribute to the bigger eco-
+system.'}
+   
