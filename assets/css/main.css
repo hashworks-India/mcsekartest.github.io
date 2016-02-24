@@ -2499,7 +2499,7 @@ i.fa.fa-chevron-down.down-arrow{
 	position: relative;
 	height: 100vh;
 }*/
-.hide {
+.svg_hide {
     visibility: hidden;
 }
 #code-box {

@@ -1363,12 +1363,11 @@ bootcamp_filter_function();
 
  
 /*end filtering in bootcamp*/ 
-$('#tablet-box').removeClass('hide');
 /*for svg product banner*/
   var index = 2;
   setInterval(function(){
     setTimeout(function(){
-      $('.device-anim').attr("class","device-anim hide");
+      $('.device-anim').attr("class","device-anim svg_hide");
       if(index==1) $('#desktop-box').attr("class","device-anim");
       if(index==2) $('#tablet-box').attr("class","device-anim");
       if(index==3) $('#mobile-box').attr("class","device-anim");
