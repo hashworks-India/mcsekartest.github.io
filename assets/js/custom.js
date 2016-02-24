@@ -32,41 +32,49 @@ $(document).ready(function(){
 
     /* we love parter */
     // $('.home-hr').addClass("anim");
-    //   $("#hw-fixed-footer-part").animate({"opacity":"1"},644);
-    //   $("#hw-fixed-footer-part").delay(2000).animate({"opacity":"0"},644);
-      $('#section-rib-part').mouseenter(function() {
-      $("#section-rib-part").animate({"opacity":"1"},44);
-    });
+    //   $("#section-rib-part").animate({"opacity":"1"},644);
+    //   $("#section-rib-part").delay(2000).animate({"opacity":"0"},644);
+    //   $('#section-rib-part').mouseenter(function() {
+    //   $("#section-rib-part").animate({"opacity":"1"},44);
+    // });
 
-    $('#section-rib-part').mouseleave(function() {
-      $(this).animate({"opacity":"0"},44);
-    }); 
+    // $('#section-rib-part').mouseleave(function() {
+    //   $(this).animate({"opacity":"0"},44);
+    // }); 
 
 
-    $("ul.scroll-indicators.hide-scroll").click(function(){
+    // $("ul.scroll-indicators.hide-scroll > li").click(function(){
 
-       var data_tab = $('.first-active').attr("data-tab");
-        // alert(data_tab);
-       if( data_tab === 1)
-       {
-        alert();
-        $('#hw-fixed-footer-part').hide();
-        $("#section-rib-part").animate({"opacity":"1"},644);
-        $("#section-rib-part").delay(2000).animate({"opacity":"0"},644);
-      }
-      else {
-        $("#section-rib-part").hide();
-      }
-        var data_tab = $('.blog-active').attr("data-tab");
-        // alert(data_tab);
-       if( data_tab === 3)
-       {
-        
-        $('#hw-fixed-footer-part').hide();
-        $("#section-rib-part").hide();
-      }
+    //    var data_tab = $(this).attr("data-tab");
+    //     // alert(data_tab);
+    //    if( data_tab === '1')
+    //    {
+    //     $('#hw-fixed-footer-part').hide();
+    //     $("#section-rib-part").animate({"opacity":"1"},644);
+    //     $("#section-rib-part").delay(2000).animate({"opacity":"0"},644);
+    //   }
+    
+     // else if( data_tab === '4')
+     //   {
+     //     alert(data_tab);
+     //    $('#section-rib-part').hide();
+     //    $("#hw-fixed-footer-part").animate({"opacity":"1"},644);
+     //    $("#hw-fixed-footer-part").delay(2000).animate({"opacity":"0"},644);
+     //  }
+     //  else {
+     //    $("#section-rib-part").hide();
+     //  }
+      // if( data_tab === '4')
+      //  {
+      //   $('#hw-fixed-footer-part').hide();
+      //   $("#section-rib-part").animate({"opacity":"1"},644);
+      //   $("#section-rib-part").delay(2000).animate({"opacity":"0"},644);
+      // }
+      // else {
+      //   $("#section-rib-part").hide();
+      // }
       
-    });
+    // });
 
 /* end of partner */
 
@@ -660,15 +668,15 @@ jobPostSplitter();
 /* for google search engine */
 
           (function() {
-            var cx = '012091172359027849241:ukd4iabk1_g';
-            var gcse = document.createElement('script');
-            gcse.type = 'text/javascript';
-            gcse.async = true;
-            gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-                '//cse.google.com/cse.js?cx=' + cx;
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(gcse, s);
-          })();
+    var cx = '012091172359027849241:ukd4iabk1_g';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
 /* end for google search engine */
 
 
