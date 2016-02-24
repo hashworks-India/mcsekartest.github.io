@@ -4,7 +4,7 @@
 	<!-- indicators -->
 		<ul class="scroll-indicators hide-scroll">
 
-			<li class="active" data-tab="1">
+			<li class="active first-active" data-tab="1">
 				<a href="javascript:void(0)">
 					<span class="hw-dot"></span>
 					<span class="hw-label gotham-rounded-light">What we do</span>
@@ -16,7 +16,7 @@
 					<span class="hw-label gotham-rounded-light">What we offer</span>
 				</a>
 			</li>
-			<li data-tab="3">
+			<li class="blog-active" data-tab="3">
 				<a href="javascript:void(0)">
 					<span class="hw-dot"></span>
 					<span class="hw-label gotham-rounded-light">Blog</span>
@@ -12004,15 +12004,16 @@
 
 			</section>
 		<!-- end of section3-->
-
+		{% include section-rib.html %}
 		{% include homepage-head.html %}
+		
 
 	</div>
 </main>	
 
 
 
-{% include footer.html %}
+<!-- {% include footer.html %} -->
 <script type="text/javascript">
           // $(document).ready(function () {
           //   $('#shell img').plaxify()
