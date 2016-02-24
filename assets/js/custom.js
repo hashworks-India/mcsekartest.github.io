@@ -155,6 +155,7 @@ $(document).ready(function(){
 
         $(window).load(function() {
           equalheight('.blog-main .blog-content');
+          $('.home-hr').addClass('anim');
         });
 
 

@@ -439,7 +439,7 @@
        font-size: 46px;
         line-height: 40px;
         font-weight: 800;
-        color: #fff;
+        
         text-transform: uppercase;
         margin: 30px 0 30px;
         text-align: center;
@@ -465,14 +465,12 @@
     .clr-black1 {
         color: #384149; 
     }
-    .orange-bullet {
-        display: inline-block;
-        width: 14px;
-        height: 14px;
-        background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNC40IDE0LjQiID48c3R5bGU+LnN0eWxlMHtmaWxsOiNGMzkzMjE7fTwvc3R5bGU+PGNpcmNsZSBjeD0iNy4yIiBjeT0iNy4yIiByPSI3LjIiIGNsYXNzPSJzdHlsZTAiLz48L3N2Zz4=) no-repeat center center;
-        background-size: 13px 13px;
-        margin: 0px 3px;
-      }
+    .pink-bullet {
+    color: #ee3b7b;
+    font-size: 40px;
+    margin: 0px 2px;
+    }
+    
    @keyframes fadein {
     from {
         opacity:0;
