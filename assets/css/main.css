@@ -2494,10 +2494,11 @@ i.fa.fa-chevron-down.down-arrow{
 
 /* end of our thinking banner*/
 
-
+/*
 #svg-wrapper {
 	position: relative;
-}
+	height: 100vh;
+}*/
 .hide {
     visibility: hidden;
 }
@@ -2739,6 +2740,35 @@ i.fa.fa-chevron-down.down-arrow{
 }
 
 
+.product-boundary-line {
+	stroke-dasharray: 2565;
+	/*stroke-dashoffset: 2570;*/
+	stroke-dashoffset: 0;
+    -webkit-animation: boundary_line 6s linear ;
+	-moz-animation: boundary_line 6s linear ;
+	-o-animation: boundary_line 6s linear ;
+	animation: boundary_line 6s linear ;
+}
+
+
+@-webkit-keyframes boundary_line {
+	0% { stroke-dashoffset: 2570;}
+
+    100% { stroke-dashoffset: 0;}
+}
+@-moz-keyframes boundary_line {
+	0% { stroke-dashoffset:2570 ;}
+
+    100% { stroke-dashoffset: 0;}
+}
+@-o-keyframes boundary_line {
+	0% { stroke-dashoffset: 2570;}
+    100% { stroke-dashoffset: 0;}
+}
+@keyframes boundary_line {
+	0% { stroke-dashoffset:2010 ;}
+    100% { stroke-dashoffset: 0;}
+}
 
 
 @-webkit-keyframes deviceAnim {
@@ -3007,8 +3037,8 @@ i.fa.fa-chevron-down.down-arrow{
     height: 3%;
     background: #000;
     /*top: 247px;*/
-  bottom:46.1%;
-    left: 18.4%;
+      bottom: 56.1%;
+    left: 19.2%;
     z-index: 11;
     border-radius: 3px;
     -moz-border-radius: 3px;

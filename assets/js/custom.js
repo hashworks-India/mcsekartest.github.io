@@ -11,18 +11,6 @@ $(document).ready(function(){
 
     });
 
-     var index = 2;
-  setInterval(function(){
-    setTimeout(function(){
-      $('.device-anim').addClass('hide');
-      if(index==1) $('#desktop-box').removeClass('hide');
-      if(index==2) $('#tablet-box').removeClass('hide');
-      if(index==3) $('#mobile-box').removeClass('hide');
-      index++;
-      if(index>=4) index = 1;
-    }, 4000);
-  }, 6000);
-
     $('.nav-scroll-up').click(function (e) {
       
     $('html, body').animate({scrollTop: '0px'},1.7e3 );
@@ -1371,7 +1359,18 @@ bootcamp_filter_function();
 
  
 /*end filtering in bootcamp*/ 
-
-
+$('#tablet-box').removeClass('hide');
+/*for svg product banner*/
+  var index = 2;
+  setInterval(function(){
+    setTimeout(function(){
+      $('.device-anim').attr("class","device-anim hide");
+      if(index==1) $('#desktop-box').attr("class","device-anim");
+      if(index==2) $('#tablet-box').attr("class","device-anim");
+      if(index==3) $('#mobile-box').attr("class","device-anim");
+      index++;
+      if(index>=4) index = 1;
+    }, 4000);
+  }, 6000);
 
 });
