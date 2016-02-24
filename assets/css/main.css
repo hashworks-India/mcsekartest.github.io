@@ -3111,6 +3111,12 @@ img#big-ipad {
 	top: 37px;
     right: -67px;
 }
+.banner1-svg {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    margin-left: -500px;
+}
 	
  
 
