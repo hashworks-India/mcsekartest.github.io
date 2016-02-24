@@ -1309,18 +1309,18 @@ div#carousel_inner2 {
 
 /*for search box*/
 #google-search-div .gsc-results-wrapper-overlay {
-    border: none;
-    margin: auto;
+        border: none;
+    /* margin: auto; */
     border-radius: 46;
     overflow: auto;
-    height: 81.7%;
+    height: 91.7%;
     border-collapse: separate;
     background: #F5F5F5;
     padding: -1px;
-    width: 82%;
-    position: fixed !important;
+    width: 100%;
+    /* position: fixed !important; */
     top: 8.4%;
-    left: 7%;
+    left: 0;
     opacity: 0;
     z-index: 100002;
     visibility: hidden;
