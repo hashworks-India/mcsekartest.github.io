@@ -82,6 +82,22 @@ html {
 		text-decoration: none;
 		color: #545454;
 	}
+	.hw-ribbon-heading {
+		position: absolute;
+    /* bottom: 0; */
+    bottom: 0;
+    width: 100%;
+    z-index: 5;
+	}
+	.hw-ribbon-heading1 {
+		position: absolute;
+    /* bottom: 0; */
+    bottom: 0;
+    width: 100%;
+    z-index: 5;
+	}
+	
+
 
 	.btn:active,
 	.btn.active {
@@ -2510,8 +2526,16 @@ i.fa.fa-chevron-down.down-arrow{
 
 
 #svg-wrapper {
-    position: absolute;
-    bottom: 16%;
+    position: relative;
+   /* bottom: 16%;*/
+}
+.product-outer-svg {
+	position: absolute;
+	bottom: 6%;
+}
+.machine-svg {
+	width:1450px;
+	height:425.046px;
 }
 .svg_hide {
     visibility: hidden;
@@ -2587,8 +2611,8 @@ i.fa.fa-chevron-down.down-arrow{
     width: 2px;
     height: 25px;
     background: #000;
-    top: 93px;
-    left: 280px;
+        top: 110px;
+    left: 230px;
     z-index: 11;
     border-radius: 3px;
     -moz-border-radius: 3px;
@@ -3061,6 +3085,14 @@ i.fa.fa-chevron-down.down-arrow{
     margin-top: -175px;
     width: 126%;
     height: 168%;
+}
+.machine-svg {
+	width: 1657px;
+    height: 577.046px;
+}
+#meter {
+	top: 176px;
+    left: 266px;
 }
 img#big-desk {
     position: absolute;

@@ -442,7 +442,7 @@
     }
 .banner1-text {
     position: absolute;
-    top: 30%;
+    top: 32%;
     left: 50%;
     margin-top: -175px;
     margin-left: -294px;
@@ -1281,6 +1281,7 @@ div#carousel_inner2 {
     padding-right: 25px !important;
     border: 1px solid #ee2b7b !important;
     text-indent: 15px;
+    height: 35px !important;
     font-family:  "gotham-rounded-light" !important;
 }
 #google-search-div .gsc-search-box .gsc-input-box-hover,.gsc-input-box-focus{
@@ -1390,6 +1391,9 @@ div#carousel_inner2 {
 }
 #google-search-div .gsc-adBlock {
     display: none;
+}
+#google-search-div {
+    margin-top: -22px;
 }
 .cse .gsc-control-cse, .gsc-control-cse {
     padding: 0em !important;
