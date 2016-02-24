@@ -128,45 +128,17 @@ $('body, html').delay(1000).animate({
 
    $('.scroll-indicators li').click(function () {
         var value = $(this).attr('data-tab');
-    if( value == 1)
+    if( value == 3)
     {
-        $(this).addClass('change-clr');
-        $('li').addClass('other-li');
+        $(".scroll-indicators li .hw-label").css("color","#fff");
+        // $('li').addClass('other-li');
     }
     else {
-        $('li').removeClass('change-clr');
-        $('li').removeClass('other-li');
+        $(".scroll-indicators li .hw-label").css("color","#ee2b7b");
     }
 
    });
 
-    
-     $('.scroll-indicators li').click(function () {
-        var value = $(this).attr('data-tab');
-    if( value == 4)
-    {
-        $(this).addClass('change-clr2');
-        $('li').addClass('other-li2');
-    }
-    else {
-        $('li').removeClass('change-clr2');
-        $('li').removeClass('other-li2');
-    }
-    });
-
-
-     $('.scroll-indicators li').click(function () {
-        var value = $(this).attr('data-tab');
-    if( value == 2)
-    {
-        $(this).addClass('change-clr1');
-        $('li').addClass('other-li1');
-    }
-    else {
-        $('li').removeClass('change-clr1');
-        $('li').removeClass('other-li1');
-    }
-    });
 
     // $('.idesktop').hide();
     // $('.ipad').hide();

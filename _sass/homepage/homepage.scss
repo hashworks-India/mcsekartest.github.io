@@ -658,15 +658,12 @@
     .scroll-indicators {
       position: fixed;
       top: 50%;
-      right: 5px;
+      right: 6%;
+      margin-top: -50px;
       text-align: right;
-      -webkit-transform: translate(-50%,-50%);
-      -moz-transform: translate(-50%,-50%);
-      -ms-transform: translate(-50%,-50%);
-      -o-transform: translate(-50%,-50%);
-      transform: translate(-50%,-50%);
       z-index: 10;
     }
+
 
     .scroll-indicators > li {
       line-height: 0.5;
@@ -749,7 +746,8 @@
         border-radius: 50%;
         height: 15px;
         position: relative;
-        top: 4px;
+        top: -3px;
+        margin-top: 8px;
         transform-origin: 50% 50% 0;
         transition: transform 0.2s ease 0s, background-color 0.5s ease 0s;
         width: 15px;
@@ -758,11 +756,17 @@
         border: 1px solid #ee2b7b;
     }
 
+    span.hw-dot:hover + span {
+    display: block;
+}
+
+
     .scroll-indicators li .hw-label {
-      color: white;
+      color: #ee2b7b;
       font-size: 1.13rem;
       margin-right: 10px;
       opacity: 0;
+      display: none;
       padding: 0.4em 0.5em;
       position: relative;
       transform-origin: 100% 50% 0;
