@@ -220,12 +220,16 @@ html {
 	.clr-black {
 		color: #000;
 	}
+	.span-right {
+		border-right: 1px solid #676767;
+		padding-right: 6px;
+	}
 	.cntr-fluid-padding {
 		padding-right: 0px;
 		padding-left: 0px;
 	}
 	.div-border-right {
-		border-right: 5px solid #EE2B7B;;
+		border-right: 5px solid #EE2B7B;
 		position: relative;
 		margin: 25px 0 20px;
 	}
@@ -1283,9 +1287,15 @@ div#bootcamp-filter-controls label{
 		#upskill-accordion .panel-body p {
 			color: #7e7e7e;
 			text-align: left;
-			font-size: 1.13rem;
+			font-size: 0.875rem;
 			line-height: 2;
 		}
+		.panel-body {
+			padding-left: 55px;
+			padding-top: 15px;
+
+		}
+
 
 		#upskill-accordion .panel-heading {
 			border-bottom: 2px solid #545454;
@@ -1694,9 +1704,13 @@ width: 100%;
 	    color: #fff;
 	    transform: translate(-50%,-50%);
 	}
-	.section_casestudy  p,li
+	.section_casestudy  p,
+	.section_casestudy li
 		{
 		line-height: 2.25rem;
+	}
+	.company-carousel {
+		margin-top: -21px;
 	}
 	.objectives li,.requirements li{
 		list-style-type: initial;

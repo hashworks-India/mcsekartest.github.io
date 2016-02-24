@@ -121,7 +121,7 @@ $(document).ready(function(){
 
         // ui-ux tab
           $('.hw-ui-ux-carousel .carousel').carousel({
-            interval: 300,
+            interval: 100,
               pause: true
           });
           $(window).load(function () {
@@ -129,9 +129,11 @@ $(document).ready(function(){
           });
           
           $('.play').click(function () {
+
               $(this).parents('.hw-view-project').siblings('.carousel').carousel('cycle');
           });
           $('.pause').click(function () {
+            alert();
               $(this).parents('.hw-view-project').siblings('.carousel').carousel('pause');
           });
         // End of ui-ux tab
@@ -400,7 +402,7 @@ $("#anchor-portfolio").click(function(){
 
          var w = $(this).width();    
          var l = $(this).position().left;
-         l += 18;
+         l += 16;
          $('.line-animation').css({width:w+'px', left:l+'px'});
        });
 
@@ -413,7 +415,7 @@ $("#anchor-portfolio").click(function(){
 
          var w_left = $(this).width();    
          var l_left = $(this).position().left;
-         l_left += 18;
+         l_left += 16;
          $('.line-animation1').css({width:w_left+'px', left:l_left+'px'});
        });
 
@@ -904,7 +906,7 @@ var which_one_clicked = 0;
 }
     });
 
-   $(".collapse-button").click(function(){
+   $(".collapse-button,li.c-flex").click(function(){
           var navtab = $(".bs-example").offset().top + 0;
                   $('html, body').animate({
             scrollTop: navtab}, 500, 'linear');
