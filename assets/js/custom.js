@@ -31,19 +31,21 @@ $(document).ready(function(){
     /* end */
 
     /* we love parter */
-     $('.home-hr').addClass("anim");
-    $("#hw-fixed-footer-part").animate({"opacity":"1"},644);
-    $("#hw-fixed-footer-part").delay(2000).animate({"opacity":"0"},644);
- $('#hw-fixed-footer-part').mouseenter(function() {
-    $(this).animate({"opacity":"1"},44);
-});
-$('#hw-fixed-footer-part').mouseleave(function() {
-    $(this).animate({"opacity":"0"},44);
-}); 
-$("ul.scroll-indicators.hide-scroll").click(function(){
-    $("#hw-fixed-footer-part").animate({"opacity":"1"},644);
-    $("#hw-fixed-footer-part").delay(2000).animate({"opacity":"0"},644);
-});
+    $('.home-hr').addClass("anim");
+      $("#hw-fixed-footer-part").animate({"opacity":"1"},644);
+      $("#hw-fixed-footer-part").delay(2000).animate({"opacity":"0"},644);
+      $('#hw-fixed-footer-part').mouseenter(function() {
+      $(this).animate({"opacity":"1"},44);
+    });
+
+    $('#hw-fixed-footer-part').mouseleave(function() {
+      $(this).animate({"opacity":"0"},44);
+    }); 
+
+    $("ul.scroll-indicators.hide-scroll").click(function(){
+        $("#hw-fixed-footer-part").animate({"opacity":"1"},644);
+        $("#hw-fixed-footer-part").delay(2000).animate({"opacity":"0"},644);
+    });
 
 /* end of partner */
 
@@ -1121,21 +1123,6 @@ $('#middle-div-part4').mouseleave(function() {
   }
 });
 
-/*we love to be tech partner*/
-// $('.home-hr').addClass("anim");
-//     $("#hw-fixed-footer-part").animate({"opacity":"1"},644);
-//     $("#hw-fixed-footer-part").delay(2000).animate({"opacity":"0"},644);
-//  $('#hw-fixed-footer-part').mouseenter(function() {
-//     $(this).animate({"opacity":"1"},44);
-// });
-// $('#hw-fixed-footer-part').mouseleave(function() {
-//     $(this).animate({"opacity":"0"},44);
-// }); 
-// $("ul.scroll-indicators.hide-scroll").click(function(){
-//     $("#hw-fixed-footer-part").animate({"opacity":"1"},644);
-//     $("#hw-fixed-footer-part").delay(2000).animate({"opacity":"0"},644);
-// });
-/*end we love to be tech partner*/
 
 
 /*for filtering in case study*/
