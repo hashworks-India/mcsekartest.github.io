@@ -416,11 +416,21 @@
     .we-on-banner {
        background: #e9e8e3; 
     }
-    .banner1-svg {
-        position:absolute;
-        bottom:15%;
-        left: 15%;
-    }
+    
+     /* .banner-png {
+    background: url("/assets/img/landingpage/Banner.png");
+    height: 70vh;
+    width: 95%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    }*/
+
+    .banner-png img {
+    width: 1000px;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 180px;
+}
 
     .scroll-anim #ban-text p , .scroll-anim #ban-text h1{
         animation: fadein 8s;

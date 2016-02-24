@@ -11,6 +11,18 @@ $(document).ready(function(){
 
     });
 
+     var index = 2;
+  setInterval(function(){
+    setTimeout(function(){
+      $('.device-anim').addClass('hide');
+      if(index==1) $('#desktop-box').removeClass('hide');
+      if(index==2) $('#tablet-box').removeClass('hide');
+      if(index==3) $('#mobile-box').removeClass('hide');
+      index++;
+      if(index>=4) index = 1;
+    }, 4000);
+  }, 6000);
+
     $('.nav-scroll-up').click(function (e) {
       
     $('html, body').animate({scrollTop: '0px'},1.7e3 );
