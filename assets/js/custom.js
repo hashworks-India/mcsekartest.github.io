@@ -23,16 +23,32 @@ $(document).ready(function(){
       $("div#credits").css({width:"40px"}).animate({width: "200px"},300);
 
     });
-    $("#credits").mouseleave(function(){
+    // $("header").mouseleave(function(){
 
-      if( $('gsc-results-wrapper-overlay').hasClass('gsc-results-wrapper-visible') ) {
-        return false;
+    //   if( $('gsc-results-wrapper-overlay').hasClass('gsc-results-wrapper-visible') ) {
+    //     return false;
+    //   } else {
+    //     $('gsc-results-wrapper-overlay').removeClass('gsc-results-wrapper-visible')
+    //     $("#credits").removeClass("show");
+    //     $("#credits").addClass("hidden");
+    //   }
+    // });
 
-      } else {
-        $("#credits").removeClass("show");
-        $("#credits").addClass("hidden");
-      }
-    });
+    // $("header").mouseenter(function(){
+
+    //   if( $('gsc-results-wrapper-overlay').hasClass('gsc-results-wrapper-visible') ) {
+    //     return false;
+    //   } else {
+    //     $('gsc-results-wrapper-overlay').addClass('gsc-results-wrapper-visible')
+    //   }
+    // });
+    // $("header").mouseenter(function(){
+
+    //   if( $('gsc-results-wrapper-overlay').hasClass('gsc-results-wrapper-visible') ) {
+    //     return false;$('gsc-results-wrapper-overlay').addClass('gsc-results-wrapper-visible')
+
+    //   } 
+    // });
 
     /* end */
 
