@@ -961,7 +961,7 @@ var which_one_clicked = 0;
 }
     });
 
-   $(".collapse-button,li.c-flex").click(function(){
+   $(".collapse-button").click(function(){
           var navtab = $(".bs-example").offset().top + 0;
                   $('html, body').animate({
             scrollTop: navtab}, 500, 'linear');
@@ -1003,6 +1003,47 @@ var which_one_clicked = 0;
       $("#div-bottom-left").animate({'width' : '50%','height' : '38.7vh'},844); 
       $("#div-top-right").animate({'width' : '50%','height' : '38.7vh'},844); 
       $("#div-top-left").animate({'width' : '50%','height' : '38.7vh'},844); 
+    });
+  
+   $("li.c-flex").click(function(){
+        if(which_one_clicked == 4){
+          which_one_clicked = 0;
+          $("#collapse-image-4").css("display","none");
+          $("#collapse-image-4").animate({"opacity":"0"},0);
+          $("#div-bottom-right").addClass("thinking-height");
+          $("#div-bottom-right").animate({'height' : '77.4vh'},0); 
+          $("#div-bottom-right").css("bottom","0");
+        }
+        else if(which_one_clicked == 3){
+          which_one_clicked = 0;
+          $("#collapse-image-3").css("display","none");
+          $("#collapse-image-3").animate({"opacity":"0"},0);
+          $("#div-bottom-left").addClass("thinking-height");
+          $("#div-bottom-left").animate({'height' : '77.4vh'},0); 
+          $("#div-bottom-left").css("bottom","0");
+        }
+        else if(which_one_clicked == 2){
+          which_one_clicked = 0;
+          $("#collapse-image-2").css("display","none");
+          $("#collapse-image-2").animate({"opacity":"0"},0);
+          $("#div-top-right").addClass("thinking-height");
+          // $("#tools-using").css("margin-top","0%");
+          $("#div-top-right").animate({'height' : '77.4vh'},0); 
+        }
+        else if(which_one_clicked == 1){
+          which_one_clicked = 0;
+          $("#collapse-image-1").css("display","none");
+          $("#collapse-image-1").animate({"opacity":"0"},0);
+          $("#div-top-left").addClass("thinking-height");
+          $("#div-top-left").animate({'height' : '77.4vh'},0); 
+        }
+      
+      $("#hw-ribbon-our-thinking-footer").css("display","block");
+      $(".main-contentt h1.text-center.gotham-rounded-light.heading.hw-copyright").animate({"margin-bottom":"29%"},0);
+      $("#div-bottom-right").animate({'width' : '50%','height' : '38.7vh'},0);       
+      $("#div-bottom-left").animate({'width' : '50%','height' : '38.7vh'},0); 
+      $("#div-top-right").animate({'width' : '50%','height' : '38.7vh'},0); 
+      $("#div-top-left").animate({'width' : '50%','height' : '38.7vh'},0); 
     });
   
      $('#nav-icon1').click(function(){
