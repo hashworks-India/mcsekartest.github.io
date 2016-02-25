@@ -1,7 +1,7 @@
 ---
 layout: navblog_detail
 description: first
-category: Data Science
+category: Mobility
 image: blog.jpg
 permalink: "/post/2015-12-12-your-filename/"
 tags: all

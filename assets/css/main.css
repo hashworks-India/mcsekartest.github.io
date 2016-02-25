@@ -1714,7 +1714,7 @@ width: 100%;
     color: #ee2b7b;
 	}
 /* case study _detail */
-	.casestudy-img {
+	/*.casestudy-img {
 	    background-image: url("http://forgeandsmith.com/wp-content/uploads/2014/06/casestudies.jpg");;
 	    background-repeat: no-repeat;
 	    background-position: 50% 0.0181803%;
@@ -1722,7 +1722,7 @@ width: 100%;
 	    width: 100%;
 	    background-size: 180% auto;
 	    position: relative;
-	}
+	}*/
 	.banner-inner {
 	    position: absolute;
 	    top: 50%;

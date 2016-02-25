@@ -148,7 +148,7 @@
                                         }],
                                         'to': [
                                         {
-                                            'email': 'st970698@gmail.com',
+                                            'email': 'info@hashworks.co',
                                             'name': 'Hashworks',
                                             'type': 'to'
                                         }]
