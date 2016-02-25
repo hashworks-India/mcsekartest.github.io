@@ -325,7 +325,15 @@ $(document).ready(function(){
       $("#credits").removeClass("show");
       $("#credits").addClass("hidden");
     });
-
+    
+    $('header').mouseleave(function () {
+      if($("input#gsc-i-id1").val()=="")
+      {
+      $("#credits").removeClass("show");
+      $("#credits").addClass("hidden");     
+      }
+      
+    });
    
 /* end google search */
 
