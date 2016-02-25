@@ -1619,7 +1619,78 @@ width: 100%;
 
 /* end of new our thinking */
 
-	
+/*scroll button*/
+
+.apst-wrapper {display: none;
+	position: fixed;
+	z-index: 99999;
+	cursor: pointer;
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;}
+
+.apst-top {top: 20px;}
+
+.apst-bottom {bottom: 20px;}
+
+.apst-left {left: 20px;}
+
+.apst-center {left: 50%;margin-left: -40px;}
+
+.apst-right {right: 20px;}
+
+.apst-button {position: relative;
+	width: 35px;
+	height: 35px;
+	background-color: #555;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;}
+
+.apst-button:before {
+    content: "";
+    display: block;
+    position: relative;
+    left: 10px;
+    top: 9px;
+    width: 13px;
+    height: 13px;
+    border-right: 3px solid #ffffff;
+    border-top: 3px solid #ffffff;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.apst-button::after{border-right: 4px solid red; border-left: 4px solid red;}
+
+.apst-button:hover {background-color: #fff;}
+
+.apst-button:hover:before {border-color:#F05568;}
+    
+.apst-button {background-color: #F05568 !important;}
+
+.apst-button:hover {background-color: #ffffff !important;}
+
+/* end of scroll*/	
 /*End of service-delivery page*/
 
 	
@@ -1784,6 +1855,7 @@ width: 100%;
 	    letter-spacing: 2px;
 	  }
 	/*End of filter grid*/
+
 
 	.blog-grid li:nth-child(2n) {
 	   background: #67b4bb none repeat scroll 0 0;

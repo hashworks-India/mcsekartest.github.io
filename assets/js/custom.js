@@ -124,6 +124,7 @@ $(document).ready(function(){
             $("header nav").removeClass('hw-hover-header');
         });
 
+$(".apst-wrapper").hide();
       //fixed header
         $(document).scroll(function(){
           var main = $(this).scrollTop();
@@ -143,6 +144,67 @@ $(document).ready(function(){
         if(main >= 70) {
             if(!$('header').hasClass('hw-home')) {
               $(".navbar-default.hw-fixed-header").css("padding-bottom","0px")
+            }
+          }
+          /*for scroll top button*/
+                  if(main >= 330) {
+         $(".apst-wrapper").show();
+            
+          }
+          else{
+            $(".apst-wrapper").hide();
+
+          }
+                    if($( window ).width()>1900){
+            if(main >= 2120){
+              $(".apst-right").css("right","6px");
+              $(".apst-bottom").css("bottom","-43px");
+              $(".apst-wrapper").css("position","absolute");
+            }
+            else
+            {
+              $(".apst-bottom").css("bottom","20px");
+              $(".apst-wrapper").css("position","fixed");
+              $(".apst-right").css("right","20px");
+            }
+          }
+          else if($( window ).width()>1650){
+            if(main >= 2230){
+              $(".apst-right").css("right","6px");
+              $(".apst-bottom").css("bottom","-43px");
+              $(".apst-wrapper").css("position","absolute");
+            }
+            else
+            {
+              $(".apst-bottom").css("bottom","20px");
+              $(".apst-wrapper").css("position","fixed");
+              $(".apst-right").css("right","20px");
+            }
+          }
+          else if($( window ).width()>1450){
+            if(main >= 2330){
+              $(".apst-right").css("right","6px");
+              $(".apst-bottom").css("bottom","-43px");
+              $(".apst-wrapper").css("position","absolute");
+            }
+            else
+            {
+              $(".apst-bottom").css("bottom","20px");
+              $(".apst-wrapper").css("position","fixed");
+              $(".apst-right").css("right","20px");
+            }
+          }
+          else if($( window ).width()>1260){
+            if(main >= 2530){
+              $(".apst-right").css("right","6px");
+              $(".apst-bottom").css("bottom","-43px");
+              $(".apst-wrapper").css("position","absolute");
+            }
+            else
+            {
+              $(".apst-bottom").css("bottom","20px");
+              $(".apst-wrapper").css("position","fixed");
+              $(".apst-right").css("right","20px");
             }
           }
         });
