@@ -1,26 +1,3 @@
-.for-blog-back-color {
-width: 100%;
-position: relative;
-margin-top: -21px;
-}
-.blog-profile-pic{
-    position: absolute;
-    top: 20%;
-    width: 150px !important;
-    height: 98px;
-    left: 3%;
-}
-.blog-main-title
-{
-    width: 100%;
-    position: absolute;
-    top: 25%;
-    text-align: center;
-}
-.blog-ref-img {
-    padding: 12px 0px 12px 0px;
-}
-
 html {
 	font-size: 16px;
 	}
@@ -1879,6 +1856,28 @@ width: 100%;
 	  }
 	/*End of filter grid*/
 
+	.for-blog-back-color {
+	width: 100%;
+	position: relative;
+	margin-top: -21px;
+	}
+	.blog-profile-pic{
+	    position: absolute;
+	    top: 20%;
+	    width: 150px !important;
+	    height: 98px;
+	    left: 3%;
+	}
+	.blog-main-title
+	{
+	    width: 100%;
+	    position: absolute;
+	    top: 25%;
+	    text-align: center;
+	}
+	.blog-ref-img {
+	    padding: 12px 0px 12px 0px;
+	}
 
 	.blog-grid li:nth-child(2n) {
 	   background: #67b4bb none repeat scroll 0 0;
