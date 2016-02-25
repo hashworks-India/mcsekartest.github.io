@@ -1680,13 +1680,13 @@ width: 100%;
     -o-transition: all 0.2s;
     transition: all 0.2s;
 }
-.apst-button::after{border-right: 4px solid red; border-left: 4px solid red;}
+.apst-button::after{border-right: 4px solid #0AB4C5; border-left: 4px solid #0AB4C5;}
 
 .apst-button:hover {background-color: #fff;}
 
-.apst-button:hover:before {border-color:#F05568;}
+.apst-button:hover:before {border-color:#0AB4C5;}
     
-.apst-button {background-color: #F05568 !important;}
+.apst-button {background-color: #0AB4C5 !important;}
 
 .apst-button:hover {background-color: #ffffff !important;}
 
