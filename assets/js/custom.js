@@ -11,11 +11,15 @@ $(document).ready(function(){
 
     });
 
+    /* scroll up */
+
     $('.nav-scroll-up').click(function (e) {
       
     $('html, body').animate({scrollTop: '0px'},1.7e3 );
     });
 
+    /* end of scroll up */
+ 
      $('[data-toggle="tooltip"]').tooltip();   
 
     /* google search button animation*/
@@ -23,32 +27,9 @@ $(document).ready(function(){
       $("div#credits").css({width:"40px"}).animate({width: "200px"},300);
 
     });
-    // $("header").mouseleave(function(){
 
-    //   if( $('gsc-results-wrapper-overlay').hasClass('gsc-results-wrapper-visible') ) {
-    //     return false;
-    //   } else {
-    //     $('gsc-results-wrapper-overlay').removeClass('gsc-results-wrapper-visible')
-    //     $("#credits").removeClass("show");
-    //     $("#credits").addClass("hidden");
-    //   }
-    // });
-
-    // $("header").mouseenter(function(){
-
-    //   if( $('gsc-results-wrapper-overlay').hasClass('gsc-results-wrapper-visible') ) {
-    //     return false;
-    //   } else {
-    //     $('gsc-results-wrapper-overlay').addClass('gsc-results-wrapper-visible')
-    //   }
-    // });
-    // $("header").mouseenter(function(){
-
-    //   if( $('gsc-results-wrapper-overlay').hasClass('gsc-results-wrapper-visible') ) {
-    //     return false;$('gsc-results-wrapper-overlay').addClass('gsc-results-wrapper-visible')
-
-    //   } 
-    // });
+    
+    
 
     /* end */
 
@@ -333,20 +314,20 @@ $(document).ready(function(){
        }); 
       
 
- // $('#start-project').prev().children().find("div").click(function() {
- //  alert();
- //         $(".view1").prev().find('.hw-job1').removeClass('view-color');
-          
- //           $(".view1").addClass('hide');
- //       }); 
-
-
-
-
+ 
  $(document).on('click', '.pager', function(){
          $(".view1").prev().find('.hw-job1').removeClass('view-color');
            $(".view1").addClass('hide');
 });
+
+/* google search */
+    $(document).on('click', '.gsc-results-close-btn', function(){
+      $("#credits").removeClass("show");
+      $("#credits").addClass("hidden");
+    });
+
+   
+/* end google search */
 
 
         $('.apply').click(function () {
