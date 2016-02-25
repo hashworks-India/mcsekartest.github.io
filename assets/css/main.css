@@ -165,13 +165,17 @@ html {
 
 	.hw-tab-heading,
 	.hw-socialshare {
-		font-size: 1.25rem;  /*20px*/
+		font-size: 1.25rem; 
 	}
-
+	.ribon-font {
+	    font-size: 1.313rem;
+	}
 	.hw-heading {
 		font-size: 1.125rem;  /*24px*/ /* 18px */
 	}
-
+	.hm-vertical1 {
+		margin-top: 3px !important;
+	}
 	.hw-para,
 	.header-links {
 		font-size: 1.13rem;  /*18px*/
