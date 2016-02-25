@@ -851,6 +851,11 @@ div#carousel_inner2 {
         border-radius: 100%;
         border: 1px solid #0AB4C5;
       }
+      .scroll-indicators li.active .hw-blog-dot {
+         background-color: #ee2b7b;
+        border-radius: 100%;
+        border: 1px solid #ee2b7b;
+      }
 
       .scroll-indicators li.active .hw-label {
        opacity: 1;
