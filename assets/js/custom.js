@@ -4,6 +4,7 @@
 
 $(document).ready(function(){
 
+
     $('.toggle').click(function (event) {
         event.preventDefault();
         var target = $(this).attr('href');
@@ -149,64 +150,26 @@ $(".apst-wrapper").hide();
           /*for scroll top button*/
                   if(main >= 330) {
          $(".apst-wrapper").show();
+         $(".engase-us-apst-wrapper").show();
             
           }
           else{
             $(".apst-wrapper").hide();
+            $(".engase-us-apst-wrapper").hide();
 
           }
-                    if($( window ).width()>1900){
-            if(main >= 2120){
-              $(".apst-right").css("right","6px");
-              $(".apst-bottom").css("bottom","-43px");
-              $(".apst-wrapper").css("position","absolute");
+            if (( $(document).height() - $(window).height() ) - $(document).scrollTop() <= 123) {
+              
+              $(".apst-wrapper").css({"right":"4px","bottom":"-43px","position":"absolute"});
+              $(".engase-us-apst-wrapper").css({"top":"-12px","position":"absolute"});
             }
             else
             {
-              $(".apst-bottom").css("bottom","20px");
-              $(".apst-wrapper").css("position","fixed");
-              $(".apst-right").css("right","20px");
-            }
-          }
-          else if($( window ).width()>1650){
-            if(main >= 2230){
-              $(".apst-right").css("right","6px");
-              $(".apst-bottom").css("bottom","-43px");
-              $(".apst-wrapper").css("position","absolute");
-            }
-            else
-            {
-              $(".apst-bottom").css("bottom","20px");
-              $(".apst-wrapper").css("position","fixed");
-              $(".apst-right").css("right","20px");
-            }
-          }
-          else if($( window ).width()>1450){
-            if(main >= 2330){
-              $(".apst-right").css("right","6px");
-              $(".apst-bottom").css("bottom","-43px");
-              $(".apst-wrapper").css("position","absolute");
-            }
-            else
-            {
-              $(".apst-bottom").css("bottom","20px");
-              $(".apst-wrapper").css("position","fixed");
-              $(".apst-right").css("right","20px");
-            }
-          }
-          else if($( window ).width()>1260){
-            if(main >= 2530){
-              $(".apst-right").css("right","6px");
-              $(".apst-bottom").css("bottom","-43px");
-              $(".apst-wrapper").css("position","absolute");
-            }
-            else
-            {
-              $(".apst-bottom").css("bottom","20px");
-              $(".apst-wrapper").css("position","fixed");
-              $(".apst-right").css("right","20px");
-            }
-          }
+              $(".apst-wrapper").css({"right":"20px","bottom":"20px","position":"fixed"});
+              $(".engase-us-apst-wrapper").css({"top":"20px","position":"fixed"});
+
+            } 
+            
         });
 
     // it-services
