@@ -76,7 +76,7 @@
 
 		<!-- We need to add the option value attr name in li for filter -->
 
-	{% for post in site.posts %}
+	{% for post in site.posts | sort: 'date' %}
 	
 		<li class="hw-filter-li Social blog-content ">
 			<div class="image-wrapper">
