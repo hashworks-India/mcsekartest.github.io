@@ -395,6 +395,12 @@ html {
     	color: #000;
     	margin-right: -50px;
   	}
+  	.job-title-mar {
+  		margin-left: 32px;
+  	}
+  	.job-margin {
+  		margin-left: 48px;
+  	}
 	.c-flex {
 		display: -webkit-flex;
 		display: -moz-flex;
@@ -3094,6 +3100,11 @@ i.fa.fa-chevron-down.down-arrow{
 	top: 176px;
     left: 266px;
 }
+#google-search-div .gsc-results-wrapper-overlay {
+        border: none;
+    /* margin: auto; */
+    margin-top: -20px;
+    }
 img#big-desk {
     position: absolute;
     margin-top: -175px;

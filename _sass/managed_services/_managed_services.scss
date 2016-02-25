@@ -220,12 +220,14 @@ input {
 		color: #fff;
 		font-size: 12px;
 		border:none;
+		margin-top: 18px;
+		margin-left: 48px;
 	}
 	.apply:focus {
 		outline:none;
 	}
 	.apply:hover {
-	background-color: #fff;
+	background-color: transparent;
 	border: 1px solid #ee2b7b;
 	color: #ee2b7b;
 	}
@@ -264,7 +266,7 @@ input {
 		padding-right: 35px;
 	}
 	.vw-coll-line-height {
-		line-height: 3;
+		line-height: 2.5;
 	}
 	#file-upload {
 		opacity: 0;
