@@ -986,7 +986,8 @@ var which_one_clicked = 0;
           $("#div-top-left").animate({'height' : '77.4vh'},0); 
         }
       
-      $("#hw-ribbon-our-thinking-footer").css("display","block");
+      
+        setTimeout(function(){$("#hw-ribbon-our-thinking-footer").css("display","block");}, 1000);
       $(".main-contentt h1.text-center.gotham-rounded-light.heading.hw-copyright").animate({"margin-bottom":"29%"},844);
       $("#div-bottom-right").animate({'width' : '50%','height' : '38.7vh'},844);       
       $("#div-bottom-left").animate({'width' : '50%','height' : '38.7vh'},844); 
