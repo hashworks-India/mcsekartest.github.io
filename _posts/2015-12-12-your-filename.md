@@ -8,8 +8,12 @@ tags: all
 published-date: Dec 25, 2015
 top-tweets: Top Tweets of 2015 (and What We Learned From Them)
 blog_title: The New Experience
+
+ribbon-img: /assets/img/landingpage/C_5.svg
+
 The_New_Use_Experience: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
 
+profile_img: /assets/img/landingpage/mob.svg
 imgsrc: http://forgeandsmith.com/wp-content/uploads/2015/12/Top-Tweets.jpg
 
 para: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
