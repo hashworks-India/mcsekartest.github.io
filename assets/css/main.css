@@ -404,6 +404,7 @@ html {
   	}
   	.job-margin {
   		margin-left: 48px;
+  		margin-right: 48px;
   	}
 	.c-flex {
 		display: -webkit-flex;
@@ -562,7 +563,12 @@ html {
 	   border-radius: 0;
 	   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 	}
-
+	.navbar {
+    position: relative;
+    min-height: 50px;
+    z-index: 13;
+    margin-bottom: 20px;
+	}
 	.hw-hover-header .logo > a {
 		background-position: 0 -31px;
 		-webkit-transition: all .5s ease 0s;
@@ -607,6 +613,9 @@ html {
 		.job-board-ul {
 		    /*margin-left: 20px;*/
 		    margin-top: 12px;
+		}
+		.view1 .view-close{
+			right: 30px;
 		}
 		.keyword {
 		    background-color: #dcdfe4;
@@ -1620,8 +1629,8 @@ width: 100%;
 /* end of new our thinking */
 
 /*scroll button*/
-
-.apst-wrapper {
+.apst-wrapper ,.engase-us-apst-wrapper,.collaborative-apst-wrapper,
+.bootcamp-apst-wrapper,.our-thinking-apst-wrapper{
 	display: none;
 	position: fixed;
 	z-index: 99999;
@@ -1641,25 +1650,6 @@ width: 100%;
 	right: 20px;
 }
 
-.engase-us-apst-wrapper {
-	display: none;
-	position: fixed;
-	z-index: 99999;
-	cursor: pointer;
-	box-sizing: border-box;
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-	-webkit-tap-highlight-color: transparent;
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	top: 20px;
-	bottom: 20px;
-	left: 20px;
-	margin-left: -40px;
-	right: 20px;
-}
 
 
 .apst-button {position: relative;
@@ -3216,11 +3206,33 @@ i.fa.fa-chevron-down.down-arrow{
 	top: 176px;
     left: 266px;
 }
+
 #google-search-div .gsc-results-wrapper-overlay {
-        border: none;
+    border: none;
     /* margin: auto; */
-    margin-top: -20px;
-    }
+    margin-top: -3px;
+    border-radius: 46;
+    overflow: auto;
+    height: 100vh !important;
+    border-collapse: separate;
+    background: #F5F5F5;
+    padding: -1px;
+    width: 100%;
+    /* position: fixed !important; */
+        transition: all 0.25s linear;
+    top: 54px !important;
+    left: 0;
+    opacity: 0;
+    z-index: 0 !important;
+    visibility: hidden;
+    box-shadow: none;
+        line-height: 1;
+}
+
+
+
+
+
 img#big-desk {
     position: absolute;
     margin-top: -175px;

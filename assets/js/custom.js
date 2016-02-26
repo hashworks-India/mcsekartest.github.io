@@ -148,26 +148,41 @@ $(".apst-wrapper").hide();
             }
           }
           /*for scroll top button*/
+           if(main >=50) {
+              $(".our-thinking-apst-wrapper").show();
+           }
+           else{
+              $(".our-thinking-apst-wrapper").hide();
+           }
                   if(main >= 330) {
          $(".apst-wrapper").show();
          $(".engase-us-apst-wrapper").show();
-            
+           $(".collaborative-apst-wrapper").show();  
+           $(".bootcamp-apst-wrapper").show();
+          
           }
           else{
             $(".apst-wrapper").hide();
             $(".engase-us-apst-wrapper").hide();
-
+            $(".collaborative-apst-wrapper").hide();  
+            $(".bootcamp-apst-wrapper").hide();
+            
           }
             if (( $(document).height() - $(window).height() ) - $(document).scrollTop() <= 123) {
               
               $(".apst-wrapper").css({"right":"4px","bottom":"-43px","position":"absolute"});
               $(".engase-us-apst-wrapper").css({"top":"-12px","position":"absolute"});
+               $(".collaborative-apst-wrapper").css({"right":"15px","top": "-86px","bottom": "85px","position":"absolute"});
+                $(".bootcamp-apst-wrapper").css({"top":"-83px","bottom":"78px","position":"absolute"});
+                 $(".our-thinking-apst-wrapper").css({"top":"-54px","bottom":"54px","position":"absolute"});
             }
             else
             {
               $(".apst-wrapper").css({"right":"20px","bottom":"20px","position":"fixed"});
               $(".engase-us-apst-wrapper").css({"top":"20px","position":"fixed"});
-
+                   $(".collaborative-apst-wrapper").css({"right":"20px","top": "20px","bottom": "20px","position":"fixed"});
+                      $(".bootcamp-apst-wrapper").css({"top":"20px","bottom":"20px","position":"fixed"});
+                       $(".our-thinking-apst-wrapper").css({"top":"20px","bottom":"20px","position":"fixed"});
             } 
             
         });
