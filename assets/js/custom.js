@@ -1491,6 +1491,255 @@ bootcamp_filter_function();
 
  
 /*end filtering in bootcamp*/ 
+
+/*start of company page animation banner*/
+$('g[id="XMLID_2_"]').mouseenter(function(){
+  $("#xmlid_company_date").text("2016");
+  $(this).children('g:last-child').find("path").attr("class", "XMLID_2_-rotate");
+});
+
+$('g[id="XMLID_3_"]').mouseenter(function(){
+  $("#xmlid_company_date").text("2016");
+  $(this).children('g:first-child').next().attr("class", "xmlid-shown-path");
+  $(this).children('g:last-child').find("path").attr("class", "xmlid-hidden-path");
+
+  $(this).next().children('g:last-child').find("path").css({"-webkit-transform" : "scale(1.1) translateX(-59%) translateY(-27%)" ,"-moz-transform" : "scale(1.1) translateX(-4.5%) translateY(-4.5%)" });//
+  $(this).next().next().children('g:last-child').find("path").css({"-webkit-transform" : "scale(1.08) translateX(-32%) translateY(-13%)" ,"-moz-transform" : "scale(1.08) translateX(-3.6%) translateY(-3.6%)"  });
+  $(this).next().next().next().children('g:last-child').find("path").css({"-webkit-transform" : "scale(1.06) translateX(-20%) translateY(-9%)" ,"-moz-transform" : "scale(1.06) translateX(-2.7%) translateY(-2.7%)" });
+  $(this).next().next().next().next().children('g:last-child').find("path").css({"-webkit-transform" : "scale(1.04) translateX(-12%) translateY(-5%)" ,"-moz-transform" : "scale(1.04) translateX(-1.8%) translateY(-2%)" });
+});
+$('g[id="XMLID_4_"]').mouseenter(function(){
+  $("#xmlid_company_date").text("2014");
+  $("#xmlid_circle_desc").text("Team").css({"font-size": 0}).animate({"font-size": 18},500);
+  $(this).children('g:first-child').next().attr("class", "xmlid-shown-path");
+  $(this).children('g:last-child').find("path").attr("class", "xmlid-hidden-path");
+
+
+  $(this).next().children('g:last-child').find("path").css({"-webkit-transform" : "scale(1.1) translateX(-39%) translateY(-19%)" ,"-moz-transform" : "scale(1.1) translateX(-4.5%) translateY(-4%)" });//
+  $(this).next().next().children('g:last-child').find("path").css({"-webkit-transform" : "scale(1.08) translateX(-25%) translateY(-12%)" ,"-moz-transform" : "scale(1.08) translateX(-3.5%) translateY(-3.7%)" });
+  $(this).next().next().next().children('g:last-child').find("path").css({"-webkit-transform" : "scale(1.06) translateX(-17%) translateY(-7%)" , "-moz-transform" : "scale(1.06) translateX(-2.8%) translateY(-3%)"});
+  $(this).next().next().next().next().children('g:last-child').find("path").css({"-webkit-transform" : "scale(1.04) translateX(-10%) translateY(-4%)" ,"-moz-transform" : "scale(1.04) translateX(-2%) translateY(-2%)" });
+
+  $(this).prev().children('g:last-child').find("path").css({"-webkit-transform" : "scale(0.9) translateX(108%) translateY(51%)" ,"-moz-transform" : "scale(0.9) translateX(5.5%) translateY(5.3%)" });
+});
+$('g[id="XMLID_5_"]').mouseenter(function(){
+  $("#xmlid_company_date").text("2016");
+  $("#xmlid5_circle_desc").css({"opacity": 0,"display":"block"}).animate({"opacity": 1},900);
+  $(this).children('g:first-child').next().attr("class", "xmlid-shown-path");
+  $(this).children('g:last-child').find("path").attr("class", "xmlid-hidden-path");
+
+  $(this).next().children('g:last-child').find("path").css({"-webkit-transform" : "scale(1.1) translateX(-31%) translateY(-15%)" ,"-moz-transform" : "scale(1.1) translateX(-4.5%) translateY(-4.5%)"  });//
+  $(this).next().next().children('g:last-child').find("path").css({"-webkit-transform" : "scale(1.08) translateX(-22%) translateY(-10%)" , "-moz-transform" : "scale(1.08) translateX(-3.7%) translateY(-3.5%)"});
+  $(this).next().next().next().children('g:last-child').find("path").css({"-webkit-transform" : "scale(1.06) translateX(-15%) translateY(-7%)" ,"-moz-transform" : "scale(1.06) translateX(-2.8%) translateY(-2.7%)" });
+  $(this).next().next().next().next().children('g:last-child').find("path").css({"-webkit-transform" : "scale(1.04) translateX(-9%) translateY(-4%)" ,"-moz-transform" : "scale(1.04) translateX(-2%) translateY(-2%)" });
+
+  $(this).prev().children('g:last-child').find("path").css({"-webkit-transform" : "scale(0.9) translateX(71%) translateY(34%)" , "-moz-transform" : "scale(0.9) translateX(5.5%) translateY(5.3%)"});
+  $(this).prev().prev().children('g:last-child').find("path").css({"-webkit-transform" : "scale(0.95) translateX(52%) translateY(24%)" ,"-moz-transform" : "scale(0.95) translateX(2.7%) translateY(2.6%)" });//
+});
+$('g[id="XMLID_7_"]').mouseenter(function(){
+  $("#xmlid_company_date").text("2016");
+  $(this).children('g:first-child').next().attr("class", "xmlid-shown-path");
+  $(this).children('g:last-child').find("path").attr("class", "xmlid-hidden-path");
+
+  $(this).next().children('g:last-child').find("path").css({"-webkit-transform" : "scale(1.1) translateX(-27%) translateY(-12%)" ,"-moz-transform" : "scale(1.1) translateX(-4.5%) translateY(-4.5%)" });//
+  $(this).next().next().children('g:last-child').find("path").css({"-webkit-transform" : "scale(1.08) translateX(-19%) translateY(-9%)" ,"-moz-transform" : "scale(1.08) translateX(-3.7%) translateY(-3.5%)" });
+  $(this).next().next().next().children('g:last-child').find("path").css({"-webkit-transform" : "scale(1.06) translateX(-13%) translateY(-6%)" ,"-moz-transform" : "scale(1.06) translateX(-2.8%) translateY(-3%)" });
+  $(this).next().next().next().next().children('g:last-child').find("path").css({"-webkit-transform" : "scale(1.04) translateX(-8%) translateY(-3%)" ,"-moz-transform" : "scale(1.04) translateX(-2%) translateY(-2%)" });
+  $(this).next().next().next().next().next().children('g:last-child').find("path").css({"-webkit-transform" : "scale(1.04) translateX(-7%) translateY(-3%)" ,"-moz-transform" : "scale(1.04) translateX(-2%) translateY(-2%)" });
+
+  $(this).prev().children('g:last-child').find("path").css({"-webkit-transform" : "scale(0.9) translateX(49%) translateY(25%)" ,"-moz-transform" : "scale(0.9) translateX(5.5%) translateY(5.8%)"  });
+  $(this).prev().prev().children('g:last-child').find("path").css({"-webkit-transform" : "scale(0.93) translateX(47%) translateY(24%)" ,"-moz-transform" : "scale(0.93) translateX(3.6%) translateY(3.6%)"  });//
+  $(this).prev().prev().prev().children('g:last-child').find("path").css({"-webkit-transform" : "scale(0.96) translateX(40%) translateY(19%)" ,"-moz-transform" : "scale(0.96) translateX(2%) translateY(2%)"  });//
+});
+$('g[id="XMLID_8_"]').mouseenter(function(){
+  $("#xmlid_company_date").text("2016");
+  $(this).children('g:first-child').next().attr("class", "xmlid-shown-path");
+  $(this).children('g:last-child').find("path").attr("class", "xmlid-hidden-path");
+
+  $(this).next().children('g:last-child').find("path").css({"-webkit-transform" : "scale(1.1) translateX(-24%) translateY(-11%)" , "-moz-transform" : "scale(1.08) translateX(-3.7%) translateY(-3.6%)" });//
+  $(this).next().next().children('g:last-child').find("path").css({"-webkit-transform" : "scale(1.08) translateX(-17%) translateY(-8%)" , "-moz-transform" : "scale(1.08) translateX(-3.7%) translateY(-3.6%)"});
+  $(this).next().next().next().children('g:last-child').find("path").css({"-webkit-transform" : "scale(1.06) translateX(-12%) translateY(-5%)" , "-moz-transform" : "scale(1.06) translateX(-2.8%) translateY(-2.6%)"});
+  $(this).next().next().next().next().children('g:last-child').find("path").css({"-webkit-transform" : "scale(1.04) translateX(-7%) translateY(-3.5%)" , "-moz-transform" : "scale(1.04) translateX(-1.8%) translateY(-2%)"});
+  $(this).next().next().next().next().next().children('g:last-child').find("path").css({"-webkit-transform" : "scale(1.02) translateX(-3%) translateY(-1.5%)" , "-moz-transform" : "scale(1.02) translateX(-1%) translateY(-1.1%)"});
+
+  $(this).prev().children('g:last-child').find("path").css({"-webkit-transform" : "scale(0.9) translateX(38%) translateY(19%)" , "-moz-transform" : "scale(0.9) translateX(5.5%) translateY(5.3%)" });
+  $(this).prev().prev().children('g:last-child').find("path").css({"-webkit-transform" : "scale(0.92) translateX(39%) translateY(19%)" , "-moz-transform" : "scale(0.92) translateX(4.4%) translateY(4.5%)"});//
+  $(this).prev().prev().prev().children('g:last-child').find("path").css({"-webkit-transform" : "scale(0.94) translateX(41%) translateY(19%)" ,"-moz-transform" : "scale(0.94) translateX(3.1%) translateY(3%)" });
+  $(this).prev().prev().prev().prev().children('g:last-child').find("path").css({"-webkit-transform" : "scale(0.96) translateX(40%) translateY(19%)" , "-moz-transform" : "scale(0.96) translateX(2%) translateY(2%)"});//
+});
+$('g[id="XMLID_9_"]').mouseenter(function(){
+  $("#xmlid_company_date").text("2016");
+  $("#xmlid9_circle_desc").css({"opacity": 0,"display":"block"}).animate({"opacity": 1},900);
+  $(this).children('g:first-child').next().attr("class", "xmlid-shown-path");
+  $(this).children('g:last-child').find("path").attr("class", "xmlid-hidden-path");
+
+  $(this).next().children('g:last-child').find("path").css({"-webkit-transform" : "scale(1.08) translateX(-17%) translateY(-8%)" , "-moz-transform" : "scale(1.06) translateX(-2.8%) translateY(-2.7%)" });//
+  $(this).next().next().children('g:last-child').find("path").css({"-webkit-transform" : "scale(1.06) translateX(-11.5%) translateY(-5.5%)" ,"-moz-transform" : "scale(1.06) translateX(-2.8%) translateY(-2.7%)" });
+  $(this).next().next().next().children('g:last-child').find("path").css({"-webkit-transform" : "scale(1.04) translateX(-8%) translateY(-3%)" , "-moz-transform" : "scale(1.04) translateX(-2%) translateY(-2%)"});
+  $(this).next().next().next().next().children('g:last-child').find("path").css({"-webkit-transform" : "scale(1.02) translateX(-3%) translateY(-1.5%)" , "-moz-transform" : "scale(1.02) translateX(-1%) translateY(-1%)"});
+  $(this).next().next().next().next().next().children('g:last-child').find("path").css({"-webkit-transform" : "scale(1.008) translateX(-1%) translateY(-0.5%)" , "-moz-transform" : "scale(1.008) translateX(-0.6%) translateY(-0.5%)"});
+
+  $(this).prev().children('g:last-child').find("path").css({"-webkit-transform" : "scale(0.9) translateX(33%) translateY(16%)" , "-moz-transform" : "scale(0.92) translateX(4.2%) translateY(4%)"});
+  $(this).prev().prev().children('g:last-child').find("path").css({"-webkit-transform" : "scale(0.92) translateX(30%) translateY(14%)" , "-moz-transform" : "scale(0.92) translateX(4.2%) translateY(4.1%)"});//
+  $(this).prev().prev().prev().children('g:last-child').find("path").css({"-webkit-transform" : "scale(0.94) translateX(28%) translateY(14%)" , "-moz-transform" : "scale(0.94) translateX(3.2%) translateY(3.3%)"});
+  $(this).prev().prev().prev().prev().children('g:last-child').find("path").css({"-webkit-transform" : "scale(0.96) translateX(26%) translateY(13%)" , "-moz-transform" : "scale(0.96) translateX(2%) translateY(2%)"});//
+});
+$('g[id="XMLID_10_"]').mouseenter(function(){
+  $("#xmlid_company_date").text("2016");
+  $(this).children('g:first-child').next().attr("class", "xmlid-shown-path");
+  $(this).children('g:last-child').find("path").attr("class", "xmlid-hidden-path");
+
+  $(this).next().children('g:last-child').find("path").css({"-webkit-transform" : "scale(1.07) translateX(-13%) translateY(-6%)" , "-moz-transform" : "scale(1.07) translateX(-3.3%) translateY(-3.2%)"});//
+  $(this).next().next().children('g:last-child').find("path").css({"-webkit-transform" : "scale(1.06) translateX(-10.5%) translateY(-5%)" , "-moz-transform" : "scale(1.06) translateX(-2.8%) translateY(-2.8%)"});
+  $(this).next().next().next().children('g:last-child').find("path").css({"-webkit-transform" : "scale(1.04) translateX(-7%) translateY(-3%)" ,"-moz-transform" : "scale(1.04) translateX(-1.9%) translateY(-1.8%)"  });
+  $(this).next().next().next().next().children('g:last-child').find("path").css({"-webkit-transform" : "scale(1.02) translateX(-3%) translateY(-1.5%)" , "-moz-transform" : "scale(1.02) translateX(-1%) translateY(-1%)"});
+  $(this).next().next().next().next().next().children('g:last-child').find("path").css({"-webkit-transform" : "scale(1.01) translateX(-1.5%) translateY(-1%)" , "-moz-transform" : "scale(1.01) translateX(-0.5%) translateY(-0.4%)"});
+
+  $(this).prev().children('g:last-child').find("path").css({"-webkit-transform" : "scale(0.91) translateX(25.5%) translateY(12%)" , "-moz-transform" : "scale(0.91) translateX(4.8%) translateY(4.5%)"});
+  $(this).prev().prev().children('g:last-child').find("path").css({"-webkit-transform" : "scale(0.92) translateX(25%) translateY(12%)" , "-moz-transform" : "scale(0.92) translateX(4.2%) translateY(4%)" });//
+  $(this).prev().prev().prev().children('g:last-child').find("path").css({"-webkit-transform" : "scale(0.94) translateX(22%) translateY(10%)" ,"-moz-transform" : "scale(0.94) translateX(3%) translateY(3%)"  });
+  $(this).prev().prev().prev().prev().children('g:last-child').find("path").css({"-webkit-transform" : "scale(0.96) translateX(19%) translateY(9%)" , "-moz-transform" : "scale(0.96) translateX(2.1%) translateY(2.2%)"});//
+});
+$('g[id="XMLID_11_"]').mouseenter(function(){
+  $("#xmlid_company_date").text("2016");
+  $(this).children('g:first-child').next().attr("class", "xmlid-shown-path");
+  $(this).children('g:last-child').find("path").attr("class", "xmlid-hidden-path");
+
+  $(this).next().children('g:last-child').find("path").css({"-webkit-transform" : "scale(1.06) translateX(-10.6%) translateY(-5%)" , "-moz-transform" : "scale(1.06) translateX(-2.8%) translateY(-3%)" });//
+  $(this).next().next().children('g:last-child').find("path").css({"-webkit-transform" : "scale(1.04) translateX(-6.5%) translateY(-3%)" , "-moz-transform" : "scale(1.04) translateX(-1.9%) translateY(-1.8%)"});
+  $(this).next().next().next().children('g:last-child').find("path").css({"-webkit-transform" : "scale(1.02) translateX(-3%) translateY(-2%)" , "-moz-transform" : "scale(1.02) translateX(-1%) translateY(-1%)"});
+  $(this).next().next().next().next().children('g:last-child').find("path").css({"-webkit-transform" : "scale(1.01) translateX(-1.5%) translateY(-1%)" , "-moz-transform" : "scale(1.01) translateX(-0.5%) translateY(-0.4%)"});
+  $("#XMLID_MAIN_").css({"-webkit-transform" : "scale(1.02) translateX(-2%) translateY(-2%)" , "-moz-transform" : "scale(1.02) translateX(-0.9%) translateY(-1.3%)"});//for main
+
+  $(this).prev().children('g:last-child').find("path").css({"-webkit-transform" : "scale(0.94) translateX(14.5%) translateY(7%)" , "-moz-transform" : "scale(0.94) translateX(3.12%) translateY(3.1%)"});
+  $(this).prev().prev().children('g:last-child').find("path").css({"-webkit-transform" : "scale(0.95) translateX(13.5%) translateY(6%)" , "-moz-transform" : "scale(0.95) translateX(2.6%) translateY(2.5%)"});//
+  $(this).prev().prev().prev().children('g:last-child').find("path").css({"-webkit-transform" : "scale(0.96) translateX(12.5%) translateY(5%)" ,"-moz-transform" : "scale(0.96) translateX(2%) translateY(1.9%)" });
+  $(this).prev().prev().prev().prev().children('g:last-child').find("path").css({"-webkit-transform" : "scale(0.98) translateX(8%) translateY(3%)" , "-moz-transform" : "scale(0.98) translateX(1%) translateY(1%)"});//
+});
+$('g[id="XMLID_12_"]').mouseenter(function(){
+  $("#xmlid_company_date").text("2016");
+  $("#xmlid12_circle_desc").css({"opacity": 0,"display":"block"}).animate({"opacity": 1},900);
+  $(this).children('g:first-child').next().attr("class", "xmlid-shown-path");
+  $(this).children('g:last-child').find("path").attr("class", "xmlid-hidden-path");
+
+  $(this).next().children('g:last-child').find("path").css({"-webkit-transform" : "scale(1.05) translateX(-8.3%) translateY(-4%)" , "-moz-transform" : "scale(1.04) translateX(-1.9%) translateY(-1.8%)"});//
+  $(this).next().next().children('g:last-child').find("path").css({"-webkit-transform" : "scale(1.06) translateX(-9%) translateY(-5%)" , "-moz-transform" : "scale(1.06) translateX(-2.8%) translateY(-2.6%)"});
+  $(this).next().next().next().children('g:last-child').find("path").css({"-webkit-transform" : "scale(1.02) translateX(-3%) translateY(-1.2%)" , "-moz-transform" : "scale(1.02) translateX(-1%) translateY(-1%)"});
+  $("#XMLID_MAIN_").css({"-webkit-transform" : "scale(1.06) translateX(-7%) translateY(-5%)" ,"-moz-transform" : "scale(1.06) translateX(-2.5%) translateY(-2.5%)" });//for main
+
+  $(this).prev().children('g:last-child').find("path").css({"-webkit-transform" : "scale(0.94) translateX(12.9%) translateY(6%)" , "-moz-transform" : "scale(0.94) translateX(3.2%) translateY(3%)"});
+  $(this).prev().prev().children('g:last-child').find("path").css({"-webkit-transform" : "scale(0.95) translateX(11.5%) translateY(5.5%)" , "-moz-transform" : "scale(0.95) translateX(2.5%) translateY(2.5%)"});//
+  $(this).prev().prev().prev().children('g:last-child').find("path").css({"-webkit-transform" : "scale(0.96) translateX(10.5%) translateY(5%)" , "-moz-transform" : "scale(0.96) translateX(2%) translateY(2%)"});
+  $(this).prev().prev().prev().prev().children('g:last-child').find("path").css({"-webkit-transform" : "scale(0.98) translateX(6%) translateY(3%)" , "-moz-transform" : "scale(0.98) translateX(1%) translateY(1%)"});//
+});
+$('g[id="XMLID_13_"]').mouseenter(function(){
+  $("#xmlid_company_date").text("2016");
+  $(this).children('g:first-child').next().attr("class", "xmlid-shown-path");
+  $(this).children('g:last-child').find("path").attr("class", "xmlid-hidden-path");
+
+  $(this).next().children('g:last-child').find("path").css({"-webkit-transform" : "scale(1.03) translateX(-4.3%) translateY(-3%)" , "-moz-transform" : "scale(1.03) translateX(-1.5%) translateY(-1.4%)" });//
+  $(this).next().next().children('g:last-child').find("path").css({"-webkit-transform" : "scale(1.03) translateX(-4.3%) translateY(-2%)" , "-moz-transform" : "scale(1.03) translateX(-1.5%) translateY(-1.4%)" });//
+  $("#XMLID_MAIN_").css({"-webkit-transform" : "scale(1.08) translateX(-9%) translateY(-6%)" , "-moz-transform" : "scale(1.08) translateX(-3.5%) translateY(-4%)"});//for main
+
+  $(this).prev().children('g:last-child').find("path").css({"-webkit-transform" : "scale(0.95) translateX(10%) translateY(4.5%)" , "-moz-transform" : "scale(0.95) translateX(2.6%) translateY(2.5%)"});
+  $(this).prev().prev().children('g:last-child').find("path").css({"-webkit-transform" : "scale(0.95) translateX(10.5%) translateY(5%)" ,"-moz-transform" : "scale(0.95) translateX(2.6%) translateY(2.6%)" });//
+  $(this).prev().prev().prev().children('g:last-child').find("path").css({"-webkit-transform" : "scale(0.96) translateX(9.5%) translateY(4.5%)" ,"-moz-transform" : "scale(0.96) translateX(2%) translateY(2.1%)" });
+  $(this).prev().prev().prev().prev().children('g:last-child').find("path").css({"-webkit-transform" : "scale(0.98) translateX(5%) translateY(2%)" , "-moz-transform" : "scale(0.98) translateX(1%) translateY(1%)"});//
+});//done
+$('g[id="XMLID_14_"]').mouseenter(function(){
+  $("#xmlid_company_date").text("2016");
+  $(this).children('g:first-child').next().attr("class", "xmlid-shown-path");
+  $(this).children('g:last-child').find("path").attr("class", "xmlid-hidden-path");
+  $(this).next().children('g:last-child').find("path").css({"-webkit-transform" : "scale(1.06) translateX(-8.5%) translateY(-4.3%)" , "-moz-transform" : "scale(1.06) translateX(-2.8%) translateY(-2.8%)" });//
+  $("#XMLID_MAIN_").css({"-webkit-transform" : "scale(1.097) translateX(-12%) translateY(-7%)" , "-moz-transform" : "scale(1.097) translateX(-4%) translateY(-4%)"});//for main
+
+  $(this).prev().children('g:last-child').find("path").css({"-webkit-transform" : "scale(0.95) translateX(9%) translateY(4.5%)" , "-moz-transform" : "scale(0.95) translateX(2.5%) translateY(2.5%)"});
+  $(this).prev().prev().children('g:last-child').find("path").css({"-webkit-transform" : "scale(0.95) translateX(9.5%) translateY(5%)" ,"-moz-transform" : "scale(0.95) translateX(2.5%) translateY(2.5%)"  });//
+  $(this).prev().prev().prev().children('g:last-child').find("path").css({"-webkit-transform" : "scale(0.96) translateX(8.5%) translateY(4.5%)" , "-moz-transform" : "scale(0.96) translateX(2%) translateY(2%)"});
+  $(this).prev().prev().prev().prev().children('g:last-child').find("path").css({"-webkit-transform" : "scale(0.98) translateX(4%) translateY(2%)" , "-moz-transform" : "scale(0.98) translateX(1%) translateY(1%)" });//
+});
+
+
+
+$('g[id="XMLID_15_"]').mouseenter(function(){
+  $("#xmlid_company_date").text("2016");
+  $("#xmlid15_circle_desc").css({"opacity": 0,"display":"block"}).animate({"opacity": 1},900);
+  $(this).children('g:first-child').next().attr("class", "xmlid-shown-path");
+  $(this).children('g:last-child').find("path").attr("class", "xmlid-hidden-path");
+  $("#XMLID_MAIN_").css({"-webkit-transform" : "scale(1.097) translateX(-12%) translateY(-7%)" , "-moz-transform" : "scale(1.097) translateX(-4%) translateY(-4%)"});//for main
+
+  $(this).prev().children('g:last-child').find("path").css({"-webkit-transform" : "scale(0.95) translateX(9%) translateY(4.5%)" , "-moz-transform" : "scale(0.95) translateX(2.5%) translateY(2.5%)"});
+  $(this).prev().prev().children('g:last-child').find("path").css({"-webkit-transform" : "scale(0.95) translateX(9.5%) translateY(5%)" ,"-moz-transform" : "scale(0.95) translateX(2.5%) translateY(2.5%)"  });//
+  $(this).prev().prev().prev().children('g:last-child').find("path").css({"-webkit-transform" : "scale(0.96) translateX(8.5%) translateY(4.5%)" , "-moz-transform" : "scale(0.96) translateX(2%) translateY(2%)"});
+  $(this).prev().prev().prev().prev().children('g:last-child').find("path").css({"-webkit-transform" : "scale(0.98) translateX(4%) translateY(2%)" , "-moz-transform" : "scale(0.98) translateX(1%) translateY(1%)" });//
+});
+
+
+
+
+
+
+// $('g[id^="XMLID_"]').each(function(){
+//  $(this).hide();
+// });
+
+// $('g[id^="XMLID_15_"]').show();
+
+
+
+
+
+
+
+
+
+$('g#XMLID_MAIN_').mouseenter(function(){
+  $(this).children("path").attr("class","XMLID_MAIN_-color-change");
+});
+
+
+
+
+
+$('g[id^="XMLID_"],g#XMLID_MAIN_').mouseleave(function(){
+
+  $('g#XMLID_MAIN_').children("path").attr("class","");
+
+  $("#xmlid_company_date").text("2014");
+  $(".xmlid_circle_desc").hide();
+  $(this).children('g:first-child').next().attr("class", "xmlid-hidden-path");
+  $(this).children('g:last-child').find("path").attr("class", "");
+  $('g[id^="XMLID_"]').prev().children('g:last-child').find("path").css("transform", "scale(1) translateX(0%) translateY( 0%)");
+  $('g[id="XMLID_15_"]').children('g:last-child').find("path").css("transform", "scale(1) translateX(0%) translateY(0%)");
+  $("#XMLID_MAIN_").css("transform", "scale(1) translateX(0%) translateY(0%)");
+});
+
+
+
+$('.xmlid4-hover-small-circle,.xmlid5-hover-small-circle').mouseenter(function(){
+  $(this).next().children('g:first-child').attr("class", "xmlid-hidden-line-path xmlid-shown-line-path");
+  var _this = $(this);
+  _this.next().children("g:not(:first-child)").css("opacity","0");
+  _this.next().children("g:not(:first-child)").attr("class", "xmlid-hidden-line-path xmlid-shown-line-path");
+  setTimeout(function () { _this.next().children("g:not(:first-child)").animate({"opacity":"1"},500); },800);
+});
+
+
+$('.xmlid4-hover-small-circle,.xmlid5-hover-small-circle').mouseleave(function(){
+  $(this).next().children('g:first-child').attr("class", "xmlid-hidden-line-path");
+  $(this).next().children().attr("class", "xmlid-hidden-line-path");
+  $('.xmlid4-hover-small-circle,.xmlid5-hover-small-circle').next().children().attr("class", "xmlid-hidden-line-path");
+});
+
+$('.xmlid4-hover-small-circle,.xmlid5-hover-small-circle').next().children().attr("class", "xmlid-hidden-line-path");
+
+
+$("path").animate({"opacity":"1"},5000);
+
+/*end company banner anime*/
+
+
+
 /*for svg product banner*/
   var index = 2;
   setInterval(function(){

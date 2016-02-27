@@ -1,3 +1,66 @@
+/*for company page banner*/
+
+div#company-anime-banner {
+    margin-top: -35px;
+}
+
+path{
+	opacity: 0;
+
+	-webkit-transition: 15s opacity;
+    -moz-transition: 15s opacity;
+    -o-transition: 15s opacity;
+    transition: 15s opacity;
+
+    -webkit-transition: 1s transform ease-out;
+    -moz-transition: 1s transform ease-out;
+    -o-transition: 1s transform ease-out;
+    transition: 1s transform ease-out;
+}
+#XMLID_MAIN_{
+    -webkit-transition: 4s transform;
+    -moz-transition: 4s transform;
+    -o-transition: 4s transform;
+    transition: 4s transform;		
+}
+.hover-effect-class{
+	stroke-dasharray: 0 !important;
+	stroke: #f00 !important;
+}
+.xmlid-hidden-path{
+	display: none;
+}
+.xmlid-shown-path{
+	display: block;
+}
+.xmlid-hidden-line-path{
+	display: none;
+	stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    -webkit-transition: 5s stroke-dashoffset;
+    -moz-transition: 5s stroke-dashoffset;
+    -o-transition: 5s stroke-dashoffset;
+    transition: 5s stroke-dashoffset;
+}
+.xmlid-shown-line-path{
+	display: block !important;
+	stroke-dasharray: 1000;
+    stroke-dashoffset: 0 !important;
+}
+.xmlid_circle_desc{
+	display: none;
+}
+.XMLID_2_-rotate{
+	animation:XMLID_2_rotate 1s linear infinite;
+}
+@keyframes XMLID_2_rotate{
+	0%{ stroke-dashoffset: 0;}
+	100%{    stroke-dashoffset: 40;}
+}
+/*end for company page banner*/
+
+
+
 .company-btm {
 	/* border-bottom: 3px solid #f0f2f4; */
 	padding-top:30px;
