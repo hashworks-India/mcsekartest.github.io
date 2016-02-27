@@ -31,7 +31,7 @@
 
 			.hw-view-project {
 				padding: 10px;
-				box-shadow: 0 5px 5px rgba(0,0,0,0.3);
+				box-shadow: 0 0px 2px rgba(0,0,0,0.3);
 			}
 
 			.hw-view-project p {
@@ -43,17 +43,23 @@
 			.hw-view-project .fa-play {
 				background-color: #fcfcfc;
 				border: 1px solid #e2e2e2;
-				box-shadow: 0 1px 2px rgba(0,0,0,0.75);
+				box-shadow: 0 0.25px 0.60px rgba(0,0,0,0.75);
 				padding: 3px 5px;
 				margin: 0 5px;
+				color: #cccccc;
 			}
 
 			.hw-view-project .fa-play:hover,
 			.hw-view-project .fa-pause:hover{
-				color: #ee2b7b;
+				color: #464646;
 				cursor: pointer;
 				text-shadow: 0 1px 1px rgba(97,97,97,0.75);
 			}
+			 .hw-view-project .fa-play-active,.hw-view-project .fa-pause-active{
+            color: #ee2b7b;
+                cursor: pointer;
+                text-shadow: 0 1px 1px rgba(97,97,97,0.75);
+            }
 
 			.hw-view-project .fa-play-left,
 			.hw-view-project .fa-play-right {

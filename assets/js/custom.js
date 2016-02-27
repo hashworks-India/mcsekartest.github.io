@@ -196,20 +196,30 @@ $(".apst-wrapper").hide();
     // End of testimonial-carousel
 
         // ui-ux tab
-          $('.hw-ui-ux-carousel .carousel').carousel({
-            interval: 100,
-              pause: true
-          });
+          // $('.hw-ui-ux-carousel .carousel').carousel({
+          //   interval: 100,
+          //     pause: true
+          // });
           $(window).load(function () {
               $('.hw-ui-ux-carousel .carousel').carousel("pause");
           });
+
+          $('.play').children('.fa-play').addClass("fa-play-active");
           
           $('.play').click(function () {
+                $(this).children('.fa-play').addClass("fa-play-active");
 
+
+                $(this).prev(".pause").children(".fa-pause").removeClass("fa-pause-active");
+                // $(this).siblings('.fa-pause').removeClass("fa-pause-active");
+                 
+                  
               $(this).parents('.hw-view-project').siblings('.carousel').carousel('cycle');
           });
           $('.pause').click(function () {
-            alert();
+            $(this).children('.fa-pause').addClass("fa-pause-active");
+             // $(this).siblings('.fa-play').removeClass("fa-play-active");
+               $(this).next(".play").children(".fa-play").removeClass("fa-play-active");
               $(this).parents('.hw-view-project').siblings('.carousel').carousel('pause');
           });
         // End of ui-ux tab
