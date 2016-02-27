@@ -1355,13 +1355,13 @@ div#bootcamp-filter-controls label{
 		#testimonial .carousel-inner {
 			padding: 0 50px;
 		}
-		       .carousel-inner > .item {
+/*		       .carousel-inner > .item {
        
 		    -webkit-transition: 0.2s ease-in-out left;
 		    -moz-transition: 0.2s ease-in-out left;
 		    -o-transition: 0.2s ease-in-out left;
 		    transition: 0.2s ease-in-out left;
-		}
+		}*/
 		#testimonial .hw-test-img .img-outer,
 		#testimonial .hw-test-img ul {
 			display: inline-block;
@@ -1652,7 +1652,7 @@ width: 100%;
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-	top: 20px;
+	/*top: 20px;*/
 	bottom: 20px;
 	margin-left: -40px;
 	right: 20px;
