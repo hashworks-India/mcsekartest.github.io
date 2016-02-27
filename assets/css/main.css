@@ -3207,12 +3207,18 @@ i.fa.fa-chevron-down.down-arrow{
     height: 168%;
 }
 .machine-svg {
-	width: 1657px;
-    height: 577.046px;
+    width: 1785px;
+    height: 597.046px;
+}
+#product-boundary-line{
+	    -webkit-transform:  translateX(1.2%);
+        -moz-transform:  translateX(1.2%);
+        -o-transform:  translateX(1.2%);
+        transform: translateX(1.2%);
 }
 #meter {
-	top: 176px;
-    left: 266px;
+	    top: 177px;
+    left: 282px;
 }
 
 #google-search-div .gsc-results-wrapper-overlay {
