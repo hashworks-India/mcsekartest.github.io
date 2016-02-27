@@ -538,6 +538,9 @@ html {
 		transition: all .5s ease 0s;
 	}
 
+	.margin-top-ten{
+		margin-top: 10px;
+	}
 	.hw-fixed-header .navbar-nav > li > a,
 	.hw-fixed-header .navbar-nav > li > a:hover,
 	.hw-fixed-header .navbar-nav > li > a:active,
