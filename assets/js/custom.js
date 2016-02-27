@@ -204,7 +204,6 @@ $(".apst-wrapper").hide();
               $('.hw-ui-ux-carousel .carousel').carousel("pause");
           });
 
-          $('.play').children('.fa-play').addClass("fa-play-active");
           
           $('.play').click(function () {
                 $(this).children('.fa-play').addClass("fa-play-active");
