@@ -1785,6 +1785,9 @@ width: 100%;
 	  -o-transition: all .5s ease 0s;
 	  transition: all .5s ease 0s;
 	}
+	.blog-author-form,.blog-cat-form{
+		padding: 0px 3px;
+	}
 	span.page-number.clickable:hover {
 		background-color: #ee2b7b;
 	}
@@ -1859,7 +1862,8 @@ width: 100%;
 	  }
 
 	  .blog-grid .filters select option {
-	    padding: 5px 10px;
+	    padding: 0px 10px;
+		margin: 5px 0px;
 	  }
 
 	  .blog-grid .filter select:hover,

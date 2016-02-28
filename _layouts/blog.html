@@ -36,16 +36,12 @@
 				<div class="col-md-6 col-sm-6 col-xs-12">
 					<form method="get" action="" class="blog-cat-form">
 						<select class="postform gotham-rounded-bok" id="cat" name="cat">
-							<option value="Categories">Categories</option>
-							<option value="Marketing" class="level-0">Marketing</option>
-							<option value="Design" class="level-0">Design</option>
-							<option value="UX" class="level-0">UX</option>
-							<option selected="selected" value="WordPress" class="level-0">WordPress</option>
-							<option value="Strategy" class="level-0">Strategy</option>
-							<option value="Automations" class="level-0">Automations</option>
-							<option value="News" class="level-0">News</option>
-							<option value="Content" class="level-0">Content</option>
-							<option value="Social" class="level-0">Social Media</option>
+							<option selected="selected" value="0">Categories</option>
+							<option value="1" class="level-0">DataOps</option>
+							<option value="2" class="level-0">DevOps</option>
+							<option value="3" class="level-0">Data Science</option>
+							<option value="4" class="level-0">Ui/Ux</option>
+							<option value="5" class="level-0">Mobility</option>
 						</select>
 					</form>
 				</div>
@@ -55,15 +51,7 @@
 						<div class="styled-select">
 							<select class="gotham-rounded-bok" id="author" name="author">
 								<option value="0">Authors</option>
-								<option value="http://forgeandsmith.com/author/alec/">Alec Morrison</option>
-								<option value="http://forgeandsmith.com/author/andrinafawcett/">Andrina Fawcett</option>
-								<option value="http://forgeandsmith.com/author/ashelypitre/">Ashley Pitre</option>
-								<option value="http://forgeandsmith.com/author/craig/">Craig Barnes</option>
-								<option value="http://forgeandsmith.com/author/damian/">Damian Jolley</option>
-								<option value="http://forgeandsmith.com/author/eric/">Eric Breuers</option>
-								<option value="http://forgeandsmith.com/author/forge-and-smith/">Forge and Smith</option>
-								<option value="http://forgeandsmith.com/author/pam-berg/">Pam Berg</option>
-								<option value="http://forgeandsmith.com/author/shawn/">Shawn Johnston</option>
+								<option value="1">Gopi</option>
 							</select>
 						</div>											
 					</form>
@@ -76,7 +64,7 @@
 
 		<!-- We need to add the option value attr name in li for filter -->
 
-	{% for post in site.posts | sort: 'date' %}
+	{% for post in site.posts | sort: 'date' limit:2  %}
 	
 		<li class="hw-filter-li Social blog-content ">
 			<div class="image-wrapper">
