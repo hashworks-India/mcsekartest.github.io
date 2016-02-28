@@ -1504,7 +1504,7 @@ bootcamp_filter_function();
 /*start of company page animation banner*/
 
 $('g[id="XMLID_2_"]').mouseenter(function(){
-  $("#xmlid_company_date").text("2016");
+  $("#xmlid_company_date").text("2014");
   $("#xmlid2_circle_desc").show();
   $(this).children('g:last-child').find("path").attr("class", "XMLID_2_-rotate");
 });
@@ -1685,8 +1685,6 @@ $('g[id="XMLID_15_"]').mouseenter(function(){
 
 
 $('g[id^="XMLID_"],g#XMLID_MAIN_').mouseleave(function(){
-
-  $("#xmlid_startup_circle_desc").hide();
   $("#xmlid_company_date").text("2014");
   $(".xmlid_circle_desc").hide();
   $(this).children('g:first-child').next().attr("class", "xmlid-hidden-path");
@@ -1694,6 +1692,20 @@ $('g[id^="XMLID_"],g#XMLID_MAIN_').mouseleave(function(){
   $('g[id^="XMLID_"]').prev().children('g:last-child').find("path").css("transform", "scale(1) translateX(0%) translateY( 0%)");
   $('g[id="XMLID_15_"]').children('g:last-child').find("path").css("transform", "scale(1) translateX(0%) translateY(0%)");
   $("#XMLID_MAIN_").css("transform", "scale(1) translateX(0%) translateY(0%)");
+});
+$('#all-the-path').mouseleave(function(){
+
+  $("#xmlid_startup_circle_desc").css({"opacity": 0,"display":"block"}).animate({"opacity": 1},900);
+  $("#xmlid_startup_desc").css({"opacity": 0,"display":"block"}).animate({"opacity": 1},900);
+});
+$('#xmlid_startup_circle_desc,#xmlid_startup_circle_desc').mouseover(function(){
+  $("#xmlid_startup_circle_desc").show();
+  $("#xmlid_startup_desc").show();
+});
+$('#all-the-path').mouseover(function(){
+
+  $("#xmlid_startup_circle_desc").hide();
+  $("#xmlid_startup_desc").hide();
 });
 
 
