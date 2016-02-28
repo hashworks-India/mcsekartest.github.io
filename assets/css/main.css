@@ -1,3 +1,49 @@
+a.gotham-rounded-bok.blog-a.clr-white:hover{
+	    outline: none;
+    outline-offset: 0;
+    text-decoration: none;
+    color: #545454;
+	}
+
+
+
+
+div#osb-testimonial-first {
+    padding-top: 54px;
+}
+div#ms-testimonial-first {
+    padding-top: 38px;
+}
+div#etl-testimonial-first {
+    padding-top: 65px;
+}
+div#ad-testimonial-first {
+    padding-top: 40px;
+}
+div#ep2-testimonial-first {
+    padding-top: 36px;
+}
+div#ep3-testimonial-first {
+    padding-top: 45px;
+}
+div#ep4-testimonial-first {
+    padding-top: 63px;
+}
+div#mb1-testimonial-first {
+    padding-top: 53px;
+}
+div#mb2-testimonial-first {
+    padding-top: 44px;
+}
+div#mb3-testimonial-first {
+    padding-top: 29px;
+}
+div#mb4-testimonial-first {
+    padding-top: 47px;
+}
+
+
+
 html {
 	font-size: 16px;
 	}
