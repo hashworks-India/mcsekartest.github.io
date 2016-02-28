@@ -1,10 +1,3 @@
-#blog1-div3-part1 a.gotham-rounded-bok.blog-a.clr-white:hover {
-    outline: none;
-    outline-offset: 0;
-    text-decoration: none;
-    color: #ededed;
-}
-
 
 
 
@@ -1800,6 +1793,14 @@ width: 100%;
 	.blog-margin .blog-content-wrapper h3{
 		height: 72px;
 	}
+	#blog1-div3-part1 a.gotham-rounded-bok.blog-a.clr-white:hover {
+    outline: none;
+    outline-offset: 0;
+    text-decoration: none;
+    color: #ededed;
+}
+
+
 
 	.blog-grid a {
 	  -webkit-transition: all .5s ease 0s;

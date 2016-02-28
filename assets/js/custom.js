@@ -34,6 +34,16 @@ $(document).ready(function(){
 
     /* end */
 
+ $(document).on('mouseenter', 'input.gsc-search-button.gsc-search-button-v2', function(){
+         $("i.fa.fa-angle-right.search-arrow").css("color", "#ee2b7b");
+});
+  $(document).on('mouseleave', 'input.gsc-search-button.gsc-search-button-v2', function(){
+         $("i.fa.fa-angle-right.search-arrow").css("color", "gray");
+});
+
+
+
+
     /* we love parter */
     $('.home-hr').addClass("anim");
       $("#section-rib-part").animate({"opacity":"1"},644);
