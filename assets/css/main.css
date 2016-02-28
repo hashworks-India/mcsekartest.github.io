@@ -1,5 +1,17 @@
+#blog1-div3-part1 a.gotham-rounded-bok.blog-a.clr-white:hover {
+    outline: none;
+    outline-offset: 0;
+    text-decoration: none;
+    color: #ededed;
+}
+
+
+
+
+
 
 html {
+
 	font-size: 16px;
 	}
 

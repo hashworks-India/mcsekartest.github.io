@@ -202,11 +202,11 @@
 }
 
 
-a.gotham-rounded-bok.blog-a.clr-white:hover{
-        outline: none;
+a.gotham-rounded-bok.blog-a.clr-white:hover,a.gotham-rounded-bok.blog-a.clr-white:hover{
+    outline: none;
     outline-offset: 0;
     text-decoration: none;
-    color: #545454;
+    color: #ededed;
     }
 
 
