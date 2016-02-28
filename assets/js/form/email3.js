@@ -58,7 +58,7 @@
                 if(value == null) {
                     flag=1;
                     // $('.input_file-detail').val("Please upload your resume");
-                     $(".input_file-detail").attr("placeholder", "Please upload your resume ");
+                     $(".input_file-detail").attr("placeholder", "Please attach your file");
                             placeholdAnimate(".input_file-detail");
                 }
                 if (name == "" || email == "" || subject == "Subject" ||subject == "" || contact == "" || message == "")
@@ -212,3 +212,7 @@
         $(element).attr('placeholder', tempStr);
     }
     }
+
+         $(".c-flex").click( function() {
+      resetTheForm();
+   });

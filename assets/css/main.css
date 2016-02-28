@@ -2553,11 +2553,11 @@ nav#toc ul {
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
-  transform: rotate(0deg);
+  transform: rotate(0deg);/*
   -webkit-transition: .5s ease-in-out;
   -moz-transition: .5s ease-in-out;
   -o-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
+  transition: .5s ease-in-out;*/
 }
 
 #nav-icon1 span:nth-child(1) {
@@ -2573,7 +2573,7 @@ nav#toc ul {
 }
 
 #nav-icon1.open span:nth-child(1) {
-  top: 18px;
+  top: 25px;
   -webkit-transform: rotate(135deg);
   -moz-transform: rotate(135deg);
   -o-transform: rotate(135deg);
@@ -2586,7 +2586,7 @@ nav#toc ul {
 }
 
 #nav-icon1.open span:nth-child(3) {
-  top: 18px;
+  top: 25px;
   -webkit-transform: rotate(-135deg);
   -moz-transform: rotate(-135deg);
   -o-transform: rotate(-135deg);
