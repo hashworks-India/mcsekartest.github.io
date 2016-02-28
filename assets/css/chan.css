@@ -214,9 +214,11 @@ a.gotham-rounded-bok.blog-a.clr-white:hover,a.gotham-rounded-bok.blog-a.clr-whit
 
 div#osb-testimonial-first {
     padding-top: 54px;
+        margin-top: -30px;
 }
 div#ms-testimonial-first {
     padding-top: 38px;
+        margin-top: -20px;
 }
 div#etl-testimonial-first {
     padding-top: 65px;
@@ -238,12 +240,15 @@ div#mb1-testimonial-first {
 }
 div#mb2-testimonial-first {
     padding-top: 44px;
+        margin-top: -33px;
 }
 div#mb3-testimonial-first {
     padding-top: 29px;
+        margin-top: -37px;
 }
 div#mb4-testimonial-first {
     padding-top: 47px;
+        margin-top: -40px;
 }
 
 
