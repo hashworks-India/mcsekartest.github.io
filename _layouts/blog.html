@@ -28,9 +28,10 @@
 	<ul class="blog-grid clearfix blog-main">
 
 		<li class="intro-wrapper">
-			<h2 class="tagline gotham-rounded-bold margin-zero hw-font-heading1">Opinions, Thoughts and Digital Stuff</h2>
-			<h3 class="subtitle gotham-rounded-light ">Read Our Diary</h3>
-			<p class="gotham-rounded-light">Thinking about website development? So are we. Constantly. We take what we do pretty seriously, but we also have a lot of fun while we’re doing it. Come share our collective headspace; you’ll discover more about the team and how we work.</p>
+			<h2 class="tagline gotham-rounded-bold margin-zero hw-font-heading1">Sharing experience, Opinions & Thoughts</h2>
+			<h3 class="subtitle gotham-rounded-light ">Read our Chronicles</h3>
+			<p class="gotham-rounded-light">We take our work seriously. We express our thoughts and share our passion. We also have fun at work.
+Come share our thinking; know more about our team and the work we do…</p>
 
 			<div class="row filters cs-li-margin">
 				<div class="col-md-6 col-sm-6 col-xs-12">
@@ -64,7 +65,7 @@
 
 		<!-- We need to add the option value attr name in li for filter -->
 
-	{% for post in site.posts | sort: 'date' limit:2  %}
+	{% for post in site.posts | sort: 'date'   %}
 	
 		<li class="hw-filter-li Social blog-content ">
 			<div class="image-wrapper">
