@@ -1702,7 +1702,7 @@ $('g[id^="XMLID_"],g#XMLID_MAIN_').mouseleave(function(){
 
 
 $('.xmlid4-hover-small-circle,.xmlid5-hover-small-circle').mouseenter(function(){
-  $(this).next().children('g:first-child').attr("class", "xmlid-hidden-line-path xmlid-shown-line-path");
+  $(this).next().children('g:first-child').attr("class", "xmlid-hidden-line-path xmlid-shown-line-path xmlid-line-anime");
   var _this = $(this);
   _this.next().children("g:not(:first-child)").css("opacity","0");
   _this.next().children("g:not(:first-child)").attr("class", "xmlid-hidden-line-path xmlid-shown-line-path");
