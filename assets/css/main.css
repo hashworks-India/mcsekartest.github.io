@@ -2649,6 +2649,9 @@ i.fa.fa-chevron-down.down-arrow{
     position: relative;
    /* bottom: 16%;*/
 }
+#svg-wrapper svg{
+    overflow: visible;
+}
 .product-outer-svg {
 	position: absolute;
 	bottom: 6%;
@@ -2904,6 +2907,11 @@ i.fa.fa-chevron-down.down-arrow{
 	-moz-animation: boundary_line 6s linear ;
 	-o-animation: boundary_line 6s linear ;
 	animation: boundary_line 6s linear ;
+
+	-webkit-transform:  translateX(2%);
+    -moz-transform:  translateX(2%);
+    -o-transform:  translateX(2%);
+    transform: translateX(2%);
 }
 
 
@@ -3210,12 +3218,7 @@ i.fa.fa-chevron-down.down-arrow{
     width: 1785px;
     height: 597.046px;
 }
-#product-boundary-line{
-	    -webkit-transform:  translateX(1.2%);
-        -moz-transform:  translateX(1.2%);
-        -o-transform:  translateX(1.2%);
-        transform: translateX(1.2%);
-}
+
 #meter {
 	    top: 177px;
     left: 282px;
