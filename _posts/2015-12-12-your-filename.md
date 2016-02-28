@@ -3,6 +3,7 @@ layout: navblog_detail
 description: first
 category: Mobility
 image: blog.jpg
+landing_image: /assets/img/landingpage/C_5.svg
 permalink: "/post/2015-12-12-your-filename/"
 tags: all
 published-date: Dec 25, 2015
