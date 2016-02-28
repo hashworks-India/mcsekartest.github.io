@@ -792,7 +792,7 @@ $("#div2-right-div-part4").css("display", "none");
     {
       $("#blog2-div1-part2").animate({'height' : '0%'},844);
       $(this).css(  "z-index", "1");
-      $(this).children().next(".part2").animate({'margin-top' : '7%'},444);
+      $(this).children().next(".part2").animate({'margin-top' : '10%'},444);
       $(this).find(".main-animate-arrow").hide(); 
       $(this).animate({'height' : '100vh'},844);  
     }
@@ -820,7 +820,7 @@ $("#div2-right-div-part4").css("display", "none");
      
       $(this).css(  "z-index", "1");
       $(this).find(".blog-img").animate({'margin-top' : '25%'},444);
-      $(this).children().next(".part2").animate({'margin-top' : '7%'},444); 
+      $(this).children().next(".part2").animate({'margin-top' : '12%'},444); 
       $(this).find(".main-animate-arrow").hide();
       $("#blog1-div1-part1").animate({'top' : '-100%'},844); 
       $(this).animate({'height' : '100vh'},844);  
@@ -852,7 +852,7 @@ $("#div2-right-div-part4").css("display", "none");
       $("#blog1-div2-part1").animate({'top' : '-100%'},844); 
       $(this).css(  "z-index", "1");
       $(this).find(".blog-img").animate({'margin-top' : '25%'},444); 
-      $(this).children().next(".part2").animate({'margin-top' : '7%'},444); 
+      $(this).children().next(".part2").animate({'margin-top' : '12%'},444); 
       $(this).find(".main-animate-arrow").hide(); 
       $(this).animate({'height' : '100vh'},844);   
     }
@@ -880,7 +880,7 @@ $("#div2-right-div-part4").css("display", "none");
     if( $(this).css('height') === height_pixel )
     {
       $("#blog2-div3-part2").animate({'height' : '0vh'},844);
-      $(this).children().next(".part2").animate({'margin-top' : '7%'},444); 
+      $(this).children().next(".part2").animate({'margin-top' : '13%'},444); 
       $(this).css(  "z-index", "1");
       $(this).find(".main-animate-arrow").hide(); 
       $(this).animate({'height' : '100vh'},844);    
@@ -909,7 +909,7 @@ $("#div2-right-div-part4").css("display", "none");
       $("#blog1-div3-part1").animate({'top' : '-100%'},844); 
       $(this).css(  "z-index", "1"); 
       $(this).find(".blog-img").animate({'margin-top' : '25%'},444);
-      $(this).children().next(".part2").animate({'margin-top' : '7%'},444); 
+      $(this).children().next(".part2").animate({'margin-top' : '12%'},444); 
       $(this).find(".main-animate-arrow").hide(); 
       $(this).animate({'height' : '100vh'},844); 
     }
