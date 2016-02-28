@@ -1505,6 +1505,7 @@ bootcamp_filter_function();
 
 $('g[id="XMLID_2_"]').mouseenter(function(){
   $("#xmlid_company_date").text("2016");
+  $("#xmlid2_circle_desc").show();
   $(this).children('g:last-child').find("path").attr("class", "XMLID_2_-rotate");
 });
 
@@ -1682,14 +1683,10 @@ $('g[id="XMLID_15_"]').mouseenter(function(){
   $(this).prev().prev().prev().prev().children('g:last-child').find("path").css({"-webkit-transform" : "scale(0.98) translateX(4%) translateY(2%)" , "-moz-transform" : "scale(0.98) translateX(1%) translateY(1%)" });//
 });
 
-$('g#XMLID_MAIN_').mouseenter(function(){
-  $(this).children("path").attr("class","XMLID_MAIN_-color-change");
-});
 
 $('g[id^="XMLID_"],g#XMLID_MAIN_').mouseleave(function(){
 
-  $('g#XMLID_MAIN_').children("path").attr("class","");
-
+  $("#xmlid_startup_circle_desc").hide();
   $("#xmlid_company_date").text("2014");
   $(".xmlid_circle_desc").hide();
   $(this).children('g:first-child').next().attr("class", "xmlid-hidden-path");
