@@ -51,8 +51,13 @@ Come share our thinking; know more about our team and the work we do…</p>
 					<form class="blog-author-form">
 						<div class="styled-select">
 							<select class="gotham-rounded-bok" id="author" name="author">
-								<option value="0">Authors</option>
+								<option value="0">Authors</option>          
 								<option value="1">Gopi</option>
+								<option value="2">Mohit</option>
+								<option value="3">Rajesh</option>
+								<option value="4">Shilpa</option>
+								<option value="5">Stanely</option>
+
 							</select>
 						</div>											
 					</form>
@@ -69,20 +74,20 @@ Come share our thinking; know more about our team and the work we do…</p>
 	
 		<li class="hw-filter-li Social blog-content ">
 			<div class="image-wrapper">
-				<img width="" height="" alt="" src="http://forgeandsmith.com/wp-content/uploads/2015/12/Top-Tweets-Thumb.jpg">
+				<img width="" height="" alt="" src="{{post.landing_image}}">
 				<div class="blog-post-meta">
 					<a href="{{ post.url }}" class="button">View Article</a>
 				</div>
 			</div>
-
+ 
 			<div class="blog-content-wrapper">
-				<h4><span class="month gotham-rounded-bok">{{ post.published-date }}</span>  <span class="categories-list gotham-rounded-bok"><a rel="category tag" href="{{ post.url }}">{{ post.category}}</a></span></h4>
+				<h4><span class="month gotham-rounded-bok">{{ post.published-date }}</span>  <span class="categories-list gotham-rounded-bok"><a rel="category tag" href="{{ post.url }}"  target="new">{{ post.category}}</a></span></h4>
 				<h3><a href="{{ post.url }}" class="gotham-rounded-light hw-para">{{post.top-tweets}}</a></h3>
 				<p>
-				<img class="nav-bp-author" alt="" src="/assets/img/blog/author.jpg">
-				<a rel="category tag" class="categories-list gotham-rounded-light" href="{{ post.url }}">{{ post.author}}</a>
-				<span class="nov-blog-like-icon fa fa-heart-o"></span>
-				<span class="gotham-rounded-bok month">25</span>
+				<img class="nav-bp-author" alt="" src="{{post.author_image}}">
+				<a rel="category tag" class="categories-list gotham-rounded-light" href="{{ post.url }}"  target="new">{{ post.author}}</a>
+				<span style="float:right;"><span class="nov-blog-like-icon fa fa-heart-o"></span>
+				<span class="gotham-rounded-bok month">{{post.like_no}}</span></span>
 				</p>
 			</div>
 		</li>

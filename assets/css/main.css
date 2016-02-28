@@ -2105,7 +2105,7 @@ width: 100%;
 	/*blog-content wrapper div*/
 		.nov-blog-like-icon {
 	    color: red;
-	    margin-left: 100px;
+	    /*margin-left: 100px;*/
 		}
 
 		.nav-bp-author{
