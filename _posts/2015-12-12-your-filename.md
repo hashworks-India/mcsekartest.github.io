@@ -3,10 +3,11 @@ layout: navblog_detail
 description: first
 category: Mobility
 image: blog.jpg
+blog_source: www.coredigitalworks.com
 landing_image: /assets/img/blog/landing/Mobility_400.jpg
 permalink: "/post/2015-12-12-your-filename/"
 tags: all
-author_image: /assets/img/company/c_shilpa.png
+author_image: /assets/img/company/c_rajesh.png
 like_no: 22
 published-date: Dec 25, 2015
 top-tweets: Enterprise Mobility in trenches
@@ -31,7 +32,7 @@ para3: Enabling a strong mobility driven business model will help organizations 
 
 
 
-author: Shilpa
+author: Rajesh
 title: UI/UX
 ---
 
