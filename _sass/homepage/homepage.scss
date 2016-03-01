@@ -25,7 +25,7 @@
 }
 @-moz-keyframes moz-pencil-liquid1-anim {  
     0%{
-        transform: translateX(0%) translateY(0%);
+        transform: translateX(0%) translateY(0.4%);
     }
     25%{
         transform: translateX(-1%) translateY(4%);
@@ -34,10 +34,10 @@
         transform: translateX(-1%) translateY(4%);
     }
     75%{
-        transform: translateX(0%) translateY(0%);
+        transform: translateX(0%) translateY(0.4%);
     }
     100%{
-        transform: translateX(0%) translateY(0%);
+        transform: translateX(0%) translateY(0.4%);
     }
 } 
 #pencil-liquid2{
@@ -66,10 +66,10 @@
         transform: translateX(1%) translateY(4%);
     }
     25%{
-        transform: translateX(0%) translateY(0%);
+        transform: translateX(0%) translateY(0.4%);
     }
     50%{
-        transform: translateX(0%) translateY(0%);
+        transform: translateX(0%) translateY(0.4%);
     }
     75%{
         transform: translateX(1%) translateY(4%);
