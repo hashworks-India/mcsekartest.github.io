@@ -2,7 +2,7 @@
 
 job_title: UI-UX Designer
 location: Bangalore
-date: 03-04-2016
+date: 04-03-2016
 experience: "4+yrs"
 type: Full Time
 
