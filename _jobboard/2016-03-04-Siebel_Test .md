@@ -14,7 +14,7 @@ job_description:
  - best quality system to the Client.
  - Focus on testing Siebel screens, views and applets
  - Focus on usability testing<br/><br/>Should be able to test by segregating the OPEN UI into the following components
- - Structure (HTML)
+ - Structure (HTML) 
  - Presentation (CSS)
  - Behavior (JavaScript)<br/><br/>
  - Should be able to write test scenarios and test cases
