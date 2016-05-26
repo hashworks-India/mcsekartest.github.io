@@ -1,7 +1,7 @@
 ---
 
 job_title: Core Java Developer
-location: Bangalore
+location: Hyderabad
 date: 25-04-2016
 experience: 5-6 yrs
 type: Full Time
