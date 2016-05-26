@@ -2,7 +2,6 @@
 layout: navblog_detail
 description: first
 category: Mobility
-class: Mobility
 image: blog.jpg
 blog_source: www.coredigitalworks.com
 landing_image: /assets/img/blog/landing/Mobility_400.jpg
