@@ -25,49 +25,53 @@
 		</div> -->
 	</section>
 	<div class="blog-margin">
-		<!-- for 2nd li we used different color, so we hide this li -->
-		<!-- <li class="hide"></li> -->
+	<ul class="blog-grid clearfix blog-main">
 
-		<!-- We need to add the option value attr name in li for filter -->
-		<ul class="blog-grid clearfix blog-main">
-
-		<li class="intro-wrapper col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		<li class="intro-wrapper">
 			<h2 class="tagline gotham-rounded-bold margin-zero hw-font-heading1">Sharing experience, Opinions & Thoughts</h2>
 			<h3 class="subtitle gotham-rounded-light ">Read our Chronicles</h3>
-			<p class="gotham-rounded-light blog-para-first">We take our work seriously. We express our thoughts and share our passion. We also have fun at work.
+			<p class="gotham-rounded-light">We take our work seriously. We express our thoughts and share our passion. We also have fun at work.
 Come share our thinking; know more about our team and the work we do…</p>
 
 			<div class="row filters cs-li-margin">
-				<div class="col-md-6 col-sm-6 col-xs-6 col-xxs-12 cats">
-					<form class="blog-cat-form" action="" method="get">
-						<select name="cat" id="cat" class="postform gotham-rounded-bok" multiple>
-							<option data-value="DataOps" class="level-0" value="1" class="case-studies-label-text">DataOps</option>
-							<option data-value="Devops" class="level-0" value="2" class="case-studies-label-text">DevOps</option>
-							<option data-value="Data Science" class="level-0" value="3" class="case-studies-label-text">DataScience</option>
-							<option data-value="UX/UI" class="level-0" value="4" class="case-studies-label-text">UXUI</option>
-							<option data-value="Mobility" class="level-0" value="5" class="case-studies-label-text">Mobility</option>
+				<div class="col-md-6 col-sm-6 col-xs-12">
+					<form method="get" action="" class="blog-cat-form">
+						<select class="postform gotham-rounded-bok" id="cat" name="cat">
+						<option selected="selected" value="0" data-value="Categories">Categories</option>
+						<option value="1" class="level-0" data-value="DataOps">DataOps</option>
+						<option value="2" class="level-0" data-value="Devops">DevOps</option>
+						<option value="3" class="level-0" data-value="Data Science">Data Science</option>
+						<option value="4" class="level-0" data-value="UX/UI">UX/UI</option>
+						<option value="5" class="level-0" data-value="Mobility">Mobility</option>
 						</select>
 					</form>
 				</div>
-				<div class="col-md-6 col-sm-6 col-xs-6 col-xxs-12 cats">
+				<div class="col-md-6 col-sm-6 col-xs-12">
 
 					<form class="blog-author-form">
 						<div class="styled-select">
-							<select name="author" id="author" class="gotham-rounded-bok" multiple>
-								<option data-value="GK" value="1" class="case-studies-label-text">GK</option>
-								<option data-value="Mohit" value="2" class="case-studies-label-text">Mohit</option>
-								<option data-value="Rajesh" value="3" class="case-studies-label-text">Rajesh</option>
-								<option data-value="Shilpa" value="4" class="case-studies-label-text">Shilpa</option>
-								<option data-value="Stanely" value="5" class="case-studies-label-text">Stanely</option>
+							<select class="gotham-rounded-bok" id="author" name="author">
+							<option value="0" data-value="Authors">Authors</option>          
+							<option value="1" data-value="Gopi">Gopi</option>
+							<option value="2" data-value="Mohit">Mohit</option>
+							<option value="3" data-value="Rajesh">Rajesh</option>
+							<option value="4" data-value="Shilpa">Shilpa</option>
+							<option value="5" data-value="Stanely">Stanely</option>
 							</select>
 						</div>											
 					</form>
 				</div>
 			</div>
 		</li>
+
+		<!-- for 2nd li we used different color, so we hide this li -->
+		<li class="hide"></li>
+
+		<!-- We need to add the option value attr name in li for filter -->
+
 	{% for post in site.posts | sort: 'date'   %}
 	
-		<li class="col-lg-4 col-md-6 col-sm-6 col-xs-6 col-xxs-12 hw-filter-li Social blog-content {{ post.class}} {{ post.category}} {{ post.author}}">
+		<li class="hw-filter-li Social blog-content {{ post.category}} {{ post.author}}">
 			<div class="image-wrapper">
 				<img width="" height="" alt="" src="{{post.landing_image}}">
 				<div class="blog-post-meta">
@@ -92,8 +96,22 @@ Come share our thinking; know more about our team and the work we do…</p>
 	</ul>
 	</div>
 
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script>
+		$(document).ready(function(){
+
+			//filter only for category
+			$("#cat").change(function() {
+				//option value attribute 
+				var val = $(this).attr('value');				
+			    $(".hw-filter-li." + val).show();
+			    //option value is not present in .hw-filter-li.(option value) then that li will hide
+			    $(".blog-grid > .hw-filter-li:not(." + val + ")").hide();
+			});
+
+		});
+	</script>
+
 
 </main>
-{% include ribbon-footer.html %}
 {% include footer.html %}
-{% include html-footer.html %}
