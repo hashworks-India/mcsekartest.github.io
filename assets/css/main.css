@@ -7682,6 +7682,9 @@ h2 {
 .techImg.techImg1 > img {
     margin: 2px 0 6px;
 }
+.jb-desk-tab .table > thead > tr > th,.jb-desk-tab .table > thead > tr > td,.jb-desk-tab .table > tbody > tr > th,.jb-desk-tab .table > tbody > tr > td,.jb-desk-tab .table > tfoot > tr > th,.jb-desk-tab .table > tfoot > tr > td,.jb-mob .table > thead > tr > th,.jb-mob .table > thead > tr > td,.jb-mob .table > tbody > tr > th,.jb-mob .table > tbody > tr > td,.jb-mob .table > tfoot > tr > th,.jb-mob .table > tfoot > tr > td{
+    padding: 8px 5px;
+}
 @media screen and (max-width: 1199px) {
     #logo-img {
         animation: anime2 3.5s  linear;
