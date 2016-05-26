@@ -6,9 +6,9 @@ collections:
   casestudy:
      output: true
      permalink: /casestudy/:path/
-  upskilling_cs:
-     output: true
-     permalink: /upskilling_cs/:path/
+  _upskillingcs:
+     output: true,
+     permalink: /upskillingcs/:path/
   jobboard:
 include: ["_pages"]
 prose:

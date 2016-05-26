@@ -4,31 +4,103 @@
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
      <!-- Styles -->
+    {% if page.layout == "default" %}
+    <link rel="stylesheet" type="text/css" href="/assets/css/jquery-ui.css"/>
+    <script type="text/javascript">
+      var pageName = "homepage";
+    </script>
+    {% endif %}
+    {% if page.layout == "default" %}
+    <script type="text/javascript">
+      var pageName = "homepage";
+    </script>
+    {% endif %}
+    {% if page.layout == "default" %}
+    <script type="text/javascript">
+      var pageName = "homepage";
+    </script>
+    {% endif %}
+    {% if page.layout == "blog" %}
+    <script type="text/javascript">
+      var pageName = "blog";
+    </script>
+    {% endif %}
+    {% if page.layout == "bootcamp" %}
+    <script type="text/javascript">
+      var pageName = "bootcamp";
+    </script>
+    {% endif %}
+    {% if page.layout == "casestudy" %}
+    <script type="text/javascript">
+      var pageName = "casestudy";
+    </script>
+    {% endif %}
+    {% if page.layout == "collaborative_workforce" %}
+    <script type="text/javascript">
+      var pageName = "collaborative_workforce";
+    </script>
+    {% endif %}
+    {% if page.layout == "company" %}
+    <script type="text/javascript">
+      var pageName = "company";
+    </script>
+    {% endif %}
+    {% if page.layout == "engage_us" %}
+    <script type="text/javascript">
+      var pageName = "engage_us";
+    </script>
+    {% endif %}
+    {% if page.layout == "job_board" %}
+    <script type="text/javascript">
+      var pageName = "job_board";
+    </script>
+    {% endif %}
+    {% if page.layout == "navblog_detail" %}
+    <script type="text/javascript">
+      var pageName = "navblog_detail";
+    </script>
+    {% endif %}
+     {% if page.layout == "our_thinking" %}
+    <script type="text/javascript">
+      var pageName = "our_thinking";
+    </script>
+    {% endif %}
+     {% if page.layout == "portfolio" %}
+    <script type="text/javascript">
+      var pageName = "portfolio";
+    </script>
+    {% endif %}
+     {% if page.layout == "ups_devops" %}
+    <script type="text/javascript">
+      var pageName = "ups_devops";
+    </script>
+    {% endif %}
+    <link rel="stylesheet" type="text/css" href="/assets/css/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/css/slick/slick-theme.css"/>
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/chan.css">
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script src="/assets/js/modernizr/modernizr.js"></script>
     <link rel="shortcut icon" type="image/ico" href="/favicon.ico">
+    <link href="/assets/css/jquery.multiselect.css" rel="stylesheet" />
   </head>
 
 {% if page.layout == "default" %}
 <body class="hw-home-body">
-{% else %}
-<body class="hidden-xs hidden-sm">  
 {% endif %}
 
   {% if page.layout == "default" %}
   <header class="hw-home">
     {% else %}
-    <header>
+    <header class="hw-others">
   
 {% endif %}
 
 
 
   <!-- navigation-bar -->
-          <nav class="navbar navbar-default">
+          <nav class="nav-desktop navbar navbar-default">
             <div>
               <!-- logo -->
                 <div class="logo">
@@ -88,7 +160,9 @@
 
                         <div id="google-search-div">
                             <gcse:search></gcse:search>
-                        <i class="fa fa-angle-right search-arrow"></i>
+                            <i class="fa fa-angle-right search-arrow"></i>
+                            
+                       
                       <!-- </span> -->
                       </div>
                    </div>
@@ -105,4 +179,64 @@
           </nav>
         <!-- navigation-bar -->
 
-</header>
+    <nav class="nav-mob">
+      <div class="logo">
+        <a href="/"></a>
+      </div>
+      <div id="nav-icon1">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div id="toc" class="on menu-hide" style="right: 0px;">
+      <p id="button1"><img src="/assets/img/close.png" alt="close"></p>
+        <ul class="hw-menu-list">
+              <!-- search bar-->
+              <li class="srch-content-menu">
+                <div id="credits" class=" hidden ">
+                  <div id="google-search-div">
+                    <gcse:search></gcse:search>
+                      <i class="fa fa-angle-right search-arrow"></i>
+                  </div>
+                </div>
+                <a href="#credits" class="toggle btn srch-btn"><img src="/assets/img/search.png"><span class="srch-txt">Search</span></a>
+              </li>
+              <!-- end  search bar-->  
+              <li>
+                  <a class="pf-icon" href="/portfolio"><span class="menu-icon"></span><span class="menu-text">Portfolio</span></a></li>
+              <li>
+                  <a class="es-icon" href="/engage_us"><span class="menu-icon"></span><span class="menu-text">Engage&nbspUs</span></a></li>
+              <li class="pointer">
+                  <a class="cs-icon" href="javascript:void(0);"><span class="menu-icon"></span><span class="menu-text">Case&nbspStudy</span></a></li>
+              <li>
+                  <a class="comp-icon" href="/company"><span class="menu-icon"></span><span class="menu-text">Company</span></a></li>
+              <li>
+                  <a class="blog-icon" href="/blog"><span class="menu-icon"></span><span class="menu-text">Blog</span></a></li>
+              <li>
+                  <a class="jb-icon" href="/job_board"><span class="menu-icon"></span><span class="menu-text">Job&nbspBoard</span></a></li>
+              <li>
+                  <a class="news-icon" href="javascript:void(0);"><span class="menu-icon"></span><span class="menu-text">News</span></a></li>
+          </ul>
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 social-share-menu-list">
+            <a target="new" class="fa-stack hw-socialshare social-icons" href="https://www.facebook.com/hashworks/">
+            <!-- <span > -->
+              <i class="fa fa-circle-thin fa-stack-2x"></i>
+              <i class="fa fa-facebook fa-stack-1x"></i>
+            <!-- </span> -->
+            </a>
+            <a target="new" class="fa-stack hw-socialshare social-icons" href="https://twitter.com/hashworksco">
+            <!-- <span > -->
+              <i class="fa fa-circle-thin fa-stack-2x"></i>
+              <i class="fa fa-twitter fa-stack-1x"></i>
+            <!-- </span> -->
+            </a>
+            <a target="new" class="fa-stack hw-socialshare social-icons" href="https://www.linkedin.com/company/9228490">
+            <!-- <span > -->
+              <i class="fa fa-circle-thin fa-stack-2x"></i>
+              <i class="fa fa-linkedin fa-stack-1x"></i>
+            <!-- </span> -->
+               </a>
+          </div>
+      </div>
+    </nav>
+</header>  
