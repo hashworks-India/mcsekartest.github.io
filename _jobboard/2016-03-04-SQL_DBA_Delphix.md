@@ -22,8 +22,8 @@ responsibilities:
 skills: 
  - Good verbal and written communication skills 
  - Understanding of the multi-tier architecture 
- - Understanding of Web Services. 
- - Proactive and willingness to learn. 
+ - Understanding of Web Services 
+ - Proactive and willingness to learn 
  - Availability for 24 x 7 support if needed.  
  - Excellent problem solving skills.
   
