@@ -393,6 +393,7 @@ a:hover,
 .hr-display {
     display: table;
     margin: 0 auto;
+    width: 86%;
 }
 .p-flex {
     display: -webkit-flex;
