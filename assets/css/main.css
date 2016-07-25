@@ -393,6 +393,9 @@ a:hover,
 .hr-display {
     display: table;
     margin: 0 auto;
+}
+.hr-display.latest-job{
+    margin: 0 auto;
     width: 86%;
 }
 .p-flex {
